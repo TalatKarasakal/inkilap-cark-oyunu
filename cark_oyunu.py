@@ -27,6 +27,15 @@ try:
 except ImportError:
     pygame = None
 
+import ctypes
+try:
+    ctypes.windll.shcore.SetProcessDpiAwareness(1)
+except Exception:
+    try:
+        ctypes.windll.user32.SetProcessDPIAware()
+    except Exception:
+        pass
+
 # ──────────────────────────────────────────────
 # KAYNAK YOLU
 # ──────────────────────────────────────────────
@@ -187,9 +196,26 @@ class CarkOyunu(tk.Tk):
 
     def __init__(self):
         super().__init__()
+        
+        # Ensure icon appears in taskbar on Windows
+        try:
+            import ctypes
+            myappid = 'com.talatkarasakal.carkoyunu.v2'
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+        except Exception:
+            pass
+
         self.title("LGS İnkılap Tarihi – Çark Oyunu  v2")
-        self.minsize(1100, 720)
-        self.geometry("1240x780")
+        self.minsize(1100, 850)
+        self.geometry("1240x950")
+        
+        # Simgesi
+        try:
+            icon_img = tk.PhotoImage(file=resource_path("icon.png"))
+            self.iconphoto(False, icon_img)
+        except Exception as e:
+            print("İkon yüklenemedi:", e)
+
         self.configure(bg="#1a0a00")
 
         # --- SES (Audio) KURULUMU ---
@@ -332,11 +358,11 @@ class CarkOyunu(tk.Tk):
         self.main_frame.pack(fill="both", expand=True, padx=12, pady=(0, 12))
 
         # SOL – Çark alanı
-        self.left_frame = tk.Frame(self.main_frame, width=440)
+        self.left_frame = tk.Frame(self.main_frame, width=540)
         self.left_frame.pack(side="left", fill="both", padx=(0, 8))
         self.left_frame.pack_propagate(False)
 
-        self.canvas_size = 390
+        self.canvas_size = 480
         self.wheel_canvas = tk.Canvas(
             self.left_frame, width=self.canvas_size, height=self.canvas_size,
             highlightthickness=0
@@ -351,12 +377,17 @@ class CarkOyunu(tk.Tk):
             relx=0.5, rely=0.0, anchor="s", y=6
         )
 
-        self.btn_spin = tk.Label(
-            self.left_frame, text="🎯  Çarkı Çevir", font=self.f_big,
-            cursor="hand2", padx=28, pady=10, relief="flat"
-        )
+        self.btn_spin = tk.Frame(self.left_frame, cursor="hand2", padx=28, pady=10)
         self.btn_spin.pack(pady=(4, 6))
-        self.btn_spin.bind("<Button-1>", lambda _: self._spin_wheel())
+        
+        self.btn_spin_icon = tk.Label(self.btn_spin, text="🎯", font=self.f_big, cursor="hand2")
+        self.btn_spin_icon.pack(side="left", padx=(0, 6))
+        
+        self.btn_spin_text = tk.Label(self.btn_spin, text="Çarkı Çevir", font=self.f_big, cursor="hand2")
+        self.btn_spin_text.pack(side="left")
+        
+        for w in (self.btn_spin, self.btn_spin_icon, self.btn_spin_text):
+            w.bind("<Button-1>", lambda _: self._spin_wheel())
 
         # Puan göstergesi
         self.score_frame = tk.Frame(self.left_frame)
@@ -387,10 +418,6 @@ class CarkOyunu(tk.Tk):
         self.right_frame.pack(side="left", fill="both", expand=True, padx=(8, 0))
 
         self.q_canvas = tk.Canvas(self.right_frame, highlightthickness=0)
-        self.q_scrollbar = tk.Scrollbar(self.right_frame, orient="vertical",
-                                        command=self.q_canvas.yview)
-        self.q_canvas.configure(yscrollcommand=self.q_scrollbar.set)
-        self.q_scrollbar.pack(side="right", fill="y")
         self.q_canvas.pack(side="left", fill="both", expand=True)
 
         self.question_panel = tk.Frame(self.q_canvas)
@@ -449,10 +476,10 @@ class CarkOyunu(tk.Tk):
                               font=self.f_wheel, fill="#ffffff")
 
         c.create_oval(
-            cx - 26, cy - 26, cx + 26, cy + 26,
+            cx - 30, cy - 30, cx + 30, cy + 30,
             fill=self.t["bg_secondary"], outline=self.t["accent"], width=2
         )
-        c.create_text(cx, cy, text="LGS", font=self.f_small, fill=self.t["accent"])
+        c.create_text(cx, cy, text="LGS", font=self.f_normal, fill=self.t["accent"])
         self._draw_pointer()
 
     def _draw_pointer(self):
@@ -469,7 +496,8 @@ class CarkOyunu(tk.Tk):
         if self.state != self.STATE_IDLE:
             return
         self.state = self.STATE_SPINNING
-        self.btn_spin.config(cursor="arrow")
+        for w in (self.btn_spin, self.btn_spin_icon, self.btn_spin_text):
+            w.config(cursor="arrow")
 
         extra_turns    = random.randint(5, 9) * 360
         target_slice   = random.randint(0, SLICE_COUNT - 1)
@@ -511,7 +539,8 @@ class CarkOyunu(tk.Tk):
             self._on_spin_complete()
 
     def _on_spin_complete(self):
-        self.btn_spin.config(cursor="hand2")
+        for w in (self.btn_spin, self.btn_spin_icon, self.btn_spin_text):
+            w.config(cursor="hand2")
         sv = WHEEL_SLICES[self.target_slice]
 
         if sv == "İFLAS":
@@ -1047,7 +1076,9 @@ class CarkOyunu(tk.Tk):
         self.left_frame.config(bg=t["bg"])
         self.wheel_canvas.config(bg=t["bg"])
         self.pointer_canvas.config(bg=t["bg"])
-        self.btn_spin.config(bg=t["btn_bg"], fg=t["btn_fg"])
+        self.btn_spin.config(bg=t["btn_bg"])
+        self.btn_spin_icon.config(bg=t["btn_bg"], fg=t["btn_fg"])
+        self.btn_spin_text.config(bg=t["btn_bg"], fg=t["btn_fg"])
         self.score_frame.config(bg=t["score_bg"])
         self.lbl_score_title.config(bg=t["score_bg"], fg=t["fg_dim"])
         self.lbl_score.config(bg=t["score_bg"], fg=t["accent"])
