@@ -20,6 +20,13 @@ import tkinter as tk
 from tkinter import font as tkfont
 from typing import Optional, Dict, List
 
+# Pygame ses için
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
+try:
+    import pygame
+except ImportError:
+    pygame = None
+
 # ──────────────────────────────────────────────
 # KAYNAK YOLU
 # ──────────────────────────────────────────────
@@ -184,6 +191,35 @@ class CarkOyunu(tk.Tk):
         self.minsize(1100, 720)
         self.geometry("1240x780")
         self.configure(bg="#1a0a00")
+
+        # --- SES (Audio) KURULUMU ---
+        self.audio_enabled = False
+        self.sounds = {}
+        if pygame:
+            try:
+                pygame.mixer.init()
+                self.audio_enabled = True
+                sp = resource_path("sounds")
+                s_dict = {
+                    "spin":  "spin.wav",
+                    "tick":  "tick.wav",
+                    "win":   "win.wav",
+                    "wrong": "wrong.wav",
+                    "fail":  "fail.wav"
+                }
+                for k, v in s_dict.items():
+                    fp = os.path.join(sp, v)
+                    if os.path.exists(fp):
+                        self.sounds[k] = pygame.mixer.Sound(fp)
+                
+                # Çark sesi daha kısık olsun
+                if "spin" in self.sounds:
+                    self.sounds["spin"].set_volume(0.3)
+                if "tick" in self.sounds:
+                    self.sounds["tick"].set_volume(0.5)
+
+            except Exception as e:
+                print("Ses sistemi başlatılamadı:", e)
 
         # Tema
         self.current_theme = "energy"
@@ -444,6 +480,7 @@ class CarkOyunu(tk.Tk):
         self.target_angle     = self.anim_start_angle + self.total_rotation
         self.target_slice     = target_slice
         self.anim_elapsed     = 0
+        self.last_played_angle = self.wheel_angle
 
         self._clear_right_panel()
         self._show_spinning_panel()
@@ -454,8 +491,17 @@ class CarkOyunu(tk.Tk):
         self.anim_elapsed += dt
         progress = min(self.anim_elapsed / self.ANIM_DURATION_MS, 1.0)
         eased    = ease_out_cubic(progress)
-        self.wheel_angle = self.anim_start_angle + self.total_rotation * eased
+        
+        current_angle = self.anim_start_angle + self.total_rotation * eased
+        self.wheel_angle = current_angle
         self._draw_wheel()
+
+        if self.audio_enabled and "spin" in self.sounds:
+            pieces_crossed = int((current_angle - self.last_played_angle) / SLICE_ANGLE)
+            if pieces_crossed >= 1:
+                self.last_played_angle += pieces_crossed * SLICE_ANGLE
+                self.sounds["spin"].play()
+
         if progress < 1.0:
             self.anim_id = self.after(int(dt), self._animate_step)
         else:
@@ -522,6 +568,11 @@ class CarkOyunu(tk.Tk):
             return
         self.timer_remaining -= 1
         self._update_timer_display()
+
+        if self.timer_remaining > 0:
+            if self.audio_enabled and "tick" in self.sounds:
+                self.sounds["tick"].play()
+
         if self.timer_remaining <= 0:
             self._time_expired()
         else:
@@ -785,7 +836,11 @@ class CarkOyunu(tk.Tk):
         if timeout:
             msg       = f"⏰  Süre Doldu!  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
+            if self.audio_enabled and "fail" in self.sounds:
+                self.sounds["fail"].play()
         elif is_correct:
+            if self.audio_enabled and "win" in self.sounds:
+                self.sounds["win"].play()
             if self.x2_mode:
                 msg = f"🎉  Doğru!  Toplam puanın 2 katına çıktı → {self.total_score}"
             else:
@@ -795,6 +850,8 @@ class CarkOyunu(tk.Tk):
         else:
             msg   = f"❌  Yanlış!  Doğru cevap: {correct_key}  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
+            if self.audio_enabled and "wrong" in self.sounds:
+                self.sounds["wrong"].play()
 
         tk.Label(rf, text=msg, font=self.f_big,
                  bg=t["bg_card"], fg=msg_color).pack(pady=4)
