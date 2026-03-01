@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "I. Dünya Savaşı'nın Nedenleri",
     "yil": 2020,
     "zorluk": "Orta",
@@ -49,7 +49,7 @@
   },
   {
     "id": 4,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Mondros Ateşkes Antlaşması",
     "yil": 2021,
     "zorluk": "Orta",
@@ -65,7 +65,7 @@
   },
   {
     "id": 5,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Kurtuluş Savaşı Hazırlık Dönemi",
     "yil": 2022,
     "zorluk": "Zor",
@@ -81,7 +81,7 @@
   },
   {
     "id": 6,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Amasya Genelgesi",
     "yil": 2017,
     "zorluk": "Orta",
@@ -97,7 +97,7 @@
   },
   {
     "id": 7,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Erzurum Kongresi",
     "yil": 2023,
     "zorluk": "Orta",
@@ -113,7 +113,7 @@
   },
   {
     "id": 8,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Sivas Kongresi",
     "yil": 2016,
     "zorluk": "Kolay",
@@ -129,7 +129,7 @@
   },
   {
     "id": 9,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "TBMM'nin Açılması",
     "yil": 2020,
     "zorluk": "Kolay",
@@ -145,7 +145,7 @@
   },
   {
     "id": 10,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Kurtuluş Savaşı Cepheleri – Doğu Cephesi",
     "yil": 2019,
     "zorluk": "Orta",
@@ -161,7 +161,7 @@
   },
   {
     "id": 11,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Kurtuluş Savaşı Cepheleri – Güney Cephesi",
     "yil": 2018,
     "zorluk": "Kolay",
@@ -177,7 +177,7 @@
   },
   {
     "id": 12,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Batı Cephesi – I. İnönü Muharebesi",
     "yil": 2021,
     "zorluk": "Orta",
@@ -193,7 +193,7 @@
   },
   {
     "id": 13,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Sakarya Meydan Muharebesi",
     "yil": 2022,
     "zorluk": "Zor",
@@ -209,7 +209,7 @@
   },
   {
     "id": 14,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Büyük Taarruz ve Başkomutanlık Meydan Muharebesi",
     "yil": 2023,
     "zorluk": "Orta",
@@ -225,7 +225,7 @@
   },
   {
     "id": 15,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Lozan Barış Antlaşması",
     "yil": 2024,
     "zorluk": "Zor",
@@ -241,7 +241,7 @@
   },
   {
     "id": 16,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Cumhuriyetçilik İlkesi",
     "yil": 2020,
     "zorluk": "Orta",
@@ -257,7 +257,7 @@
   },
   {
     "id": 17,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Milliyetçilik İlkesi",
     "yil": 2021,
     "zorluk": "Kolay",
@@ -273,7 +273,7 @@
   },
   {
     "id": 18,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Laiklik İlkesi",
     "yil": 2022,
     "zorluk": "Orta",
@@ -289,7 +289,7 @@
   },
   {
     "id": 19,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Halkçılık İlkesi",
     "yil": 2023,
     "zorluk": "Kolay",
@@ -305,7 +305,7 @@
   },
   {
     "id": 20,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Devletçilik İlkesi",
     "yil": 2019,
     "zorluk": "Orta",
@@ -321,7 +321,7 @@
   },
   {
     "id": 21,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "İnkılapçılık İlkesi",
     "yil": 2017,
     "zorluk": "Kolay",
@@ -337,7 +337,7 @@
   },
   {
     "id": 22,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Eğitim ve Kültür Alanındaki İnkılaplar",
     "yil": 2024,
     "zorluk": "Orta",
@@ -353,7 +353,7 @@
   },
   {
     "id": 23,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Harf İnkılabı",
     "yil": 2018,
     "zorluk": "Kolay",
@@ -449,7 +449,7 @@
   },
   {
     "id": 29,
-    "unite": "Ünite 7 – Atatürk'ün Ölümü ve Sonrası",
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
     "konu": "Atatürk'ün Son Günleri",
     "yil": 2019,
     "zorluk": "Kolay",
@@ -465,7 +465,7 @@
   },
   {
     "id": 30,
-    "unite": "Ünite 7 – Atatürk'ün Ölümü ve Sonrası",
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
     "konu": "İsmet İnönü Dönemi",
     "yil": 2024,
     "zorluk": "Orta",
@@ -481,7 +481,7 @@
   },
   {
     "id": 31,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "Tekalif-i Milliye Emirleri",
     "yil": 2017,
     "zorluk": "Orta",
@@ -497,7 +497,7 @@
   },
   {
     "id": 32,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Saltanatın Kaldırılması",
     "yil": 2016,
     "zorluk": "Kolay",
@@ -513,7 +513,7 @@
   },
   {
     "id": 33,
-    "unite": "Ünite 2 – Millî Uyanış",
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
     "konu": "Wilson İlkeleri",
     "yil": 2015,
     "zorluk": "Orta",
@@ -529,7 +529,7 @@
   },
   {
     "id": 34,
-    "unite": "Ünite 4 – Atatürkçülük",
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
     "konu": "Toplumsal Alandaki İnkılaplar",
     "yil": 2015,
     "zorluk": "Kolay",
@@ -545,7 +545,7 @@
   },
   {
     "id": 35,
-    "unite": "Ünite 3 – Ya İstiklal Ya Ölüm",
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
     "konu": "II. İnönü Muharebesi",
     "yil": 2016,
     "zorluk": "Orta",
@@ -558,5 +558,1077 @@
     },
     "dogru_cevap": "B",
     "aciklama": "Mustafa Kemal bu sözüyle, art arda gelen yenilgilerin ardından milletin kötü talihinin artık değiştiğini ve zafer yolunun açıldığını vurgulamıştır."
+  },
+  {
+    "id": 36,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Ailesi",
+    "yil": 2016,
+    "zorluk": "Kolay",
+    "soru": "Mustafa Kemal'in babasının mesleği aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Doktor",
+      "B": "Çiftçi",
+      "C": "Gümrük memuru",
+      "D": "Asker"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Ali Rıza Efendi, Selanik'te gümrük memuru olarak çalışmıştır."
+  },
+  {
+    "id": 37,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Doğumu",
+    "yil": 2017,
+    "zorluk": "Kolay",
+    "soru": "Mustafa Kemal'in doğduğu şehir ve yıl hangisidir?",
+    "siklar": {
+      "A": "İstanbul – 1880",
+      "B": "Selanik – 1881",
+      "C": "Ankara – 1881",
+      "D": "Manastır – 1882"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mustafa Kemal, 1881 yılında Osmanlı İmparatorluğu'nun Selanik şehrinde doğmuştur."
+  },
+  {
+    "id": 38,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Eğitimi",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal, Harp Akademisi'ni kaç yılında bitirmiştir?",
+    "siklar": {
+      "A": "1899",
+      "B": "1902",
+      "C": "1905",
+      "D": "1908"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Mustafa Kemal, 1905 yılında Harp Akademisi'ni kurmay yüzbaşı olarak bitirmiştir."
+  },
+  {
+    "id": 39,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Trablusgarp Savaşı",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal, Trablusgarp Savaşı'nda hangi ülkeye karşı savaşmıştır?",
+    "siklar": {
+      "A": "Yunanistan",
+      "B": "Rusya",
+      "C": "İtalya",
+      "D": "Fransa"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Trablusgarp Savaşı (1911-1912), Osmanlı-İtalya arasında Libya üzerinde yaşanmıştır."
+  },
+  {
+    "id": 40,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Balkan Savaşları",
+    "yil": 2018,
+    "zorluk": "Orta",
+    "soru": "Balkan Savaşları'nın (1912-1913) Osmanlı için en önemli sonucu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Doğu Anadolu'nun kaybedilmesi",
+      "B": "Selanik dahil Rumeli topraklarının büyük bölümünün kaybedilmesi",
+      "C": "Suriye'nin elden çıkması",
+      "D": "İstanbul'un işgali"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Balkan Savaşları'nda Osmanlı, Balkan devletleri karşısında yenilerek Rumeli'nin büyük bölümünü ve Selanik'i kaybetti."
+  },
+  {
+    "id": 41,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "İttihat ve Terakki",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal'in İttihat ve Terakki Cemiyeti'yle ilişkisi için aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Cemiyetin kurucusudur.",
+      "B": "Cemiyetin politikalarını bütünüyle benimsemiştir.",
+      "C": "Cemiyete katılmış ancak politikalarını eleştirmiştir.",
+      "D": "Cemiyetle hiç ilişki kurmamıştır."
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Mustafa Kemal, örgütle ilişki kurmuş fakat özellikle Almanya'ya bağımlılık politikasını eleştirmiştir."
+  },
+  {
+    "id": 42,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı – Çanakkale",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "'Ben size taarruz etmiyorum, ölmeyi emrediyorum!' emri hangi muharebede ve kim tarafından verilmiştir?",
+    "siklar": {
+      "A": "Sakarya – İsmet Paşa",
+      "B": "Çanakkale – Mustafa Kemal",
+      "C": "İnönü – Mustafa Kemal",
+      "D": "Dumlupınar – Mustafa Kemal"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu tarihi emir, 57. Alay'a Çanakkale'de Conkbayırı'nı tutmaları için Mustafa Kemal tarafından verilmiştir."
+  },
+  {
+    "id": 43,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı – Cepheler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal, I. Dünya Savaşı'nda Çanakkale dışında hangi cephede görev yapmıştır?",
+    "siklar": {
+      "A": "Kafkas Cephesi",
+      "B": "Irak Cephesi",
+      "C": "Suriye-Filistin Cephesi",
+      "D": "Galiçya Cephesi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Mustafa Kemal, savaşın son evresinde Yıldırım Orduları bünyesinde Suriye-Filistin Cephesi'nde görev yapmıştır."
+  },
+  {
+    "id": 44,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Osmanlı'nın Savaşa Girişi",
+    "yil": 2017,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'nın I. Dünya Savaşı'na girişinde hangi ittifak belirleyici olmuştur?",
+    "siklar": {
+      "A": "İtilaf Devletleri (İngiltere-Fransa-Rusya)",
+      "B": "İttifak Devletleri (Almanya-Avusturya-Macaristan)",
+      "C": "Balkan İttifakı",
+      "D": "Akdeniz İttifakı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Osmanlı Devleti, Almanya ve Avusturya-Macaristan'dan oluşan İttifak Devletleri yanında savaşa girmiştir."
+  },
+  {
+    "id": 45,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Karakteri",
+    "yil": 2015,
+    "zorluk": "Kolay",
+    "soru": "Mustafa Kemal'in askerî okullardaki en belirgin özelliği aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kuralları harfiyen uygulaması",
+      "B": "Matematik ve fen bilimlerine olan ilgisi",
+      "C": "Sorgulayan ve eleştiren düşünce yapısı",
+      "D": "Söz dinleyen yapısı"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Mustafa Kemal okul yıllarında sorgulamayı ve düşünmeyi seven kişiliğiyle öne çıkmıştır."
+  },
+  {
+    "id": 46,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in İsmi",
+    "yil": 2024,
+    "zorluk": "Kolay",
+    "soru": "'Kemal' adını Mustafa'ya kim vermiştir?",
+    "siklar": {
+      "A": "Annesi Zübeyde Hanım",
+      "B": "Babası Ali Rıza Efendi",
+      "C": "Matematik öğretmeni Yüzbaşı Mustafa",
+      "D": "Okul müdürü"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Matematik öğretmeni Yüzbaşı Mustafa, zeki öğrencisini kendinden ayırt etmek için ona 'Kemal' adını vermiştir."
+  },
+  {
+    "id": 47,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı Sonucu – Osmanlı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "I. Dünya Savaşı'nda yenilen Osmanlı Devleti hangi ateşkes antlaşmasını imzalamak zorunda kalmıştır?",
+    "siklar": {
+      "A": "Gümrü Ateşkesi",
+      "B": "Mudanya Ateşkesi",
+      "C": "Mondros Ateşkesi",
+      "D": "Lozan Ateşkesi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Osmanlı, 30 Ekim 1918'de İtilaf Devletleri ile Mondros Mütarekesi'ni imzalayarak savaştan çekilmiştir."
+  },
+  {
+    "id": 48,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Savaşın Getirdiği Yıkım",
+    "yil": 2016,
+    "zorluk": "Orta",
+    "soru": "I. Dünya Savaşı'nın Osmanlı toplumu üzerindeki en ağır etkisi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Ekonominin güçlenmesi",
+      "B": "Büyük nüfus ve toprak kayıpları ile ekonomik çöküş",
+      "C": "Sanayinin gelişmesi",
+      "D": "Eğitimin yaygınlaşması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Savaş, Osmanlı'ya büyük nüfus ve toprak kaybı ile birlikte ağır ekonomik yıkım yaşatmıştır."
+  },
+  {
+    "id": 49,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Suriye Görevi",
+    "yil": 2018,
+    "zorluk": "Zor",
+    "soru": "Mustafa Kemal, Suriye-Filistin Cephesi'ndeki görevini bırakıp Anadolu'ya geçmesinin temel nedenini nasıl açıklamıştır?",
+    "siklar": {
+      "A": "Daha iyi bir görev için",
+      "B": "Mondros Mütarekesi sonrası milleti örgütlemek amacıyla",
+      "C": "İstanbul'da iş aramak için",
+      "D": "Ailesiyle birlikte olmak için"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mondros sonrası Anadolu'nun işgal tehlikesiyle karşı karşıya kaldığını gören Mustafa Kemal, millî mücadeleyi örgütlemek amacıyla Anadolu'ya geçmiştir."
+  },
+  {
+    "id": 50,
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Çanakkale'nin Önemi",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Çanakkale Savaşları'nın Osmanlı ve Türk tarihi açısından önemi değerlendirildiğinde aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Osmanlı savaşı kolayca kazanmıştır.",
+      "B": "İtilaf Devletleri'nin Boğazları geçmesi engellenmiş, bu Mustafa Kemal'i kahraman yapmıştır.",
+      "C": "Osmanlı'nın savaştan erken çekilmesini sağlamıştır.",
+      "D": "Rusya'ya yardım yolu açılmıştır."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çanakkale Savaşları, İtilaf Devletleri'nin Osmanlı'yı çabuk çökertme planını engellemiş; Mustafa Kemal Anafartalar'daki başarılarıyla ün kazanmıştır."
+  },
+  {
+    "id": 51,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Sevr Antlaşması",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Sevr Antlaşması (1920) ile Osmanlı topraklarına ne yapılmak istenmiştir?",
+    "siklar": {
+      "A": "Osmanlı güçlendirilmek istenmiştir.",
+      "B": "Anadolu başta olmak üzere Osmanlı toprakları paylaşılmak ve Türklere küçük bir alan bırakılmak istenmiştir.",
+      "C": "Osmanlı'nın toprakları korunmuştur.",
+      "D": "Osmanlı'ya yeni topraklar verilmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sevr, Anadolu'yu çeşitli devletler arasında paylaştıran ve Türklere küçük bir iç bölgeyi bırakan ağır bir antlaşmadır."
+  },
+  {
+    "id": 52,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kuvay-ı Milliye",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "Kuvay-ı Milliye birlikleri nasıl tanımlanabilir?",
+    "siklar": {
+      "A": "Osmanlı ordusunun düzenli birlikleri",
+      "B": "Düzenli ordu kurulmadan önce halkın oluşturduğu direniş güçleri",
+      "C": "İtilaf Devletleri'nin Anadolu'daki birlikleri",
+      "D": "İstanbul Hükûmeti'ne bağlı kuvvetler"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kuvay-ı Milliye, Mondros'tan sonra işgallere karşı halkın kendiliğinden oluşturduğu düzensiz direniş birlikleriydi."
+  },
+  {
+    "id": 53,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Misak-ı Millî",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Son Osmanlı Meclis-i Mebusanı'nda kabul edilen Misak-ı Millî'de yer alan temel ilke aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Osmanlı İmparatorluğu'nun yeniden kurulması",
+      "B": "Türk milletinin bağımsız ve onurlu yaşayabileceği vatanın sınırlarının çizilmesi",
+      "C": "Manda yönetiminin kabul edilmesi",
+      "D": "İstanbul'un başkent olarak korunması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Misak-ı Millî, 28 Ocak 1920'de Türk milletinin vazgeçilmez olarak belirlediği vatan sınırlarını ve bağımsızlık hedeflerini ilan etmiştir."
+  },
+  {
+    "id": 54,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Temsil Heyeti",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "Sivas Kongresi sonunda kurulan Temsil Heyeti'nin görevi nedir?",
+    "siklar": {
+      "A": "Osmanlı padişahını temsil etmek",
+      "B": "Millî Mücadele'yi yürütecek yürütme organı olarak görev yapmak",
+      "C": "İtilaf Devletleri ile müzakere yürütmek",
+      "D": "Düzenli orduyu kurmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Temsil Heyeti, Sivas Kongresi kararlarını uygulamak ve millî hareketi yönetmek amacıyla oluşturulmuştur."
+  },
+  {
+    "id": 55,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "İstanbul'un İşgali",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "İtilaf Devletleri'nin 16 Mart 1920'de İstanbul'u resmen işgal etmesi hangi sonucu doğurmuştur?",
+    "siklar": {
+      "A": "Millî Mücadele'nin zayıflamasına neden olmuştur.",
+      "B": "Son Osmanlı Meclisi kapatılmış; bu, TBMM'nin Ankara'da açılmasını zorunlu kılmıştır.",
+      "C": "Osmanlı Hükümeti güçlenmiştir.",
+      "D": "Mondros Mütarekesi iptal edilmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İşgal üzerine Osmanlı Meclisi dağıtılmış, bu durum Ankara'da 23 Nisan 1920'de TBMM'nin açılmasına zemin hazırlamıştır."
+  },
+  {
+    "id": 56,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Manda ve Himaye",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Sivas Kongresi'nde manda ve himaye fikri kesinlikle reddedilmiştir. Bu tutum aşağıdaki ilkelerden hangisiyle en çok örtüşür?",
+    "siklar": {
+      "A": "Ekonomik bağımsızlık",
+      "B": "Tam bağımsızlık (kayıtsız şartsız bağımsızlık) ilkesi",
+      "C": "Bölgesel yönetim ilkesi",
+      "D": "Anayasal monarşi ilkesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Manda ve himayenin reddi, tam bağımsızlık ilkesinin temel göstergesidir; başka bir devletin himayesi altına girmek kabul edilemez bulunmuştur."
+  },
+  {
+    "id": 57,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Anadolu'daki İşgaller",
+    "yil": 2018,
+    "zorluk": "Orta",
+    "soru": "İzmir'in 15 Mayıs 1919'da Yunan kuvvetleri tarafından işgali hangi gelişmeye zemin hazırlamıştır?",
+    "siklar": {
+      "A": "İstanbul'un terk edilmesine",
+      "B": "Türk halkının millî bilincinin canlanmasına ve direnişin örgütlenmesine",
+      "C": "Osmanlı'nın savaşa yeniden girmesine",
+      "D": "Lozan Antlaşması'nın imzalanmasına"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İzmir'in işgali, Anadolu halkında büyük bir milliyetçi uyanışa yol açmış ve Millî Mücadele'nin fiilen başlamasını tetiklemiştir."
+  },
+  {
+    "id": 58,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Erzurum Kongresi Kararları",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Erzurum Kongresi'nin bölgesel değil ulusal nitelik taşıdığının en önemli kanıtı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yalnızca Erzurum'u ilgilendiren kararlar alınmıştır.",
+      "B": "'Millî sınırlar içinde vatan bir bütündür, parçalanamaz.' kararı alınmıştır.",
+      "C": "Saltanat kaldırılmıştır.",
+      "D": "Yalnızca Doğu Anadolu'yu kapsayan bir savunma kararı alınmıştır."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Erzurum Kongresi, bölgesel olmasına rağmen tüm yurdu kapsayan 'vatanın bölünmezliği' ilkesini benimseyerek ulusal nitelik kazanmıştır."
+  },
+  {
+    "id": 59,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Amasya Görüşmeleri",
+    "yil": 2019,
+    "zorluk": "Zor",
+    "soru": "Amasya Görüşmeleri'nde (Ekim 1919) Osmanlı Hükümeti temsilcileriyle varılan uzlaşma hangi açıdan önemlidir?",
+    "siklar": {
+      "A": "Saltanatın kaldırılması kararlaştırılmıştır.",
+      "B": "İstanbul Hükümeti, ilk kez Millî Hareketi fiilen tanımış ve Misak-ı Millî'yi kabul etmiştir.",
+      "C": "TBMM'nin kurulmasına karar verilmiştir.",
+      "D": "Mondros Mütarekesi iptal edilmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Amasya Görüşmeleri ile İstanbul Hükümeti, Millî Hareketi fiilen tanıyıp Misak-ı Millî kararlarını pratikte kabul etmiştir."
+  },
+  {
+    "id": 60,
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kuva-yı İnzibatiye",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "İstanbul Hükümeti'nin TBMM'ye karşı kurduğu Kuva-yı İnzibatiye'nin (Hilafet Ordusu) amacı neydi?",
+    "siklar": {
+      "A": "Yunan kuvvetlerine karşı savaşmak",
+      "B": "Millî Mücadele kuvvetlerini bastırmak ve TBMM otoritesini sarsmak",
+      "C": "Düzenli orduya destek vermek",
+      "D": "Mondros şartlarını uygulamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kuva-yı İnzibatiye, İstanbul Hükümeti'nin desteğiyle Millî Mücadele hareketini engellemek amacıyla kurulmuştur; TBMM ona karşı 'Hıyanet-i Vataniye Kanunu'nu çıkarmıştır."
+  },
+  {
+    "id": 61,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "TBMM'nin Nitelikleri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "TBMM'nin 'olağanüstü yetkilere sahip meclis' olarak tanımlanmasının nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yalnızca yasama yetkisine sahip olması",
+      "B": "Yasama, yürütme ve yargı yetkilerini tek çatıda birleştirmesi",
+      "C": "Yalnızca yargı yetkisine sahip olması",
+      "D": "İstanbul Hükümeti'ne bağlı olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Olağanüstü koşullarda açılan TBMM, üç erki de bünyesinde toplamış ve meclis hükümeti sistemiyle yönetimi üstlenmiştir."
+  },
+  {
+    "id": 62,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Doğu Cephesi – Ermeniler",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "Doğu Cephesi'nde Ermeni kuvvetlerine karşı kazanılan zafer sonucunda imzalanan Gümrü Antlaşması'nın önemi nedir?",
+    "siklar": {
+      "A": "Osmanlı'nın savaştan çekilmesini sağlamıştır.",
+      "B": "TBMM'nin uluslararası alanda tanınan ilk antlaşmasıdır.",
+      "C": "Lozan Antlaşması'nın hazırlığıdır.",
+      "D": "Boğazlar meselesini çözmüştür."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "3 Aralık 1920'de imzalanan Gümrü Antlaşması ile TBMM, uluslararası düzeyde ilk kez tanınmıştır."
+  },
+  {
+    "id": 63,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "İstiklal Mahkemeleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Millî Mücadele döneminde kurulan İstiklal Mahkemelerinin temel işlevi neydi?",
+    "siklar": {
+      "A": "Müttefik devletlerle müzakere yürütmek",
+      "B": "Cephe gerisinde asker kaçaklığını ve ihaneti yargılayarak millî birliği korumak",
+      "C": "İstanbul Hükümeti kararlarını uygulamak",
+      "D": "Yabancı uyrukluları yargılamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İstiklal Mahkemeleri, savaş döneminde asker kaçaklarını ve devlet otoritesini tehdit eden kişileri yargılamış; böylece cephe gerisinde düzeni korumuştur."
+  },
+  {
+    "id": 64,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Düzenli Ordu",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "Kuvay-ı Milliye'den düzenli orduya geçişin nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kuvay-ı Milliye'nin Yunan kuvvetlerini kolayca yenmiş olması",
+      "B": "Düzensiz birliklerin yetersiz kalması ve düzenli bir orduya ihtiyaç duyulması",
+      "C": "İstanbul Hükümeti'nin baskısı",
+      "D": "İtilaf Devletleri'nin talebi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Batı Cephesi'ndeki ilk yenilgilerden sonra Kuvay-ı Milliye'nin yetersizliği görülmüş ve 1921'de düzenli ordunun kurulmasına karar verilmiştir."
+  },
+  {
+    "id": 65,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "II. İnönü – Londra Konferansı",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "II. İnönü Muharebesi'nin (Mart-Nisan 1921) siyasi sonucu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Doğu sınırının kesinleşmesi",
+      "B": "Afgan-Türk dostluk antlaşmasının imzalanması",
+      "C": "Londra Konferansı'nın Türk tarafının istekleri kabul edilmeden dağılması",
+      "D": "Yunanistan'ın barış teklifinde bulunması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "II. İnönü Zaferi'nin ardından toplanan Londra Konferansı herhangi bir sonuç vermeden dağılmış ve bu Türk tarafının gücünü göstermiştir."
+  },
+  {
+    "id": 66,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Ankara Antlaşması – Fransa",
+    "yil": 2018,
+    "zorluk": "Orta",
+    "soru": "1921'de Türkiye ile Fransa arasında imzalanan Ankara Antlaşması neyi sağlamıştır?",
+    "siklar": {
+      "A": "Yunanistan'la barışı",
+      "B": "Güney Cephesi'nin kapanmasını ve Fransa'nın Millî Hareketi tanımasını",
+      "C": "TBMM'nin uluslararası alanda ilk kez tanınmasını",
+      "D": "Boğazların Türk kontrolüne geçmesini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ankara Antlaşması ile Fransa Güney Cephesi'nden çekilmiş, Anadolu'daki Millî Hareketi fiilen tanımış ve TBMM diplomatik bir zafer kazanmıştır."
+  },
+  {
+    "id": 67,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Sakarya Zaferi'nin Önemi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sakarya Meydan Muharebesi (Ağustos-Eylül 1921) hangi açıdan bir dönüm noktasıdır?",
+    "siklar": {
+      "A": "Savaşın fiilen bittiği muharebedir.",
+      "B": "Stratejik üstünlük Yunanistan'dan Türkiye'ye geçmiş; bu, Büyük Taarruz'un önünü açmıştır.",
+      "C": "Lozan müzakerelerini doğrudan başlatmıştır.",
+      "D": "TBMM'nin kurulmasına zemin hazırlamıştır."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sakarya Zaferi ile savunma savaşı biten Türk ordusu stratejik üstünlük kazanmış ve Büyük Taarruz için gerekli ortam hazırlanmıştır."
+  },
+  {
+    "id": 68,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Büyük Taarruz Tarihi",
+    "yil": 2017,
+    "zorluk": "Kolay",
+    "soru": "Büyük Taarruz ve Başkomutanlık Meydan Muharebesi'nin yapıldığı tarih aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Ağustos 1921",
+      "B": "Eylül 1921",
+      "C": "Ağustos-Eylül 1922",
+      "D": "Ekim 1923"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Büyük Taarruz 26 Ağustos 1922'de başlamış, 30 Ağustos'ta Başkomutanlık Meydan Muharebesi ile zaferle sonuçlanmıştır."
+  },
+  {
+    "id": 69,
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Lozan Öncesi Mudanya",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Mudanya Ateşkes Antlaşması'nın (11 Ekim 1922) Lozan Barış Antlaşması açısından önemi nedir?",
+    "siklar": {
+      "A": "Lozan'ın yerini almıştır.",
+      "B": "Ateşkesle silahlar susmuş; siyasi barışın çerçevesi Lozan'da çizilmiştir.",
+      "C": "Kapitülasyonları kaldırmıştır.",
+      "D": "Yunanistan'la sınır belirlenmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mudanya, askeri düzeyde ateşkesi sağlayan antlaşmadır. Kalıcı barış ve sınırlar, 24 Temmuz 1923'te imzalanan Lozan Antlaşması ile belirlenmiştir."
+  },
+  {
+    "id": 70,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Cumhuriyetin İlanı",
+    "yil": 2021,
+    "zorluk": "Kolay",
+    "soru": "Türkiye Cumhuriyeti hangi tarihte ilan edilmiştir?",
+    "siklar": {
+      "A": "23 Nisan 1920",
+      "B": "1 Kasım 1922",
+      "C": "29 Ekim 1923",
+      "D": "3 Mart 1924"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Türkiye Cumhuriyeti, 29 Ekim 1923'te Mustafa Kemal'in önerileriyle TBMM tarafından ilan edilmiştir."
+  },
+  {
+    "id": 71,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Hukuk Alanı – Medeni Kanun",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "1926 yılında kabul edilen Türk Medeni Kanunu hangi ülkenin medeni kanunundan uyarlanmıştır?",
+    "siklar": {
+      "A": "Fransa",
+      "B": "Almanya",
+      "C": "İsviçre",
+      "D": "İtalya"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Türk Medeni Kanunu, İsviçre Medeni Kanunu esas alınarak hazırlanmıştır."
+  },
+  {
+    "id": 72,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Ekonomi Alanı – Kabotaj",
+    "yil": 2019,
+    "zorluk": "Kolay",
+    "soru": "1926'da çıkarılan Kabotaj Kanunu ile ne amaçlanmıştır?",
+    "siklar": {
+      "A": "Yabancı sermayeyi ülkeye çekmek",
+      "B": "Türk kara ve deniz sularında taşımacılık hakkının yalnızca Türk gemicilere verilmesi",
+      "C": "Osmanlı borçlarını ödemek",
+      "D": "Tarım alanında reform yapmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kabotaj Kanunu ile Türk kıyıları ve iç suları arasındaki taşımacılık münhasıran Türk bayraklı gemilere tanınmış; ekonomik egemenlik pekiştirilmiştir."
+  },
+  {
+    "id": 73,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Kültür Alanı – Türk Tarih Kurumu",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "1931'de kurulan Türk Tarih Kurumu'nun temel amacı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Osmanlı tarihini yeniden yazmak",
+      "B": "Türk tarihini bilimsel yöntemlerle araştırmak ve Türk milletine milliyet bilinci kazandırmak",
+      "C": "Arap tarihini Türkçeye çevirmek",
+      "D": "Yabancı tarihçileri ülkeye davet etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Türk Tarih Kurumu, milli kimliğin güçlendirilmesi ve Türk tarihinin bilimsel düzeyde araştırılması amacıyla kurulmuştur."
+  },
+  {
+    "id": 74,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Kültür Alanı – Türk Dil Kurumu",
+    "yil": 2023,
+    "zorluk": "Kolay",
+    "soru": "1932'de kurulan Türk Dil Kurumu'nun amacı nedir?",
+    "siklar": {
+      "A": "Yabancı dillerin öğretimini yaygınlaştırmak",
+      "B": "Türk dilini yabancı etkilerden arındırıp geliştirmek",
+      "C": "Arapça ve Farsçayı müfredata koymak",
+      "D": "Osmanlıcayı korumak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Türk Dil Kurumu, Türkçeyi yabancı sözcüklerden arındırarak özleştirmek ve geliştirmek amacıyla kurulmuştur."
+  },
+  {
+    "id": 75,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Sosyal Alan – Soyadı Kanunu",
+    "yil": 2019,
+    "zorluk": "Kolay",
+    "soru": "1934 yılında kabul edilen Soyadı Kanunu ile aşağıdakilerden hangisi amaçlanmıştır?",
+    "siklar": {
+      "A": "Osmanlı hanedanını onurlandırmak",
+      "B": "Vatandaşlar arasında ayrım yaratmak",
+      "C": "Nüfus kayıtlarını düzenlemek ve toplumsal modernleşmeye katkı sağlamak",
+      "D": "Yabancıların Türkçe soyad almasını engellemek"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Soyadı Kanunu ile her Türk vatandaşı bir soyadı almak zorunda kılınmış; nüfus kayıtları düzenlenmiş ve modernleşme sürecine katkı sağlanmıştır."
+  },
+  {
+    "id": 76,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Eğitim – Köy Enstitüleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1940 yılında açılan Köy Enstitülerinin temel amacı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Şehirlerde eğitim kalitesini artırmak",
+      "B": "Köy çocuklarını öğretmen yetiştirerek kırsal kesime eğitim götürmek",
+      "C": "Yabancı uzmanları eğitmek",
+      "D": "Asker yetiştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Köy Enstitüleri, köy kökenli gençleri hem öğretmen hem de tarım ve zanaat alanında donanımlı bireyler olarak yetiştirmeyi hedeflemiştir."
+  },
+  {
+    "id": 77,
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Ekonomi – I. Beş Yıllık Kalkınma Planı",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "1934'te başlayan I. Beş Yıllık Sanayi Planı hangi anlayışın ürünüdür?",
+    "siklar": {
+      "A": "Liberal ekonomi",
+      "B": "Devletçilik",
+      "C": "Özel girişimcilik",
+      "D": "Tarım ekonomisi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Büyük Buhran'ın ardından devletin ekonomiye doğrudan müdahalesini öngören Devletçilik ilkesi çerçevesinde hazırlanan plan, ülkede ağır sanayinin temelini atmıştır."
+  },
+  {
+    "id": 78,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Serbest Cumhuriyet Fırkası",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "Serbest Cumhuriyet Fırkası (1930) neden kısa sürede kapatılmıştır?",
+    "siklar": {
+      "A": "Seçimleri kaybettiği için",
+      "B": "Rejim karşıtı ve irticai hareketlere zemin hazırlandığından endişe duyulduğu için",
+      "C": "Ekonomi polituikaları yetersiz kaldığı için",
+      "D": "Üye sayısı az olduğu için"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Serbest Cumhuriyet Fırkası, kısa sürede karşı cephelerin odak noktasına dönüşmesi üzerine kurucusu Fethi Okyar tarafından kapatılmıştır."
+  },
+  {
+    "id": 79,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Kadın Hakları – Belediye",
+    "yil": 2023,
+    "zorluk": "Kolay",
+    "soru": "Türk kadınına belediye seçimlerinde oy kullanma ve seçilme hakkı hangi yılda verilmiştir?",
+    "siklar": {
+      "A": "1923",
+      "B": "1926",
+      "C": "1930",
+      "D": "1934"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Türk kadınına belediye seçimlerinde seçme ve seçilme hakkı 1930 yılında tanınmıştır."
+  },
+  {
+    "id": 80,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Hukuk Reformu",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "1926'da Türk Ceza Kanunu'nun yürürlüğe girmesiyle aşağıdakilerden hangisi gerçekleşmiştir?",
+    "siklar": {
+      "A": "Şeriat hukuku güçlendirilmiştir.",
+      "B": "Çağdaş Batı hukuku ilkeleri Türk ceza sistemine uyarlanmıştır.",
+      "C": "Osmanlı hukuku aynen korunmuştur.",
+      "D": "Yalnızca ticaret hukuku düzenlenmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İtalyan Ceza Kanunu'ndan uyarlanan Türk Ceza Kanunu, Türk hukuk sistemini modernize etmiştir."
+  },
+  {
+    "id": 81,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Basın Özgürlüğü",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Tek parti dönemi (1923-1946) basın politikası değerlendirildiğinde aşağıdakilerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Basın tamamen özgürdü.",
+      "B": "Basın, genel olarak tek parti yönetiminin denetimine tabi tutulmuştu.",
+      "C": "Yabancı gazeteler serbestçe yayımlanıyordu.",
+      "D": "Muhalif basın destekleniyordu."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tek parti döneminde basın, hükümet çizgisinden çıkmamak şartıyla faaliyetini sürdürmekte; muhalif yayınlar denetim ve baskıyla karşılaşmaktaydı."
+  },
+  {
+    "id": 82,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "İzmir İktisat Kongresi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1923'te toplanan İzmir İktisat Kongresi'nin temel mesajı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Osmanlı ekonomik sistemi korunacaktır.",
+      "B": "Millî ekonomi politikasıyla bağımsız ve üretken bir ekonomi hedeflenmektedir.",
+      "C": "Yabancı sermayeye tam açılım sağlanacaktır.",
+      "D": "Tarım kaldırılıp sanayi ekonomisine geçilecektir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İzmir İktisat Kongresi, millî ekonomi anlayışını esas alarak sanayi, ticaret ve tarım gibi alanlarda ortak hedefler belirlemiştir."
+  },
+  {
+    "id": 83,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Çok Partili Geçiş – 1946",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de çok partili siyasi hayata geçişin kalıcı olarak gerçekleştiği yıl aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "1930",
+      "B": "1938",
+      "C": "1945",
+      "D": "1946"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Demokrat Parti'nin kurulduğu 1945 ve ilk çok partili seçimlerin yapıldığı 1946, çok partili hayata kalıcı geçişin dönüm noktası olarak kabul edilir."
+  },
+  {
+    "id": 84,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Demokrat Parti",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "1946'da kurulan Demokrat Parti hangi partiden ayrılan isimler tarafından kurulmuştur?",
+    "siklar": {
+      "A": "Terakkiperver Cumhuriyet Fırkası",
+      "B": "Cumhuriyet Halk Partisi",
+      "C": "Serbest Cumhuriyet Fırkası",
+      "D": "Liberal Parti"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Celal Bayar, Adnan Menderes, Refik Şevket İnce ve Fuat Köprülü gibi CHP'li isimler ayrılarak Demokrat Parti'yi kurmuştur."
+  },
+  {
+    "id": 85,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "1950 Seçimleri",
+    "yil": 2023,
+    "zorluk": "Kolay",
+    "soru": "Türkiye'de ilk serbest ve demokratik genel seçim hangi sonuçla tamamlanmıştır?",
+    "siklar": {
+      "A": "CHP iktidarı sürmüştür.",
+      "B": "Demokrat Parti büyük çoğunlukla iktidara gelmiştir.",
+      "C": "Askerî yönetim kurulmuştur.",
+      "D": "Seçimler iptal edilmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "14 Mayıs 1950 seçimlerinde Demokrat Parti ezici çoğunlukla kazanmış; Celal Bayar Cumhurbaşkanı, Adnan Menderes ise Başbakan olmuştur."
+  },
+  {
+    "id": 86,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Basın ve İletişim",
+    "yil": 2017,
+    "zorluk": "Orta",
+    "soru": "Cumhuriyetin ilk yıllarında kurulan Anadolu Ajansı'nın işlevi neydi?",
+    "siklar": {
+      "A": "Yabancı haber ajanslarıyla rekabet etmek",
+      "B": "Millî haberleri toplamak ve yaymak; ulusal iletişimi sağlamak",
+      "C": "Osmanlı haberlerini arşivlemek",
+      "D": "Radyo yayıncılığını yürütmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Anadolu Ajansı (AA), Millî Mücadele sırasında Ankara'da kurulmuş; millî haberleri toplayıp yayan, ulusal medyanın temel haber kaynağı olmuştur."
+  },
+  {
+    "id": 87,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Atatürk Dönemi Siyasi Yapısı",
+    "yil": 2020,
+    "zorluk": "Zor",
+    "soru": "Cumhuriyetin ilk yıllarında tek parti yönetiminin benimsenmesinin temel nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Demokrasinin reddedilmesi",
+      "B": "İnkılap sürecini ve millî birliği sağlam biçimde yönetme zorunluluğu",
+      "C": "Halkın çok partili sistemi istememesi",
+      "D": "Zaten çok partili bir sistem uygulanıyordu."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kuruluş sürecinde inkılapların hızlı biçimde hayata geçirilmesi ve millî birliğin korunması amacıyla tek parti sistemi benimsenmiştir."
+  },
+  {
+    "id": 88,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Laikleşme Süreci",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Laikleşme sürecinde gerçekleştirilen aşağıdaki adımların kronolojik sırası hangisidir?",
+    "siklar": {
+      "A": "Cumhuriyet İlanı → Halifeliğin Kaldırılması → Laikliğin Anayasaya Girmesi",
+      "B": "Halifeliğin Kaldırılması → Cumhuriyet İlanı → Laikliğin Anayasaya Girmesi",
+      "C": "Laikliğin Anayasaya Girmesi → Cumhuriyet İlanı → Halifeliğin Kaldırılması",
+      "D": "Cumhuriyet İlanı → Laikliğin Anayasaya Girmesi → Halifeliğin Kaldırılması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kronolojik sıra: Cumhuriyet İlanı (29 Ekim 1923) → Halifeliğin Kaldırılması (3 Mart 1924) → Laikliğin Anayasaya girmesi (1937)."
+  },
+  {
+    "id": 89,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Takvim ve Ölçüler",
+    "yil": 2016,
+    "zorluk": "Kolay",
+    "soru": "1925'te Miladi takvime geçilmesinin temel amacı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İslam kültürünü terk etmek",
+      "B": "Uluslararası ticaret ve iletişimi kolaylaştırmak",
+      "C": "Eski takvimi tamamen silmek",
+      "D": "Astronomi araştırmalarını geliştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hicri ve Rumi takvimlerin yerine Miladi takvimin benimsenmesi, ülkenin uluslararası ticaret ve diplomasideki uyumunu artırmayı amaçlamıştır."
+  },
+  {
+    "id": 90,
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Şapka Kanunu",
+    "yil": 2018,
+    "zorluk": "Orta",
+    "soru": "1925'te kabul edilen Şapka Kanunu'na bazı bölgelerde direniş gösterilmesinin temel nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Şapkaların pahalı olması",
+      "B": "Şapkanın Batı kültürünü simgelemesine karşı geleneksel-dinî muhalefetin varlığı",
+      "C": "Kanunun uygulanmaması",
+      "D": "İttihat-Terakki iktidarının devreye girmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bazı bölgelerde, Şapka Kanunu'nun geleneksel dini simgeleri (fes) kaldırması nedeniyle muhafazakâr-dini çevrelerden direniş gelmiştir."
+  },
+  {
+    "id": 91,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "İngilizlerle İlişkiler – Musul",
+    "yil": 2020,
+    "zorluk": "Orta",
+    "soru": "Türkiye ile İngiltere arasındaki Musul meselesi nasıl çözüme kavuşturulmuştur?",
+    "siklar": {
+      "A": "Musul Türkiye'ye bırakılmıştır.",
+      "B": "Milletler Cemiyeti kararıyla Musul İngiliz mandası altındaki Irak'a bırakılmıştır.",
+      "C": "Musul bağımsız bir devlet olmuştur.",
+      "D": "Musul meselesi hiç çözüme kavuşturulamamıştır."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "1926'da Milletler Cemiyeti kararıyla Musul, İngiliz yönetimindeki Irak'a bırakılmış; Türkiye bu kararı kabul etmek zorunda kalmıştır."
+  },
+  {
+    "id": 92,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Nüfus Mübadelesi",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Lozan Antlaşması çerçevesinde gerçekleştirilen Türk-Yunan nüfus mübadelesinin temel ölçütü neydi?",
+    "siklar": {
+      "A": "Dil",
+      "B": "Din",
+      "C": "Etnik köken",
+      "D": "Sosyal sınıf"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mübadelede dini kimlik esas alınmış; Anadolu Rumları ile Yunanistan Müslümanları yer değiştirmiştir."
+  },
+  {
+    "id": 93,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Milletler Cemiyeti",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "Türkiye, Milletler Cemiyeti'ne hangi yılda kabul edilmiştir?",
+    "siklar": {
+      "A": "1923",
+      "B": "1929",
+      "C": "1932",
+      "D": "1936"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Türkiye, 1932 yılında Milletler Cemiyeti'ne üye olmuş; bu, Türkiye'nin uluslararası arenada tanınmasını ve güvenilir bir ortak olarak kabul edilmesini simgelemiştir."
+  },
+  {
+    "id": 94,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Balkanlarda Barış Politikası",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Türkiye'nin Balkan Antantı'na katılmasının temel amacı nedir?",
+    "siklar": {
+      "A": "Balkan devletleri üzerinde hâkimiyet kurmak",
+      "B": "Balkanlar'da bölgesel barış ve güvenliği ortak güvence altına almak",
+      "C": "Sovyetler Birliği'ne karşı ittifak oluşturmak",
+      "D": "İtalya'ya karşı cephe açmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "1934'te Türkiye, Yunanistan, Romanya ve Yugoslavya'nın imzaladığı Balkan Antantı, Balkanlar'da statükonun korunmasını ve güvenliğin sağlanmasını amaçlamıştır."
+  },
+  {
+    "id": 95,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Sadabat Paktı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1937'de imzalanan Sadabat Paktı hangi devletleri kapsamaktadır?",
+    "siklar": {
+      "A": "Türkiye, Irak, İran, Afganistan",
+      "B": "Türkiye, Yunanistan, Romanya, Yugoslavya",
+      "C": "Türkiye, Suriye, Mısır, Libya",
+      "D": "Türkiye, Almanya, İtalya, Japonya"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Sadabat Paktı, Türkiye, Irak, İran ve Afganistan arasında imzalanmış; Orta Doğu'da bölgesel güvenliği amaçlamıştır."
+  },
+  {
+    "id": 96,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Türkiye'nin Dış Politika İlkeleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Atatürk döneminde Türk dış politikasının temel ilkesi olarak benimsenen 'Yurtta sulh, cihanda sulh' anlayışı hangi tutumu yansıtır?",
+    "siklar": {
+      "A": "Saldırgan bir dış politika anlayışı",
+      "B": "Barışçıl, statükocu ve revizyonist olmayan bir dış politika anlayışı",
+      "C": "Müttefik arayışına dayalı bir dış politika anlayışı",
+      "D": "Yalnızcılık (izolasyonizm) politikası"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu ilke; Türkiye'nin toprak taleplerini savaşla değil, diplomatik yollarla çözmeyi ve barışı hem içeride hem dışarıda korumayı öngören politikayı simgelemektedir."
+  },
+  {
+    "id": 97,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Lozan'dan Kalan Sorunlar",
+    "yil": 2019,
+    "zorluk": "Orta",
+    "soru": "Lozan Antlaşması sonrası çözüme kavuşturulması gereken BAşlıca sorun aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Misak-ı Millî sınırları",
+      "B": "Nüfus mübadelesi ve Boğazlar meselesi",
+      "C": "Osmanlı borçları ve kapitülasyonlar",
+      "D": "Hatay ve Boğazlar meselesi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Lozan'dan sonra Türkiye'nin dış politikasının öncelikleri arasında Hatay meselesi ve Boğazlar üzerindeki egemenliğin tam sağlanması yer almıştır."
+  },
+  {
+    "id": 98,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Türk-Sovyet İlişkileri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Millî Mücadele döneminde Türkiye-Sovyetler Birliği ilişkisinin temelini ne oluşturmuştur?",
+    "siklar": {
+      "A": "Ortak din bağı",
+      "B": "Ortak düşmana karşı çıkar birliği; Sovyetlerin TBMM'ye silah ve mali destek sağlaması",
+      "C": "Ekonomik ortaklık",
+      "D": "Askeri ittifak antlaşması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sovyetler Birliği, İtilaf Devletleri'ne karşı TBMM'yi desteklemiş; 1921'de Moskova Antlaşması imzalanmış ve Sovyetler Millî Mücadele'ye destek sağlamıştır."
+  },
+  {
+    "id": 99,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Milletler Cemiyeti ve Hatay",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Türkiye'nin Hatay'ı anavatana katma sürecinde izlediği yol aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Askeri işgal",
+      "B": "Diplomatik müzakereler, Milletler Cemiyeti çerçevesi ve nihayet özgür Hatay halkının oyu",
+      "C": "Fransa'ya savaş açma",
+      "D": "Sovyetlerin arabuluculuğu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Türkiye, Hatay meselesini önce Fransa ile müzakereler ve Milletler Cemiyeti kanalıyla ele almış; 1939'da yapılan referandumla Hatay halkı Türkiye'ye katılmayı seçmiştir."
+  },
+  {
+    "id": 100,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Boğazlar Meselesi – Lozan",
+    "yil": 2018,
+    "zorluk": "Orta",
+    "soru": "Lozan Antlaşması'nda Boğazlar için öngörülen düzenleme neydi?",
+    "siklar": {
+      "A": "Boğazlar Türkiye'nin tam denetiminde bırakılmıştır.",
+      "B": "Boğazlar uluslararası bir komisyonun denetimine bırakılmış; Türkiye asker konuşlandıramayacaktır.",
+      "C": "Boğazlar kapatılmıştır.",
+      "D": "Boğazlar İngiltere'ye devredilmiştir."
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Lozan'da Boğazlar, askersizleştirilmiş ve uluslararası Boğazlar Komisyonu'nun yönetimine bırakılmıştır. Bu durum Montrö (1936) ile düzeltilmiştir."
+  },
+  {
+    "id": 101,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "İtalya'nın Tehdidi",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "1930'larda büyüyen İtalyan yayılmacılığı karşısında Türkiye'nin temel dış politika refleksi ne olmuştur?",
+    "siklar": {
+      "A": "İtalya ile ittifak arayışı",
+      "B": "Bölgesel paktlar (Balkan ve Sadabat) oluşturarak kolektif güvenlik anlayışına sarılmak",
+      "C": "Almanya ile ittifak kurmak",
+      "D": "Tarafsızlık politikasını terk etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Türkiye, İtalya'nın Akdeniz'deki yayılmacı emellerine karşı hem Balkan Antantı hem de Sadabat Paktı çerçevesinde kolektif güvenlik anlayışını benimsemiştir."
+  },
+  {
+    "id": 102,
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Cumhuriyetin Dış Tanınırlığı",
+    "yil": 2016,
+    "zorluk": "Orta",
+    "soru": "Türkiye Cumhuriyeti'nin uluslararası alanda tam olarak tanınmasını sağlayan antlaşma hangisidir?",
+    "siklar": {
+      "A": "Gümrü Antlaşması",
+      "B": "Kars Antlaşması",
+      "C": "Ankara Antlaşması",
+      "D": "Lozan Barış Antlaşması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "24 Temmuz 1923'te imzalanan Lozan Barış Antlaşması, Türkiye Cumhuriyeti'nin uluslararası toplum tarafından resmen tanınmasını sağlamıştır."
   }
 ]

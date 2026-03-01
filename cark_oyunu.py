@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-LGS İnkılap Tarihi Çark Oyunu
-==============================
-Python / Tkinter ile çalışan masaüstü çark oyunu.
-Çarkı çevir → puan belirle → soruyu cevapla → puan kazan!
-
-Çalıştırma:
-    python cark_oyunu.py
+LGS İnkılap Tarihi Çark Oyunu  –  v2.0
+========================================
+Yenilikler:
+  • 100+ Soru (6 ünite)
+  • 45 saniyelik geri sayım zamanlayıcısı
+  • Puanlama: Doğru +çark+10 bonus / Yanlış veya süre dolunca -5
+  • Ünite bazlı istatistik / özet ekranı
+  • Enerji Teması (Sarı / Kırmızı / Lacivert)
 """
 
 import json
@@ -19,17 +20,51 @@ import tkinter as tk
 from tkinter import font as tkfont
 from typing import Optional, Dict, List
 
+# ──────────────────────────────────────────────
+# KAYNAK YOLU
+# ──────────────────────────────────────────────
 
 def resource_path(relative_path: str) -> str:
-    """PyInstaller --onefile ile uyumlu kaynak dosya yolu döndürür."""
     base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base, relative_path)
 
 # ──────────────────────────────────────────────
-# TEMA
+# TEMALAR
 # ──────────────────────────────────────────────
 
 THEMES = {
+    "energy": {
+        "bg":            "#1a0a00",
+        "bg_secondary":  "#2b1200",
+        "bg_card":       "#1f1008",
+        "fg":            "#fff8ee",
+        "fg_dim":        "#c8a97a",
+        "accent":        "#e8a020",
+        "accent_hover":  "#ffbe45",
+        "success":       "#39d068",
+        "error":         "#ff3b3b",
+        "warning":       "#ff8800",
+        "border":        "#4a2800",
+        "btn_bg":        "#cc2200",
+        "btn_fg":        "#ffffff",
+        "btn_hover":     "#ff3a1a",
+        "skip_bg":       "#3a1a00",
+        "skip_fg":       "#c8a97a",
+        "option_bg":     "#251205",
+        "option_fg":     "#fff8ee",
+        "option_hover":  "#3a1e08",
+        "option_sel":    "#4a2200",
+        "option_sel_border": "#e8a020",
+        "score_bg":      "#130800",
+        "timer_normal":  "#e8a020",
+        "timer_warn":    "#ff8800",
+        "timer_danger":  "#ff3b3b",
+        "wheel_colors": [
+            "#e8a020", "#cc2200", "#f5d040", "#aa1800",
+            "#ffbe45", "#8b0000", "#ffd060", "#b83000",
+            "#e89000", "#c01500",
+        ],
+    },
     "dark": {
         "bg":            "#181c24",
         "bg_secondary":  "#232830",
@@ -53,6 +88,9 @@ THEMES = {
         "option_sel":    "#3d4a6a",
         "option_sel_border": "#6c8cff",
         "score_bg":      "#1e2430",
+        "timer_normal":  "#6c8cff",
+        "timer_warn":    "#ffb347",
+        "timer_danger":  "#ff6b7a",
         "wheel_colors": [
             "#6c8cff", "#ff6b7a", "#4cdf8b", "#ffb347", "#c77dff",
             "#ff8fab", "#64dfdf", "#ffd166", "#a5b4fc", "#f472b6",
@@ -81,6 +119,9 @@ THEMES = {
         "option_sel":    "#dbe4ff",
         "option_sel_border": "#4f6ef7",
         "score_bg":      "#e8ecf4",
+        "timer_normal":  "#4f6ef7",
+        "timer_warn":    "#d97706",
+        "timer_danger":  "#dc2626",
         "wheel_colors": [
             "#4f6ef7", "#ef4444", "#22c55e", "#f59e0b", "#a855f7",
             "#ec4899", "#06b6d4", "#eab308", "#818cf8", "#f472b6",
@@ -89,99 +130,117 @@ THEMES = {
 }
 
 # ──────────────────────────────────────────────
-# PUAN DİLİMLERİ
+# ÇARK DİLİMLERİ  (int = puan, str = özel)
 # ──────────────────────────────────────────────
 
-POINT_VALUES  = [10, 20, 30, 40, 50, 10, 20, 30, 40, 50]
-SLICE_COUNT   = len(POINT_VALUES)
-SLICE_ANGLE   = 360 / SLICE_COUNT          # 36°
+# 13 dilim: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 + 1 İFLAS + 1 PAS + 1 X2
+WHEEL_SLICES = [10, 20, "PAS", 30, 40, "X2", 50, 60, 70, 80, "İFLAS", 90, 100]
+SLICE_COUNT  = len(WHEEL_SLICES)
+SLICE_ANGLE  = 360 / SLICE_COUNT          # ~27.69° per slice
+
+# Özel dilim renkleri (tema bağımsız)
+SLICE_SPECIAL_COLOR = {
+    "İFLAS": "#0d0000",   # siyaha yakın kırmızı
+    "PAS":   "#0a1a2a",   # koyu çelik mavi
+    "X2":    "#5a4000",   # koyu altın
+}
+SLICE_SPECIAL_LABEL = {
+    "İFLAS": "💀\nİFLAS",
+    "PAS":   "⏸\nPAS",
+    "X2":    "⚡\nX2",
+}
+
+TIMER_SECONDS   = 45
+BONUS_CORRECT   = 10
+PENALTY_WRONG   = 5
 
 # ──────────────────────────────────────────────
 # YARDIMCI
 # ──────────────────────────────────────────────
 
-def load_questions(path: str) -> list[dict]:
-    """sorular.json dosyasını oku."""
+def load_questions(path: str) -> list:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-
 def ease_out_cubic(t: float) -> float:
-    """0-1 arası değer alır, yavaşlayarak durma eğrisi."""
     return 1 - (1 - t) ** 3
-
 
 # ──────────────────────────────────────────────
 # ANA UYGULAMA
 # ──────────────────────────────────────────────
 
 class CarkOyunu(tk.Tk):
-    """LGS İnkılap Tarihi Çark Oyunu ana pencere."""
+    STATE_IDLE      = "idle"
+    STATE_SPINNING  = "spinning"
+    STATE_QUESTION  = "question"
+    STATE_ANSWERED  = "answered"
 
-    # ── durum sabitleri ──
-    STATE_IDLE       = "idle"        # çark döndürülmeyi bekliyor
-    STATE_SPINNING   = "spinning"    # çark dönüyor
-    STATE_QUESTION   = "question"    # soru gösteriliyor
-    STATE_ANSWERED   = "answered"    # cevap verildi
-
-    ANIM_DURATION_MS = 4000          # toplam animasyon süresi (ms)
+    ANIM_DURATION_MS = 4000
     ANIM_FPS         = 60
 
     def __init__(self):
         super().__init__()
+        self.title("LGS İnkılap Tarihi – Çark Oyunu  v2")
+        self.minsize(1100, 720)
+        self.geometry("1240x780")
+        self.configure(bg="#1a0a00")
 
-        # ── pencereyi yapılandır ──
-        self.title("LGS İnkılap Tarihi – Çark Oyunu")
-        self.minsize(1100, 700)
-        self.geometry("1200x750")
-        self.configure(bg="#181c24")
-
-        # ── tema ──
-        self.current_theme = "dark"
+        # Tema
+        self.current_theme = "energy"
         self.t = THEMES[self.current_theme]
 
-        # ── fontlar ──
-        self.base_family = "Segoe UI" if os.name == "nt" else "Helvetica"
-        self.f_title  = tkfont.Font(family=self.base_family, size=18, weight="bold")
-        self.f_normal = tkfont.Font(family=self.base_family, size=13)
-        self.f_small  = tkfont.Font(family=self.base_family, size=11)
-        self.f_big    = tkfont.Font(family=self.base_family, size=15, weight="bold")
-        self.f_option = tkfont.Font(family=self.base_family, size=13)
-        self.f_score  = tkfont.Font(family=self.base_family, size=22, weight="bold")
-        self.f_wheel  = tkfont.Font(family=self.base_family, size=14, weight="bold")
-        self.f_icon   = tkfont.Font(family=self.base_family, size=18)
+        # Fontlar
+        fam = "Segoe UI" if os.name == "nt" else "Helvetica"
+        self.f_title  = tkfont.Font(family=fam, size=17, weight="bold")
+        self.f_normal = tkfont.Font(family=fam, size=13)
+        self.f_small  = tkfont.Font(family=fam, size=11)
+        self.f_big    = tkfont.Font(family=fam, size=14, weight="bold")
+        self.f_option = tkfont.Font(family=fam, size=12)
+        self.f_score  = tkfont.Font(family=fam, size=22, weight="bold")
+        self.f_wheel  = tkfont.Font(family=fam, size=14, weight="bold")
+        self.f_icon   = tkfont.Font(family=fam, size=18)
+        self.f_timer  = tkfont.Font(family=fam, size=20, weight="bold")
 
-        # ── soru havuzu ──
+        # Soru havuzu
         self.all_questions = load_questions(resource_path("sorular.json"))
         self.remaining: List[dict] = []
         self._refill_pool()
 
-        # ── oyun durumu ──
-        self.state         = self.STATE_IDLE
-        self.total_score   = 0
-        self.correct_count = 0
-        self.wrong_count   = 0
-        self.solved_count  = 0
+        # Oyun durumu
+        self.state          = self.STATE_IDLE
+        self.total_score    = 0
+        self.correct_count  = 0
+        self.wrong_count    = 0
+        self.solved_count   = 0
         self.current_q: Optional[dict] = None
         self.current_points = 0
         self.selected_opt: Optional[str] = None
+        self.x2_mode      = False   # X2 dilimi aktif mi?
 
-        # ── animasyon ──
-        self.anim_id: Optional[str] = None
-        self.wheel_angle   = 0.0   # çarkın mevcut açısı (derece)
-        self.target_angle  = 0.0
-        self.anim_start    = 0.0
-        self.anim_elapsed  = 0
+        # Ünite istatistikleri  {unite_adi: {"d": dogru_sayisi, "y": yanlis_sayisi}}
+        self.unite_stats: Dict[str, Dict[str, int]] = {}
 
-        # ── UI kur ──
+        # Animasyon
+        self.anim_id: Optional[str]  = None
+        self.wheel_angle  = 0.0
+        self.target_angle = 0.0
+        self.anim_start_angle = 0.0
+        self.total_rotation   = 0.0
+        self.anim_elapsed     = 0
+
+        # Zamanlayıcı
+        self.timer_id: Optional[str] = None
+        self.timer_remaining = TIMER_SECONDS
+
+        # UI
         self._build_ui()
         self._apply_theme()
         self._draw_wheel()
         self._show_idle_panel()
 
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
     # SORU HAVUZU
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _refill_pool(self):
         self.remaining = list(self.all_questions)
@@ -192,13 +251,13 @@ class CarkOyunu(tk.Tk):
             self._refill_pool()
         return self.remaining.pop()
 
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
     # UI OLUŞTURMA
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _build_ui(self):
-        # ── Üst bar ──
-        self.top_bar = tk.Frame(self, height=52)
+        # Üst bar
+        self.top_bar = tk.Frame(self, height=54)
         self.top_bar.pack(fill="x", side="top")
         self.top_bar.pack_propagate(False)
 
@@ -208,37 +267,46 @@ class CarkOyunu(tk.Tk):
         )
         self.lbl_title.pack(side="left", fill="y")
 
+        # Tema döngüsü butonu
         self.btn_theme = tk.Label(
-            self.top_bar, text="🌙", font=self.f_icon, cursor="hand2",
-            padx=18, pady=6
+            self.top_bar, text="🎨", font=self.f_icon,
+            cursor="hand2", padx=14, pady=6
         )
         self.btn_theme.pack(side="right", fill="y")
-        self.btn_theme.bind("<Button-1>", lambda _: self._toggle_theme())
+        self.btn_theme.bind("<Button-1>", lambda _: self._cycle_theme())
 
+        # Sıfırla
         self.btn_reset = tk.Label(
-            self.top_bar, text="↻ Sıfırla", font=self.f_normal, cursor="hand2",
-            padx=16, pady=6
+            self.top_bar, text="↻ Sıfırla", font=self.f_normal,
+            cursor="hand2", padx=14, pady=6
         )
         self.btn_reset.pack(side="right", fill="y")
         self.btn_reset.bind("<Button-1>", lambda _: self._reset_game())
 
-        # ── Ana içerik ──
+        # İstatistik
+        self.btn_stats = tk.Label(
+            self.top_bar, text="📊 İstatistik", font=self.f_normal,
+            cursor="hand2", padx=14, pady=6
+        )
+        self.btn_stats.pack(side="right", fill="y")
+        self.btn_stats.bind("<Button-1>", lambda _: self._show_stats_panel())
+
+        # Ana içerik
         self.main_frame = tk.Frame(self)
         self.main_frame.pack(fill="both", expand=True, padx=12, pady=(0, 12))
 
         # SOL – Çark alanı
-        self.left_frame = tk.Frame(self.main_frame, width=460)
+        self.left_frame = tk.Frame(self.main_frame, width=440)
         self.left_frame.pack(side="left", fill="both", padx=(0, 8))
         self.left_frame.pack_propagate(False)
 
-        self.canvas_size = 400
+        self.canvas_size = 390
         self.wheel_canvas = tk.Canvas(
             self.left_frame, width=self.canvas_size, height=self.canvas_size,
             highlightthickness=0
         )
-        self.wheel_canvas.pack(pady=(12, 8), padx=10)
+        self.wheel_canvas.pack(pady=(10, 6), padx=10)
 
-        # İşaretçi (pointer) canvas'ın üstünde
         self.pointer_canvas = tk.Canvas(
             self.left_frame, width=40, height=28, highlightthickness=0
         )
@@ -247,23 +315,21 @@ class CarkOyunu(tk.Tk):
             relx=0.5, rely=0.0, anchor="s", y=6
         )
 
-        # Çarkı Çevir butonu
         self.btn_spin = tk.Label(
             self.left_frame, text="🎯  Çarkı Çevir", font=self.f_big,
             cursor="hand2", padx=28, pady=10, relief="flat"
         )
-        self.btn_spin.pack(pady=(4, 8))
+        self.btn_spin.pack(pady=(4, 6))
         self.btn_spin.bind("<Button-1>", lambda _: self._spin_wheel())
 
         # Puan göstergesi
         self.score_frame = tk.Frame(self.left_frame)
-        self.score_frame.pack(fill="x", padx=20, pady=(4, 8))
+        self.score_frame.pack(fill="x", padx=16, pady=(2, 4))
 
         self.lbl_score_title = tk.Label(
             self.score_frame, text="TOPLAM PUAN", font=self.f_small
         )
         self.lbl_score_title.pack()
-
         self.lbl_score = tk.Label(
             self.score_frame, text="0", font=self.f_score
         )
@@ -271,7 +337,7 @@ class CarkOyunu(tk.Tk):
 
         # İstatistik satırı
         self.stat_frame = tk.Frame(self.left_frame)
-        self.stat_frame.pack(fill="x", padx=20, pady=(0, 6))
+        self.stat_frame.pack(fill="x", padx=16, pady=(0, 4))
 
         self.lbl_correct = tk.Label(self.stat_frame, text="✓ 0", font=self.f_normal)
         self.lbl_correct.pack(side="left", expand=True)
@@ -280,86 +346,104 @@ class CarkOyunu(tk.Tk):
         self.lbl_solved = tk.Label(self.stat_frame, text="📝 0", font=self.f_normal)
         self.lbl_solved.pack(side="left", expand=True)
 
-        # SAĞ – Soru paneli
+        # SAĞ – Soru paneli (kaydırılabilir)
         self.right_frame = tk.Frame(self.main_frame)
         self.right_frame.pack(side="left", fill="both", expand=True, padx=(8, 0))
 
-        # Sağ panel içi – kaydırılabilir alan yerine basit frame
-        self.question_panel = tk.Frame(self.right_frame)
-        self.question_panel.pack(fill="both", expand=True, padx=10, pady=10)
+        self.q_canvas = tk.Canvas(self.right_frame, highlightthickness=0)
+        self.q_scrollbar = tk.Scrollbar(self.right_frame, orient="vertical",
+                                        command=self.q_canvas.yview)
+        self.q_canvas.configure(yscrollcommand=self.q_scrollbar.set)
+        self.q_scrollbar.pack(side="right", fill="y")
+        self.q_canvas.pack(side="left", fill="both", expand=True)
 
-    # ──────────────────────────────────────────
+        self.question_panel = tk.Frame(self.q_canvas)
+        self._qp_window = self.q_canvas.create_window(
+            (0, 0), window=self.question_panel, anchor="nw"
+        )
+        self.question_panel.bind("<Configure>", self._on_qpanel_configure)
+        self.q_canvas.bind("<Configure>", self._on_qcanvas_configure)
+        # Mouse wheel scroll
+        self.q_canvas.bind_all("<MouseWheel>", self._on_mousewheel)
+
+    def _on_qpanel_configure(self, _):
+        self.q_canvas.configure(scrollregion=self.q_canvas.bbox("all"))
+
+    def _on_qcanvas_configure(self, event):
+        self.q_canvas.itemconfig(self._qp_window, width=event.width)
+
+    def _on_mousewheel(self, event):
+        self.q_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    # ─────────────────────────────────────────
     # ÇARK ÇİZİMİ
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _draw_wheel(self):
         c = self.wheel_canvas
         c.delete("all")
         cx = cy = self.canvas_size / 2
-        r = self.canvas_size / 2 - 16
+        r = self.canvas_size / 2 - 14
 
-        for i in range(SLICE_COUNT):
+        num_color_idx = 0  # sadece puan dilimleri için renk döngüsü
+        for i, sv in enumerate(WHEEL_SLICES):
             start = i * SLICE_ANGLE + self.wheel_angle
-            color = self.t["wheel_colors"][i % len(self.t["wheel_colors"])]
+            is_special = isinstance(sv, str)
+            if is_special:
+                color = SLICE_SPECIAL_COLOR[sv]
+            else:
+                color = self.t["wheel_colors"][num_color_idx % len(self.t["wheel_colors"])]
+                num_color_idx += 1
             c.create_arc(
                 cx - r, cy - r, cx + r, cy + r,
                 start=start, extent=SLICE_ANGLE,
                 fill=color, outline=self.t["bg"], width=2,
                 style="pieslice"
             )
-            # Metin (puan)
             mid = math.radians(start + SLICE_ANGLE / 2)
             tx = cx + (r * 0.65) * math.cos(mid)
             ty = cy - (r * 0.65) * math.sin(mid)
-            c.create_text(
-                tx, ty, text=str(POINT_VALUES[i]),
-                font=self.f_wheel, fill="#ffffff"
-            )
+            if is_special:
+                label = SLICE_SPECIAL_LABEL[sv]
+                c.create_text(tx, ty, text=label,
+                              font=self.f_small, fill="#ffffff",
+                              justify="center")
+            else:
+                c.create_text(tx, ty, text=str(sv),
+                              font=self.f_wheel, fill="#ffffff")
 
-        # Merkez daire
         c.create_oval(
-            cx - 28, cy - 28, cx + 28, cy + 28,
-            fill=self.t["bg_secondary"], outline=self.t["border"], width=2
+            cx - 26, cy - 26, cx + 26, cy + 26,
+            fill=self.t["bg_secondary"], outline=self.t["accent"], width=2
         )
-        c.create_text(cx, cy, text="LGS", font=self.f_small, fill=self.t["fg_dim"])
-
-        # Pointer çiz
+        c.create_text(cx, cy, text="LGS", font=self.f_small, fill=self.t["accent"])
         self._draw_pointer()
 
     def _draw_pointer(self):
         pc = self.pointer_canvas
         pc.delete("all")
-        # Aşağı bakan üçgen
-        pc.create_polygon(
-            8, 2,  32, 2,  20, 26,
-            fill=self.t["error"], outline=self.t["bg"], width=1
-        )
+        pc.create_polygon(8, 2, 32, 2, 20, 26,
+                          fill=self.t["error"], outline=self.t["bg"], width=1)
 
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
     # ÇARK ANİMASYONU
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _spin_wheel(self):
         if self.state != self.STATE_IDLE:
             return
-
         self.state = self.STATE_SPINNING
         self.btn_spin.config(cursor="arrow")
 
-        # Hedef: en az 5 tur + rastgele dilim
-        extra_turns = random.randint(5, 9) * 360
-        target_slice = random.randint(0, SLICE_COUNT - 1)
-        # Çarkın üstte durması: 90° referans
-        # Dilimin ortası: target_slice * SLICE_ANGLE + SLICE_ANGLE/2
-        # Çark açısı + dilim ortası = 90 => wheel_angle = 90 - mid
-        slice_mid = target_slice * SLICE_ANGLE + SLICE_ANGLE / 2
-        final_angle = 90 - slice_mid
-        # Toplam dönüş miktarı
+        extra_turns    = random.randint(5, 9) * 360
+        target_slice   = random.randint(0, SLICE_COUNT - 1)
+        slice_mid      = target_slice * SLICE_ANGLE + SLICE_ANGLE / 2
+        final_angle    = 90 - slice_mid
         self.anim_start_angle = self.wheel_angle
-        self.total_rotation = extra_turns + (final_angle - (self.wheel_angle % 360) + 360) % 360
-        self.target_angle = self.anim_start_angle + self.total_rotation
-        self.target_slice = target_slice
-        self.anim_elapsed = 0
+        self.total_rotation   = extra_turns + (final_angle - (self.wheel_angle % 360) + 360) % 360
+        self.target_angle     = self.anim_start_angle + self.total_rotation
+        self.target_slice     = target_slice
+        self.anim_elapsed     = 0
 
         self._clear_right_panel()
         self._show_spinning_panel()
@@ -369,11 +453,9 @@ class CarkOyunu(tk.Tk):
         dt = 1000 / self.ANIM_FPS
         self.anim_elapsed += dt
         progress = min(self.anim_elapsed / self.ANIM_DURATION_MS, 1.0)
-        eased = ease_out_cubic(progress)
-
+        eased    = ease_out_cubic(progress)
         self.wheel_angle = self.anim_start_angle + self.total_rotation * eased
         self._draw_wheel()
-
         if progress < 1.0:
             self.anim_id = self.after(int(dt), self._animate_step)
         else:
@@ -383,141 +465,229 @@ class CarkOyunu(tk.Tk):
             self._on_spin_complete()
 
     def _on_spin_complete(self):
-        self.current_points = POINT_VALUES[self.target_slice]
-        self.current_q = self._pick_question()
+        self.btn_spin.config(cursor="hand2")
+        sv = WHEEL_SLICES[self.target_slice]
+
+        if sv == "İFLAS":
+            # Tüm puanı sıfırla
+            self.total_score = 0
+            self._update_stats()
+            self.state = self.STATE_IDLE
+            self._clear_right_panel()
+            self._show_special_panel(
+                "💀  İFLAS!",
+                "Tüm puanlarınız sıfırlandı!",
+                self.t["error"]
+            )
+            return
+
+        if sv == "PAS":
+            # Soru yok, puan değişmiyor
+            self.state = self.STATE_IDLE
+            self._clear_right_panel()
+            self._show_special_panel(
+                "⏸  PAS!",
+                "Bu turu geçtiniz. Puan değişmedi.",
+                self.t["fg_dim"]
+            )
+            return
+
+        # X2 veya normal puan
+        if sv == "X2":
+            self.x2_mode        = True
+            self.current_points = 0   # X2'de çark puanı kullanılmaz
+        else:
+            self.x2_mode        = False
+            self.current_points = sv
+
+        self.current_q    = self._pick_question()
         self.selected_opt = None
-        self.state = self.STATE_QUESTION
+        self.state        = self.STATE_QUESTION
         self._clear_right_panel()
         self._show_question_panel()
-        self.btn_spin.config(cursor="hand2")
+        self._start_timer()
 
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
+    # ZAMANLAYICI
+    # ─────────────────────────────────────────
+
+    def _start_timer(self):
+        self._stop_timer()
+        self.timer_remaining = TIMER_SECONDS
+        self._update_timer_display()
+        self.timer_id = self.after(1000, self._tick_timer)
+
+    def _tick_timer(self):
+        if self.state != self.STATE_QUESTION:
+            return
+        self.timer_remaining -= 1
+        self._update_timer_display()
+        if self.timer_remaining <= 0:
+            self._time_expired()
+        else:
+            self.timer_id = self.after(1000, self._tick_timer)
+
+    def _stop_timer(self):
+        if self.timer_id:
+            self.after_cancel(self.timer_id)
+            self.timer_id = None
+
+    def _update_timer_display(self):
+        if not hasattr(self, "lbl_timer") or not self.lbl_timer.winfo_exists():
+            return
+        secs = self.timer_remaining
+        t = self.t
+        if secs > 20:
+            color = t["timer_normal"]
+        elif secs > 10:
+            color = t["timer_warn"]
+        else:
+            color = t["timer_danger"]
+
+        self.lbl_timer.config(text=f"🕐 {secs:02d}", fg=color)
+        # Progress bar
+        if hasattr(self, "timer_bar_fill") and self.timer_bar_fill.winfo_exists():
+            pct = secs / TIMER_SECONDS
+            bar_w = int(self.timer_bar_bg.winfo_width() * pct)
+            if bar_w > 0:
+                self.timer_bar_fill.place(relx=0, rely=0, relheight=1, width=bar_w)
+            self.timer_bar_fill.config(bg=color)
+
+    def _time_expired(self):
+        """Süre doldu → yanlış say, ceza ver."""
+        self._stop_timer()
+        self.state = self.STATE_ANSWERED
+        q = self.current_q
+
+        self.wrong_count  += 1
+        self.solved_count += 1
+        self.total_score  -= PENALTY_WRONG
+        self._record_unite(q["unite"], False)
+        self._update_stats()
+        self._show_feedback(False, q["dogru_cevap"], timeout=True)
+
+    # ─────────────────────────────────────────
+    # ÜNİTE KAYIT
+    # ─────────────────────────────────────────
+
+    def _record_unite(self, unite: str, correct: bool):
+        if unite not in self.unite_stats:
+            self.unite_stats[unite] = {"d": 0, "y": 0}
+        if correct:
+            self.unite_stats[unite]["d"] += 1
+        else:
+            self.unite_stats[unite]["y"] += 1
+
+    # ─────────────────────────────────────────
     # SAĞ PANEL: DURUMLAR
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _clear_right_panel(self):
         for w in self.question_panel.winfo_children():
             w.destroy()
+        self.q_canvas.yview_moveto(0)
 
     def _show_idle_panel(self):
-        """Başlangıç: çark döndürülmemiş."""
         self._clear_right_panel()
         f = self.question_panel
         t = self.t
 
-        spacer = tk.Frame(f, height=80, bg=t["bg_card"])
-        spacer.pack()
-
-        icon = tk.Label(f, text="🎡", font=tkfont.Font(size=48), bg=t["bg_card"], fg=t["fg"])
-        icon.pack(pady=(10, 4))
-
-        lbl = tk.Label(
-            f, text="Çarkı çevirerek\nbir puan belirleyin!",
-            font=self.f_big, bg=t["bg_card"], fg=t["fg_dim"],
-            justify="center"
-        )
-        lbl.pack(pady=10)
-
-        hint = tk.Label(
-            f, text="Sol taraftaki 'Çarkı Çevir' butonuna tıklayın.",
-            font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]
-        )
-        hint.pack()
+        tk.Frame(f, height=80, bg=t["bg_card"]).pack()
+        tk.Label(f, text="🎡", font=tkfont.Font(size=52),
+                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(10, 4))
+        tk.Label(f, text="Çarkı çevirerek\nbir puan belirleyin!",
+                 font=self.f_big, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=10)
+        tk.Label(f, text=f"Soru havuzu: {len(self.all_questions)} soru  |  6 ünite",
+                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack()
+        tk.Label(f, text="Doğru: +çark puanı +10  |  Yanlış/Süre: −5",
+                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(4, 0))
 
     def _show_spinning_panel(self):
-        """Çark dönerken sağda gösterilen mesaj."""
         self._clear_right_panel()
         f = self.question_panel
         t = self.t
-
-        spacer = tk.Frame(f, height=100, bg=t["bg_card"])
-        spacer.pack()
-
-        lbl = tk.Label(
-            f, text="⏳  Çark dönüyor…",
-            font=self.f_big, bg=t["bg_card"], fg=t["accent"]
-        )
-        lbl.pack(pady=20)
+        tk.Frame(f, height=120, bg=t["bg_card"]).pack()
+        tk.Label(f, text="⏳  Çark dönüyor…",
+                 font=self.f_big, bg=t["bg_card"], fg=t["accent"]).pack(pady=20)
 
     def _show_question_panel(self):
-        """Soru göster: meta + soru + şıklar + butonlar."""
         f = self.question_panel
         t = self.t
         q = self.current_q
 
-        # ── Puan banner ──
-        pts_frame = tk.Frame(f, bg=t["accent"], height=40)
-        pts_frame.pack(fill="x", pady=(0, 10))
-        pts_frame.pack_propagate(False)
-        tk.Label(
-            pts_frame,
-            text=f"🎯  Bu soru  {self.current_points} puan  değerinde!",
-            font=self.f_big, bg=t["accent"], fg="#ffffff"
-        ).pack(expand=True)
+        # ── Puan + Timer banner ──
+        if self.x2_mode:
+            banner_bg  = "#7a5a00"
+            banner_txt = "⚡  X2 – Doğru cevaplarsan TOPLAM PUANIN 2 KATINA çıkar!"
+        else:
+            banner_bg  = t["btn_bg"]
+            banner_txt = f"🎯  Bu soru  {self.current_points}  puan değerinde!"
 
-        # ── Meta bilgiler ──
+        banner = tk.Frame(f, bg=banner_bg, height=46)
+        banner.pack(fill="x")
+        banner.pack_propagate(False)
+
+        tk.Label(banner,
+                 text=banner_txt,
+                 font=self.f_big, bg=banner_bg, fg="#ffffff").pack(side="left", padx=14, expand=True)
+
+        self.lbl_timer = tk.Label(banner, text=f"🕐 {TIMER_SECONDS:02d}",
+                                  font=self.f_timer, bg=t["btn_bg"], fg=t["timer_normal"])
+        self.lbl_timer.pack(side="right", padx=14)
+
+        # Timer progress bar
+        self.timer_bar_bg = tk.Frame(f, bg=t["border"], height=5)
+        self.timer_bar_bg.pack(fill="x")
+        self.timer_bar_fill = tk.Frame(self.timer_bar_bg, bg=t["timer_normal"], height=5)
+        self.timer_bar_fill.place(relx=0, rely=0, relwidth=1, relheight=1)
+
+        # ── Meta ──
         meta_frame = tk.Frame(f, bg=t["bg_card"])
-        meta_frame.pack(fill="x", padx=6, pady=(0, 6))
-
-        meta_texts = [
-            ("📚", q["unite"]),
-            ("📌", q["konu"]),
-            ("📅", str(q["yil"])),
-            ("⚡", q["zorluk"]),
-        ]
-        for icon_c, val in meta_texts:
+        meta_frame.pack(fill="x", padx=6, pady=(6, 4))
+        for icon_c, val in [("📚", q["unite"]), ("📌", q["konu"]),
+                             ("⚡", q["zorluk"])]:
             row = tk.Frame(meta_frame, bg=t["bg_card"])
-            row.pack(fill="x", pady=2, padx=6)
-            tk.Label(row, text=icon_c, font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"], width=3).pack(side="left")
-            tk.Label(row, text=val, font=self.f_normal, bg=t["bg_card"], fg=t["fg"], anchor="w").pack(side="left", fill="x")
+            row.pack(fill="x", pady=1, padx=6)
+            tk.Label(row, text=icon_c, font=self.f_normal,
+                     bg=t["bg_card"], fg=t["fg_dim"], width=3).pack(side="left")
+            tk.Label(row, text=val, font=self.f_small,
+                     bg=t["bg_card"], fg=t["fg_dim"], anchor="w").pack(side="left")
 
         # ── Ayırıcı ──
-        sep = tk.Frame(f, height=1, bg=t["border"])
-        sep.pack(fill="x", padx=10, pady=6)
+        tk.Frame(f, height=1, bg=t["border"]).pack(fill="x", padx=10, pady=4)
 
         # ── Soru metni ──
-        q_lbl = tk.Label(
-            f, text=q["soru"], font=self.f_normal,
-            bg=t["bg_card"], fg=t["fg"], wraplength=500,
-            justify="left", anchor="nw", padx=12, pady=10
-        )
-        q_lbl.pack(fill="x")
+        tk.Label(f, text=q["soru"], font=self.f_normal,
+                 bg=t["bg_card"], fg=t["fg"], wraplength=520,
+                 justify="left", anchor="nw", padx=12, pady=8).pack(fill="x")
 
         # ── Şıklar ──
         self.option_widgets: Dict[str, tk.Frame] = {}
-        self.option_labels: Dict[str, tk.Label] = {}
+        self.option_labels:  Dict[str, tk.Label] = {}
 
         for key in ["A", "B", "C", "D"]:
-            opt_frame = tk.Frame(
-                f, bg=t["option_bg"], cursor="hand2",
-                highlightbackground=t["border"], highlightthickness=1,
-                padx=16, pady=12
-            )
-            opt_frame.pack(fill="x", padx=10, pady=4)
-
-            opt_lbl = tk.Label(
-                opt_frame,
-                text=f"{key})  {q['siklar'][key]}",
-                font=self.f_option, bg=t["option_bg"], fg=t["option_fg"],
-                anchor="w", wraplength=460, justify="left"
-            )
-            opt_lbl.pack(fill="x", pady=2)
-
-            # Tıklama
-            for w in (opt_frame, opt_lbl):
+            frm = tk.Frame(f, bg=t["option_bg"], cursor="hand2",
+                           highlightbackground=t["border"], highlightthickness=1,
+                           padx=14, pady=10)
+            frm.pack(fill="x", padx=10, pady=3)
+            lbl = tk.Label(frm,
+                           text=f"{key})  {q['siklar'][key]}",
+                           font=self.f_option, bg=t["option_bg"], fg=t["option_fg"],
+                           anchor="w", wraplength=480, justify="left")
+            lbl.pack(fill="x", pady=1)
+            for w in (frm, lbl):
                 w.bind("<Button-1>", lambda e, k=key: self._select_option(k))
-
-            self.option_widgets[key] = opt_frame
-            self.option_labels[key] = opt_lbl
+            self.option_widgets[key] = frm
+            self.option_labels[key]  = lbl
 
         # ── Alt butonlar ──
         btn_row = tk.Frame(f, bg=t["bg_card"])
-        btn_row.pack(fill="x", padx=10, pady=(12, 4))
+        btn_row.pack(fill="x", padx=10, pady=(10, 6))
 
         self.btn_answer = tk.Label(
             btn_row, text="✓  Cevapla", font=self.f_big,
             bg=t["btn_bg"], fg=t["btn_fg"],
-            padx=28, pady=11, cursor="hand2"
+            padx=28, pady=10, cursor="hand2"
         )
         self.btn_answer.pack(side="left", expand=True, fill="x", padx=(0, 6))
         self.btn_answer.bind("<Button-1>", lambda _: self._submit_answer())
@@ -525,7 +695,7 @@ class CarkOyunu(tk.Tk):
         self.btn_skip = tk.Label(
             btn_row, text="⏩  Geç", font=self.f_normal,
             bg=t["skip_bg"], fg=t["skip_fg"],
-            padx=24, pady=11, cursor="hand2"
+            padx=22, pady=10, cursor="hand2"
         )
         self.btn_skip.pack(side="left", padx=(4, 0))
         self.btn_skip.bind("<Button-1>", lambda _: self._skip_question())
@@ -537,43 +707,55 @@ class CarkOyunu(tk.Tk):
         t = self.t
         for k, frm in self.option_widgets.items():
             if k == key:
-                frm.config(bg=t["option_sel"], highlightbackground=t["option_sel_border"], highlightthickness=2)
+                frm.config(bg=t["option_sel"],
+                           highlightbackground=t["option_sel_border"],
+                           highlightthickness=2)
                 self.option_labels[k].config(bg=t["option_sel"])
             else:
-                frm.config(bg=t["option_bg"], highlightbackground=t["border"], highlightthickness=1)
+                frm.config(bg=t["option_bg"],
+                           highlightbackground=t["border"],
+                           highlightthickness=1)
                 self.option_labels[k].config(bg=t["option_bg"])
 
     def _submit_answer(self):
         if self.state != self.STATE_QUESTION or self.selected_opt is None:
             return
-
+        self._stop_timer()
         self.state = self.STATE_ANSWERED
         q = self.current_q
-        correct = q["dogru_cevap"]
-        is_correct = self.selected_opt == correct
+        correct     = q["dogru_cevap"]
+        is_correct  = self.selected_opt == correct
 
         self.solved_count += 1
         if is_correct:
             self.correct_count += 1
-            self.total_score += self.current_points
+            if self.x2_mode:
+                self.total_score = self.total_score * 2
+            else:
+                self.total_score += self.current_points + BONUS_CORRECT
         else:
-            self.wrong_count += 1
+            self.wrong_count   += 1
+            self.total_score   -= PENALTY_WRONG
+        self.x2_mode = False
 
+        self._record_unite(q["unite"], is_correct)
         self._update_stats()
         self._show_feedback(is_correct, correct)
 
     def _skip_question(self):
         if self.state not in (self.STATE_QUESTION, self.STATE_ANSWERED):
             return
+        self._stop_timer()
         self.state = self.STATE_IDLE
         self._clear_right_panel()
         self._show_idle_panel()
 
-    def _show_feedback(self, is_correct: bool, correct_key: str):
+    def _show_feedback(self, is_correct: bool, correct_key: str, timeout: bool = False):
+        self._stop_timer()
         t = self.t
         q = self.current_q
 
-        # Renklendirme: doğru yeşil, yanlış kırmızı
+        # Renklendirme
         for k, frm in self.option_widgets.items():
             if k == correct_key:
                 frm.config(bg=t["success"], highlightbackground=t["success"], highlightthickness=2)
@@ -581,48 +763,169 @@ class CarkOyunu(tk.Tk):
             elif k == self.selected_opt and not is_correct:
                 frm.config(bg=t["error"], highlightbackground=t["error"], highlightthickness=2)
                 self.option_labels[k].config(bg=t["error"], fg="#ffffff")
-            # Tıklamayı devre dışı bırak
             for w in (frm, self.option_labels[k]):
                 w.unbind("<Button-1>")
                 w.config(cursor="arrow")
 
-        # Cevapla butonunu devre dışı bırak
         self.btn_answer.unbind("<Button-1>")
         self.btn_answer.config(bg=t["border"], cursor="arrow")
 
-        # Sonuç mesajı ekle (en alta)
+        # Timer bar → sıfır veya dolu
+        if hasattr(self, "timer_bar_fill") and self.timer_bar_fill.winfo_exists():
+            self.timer_bar_fill.config(bg=t["error"] if not is_correct else t["success"])
+            self.timer_bar_fill.place(relx=0, rely=0, relheight=1,
+                                      width=0 if timeout else None,
+                                      relwidth=None if timeout else 1)
+
+        # Sonuç mesajı
         f = self.question_panel
+        rf = tk.Frame(f, bg=t["bg_card"])
+        rf.pack(fill="x", padx=10, pady=(4, 2))
 
-        result_frame = tk.Frame(f, bg=t["bg_card"])
-        result_frame.pack(fill="x", padx=10, pady=(6, 2))
-
-        if is_correct:
-            msg = f"🎉  Doğru!  +{self.current_points} puan kazandınız!"
+        if timeout:
+            msg       = f"⏰  Süre Doldu!  −{PENALTY_WRONG} puan"
+            msg_color = t["error"]
+        elif is_correct:
+            if self.x2_mode:
+                msg = f"🎉  Doğru!  Toplam puanın 2 katına çıktı → {self.total_score}"
+            else:
+                bonus = self.current_points + BONUS_CORRECT
+                msg   = f"🎉  Doğru!  +{bonus} puan kazandınız!"
             msg_color = t["success"]
         else:
-            msg = f"❌  Yanlış!  Doğru cevap: {correct_key}"
+            msg   = f"❌  Yanlış!  Doğru cevap: {correct_key}  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
 
-        tk.Label(
-            result_frame, text=msg, font=self.f_big,
-            bg=t["bg_card"], fg=msg_color
-        ).pack(pady=4)
+        tk.Label(rf, text=msg, font=self.f_big,
+                 bg=t["bg_card"], fg=msg_color).pack(pady=4)
 
         # Açıklama
         if q.get("aciklama"):
-            tk.Label(
-                result_frame,
-                text=f"💡  {q['aciklama']}",
-                font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"],
-                wraplength=500, justify="left", anchor="nw"
-            ).pack(fill="x", padx=4, pady=(2, 4))
+            tk.Label(rf,
+                     text=f"💡  {q['aciklama']}",
+                     font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"],
+                     wraplength=520, justify="left", anchor="nw"
+                     ).pack(fill="x", padx=4, pady=(2, 6))
 
-        # Devam butonu
         self.btn_skip.config(text="▶  Devam Et")
 
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
+    # İSTATİSTİK EKRANI
+    # ─────────────────────────────────────────
+
+    def _show_stats_panel(self):
+        self._stop_timer()
+        self._clear_right_panel()
+        f = self.question_panel
+        t = self.t
+
+        # Başlık
+        hdr = tk.Frame(f, bg=t["accent"], height=46)
+        hdr.pack(fill="x")
+        hdr.pack_propagate(False)
+        tk.Label(hdr, text="📊  Ünite Bazlı İstatistik",
+                 font=self.f_big, bg=t["accent"], fg="#ffffff"
+                 ).pack(expand=True)
+
+        # Genel özet
+        total = self.correct_count + self.wrong_count
+        pct   = int(100 * self.correct_count / total) if total else 0
+
+        ozet = tk.Frame(f, bg=t["bg_card"])
+        ozet.pack(fill="x", padx=10, pady=8)
+        for txt, val, col in [
+            ("Toplam Soru", str(total), t["fg"]),
+            ("Doğru", str(self.correct_count), t["success"]),
+            ("Yanlış", str(self.wrong_count), t["error"]),
+            ("Puan", str(self.total_score), t["accent"]),
+            ("Başarı", f"%{pct}", t["warning"]),
+        ]:
+            col_f = tk.Frame(ozet, bg=t["bg_card"])
+            col_f.pack(side="left", expand=True)
+            tk.Label(col_f, text=val, font=self.f_score, bg=t["bg_card"], fg=col).pack()
+            tk.Label(col_f, text=txt, font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack()
+
+        tk.Frame(f, height=1, bg=t["border"]).pack(fill="x", padx=10, pady=4)
+
+        # Ünite tablosu başlığı
+        header_frame = tk.Frame(f, bg=t["border"])
+        header_frame.pack(fill="x", padx=10, pady=(0, 2))
+        for col_txt, w in [("Ünite", 38), ("✓", 8), ("✗", 8), ("%", 8)]:
+            tk.Label(header_frame, text=col_txt, font=self.f_small,
+                     bg=t["border"], fg=t["fg"], width=w, anchor="w"
+                     ).pack(side="left", padx=2)
+
+        # Ünite satırları
+        all_unites = sorted(set(q["unite"] for q in self.all_questions))
+        for unite in all_unites:
+            stats = self.unite_stats.get(unite, {"d": 0, "y": 0})
+            d, y  = stats["d"], stats["y"]
+            tot   = d + y
+            p     = int(100 * d / tot) if tot else 0
+            short = unite.split("–")[-1].strip() if "–" in unite else unite
+
+            row = tk.Frame(f, bg=t["bg_card"],
+                           highlightbackground=t["border"], highlightthickness=1)
+            row.pack(fill="x", padx=10, pady=2)
+            tk.Label(row, text=short, font=self.f_small,
+                     bg=t["bg_card"], fg=t["fg"], anchor="w", width=38
+                     ).pack(side="left", padx=(6, 2), pady=4)
+            tk.Label(row, text=str(d), font=self.f_small,
+                     bg=t["bg_card"], fg=t["success"], width=8).pack(side="left")
+            tk.Label(row, text=str(y), font=self.f_small,
+                     bg=t["bg_card"], fg=t["error"], width=8).pack(side="left")
+            tk.Label(row, text=f"%{p}", font=self.f_small,
+                     bg=t["bg_card"], fg=t["warning"], width=8).pack(side="left")
+
+            # Mini bar
+            if tot > 0:
+                bar_frame = tk.Frame(row, bg=t["border"], height=6, width=120)
+                bar_frame.pack(side="left", padx=8, pady=4)
+                bar_frame.pack_propagate(False)
+                filled = tk.Frame(bar_frame, bg=t["success"] if p > 50 else t["error"],
+                                  height=6)
+                filled.place(relx=0, rely=0, relheight=1, relwidth=p/100)
+
+        tk.Frame(f, height=1, bg=t["border"]).pack(fill="x", padx=10, pady=8)
+
+        # Butonlar
+        btn_row = tk.Frame(f, bg=t["bg_card"])
+        btn_row.pack(fill="x", padx=10, pady=(0, 8))
+
+        tk.Label(btn_row, text="▶  Oyuna Devam Et",
+                 font=self.f_big, bg=t["btn_bg"], fg=t["btn_fg"],
+                 padx=22, pady=10, cursor="hand2"
+                 ).pack(side="left", expand=True, fill="x", padx=(0, 6)
+                        ).bind if False else None
+
+        cont = tk.Label(btn_row, text="▶  Oyuna Devam Et",
+                        font=self.f_big, bg=t["btn_bg"], fg=t["btn_fg"],
+                        padx=22, pady=10, cursor="hand2")
+        cont.pack(side="left", expand=True, fill="x", padx=(0, 6))
+        cont.bind("<Button-1>", lambda _: self._continue_from_stats())
+
+        reset = tk.Label(btn_row, text="↻  Yeni Oyun",
+                         font=self.f_normal, bg=t["skip_bg"], fg=t["skip_fg"],
+                         padx=18, pady=10, cursor="hand2")
+        reset.pack(side="left", padx=(4, 0))
+        reset.bind("<Button-1>", lambda _: self._reset_game())
+
+    def _continue_from_stats(self):
+        if self.state == self.STATE_ANSWERED:
+            self._show_idle_panel()
+            self.state = self.STATE_IDLE
+        elif self.state == self.STATE_IDLE:
+            self._show_idle_panel()
+        elif self.state == self.STATE_QUESTION:
+            self._clear_right_panel()
+            self._show_question_panel()
+        else:
+            self._show_idle_panel()
+            self.state = self.STATE_IDLE
+
+    # ─────────────────────────────────────────
     # İSTATİSTİK & SIFIRLAMA
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
 
     def _update_stats(self):
         t = self.t
@@ -632,42 +935,44 @@ class CarkOyunu(tk.Tk):
         self.lbl_solved.config(text=f"📝 {self.solved_count}")
 
     def _reset_game(self):
+        self._stop_timer()
         if self.anim_id:
             self.after_cancel(self.anim_id)
             self.anim_id = None
 
-        self.state = self.STATE_IDLE
-        self.total_score = 0
+        self.state         = self.STATE_IDLE
+        self.total_score   = 0
         self.correct_count = 0
-        self.wrong_count = 0
-        self.solved_count = 0
-        self.current_q = None
+        self.wrong_count   = 0
+        self.solved_count  = 0
+        self.current_q     = None
         self.current_points = 0
-        self.selected_opt = None
-        self.wheel_angle = 0.0
+        self.selected_opt  = None
+        self.wheel_angle   = 0.0
+        self.unite_stats   = {}
 
         self._refill_pool()
         self._update_stats()
         self._draw_wheel()
         self._show_idle_panel()
 
-    # ──────────────────────────────────────────
-    # TEMA DEĞİŞTİRME
-    # ──────────────────────────────────────────
+    # ─────────────────────────────────────────
+    # TEMA
+    # ─────────────────────────────────────────
 
-    def _toggle_theme(self):
-        self.current_theme = "light" if self.current_theme == "dark" else "dark"
+    _theme_cycle = ["energy", "dark", "light"]
+
+    def _cycle_theme(self):
+        idx = self._theme_cycle.index(self.current_theme)
+        self.current_theme = self._theme_cycle[(idx + 1) % len(self._theme_cycle)]
         self.t = THEMES[self.current_theme]
         self._apply_theme()
         self._draw_wheel()
-
-        # Sağ paneli yeniden çiz (durum korunarak)
-        if self.state == self.STATE_IDLE:
+        if   self.state == self.STATE_IDLE:
             self._show_idle_panel()
         elif self.state == self.STATE_QUESTION:
             self._clear_right_panel()
             self._show_question_panel()
-            # Seçili şıkkı yeniden işaretle
             if self.selected_opt:
                 self._select_option(self.selected_opt)
         elif self.state == self.STATE_SPINNING:
@@ -678,29 +983,23 @@ class CarkOyunu(tk.Tk):
         self.configure(bg=t["bg"])
         self.top_bar.config(bg=t["bg_secondary"])
         self.lbl_title.config(bg=t["bg_secondary"], fg=t["fg"])
-        self.btn_theme.config(
-            bg=t["bg_secondary"], fg=t["fg"],
-            text="☀" if self.current_theme == "dark" else "🌙"
-        )
+        self.btn_theme.config(bg=t["bg_secondary"], fg=t["accent"])
         self.btn_reset.config(bg=t["bg_secondary"], fg=t["fg_dim"])
-
+        self.btn_stats.config(bg=t["bg_secondary"], fg=t["fg_dim"])
         self.main_frame.config(bg=t["bg"])
         self.left_frame.config(bg=t["bg"])
         self.wheel_canvas.config(bg=t["bg"])
         self.pointer_canvas.config(bg=t["bg"])
-
         self.btn_spin.config(bg=t["btn_bg"], fg=t["btn_fg"])
-
         self.score_frame.config(bg=t["score_bg"])
         self.lbl_score_title.config(bg=t["score_bg"], fg=t["fg_dim"])
         self.lbl_score.config(bg=t["score_bg"], fg=t["accent"])
-
         self.stat_frame.config(bg=t["bg"])
         self.lbl_correct.config(bg=t["bg"], fg=t["success"])
         self.lbl_wrong.config(bg=t["bg"], fg=t["error"])
         self.lbl_solved.config(bg=t["bg"], fg=t["fg_dim"])
-
         self.right_frame.config(bg=t["bg_card"])
+        self.q_canvas.config(bg=t["bg_card"])
         self.question_panel.config(bg=t["bg_card"])
 
 
