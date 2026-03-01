@@ -14,9 +14,16 @@ import json
 import math
 import os
 import random
+import sys
 import tkinter as tk
 from tkinter import font as tkfont
 from typing import Optional, Dict, List
+
+
+def resource_path(relative_path: str) -> str:
+    """PyInstaller --onefile ile uyumlu kaynak dosya yolu döndürür."""
+    base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, relative_path)
 
 # ──────────────────────────────────────────────
 # TEMA
@@ -145,8 +152,7 @@ class CarkOyunu(tk.Tk):
         self.f_icon   = tkfont.Font(family=self.base_family, size=18)
 
         # ── soru havuzu ──
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.all_questions = load_questions(os.path.join(base_dir, "sorular.json"))
+        self.all_questions = load_questions(resource_path("sorular.json"))
         self.remaining: List[dict] = []
         self._refill_pool()
 
