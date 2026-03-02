@@ -1,6 +1,17 @@
-[
+import json
+import os
+
+U1 = "Ünite 1 – Bir Kahraman Doğuyor"
+U2 = "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar"
+U3 = "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!"
+U4 = "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye"
+U5 = "Ünite 5 – Demokratikleşme Çabaları"
+U6 = "Ünite 6 – Atatürk Dönemi Türk Dış Politikası"
+
+questions = [
+    # ---- ÜNİTE 1 ----
     {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+        "unite": U1,
         "konu": "Avrupa'daki Gelişmeler ve Osmanlı",
         "yil": 2024,
         "zorluk": "Zor",
@@ -15,7 +26,7 @@
         "aciklama": "Parçada azınlık isyanlarına karşı Osmanlı'nın fermanlar ve meşrutiyet ile halka haklar vererek parçalanmayı (dağılmayı) engellemek istediği açıkça vurgulanmıştır. Yeni nesil sorularda okuduğunu anlama ve yorumlama ön plandadır."
     },
     {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+        "unite": U1,
         "konu": "Mustafa Kemal'in Fikir Hayatı",
         "yil": 2023,
         "zorluk": "Orta",
@@ -30,7 +41,7 @@
         "aciklama": "Cephede kazanılan zaferin masa başında kaybedilmesi, diplomasi ve dış politikanın gücünü gösterir. Mustafa Kemal'in bu olaydan çıkardığı ders budur."
     },
     {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+        "unite": U1,
         "konu": "Trablusgarp Savaşı",
         "yil": 2022,
         "zorluk": "Zor",
@@ -45,7 +56,7 @@
         "aciklama": "Gönüllü olarak gitmesi 'Vatansever', yerel halkı bir araya getirip direnişe geçirmesi 'Teşkilatçı' (örgütleyici) olduğunu gösterir. İnkılapçılık ise yenilik yapmakla ilgilidir ve bu metinde vurgulanmamıştır."
     },
     {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+        "unite": U1,
         "konu": "Eğitim Hayatı ve Fikir Gelişimi",
         "yil": 2021,
         "zorluk": "Orta",
@@ -60,7 +71,7 @@
         "aciklama": "Edebiyat, hitabet, Fransızca, Avrupa'yı takip ve millîçi aydınları okuması onun sadece asker değil çok yönlü ve yeniliklere açık bir vizyon kazanmasını sağlamıştır."
     },
     {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+        "unite": U1,
         "konu": "I. Dünya Savaşı ve Osmanlı Dönüşü",
         "yil": 2020,
         "zorluk": "Orta",
@@ -74,8 +85,10 @@
         "dogru_cevap": "A",
         "aciklama": "Parlamento toplantılarını izleyerek ve yabancı elçilerle görüşerek parlamenter sistem (meclis sistemi) ve diplomasi hakkında eşsiz deneyimler kazanmıştır."
     },
+
+    # ---- ÜNİTE 2 ----
     {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+        "unite": U2,
         "konu": "Mondros Ateşkes Antlaşması",
         "yil": 2024,
         "zorluk": "Zor",
@@ -90,7 +103,7 @@
         "aciklama": "İtilaf Devletleri bu çok muğlak ve geniş maddeyle, canları nereyi isterse orayı 'güvenliğimiz tehdit altında' bahanesiyle işgal etmeyi yasallaştırmışlardır."
     },
     {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+        "unite": U2,
         "konu": "Amasya Genelgesi",
         "yil": 2023,
         "zorluk": "Zor",
@@ -105,7 +118,7 @@
         "aciklama": "'Milletin azmi ve kararı kurtaracaktır' ifadesi tam bağımsızlık ve ulusal egemenliğin temelidir. Manda ve himaye ile taban tabana zıttır."
     },
     {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+        "unite": U2,
         "konu": "Erzurum Kongresi",
         "yil": 2022,
         "zorluk": "Orta",
@@ -120,7 +133,7 @@
         "aciklama": "Kongre Doğu illeri için toplanmış (bölgesel), ancak vatanın bütünlüğü ve milli irade gibi kararlarla bağımsızlık hareketini tüm ülkeye (ulusal) yaymıştır."
     },
     {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+        "unite": U2,
         "konu": "Misak-ı Millî",
         "yil": 2021,
         "zorluk": "Zor",
@@ -135,7 +148,7 @@
         "aciklama": "Halk oylaması yapılması Milli İradeye (ve Wilson İlkeleri'ne) saygıyı, sömürgeciliğe karşı bağımsız duruşu temsil eder. Sömürgeciliğe ise karşıdır."
     },
     {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+        "unite": U2,
         "konu": "Kuvâ-yı Millîye",
         "yil": 2020,
         "zorluk": "Orta",
@@ -149,8 +162,10 @@
         "dogru_cevap": "D",
         "aciklama": "Kuvâ-yı Millîye düşmanı yavaşlatmış ve zaman kazandırmıştır, ancak düşmanı kesin olarak yurttan atan Düzenli Ordu komutasındaki Büyük Taarruz'dur."
     },
+
+    # ---- ÜNİTE 3 ----
     {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+        "unite": U3,
         "konu": "Birinci İnönü Savaşı ve Teşkilat-ı Esasiye",
         "yil": 2024,
         "zorluk": "Zor",
@@ -165,7 +180,7 @@
         "aciklama": "'Egemenlik kayıtsız şartsız milletindir' ilkesi tam anlamıyla Cumhuriyetin ayak sesleridir ve devleti kişi egemenliğinden millet egemenliğine taşıyan hukuki devrimdir."
     },
     {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+        "unite": U3,
         "konu": "Sakarya Meydan Muharebesi ve Sonuçları",
         "yil": 2023,
         "zorluk": "Orta",
@@ -180,7 +195,7 @@
         "aciklama": "Düşmanın Ankara'ya dayandığı bir esnada, mecliste uzun uzun tartışılacak zaman kalmamıştı. Başkomutanlık yetkisi, hızlı karar alma ve uygulama zorunluluğundan doğmuştur."
     },
     {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+        "unite": U3,
         "konu": "Maarif Kongresi",
         "yil": 2022,
         "zorluk": "Orta",
@@ -195,7 +210,7 @@
         "aciklama": "Cephede silahlı mücadele varken eğitim mücadelesinin de ihmal edilmemesi, Mustafa Kemal'in cehalete karşı savaşı düşmana karşı savaştan farksız gördüğünün kanıtıdır."
     },
     {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+        "unite": U3,
         "konu": "Mudanya Ateşkes Antlaşması",
         "yil": 2021,
         "zorluk": "Zor",
@@ -210,7 +225,7 @@
         "aciklama": "İtilaf Devletleri'nin İstanbul ve Boğazların yönetimini padişahın bulunduğu Osmanlı Hükümetine değil TBMM'ye vermesi, Osmanlı'yı hukuken yok saydıklarının en net göstergesidir."
     },
     {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+        "unite": U3,
         "konu": "Güney Cephesi ve Maraş Direnişi",
         "yil": 2020,
         "zorluk": "Orta",
@@ -224,8 +239,10 @@
         "dogru_cevap": "B",
         "aciklama": "Güney Cephesi'nin en büyük özelliği; ordunun olmadığı bölgede, halkın kendi inisiyatifi ve vatan sevgisiyle (Kuvay-ı Milliye ruhuyla) düşmanı atmasıdır."
     },
+
+    # ---- ÜNİTE 4 ----
     {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+        "unite": U4,
         "konu": "Siyasi Alanda İnkılaplar",
         "yil": 2024,
         "zorluk": "Orta",
@@ -240,7 +257,7 @@
         "aciklama": "Saltanat, Hilafet gibi kurumlar bir kişinin veya ailenin güç odaklarıdır. Kaldırılmaları ve Cumhuriyetin ilanı, egemenliği kayıtsız şartsız millete verip yönetimi laikleştirmeyi hedefler."
     },
     {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+        "unite": U4,
         "konu": "Eğitim - Tevhid-i Tedrisat",
         "yil": 2023,
         "zorluk": "Zor",
@@ -255,7 +272,7 @@
         "aciklama": "Kanun yabancı okulları da devlet denetimine bağladığı için onların ayrıcalıklı, bağımsız statülerine son vermiş, böylece yasa önünde eşitlik (halkçılık) ve millilik sağlanmıştır."
     },
     {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+        "unite": U4,
         "konu": "Hukuk - Medeni Kanun",
         "yil": 2022,
         "zorluk": "Orta",
@@ -270,7 +287,7 @@
         "aciklama": "Miras ve resmi nikâh eşitliği getirmesi halka (kadın-erkek eşitliği) yönelik olduğundan Halkçılık, hukukun dini kurallardan bağımsız, İsviçre tabanlı çağdaş hale gelmesi Laikliktir. Ancak Medeni Kanun 'Siyasi (seçme-seçilme)' hak içermediği için Cumhuriyetçilik ile doğrudan ilgili değildir."
     },
     {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+        "unite": U4,
         "konu": "Atatürk İlkeleri - Devletçilik",
         "yil": 2021,
         "zorluk": "Zor",
@@ -285,7 +302,7 @@
         "aciklama": "Devletçilik ilkesinin temel vizyonu, özel sektörün sermaye bulamadığı alanlara bizzat devletin girerek üretimi tesis etmesi ve ekonomik bağımsızlığı perçinlemesidir."
     },
     {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+        "unite": U4,
         "konu": "Ekonomi - Kabotaj Kanunu",
         "yil": 2020,
         "zorluk": "Orta",
@@ -299,8 +316,10 @@
         "dogru_cevap": "A",
         "aciklama": "Kapitülasyonların izlerini silen, Türk vatandaşlarına ayrıcalık verip kendi kaynaklarına (denizlerine) Türk insanını egemen kılan tüm uygulamalar Milliyetçilik doğasındadır."
     },
+
+    # ---- ÜNİTE 5 ----
     {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
+        "unite": U5,
         "konu": "Çok Partili Hayata Geçiş Denemeleri",
         "yil": 2024,
         "zorluk": "Zor",
@@ -315,7 +334,7 @@
         "aciklama": "Partilerin kapatılma gerekçesi, inkılapların halk nezdinde tam yerleşmemesi ve demokrasi kültürünün henüz oturmaması sebebiyle Cumhuriyet karşıtlarının sığınabilecekleri bir siyasi platform bulmalarıdır."
     },
     {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
+        "unite": U5,
         "konu": "Şeyh Sait İsyanı",
         "yil": 2023,
         "zorluk": "Orta",
@@ -330,7 +349,7 @@
         "aciklama": "İsyan sadece eşitsizlik için değil, halifeliği ve eski düzeni getirmek (rejimi devirmek) için çıkmıştır. Bu durum demokrasiye geçişi engellemiş ve partilerin kapanmasına yol açmıştır."
     },
     {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
+        "unite": U5,
         "konu": "Mustafa Kemal'e Suikast Girişimi",
         "yil": 2022,
         "zorluk": "Kolay",
@@ -345,7 +364,7 @@
         "aciklama": "Kendisinin ölümlü bir varlık olduğunu, ancak kurulan Cumhuriyetin kurumsallaştığını ve sonsuza dek korunacağını tarihi ve asil bir dille anlatmıştır."
     },
     {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
+        "unite": U5,
         "konu": "Kubilay (Menemen) Olayı",
         "yil": 2021,
         "zorluk": "Orta",
@@ -360,7 +379,7 @@
         "aciklama": "Dini kullanarak isyan başlatmak ve öğretmeni katletmek, toplumda henüz laik inkılapları benimsememiş, irticai (gerici) karanlık odakların varlığını kanıtlar niteliktedir."
     },
     {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
+        "unite": U5,
         "konu": "Demokrasi ve Sorumluluk",
         "yil": 2020,
         "zorluk": "Zor",
@@ -374,8 +393,10 @@
         "dogru_cevap": "C",
         "aciklama": "Mustafa Kemal'in sitemi mecliste serbestçe fikir tartışması yapılabilmesi içindir (denetlenme, fikir özgürlüğü vb.); dış politika ya da savaş kararı vermekle ilgisi yoktur."
     },
+
+    # ---- ÜNİTE 6 ----
     {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+        "unite": U6,
         "konu": "Atatürk Dönemi Türk Dış Politikası (Genel Vizyon)",
         "yil": 2024,
         "zorluk": "Orta",
@@ -390,7 +411,7 @@
         "aciklama": "Balkan Antantı, Sadabat Paktı ve Milletler Cemiyetine üyelik, saldırgan (revizyonist) politikalara karşı barışı ve güvenliği sağlamak amacını (Yurtta sulh, cihanda sulh) taşır."
     },
     {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+        "unite": U6,
         "konu": "Nüfus Mübadelesi",
         "yil": 2023,
         "zorluk": "Orta",
@@ -405,7 +426,7 @@
         "aciklama": "Yunanistan'ın oyunlarına karşı derhal silahlı mücadeleye ya da tavize yönelmemiş; konuyu hukuki ve diplomatik bir çerçevede (müzakerelerle) uluslararası hukuka uygun şekilde çözmüştür."
     },
     {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+        "unite": U6,
         "konu": "Montrö Boğazlar Sözleşmesi",
         "yil": 2022,
         "zorluk": "Zor",
@@ -420,7 +441,7 @@
         "aciklama": "Komisyonun kaldırılması ve Türk askerinin boğazlara yerleşmesi, Lozan'da zedelenen (kısıtlanan) egemenliğimizin yeniden kazanıldığını net şekilde kanıtlar."
     },
     {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+        "unite": U6,
         "konu": "Hatay Meselesi",
         "yil": 2021,
         "zorluk": "Zor",
@@ -435,7 +456,7 @@
         "aciklama": "Metindeki 'hastalığına rağmen', 'benim şahsi meselemdir' ifadeleri onun hedefine kilitlenmiş tavizsiz idealizmini, vatanı için hayatını hiçe saymasını gösteren vatanseverliğidir."
     },
     {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+        "unite": U6,
         "konu": "Balkan ve Sadabat Paktları",
         "yil": 2020,
         "zorluk": "Orta",
@@ -450,3 +471,11 @@
         "aciklama": "Saldırgan devletlerin tehdidine karşı çevresindeki devletlerle ittifak yapıp karşılıklı güvenliği sağlamak (güç birliği) 'Kolektif Güvenlik (Ortak Güvenlik)' kavramı ile izah edilir. Yeni nesil LGS bu tür kavram eşleşmelerini çok sever."
     }
 ]
+
+file_path = "c:\\Users\\M.ATA\\Documents\\GitHub\\inkilap-cark-oyunu\\sorular.json"
+try:
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(questions, f, ensure_ascii=False, indent=4)
+        print("Tebrikler! LGS 'Yeni Nesil' soruları başarıyla sorular.json dosyasına entegre edildi.")
+except Exception as e:
+    print(f"Hata oluştu: {e}")
