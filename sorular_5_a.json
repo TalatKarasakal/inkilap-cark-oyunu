@@ -1,0 +1,887 @@
+[
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Ali, okulda sınıf başkanıdır ve arkadaşlarının sorunlarını öğretmenine iletir. Evde ise ailesine yardım eder ve ablasıyla birlikte ev işlerini paylaşır.\n\nBuna göre Ali'nin farklı gruplarda farklı roller üstlenmesi aşağıdakilerden hangisiyle açıklanabilir?",
+    "siklar": {
+      "A": "İnsanlar her ortamda aynı davranışı sergiler",
+      "B": "Bireyler bulundukları gruba göre farklı roller üstlenebilir",
+      "C": "Roller sadece okul ortamında geçerlidir",
+      "D": "Aile içinde herkesin görevi aynıdır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Her birey bulunduğu gruba göre farklı roller üstlenir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir futbol takımında kaleci topu tutar, forvet gol atmaya çalışır, kaptan takımı yönetir.\n\nBu bilgiye göre başarılı bir grup çalışması için en önemli unsur hangisidir?",
+    "siklar": {
+      "A": "Herkesin aynı görevi yapması",
+      "B": "Görev paylaşımı ve iş birliği",
+      "C": "Sadece kaptanın karar vermesi",
+      "D": "Grup üyelerinin birbirleriyle yarışması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Başarılı gruplar görev paylaşımı ve işbirliği yapan gruplardır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Sınıf toplantısında Elif kitap sorumlusu, Mert temizlik sorumlusu, Zeynep panoya sorumlusu seçilmiştir.\n\nBu durum aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Bireysel çalışma",
+      "B": "Görev dağılımı ve sorumluluk alma",
+      "C": "Rekabet ortamı oluşturma",
+      "D": "Liderlik çatışması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Grup içinde herkesin farklı sorumluluk alması görev dağılımı örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Ahmet, müzik grubunda davul çalar. Aynı Ahmet mahalle futbol takımında kaleci olarak oynamaktadır.\n\nAhmet'in bu durumu;\nI. Bireyler birden fazla grubun üyesi olabilir\nII. Her gruptaki roller farklı olabilir\nIII. Roller sadece yetenekle belirlenir\nyargılarından hangilerini destekler?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ahmet birden fazla gruptadır ve farklı roller üstlenmektedir. Roller yalnızca yetenekle değil, grubun ihtiyaçlarıyla da belirlenir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir proje grubunda herkes kendi fikrini söylüyor ama kimse diğerini dinlemiyor. Sonuçta proje tamamlanamıyor.\n\nBu durumun temel nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Grubun çok kalabalık olması",
+      "B": "İş birliği ve iletişim eksikliği",
+      "C": "Projenin çok zor olması",
+      "D": "Öğretmenin yetersiz rehberliği"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Birbirini dinlememek iş birliği ve iletişim eksikliğinin göstergesidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Seda, basketbol takımında oyuncu iken antrenör onu kaptan seçmiştir. Artık hem oynuyor hem takım arkadaşlarını motive ediyor.\n\nSeda'nın rolündeki bu değişim neyi gösterir?",
+    "siklar": {
+      "A": "Rollerin asla değişmediğini",
+      "B": "Rollerin zamanla ve ihtiyaca göre değişebileceğini",
+      "C": "Herkesin kaptan olması gerektiğini",
+      "D": "Spor gruplarında roller sabit olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Roller zamanla ve grubun ihtiyaçlarına göre değişebilir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir okulda öğrenciler tiyatro kulübü kurmuştur. Yönetmen, oyuncu, dekorcu, kostümcü gibi görevler paylaşılmıştır.\n\nBu durum aşağıdakilerden hangisinin önemini vurgular?",
+    "siklar": {
+      "A": "Tek kişinin her işi yapabilmesinin",
+      "B": "Farklı yeteneklerin ortak bir amaç için kullanılmasının",
+      "C": "Sadece yönetmenin çalışmasının yeterli olduğunun",
+      "D": "Görev dağılımının gereksiz olduğunun"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı yeteneklerin ortak amaç için kullanılması grup başarısını artırır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir ailede anne yemek yapar, baba alışveriş yapar, çocuklar sofrayı hazırlar.\n\nBu durum aile içinde aşağıdakilerden hangisinin uygulandığını gösterir?",
+    "siklar": {
+      "A": "Bireysel yaşamın",
+      "B": "İş bölümü ve dayanışmanın",
+      "C": "Rekabetin",
+      "D": "Herkesin aynı işi yapmasının"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Aile içinde herkesin farklı görev üstlenmesi iş bölümü ve dayanışmadır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Okul korosunda birinci sesler melodiyi, ikinci sesler armonik çalar, solist ana partiyi söyler.\n\nKoronun başarılı olabilmesi için aşağıdakilerden hangisi en önemlidir?",
+    "siklar": {
+      "A": "Herkesin solist olması",
+      "B": "Her üyenin kendi rolünü en iyi şekilde yerine getirmesi",
+      "C": "Sadece solistin iyi söylemesi",
+      "D": "Herkesin aynı notayı çalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Grup başarısı her üyenin kendi rolünü iyi yapmasına bağlıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Ayşe, arkadaş grubunda resim çizer, ailede en küçük çocuk olarak sofra hazırlar.\n\nBu durum aşağıdakilerden hangisiyle açıklanır?",
+    "siklar": {
+      "A": "Bireyin yeteneği tek alanda geçerlidir",
+      "B": "Roller grubun ihtiyaçlarına ve bireyin özelliklerine göre belirlenir",
+      "C": "Aile rolleri okul rolleriyle aynıdır",
+      "D": "Roller hiç değişmez"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Roller grubun ihtiyaçlarına ve bireyin yeteneklerine göre şekillenir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir grup arkadaş piknik organize edecektir. Biri yiyecek alır, biri mekan ayarlar, biri ulaşımı planlar.\n\nBu organizasyonda;\nI. İş birliği yapılmıştır\nII. Görev dağılımı uygulanmıştır\nIII. Herkes aynı görevi üstlenmiştir\nyargılarından hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı görevler paylaşılmış (görev dağılımı) ve birlikte çalışılmıştır (iş birliği)."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir sınıfta farklı şehirlerden gelen öğrenciler kendi memleketlerinin yöresel yemeklerini tanıtmıştır. Herkes birbirinin kültürel farklılıklarına saygı göstermiştir.\n\nBu etkinlik aşağıdakilerden hangisine katkı sağlamıştır?",
+    "siklar": {
+      "A": "Kültürel farklılıkların ortadan kalkmasına",
+      "B": "Birlikte yaşama kültürünün güçlenmesine",
+      "C": "Öğrencilerin kendi kültürlerinden vazgeçmesine",
+      "D": "Tek bir kültürün üstünlüğünün kabulüne"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı kültürleri tanımak birlikte yaşama kültürünü güçlendirir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye'nin doğusunda 'halay', Karadeniz'de 'horon', Ege'de 'zeybek' oynanır.\n\nBu durum aşağıdakilerden hangisini gösterir?",
+    "siklar": {
+      "A": "Türkiye'de tek kültürel yapı vardır",
+      "B": "Ülkemiz zengin ve çeşitli bir kültürel yapıya sahiptir",
+      "C": "Halk oyunları sadece eğlence amaçlıdır",
+      "D": "Bölgeler arası kültürel etkileşim yoktur"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı bölgelerde farklı halk oyunları kültürel çeşitliliğin kanıtıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir okulda 'Kültürler Festivali' düzenlenmiş, öğrenciler farklı ülkelerin geleneksel kıyafetlerini giyerek müziklerini tanıtmıştır.\n\nBu festival;\nI. Kültürel farkındalığı artırmıştır\nII. Hoşgörü ve saygıyı güçlendirmiştir\nIII. Kültürel tek tipliği sağlamıştır\nsonuçlarından hangilerine ulaşılabilir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Festival kültürel farkındalığı artırır ve hoşgörüyü güçlendirir. Tek tipliği değil çeşitliliği destekler."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Ramazan Bayramı'nda büyüklerin elini öpmek, bayramlık giymek ve komşulara tatlı ikram etmek yaygın geleneklerdir.\n\nBu geleneklerin temel işlevi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yalnızca çocukları eğlendirmek",
+      "B": "Toplumsal bağları güçlendirmek ve kültürü yaşatmak",
+      "C": "Ekonomik kazanç sağlamak",
+      "D": "Yalnızca dini bir vecibe yerine getirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bayram gelenekleri toplumsal bağları güçlendirir ve kültürü nesilden nesile aktarır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede farklı dillerde yayın yapan TV kanalları ve farklı etnik grupların festivalleri devlet tarafından desteklenmektedir.\n\nBu uygulamaların temel amacı hangisidir?",
+    "siklar": {
+      "A": "Toplumsal ayrışmayı teşvik etmek",
+      "B": "Kültürel çoğulculuğu ve toplumsal barışı sağlamak",
+      "C": "Tek bir dilin hakim olmasını engellemek",
+      "D": "Yabancı kültürlerin etkisini artırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı kültürlerin desteklenmesi kültürel çoğulculuğu güçlendirir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Nasreddin Hoca fıkraları, Keloğlan masalları, meddah gösterileri Türk kültürünün önemli unsurlarıdır.\n\nBu kültürel ögeler aşağıdakilerden hangisini sağlar?",
+    "siklar": {
+      "A": "Bilimsel bilginin aktarılmasını",
+      "B": "Kültürel değerlerin kuşaktan kuşağa aktarılmasını",
+      "C": "Ekonomik gelişmeyi",
+      "D": "Yalnızca eğlence ihtiyacının karşılanmasını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sözlü kültür ögeleri kültürel değerlerin nesilden nesile aktarılmasını sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir köyde her yıl düzenlenen hasat festivali, komşu köylerden de katılımcı çekmekte ve farklı yörelerin yemekleri sergilenmektedir.\n\nBu festival hangi kavramı en iyi örnekler?",
+    "siklar": {
+      "A": "Bireysel rekabet",
+      "B": "Kültürel etkileşim ve paylaşım",
+      "C": "Ekonomik bağımsızlık",
+      "D": "Teknolojik gelişme"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı yörelerin bir araya gelmesi kültürel etkileşim ve paylaşım örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Düğünlerde oynanan halk oyunları, söylenen türküler, yapılan gelenekler bölgeden bölgeye farklılık gösterir.\n\nBu farklılıkların korunması neden önemlidir?",
+    "siklar": {
+      "A": "Bölgeler arası rekabeti artırmak için",
+      "B": "Kültürel zenginliği ve çeşitliliği korumak için",
+      "C": "Turizm geliri elde etmek için",
+      "D": "Tek tip kültür oluşturmak için"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kültürel farklılıkların korunması toplumun zenginliğini ve çeşitliliğini korur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci arkadaşının yöresel ağzıyla konuşmasıyla alay etmiştir.\n\nBu davranış aşağıdakilerden hangisiyle çelişir?",
+    "siklar": {
+      "A": "Bireysel özgürlük",
+      "B": "Kültürel farklılıklara saygı",
+      "C": "Eğitim hakkı",
+      "D": "İfade özgürlüğü"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kültürel özelliklerle alay etmek kültürel farklılıklara saygı ilkesiyle çelişir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir ilçede her yıl 'Kiraz Festivali' düzenlenmektedir. Bu festival hem yörenin tarımsal ürününü tanıtmakta hem de halk oyunları, yöresel yemek yarışmaları ile kültürel etkinlikler sunmaktadır.\n\nBu festivalin işlevi;\nI. Ekonomik kalkınmaya katkı\nII. Kültürel değerlerin yaşatılması\nIII. Toplumsal kaynaşma\nsonuçlarından hangilerini kapsar?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Festival hem ekonomiye hem kültüre hem de toplumsal kaynaşmaya katkı sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Deprem sonrası tüm Türkiye'den yardım tırları gönderilmiş, gönüllüler kurtarma çalışmalarına katılmıştır.\n\nBu durum aşağıdakilerden hangisinin göstergesidir?",
+    "siklar": {
+      "A": "Devletin tüm sorumlulukları tek başına üstlendiğinin",
+      "B": "Toplumsal dayanışma duygusunun güçlü olduğunun",
+      "C": "Sadece resmi kurumların etkili olduğunun",
+      "D": "Yardımlaşmanın afet dönemlerine özgü olduğunun"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Gönüllü yardımlar toplumsal dayanışmanın güçlü olduğunun göstergesidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir mahallede yaşlı komşuların alışverişini gençler yapmakta, bayramlarda herkes birbirini ziyaret etmektedir.\n\nBu uygulamalar;\nI. Toplumsal birliğin güçlenmesi\nII. Kuşaklar arası bağın korunması\nIII. Bireyciliğin artması\nsonuçlarından hangilerine yol açar?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Komşuluk ilişkileri toplumsal birliği ve kuşaklar arası bağı güçlendirir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Okulda düzenlenen 'Bir Kitap Bir Umut' kampanyasında öğrenciler okuduğu kitapları ihtiyaç sahibi okullara göndermiştir.\n\nBu kampanya aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Bireysel rekabet",
+      "B": "Toplumsal yardımlaşma ve paylaşma",
+      "C": "Ticari faaliyet",
+      "D": "Zorunlu eğitim uygulaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kitap bağışı kampanyası toplumsal yardımlaşma ve paylaşma örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İmece usulü, köylerin birlikte hasat toplama ve ev yapma geleneğidir.\n\nİmece usulünün toplumsal faydası hangisidir?",
+    "siklar": {
+      "A": "Bireysel rekabeti artırması",
+      "B": "İşlerin dayanışma içinde hızla tamamlanması",
+      "C": "Herkesin kendi başına çalışmasını teşvik etmesi",
+      "D": "Sadece tarımda uygulanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İmece toplumsal dayanışmanın en güzel örneklerinden biridir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Kızılay, AFAD, AKUT gibi kuruluşlar afet dönemlerinde yardım faaliyetleri yürütmektedir.\n\nBu kuruluşların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Devletin gelir elde etmesi",
+      "B": "İnsanlara yardım ulaştırarak toplumsal dayanışmayı sağlamak",
+      "C": "Uluslararası alanda çalışmak",
+      "D": "Ticari faaliyetlerde bulunmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu kuruluşlar toplumsal dayanışmayı somutlaştıran sivil girişimlerdir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir sınıfta maddi durumu iyi olmayan arkadaşları için kırtasiye malzemesi toplama kampanyası başlatılmıştır.\n\nBu davranış aşağıdaki değerlerden hangisini yansıtır?",
+    "siklar": {
+      "A": "Bireyselcilik",
+      "B": "Paylaşma ve dayanışma",
+      "C": "Rekabet",
+      "D": "Liderlik"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İhtiyaç sahibi arkadaşlara yardım etmek paylaşma ve dayanışma değerini yansıtır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir apartmanda komşular sırayla nöbet tutarak binanın güvenliğini sağlamaktadır.\n\nBu uygulama;\nI. Ortak sorumluluk bilinci\nII. Toplumsal dayanışma\nIII. Bireysel kâr amacı\nkavramlarından hangileriyle ilgilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nöbet tutma ortak sorumluluk ve toplumsal dayanışma örneğidir. Kâr amacı yoktur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Sel baskını sonrasında vatandaşlar bölgeye temiz su, gıda ve giyecek yardımı göndermiştir.\n\nBu durum toplumda hangi duygunun güçlü olduğunu gösterir?",
+    "siklar": {
+      "A": "Rekabet duygusu",
+      "B": "Dayanışma ve yardımseverlik",
+      "C": "Bireysel çıkar",
+      "D": "Çatışma eğilimi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Afet zamanlarında yardım göndermek dayanışma ve yardımseverliğin göstergesidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Okul aile birliği, öğrencilerin ihtiyaçlarını karşılamak için kermes düzenlemiştir. Elde edilen gelirle maddi durumu yetersiz öğrencilere kıyafet alınmıştır.\n\nBu etkinlik aşağıdakilerden hangisinin en güzel örneğidir?",
+    "siklar": {
+      "A": "Ticari girişimcilik",
+      "B": "Toplumsal dayanışma ve paylaşma",
+      "C": "Bireysel tasarruf",
+      "D": "Devlet yardımı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kermes düzenleyerek ihtiyaç sahiplerine yardım etmek toplumsal dayanışma örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir mahallede ihtiyaç sahibi ailelere erzak dağıtılmakta, yaşlılara evde bakım hizmeti sunulmaktadır.\n\nBu hizmetlerin ortak özelliği aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Ticari kazanç amaçlaması",
+      "B": "Sosyal dayanışma ve toplumsal sorumluluk bilincini yansıtması",
+      "C": "Sadece devlet tarafından yapılması",
+      "D": "Bireylerin kendi sorunlarını çözmelerini engellemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu hizmetler sosyal dayanışma ve toplumsal sorumluluk bilincini yansıtır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci evde abla rolündeyken okulda öğrenci, kursta sporcu rolü üstlenmektedir.\n\nBu durum aşağıdaki kavramlardan hangisiyle ilgilidir?",
+    "siklar": {
+      "A": "Grup içi çatışma",
+      "B": "Rol çeşitliliği",
+      "C": "Rol belirsizliği",
+      "D": "Liderlik tarzı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bireyin farklı ortamlarda farklı roller üstlenmesi rol çeşitliliğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Gaziantep baklavası, Adana kebabı, Maraş dondurması coğrafi işaret tescilli ürünlerdir.\n\nBu ürünlerin tescillenmesinin amacı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yalnızca ticari kazanç sağlamak",
+      "B": "Yöresel kültürel değerleri korumak ve tanıtmak",
+      "C": "Diğer illerin yemek yapmasını engellemek",
+      "D": "Tarım üretimini artırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Coğrafi işaret tescili yöresel kültürel değerleri korumayı ve tanıtmayı amaçlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Aşure günü komşulara aşure dağıtmak, düğünlerde birlikte çalışmak, cenazelerde birlikte taziyeye gitmek toplumsal geleneklerimizdir.\n\nBu geleneklerin ortak özelliği aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Ekonomik kazanç sağlaması",
+      "B": "Toplumsal bağları güçlendirmesi",
+      "C": "Resmi kurallarla zorunlu tutulması",
+      "D": "Sadece büyük şehirlerde uygulanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu gelenekler toplumsal bağları güçlendiren dayanışma örnekleridir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Öğretmen, 'Yaşadığımız il hangi illere komşudur ve bu illere göre nerede bulunmaktadır?' sorusunu sormuştur.\n\nBu soru aşağıdaki kavramlardan hangisiyle ilgilidir?",
+    "siklar": {
+      "A": "Mutlak konum",
+      "B": "Göreceli (nispi) konum",
+      "C": "Matematik konum",
+      "D": "Deniz seviyesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çevresindeki illere göre konum belirleme göreceli konumdur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mert arkadaşına evini 'Bankadan sonraki ikinci sokakta, parkın karşısındaki mavi binanın 3. katı' diye tarif etmiştir.\n\nBu tarif hangi konum türüne örnektir?",
+    "siklar": {
+      "A": "Mutlak konum",
+      "B": "Matematik konum",
+      "C": "Göreceli konum",
+      "D": "Coğrafi koordinat"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Referans noktalarına göre yer tarif etmek göreceli konum kullanımıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Ankara ili, İstanbul'un doğusunda, Konya'nın kuzeyinde yer alır.\n\nBu bilgide Ankara'nın konumu hangi yöntemle ifade edilmiştir?",
+    "siklar": {
+      "A": "Koordinat sistemi",
+      "B": "Matematiksel konum",
+      "C": "Diğer illere göre göreceli konum",
+      "D": "Yükselti ve deniz seviyesi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Çevresindeki illere göre konum belirleme göreceli konum ifadesidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir turist rehberine 'Otel, müzenin arkasında, restoranın yanında' diye yol tarifi yapılmıştır.\n\nBu tarif;\nI. Göreceli konum kullanılmıştır\nII. Çevredeki referans noktalarından yararlanılmıştır\nIII. Koordinat sistemi kullanılmıştır\nyargılarından hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Müze ve restoran gibi referans noktalarına göre tarif yapmak göreceli konumdur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "GPS cihazı 39°55'K - 32°51'D koordinatlarını göstermektedir.\n\nBu koordinat aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Göreceli konum",
+      "B": "Nispi konum",
+      "C": "Mutlak (matematik) konum",
+      "D": "Yaklaşık konum"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Enlem ve boylam koordinatları mutlak (matematik) konumu ifade eder."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci okulun konumunu 'Belediye binasının karşısında, marketin yanında' diye tarif etmiştir.\n\nBu tarif yöntemi hangi konum türünü kullanır?",
+    "siklar": {
+      "A": "Mutlak konum",
+      "B": "Göreceli konum",
+      "C": "Paralel ve meridyen",
+      "D": "Astronomik konum"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çevredeki yapılara göre konum belirlemek göreceli konum kullanımıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Haritada 40°K enlemi ve 30°D boylamı olarak gösterilen bir konum ile 'Bursa'nın güneyi, Eskişehir'in kuzeybatısı' şeklinde tarif edilen konum aynı yeri işaret edebilir.\n\nBu durum aşağıdakilerden hangisini kanıtlar?",
+    "siklar": {
+      "A": "İki konum türünün aynı olduğunu",
+      "B": "Bir yerin hem mutlak hem göreceli konumla ifade edilebileceğini",
+      "C": "Göreceli konumun daha doğru olduğunu",
+      "D": "Mutlak konumun gereksiz olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Aynı yer hem koordinatla (mutlak) hem çevresine göre (göreceli) ifade edilebilir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Denizci, geminin konumunu GPS ile belirlerken enlem ve boylam kullanır.\n\nBu yöntem hangi konum belirleme türüne örnektir?",
+    "siklar": {
+      "A": "Göreceli konum",
+      "B": "Mutlak konum",
+      "C": "Nispi konum",
+      "D": "Tahmini konum"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Enlem ve boylam kullanarak konum belirleme mutlak konumdur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir ilin 50 yıl önceki ve günümüzdeki fotoğrafları karşılaştırıldığında tarım alanlarının yerini AVM'lerin aldığı görülmüştür.\n\nBu değişimin temel sebebi hangisidir?",
+    "siklar": {
+      "A": "Doğal afetlerin artması",
+      "B": "Nüfus artışı ve kentleşmenin hızlanması",
+      "C": "İklim değişikliğinin tek başına etkisi",
+      "D": "Tarımsal üretimin artması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarım alanlarının yapılaşmaya dönüşmesi nüfus artışı ve kentleşmenin sonucudur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir köyde 20 yıl önce 500 kişi yaşarken şimdi 120 kişi yaşamaktadır.\n\nBu durumun en olası nedeni hangisidir?",
+    "siklar": {
+      "A": "Köyde doğum oranlarının çok yüksek olması",
+      "B": "Köyden kente göçün yaşanması",
+      "C": "Köye yeni aileler yerleşmesi",
+      "D": "Tarım alanlarının genişlemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nüfusun azalması köyden kente göçün en belirgin göstergesidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "I. Fabrika yapılması\nII. Deprem sonucu yer şekillerinin değişmesi\nIII. Orman alanlarının tarla yapılması\n\nHangileri beşeri (insan kaynaklı) değişimlere örnektir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Fabrika yapımı ve ormanları tarlaya çevirme beşeri değişimdir. Deprem doğaldır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir vadide yağmurların etkisiyle toprak aşınmış, yamaçlarda derin yarıklar oluşmuştur.\n\nBu değişim aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Beşeri değişim",
+      "B": "Doğal değişim",
+      "C": "Teknolojik gelişme",
+      "D": "Kentleşme"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yağmurun toprağı aşındırması doğal bir değişim sürecidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir sahil kasabasında;\nI. Sel sonucu yol çökmesi\nII. Marina ve otel inşaatı\nIII. Rüzgâr erozyonu\ndeğişimleri yaşanmıştır.\n\nBunlardan hangileri beşeri değişime örnektir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve III",
+      "D": "II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Marina ve otel inşaatı insan kaynaklı (beşeri) değişimdir. Sel ve rüzgâr erozyonu doğaldır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Küresel ısınma nedeniyle buzullar erimekte ve deniz seviyesi yükselmektedir.\n\nBu durumun nedeni hangisidir?",
+    "siklar": {
+      "A": "Yalnızca doğal süreçler",
+      "B": "İnsan faaliyetlerinin doğal dengeyi bozması",
+      "C": "Güneş'in soğuması",
+      "D": "Yanardağ patlamaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Küresel ısınma büyük ölçüde insan faaliyetlerinin doğal dengeyi bozmasından kaynaklanır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde son 30 yılda;\n- Nüfus 3 katına çıkmış\n- Yeşil alanlar azalmış\n- Hava kirliliği artmış\n- Yeni yollar ve köprüler yapılmış\n\nBu değişimlerin ortak nedeni hangisidir?",
+    "siklar": {
+      "A": "Doğal afetler",
+      "B": "Hızlı kentleşme ve sanayileşme",
+      "C": "İklim değişikliği",
+      "D": "Tarımın gelişmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nüfus artışı, yeşil alan kaybı ve altyapı değişimleri hızlı kentleşmenin sonuçlarıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Karadeniz bölgesinde yoğun yağışlar sonucu heyelan meydana gelmiştir.\n\nBu olay aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Beşeri değişim",
+      "B": "Doğal değişim",
+      "C": "Planlı kentleşme",
+      "D": "Endüstriyel gelişme"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yağış sonucu heyelan doğal bir değişim sürecidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Ağaçlandırma kampanyasında binlerce fidan dikilmiş ve çorak arazi yeşil alana dönüştürülmüştür.\n\nBu etkinlik hangi tür değişime örnektir?",
+    "siklar": {
+      "A": "Doğal değişim",
+      "B": "Olumsuz beşeri değişim",
+      "C": "Olumlu beşeri değişim",
+      "D": "İklimsel değişim"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Ağaçlandırma, insanın çevreyi olumlu yönde değiştirmesidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bir bölgede baraj yapılması sonucu tarım alanları sular altında kalmıştır.\n\nBu durum hangi kavramla ilişkilidir?",
+    "siklar": {
+      "A": "Doğal afet",
+      "B": "Beşeri müdahalenin çevreyi değiştirmesi",
+      "C": "İklim değişikliği",
+      "D": "Deprem etkisi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Baraj yapımı insan müdahalesinin çevreyi değiştirmesine örnektir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir kıyı şehrinde deniz dolgusu yapılarak yeni yerleşim alanları oluşturulmuştur.\n\nBu uygulama;\nI. Beşeri değişim örneğidir\nII. Doğal çevreyi etkiler\nIII. Doğal değişime örnektir\nyargılarından hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Deniz dolgusu beşeri bir değişimdir ve doğal çevreyi etkiler. Doğal değişim değildir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Nehir yatağının zamanla değişmesi, vadilerin genişlemesi gibi olaylar uzun sürede gerçekleşir.\n\nBu olayların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "İnsan kaynaklı değişimlerdir",
+      "B": "Doğal süreçlerle meydana gelen değişimlerdir",
+      "C": "Anlık olarak gerçekleşirler",
+      "D": "Teknoloji ile ilgilidir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nehir yatağı ve vadi değişimleri doğal süreçlerle uzun sürede oluşur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir bölgede ormanlar kesilerek sanayi tesisleri kurulmuştur. Zamanla bölgede hava kirliliği artmıştır.\n\nBu durumun temel sebebi hangisidir?",
+    "siklar": {
+      "A": "Doğal iklim değişikliği",
+      "B": "İnsan faaliyetlerinin çevreyi olumsuz etkilemesi",
+      "C": "Deprem ve sel",
+      "D": "Volkanik aktivite"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Orman tahribi ve sanayi tesisleri insan faaliyetlerinin olumsuz çevresel etkisidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Yenilenebilir enerji kaynaklarına (güneş, rüzgâr) geçiş yapan bir şehirde hava kalitesi iyileşmiştir.\n\nBu gelişme hangisinin göstergesidir?",
+    "siklar": {
+      "A": "Doğal kaynakların tükenmesinin",
+      "B": "Bilinçli beşeri değişimin çevreye olumlu etkisinin",
+      "C": "İklimin kendiliğinden düzelmesinin",
+      "D": "Sanayinin tamamen kapanmasının"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yenilenebilir enerjiye geçiş bilinçli beşeri müdahalenin olumlu etkisidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir bölgede;\n- Fabrika bacalarından çıkan duman artmış\n- Göl suyu kirlenerek balık türleri azalmış\n- Çevre yolu yapımıyla orman alanı daralmış\n\nBu değişimlerin tümü aşağıdaki kavramlardan hangisiyle açıklanır?",
+    "siklar": {
+      "A": "Doğal süreçlerin etkisi",
+      "B": "Beşeri faaliyetlerin çevreye olumsuz etkisi",
+      "C": "İklim değişikliğinin sonuçları",
+      "D": "Jeolojik hareketler"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Fabrika, göl kirliliği ve orman tahribi beşeri faaliyetlerin olumsuz çevresel etkileridir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "İstanbul'un nüfusu son 50 yılda 3 milyondan 16 milyona çıkmıştır.\n\nBu artışın en önemli sonucu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Tarım alanlarının genişlemesi",
+      "B": "Kentleşmenin hızlanması ve çevre sorunlarının artması",
+      "C": "Kırsal yaşamın güçlenmesi",
+      "D": "Doğal afetlerin azalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hızlı nüfus artışı kentleşmeyi hızlandırır ve çevre sorunlarını beraberinde getirir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir ilçede;\nI. Geri dönüşüm tesisi kurulmuş\nII. Bisiklet yolları yapılmış\nIII. Güneş enerjisi santralleri kurulmuş\n\nBu uygulamaların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Nüfusu artırmak",
+      "B": "Çevreyi koruyarak sürdürülebilir kalkınmayı sağlamak",
+      "C": "Sanayiyi geliştirmek",
+      "D": "Turizmi canlandırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Geri dönüşüm, bisiklet yolu ve güneş enerjisi çevre dostu sürdürülebilir uygulamalardır."
+  }
+]

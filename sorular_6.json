@@ -1,467 +1,3002 @@
 [
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Gruplar ve Roller",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "Bir öğrenci okulda öğrenci, evde çocuk, spor kulübünde takım kaptanı rollerini üstlenmektedir. Bu rollerin her birinde farklı davranışlar sergilemesi beklenir.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
-        "siklar": {
-            "A": "Bireylerin her ortamda aynı davrandığını",
-            "B": "Bireylerin bulundukları gruba göre farklı roller üstlendiğini",
-            "C": "Rollerin değiştirilemez olduğunu",
-            "D": "Sadece okuldaki rollerin önemli olduğunu"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Bireyler aile, okul, spor kulübü gibi farklı gruplarda farklı roller üstlenir."
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci okulda öğrenci, evde çocuk, spor kulübünde takım kaptanıdır.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece okuldaki rollerin önemli olduğunu",
+      "B": "Bireylerin bulundukları gruba göre farklı roller üstlendiğini",
+      "C": "Bireylerin her ortamda aynı davrandığını",
+      "D": "Rollerin değiştirilemez olduğunu"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Birliktelik",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Bir toplumda insanlar farklı dilleri konuşmakta, farklı dinlere inanmakta ve farklı geleneklere sahiptir. Ancak tüm bu farklılıklara rağmen ortak değerler etrafında bir arada yaşayabilmektedirler.\n\nBu durumun sürdürülebilmesi için en temel gereklilik aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Herkesin aynı dili konuşması",
-            "B": "Karşılıklı saygı, hoşgörü ve ortak değerler bilinci",
-            "C": "Farklılıkların tamamen ortadan kaldırılması",
-            "D": "Toplumun tek bir lider tarafından yönetilmesi"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Farklılıklar zenginliktir; birlikte yaşamın temeli karşılıklı saygı, hoşgörü ve ortak değerlerdir."
+    "dogru_cevap": "B",
+    "aciklama": "Bireyler aile, okul, spor kulübü gibi farklı gruplarda farklı roller üstlenir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda farklı diller, dinler ve gelenekler vardır ama ortak değerler etrafında bir arada yaşanmaktadır.\n\nBunun sürdürülebilmesi için en temel gereklilik hangisidir?",
+    "siklar": {
+      "A": "Karşılıklı saygı, hoşgörü ve ortak değerler bilinci",
+      "B": "Toplumun tek lider tarafından yönetilmesi",
+      "C": "Farklılıkların tamamen ortadan kaldırılması",
+      "D": "Herkesin aynı dili konuşması"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Sorunlar ve Çözümler",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Bir şehirde trafik kazaları artmış, çevre kirliliği ciddi boyutlara ulaşmış ve işsizlik oranı yükselmiştir. Belediye bu sorunları çözmek için halkla toplantılar düzenlemiştir.\n\nBu toplantıların düzenlenmesinin temel amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Belediyenin sorumluluğunu halka yüklemek",
-            "B": "Toplumsal sorunların çözümünde vatandaş katılımını sağlamak",
-            "C": "Halkı sorunlar hakkında korkutmak",
-            "D": "Seçim kampanyası yapmak"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Toplumsal sorunların çözümünde vatandaşların katılımı ve görüşleri demokratik yönetimin gereğidir."
+    "dogru_cevap": "A",
+    "aciklama": "Birlikte yaşamın temeli karşılıklı saygı, hoşgörü ve ortak değerlerdir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde trafik kazaları artmış, çevre kirliliği ciddi boyutlara ulaşmıştır. Belediye halkla toplantılar düzenlemiştir.\n\nBu toplantıların amacı hangisidir?",
+    "siklar": {
+      "A": "Seçim kampanyası yapmak",
+      "B": "Halkı korkutmak",
+      "C": "Belediyenin sorumluluğunu halka yüklemek",
+      "D": "Toplumsal sorunların çözümünde vatandaş katılımını sağlamak"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Birliktelik",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Bayramlarda komşuları ziyaret etmek, yaşlılara saygı göstermek ve ihtiyaç sahiplerine yardım etmek toplumsal birlikteliği güçlendiren değerlerdendir.\n\nBu değerlerin ortak amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Bireylerin yalnız kalmasını sağlamak",
-            "B": "Toplumsal bağları güçlendirmek ve dayanışmayı artırmak",
-            "C": "Sadece ekonomik fayda sağlamak",
-            "D": "Geleneklerin değişmesini engellemek"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Bayram ziyaretleri, saygı ve yardımlaşma toplumsal bağları güçlendiren ortak değerlerdir."
+    "dogru_cevap": "D",
+    "aciklama": "Sorunların çözümünde vatandaş katılımı demokratik yönetimin gereğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bayramlarda komşu ziyaretleri, yaşlılara saygı ve ihtiyaç sahiplerine yardım toplumsal birlikteliği güçlendirir.\n\nBu değerlerin ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Geleneklerin değişmesini engellemek",
+      "B": "Bireylerin yalnız kalmasını sağlamak",
+      "C": "Toplumsal bağları güçlendirmek ve dayanışmayı artırmak",
+      "D": "Sadece ekonomik fayda sağlamak"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Gruplar ve Roller",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Sınıfta yapılan proje çalışmasında; Ayşe araştırma yapmış, Mehmet sunum hazırlamış, Zeynep poster çizmiştir.\n\nBu çalışma biçimi aşağıdakilerden hangisini örneklendirmektedir?",
-        "siklar": {
-            "A": "Bireysel çalışma",
-            "B": "Görev dağılımı ve iş birliği",
-            "C": "Rekabet",
-            "D": "Tek kişilik proje"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Herkesin farklı görev üstlenerek birlikte çalışması görev dağılımı ve iş birliğinin örneğidir."
+    "dogru_cevap": "C",
+    "aciklama": "Bayram ziyaretleri, saygı ve yardımlaşma toplumsal bağları güçlendirir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Sınıfta Ayşe araştırma yapmış, Mehmet sunum hazırlamış, Zeynep poster çizmiştir.\n\nBu çalışma biçimi hangisini örnekler?",
+    "siklar": {
+      "A": "Tek kişilik proje",
+      "B": "Rekabet",
+      "C": "Bireysel çalışma",
+      "D": "Görev dağılımı ve iş birliği"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Sorunlar ve Çözümler",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Bir mahallede sokak hayvanlarının bakımsız kalması sorun olmuştur. Mahalle sakinleri bir araya gelerek bir hayvan barınağı kurmuş, veteriner hizmeti organize etmiş ve sahiplendirme kampanyası başlatmıştır.\n\nBu örnek aşağıdakilerden hangisini en iyi göstermektedir?",
-        "siklar": {
-            "A": "Toplumsal sorunların çözümünde bireysel ve toplumsal sorumluluğun önemini",
-            "B": "Devletin her konuda tek yetkili olması gerektiğini",
-            "C": "Hayvan hakları konusunun önemsiz olduğunu",
-            "D": "Mahalle sakinlerinin devlete karşı hareket ettiğini"
-        },
-        "dogru_cevap": "A",
-        "aciklama": "Toplumsal sorunlar karşısında inisiyatif alarak çözüm üretmek bireysel ve toplumsal sorumluluğun göstergesidir."
+    "dogru_cevap": "D",
+    "aciklama": "Herkesin farklı görev üstlenmesi görev dağılımı ve iş birliğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mahallede sokak hayvanlarının bakımsızlığı sorun olmuştur. Sakinler barınak kurmuş, veteriner organize etmiş ve sahiplendirme kampanyası başlatmıştır.\n\nBu örnek hangisini gösterir?",
+    "siklar": {
+      "A": "Toplumsal sorunların çözümünde bireysel ve toplumsal sorumluluğun önemini",
+      "B": "Hayvan haklarının önemsiz olduğunu",
+      "C": "Devletin her konuda tek yetkili olması gerektiğini",
+      "D": "Sakinlerin devlete karşı geldiğini"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Birliktelik",
-        "yil": 2021,
-        "zorluk": "Orta",
-        "soru": "I. Milli bayramları birlikte kutlamak\nII. Doğal afetlerde yardım kampanyaları düzenlemek\nIII. Farklı düşüncelere sahip insanları dışlamak\n\nYukarıdakilerden hangileri toplumsal birlikteliği güçlendirir?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "II ve III",
-            "D": "I, II ve III"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Milli bayramlar ve yardım kampanyaları birlikteliği güçlendirir. İnsanları dışlamak ise birlikteliğe zarar verir."
+    "dogru_cevap": "A",
+    "aciklama": "İnisiyatif alarak çözüm üretmek sorumluluğun göstergesidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "I. Milli bayramları birlikte kutlamak\nII. Afetlerde yardım kampanyaları düzenlemek\nIII. Farklı düşüncedeki insanları dışlamak\n\nHangileri toplumsal birlikteliği güçlendirir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "II ve III"
     },
-    {
-        "unite": "Ünite 1 – Birlikte Yaşamak",
-        "konu": "Toplumsal Sorunlar ve Çözümler",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Okul kantininde sağlıksız gıdaların satıldığını fark eden öğrenciler, dilekçe yazarak okul yönetimine başvurmuş ve sağlıklı beslenme seçenekleri talep etmiştir.\n\nÖğrencilerin bu davranışı aşağıdaki kavramlardan hangisiyle açıklanabilir?",
-        "siklar": {
-            "A": "Pasif vatandaşlık",
-            "B": "Hak arama ve sorumluluk bilinci",
-            "C": "İtaatsizlik",
-            "D": "Bireyselcilik"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Yasal yollarla sorunlara çözüm aramak hak arama ve sorumluluk bilincinin göstergesidir."
+    "dogru_cevap": "B",
+    "aciklama": "Bayramlar ve yardım kampanyaları birlikteliği güçlendirir. Dışlama zarar verir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Kantindeki sağlıksız gıdaları fark eden öğrenciler dilekçeyle okul yönetimine başvurmuştur.\n\nBu davranış hangi kavramla açıklanır?",
+    "siklar": {
+      "A": "Pasif vatandaşlık",
+      "B": "Hak arama ve sorumluluk bilinci",
+      "C": "İtaatsizlik",
+      "D": "Bireyselcilik"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Katman ve Oluşumları Koruma",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Fabrika atıklarının arıtılmadan nehirlere bırakılması, tarım ilaçlarının aşırı kullanımı ve egzoz gazları çevreyi kirletmektedir.\n\nBu sorunların çözümü için;\nI. Atık arıtma tesislerinin kurulması\nII. Organik tarımın teşvik edilmesi\nIII. Toplu taşıma kullanımının özendirilmesi\nönlemlerinden hangileri alınmalıdır?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "I ve III",
-            "D": "I, II ve III"
-        },
-        "dogru_cevap": "D",
-        "aciklama": "Çevre kirliliğinin farklı boyutlarına karşı çok yönlü önlemler alınmalıdır."
+    "dogru_cevap": "B",
+    "aciklama": "Yasal yollarla çözüm aramak hak arama ve sorumluluk bilincinin göstergesidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir okulda farklı kültürlerden gelen öğrenciler 'Kültürler Günü' etkinliğinde kendi yöresel yemeklerini ve danslarını tanıtmıştır.\n\nBu etkinlik;\nI. Kültürel farkındalığı artırır\nII. Hoşgörü ve saygıyı güçlendirir\nIII. Tek tip kültür oluşturur\nsonuçlarından hangilerine yol açar?",
+    "siklar": {
+      "A": "II ve III",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "Yalnız I"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Doğal ve Beşeri Özellikler",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "İklim, yer şekilleri ve su kaynakları gibi doğal özellikler; nüfus, yerleşme ve ulaşım gibi özellikler ise beşeri özelliklerdir.\n\nBuna göre aşağıdakilerden hangisi beşeri bir özellik değildir?",
-        "siklar": {
-            "A": "Otoyolların yapılması",
-            "B": "Fabrikaların kurulması",
-            "C": "Dağların yüksekliği",
-            "D": "Nüfusun artması"
-        },
-        "dogru_cevap": "C",
-        "aciklama": "Dağların yüksekliği doğal bir özelliktir. Diğerleri insan faaliyetleriyle oluşan beşeri özelliklerdir."
+    "dogru_cevap": "B",
+    "aciklama": "Kültürler Günü farkındalık ve hoşgörüyü artırır; tek tip kültür oluşturmaz."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir tiyatro grubunda yönetmen, oyuncular, ışıkçı ve kostümcü birlikte çalışmaktadır.\n\nBu grubun başarılı olabilmesi için en önemli unsur hangisidir?",
+    "siklar": {
+      "A": "Sadece oyuncuların çalışması",
+      "B": "Yönetmenin her şeyi tek başına yapması",
+      "C": "Her üyenin kendi rolünü en iyi şekilde yerine getirmesi",
+      "D": "Grubun en yetenekli kişiye bağımlı olması"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Katman ve Oluşumları Koruma",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Ozon tabakasının incelmesi, sera etkisinin artması ve buzulların erimesi küresel ısınmanın sonuçlarıdır.\n\nKüresel ısınmayı yavaşlatmak için bireylerin yapabileceği en etkili katkı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Fosil yakıt tüketimini artırmak",
-            "B": "Enerji tasarrufu yapmak ve yenilenebilir enerji kaynaklarını desteklemek",
-            "C": "Daha fazla orman alanı açarak tarım yapmak",
-            "D": "Sanayi üretimini tamamen durdurmak"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Enerji tasarrufu ve yenilenebilir enerji kullanımı küresel ısınmayı yavaşlatmada bireysel katkının en etkili yoludur."
+    "dogru_cevap": "C",
+    "aciklama": "Grup başarısı her üyenin kendi rolünü iyi yapmasına bağlıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde;\n- Su kirliliği artmış\n- Park alanları azalmış\n- Gürültü kirliliği yaygınlaşmış\n\nBu sorunların çözümünde en etkili yaklaşım hangisidir?",
+    "siklar": {
+      "A": "Sadece devleti sorumlu tutmak",
+      "B": "Şehirden ayrılmak",
+      "C": "Vatandaş, sivil toplum ve yönetimin birlikte çözüm üretmesi",
+      "D": "Sorunları görmezden gelmek"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Türkiye, Azerbaycan, Kazakistan, Kırgızistan ve Özbekistan gibi ülkeler Türk Devletleri Teşkilatı çatısı altında kültürel işbirliği yapmaktadır. Ortak dil festivalleri, müzik etkinlikleri ve spor turnuvaları düzenlenmektedir.\n\nBu işbirliklerin temel amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Tek bir devlet altında birleşmek",
-            "B": "Ortak kültürel mirası yaşatmak ve kardeşlik bağlarını güçlendirmek",
-            "C": "Diğer ülkelere karşı askeri ittifak kurmak",
-            "D": "Sadece ekonomik çıkar sağlamak"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Türk devletleri arasındaki kültürel işbirlikleri ortak mirası yaşatmayı ve kardeşlik bağlarını güçlendirmeyi amaçlar."
+    "dogru_cevap": "C",
+    "aciklama": "Toplumsal sorunlar devlet, sivil toplum ve vatandaşın birlikte çalışmasıyla çözülür."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Aşure Günü'nde komşulara aşure dağıtmak, cenazelerde taziyeye gitmek toplumsal geleneklerdir.\n\nBu geleneklerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Resmi kurallarla zorunlu olması",
+      "B": "Toplumsal dayanışmayı güçlendirmesi",
+      "C": "Ekonomik kazanç sağlaması",
+      "D": "Büyük şehirlere özgü olması"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Doğal ve Beşeri Özellikler",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Karadeniz Bölgesi'nde bol yağış nedeniyle çay ve fındık yetiştirilirken, Güneydoğu Anadolu'da kurak iklim nedeniyle buğday ve pamuk üretimi yaygındır.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
-        "siklar": {
-            "A": "İklimin tarımsal faaliyetler üzerinde belirleyici olduğunu",
-            "B": "Her bölgede aynı ürünlerin yetiştiğini",
-            "C": "Tarımın sadece teknolojiye bağlı olduğunu",
-            "D": "İklimin tarımla hiçbir ilgisinin olmadığını"
-        },
-        "dogru_cevap": "A",
-        "aciklama": "Farklı bölgelerde farklı ürünlerin yetişmesi iklimin tarım üzerindeki belirleyici etkisini gösterir."
+    "dogru_cevap": "B",
+    "aciklama": "Bu gelenekler toplumsal dayanışmayı güçlendiren kültürel uygulamalardır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bir projede her öğrenci sadece kendi istediğini yapmak istemiş ve kimse uzlaşmamıştır. Sonuçta proje tamamlanamamıştır.\n\nBu durumun nedeni hangisidir?",
+    "siklar": {
+      "A": "Malzeme yetersizliği",
+      "B": "Projenin çok zor olması",
+      "C": "Öğretmenin yetersizliği",
+      "D": "İş birliği ve uzlaşma eksikliği"
     },
-    {
-        "unite": "Ünite 2 – Evimiz Dünya",
-        "konu": "Katman ve Oluşumları Koruma",
-        "yil": 2021,
-        "zorluk": "Orta",
-        "soru": "Ormanların tarla açmak için yakılması, sel ve heyelan riskini artırmaktadır.\n\nBu bilgiye göre aşağıdakilerden hangisi ormanların korunmasının önemini göstermektedir?",
-        "siklar": {
-            "A": "Ormanlar sadece ticari değer taşır",
-            "B": "Ormanlar doğal dengenin korunmasında ve afetlerin önlenmesinde hayati rol oynar",
-            "C": "Orman alanları yerleşim için daha uygun hale getirilmelidir",
-            "D": "Ormanların yok olması çevreyi etkilemez"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Ormanlar hem doğal dengeyi korur hem de sel ve heyelan gibi doğal afetlerin önlenmesinde kritik öneme sahiptir."
+    "dogru_cevap": "D",
+    "aciklama": "Uzlaşma ve iş birliği olmadan grup çalışmaları başarısız olur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir apartmandaki gürültü sorunu için;\nI. Komşuyla yüz yüze konuşmak\nII. Doğrudan polisi aramak\nIII. Apartman yöneticisine bildirmek\n\nSorunun çözümünde doğru sıralama hangisidir?",
+    "siklar": {
+      "A": "Hiçbir şey yapmamak",
+      "B": "Sadece III",
+      "C": "Doğrudan II",
+      "D": "Önce I, sonra III, en son II"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Türkistan'da Kurulan Türk Devletleri",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Göktürkler, Türk tarihinin bilinen ilk yazılı belgelerini (Orhun Yazıtları) bırakmışlardır. Bu yazıtlarda devletin halka karşı sorumlulukları ve milletin birlik olmasının önemi vurgulanmıştır.\n\nOrhun Yazıtları'nın tarih açısından en büyük önemi aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Sadece edebi değer taşıması",
-            "B": "Türklerin devlet yönetimi anlayışını ve millet bilincini yazılı olarak ortaya koyması",
-            "C": "Göktürklerin savaş taktiklerini anlatması",
-            "D": "Çin kültürünün Türklere etkisini göstermesi"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Orhun Yazıtları, Türklerin devlet-millet ilişkisini ve birlik bilincini yazılı olarak belgeleyen ilk kaynaklardır."
+    "dogru_cevap": "D",
+    "aciklama": "Sorunlarda önce diyalog, sonra yönetim, en son yasal yollar denenmelidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir acil durum tatbikatında;\n- Müdür koordinasyonu sağlamış\n- Öğretmenler öğrencileri yönlendirmiş\n- Öğrenciler toplanma alanına gitmiş\n- Güvenlik tahliye kapılarını açmış\n\nBu tatbikat hangi kavramın önemini gösterir?",
+    "siklar": {
+      "A": "Liderliğin gereksizliğinin",
+      "B": "Bireysel hareket",
+      "C": "Organize görev dağılımı ve ekip çalışması",
+      "D": "Rekabetin"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Türkistan'da Kurulan Türk Devletleri",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Uygurlar, göçebe yaşamdan yerleşik hayata geçen ilk Türk topluluğudur. Şehirler kurmuş, tarım yapmış ve kendi alfabelerini geliştirmişlerdir.\n\nUygurların yerleşik hayata geçmesinin en önemli sonucu aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Askeri güçlerinin artması",
-            "B": "Ticaret, sanat ve bilim alanlarında gelişme göstermeleri",
-            "C": "Diğer Türk boylarıyla savaşmaları",
-            "D": "Göçebe yaşamın avantajlarını kaybetmeleri"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Yerleşik hayat; ticaret, sanat, mimari ve bilim gibi alanlarda kalıcı gelişmelerin önünü açmıştır."
+    "dogru_cevap": "C",
+    "aciklama": "Herkesin farklı görev üstlenmesi organize görev dağılımı ve ekip çalışmasıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Farklı meslek gruplarından insanlar (doktor, çiftçi, öğretmen, esnaf) toplumun farklı ihtiyaçlarını karşılamaktadır.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Toplumsal yaşamın farklı rollerin uyumu ile sürdüğünü",
+      "B": "Mesleklerin önemsiz olduğunu",
+      "C": "Herkesin aynı mesleği yapması gerektiğini",
+      "D": "Bazı mesleklerin gereksiz olduğunu"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "İslam Medeniyetinin Ortak Mirası",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "İslam dünyasında Bağdat'taki Beytü'l-Hikme (Bilgelik Evi) pek çok dilden eserin Arapçaya çevrildiği, bilim insanlarının bir arada çalıştığı önemli bir kurumdu. Burada matematik, tıp, astronomi ve felsefe alanlarında çığır açan çalışmalar yapılmıştır.\n\nBeytü'l-Hikme'nin bilim tarihindeki önemi aşağıdakilerden hangisiyle açıklanabilir?",
-        "siklar": {
-            "A": "Sadece dini eğitim veren bir kurum olması",
-            "B": "Farklı medeniyetlerin bilgi birikimini bir araya getirerek bilimin gelişmesine katkıda bulunması",
-            "C": "Yalnızca Arap bilginlerin çalıştığı bir kurum olması",
-            "D": "Askeri eğitim veren bir okul olması"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Beytü'l-Hikme, farklı medeniyetlerin birikimini sentezleyerek evrensel bilime büyük katkı sağlamıştır."
+    "dogru_cevap": "A",
+    "aciklama": "Toplum farklı mesleklerin ve rollerin uyumlu birlikteliğiyle işler."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir mahallede internet altyapısı yetersizdir. Vatandaşlar imza toplayarak belediyeye başvurmuştur.\n\nBu davranış hangisine örnektir?",
+    "siklar": {
+      "A": "Bireysel şikâyet",
+      "B": "Demokratik hak arama ve katılım",
+      "C": "Protesto",
+      "D": "Yasadışı eylem"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "İslam Medeniyetinin Ortak Mirası",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Harezmi, cebir (algebra) biliminin kurucusu olarak kabul edilir. İbn-i Sina'nın tıp ansiklopedisi El-Kanun fi't-Tıb Avrupa üniversitelerinde yüzyıllarca okutulmuştur.\n\nBu bilgilere göre aşağıdakilerden hangisi söylenebilir?",
-        "siklar": {
-            "A": "İslam bilginleri sadece dini bilimlerle ilgilenmiştir",
-            "B": "İslam medeniyeti evrensel bilime önemli katkılarda bulunmuştur",
-            "C": "Avrupa, İslam medeniyetinden hiç etkilenmemiştir",
-            "D": "Bu bilginlerin çalışmaları günümüzde geçersizdir"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Harezmi ve İbn-i Sina gibi bilginler İslam medeniyetinin evrensel bilime katkısının somut örnekleridir."
+    "dogru_cevap": "B",
+    "aciklama": "İmza toplayarak başvuru demokratik hak arama ve katılım örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir ailedeki bireylerin rolleri incelendiğinde;\n- Anne hem çalışmakta hem ev işleriyle ilgilenmekte\n- Baba hem çalışmakta hem çocukların eğitimiyle ilgilenmekte\n- Çocuklar ev işlerine yardım etmekte\n\nBu aile yapısı aşağıdakilerden hangisini yansıtır?",
+    "siklar": {
+      "A": "Modern aile yapısında rollerin paylaşıldığını",
+      "B": "Ailedeki her bireyin aynı görevi yaptığını",
+      "C": "Çocukların hiç sorumluluk almadığını",
+      "D": "Rollerin cinsiyete göre kesin ayrıldığını"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "İslamiyet ile Türklerde Değişim",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Türklerin İslamiyet'i kabul etmesiyle birlikte;\n- Medreseler kurularak eğitim sistemi değişmiştir\n- Camiler, türbeler ve külliyeler inşa edilmiştir\n- Arap ve Fars edebiyatından etkilenen yeni bir edebiyat oluşmuştur\n\nBu bilgilere göre İslamiyet'in Türklerde en çok hangi alanları değiştirdiği söylenebilir?",
-        "siklar": {
-            "A": "Sadece askeri yapıyı",
-            "B": "Eğitim, mimari ve kültürel hayatı",
-            "C": "Sadece siyasi yapıyı",
-            "D": "Göçebe yaşam tarzını"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Medreseler eğitimi, camiler mimariyi, yeni edebiyat kültürel hayatı değiştirmiştir."
+    "dogru_cevap": "A",
+    "aciklama": "Modern ailelerde roller paylaşılır, herkes sorumluluk alır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Engelli bireylerin toplu taşımada özel koltuklara sahip olması, kaldırımlara rampa yapılması toplumsal düzenlemelerdir.\n\nBu düzenlemelerin temel ilkesi hangisidir?",
+    "siklar": {
+      "A": "Eşitlik ilkesi ve herkesin toplumsal yaşama katılım hakkı",
+      "B": "Engelli bireyleri ayırmak",
+      "C": "Ekonomik kazanç sağlamak",
+      "D": "Sadece devletin sorumluluğu"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "İslamiyet ile Türklerde Değişim",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Karahanlılar İslamiyet'i kabul eden ilk Türk devletidir. Bu süreçte Türkçe, İslam kültürüyle harmanlanarak zenginleşmiştir. Yusuf Has Hacib'in Kutadgu Bilig adlı eseri bu dönemin önemli yapıtlarındandır.\n\nKutadgu Bilig'in önemi aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "İlk Türkçe sözlük olması",
-            "B": "İslami dönemde Türkçe yazılmış ilk siyasetname (devlet yönetimi kitabı) olması",
-            "C": "Bir savaş destanı olması",
-            "D": "Arapça yazılmış bir dini eser olması"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Kutadgu Bilig, Türk-İslam kültüründe Türkçe yazılmış ilk siyasetname olarak büyük değer taşır."
+    "dogru_cevap": "A",
+    "aciklama": "Bu düzenlemeler eşitlik ilkesine dayanır ve herkesin toplumsal yaşama katılım hakkını korur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir ilçede;\nI. Çevre gönüllüleri ağaç dikme kampanyası başlatmış\nII. Belediye geri dönüşüm kutuları koymuş\nIII. Okullar çevre günü etkinlikleri düzenlemiş\n\nBu uygulamaların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Ekonomik kalkınma",
+      "B": "Nüfus artışını sağlama",
+      "C": "Çevre sorunlarının çözümünde toplumsal işbirliği",
+      "D": "Turizm geliştirme"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "1071 Malazgirt Meydan Muharebesi'nde Selçuklu Sultanı Alparslan, Bizans İmparatoru Romen Diyojen'i yenerek Anadolu'nun kapılarını Türklere açmıştır. Bu zaferden sonra Anadolu'ya yoğun Türk göçü başlamıştır.\n\nMalazgirt Zaferi'nin en önemli sonucu aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Bizans İmparatorluğu'nun tamamen yıkılması",
-            "B": "Anadolu'nun Türk yurdu haline gelme sürecinin başlaması",
-            "C": "Haçlı Seferlerinin sona ermesi",
-            "D": "İslam dünyasında birliğin sağlanması"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Malazgirt Zaferi, Anadolu'nun Türk yurdu haline gelme sürecini başlatan dönüm noktasıdır."
+    "dogru_cevap": "C",
+    "aciklama": "Gönüllüler, belediye ve okulların birlikte hareket etmesi çevre sorunlarında toplumsal işbirliğidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Fabrika atıklarının arıtılmadan nehirlere bırakılması çevreyi kirletmektedir.\n\nÇözüm için;\nI. Atık arıtma tesisleri\nII. Organik tarım teşviki\nIII. Toplu taşıma özendirilmesi\nönlemlerinden hangileri alınmalıdır?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "Yalnız I",
+      "D": "I, II ve III"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Haçlı Seferleri, Avrupalıların kutsal saydıkları toprakları (Kudüs) ele geçirmek amacıyla düzenledikleri seferlerdir. Ancak bu seferler sonucunda Doğu-Batı arasında kültürel ve ticari etkileşim de artmıştır.\n\nBu bilgiye göre Haçlı Seferleri hakkında aşağıdakilerden hangisi söylenebilir?",
-        "siklar": {
-            "A": "Sadece dini amaçlarla düzenlenmiş ve başka etkisi olmamıştır",
-            "B": "Askeri amaçlı başlamış ancak kültürel ve ekonomik sonuçlar da doğurmuştur",
-            "C": "Doğu-Batı arası etkileşimi tamamen durdurmuştur",
-            "D": "İslam dünyasının Avrupa'yı fethetmesiyle sonuçlanmıştır"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Haçlı Seferleri askeri amaçla başlamış, ancak kültürel ve ticari etkileşimi artıran dolaylı sonuçlar da doğurmuştur."
+    "dogru_cevap": "D",
+    "aciklama": "Çevre kirliliğinin farklı boyutlarına karşı çok yönlü önlemler alınmalıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "İklim, yer şekilleri ve su kaynakları doğal; nüfus, yerleşme ve ulaşım beşeri özelliklerdir.\n\nHangisi beşeri bir özellik değildir?",
+    "siklar": {
+      "A": "Nüfusun artması",
+      "B": "Fabrikaların kurulması",
+      "C": "Dağların yüksekliği",
+      "D": "Otoyolların yapılması"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Türkistan'da Kurulan Türk Devletleri",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Büyük Hun Devleti'nin kurucusu Mete Han, onlu askeri sistemi geliştirmiştir. Bu sistemde ordunun on, yüz, bin ve on bin kişilik bölüklere ayrılması sağlanmıştır.\n\nMete Han'ın bu uygulamasının en önemli faydası aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Askerlerin sayısının azaltılması",
-            "B": "Ordunun disiplinli, düzenli ve etkili yönetilmesi",
-            "C": "Barış politikasının benimsenmesi",
-            "D": "Çin ile ticaretin artması"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Onlu sistem, ordunun hiyerarşik ve disiplinli yönetimini sağlayarak askeri başarıları artırmıştır."
+    "dogru_cevap": "C",
+    "aciklama": "Dağların yüksekliği doğaldır. Diğerleri beşeri özelliklerdir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Ozon tabakası incelmesi, sera etkisi artışı ve buzulların erimesi küresel ısınma sonuçlarıdır.\n\nBireylerin yapabileceği en etkili katkı hangisidir?",
+    "siklar": {
+      "A": "Enerji tasarrufu ve yenilenebilir enerji kaynaklarını desteklemek",
+      "B": "Fosil yakıt tüketimini artırmak",
+      "C": "Daha fazla orman alanı açarak tarım yapmak",
+      "D": "Sanayi üretimini tamamen durdurmak"
     },
-    {
-        "unite": "Ünite 3 – Ortak Mirasımız",
-        "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
-        "yil": 2021,
-        "zorluk": "Zor",
-        "soru": "Anadolu Selçuklu Devleti döneminde kervansaraylar inşa edilerek ticaret yollarının güvenliği sağlanmıştır. Tüccarlar ücretsiz olarak konaklayabilmiş ve malları devlet güvencesine alınmıştır.\n\nKervansaray uygulamasının temel amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Sadece askeri amaçla kullanılmak üzere sığınak yapmak",
-            "B": "Ticari hayatı geliştirmek ve ekonomik canlılık sağlamak",
-            "C": "Yabancıların ülkeye girişini engellemek",
-            "D": "Sadece hükümdar ailesine hizmet vermek"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Kervansaraylar ticaret yollarını güvenli hale getirerek ekonomik canlılığı artırmayı amaçlamıştır."
+    "dogru_cevap": "A",
+    "aciklama": "Enerji tasarrufu ve yenilenebilir enerji küresel ısınmayı yavaşlatmada en etkili bireysel katkıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türk Devletleri Teşkilatı çatısında ortak dil festivalleri, müzik etkinlikleri düzenlenmektedir.\n\nBu işbirliklerin temel amacı hangisidir?",
+    "siklar": {
+      "A": "Ortak kültürel mirası yaşatmak ve kardeşlik bağlarını güçlendirmek",
+      "B": "Askeri ittifak kurmak",
+      "C": "Sadece ekonomik çıkar sağlamak",
+      "D": "Tek devlet altında birleşmek"
     },
-    {
-        "unite": "Ünite 4 – Yaşayan Demokrasimiz",
-        "konu": "Yönetim ve Karar Alma Süreci",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "Bir sınıfta piknik yeri belirlenirken öğretmen tüm öğrencilerin fikrini almış ve çoğunluğun tercih ettiği yer seçilmiştir.\n\nBu uygulama demokratik yönetimin hangi ilkesine örnektir?",
-        "siklar": {
-            "A": "Azınlığın çoğunluğa boyun eğmesi",
-            "B": "Çoğunluğun kararına saygı ve katılımcılık",
-            "C": "Öğretmenin tek başına karar vermesi",
-            "D": "Sadece başarılı öğrencilerin söz hakkı olması"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Herkesin fikrini alarak çoğunluk kararına göre hareket etmek demokratik katılımcılığın örneğidir."
+    "dogru_cevap": "A",
+    "aciklama": "Kültürel işbirlikleri ortak mirası yaşatmayı ve kardeşlik bağlarını güçlendirmeyi amaçlar."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Karadeniz'de çay-fındık, Güneydoğu'da buğday-pamuk yetiştirilir.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "İklimin tarımla ilgisi olmadığını",
+      "B": "Tarımın sadece teknolojiye bağlı olduğunu",
+      "C": "Her bölgede aynı ürünlerin yetiştiğini",
+      "D": "İklimin tarım üzerinde belirleyici olduğunu"
     },
-    {
-        "unite": "Ünite 4 – Yaşayan Demokrasimiz",
-        "konu": "Temel Hak ve Sorumluluklar",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Her bireyin eğitim hakkı vardır. Ancak bu hakla birlikte okula devam etme, kurallara uyma gibi sorumluluklar da bulunmaktadır.\n\nBu durum haklar ve sorumluluklar arasındaki ilişkiyi aşağıdakilerden hangisiyle açıklar?",
-        "siklar": {
-            "A": "Haklar ve sorumluluklar birbirinden bağımsızdır",
-            "B": "Her hak beraberinde sorumluluk getirir; haklar ve sorumluluklar birbirini tamamlar",
-            "C": "Sorumluluklar sadece yetişkinlere aittir",
-            "D": "Haklar sınırsız, sorumluluklar ise yoktur"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Her hak beraberinde sorumluluk getirir; ikisi birbirini tamamlayan kavramlardır."
+    "dogru_cevap": "D",
+    "aciklama": "Farklı bölgelerde farklı ürünlerin yetişmesi iklimin tarıma etkisinin göstergesidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Ormanların tarla açmak için yakılması sel ve heyelan riskini artırır.\n\nOrmanların korunmasının önemi hangisidir?",
+    "siklar": {
+      "A": "Ormanlar sadece ticari değer taşır",
+      "B": "Yok olması çevreyi etkilemez",
+      "C": "Yerleşim için daha uygun hale getirilmelidir",
+      "D": "Doğal dengenin korunması ve afetlerin önlenmesinde hayati rol oynar"
     },
-    {
-        "unite": "Ünite 4 – Yaşayan Demokrasimiz",
-        "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "E-devlet uygulamaları sayesinde vatandaşlar adres değişikliği, vergi ödemesi, sağlık randevusu gibi işlemlerini internet üzerinden yapabilmektedir.\n\nE-devlet uygulamalarının en önemli faydası aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Devlet kurumlarını tamamen ortadan kaldırması",
-            "B": "Vatandaşların kamu hizmetlerine hızlı ve kolay erişimini sağlaması",
-            "C": "Sadece gençlerin kullanabileceği bir sistem olması",
-            "D": "İnternet kullanımını zorunlu hale getirmesi"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "E-devlet, vatandaşların kamu hizmetlerine zamandan ve mekândan bağımsız olarak erişimini sağlar."
+    "dogru_cevap": "D",
+    "aciklama": "Ormanlar doğal dengeyi korur ve afetlerin önlenmesinde kritik öneme sahiptir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Dünya'nın katmanları;\nI. Atmosfer (hava küre)\nII. Hidrosfer (su küre)\nIII. Litosfer (taş küre)\nIV. Biyosfer (canlılar küre)\n\nYeşil alanların tahrip edilmesi doğrudan hangi katmanı etkiler?",
+    "siklar": {
+      "A": "Yalnız IV",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "Tüm katmanları"
     },
-    {
-        "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
-        "konu": "Ekonomik Faaliyetler ve Meslekler",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "Tarım, hayvancılık, sanayi, ticaret ve hizmet sektörü bir ülkedeki temel ekonomik faaliyetlerdir.\n\nBir ülkede sanayi ve hizmet sektörünün tarıma göre daha fazla gelişmiş olması aşağıdakilerden hangisini gösterir?",
-        "siklar": {
-            "A": "Ülkenin tarımdan tamamen vazgeçtiğini",
-            "B": "Ülkenin gelişmişlik düzeyinin yüksek olduğunu",
-            "C": "Tarımın önemsiz bir sektör olduğunu",
-            "D": "İşsizliğin tamamen ortadan kalktığını"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Sanayi ve hizmet sektörünün ağırlıklı olması genellikle ekonomik gelişmişliğin göstergesidir."
+    "dogru_cevap": "D",
+    "aciklama": "Yeşil alanların tahribi havayı, suyu, toprağı ve canlıları yani tüm katmanları etkiler."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir bölgede;\n- Irmak kenarlarında yerleşim yoğun\n- Dağlık alanlarda nüfus az\n- Ova bölgelerinde tarım gelişmiş\n\nBu durum aşağıdakilerden hangisini kanıtlar?",
+    "siklar": {
+      "A": "Beşeri faaliyetlerin doğayı etkilemediğini",
+      "B": "Her bölgede aynı nüfusun olduğunu",
+      "C": "Doğal koşulların beşeri faaliyetleri etkilediğini",
+      "D": "Dağlık alanların tarıma daha elverişli olduğunu"
     },
-    {
-        "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
-        "konu": "Yatırım ve Pazarlama Süreci",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Bir girişimci yerel meyveleri kullanarak reçel üretmeye karar vermiştir. Ancak ürünü üretmek için önce hammadde almış, fabrika kiralamış ve işçi çalıştırmıştır. Ürettiği reçelleri internet üzerinden satışa sunmuştur.\n\nBu süreçte sırasıyla hangi ekonomik aşamalar gerçekleşmiştir?",
-        "siklar": {
-            "A": "Tüketim → Üretim → Dağıtım",
-            "B": "Üretim → Dağıtım → Tüketim",
-            "C": "Dağıtım → Üretim → Tüketim",
-            "D": "Tüketim → Dağıtım → Üretim"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Ekonomik süreç; üretim (reçel yapma), dağıtım (internet satışları) ve tüketim (müşteri alımı) aşamalarından oluşur."
+    "dogru_cevap": "C",
+    "aciklama": "Yerleşim ve tarım desenleri doğal koşulların beşeri faaliyetleri etkilediğini gösterir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Nevruz bayramı Türk dünyasında ortak kutlanan bir bayramdır.\n\nNevruz'un Türk devletleri arasındaki önemi;\nI. Ortak kültürel kimliğin güçlenmesi\nII. Kardeşlik bağlarının pekişmesi\nIII. Siyasi birlik oluşturma\nsonuçlarından hangileriyle ilişkilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "I, II ve III"
     },
-    {
-        "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
-        "konu": "Ulaşım ve İletişim Teknolojileri",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "Osmanlı döneminde ulaklar (postacılar) atla günlerce yolculuk ederek mektup taşırken, günümüzde e-posta saniyeler içinde dünyanın öbür ucuna ulaşmaktadır.\n\nBu değişim aşağıdakilerden hangisinin sonucudur?",
-        "siklar": {
-            "A": "İnsanların mektup yazmayi bırakmasının",
-            "B": "İletişim teknolojilerinin hızla gelişmesinin",
-            "C": "Atların artık kullanılmamasının",
-            "D": "Posta hizmetlerinin tamamen kaldırılmasının"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Ulaktan e-postaya geçiş, iletişim teknolojisindeki devrimsel gelişmenin sonucudur."
+    "dogru_cevap": "C",
+    "aciklama": "Nevruz ortak kültürel kimliği güçlendirir ve kardeşlik bağlarını pekiştirir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Akdeniz Bölgesi'nde turizm gelişmişken, Zonguldak'ta madencilik ön plandadır.\n\nBu farkın temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Doğal kaynaklar ve coğrafi özelliklerin farklılığı",
+      "B": "Tarihi geçmişleri",
+      "C": "Devlet politikaları",
+      "D": "Nüfus farklılığı"
     },
-    {
-        "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
-        "konu": "Telif ve Patent Süreci",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Bir mucit, geliştirdiği yeni bir ürünün başkaları tarafından izinsiz olarak kopyalanmaması için patent başvurusunda bulunmuştur.\n\nPatent hakkının temel amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "İcat yapılmasını engellemek",
-            "B": "Buluş sahiplerinin haklarını korumak ve yenilikçiliği teşvik etmek",
-            "C": "Sadece devlet kurumlarının buluş yapmasını sağlamak",
-            "D": "Tüm buluşların ücretsiz paylaşılmasını zorunlu kılmak"
-        },
-        "dogru_cevap": "B",
-        "aciklama": "Patent, buluş sahiplerinin haklarını koruyarak yeni icatlar yapılmasını teşvik eden hukuki bir güvencedir."
-    }
+    "dogru_cevap": "A",
+    "aciklama": "Bölgelerin farklı ekonomik faaliyetleri doğal kaynak ve coğrafi özellik farklılığındandır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir nehir üzerine baraj yapılmıştır. Barajın;\nI. Elektrik üretimi sağlaması\nII. Tarım arazilerini sulaması\nIII. Nehirdeki canlı türlerinin azalmasına neden olması\netkilerinden hangileri olumlu, hangisi olumsuzdur?",
+    "siklar": {
+      "A": "Hepsi olumsuz",
+      "B": "I ve II olumlu, III olumsuz",
+      "C": "Hepsi olumlu",
+      "D": "Yalnız I olumlu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Elektrik ve sulama olumlu, canlı türlerinin azalması olumsuz etkidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "I. Volkanik patlama\nII. Kentleşme\nIII. Deprem\nIV. Baraj yapımı\n\nYukarıdakilerden hangileri beşeri değişimdir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "II ve IV",
+      "C": "I ve IV",
+      "D": "I ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kentleşme ve baraj yapımı beşeri; volkanik patlama ve deprem doğal değişimdir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "TÜRKSOY (Uluslararası Türk Kültürü Teşkilatı) Türk dünyasında kültürel etkinlikler düzenlemektedir.\n\nBu teşkilatın amacı hangisidir?",
+    "siklar": {
+      "A": "Türk topluluklarının kültürel bağlarını güçlendirmek",
+      "B": "Tek bir dil oluşturmak",
+      "C": "Askeri güç oluşturmak",
+      "D": "Ekonomik birlik kurmak"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "TÜRKSOY Türk topluluklarının kültürel bağlarını güçlendirmeyi amaçlar."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Plastik atıklar okyanuslarda büyük çöp adaları oluşturmuştur. Deniz canlıları bu atıkları yutarak ölmektedir.\n\nBu sorunun çözümü için en etkili yöntem hangisidir?",
+    "siklar": {
+      "A": "Atıkları daha derin denizlere taşımak",
+      "B": "Denizleri temizleyen gemiler yapmak",
+      "C": "Plastik kullanımını azaltmak ve geri dönüşümü yaygınlaştırmak",
+      "D": "Deniz canlılarını koruma altına almak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Kaynağından çözüm: plastik kullanımını azaltmak ve geri dönüşümü yaygınlaştırmak en etkili yöntemdir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bir bölgede yıllık ortalama sıcaklık 25°C, yağış az ve güneşli gün sayısı fazladır.\n\nBu bölgede hangi ekonomik faaliyet daha çok gelişmiştir?",
+    "siklar": {
+      "A": "Turizm ve seracılık",
+      "B": "Madencilik",
+      "C": "Ağır sanayi",
+      "D": "Ormancılık"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Sıcak iklim ve güneşli günler turizm ve seracılık için elverişlidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Yenilenebilir enerji kaynakları (güneş, rüzgâr, jeotermal) fosil yakıtlara alternatif olarak kullanılmaktadır.\n\nYenilenebilir enerjinin en önemli avantajı hangisidir?",
+    "siklar": {
+      "A": "Kurulumunun kolay olması",
+      "B": "Daha ucuz olması",
+      "C": "Çevre dostu ve tükenmez olması",
+      "D": "Her yerde üretilmesi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Yenilenebilir enerji çevre dostu ve tükenmez olması en büyük avantajıdır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "GAP (Güneydoğu Anadolu Projesi) kapsamında;\n- Barajlar ve HES'ler yapılmış\n- Sulama kanalları açılmış\n- Tarım alanları genişlemiş\n\nGAP'ın bölgeye katkıları;\nI. Enerji üretimini artırması\nII. Tarımsal üretimi geliştirmesi\nIII. Göçü azaltması\nsonuçlarından hangileridir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "Yalnız III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "GAP enerji, tarım ve göçü azaltma konularında bölgeye çok yönlü katkı sağlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Orhun Yazıtları'nda devletin halka karşı sorumlulukları ve milletin birlik olması vurgulanmıştır.\n\nOrhun Yazıtları'nın en büyük önemi hangisidir?",
+    "siklar": {
+      "A": "Savaş taktiklerini anlatması",
+      "B": "Sadece edebi değer taşıması",
+      "C": "Çin kültürünün etkisini göstermesi",
+      "D": "Türklerin devlet yönetimi anlayışını ve millet bilincini yazılı olarak ortaya koyması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Orhun Yazıtları Türklerin devlet-millet ilişkisini yazılı olarak belgeleyen ilk kaynaklardır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Uygurlar yerleşik hayata geçen ilk Türk topluluğudur. Şehirler kurmuş ve kendi alfabelerini geliştirmişlerdir.\n\nYerleşik hayata geçmenin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Askeri güçlerinin artması",
+      "B": "Göçebeliğin avantajlarını kaybetmeleri",
+      "C": "Ticaret, sanat ve bilimde gelişme göstermeleri",
+      "D": "Diğer boylarla savaşmaları"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Yerleşik hayat ticaret, sanat ve bilimde kalıcı gelişmelerin önünü açmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mete Han onlu askeri sistemi geliştirmiştir. Ordu on, yüz, bin ve on bin kişilik bölüklere ayrılmıştır.\n\nBu sistemin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Çin ile ticaretin artması",
+      "B": "Ordunun disiplinli ve etkili yönetilmesi",
+      "C": "Asker sayısının azaltılması",
+      "D": "Barış politikasının benimsenmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Onlu sistem ordunun hiyerarşik ve disiplinli yönetimini sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Göktürklerin kurulmasıyla;\nI. Türk adı ilk kez devlet adı olarak kullanıldı\nII. Türk alfabesi geliştirildi\nIII. İpek Yolu ticareti kontrol altına alındı\n\nBunlardan hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "Yalnız III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Göktürklerde Türk adı devlet adı, Göktürk alfabesi geliştirilmiş ve İpek Yolu kontrol edilmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İlk Türk devletlerinde 'Kut' anlayışı hakimiyet hakkının Tanrı tarafından verildiğini ifade eder.\n\nBu anlayışın siyasi sonucu hangisidir?",
+    "siklar": {
+      "A": "Hükümdarın yetkisinin meşrulaştırılması",
+      "B": "Demokrasinin uygulanması",
+      "C": "Halkın doğrudan yönetmesi",
+      "D": "Din devleti kurulması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kut anlayışı hükümdarın yetkisini Tanrı iradesine dayandırarak meşrulaştırmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Türklerde 'Kurultay' meclisi devlet işlerinin görüşüldüğü danışma meclisidir.\n\nKurultay'ın varlığı hangi yönetim anlayışını gösterir?",
+    "siklar": {
+      "A": "Mutlak monarşi",
+      "B": "Teokratik devlet",
+      "C": "Danışmaya dayalı yönetim",
+      "D": "Tek adam yönetimi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Kurultay meclisi istişareye dayalı yönetim anlayışının göstergesidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Beytü'l-Hikme'de farklı dillerden eserler çevrilmiş, matematik, tıp, astronomi alanında çalışmalar yapılmıştır.\n\nBilim tarihindeki önemi hangisidir?",
+    "siklar": {
+      "A": "Askeri eğitim okulu olması",
+      "B": "Yalnızca Arap bilginlerin çalışması",
+      "C": "Farklı medeniyetlerin bilgi birikimini sentezleyerek bilimin gelişmesine katkı sağlamak",
+      "D": "Sadece dini eğitim vermek"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Beytü'l-Hikme farklı medeniyetlerin birikimini sentezleyerek bilime katkı sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Harezmi cebir biliminin kurucusu, İbn-i Sina'nın El-Kanun fi't-Tıb eseri Avrupa'da yüzyıllarca okutulmuştur.\n\nBu bilgilere göre hangisi söylenebilir?",
+    "siklar": {
+      "A": "Avrupa İslam medeniyetinden etkilenmemiştir",
+      "B": "İslam bilginleri sadece dini bilimlerle ilgilenmiştir",
+      "C": "Bu çalışmalar günümüzde geçersizdir",
+      "D": "İslam medeniyeti evrensel bilime önemli katkılarda bulunmuştur"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Harezmi ve İbn-i Sina İslam medeniyetinin evrensel bilime katkısının somut örnekleridir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İslam medeniyetinde;\n- El-Biruni astronomide\n- İbn-i Heysem optikte\n- El-Cezeri mühendislikte\nönemli çalışmalar yapmıştır.\n\nBu bilginlerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Aynı ülkede yaşamaları",
+      "B": "Pozitif bilimlerde öncü çalışmalar yapmaları",
+      "C": "Sadece dini ilimlerle uğraşmaları",
+      "D": "Avrupa'da eğitim almaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu bilginler farklı pozitif bilim dallarında öncü çalışmalar yapmışlardır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türklerin İslamiyet'i kabul etmesiyle medreseler, camiler inşa edilmiş ve yeni bir edebiyat oluşmuştur.\n\nİslamiyet'in Türklerde en çok değiştirdiği alanlar hangileridir?",
+    "siklar": {
+      "A": "Göçebe yaşam tarzını",
+      "B": "Sadece siyasi yapıyı",
+      "C": "Eğitim, mimari ve kültürel hayatı",
+      "D": "Sadece askeri yapıyı"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Medreseler eğitimi, camiler mimariyi, yeni edebiyat kültürel hayatı değiştirmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Karahanlılar İslamiyet'i kabul eden ilk Türk devletidir. Kutadgu Bilig bu dönemde yazılmıştır.\n\nKutadgu Bilig'in önemi hangisidir?",
+    "siklar": {
+      "A": "İslami dönemde Türkçe yazılmış ilk siyasetname olması",
+      "B": "İlk Türkçe sözlük olması",
+      "C": "Arapça yazılmış dini eser olması",
+      "D": "Bir savaş destanı olması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kutadgu Bilig Türk-İslam kültüründe Türkçe yazılmış ilk siyasetnamedir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Kaşgarlı Mahmut'un Divanü Lügati't-Türk adlı eseri;\nI. İlk Türkçe sözlüktür\nII. Türk boylarının dillerini derler\nIII. Bir harita içerir\n\nBu özelliklerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Divanü Lügati't-Türk ilk Türkçe sözlüktür, boyların dillerini derler ve bir dünya haritası içerir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Ahmet Yesevi Türkler arasında İslamiyet'in yayılmasında önemli rol oynamıştır.\n\nAhmet Yesevi'nin etkili olmasının temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Zenginliğiyle dikkat çekmesi",
+      "B": "Askeri güç kullanması",
+      "C": "İslam'ı Türk kültürüyle harmanlayarak halkın anlayacağı dilde anlatması",
+      "D": "Devlet yönetiminde yer alması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Ahmet Yesevi İslam'ı Türk kültürüyle harmanlayarak halkın anlayacağı dilde aktarmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "1071 Malazgirt'te Alparslan Bizans'ı yenmiş, Anadolu'ya Türk göçü başlamıştır.\n\nMalazgirt Zaferi'nin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Bizans'ın tamamen yıkılması",
+      "B": "Haçlı Seferlerinin sona ermesi",
+      "C": "Anadolu'nun Türk yurdu haline gelme sürecinin başlaması",
+      "D": "İslam dünyasında birlik sağlanması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Malazgirt Anadolu'nun Türk yurdu olma sürecini başlatan dönüm noktasıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Haçlı Seferleri sonucunda Doğu-Batı arasında kültürel ve ticari etkileşim artmıştır.\n\nBu bilgiye göre Haçlı Seferleri hakkında hangisi söylenebilir?",
+    "siklar": {
+      "A": "Doğu-Batı etkileşimini tamamen durdurmuştur",
+      "B": "Askeri amaçla başlamış ancak kültürel ve ekonomik sonuçlar da doğurmuştur",
+      "C": "Sadece dini amaçlı, başka etkisi yok",
+      "D": "İslam dünyasının Avrupa'yı fethetmesiyle sonuçlanmıştır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Haçlı Seferleri askeri amaçlı başlamış ancak kültürel ve ticari etkileşimi artırmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Anadolu Selçuklu döneminde kervansaraylar inşa edilmiş, tüccarlar ücretsiz konaklayabilmiştir.\n\nKervansarayların temel amacı hangisidir?",
+    "siklar": {
+      "A": "Ticari hayatı geliştirmek ve ekonomik canlılık sağlamak",
+      "B": "Askeri sığınak yapmak",
+      "C": "Hükümdar ailesine hizmet vermek",
+      "D": "Yabancıların girişini engellemek"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kervansaraylar ticaret yollarını güvenli hale getirerek ekonomik canlılığı hedeflemiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Anadolu Selçuklu Devleti medreseler, darüşşifalar (hastaneler) ve camiler inşa etmiştir.\n\nBu yapıların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Ekonomik gelir elde etmek",
+      "B": "Toplumun eğitim, sağlık ve ibadet ihtiyaçlarını karşılamak",
+      "C": "Yalnızca turizm amaçlı kullanmak",
+      "D": "Askeri güç göstermek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Medrese, darüşşifa ve camiler toplumun temel ihtiyaçlarını karşılamak amacıyla inşa edilmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Moğol istilası sonucu Anadolu'ya yoğun göç olmuş, beylikler kurulmuştur.\n\nBu sürecin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Anadolu Beylikleri döneminin başlaması ve Osmanlı'nın kuruluş zemininin oluşması",
+      "B": "Selçukluların güçlenmesi",
+      "C": "Moğolların İslamiyet'i yayması",
+      "D": "Anadolu'nun tamamen boşalması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Moğol istilası beyliklerin kurulmasına ve Osmanlı'nın doğuş zemininin oluşmasına yol açmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "İpek Yolu, Çin'den başlayıp Akdeniz'e uzanan ticaret yoludur. Türk devletleri bu yolun güvenliğini sağlamıştır.\n\nİpek Yolu'nun önemi hangisidir?",
+    "siklar": {
+      "A": "Tek bir devlet tarafından kullanılması",
+      "B": "Sadece askeri harekât yolu olması",
+      "C": "Yalnızca ipek taşınması",
+      "D": "Farklı kültürler arasında ticaret ve kültürel etkileşimi sağlaması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "İpek Yolu ticaret ve kültürel etkileşimin en önemli güzergâhıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Piknik yeri belirlenirken öğretmen tüm öğrencilerin fikrini almış ve çoğunluğun tercihi seçilmiştir.\n\nBu uygulama hangi ilkeye örnektir?",
+    "siklar": {
+      "A": "Azınlığın çoğunluğa boyun eğmesi",
+      "B": "Çoğunluğun kararına saygı ve katılımcılık",
+      "C": "Sadece başarılıların söz hakkı olması",
+      "D": "Öğretmenin tek karar vermesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Herkesin fikrini alarak çoğunluk kararına göre hareket etmek demokratik katılımcılıktır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Eğitim hakkı vardır ancak okula devam etme ve kurallara uyma sorumlulukları da bulunur.\n\nBu durum aşağıdakilerden hangisini açıklar?",
+    "siklar": {
+      "A": "Haklar sınırsızdır",
+      "B": "Haklar ve sorumluluklar bağımsızdır",
+      "C": "Her hak beraberinde sorumluluk getirir; birbirini tamamlar",
+      "D": "Sorumluluklar sadece yetişkinlere aittir"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Her hak beraberinde sorumluluk getirir; ikisi birbirini tamamlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "E-devlet ile adres değişikliği, vergi ödeme, sağlık randevusu internet üzerinden yapılır.\n\nE-devletin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Sadece gençler için olması",
+      "B": "Devlet kurumlarını tamamen ortadan kaldırması",
+      "C": "İnternet kullanımını zorunlu kılması",
+      "D": "Vatandaşların kamu hizmetlerine hızlı ve kolay erişimini sağlaması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "E-devlet zamandan ve mekândan bağımsız kamu hizmeti erişimi sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sınıf başkanlığı seçiminde;\nI. Adaylar kendini tanıtmıştır\nII. Herkes eşit oy kullanmıştır\nIII. Öğretmen kendi istediğini seçmiştir\n\nDemokratik seçim ilkelerine uygun olanlar hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I, II ve III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Tanıtım ve eşit oy demokratik ilkelerdir. Öğretmenin tek seçimi demokratik değildir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "TBMM'de yasalar milletvekillerinin oylarıyla kabul veya reddedilir.\n\nBu süreç hangisini yansıtır?",
+    "siklar": {
+      "A": "Bürokratik işlemleri",
+      "B": "Askeri yönetimi",
+      "C": "Temsili demokrasi ve çoğulcu karar alma sürecini",
+      "D": "Tek kişi yönetimini"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Milletvekillerinin oy kullanması temsili demokrasi ve çoğulcu karar alma sürecidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Demokratik toplumda;\nI. Düşünce özgürlüğü\nII. Basın özgürlüğü\nIII. Seçme ve seçilme hakkı\n\nBunların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Sadece gelişmiş ülkelerde geçerli olmaları",
+      "B": "Sadece yetişkinlere ait olmaları",
+      "C": "Kısıtlanabilir haklar olmaları",
+      "D": "Demokratik yönetimin temel unsurları olmaları"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Düşünce, basın özgürlüğü ve seçme hakkı demokrasinin temel unsurlarıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "BM Çocuk Hakları Sözleşmesi'ne göre her çocuğun;\nI. Eğitim alma\nII. Oyun oynama\nIII. Korunma\nhakkı vardır.\n\nBu hakların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Ailenin iznine bağlı olması",
+      "B": "18 yaşından sonra başlaması",
+      "C": "Evrensel ve devredilmez olması",
+      "D": "Sadece zengin ülkelerde geçerli olması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Çocuk hakları evrensel ve devredilmezdir; tüm dünya çocukları için geçerlidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir öğrencinin okula gitmesi;\nI. Eğitim hakkını kullanmasıdır\nII. Devam zorunluluğu sorumluluğudur\nIII. Hem hak hem sorumluluktur\n\nHangileri doğrudur?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "I ve II",
+      "C": "Yalnız II",
+      "D": "Yalnız I"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Okula gitmek hem bir hak hem de bir sorumluluktur; üçü de doğrudur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Dijital vatandaşlık;\nI. İnternette etik kurallara uyma\nII. Kişisel verileri koruma\nIII. Siber zorbalık yapma\nkavramlarından hangileriyle ilişkilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I, II ve III",
+      "C": "I ve II",
+      "D": "II ve III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Dijital vatandaşlık etik kurallara uyma ve verileri korumayı kapsar. Siber zorbalık ihlaldir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "CİMER aracılığıyla vatandaşlar şikâyet ve önerilerini devlete iletebilir.\n\nBu uygulama hangisine katkı sağlar?",
+    "siklar": {
+      "A": "Sadece yazılı başvuru yapılmasına",
+      "B": "Şikâyetlerin gizli kalmasına",
+      "C": "Devletin otoritesini artırmaya",
+      "D": "Vatandaş-devlet iletişimini güçlendirmeye ve demokratik katılımı artırmaya"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "CİMER vatandaş-devlet iletişimini güçlendirir ve demokratik katılımı artırır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Muhtar seçiminde mahalledeki tüm seçmenler oy kullanır.\n\nMuhtar seçiminin önemi hangisidir?",
+    "siklar": {
+      "A": "Muhtarın hiçbir yetkisi yoktur",
+      "B": "Yerel demokrasinin ve halkın yönetime katılımının bir göstergesidir",
+      "C": "Sadece büyük şehirlerde yapılır",
+      "D": "Sadece idari bir formalitedir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Muhtar seçimi yerel demokrasi ve halkın yönetime katılımının göstergesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede;\n- Gazeteciler tutuklanıyor\n- Muhalefet partileri kapatılıyor\n- İnternet sansürleniyor\n\nBu ülkede ihlal edilen haklar;\nI. Basın özgürlüğü\nII. Siyasi haklar\nIII. İfade özgürlüğü\nhangilerini kapsar?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Gazeteci tutuklanması basın, parti kapatma siyasi, sansür ifade özgürlüğü ihlalidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Belediye meclisi toplantılarına vatandaşlar da izleyici olarak katılabilmektedir.\n\nBu uygulamanın amacı hangisidir?",
+    "siklar": {
+      "A": "Sadece siyasi propaganda yapmak",
+      "B": "Vatandaşları cezalandırmak",
+      "C": "Meclis toplantılarını engellemek",
+      "D": "Yönetimde şeffaflık ve denetim sağlamak"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Vatandaşların meclisi izlemesi şeffaflık ve demokratik denetim sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Online oy kullanma sistemleri dünyada bazı ülkelerde denenmektedir.\n\nBu sistemin avantajı hangisidir?",
+    "siklar": {
+      "A": "Oy kullanmayı kolaylaştırarak katılımı artırması",
+      "B": "Seçim sonuçlarını geciktirmesi",
+      "C": "Sadece gençlerin oy kullanabilmesi",
+      "D": "Oy gizliliğini tamamen kaldırması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Online oy kullanma kolaylık sağlayarak seçime katılımı artırabilir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Vergi vermek, seçimlerde oy kullanmak vatandaşlık görevidir.\n\nBu görevlerin ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Sadece yöneticilere fayda sağlamak",
+      "B": "Devletin ve toplumun düzenli işleyişini sağlamak",
+      "C": "Vatandaşları kontrol etmek",
+      "D": "Bireyleri cezalandırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vatandaşlık görevleri devletin ve toplumun düzenli işleyişini sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Demokrasilerde;\n- Hukuk devleti ilkesi geçerlidir\n- Yargı bağımsızdır\n- Basın özgürdür\n\nBu özelliklerin ortak işlevi hangisidir?",
+    "siklar": {
+      "A": "Ekonomik kalkınmayı sağlamak",
+      "B": "Askeri güç oluşturmak",
+      "C": "Devleti güçlü kılmak",
+      "D": "Bireylerin haklarını korumak ve iktidarı denetlemek"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Hukuk devleti, yargı bağımsızlığı ve basın özgürlüğü hakları korur ve iktidarı denetler."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir belediye, vatandaşların şikâyet ve önerilerini alabileceği bir mobil uygulama geliştirmiştir.\n\nBu uygulamanın katkısı hangisidir?",
+    "siklar": {
+      "A": "Sadece gençler kullanabilmektedir",
+      "B": "Demokratik katılım ve yönetim-vatandaş iletişimi güçlenmiştir",
+      "C": "Belediye işleri yavaşlamıştır",
+      "D": "Technoloji bağımlılığı artmıştır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Dijital platformlar demokratik katılımı ve yönetim-vatandaş iletişimini güçlendirir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda;\nI. Kanun önünde eşitlik\nII. Yargıya başvuru hakkı\nIII. Adil yargılanma hakkı\n\nBu hakların güvence altına alınması hangi devlet ilkesidir?",
+    "siklar": {
+      "A": "Monarşi",
+      "B": "Oligarşi",
+      "C": "Teokrasi",
+      "D": "Hukuk devleti"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Kanun önünde eşitlik, yargıya başvuru ve adil yargılanma hukuk devleti ilkesinin unsurlarıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Çocuk işçiliği ve erken yaşta evlilik çocuk hakları ihlalidir.\n\nBu ihlallerin önlenmesi için en önemli adım hangisidir?",
+    "siklar": {
+      "A": "Sorunları görmezden gelmek",
+      "B": "Ailelere daha fazla özgürlük vermek",
+      "C": "Çocukları toplumdan ayırmak",
+      "D": "Eğitim ve farkındalık ile toplumsal bilinç oluşturmak"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Çocuk hakları ihlallerinin önlenmesinde eğitim ve toplumsal farkındalık en önemli adımdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye Cumhuriyeti'nin yönetim biçimi 'demokratik, laik, sosyal bir hukuk devleti'dir.\n\nBu tanımdaki 'sosyal devlet' kavramı neyi ifade eder?",
+    "siklar": {
+      "A": "Devletin hiçbir hizmet vermemesini",
+      "B": "Devletin tüm vatandaşlara eşit fırsat ve temel ihtiyaçların karşılanmasını sağlamasını",
+      "C": "Sosyal medyanın devlet tarafından yönetilmesini",
+      "D": "Devletin sadece zenginlere hizmet vermesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sosyal devlet, vatandaşlara eşit fırsat ve temel ihtiyaçların karşılanmasını garanti eder."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Sanayi ve hizmet sektörünün tarıma göre daha fazla gelişmiş olması neyi gösterir?",
+    "siklar": {
+      "A": "Tarımın önemsiz olduğunu",
+      "B": "Ülkenin gelişmişlik düzeyinin yüksek olduğunu",
+      "C": "İşsizliğin ortadan kalktığını",
+      "D": "Ülkenin tarımdan tamamen vazgeçtiğini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sanayi ve hizmet sektörünün ağırlığı genellikle ekonomik gelişmişlik göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Girişimci meyve reçeli üretmiş; önce hammadde almış, fabrika kiralamış, işçi çalıştırmış, internetten satmıştır.\n\nEkonomik aşamalar sırasıyla hangileridir?",
+    "siklar": {
+      "A": "Tüketim → Dağıtım → Üretim",
+      "B": "Dağıtım → Üretim → Tüketim",
+      "C": "Tüketim → Üretim → Dağıtım",
+      "D": "Üretim → Dağıtım → Tüketim"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Üretim (reçel yapma), dağıtım (internet satışı), tüketim (müşteri alımı) sırasıyla gerçekleşir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "I. Çiftçilik → Tarım sektörü\nII. Öğretmenlik → Hizmet sektörü\nIII. Tekstil üretimi → Sanayi sektörü\n\nBu eşleştirmelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "Yalnız III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Çiftçilik tarım, öğretmenlik hizmet, tekstil sanayi sektörüne aittir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir firma;\nI. Pazar araştırması yapmış\nII. Hedef kitleyi belirlemiş\nIII. Ürünü fiyatlandırmış\nIV. Reklam stratejisi oluşturmuş\n\nBu firma hangi süreci uygulamaktadır?",
+    "siklar": {
+      "A": "Üretim süreci",
+      "B": "Tüketim süreci",
+      "C": "Pazarlama süreci",
+      "D": "Hammadde temini"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Pazar araştırması, hedef kitle, fiyatlandırma ve reklam pazarlama sürecinin aşamalarıdır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir ülkede çalışan nüfusun %60'ı hizmet, %30'u sanayi, %10'u tarım sektöründedir.\n\nBu dağılım ülke hakkında neyi gösterir?",
+    "siklar": {
+      "A": "Tarımın tamamen bittiğini",
+      "B": "Ülkenin az gelişmiş olduğunu",
+      "C": "Ülkenin gelişmiş ekonomiye sahip olduğunu",
+      "D": "İşsizliğin yüksek olduğunu"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Hizmet sektörünün baskınlığı gelişmiş ekonominin göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci limonata satmak istemektedir.\n- Maliyeti hesaplamış\n- Fiyat belirlemiş\n- Okul bahçesinde stand kurmuş\n- Afişle reklamını yapmış\n\nBu süreçte;\nI. Girişimcilik\nII. Pazarlama\nIII. Kâr-zarar hesabı\nkavramlarından hangileri uygulanmıştır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I, II ve III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Limonata satışı girişimcilik, reklam pazarlama, maliyet hesabı kâr-zarar analizidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "I. Hammadde üretimi\nII. Ürün işleme\nIII. Satış ve hizmet\n\nBu aşamalar sırasıyla hangi sektörlere karşılık gelir?",
+    "siklar": {
+      "A": "Sanayi, tarım, hizmet",
+      "B": "Hizmet, tarım, sanayi",
+      "C": "Tarım, sanayi, hizmet",
+      "D": "Tarım, hizmet, sanayi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Hammadde tarım, işleme sanayi, satış-hizmet hizmet sektörüne karşılık gelir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir aile sabunları satın alırken;\n- Fiyat karşılaştırması yapmış\n- İndirimli ürünleri tercih etmiş\n- İhtiyacından fazla almamış\n\nBu davranışlar hangisine örnektir?",
+    "siklar": {
+      "A": "Lüks harcama",
+      "B": "Stokçuluk",
+      "C": "Savurganlık",
+      "D": "Bilinçli tüketicilik"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Fiyat karşılaştırma, indirim tercih ve ihtiyaç kadar alma bilinçli tüketiciliktir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "İhracat bir ülkenin dışarıya ürün satmasıdır. İthalat ise dışarıdan ürün almasıdır.\n\nBir ülkenin ihracatının ithalatından fazla olmasının avantajı hangisidir?",
+    "siklar": {
+      "A": "Dış ticaret fazlası vererek ekonomik güç kazanması",
+      "B": "Yerli üretimin azalması",
+      "C": "Ülkenin dışa bağımlı kalması",
+      "D": "İthalat vergilerinin artması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "İhracat fazlası dış ticaret fazlası oluşturur ve ekonomik gücü artırır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Reklam, tüketicileri ürün hakkında bilgilendirmek ve satışı artırmak amacıyla yapılır.\n\nReklamların tüketiciler üzerindeki olumsuz etkisi hangisidir?",
+    "siklar": {
+      "A": "Ürün çeşitliliğini artırması",
+      "B": "Gereksiz ihtiyaçlar oluşturarak aşırı tüketimi teşvik etmesi",
+      "C": "Fiyatları düşürmesi",
+      "D": "Kalite standartlarını yükseltmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Reklamlar gereksiz ihtiyaçlar yaratarak aşırı tüketime yol açabilir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Nitelikli iş gücü, bir ülkenin ekonomik kalkınmasında en önemli faktörlerdendir.\n\nNitelikli iş gücünü artırmanın en etkili yolu hangisidir?",
+    "siklar": {
+      "A": "Vergileri düşürmek",
+      "B": "İthalatı artırmak",
+      "C": "Daha fazla fabrika kurmak",
+      "D": "Eğitim kalitesini yükseltmek ve mesleki eğitimi güçlendirmek"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Eğitim ve mesleki eğitim nitelikli iş gücünü artırmanın en etkili yoludur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Kooperatif birlikte üretim, pazarlama ve tüketim yapmak üzere kurulan örgütlerdir.\n\nKooperatiflerin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Devlet kurumu olması",
+      "B": "Sadece büyük şirketlere hizmet vermesi",
+      "C": "Kâr amacı gütmeden sadece üretim yapması",
+      "D": "Küçük üreticilerin güçlerini birleştirerek rekabet edebilmesi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Kooperatifler küçük üreticilerin güçlerini birleştirerek piyasada rekabet etmelerini sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bankalar mevduat toplama, kredi verme ve havale işlemleri yapar.\n\nBankaların ekonomideki temel rolü hangisidir?",
+    "siklar": {
+      "A": "Döviz kuru belirlemek",
+      "B": "Tasarrufları yatırıma dönüştürerek ekonomik büyümeye katkı sağlamak",
+      "C": "Devlet vergisi toplamak",
+      "D": "Sadece para biriktirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bankalar tasarrufları kredi olarak yatırıma yönlendirerek ekonomik büyümeye katkı sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "E-ticaret sayesinde üreticiler ürünlerini dünya genelinde satabilmektedir.\n\nE-ticaretin en önemli avantajı hangisidir?",
+    "siklar": {
+      "A": "Coğrafi sınırları ortadan kaldırarak pazarı genişletmesi",
+      "B": "Mağaza açma zorunluluğu",
+      "C": "Üretim maliyetlerini artırması",
+      "D": "Ürün kalitesini düşürmesi"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "E-ticaret coğrafi sınırları kaldırarak üreticilerin pazarını genişletir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türkiye'nin;\n- Hazelnut (fındık) üretiminde dünya birincisi\n- Otomotiv ihracatında Avrupa'da önemli pay\n- Turizm gelirlerinde sürekli artış\n\nBu bilgiler Türkiye hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece turizme dayalı olduğunu",
+      "B": "İhracat yapmadığını",
+      "C": "Sadece tarım ülkesi olduğunu",
+      "D": "Tarım, sanayi ve hizmet sektörlerinde çeşitlenmiş bir ekonomiye sahip olduğunu"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Fındık (tarım), otomotiv (sanayi), turizm (hizmet) üç sektördeki başarı çeşitlenmiş ekonomiyi gösterir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da ulaklar atla günlerce mektup taşırken, günümüzde e-posta saniyeler içinde ulaşır.\n\nBu değişim hangisinin sonucudur?",
+    "siklar": {
+      "A": "Posta hizmetlerinin kaldırılmasının",
+      "B": "İletişim teknolojilerinin hızla gelişmesinin",
+      "C": "İnsanların mektup yazmayı bırakmasının",
+      "D": "Atların artık kullanılmamasının"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ulaktan e-postaya geçiş iletişim teknolojisindeki devrimsel gelişmenin sonucudur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir mucit ürününün kopyalanmaması için patent başvurusu yapmıştır.\n\nPatent hakkının amacı hangisidir?",
+    "siklar": {
+      "A": "İcat yapılmasını engellemek",
+      "B": "Sadece devletin buluş yapmasını sağlamak",
+      "C": "Tüm buluşların ücretsiz paylaşılmasını zorunlu kılmak",
+      "D": "Buluş sahiplerinin haklarını korumak ve yenilikçiliği teşvik etmek"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Patent buluş sahiplerinin haklarını koruyarak yenilikçiliği teşvik eder."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Ulaşım teknolojisinin gelişimi;\nI. At arabası\nII. Buharlı tren\nIII. Elektrikli otomobil\n\nBu sıralama;\nI. İnsan gücünden makine gücüne geçişi\nII. Çevre duyarlılığının artışını\nIII. Hız ve konforun gelişimini\ngösterir. Hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I, II ve III",
+      "C": "Yalnız III",
+      "D": "I ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "At arabasından elektrikli arabaya geçiş insan→makine, çevre duyarlılığı ve hız-konfor gelişimini gösterir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Hızlı tren sistemi sayesinde İstanbul-Ankara arası 3.5 saate inmiştir.\n\nBu gelişmenin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Nüfusun azalması",
+      "B": "Otoyolların gereksiz hale gelmesi",
+      "C": "Şehirler arası ulaşımın hızlanması ve ekonominin canlanması",
+      "D": "Hava yolu şirketlerinin kapanması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Hızlı tren şehirler arası ulaşımı hızlandırarak ekonomik canlılığa katkı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci ödevini internetten kopyalayıp kendi yazmış gibi teslim etmiştir.\n\nBu davranış hangi etik kurala aykırıdır?",
+    "siklar": {
+      "A": "Akademik dürüstlük ve telif hakkı",
+      "B": "Trafik kuralları",
+      "C": "Çevre koruma",
+      "D": "Spor ahlakı"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Başkasının çalışmasını kopyalamak akademik dürüstlük ve telif hakkı ihlalidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İletişim araçlarının gelişimi:\nDuman işaretleri → Telgraf → Telefon → İnternet\n\nBu süreçte en köklü değişim hangisidir?",
+    "siklar": {
+      "A": "Teknolojinin pahalılaşması",
+      "B": "İletişimin anında ve küresel ölçekte yapılabilir hale gelmesi",
+      "C": "İnsanların daha az iletişim kurması",
+      "D": "Mesajların boyutunun küçülmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İletişimin anlık ve küresel olması en köklü değişimdir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Telif hakkı; bir kişinin yazdığı kitap, bestelediği müzik veya çektiği fotoğrafı koruma altına alır.\n\nTelif hakkının amacı hangisidir?",
+    "siklar": {
+      "A": "Fikri emek sahiplerinin haklarını korumak",
+      "B": "Sanat üretimini engellemek",
+      "C": "Eserlerin ücretsiz dağıtılmasını sağlamak",
+      "D": "Devletin gelir elde etmesini sağlamak"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Telif hakkı fikri emek sahiplerinin haklarını koruyarak üretimi teşvik eder."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Uydu teknolojisi ile;\nI. Hava durumu tahminleri yapılmaktadır\nII. GPS navigasyon hizmeti sunulmaktadır\nIII. Canlı yayın yapılmaktadır\n\nBunların tümü hangi alanın gelişimiyle mümkün olmuştur?",
+    "siklar": {
+      "A": "Tarım teknolojisi",
+      "B": "Enerji teknolojisi",
+      "C": "Tıp teknolojisi",
+      "D": "Uzay ve iletişim teknolojisi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Hava tahmini, GPS ve canlı yayın uzay ve iletişim teknolojisinin ürünleridir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Matbaa;\nI. Bilginin hızla yayılmasını sağlamış\nII. Eğitimde fırsat eşitliğini artırmış\nIII. Dini otoritenin zayıflamasına katkıda bulunmuş (Reform)\n\nMatbaanın etkileri hangileridir?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I, II ve III",
+      "C": "Yalnız I",
+      "D": "Yalnız III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Matbaa bilgi yayılımı, eğitim eşitliği ve Reform hareketine katkıda bulunmuştur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir yazılımcı geliştirdiği uygulamayı;\nI. Patent almış\nII. Kaynak kodunu açık kaynak olarak paylaşmış\nIII. Kullanıcı lisansı oluşturmuş\n\nBunlardan hangileri fikri mülkiyetin korunmasıyla ilgilidir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "Yalnız II"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Patent ve kullanıcı lisansı fikri mülkiyetin korunmasıyla ilgilidir. Açık kaynak farklı bir modeldir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Drone (insansız hava aracı) teknolojisi;\nI. Tarımda ilaçlama\nII. Kargo teslimatı\nIII. Afet bölgelerinde keşif\nalanlarında kullanılmaktadır.\n\nBu durum teknolojiyle ilgili hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece eğlence amaçlı kullanıldığını",
+      "B": "Sadece askeri amaçla kullanıldığını",
+      "C": "Farklı sektörlerde geniş kullanım alanı bulduğunu",
+      "D": "Pahalı ve erişilemez olduğunu"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Drone teknolojisi tarım, lojistik ve afet yönetimi gibi farklı sektörlerde kullanılmaktadır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Elektrikli araçlar fosil yakıtlı araçlara göre çevre dostudur.\n\nElektrikli araçların yaygınlaşmasının en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Araç fiyatlarını artırması",
+      "B": "Hava kirliliğinin ve karbon salınımının azalması",
+      "C": "Benzin istasyonlarının kapanması",
+      "D": "Ulaşım hızının düşmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Elektrikli araçlar hava kirliliği ve karbon salınımını azaltarak çevreye katkı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci araştırma ödevinde kullandığı kaynaklara atıf yapmıştır.\n\nKaynak göstermenin önemi hangisidir?",
+    "siklar": {
+      "A": "Öğretmeni etkilemek",
+      "B": "Ödevi uzatmak",
+      "C": "Fikri mülkiyet haklarına saygı göstermek ve akademik dürüstlüğü sağlamak",
+      "D": "Not ortalamasını yükseltmek"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Kaynak göstermek fikri mülkiyete saygı ve akademik dürüstlüğün temelidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "5G teknolojisi;\nI. Çok hızlı internet bağlantısı sağlar\nII. Nesnelerin interneti (IoT) uygulamalarını kolaylaştırır\nIII. Sağlıkta uzaktan ameliyat imkânı sunar\n\nBu gelişmeler hangi alanda dönüşüm yaratır?",
+    "siklar": {
+      "A": "Yalnızca tarımda",
+      "B": "İletişim, sağlık ve endüstri gibi birçok alanda",
+      "C": "Sadece eğlence sektöründe",
+      "D": "Sadece ulaşımda"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "5G iletişim, sağlık ve endüstri gibi birçok alanda dönüşüm yaratır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir müzik yapımcısı eserlerini streaming platformlarında yayınlamakta ve dinleme başına telif ücreti almaktadır.\n\nBu sistem hangisine dayanır?",
+    "siklar": {
+      "A": "Fikri mülkiyet hakları ve telif sistemi",
+      "B": "Hayırseverlik",
+      "C": "Ücretsiz paylaşım",
+      "D": "Devlet sübvansiyonu"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Streaming telif sistemi fikri mülkiyet haklarının dijital ortamdaki uygulamasıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda;\nI. Ortak dil, tarih ve kültüre sahip olmak\nII. Birlikte bayram kutlamak\nIII. Farklı görüşteki insanları dışlamak\n\nToplumsal birlikteliği güçlendiren unsurlar hangileridir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "II ve III",
+      "C": "Yalnız I",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Ortak değerler ve birlikte kutlama birlikteliği güçlendirir. Dışlama zarar verir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir hastanede doktor tedavi eder, hemşire bakım yapar, laborant test yapar, temizlik görevlisi hijyeni sağlar.\n\nBu iş bölümü hangisinin önemini gösterir?",
+    "siklar": {
+      "A": "Herkesin aynı işi yapabileceğini",
+      "B": "Sadece doktorun önemli olduğunu",
+      "C": "Temizlik görevlisinin gereksiz olduğunu",
+      "D": "Her mesleğin birbirini tamamladığını ve iş birliğinin önemini"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Hastanede her meslek birbirini tamamlar; iş birliği hayati önem taşır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir okulda su israfını fark eden öğrenciler;\n- Musluklara tasarruf aparatı taktırmış\n- 'Su Hayattır' afişleri hazırlamış\n- Okul genelinde farkındalık kampanyası düzenlemiş\n\nBu uygulama hangisine örnektir?",
+    "siklar": {
+      "A": "Bireysel hareket",
+      "B": "Devlet müdahalesi",
+      "C": "Etkin vatandaşlık ve toplumsal sorumluluk",
+      "D": "Zorunlu kural"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Sorunu fark edip çözüm üretmek etkin vatandaşlık ve toplumsal sorumluluktur."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir bölgede;\n- Toprak verimli, yağış bol → tarım gelişmiş\n- Deniz kıyısı → balıkçılık ve turizm yaygın\n- Maden yatakları zengin → madencilik ön planda\n\nBu bilgiler hangisini destekler?",
+    "siklar": {
+      "A": "İnsan faaliyetlerinin doğal koşullardan bağımsız olduğunu",
+      "B": "Her bölgede aynı faaliyetlerin yapıldığını",
+      "C": "Doğal koşulların ekonomik faaliyetleri yönlendirdiğini",
+      "D": "Teknolojinin doğal koşulları tamamen ortadan kaldırdığını"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Toprak, iklim ve deniz gibi doğal koşullar ekonomik faaliyetleri yönlendirir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Karbon ayak izi, bir bireyin ürettiği sera gazı miktarıdır.\n\nKarbon ayak izini azaltmak için hangisi yanlıştır?",
+    "siklar": {
+      "A": "Yenilenebilir enerji kullanmak",
+      "B": "Her yere özel araçla gitmek",
+      "C": "Toplu taşıma kullanmak",
+      "D": "Enerji tasarruflu cihaz tercih etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Özel araç kullanımı karbon ayak izini artırır, azaltmaz."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türk dünyasındaki ortak kültürel ögeler;\nI. Nevruz bayramı\nII. Türk mutfak kültürü\nIII. Ortak müzik gelenekleri\nIV. Epik destanlar (Oğuz Kağan, Manas)\n\nBunların Türk devletleri arasındaki rolü hangisidir?",
+    "siklar": {
+      "A": "Ortak kültürel kimliği ve kardeşlik bağlarını güçlendirmek",
+      "B": "Siyasi birlik oluşturmak",
+      "C": "Ekonomik bütünleşme sağlamak",
+      "D": "Askeri ittifak kurmak"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Ortak kültürel ögeler Türk dünyasında kültürel kimliği ve kardeşliği güçlendirir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "İlk Türk devletlerinde;\nI. Hakan hem devlet başkanı hem ordu komutanı\nII. Kurultay'da önemli kararlar alınır\nIII. Boy beyleri yönetimde söz sahibi\n\nBu özellikler hangi yönetim anlayışını gösterir?",
+    "siklar": {
+      "A": "Federatif ve meşveret (danışma) yapısı",
+      "B": "Teokrasi",
+      "C": "Mutlak monarşi",
+      "D": "Demokrasi"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kurultay ve boy beylerinin söz sahibi olması federatif ve danışma yapısını gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "İslam mimarisinde;\nI. Camiler\nII. Medreseler\nIII. Kervansaraylar\nIV. Darüşşifalar (hastaneler)\n\nBu yapılar birlikte değerlendirildiğinde İslam medeniyetinin hangi özelliği ortaya çıkar?",
+    "siklar": {
+      "A": "Sadece askeri güce önem vermesi",
+      "B": "Eğitim, sağlık, ibadet ve ticaret gibi toplumsal ihtiyaçlara bütüncül yaklaşması",
+      "C": "Yalnızca dini yapılar inşa etmesi",
+      "D": "Mimariyle ilgilenmemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Cami, medrese, kervansaray ve darüşşifa toplumsal ihtiyaçlara bütüncül yaklaşımı gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Anadolu'da kurulan Türk beylikleri;\nI. Camiler ve medreseler inşa etmiş\nII. Türkçeyi resmi dil olarak kullanmış\nIII. Sanat ve mimarlık alanında eserler vermiş\n\nBu bilgilere göre beylikler hangisine katkıda bulunmuştur?",
+    "siklar": {
+      "A": "Anadolu'nun boşaltılmasına",
+      "B": "Moğol hakimiyetinin artmasına",
+      "C": "Anadolu'nun Türkleşmesi ve İslamlaşması sürecine",
+      "D": "Bizans'ın güçlenmesine"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Beylikler Türkçe, İslam eğitimi ve mimari ile Anadolu'nun Türkleşmesine katkı sağlamıştır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Kuvvetler ayrılığı ilkesine göre;\nI. Yasama → TBMM\nII. Yürütme → Cumhurbaşkanı ve Kabine\nIII. Yargı → Bağımsız mahkemeler\n\nBu ilkenin amacı hangisidir?",
+    "siklar": {
+      "A": "Devleti zayıflatmak",
+      "B": "Gücün tek elde toplanmasını önleyerek hakları korumak",
+      "C": "Yönetimi zorlaştırmak",
+      "D": "Sadece yargının güçlü olmasını sağlamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kuvvetler ayrılığı gücün tek elde toplanmasını önleyerek hakları korur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "ALO 183 sosyal destek hattı, ihtiyaç sahiplerinin devlet yardımlarına erişimini kolaylaştırır.\n\nBu hizmet hangi devlet anlayışının göstergesidir?",
+    "siklar": {
+      "A": "Liberal devlet",
+      "B": "Sosyal devlet",
+      "C": "Otoriter devlet",
+      "D": "Federal devlet"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İhtiyaç sahiplerine destek sağlamak sosyal devlet anlayışının göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir çiftçi ürettiği domatesi;\n- Toptancı halinde satmış (toptancılık)\n- Tüccar markete satmış (perakende)\n- Tüketici marketten almış (tüketim)\n\nBu süreç hangisini gösterir?",
+    "siklar": {
+      "A": "İthalat sürecini",
+      "B": "Üretimden tüketime ekonomik döngüyü",
+      "C": "Bankacılık işlemini",
+      "D": "Sadece tarım faaliyetini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Üretici→toptancı→perakendeci→tüketici ekonomik döngünün aşamalarıdır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Vergi;\nI. Devletin gelir kaynağıdır\nII. Kamu hizmetlerinin finansmanını sağlar\nIII. Bireysel kazançtır\n\nVergi hakkında hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız III",
+      "B": "Yalnız I",
+      "C": "I, II ve III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Vergi devletin gelir kaynağı ve kamu hizmetlerinin finansman aracıdır. Bireysel kazanç değildir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir ülkenin Gayri Safi Yurt İçi Hasılası (GSYH) o ülkede üretilen toplam mal ve hizmetlerin değeridir.\n\nGSYH'nin yüksek olması hangisini gösterir?",
+    "siklar": {
+      "A": "Ülkenin borçlu olduğunu",
+      "B": "Nüfusun az olduğunu",
+      "C": "İthalatın ihracattan fazla olduğunu",
+      "D": "Ekonomik üretim ve gelir düzeyinin yüksek olduğunu"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Yüksek GSYH ekonomik üretim ve gelir düzeyinin yüksek olduğunu gösterir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Yapay zekâ destekli çeviri programları farklı dillerdeki insanların iletişim kurmasını kolaylaştırır.\n\nBu teknolojinin en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Kültürler arası iletişim engellerini azaltması",
+      "B": "Tüm dillerin aynı olmasını sağlaması",
+      "C": "Dil öğrenmeyi gereksiz kılması",
+      "D": "Sadece yazılı iletişimde kullanılması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Çeviri teknolojileri kültürler arası iletişim engellerini azaltmaya katkı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Creative Commons (CC) lisansı;\nI. Eseri belirli koşullarla paylaşmaya izin verir\nII. Tüm hakları saklı tutar\nIII. Eser sahibinin adının belirtilmesini şart koşabilir\n\nBunlardan hangileri CC lisansının özelliğidir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "Yalnız II",
+      "D": "I ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "CC lisansı koşullu paylaşım ve atıf zorunluluğu özelliklerine sahiptir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Spor müsabakalarında milli takımı desteklemek, zafer kutlamalarına katılmak toplumsal birlikteliği güçlendirir.\n\nBu etkinliklerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Sporcuları ödüllendirmesi",
+      "B": "Ekonomik kazanç sağlaması",
+      "C": "Yalnızca gençleri ilgilendirmesi",
+      "D": "Milli duyguları ve toplumsal aidiyet bilincini güçlendirmesi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Milli takım destekle birlikte kutlamalar milli duygular ve aidiyet bilincini güçlendirir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Sürdürülebilir kalkınma;\nI. Doğal kaynakları koruyarak kullanma\nII. Gelecek nesillerin ihtiyaçlarını gözetme\nIII. Sınırsız tüketim yapma\nilkelerinden hangilerini kapsar?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "Yalnız III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Sürdürülebilir kalkınma kaynakları koruyarak kullanmayı ve gelecek nesilleri gözetmeyi kapsar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Selçuklular döneminde Nizamiye Medreseleri kurulmuştur. Bu medreseler sistemli eğitim veren ilk kurumlardan sayılır.\n\nNizamiye Medreselerinin en önemli yeniliği hangisidir?",
+    "siklar": {
+      "A": "Planlı müfredat ve burslu öğrenci sistemiyle eğitimi kurumsal hale getirmesi",
+      "B": "Sadece askerlere eğitim vermesi",
+      "C": "Kadınlara eğitim yasaklaması",
+      "D": "Yalnızca dini eğitim vermesi"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Nizamiye Medreseleri planlı müfredat ve burslu öğrenci ile eğitimi kurumsal hale getirmiştir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda;\n- Kadınlar ve erkekler eşit ücret alıyor\n- Engelli bireyler için erişilebilirlik sağlanıyor\n- Her çocuk ücretsiz eğitim alabiliyor\n\nBu uygulamalar hangi devlet anlayışının göstergesidir?",
+    "siklar": {
+      "A": "Feodal devlet",
+      "B": "Totaliter devlet",
+      "C": "Tek parti devleti",
+      "D": "Sosyal hukuk devleti"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Eşit ücret, erişilebilirlik ve ücretsiz eğitim sosyal hukuk devleti anlayışının göstergeleridir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Tüketici hakları;\nI. Satın aldığı ürünü iade etme hakkı\nII. Bilgilendirilme hakkı\nIII. Sağlıklı ürün kullanma hakkı\nBunların korunması neden önemlidir?",
+    "siklar": {
+      "A": "Üreticilerin kâr etmesi için",
+      "B": "Tüketicilerin haksızlığa uğramaması ve piyasada güvenin sağlanması için",
+      "C": "Devletin gelir elde etmesi için",
+      "D": "Reklamların artması için"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tüketici hakları haksızlığa karşı koruma ve piyasa güveni sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Telemedicine (uzaktan tıp) sayesinde kırsal bölgelerdeki hastalar büyük şehirlerdeki uzman doktorlardan danışmanlık alabilmektedir.\n\nBu uygulamanın en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Doktorların işsiz kalması",
+      "B": "Sağlık hizmetlerinde fırsat eşitliğinin artması",
+      "C": "İlaç kullanımının azalması",
+      "D": "Hastanelerin kapanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Uzaktan tıp sağlık hizmetlerinde coğrafi engelleri kaldırarak fırsat eşitliği sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Toplumsal sorunların çözümünde;\nI. Devlet kurumları\nII. Sivil toplum kuruluşları\nIII. Bireyler\n\nHangileri sorumluluk sahibidir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız III",
+      "C": "Yalnız I",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Toplumsal sorunların çözümünde devlet, sivil toplum ve bireyler birlikte sorumluluk taşır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de üç tarafı denizlerle çevrili olması;\nI. Deniz ticaretini geliştirmiştir\nII. Kıyı turizmini artırmıştır\nIII. Balıkçılığı yaygınlaştırmıştır\n\nBu sonuçların tümü hangisiyle ilişkilidir?",
+    "siklar": {
+      "A": "Coğrafi konumun ekonomik faaliyetlere etkisiyle",
+      "B": "İklim değişikliğiyle",
+      "C": "Nüfus artışıyla",
+      "D": "Beşeri faaliyetlerle"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Denizlerle çevrili olmak ticaret, turizm ve balıkçılığı etkileyen coğrafi konum avantajıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Haçlı Seferleri'nden dönen Avrupalılar Doğu'dan pusula, barut, kâğıt gibi buluşları öğrenmiştir.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Avrupalıların Doğu'yu tamamen fethettiklerini",
+      "B": "Savaşların dolaylı olarak kültürel ve teknolojik etkileşime yol açtığını",
+      "C": "Avrupalıların kendi başlarına her şeyi bulduğunu",
+      "D": "Doğu'nun bu buluşlardan yararlanamadığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Haçlı Seferleri savaş amaçlı olsa da kültürel ve teknolojik etkileşimi artırmıştır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir okuldaki öğrenci meclisi toplantısında öğrenciler sorunlarını belirlemiş ve çözüm önerileri sunmuştur.\n\nBu uygulama hangisine katkı sağlar?",
+    "siklar": {
+      "A": "Okul yönetiminin zayıflamasına",
+      "B": "Öğrencilerin ders başarısının düşmesine",
+      "C": "Öğrencilerin otoriteye karşı gelmesine",
+      "D": "Demokratik katılım bilincinin gelişmesine"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Öğrenci meclisi demokratik katılım bilincinin erken yaşta kazanılmasına katkı sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Serbest piyasa ekonomisinde;\nI. Arz ve talep fiyatı belirler\nII. Devlet tüm fiyatları sabitler\nIII. Özel girişim teşvik edilir\n\nSerbest piyasa ekonomisinin özellikleri hangileridir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız II",
+      "C": "Yalnız I",
+      "D": "I ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Serbest piyasada arz-talep fiyatı belirler ve özel girişim teşvik edilir. Devlet fiyatları sabitlemez."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Blockchain teknolojisi;\nI. Verilerin güvenli şekilde saklanmasını sağlar\nII. Aracı kurumları ortadan kaldırabilir\nIII. Dijital para birimlerinin temelini oluşturur\n\nBu teknoloji hangi alanları etkilemektedir?",
+    "siklar": {
+      "A": "Finans, güvenlik ve dijital teknoloji",
+      "B": "Sadece tarım",
+      "C": "Sadece bankacılık",
+      "D": "Sadece eğlence"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Blockchain finans, güvenlik ve dijital teknoloji alanlarını etkileyen yenilikçi bir teknolojidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir afet durumunda;\n- İtfaiye yangını söndürür\n- AFAD koordinasyonu sağlar\n- Sağlık ekipleri yaralılara müdahale eder\n- Vatandaşlar yardım gönderir\n\nBu organizasyon hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece devletin sorumlu olduğunu",
+      "B": "Vatandaşların yardıma gerek olmadığını",
+      "C": "Farklı kurumların iş birliği içinde çalışmasının önemini",
+      "D": "Herkesin aynı işi yaptığını"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Afette farklı kurumların ve vatandaşların iş birliği kritik önem taşır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Atık yağların lavaboya dökülmesi su kirliliğine neden olmaktadır. 1 litre atık yağ yaklaşık 1 milyon litre suyu kirletebilir.\n\nAtık yağlarla ilgili doğru davranış hangisidir?",
+    "siklar": {
+      "A": "Çöpe atmak",
+      "B": "Lavaboya dökmek",
+      "C": "Atık yağ toplama noktalarına teslim etmek",
+      "D": "Toprağa dökmek"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Atık yağlar toplama noktalarına teslim edilerek geri dönüşüme kazandırılmalıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "İslam medeniyetinde vakıf sistemi; cami, medrese, hastane, çeşme gibi hizmetlerin topluma sunulmasını sağlamıştır.\n\nVakıf sisteminin toplumsal katkısı hangisidir?",
+    "siklar": {
+      "A": "Sadece zenginlere hizmet vermesi",
+      "B": "Kâr amacı gütmesi",
+      "C": "Devlet bütçesini artırması",
+      "D": "Sosyal dayanışmayı güçlendirmesi ve kamu yararına hizmet etmesi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Vakıf sistemi sosyal dayanışmayı güçlendiren ve kamu yararına hizmet eden kurumdur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "KPSS (Kamu Personeli Seçme Sınavı) ile devlet memurları liyakat esasına göre seçilir.\n\nLiyakat ilkesinin amacı hangisidir?",
+    "siklar": {
+      "A": "Siyasi kayırmacılık yapmak",
+      "B": "İşe alımı engellemek",
+      "C": "En nitelikli kişilerin göreve gelmesini sağlamak",
+      "D": "Tanıdığı olanların işe alınması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Liyakat ilkesi en nitelikli kişilerin göreve gelmesini sağlayarak adaleti korur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Meslek seçimi yaparken;\nI. İlgi ve yetenekleri dikkate almak\nII. Sadece para kazanmayı düşünmek\nIII. Toplumsal ihtiyaçları gözetmek\n\nDoğru meslek seçimi için hangileri önemlidir?",
+    "siklar": {
+      "A": "Yalnız II",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Doğru meslek seçiminde ilgi-yetenek ve toplumsal ihtiyaçlar birlikte gözetilmelidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir araştırmacı yeni bir ilaç formülü geliştirmiştir. Bu formülü;\nI. Patent ile korumuş\nII. Ticari sır olarak saklamış\nIII. Ücretsiz herkesle paylaşmış\n\nFikri mülkiyetin korunmasıyla ilgili olan hangisidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I, II ve III",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Patent ve ticari sır fikri mülkiyetin korunması yöntemleridir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir mahallede farklı gelir gruplarından insanlar aynı parkı kullanmakta, aynı camiye gitmekte ve çocukları aynı okulda okumaktadır.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Sınıf ayrımını",
+      "B": "Ekonomik refahı",
+      "C": "Toplumsal eşitsizliği",
+      "D": "Toplumsal bütünleşme ve bir arada yaşama kültürünü"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Farklı kesimlerden insanların ortak mekânları paylaşması toplumsal bütünleşmedir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir itfaiye ekibinde;\n- Arazöz şoförü aracı sürer\n- Söndürme ekibi hortumu yönlendirir\n- Kurtarma ekibi mahsur kalanları çıkarır\n- Sağlık ekibi ilk yardım yapar\n\nBu organizasyonun başarısının temel şartı hangisidir?",
+    "siklar": {
+      "A": "Koordineli iş bölümü ve ekip çalışması",
+      "B": "Sadece şoförün çalışması",
+      "C": "Herkesin aynı görevi yapması",
+      "D": "Her bireyin bağımsız hareket etmesi"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "İtfaiye gibi kritik ekiplerde koordineli iş bölümü hayat kurtarır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir ilin iklimi, bitki örtüsü ve su kaynakları doğal özellikleriyken; nüfusu, ulaşım ağı ve sanayi tesisleri beşeri özellikleridir.\n\nAşağıdakilerden hangisi hem doğal hem beşeri özelliklerden etkilenir?",
+    "siklar": {
+      "A": "Deprem riski",
+      "B": "Dağların yüksekliği",
+      "C": "Tarımsal faaliyetler",
+      "D": "Yıllık yağış miktarı"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Tarımsal faaliyetler hem iklim-toprak gibi doğal hem teknoloji-nüfus gibi beşeri faktörlerden etkilenir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde;\n- Araç egzozları hava kirliliğine neden oluyor\n- Fabrika atıkları nehri kirletiyor\n- Çöplerin düzensiz depolanması toprak kirliliğine yol açıyor\n\nBu sorunlardan etkilenen Dünya katmanları;\nI. Atmosfer\nII. Hidrosfer\nIII. Litosfer\nhangilerini kapsar?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "II ve III",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Egzoz atmosferi, fabrika atığı hidrosferi, çöp litosferi kirletir; üç katman da etkilenir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türk göçebe kültüründe;\nI. Çadır (yurt) yaşamı\nII. At ve ok kültürü\nIII. Hayvancılık ekonomisi\nIV. Destanlar ve sözlü edebiyat\n\nBu unsurlar neyi yansıtır?",
+    "siklar": {
+      "A": "Sanayi toplumunu",
+      "B": "Yerleşik yaşam tarzını",
+      "C": "Denizci bir toplumu",
+      "D": "Göçebe bozkır kültürünün temel özelliklerini"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Çadır, at-ok, hayvancılık ve destanlar göçebe bozkır kültürünün temel özellikler."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Türklerin İslamiyet'ten önceki inançları;\nI. Gök Tanrı (Tengri) inancı\nII. Atalar kültü\nIII. Doğa kuvvetlerine saygı\n\nBu inançlar İslamiyet'in kabulünden sonra;\nI. Tekke ve tasavvuf kültürüyle harmanlanmış\nII. Tamamen unutulmuş\nIII. Bazı geleneklerde yaşamaya devam etmiş\n\nHangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız II",
+      "B": "I ve III",
+      "C": "I, II ve III",
+      "D": "Yalnız I"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Eski Türk inançları tasavvufla harmanlanmış ve bazı geleneklerde yaşamaya devam etmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Anadolu Selçukluları İpek Yolu ticaretini kontrol altına almak için han ve kervansaraylar yapmıştır.\n\nBu politikanın sonucu hangisidir?",
+    "siklar": {
+      "A": "Anadolu'nun önemli bir ticaret merkezi haline gelmesi",
+      "B": "Dini yapıların artması",
+      "C": "Göçebelerin yerleşmesi",
+      "D": "Ticaretin azalması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Han ve kervansaraylar sayesinde Anadolu önemli bir ticaret merkezi olmuştur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Anayasa, bir devletin temel yasasıdır ve tüm yasalar anayasaya uygun olmak zorundadır.\n\nAnayasanın en önemli işlevi hangisidir?",
+    "siklar": {
+      "A": "Vergi oranlarını düzenlemek",
+      "B": "Devletin gelir kaynağı olmak",
+      "C": "Temel hak ve özgürlükleri güvence altına almak ve devletin yapısını belirlemek",
+      "D": "Sadece cumhurbaşkanını belirlemek"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Anayasa temel hakları güvence altına alır ve devletin yapısını belirler."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İnsan Hakları Evrensel Beyannamesi 1948'de kabul edilmiştir.\n\nBu beyannamenin önemi;\nI. İnsan haklarını evrensel düzeyde tanımlaması\nII. Tüm insanların eşit olduğunu vurgulaması\nIII. Bağlayıcı bir yasa olması\nözelliklerinden hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "Yalnız III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Beyanname hakları evrensel tanımlar ve eşitliği vurgular. Ancak hukuken bağlayıcı değildir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Enflasyon, genel fiyat düzeyinin sürekli artmasıdır.\n\nEnflasyonun vatandaşlar üzerindeki en önemli etkisi hangisidir?",
+    "siklar": {
+      "A": "İşsizliğin azalması",
+      "B": "Satın alma gücünün artması",
+      "C": "Tasarrufların değer kazanması",
+      "D": "Satın alma gücünün azalması ve yaşam maliyetinin yükselmesi"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Enflasyon parının değerini düşürerek satın alma gücünü azaltır ve yaşam maliyetini yükseltir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir girişimci ürettiği el yapımı sabunları;\n- Instagram sayfasında tanıtmış\n- Kargo ile göndermiş\n- Müşteri yorumlarını takip etmiş\n\nBu süreç hangi faaliyetle en çok ilişkilidir?",
+    "siklar": {
+      "A": "Madencilik",
+      "B": "Bankacılık",
+      "C": "Tarımsal üretim",
+      "D": "Dijital pazarlama ve e-ticaret"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Sosyal medyada tanıtım ve kargo ile satış dijital pazarlama ve e-ticaretin örnekleridir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Toplumda;\nI. Doktor sağlık hizmeti sunar\nII. Çiftçi gıda üretir\nIII. Mühendis yapı tasarlar\nIV. Öğretmen eğitim verir\n\nBu mesleklerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Toplumun farklı ihtiyaçlarını karşılaması",
+      "B": "Hepsinin üniversite gerektirmesi",
+      "C": "Hepsinin devlette çalışması",
+      "D": "Hepsinin aynı sektörde olması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Farklı meslekler toplumun farklı ihtiyaçlarını karşılayarak birbirini tamamlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Yapay zekâ;\nI. Hastalık teşhisinde doktorlara yardımcı oluyor\nII. Trafik akışını optimize ediyor\nIII. Dil çevirisi yapıyor\n\nYapay zekânın bu kullanım alanları hangisini gösterir?",
+    "siklar": {
+      "A": "Yalnızca bilgisayar bilimcilerin kullandığını",
+      "B": "İnsanların tamamen gereksiz hale geldiğini",
+      "C": "Yapay zekânın sadece oyun amaçlı olduğunu",
+      "D": "Farklı sektörlerde insan yaşamını iyileştiren bir teknoloji olduğunu"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Yapay zekâ sağlık, ulaşım ve iletişim gibi farklı sektörlerde yaşamı iyileştirir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci araştırma projesi için;\nI. Kitap ve makalelerden bilgi almış\nII. Her kaynağı dipnot ve bibliyografyada göstermiş\nIII. Başkasının cümlesini tırnak işareti içinde vermiş\n\nBu davranışlar hangi akademik ilkelere uygundur?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "Yalnız I"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Kaynak kullanma, atıf yapma ve alıntı gösterme akademik dürüstlük ilkelerine uygundur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde hava kirliliği artmış;\nI. Filtreli baca sistemi zorunluluğu getirilmiş\nII. Toplu taşıma ücretsiz yapılmış\nIII. Yeşil alan sayısı artırılmış\nIV. Fabrikalar şehir dışına taşınmış\n\nBu önlemlerden hangileri hava kirliliğini azaltmaya yöneliktir?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Filtreli baca, toplu taşıma, yeşil alan ve fabrika taşıma hepsi hava kirliliğini azaltır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir bölgede kış turizmi (kayak) gelişmiştir. Bu bölgenin karakteristik özellikleri;\nI. Yüksek dağlar\nII. Bol kar yağışı\nIII. Soğuk iklim\n\nKış turizminin gelişmesinde hangileri belirleyicidir?",
+    "siklar": {
+      "A": "Yalnız III",
+      "B": "I, II ve III",
+      "C": "Yalnız I",
+      "D": "I ve II"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yüksek dağlar, bol kar ve soğuk iklim birlikte kış turizminin gelişmesini sağlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "El-Cezeri, sibernetiğin babası olarak kabul edilir. Otomatik makineler, su saatleri ve robot cihazlar tasarlamıştır.\n\nEl-Cezeri'nin çalışmaları hangi alanla doğrudan ilişkilidir?",
+    "siklar": {
+      "A": "Mühendislik ve otomasyon",
+      "B": "Tıp",
+      "C": "Astronomi",
+      "D": "Edebiyat"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "El-Cezeri'nin otomatik makineleri mühendislik ve otomasyon alanında çığır açan çalışmalardır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "E-devlet üzerinden;\nI. Adli sicil kaydı sorgulaması\nII. Çocuk için okul kaydı\nIII. Vergi borcu ödeme\nIV. Sağlık raporu alma\n\nBu işlemlerin tümünün dijitale taşınmasının en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "İnternet bağımlılığı",
+      "B": "Devlet memurlarının işsiz kalması",
+      "C": "Vatandaşların bilgi güvenliğinin tehlikeye girmesi",
+      "D": "Zaman ve emek tasarrufu, bürokratik işlemlerin hızlanması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Dijital devlet hizmetleri zaman ve emek tasarrufu sağlayarak bürokratik işlemleri hızlandırır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir firma CSR (Kurumsal Sosyal Sorumluluk) projesi kapsamında;\n- Çevre temizliği kampanyası düzenlemiş\n- Burs fonu oluşturmuş\n- Engelli istihdamı artırmış\n\nCSR'nin amacı hangisidir?",
+    "siklar": {
+      "A": "Sadece kâr elde etmek",
+      "B": "Çalışan sayısını azaltmak",
+      "C": "Topluma katkı sağlayarak ekonomik sürdürülebilirlik ve itibar oluşturmak",
+      "D": "Vergi kaçırmak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "CSR topluma katkı sağlayarak ekonomik sürdürülebilirlik ve kurumsal itibar oluşturmayı hedefler."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Otonom (sürücüsüz) araçlar sensörler ve yapay zekâ ile çalışır.\n\nBu teknolojinin potansiyel faydası hangisidir?",
+    "siklar": {
+      "A": "Ulaşımı daha pahalı hale getirmesi",
+      "B": "Yolların gereksiz hale gelmesi",
+      "C": "Trafik kazalarını artırması",
+      "D": "İnsan hatası kaynaklı kazaları azaltması"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Otonom araçlar insan hatası kaynaklı kazaları önemli ölçüde azaltma potansiyeli taşır."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "30 Ağustos Zafer Bayramı'nda tüm ülkede kutlamalar yapılması toplumsal birlikteliği güçlendirir.\n\nBunun temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Spor etkinlikleri düzenlenmesi",
+      "B": "Tatil olması",
+      "C": "Ortak tarih bilincinin ve millî duyguların pekişmesi",
+      "D": "Ekonomik katkı sağlaması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Millî bayramlar ortak tarih bilinci ve millî duyguları pekiştirerek toplumsal birliği güçlendirir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Türk Konseyi (şimdi Türk Devletleri Teşkilatı) çatısında;\nI. Ortak Türk tarihi ders kitapları hazırlanmış\nII. TÜRKPA (Türk Dili Konuşan Ülkeler Parlamenter Asamblesi) kurulmuş\nIII. Türk Dünyası Kültür Başkenti seçilmekte\n\nBu uygulamalar hangisini amaçlar?",
+    "siklar": {
+      "A": "Diğer ülkeleri dışlamak",
+      "B": "Askeri birlik kurmak",
+      "C": "Türk dünyasının kültürel, eğitimsel ve siyasi bağlarını güçlendirmek",
+      "D": "Ekonomik ambargo uygulamak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Bu uygulamalar Türk dünyasının kültürel, eğitimsel ve siyasi bağlarını güçlendirmeyi amaçlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Göktürk Kitabelerinde Bilge Kağan;\n'Türk milleti tokken açlığı düşünmez. Üstten gök basmasa, alttan yer delinmese Türk milleti, senin ilini ve töreni kim bozabilir?'\n\nBu sözlerin mesajı hangisidir?",
+    "siklar": {
+      "A": "Savaşçılığın gereksiz olduğunu",
+      "B": "Kağanın tek otorite olduğunu",
+      "C": "Göçebeliğe dönülmesi gerektiğini",
+      "D": "Birlik ve düzen korunursa milletin güçlü kalacağını"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Bilge Kağan birlik ve düzenin korunmasının milletin gücünü muhafaza edeceğini vurgular."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Engelli bireyler için;\nI. Erişilebilir ulaşım\nII. Özel eğitim imkânları\nIII. İstihdam kotası uygulaması\n\nBu düzenlemelerin tümü hangi hakkın güvencesidir?",
+    "siklar": {
+      "A": "Eşitlik hakkı ve pozitif ayrımcılık",
+      "B": "Sözleşme özgürlüğü",
+      "C": "Mülkiyet hakkı",
+      "D": "Seyahat hakkı"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Engelli bireylere yönelik düzenlemeler eşitlik hakkı ve pozitif ayrımcılık uygulamalarıdır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede;\n- Tarım sektörünün payı %5\n- Sanayi sektörünün payı %25\n- Hizmet sektörünün payı %70\n\nBu dağılım ülkenin hangi kategoride olduğunu gösterir?",
+    "siklar": {
+      "A": "Tarım ülkesi",
+      "B": "Az gelişmiş",
+      "C": "Gelişmiş (sanayileşmiş)",
+      "D": "Gelişmekte olan"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Hizmet sektörü ağırlıklı ekonomi gelişmiş (sanayileşmiş) ülkelerin özelliğidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Marka tescili, bir işletmenin adını, logosunu ve ürünlerini hukuki olarak koruma altına alır.\n\nMarka tescilinin amacı hangisidir?",
+    "siklar": {
+      "A": "Ürün fiyatını artırmak",
+      "B": "Markanın taklit edilmesini önlemek ve tüketiciyi korumak",
+      "C": "Vergi muafiyeti sağlamak",
+      "D": "Rekabeti engellemek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Marka tescili taklitçiliği önleyerek hem marka sahibini hem tüketiciyi korur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir şehirde yaşayan farklı etnik gruplardaki insanlar ortak bir festival düzenlemiştir.\n\nBu festival hangisine katkı sağlar?",
+    "siklar": {
+      "A": "Gruplar arası çatışmaya",
+      "B": "Tek tip kültür oluşmasına",
+      "C": "Ayrımcılığın artmasına",
+      "D": "Toplumsal kaynaşma ve kültürel zenginliğe"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Ortak festival toplumsal kaynaşma ve kültürel zenginliğe katkı sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar ve Çözümler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir okulda gürültü sorunu çözümü için;\n- Öğrenci meclisi toplantı yapmış\n- Gürültü ölçer cihazı koridorlara yerleştirilmiş\n- 'Sessiz koridor' kampanyası başlatılmış\n\nBu çözüm yaklaşımının özelliği hangisidir?",
+    "siklar": {
+      "A": "Katılımcı ve bilinçlendirmeye dayalı çözüm",
+      "B": "Cezaya dayalı çözüm",
+      "C": "Sorunu görmezden gelme",
+      "D": "Otoriter müdahale"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Öğrenci katılımı ve farkındalık kampanyası bilinçlendirmeye dayalı demokratik çözümdür."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Biyoçeşitlilik, bir bölgedeki farklı canlı türlerinin zenginliğidir.\n\nBiyoçeşitliliğin korunması neden önemlidir?",
+    "siklar": {
+      "A": "Yalnızca bilimsel araştırma için",
+      "B": "Sadece estetik bir değere sahip olduğu için",
+      "C": "Ekosistemlerin dengeli işleyişi ve insanlığın geleceği için hayati olduğu için",
+      "D": "Sadece turizm geliri sağladığı için"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Biyoçeşitlilik ekosistemlerin dengeli işleyişi ve insanlığın geleceği için hayati önemdedir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Karadeniz bölgesinde;\nI. Bol yağış\nII. Dik yamaçlar\nIII. Yeşil bitki örtüsü\n\nBu özelliklerin tümü hangi kavramla ilişkilidir?",
+    "siklar": {
+      "A": "Doğal özellikler",
+      "B": "Kentleşme süreci",
+      "C": "Sanayi faaliyetleri",
+      "D": "Beşeri özellikler"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Yağış, yamaçlar ve bitki örtüsü bölgenin doğal özellikleridir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Büyük Hun Devleti dönemi;\nI. Çin Seddi'nin yapılma nedenidir\nII. İlk Türk siyasi birliğini oluşturmuştur\nIII. Onlu askeri sistemi geliştirmiştir\n\nBu bilgilere göre Hunlar hakkında hangisi söylenebilir?",
+    "siklar": {
+      "A": "Zayıf bir devlet oldukları",
+      "B": "Yerleşik hayat sürdürdükleri",
+      "C": "Türk tarihinin ilk önemli devletini kurarak büyük bir güç oluşturdukları",
+      "D": "Çin ile ticaret yapmadıkları"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Hunlar ilk Türk siyasi birliğini kurarak güçlü bir devlet oluşturmuştur."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Anadolu'da kurulan beylikler;\nI. Aydınoğulları → Denizcilik\nII. Karamanoğulları → Türkçeyi resmi dil ilan etme\nIII. Osmanoğulları → İmparatorluk kurma\n\nBeyliklerden Osmanlı'ya geçiş sürecinde hangisi en kalıcı etkiyi yapmıştır?",
+    "siklar": {
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "Yalnız III",
+      "D": "Yalnız II"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Her beylik farklı alanlarda kalıcı etki yapmıştır; hepsi önemlidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "İslam medeniyetinde hastanelere 'darüşşifa', eczanelere 'aktar dükkânı', akıl hastanelerine 'bimaristan' denilmiştir.\n\nBu kavramlar İslam medeniyetinin hangi alandaki gelişimini gösterir?",
+    "siklar": {
+      "A": "Hukuk",
+      "B": "Sağlık",
+      "C": "Ticaret",
+      "D": "Askeri"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Darüşşifa, aktar ve bimaristan İslam medeniyetinin sağlık alanındaki gelişimini gösterir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Okulda düzenlenen sınıf başkanlığı seçimi sonuçlarını kabul etmek demokratik kültürün bir parçasıdır.\n\nSeçim sonuçlarının kabul edilmesinin önemi hangisidir?",
+    "siklar": {
+      "A": "Kazananın güçlenmesi",
+      "B": "Demokratik sürecin işlerliğinin ve toplumsal barışın korunması",
+      "C": "Seçimin tekrarlanması",
+      "D": "Kaybedenlerin cezalandırılması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Seçim sonuçlarını kabul etmek demokratik sürecin işlerliğini ve toplumsal barışı korur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir ülkenin ithalatı;\nI. Petrol\nII. Doğalgaz\nIII. Teknolojik ürünler\n\nBu ürünlerde dışa bağımlılığı azaltmanın yolu hangisidir?",
+    "siklar": {
+      "A": "Sadece tarıma yönelmek",
+      "B": "Dış borç almak",
+      "C": "Yerli üretim ve yenilenebilir enerji yatırımlarını artırmak",
+      "D": "İthalatı tamamen durdurmak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Yerli üretim ve yenilenebilir enerji dışa bağımlılığı azaltmanın en etkili yoludur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir şirketin;\nI. Ar-Ge (Araştırma Geliştirme) departmanı var\nII. Yeni ürünler tasarlıyor\nIII. Patent başvurusunda bulunuyor\n\nBu şirketin öne çıkan özelliği hangisidir?",
+    "siklar": {
+      "A": "Küçük ölçekli olması",
+      "B": "Yenilikçi ve inovasyon odaklı çalışması",
+      "C": "Sadece ithalat yapması",
+      "D": "Geleneksel üretim yapması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ar-Ge, yeni tasarımlar ve patent yenilikçi ve inovasyon odaklı çalışmanın göstergeleridir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bulut bilişim (cloud computing) sayesinde veriler uzak sunucularda saklanmakta ve her yerden erişilebilmektedir.\n\nBulut bilişimin en önemli avantajı hangisidir?",
+    "siklar": {
+      "A": "İnternet bağlantısı gerektirmemesi",
+      "B": "Verilerin her cihazdan ve her yerden erişilebilir olması",
+      "C": "Sadece büyük şirketlerin kullanabilmesi",
+      "D": "Verilerin fiziksel olarak taşınması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bulut bilişim verilere her cihaz ve konumdan erişim sağlayan çağdaş teknolojidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir tasarımcı özgün logo tasarlamış ve bunu ticari marka olarak tescil ettirmiştir.\n\nBu tescil ne sağlar?",
+    "siklar": {
+      "A": "Logonun yasal koruma altına alınarak taklit edilmesini önlemeyi",
+      "B": "Tasarımcının telif hakkından vazgeçmesini",
+      "C": "Tasarımın kamu malı olmasını",
+      "D": "Logonun herkes tarafından kullanılmasını"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Ticari marka tescili logoyu yasal koruma altına alarak taklit edilmesini önler."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir sivil toplum kuruluşu (STK) deprem bölgesinde;\n- Çadır kurmuş\n- Psikolojik destek vermiş\n- Çocuklara eğitim sağlamış\n\nSTK'ların toplumsal rolü hangisidir?",
+    "siklar": {
+      "A": "Siyasi parti kurmak",
+      "B": "Kâr elde etmek",
+      "C": "Toplumsal sorunlara gönüllü olarak çözüm üretmek",
+      "D": "Devletin yerini almak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "STK'lar toplumsal sorunlara gönüllü ve sivil çözüm üreten kuruluşlardır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Sıfır atık projesi kapsamında;\nI. Ambalaj azaltılmış\nII. Geri dönüşüm yaygınlaştırılmış\nIII. Kompost üretimi teşvik edilmiş\n\nBu projenin amacı hangisidir?",
+    "siklar": {
+      "A": "Sadece ekonomik tasarruf sağlamak",
+      "B": "Tüketimi artırmak",
+      "C": "Atık miktarını minimuma indirerek çevre kirliliğini önlemek",
+      "D": "Üretimi durdurmak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Sıfır atık projesi çevre kirliliğini önlemeyi ve kaynakları verimli kullanmayı hedefler."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslamiyet ile Türklerde Değişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Anadolu Selçukluları döneminde;\n- Mevlana insanlığa hoşgörüyü öğretmiş\n- Yunus Emre Türkçe şiirler yazmış\n- Hacı Bektaş Veli insan sevgisini yaymış\n\nBu kişilerin Anadolu'ya ortak katkısı hangisidir?",
+    "siklar": {
+      "A": "Şehirler kurma",
+      "B": "Kültürel ve manevi değerlerin yayılarak toplumsal barışa katkı sağlama",
+      "C": "Ticaret yollarını kontrol etme",
+      "D": "Askeri başarılar kazanma"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mevlana, Yunus Emre ve Hacı Bektaş Veli kültürel-manevi değerlerin yayılmasına katkı sağlamıştır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de 18 yaşını dolduran her vatandaş seçme hakkına sahiptir.\n\nSeçme hakkının bu şekilde tanımlanmasının nedeni hangisidir?",
+    "siklar": {
+      "A": "Hukuki olarak reşit olma yaşı ile vatandaşlık sorumluluğunun örtüşmesi",
+      "B": "Sadece geleneksel bir uygulama olması",
+      "C": "Uluslararası baskı nedeniyle",
+      "D": "18 yaş altının yeterince bilgili olmaması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "18 yaş hukuki reşit olma yaşıdır ve vatandaşlık hak ve sorumluluklarının aktif kullanılmaya başlandığı yaştır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Serbest ticaret bölgeleri;\nI. Gümrük vergisi uygulanmaz\nII. İhracatı teşvik eder\nIII. Yabancı yatırımı çeker\n\nBu bölgelerin ülke ekonomisine katkısı hangisidir?",
+    "siklar": {
+      "A": "Yerli üretimi azaltması",
+      "B": "Dış ticaret ve yatırımı artırarak ekonomik büyümeyi desteklemesi",
+      "C": "Ekonomiyi daraltması",
+      "D": "İthalatı engellemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Serbest ticaret bölgeleri dış ticaret ve yatırımı artırarak ekonomik büyümeyi destekler."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "IoT (Nesnelerin İnterneti) ile;\nI. Buzdolabı eksik ürünü otomatik sipariş ediyor\nII. Akıllı termostat enerji tasarrufu sağlıyor\nIII. Trafik lambaları yoğunluğa göre ayarlanıyor\n\nBu örneklerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "İnsanların tamamen gereksiz hale gelmesi",
+      "B": "Günlük yaşamı akıllı ve verimli hale getiren teknolojik entegrasyon",
+      "C": "Sadece endüstride kullanılması",
+      "D": "Çevreye zararlı olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "IoT günlük yaşamı akıllı ve verimli hale getiren teknolojik entegrasyondur."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Birliktelik",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir mahallede farklı kültürlerden insanlar birlikte iftar sofrası kurmuştur.\n\nBu uygulama hangisine katkı sağlar?",
+    "siklar": {
+      "A": "Ekonomik soruna",
+      "B": "Toplumsal kaynaşma ve hoşgörüye",
+      "C": "Kültürel çatışmaya",
+      "D": "Toplumsal ayrışmaya"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Birlikte iftar toplumsal kaynaşma ve hoşgörüye katkı sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir okuldaki öğretmenler kurulu toplantısında;\nI. Müdür gündem belirler\nII. Öğretmenler görüş bildirir\nIII. Karar oy birliğiyle alınır\n\nBu süreç hangisine örnektir?",
+    "siklar": {
+      "A": "Demokratik yönetime",
+      "B": "Bürokratik işleme",
+      "C": "Otoriter yönetime",
+      "D": "Bireysel karara"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Görüş bildirme ve oy birliği demokratik yönetim sürecidir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Özellikler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Güneydoğu Anadolu'da kurak iklim nedeniyle sulama kanalları yapılmıştır.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "İnsanın doğayı değiştirdiğini",
+      "B": "Sulamanın gereksiz olduğunu",
+      "C": "Tarımın yapılamadığını",
+      "D": "İklimin değişmediğini"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Sulama kanalları insanın doğal koşulları değiştirerek tarım yapmasını gösterir."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Katman ve Oluşumları Koruma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Ozon tabakasının incelmesi;\nI. Zararlı UV ışınlarının artmasına\nII. Cilt kanseri riskinin yükselmesine\nIII. Ekosistemin zarar görmesine\nyol açar.\n\nOzon tabakasını korumanın yolu hangisidir?",
+    "siklar": {
+      "A": "Fosil yakıt kullanımını artırmak",
+      "B": "Ozon tabakasına zarar veren kimyasalları azaltmak",
+      "C": "Daha fazla fabrika açmak",
+      "D": "Daha fazla araç kullanmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ozon tabakasını korumanın yolu zararlı kimyasalları azaltmaktır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Türkistan'da Kurulan Türk Devletleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Uygurlar yerleşik hayata geçen ilk Türk devletidir. Matbaa ve kağıdı kullanan ilk Türklerdir.\n\nBu bilgi Uygurlar hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Kültür ve medeniyette ileri olduklarını",
+      "B": "Tarımla uğraşmadıklarını",
+      "C": "Göçebe yaşadıklarını",
+      "D": "Savaşçı bir toplum olduklarını"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Yerleşik hayat, matbaa ve kağıt kullanımı kültürel ilerlemeyi gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "İslam Medeniyetinin Ortak Mirası",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "İbn-i Sina'nın 'El-Kanun fi't-Tıb' eseri yüzyıllarca Avrupa üniversitelerinde ders kitabı olarak okutulmuştur.\n\nBu bilgi hangisini gösterir?",
+    "siklar": {
+      "A": "İslam bilginlerinin evrensel bilime büyük katkı sağladığını",
+      "B": "Avrupa'nın tıpta ileri olduğunu",
+      "C": "Tıbbın gelişmediğini",
+      "D": "İbn-i Sina'nın Avrupalı olduğunu"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "İbn-i Sina'nın eserinin Avrupa'da okutulması İslam biliminin evrensel katkısını gösterir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Yargı bağımsızlığı;\nI. Mahkemelerin hiçbir baskı altında olmadan karar vermesi\nII. Hakimlerin siyasi baskıdan korunması\n\nYargı bağımsızlığının önemi hangisidir?",
+    "siklar": {
+      "A": "Adaletin tarafsız ve güvenilir şekilde sağlanması",
+      "B": "Suçluların korunması",
+      "C": "Devletin güçlenmesi",
+      "D": "Yargının yavaşlaması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Yargı bağımsızlığı adaletin tarafsız ve güvenilir şekilde sağlanmasını güvence altına alır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Çocuk hakları;\nI. Eğitim hakkı\nII. Sağlık hakkı\nIII. Oyun ve dinlenme hakkı\nIV. Çalıştırılmama hakkı\n\nBu hakların korunması kimin sorumluluğundadır?",
+    "siklar": {
+      "A": "Aile, devlet ve toplumun birlikte",
+      "B": "Sadece ailenin",
+      "C": "Sadece okulun",
+      "D": "Sadece devletin"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Çocuk hakları aile, devlet ve toplumun ortak sorumluluğundadır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir ülkede ihracat ithalattan fazlaysa dış ticaret fazlası vardır.\n\nDış ticaret fazlasının ülke ekonomisine etkisi hangisidir?",
+    "siklar": {
+      "A": "İşsizliği artırması",
+      "B": "İthalatı artırması",
+      "C": "Döviz girdisini artırarak ekonomiyi güçlendirmesi",
+      "D": "Ekonomiyi zayıflatması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Dış ticaret fazlası döviz girdisini artırarak ekonomiyi güçlendirir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Kooperatifler;\nI. Üreticilerin birlikte hareket etmesini sağlar\nII. Aracıları ortadan kaldırır\nIII. Üreticinin gelirini artırır\n\nKooperatiflerin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Devletin gelirinin artması",
+      "B": "Üreticilerin birlikte güçlenerek adil gelir elde etmesi",
+      "C": "Tüketicilerin zarar görmesi",
+      "D": "İthalatın artması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kooperatifler üreticileri güçlendirerek adil gelir elde etmelerini sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "3D yazıcı teknolojisi;\nI. Protez üretimi\nII. Mimari model yapımı\nIII. Yedek parça üretimi\n\nBu teknolojinin ortak katkısı hangisidir?",
+    "siklar": {
+      "A": "Sadece büyük fabrikalarda kullanılması",
+      "B": "Sadece oyuncak yapımı",
+      "C": "Üretimi kişiselleştirerek maliyetleri düşürmesi",
+      "D": "Teknolojinin gerilemesi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "3D yazıcı üretimi kişiselleştirir ve maliyetleri düşürür."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Açık kaynak yazılım;\nI. Kaynak kodu herkese açıktır\nII. Geliştirilmesine herkes katkıda bulunabilir\nIII. Genellikle ücretsizdir\n\nAçık kaynak yazılımın avantajı hangisidir?",
+    "siklar": {
+      "A": "Sadece uzmanların kullanabilmesi",
+      "B": "Topluluk katkısıyla hızla gelişmesi ve şeffaf olması",
+      "C": "Ticari kullanıma kapalı olması",
+      "D": "Her zaman güvensiz olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Açık kaynak topluluk katkısıyla hızla gelişen şeffaf bir modeldir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Toplumsal Sorunlar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Toplumda sosyal medya bağımlılığı artmaktadır.\n\nBu sorunla mücadele için en etkili yaklaşım hangisidir?",
+    "siklar": {
+      "A": "Dijital okuryazarlık eğitimi ve bilinçli kullanım alışkanlığı kazandırmak",
+      "B": "Sosyal medyayı tamamen yasaklamak",
+      "C": "Sadece yetişkinlerin kullanmasına izin vermek",
+      "D": "İnterneti kapatmak"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Dijital okuryazarlık ve bilinçli kullanım en etkili mücadele yöntemidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Askeri Mücadeleler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Malazgirt Meydan Muharebesi (1071);\nI. Anadolu'nun kapıları Türklere açılmış\nII. Bizans'ın askeri gücü kırılmış\n\nMalazgirt'in en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Anadolu'nun Türk yurdu haline gelmesinin başlangıcı",
+      "B": "İslam'ın yayılması",
+      "C": "Bizans'ın güçlenmesi",
+      "D": "Haçlı Seferlerinin başlaması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Malazgirt Anadolu'nun Türk yurdu haline gelmesinin başlangıcıdır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bütçe yönetimi;\nI. Gelir ve giderleri dengeli tutmak\nII. Tasarrufu alışkanlık haline getirmek\nIII. Her istediğini hemen almak\n\nDoğru bütçe yönetimi hangileridir?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I, II ve III",
+      "C": "Yalnız III",
+      "D": "I ve III"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Doğru bütçe gelir-gider dengesi ve tasarruf alışkanlığı ile sağlanır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Kişisel verilerin korunması;\nI. KVKK (Kişisel Verilerin Korunması Kanunu) vatandaşları korur\nII. Şirketler izinsiz veri toplayamaz\n\nKVKK'nın amacı hangisidir?",
+    "siklar": {
+      "A": "Devlet kontrolünü artırmak",
+      "B": "Vatandaşların dijital ortamda güvenliğini ve mahremiyetini korumak",
+      "C": "İnterneti yavaşlatmak",
+      "D": "Şirketleri güçlendirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "KVKK vatandaşların dijital güvenliğini ve mahremiyetini korur."
+  }
 ]

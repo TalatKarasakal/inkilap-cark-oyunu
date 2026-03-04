@@ -1,0 +1,647 @@
+[
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Karşısındakini dinleyip anladığını belirten ve 'benim düşüncem' diyen bir kişi olumlu iletişim kurmaktadır.\n\nBu kişinin kullandığı iletişim unsurları hangileridir?",
+    "siklar": {
+      "A": "Empati ve ben dili",
+      "B": "Eleştiri ve suçlama",
+      "C": "Görmezden gelme",
+      "D": "Otoriter tavır"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Dinleyip anlamak empatiyi, 'benim düşüncem' demek ben dilini gösterir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "İletişimde;\nI. Empati kurma\nII. Ben dili kullanma\nIII. Sen dili kullanma\nIV. Aktif dinleme\n\nOlumlu iletişim unsurları hangileridir?",
+    "siklar": {
+      "A": "I, II ve IV",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "Yalnız IV"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Empati, ben dili ve aktif dinleme olumlu iletişim unsurlarıdır. Sen dili olumsuz iletişimdir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir tartışmada 'Sen hep yanlış yapıyorsun!' yerine 'Bu konuda farklı düşünüyorum' demek hangisine örnektir?",
+    "siklar": {
+      "A": "Sen dili kullanma",
+      "B": "Ben dili kullanma",
+      "C": "Eleştiri yapma",
+      "D": "Suçlama"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Suçlamak yerine kendi düşüncesini ifade etmek ben dili kullanımıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Ortam uygun olsa bile karşılıklı saygı ve hoşgörü yoksa iletişim sağlıklı işlemez.\n\nBu bilgiye göre sağlıklı iletişimin temel koşulu hangisidir?",
+    "siklar": {
+      "A": "Teknolojik altyapı",
+      "B": "Karşılıklı saygı ve hoşgörü",
+      "C": "Sessiz bir ortam",
+      "D": "Yüz yüze olmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Saygı ve hoşgörü olmadan iletişim sağlıklı işlemez."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci arkadaşının sorununu dinledikten sonra 'Seni anlıyorum, ben olsam ben de üzülürdüm' demiştir.\n\nBu davranış hangisine örnektir?",
+    "siklar": {
+      "A": "Acıma",
+      "B": "Empati",
+      "C": "Sempati",
+      "D": "Görmezden gelme"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Karşıdakinin yerine koyarak anlamaya çalışmak empatidir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir toplantıda;\nI. Herkes sırasını bekleyerek konuşmuş\nII. Farklı görüşlere saygı gösterilmiş\nIII. Bir kişi sürekli sözü kesmiş\n\nOlumlu iletişim ortamına uygun olanlar hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sıra bekleme ve saygı olumlu; söz kesme olumsuzdur."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Medya okuryazarlığının en önemli yönü bilgi kaynağını sorgulamak ve doğrulamaktır.\n\nBu beceri neden önemlidir?",
+    "siklar": {
+      "A": "Haberlerin daha eğlenceli olması için",
+      "B": "Yanlış bilgi ve manipülasyondan korunmak için",
+      "C": "Daha fazla haber okumak için",
+      "D": "Gazeteci olmak için"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Medya okuryazarlığı yanlış bilgi ve manipülasyondan korunmayı sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Sosyal medyada paylaşılan bir haberi 'beğen-paylaş' yapmadan önce ne yapılmalıdır?",
+    "siklar": {
+      "A": "Hemen paylaşmalı",
+      "B": "Haberin doğruluğunu güvenilir kaynaklardan kontrol etmeli",
+      "C": "Sadece başlığını okumalı",
+      "D": "Çok beğenildiyse doğrudur kabul etmeli"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Paylaşmadan önce haberin doğruluğu güvenilir kaynaklardan kontrol edilmelidir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Doğrulanmamış haberlerin yaygın tüketimi hangi sorunu büyütür?",
+    "siklar": {
+      "A": "Bilgi zenginliğini",
+      "B": "Dezenformasyon (yanlış bilgi) sorununu",
+      "C": "Medya çeşitliliğini",
+      "D": "Gazetecilik kalitesini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Doğrulanmamış haberlerin tüketimi dezenformasyon sorununu büyütür."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir haber kaynağının güvenilirliğini değerlendirmek için;\nI. Kaynağın itibarını kontrol etmek\nII. Haberin tarihini doğrulamak\nIII. Farklı kaynaklardan teyit etmek\nIV. En çok beğeni alan kaynağı seçmek\n\nDoğru yaklaşım hangileridir?",
+    "siklar": {
+      "A": "Yalnız IV",
+      "B": "I, II ve III",
+      "C": "I ve IV",
+      "D": "Yalnız I"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İtibar, tarih ve çapraz teyit güvenilirlik değerlendirmesinin doğru adımlarıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Kitle İletişim Özgürlüğü",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Basın özgürlüğü;\nI. Farklı görüşlerin paylaşılmasını sağlar\nII. Yöneticilerin denetlenmesini mümkün kılar\nIII. Özel hayatın ifşa edilmesini serbest bırakır\n\nBasın özgürlüğünün kapsamı hangileridir?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Basın özgürlüğü farklı görüş ve denetim amaçlıdır. Özel hayat ifşası hak ihlalidir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Kitle İletişim Özgürlüğü",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir gazetecinin yaptığı haberde kişilerin rızası olmadan özel hayat bilgileri yayınlanmıştır.\n\nBu durum hangi hakkın ihlalidir?",
+    "siklar": {
+      "A": "Basın özgürlüğü",
+      "B": "Özel hayatın gizliliği",
+      "C": "Eğitim hakkı",
+      "D": "Çalışma hakkı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Rıza olmadan özel bilgi yayınlamak özel hayatın gizliliği ihlalidir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Kitle İletişim Özgürlüğü",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede basın;\nI. Haber yapma özgürlüğüne sahip\nII. Eleştiri yapabiliyor\nIII. Yargı kararları olmadan kapatılabiliyor\n\nBu ülkede basın özgürlüğü tam olarak sağlanmış mıdır?",
+    "siklar": {
+      "A": "Evet, tüm koşullar sağlanmış",
+      "B": "Hayır, yargısız kapatma basın özgürlüğüne aykırıdır",
+      "C": "Sadece I yeterlidir",
+      "D": "Sadece II yeterlidir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yargı kararı olmadan basın organı kapatmak basın özgürlüğüne aykırıdır."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Beden dili iletişimin önemli bir parçasıdır. Göz teması kurmak, gülümsemek ve dik durmak olumlu beden dili örnekleridir.\n\nBeden dilinin iletişimdeki rolü hangisidir?",
+    "siklar": {
+      "A": "Sadece süsleme",
+      "B": "Sözlü mesajı güçlendirmek ve samimiyeti göstermek",
+      "C": "Konuşmayı gereksiz kılmak",
+      "D": "Sadece resmi ortamlarda kullanılır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Beden dili sözlü mesajı güçlendirir ve samimiyeti gösterir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir bilgi paylaşmadan önce;\n- Bu bilgi doğru mu?\n- Bu bilgiyi paylaşmam gerekli mi?\n- Bu bilgi başkasına zarar verir mi?\n\nBu sorular hangi kavramla ilişkilidir?",
+    "siklar": {
+      "A": "Medya bağımlılığı",
+      "B": "Sorumlu medya kullanımı ve dijital etik",
+      "C": "Sosyal medya reklamcılığı",
+      "D": "Haber yazarlığı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Paylaşım öncesi doğruluk, gereklilik ve zarar kontrolü sorumlu medya kullanımıdır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Osmanlı'nın küçük beylikten cihan devletine yükselmesinde hoşgörü politikası etkili olmuştur.\n\nHoşgörü politikasının önemi hangisidir?",
+    "siklar": {
+      "A": "Askeri güçü azaltmıştır",
+      "B": "Farklı toplulukların devlete bağlılığını sağlayarak kalıcı hakimiyetin temelini oluşturmuştur",
+      "C": "Sadece Müslümanlara hizmet etmiştir",
+      "D": "Fetihleri yavaşlatmıştır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hoşgörü politikası farklı toplulukların bağlılığını sağlayarak kalıcı hakimiyet kurulmasına yardım etmiştir."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'nın kuruluşunda etkili faktörler;\nI. Uç beyliği konumu\nII. Türkmen göçlerinin nüfusu artırması\nIII. Adaletli yönetim\n\nBunlardan hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Uç beyliği konumu, Türkmen göçü ve adaletli yönetim Osmanlı'nın kuruluş dinamikleridir."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "1453 İstanbul'un Fethi;\nI. Orta Çağ'ı sona erdirmiştir\nII. Osmanlı'yı cihan devleti yapmıştır\nIII. Ticaret yollarının kontrolünü sağlamıştır\n\nFethin tarihsel sonuçları hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "İstanbul'un fethi Orta Çağ'ı bitirmiş, Osmanlı'yı cihan devleti yapmış ve ticaret yollarını kontrol altına almıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Tımar sistemi hem üretim sürekliliğini hem hazineye yük olmadan asker yetiştirilmesini sağlamıştır.\n\nTımar sisteminin temel işlevi hangisidir?",
+    "siklar": {
+      "A": "Sadece vergi toplamak",
+      "B": "Tarımsal üretim ve askeri güç arasında denge kurmak",
+      "C": "Toprakları satmak",
+      "D": "Dış ticaret yapmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tımar sistemi tarım-asker dengesini kurarak devletin güçlenmesini sağlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Vakıflar toplumsal dayanışmanın Osmanlı'daki yansımasıdır. Cami, medrese, hastane, çeşme, aşevi gibi hizmetler vakıflar aracılığıyla sunulmuştur.\n\nVakıfların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Kâr elde etmek",
+      "B": "Toplumun ihtiyaçlarını karşılayarak sosyal adaleti sağlamak",
+      "C": "Devlet bütçesini artırmak",
+      "D": "Askeri güç oluşturmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vakıflar toplumun ihtiyaçlarını karşılayarak sosyal adaleti sağlamaya yönelik kurumlardır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Osmanlı toplum yapısında;\nI. Millet sistemiyle farklı dinlere hoşgörü gösterilmiştir\nII. Vakıf sistemiyle sosyal hizmetler sunulmuştur\nIII. Tımar sistemiyle toprak düzeni sağlanmıştır\n\nBu uygulamaların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Askeri güce dayanması",
+      "B": "Toplumsal düzeni ve adaleti sağlamaya yönelik olması",
+      "C": "Sadece yöneticilere hizmet etmesi",
+      "D": "Batı'dan alınmış olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Millet, vakıf ve tımar sistemleri toplumsal düzen ve adaleti sağlamaya yöneliktir."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Avrupa'da Uyanış",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Rönesans'ın doğuşunda;\nI. Yeni kültürlerle temas\nII. Bilgin göçü\nIII. Matbaanın yaygınlaşması\netkili olmuştur.\n\nRönesans'ın en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Feodalitenin güçlenmesi",
+      "B": "Akıl, bilim ve insan merkezli düşüncenin öne çıkması",
+      "C": "Kilise otoritesinin artması",
+      "D": "Savaşların çoğalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Rönesans akıl, bilim ve insan merkezli düşüncenin öne çıkmasını sağlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Avrupa'da Uyanış",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Reform hareketi kilisenin siyasi otoritesini zayıflatmıştır.\n\nReform hareketinin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Kilisenin güçlenmesi",
+      "B": "Laik düşüncenin temellerinin atılması",
+      "C": "Feodalite sisteminin güçlenmesi",
+      "D": "Haçlı seferlerinin başlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Reform kilisenin siyasi otoritesini zayıflatarak laik düşüncenin temellerini atmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Avrupa'da Uyanış",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Coğrafi Keşifler;\nI. Yeni ticaret yolları açılmıştır\nII. Osmanlı'nın gelir kaynakları azalmıştır\nIII. Sömürgecilik başlamıştır\nIV. Avrupa ekonomisi güçlenmiştir\n\nBu sonuçlardan hangileri Coğrafi Keşiflerin etkisidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve IV",
+      "C": "I, III ve IV",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Coğrafi Keşifler yeni yollar, Osmanlı gelir kaybı, sömürgecilik ve Avrupa güçlenmesine yol açmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Değişen Dünya'da Değişen Osmanlı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Osmanlı'nın gerileme sürecinde;\nI. Askeri yenilgiler\nII. Toprak kayıpları\nIII. Avrupa'nın yükselişi\nIV. İç isyanlar\netkili olmuştur.\n\nOsmanlı bu sorunlara karşı hangi adımları atmıştır?",
+    "siklar": {
+      "A": "Sorunları görmezden gelmiştir",
+      "B": "Yenileşme (modernleşme) hareketleri başlatmıştır",
+      "C": "Savaştan tamamen vazgeçmiştir",
+      "D": "Avrupa'yla tüm ilişkisini kesmiştir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Osmanlı sorunlara karşı Lale Devri, III. Selim ve II. Mahmut ile yenileşme hareketleri başlatmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Değişen Dünya'da Değişen Osmanlı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Matbaa, elçi gönderimi ve Batı tarzı askeri reformlar Osmanlı'nın hangi döneminin özellikleridir?",
+    "siklar": {
+      "A": "Kuruluş dönemi",
+      "B": "Yükselme dönemi",
+      "C": "Batılılaşma (Yenileşme) dönemi",
+      "D": "Duraklama dönemi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Matbaa, elçi ve askeri reform Batılılaşma/Yenileşme döneminin özellikleriddir."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Osmanlı'dan Kalan Mirasımız",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'nın cami, han, hamam, köprü gibi eserleri günümüzde hâlâ kullanılmaktadır.\n\nBu eserlerin korunmasının önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece turizm geliri",
+      "B": "Kültürel mirasın gelecek nesillere aktarılması",
+      "C": "Modern yapılarla değiştirilmesi",
+      "D": "Politik simge olmaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Osmanlı eserleri kültürel mirasın korunarak gelecek nesillere aktarılmasını sağlar."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Osmanlı'dan Kalan Mirasımız",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Osmanlı kültürel mirası;\nI. Mimari eserler (camiler, köprüler)\nII. Mutfak kültürü\nIII. Hukuk sistemi\nIV. Sanat (hat, ebru, minyatür)\n\nBunlardan hangileri günümüzde yaşatılmaktadır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve IV",
+      "C": "I, II ve IV",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Mimari, mutfak ve sanat alanlarında Osmanlı mirası günümüzde yaşatılmaktadır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da devşirme sistemiyle Hristiyan ailelerden alınan çocuklar eğitim alarak Yeniçeri veya devlet adamı olmuştur.\n\nDevşirme sisteminin amacı hangisidir?",
+    "siklar": {
+      "A": "Hristiyanları cezalandırmak",
+      "B": "Devlete sadık, nitelikli asker ve yönetici yetiştirmek",
+      "C": "Nüfusu azaltmak",
+      "D": "Ticareti geliştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Devşirme sistemi devlete sadık, nitelikli asker ve yönetici yetiştirmeyi amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da lonca teşkilatı esnafın iç düzenini sağlar, kalite kontrolü yapar ve haksız rekabeti önlerdi.\n\nLoncaların işlevi hangisidir?",
+    "siklar": {
+      "A": "Sadece vergi toplamak",
+      "B": "Üretim kalitesini ve esnaf ahlakını denetlemek",
+      "C": "Devlet yönetiminde söz sahibi olmak",
+      "D": "Askeri güç oluşturmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Loncalar üretim kalitesini ve esnaf ahlakını denetleyen meslek kuruluşlarıdır."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de nüfusun batıda yoğun, doğuda seyrek olmasının temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Doğunun daha güzel olması",
+      "B": "Batıda sanayi, eğitim ve iş olanaklarının fazla olması",
+      "C": "Doğuda iklimin daha iyi olması",
+      "D": "Batıda toprağın daha verimli olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sanayi, eğitim ve iş olanakları nüfusun batıda yoğunlaşmasının temel nedenidir."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Göç;\nI. İtici faktörler: işsizlik, güvenlik sorunu, doğal afet\nII. Çekici faktörler: iş imkânı, eğitim, sağlık\n\nBir bölgeden göç verilmesi hangi faktörlerle ilişkilidir?",
+    "siklar": {
+      "A": "Sadece çekici",
+      "B": "Sadece itici",
+      "C": "Hem itici hem çekici",
+      "D": "Hiçbiri"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Göç hem yaşanılan yerdeki itici hem gidilecek yerdeki çekici faktörlerin etkisiyle oluşur."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir ilde nüfus piramidi tabanının geniş olması neyi gösterir?",
+    "siklar": {
+      "A": "Yaşlı nüfusun fazla olduğunu",
+      "B": "Genç nüfusun fazla olduğunu",
+      "C": "Nüfusun azaldığını",
+      "D": "Göçün arttığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nüfus piramidinin geniş tabanı genç nüfusun fazla olduğunu gösterir."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Köyden kente göçün sonuçları;\nI. Kentlerde gecekondulaşma\nII. Kırsal alanda iş gücü azalması\nIII. Kentlerde trafik ve çevre sorunları\nIV. Kırsal alanda tarımsal üretim artışı\n\nDoğru olanlar hangileridir?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I, II ve III",
+      "C": "I, III ve IV",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Göç gecekondu, iş gücü kaybı ve kent sorunlarına yol açar. Kırsal üretim artmaz, azalır."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de en kalabalık şehir İstanbul'dur. İstanbul'un nüfusunun çok yüksek olmasının olumsuz sonucu hangisidir?",
+    "siklar": {
+      "A": "Kültürel çeşitlilik",
+      "B": "Trafik, çevre kirliliği ve konut sorunu",
+      "C": "Ekonomik kalkınma",
+      "D": "İş olanaklarının artması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Aşırı nüfus yoğunluğu trafik, çevre ve konut sorunlarına yol açar."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türkiye'de;\n- Akdeniz: Narenciye ve seracılık\n- Karadeniz: Çay ve fındık\n- İç Anadolu: Buğday ve arpa\n\nBu dağılım hangisiyle açıklanır?",
+    "siklar": {
+      "A": "Beşeri faktörlerle",
+      "B": "İklim ve coğrafi koşulların tarımsal üretime etkisiyle",
+      "C": "Devlet teşvikleriyle",
+      "D": "Nüfus dağılımıyla"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı tarım ürünleri iklim ve coğrafi koşulların farklılığından kaynaklanır."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Akdeniz ikliminin özellikleri; yazları sıcak ve kurak, kışları ılık ve yağışlıdır.\n\nBu iklimde en yaygın ekonomik faaliyet hangisidir?",
+    "siklar": {
+      "A": "Ağır sanayi",
+      "B": "Turizm ve seracılık",
+      "C": "Madencilik",
+      "D": "Ormancılık"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Akdeniz ikliminin sıcak yazları ve ılık kışları turizm ve seracılığı destekler."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "İnsanlar yaşadıkları iklime göre giyim, barınak ve beslenme alışkanlıklarını değiştirir.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "İnsanların doğayı tamamen kontrol ettiğini",
+      "B": "İklimin insan yaşamı üzerinde belirleyici etkisi olduğunu",
+      "C": "İklimin değişmediğini",
+      "D": "İnsanların her iklimde aynı yaşadığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Giyim, barınak ve beslenme alışkanlıkları iklimin insan yaşamına etkisini gösterir."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Küresel ısınmanın sonuçları;\nI. Buzulların erimesi\nII. Deniz seviyesinin yükselmesi\nIII. Kuraklığın artması\nIV. Biyoçeşitliliğin azalması\n\nBunların tümünün ortak nedeni hangisidir?",
+    "siklar": {
+      "A": "Volkanik patlamalar",
+      "B": "İnsan faaliyetlerinin atmosferdeki sera gazlarını artırması",
+      "C": "Güneş patlamaları",
+      "D": "Okyanus akıntıları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Küresel ısınma temel olarak insan faaliyetlerinin sera gazlarını artırmasından kaynaklanır."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Beyin göçü, eğitimli ve nitelikli iş gücünün yurt dışına gitmesidir.\n\nBeyin göçünün ülke için olumsuz etkisi hangisidir?",
+    "siklar": {
+      "A": "Eğitim seviyesinin yükselmesi",
+      "B": "Nitelikli insan kaynağının kaybedilmesi ve kalkınmanın yavaşlaması",
+      "C": "Yurt dışı ile iş birliğinin artması",
+      "D": "Döviz girdisinin artması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Beyin göçü nitelikli insan kaynağının kaybolmasına ve kalkınmanın yavaşlamasına neden olur."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Su ayak izi, bir ürünün üretiminde kullanılan toplam su miktarıdır. 1 kg et üretimi için yaklaşık 15.000 litre su gerekir.\n\nBu bilgi hangi konuyla doğrudan ilişkilidir?",
+    "siklar": {
+      "A": "Hayvancılığın tamamen durdurulması gerektiği",
+      "B": "Sürdürülebilir kaynak kullanımı ve çevre bilinci",
+      "C": "Et fiyatlarının artması gerektiği",
+      "D": "Suyun gereksiz olduğu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Su ayak izi kavramı sürdürülebilir kaynak kullanımı ve çevre bilincinin önemini vurgular."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Kırsal yerleşim ile kentsel yerleşim arasındaki fark hangisidir?",
+    "siklar": {
+      "A": "Kırsal yerlerde nüfus daha fazladır",
+      "B": "Kırsal yerlerde tarım, kentsel yerlerde sanayi ve hizmet sektörü ağırlıklıdır",
+      "C": "Kentsel yerlerde tarım daha çok yapılır",
+      "D": "İkisi arasında fark yoktur"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kırsal yerleşim tarım, kentsel yerleşim sanayi ve hizmet sektörü ağırlıklıdır."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Doğu Anadolu'da kışların çok soğuk ve uzun olması;\nI. Tarım mevsiminin kısa olmasına\nII. Isınma maliyetinin yüksek olmasına\nIII. Nüfusun seyrek olmasına\nyol açar.\n\nBunlardan hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Soğuk iklim kısa tarım mevsimi, yüksek ısınma maliyeti ve seyrek nüfusa neden olur."
+  }
+]

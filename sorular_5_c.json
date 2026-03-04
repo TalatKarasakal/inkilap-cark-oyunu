@@ -1,0 +1,872 @@
+[
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir ailede su faturaları çok yüksektir. Aile diş fırçalarken musluğu kapatmış, kısa süreli duş almış, çamaşır makinesini tam dolunca çalıştırmıştır.\n\nBu uygulamaların en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Sadece aile bütçesine katkı",
+      "B": "Hem doğal kaynakların korunması hem ekonomik tasarruf",
+      "C": "Su kullanımının tamamen bırakılması",
+      "D": "Sadece çevrecileri ilgilendirmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bilinçli kaynak kullanımı hem doğayı korur hem ekonomik tasarruf sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir okulda;\nI. Kullanılmayan sınıflarda ışıklar kapatılmıştır\nII. Kâğıtların iki yüzü de kullanılmıştır\nIII. Musluklar açık bırakılmıştır\n\nBunlardan hangileri kaynakların verimli kullanımına örnektir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Işık tasarrufu ve kâğıdın iki yüzünü kullanma verimli kullanımdır. Musluk açık bırakma israftır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Geri dönüşüm kutularına kâğıt, cam, plastik ve metal ayrı ayrı atılmaktadır.\n\nGeri dönüşümün en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Çöp miktarını artırması",
+      "B": "Doğal kaynakların korunması ve çevre kirliliğinin azaltılması",
+      "C": "Sadece ekonomik kazanç sağlaması",
+      "D": "Yalnızca fabrikaları ilgilendirmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Geri dönüşüm doğal kaynakları korur ve çevre kirliliğini azaltır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Dünya'daki tatlı su kaynakları sınırlıdır ve küresel ısınma su kıtlığını artırmaktadır.\n\nBu soruna karşı bireysel olarak yapılabilecek en etkili önlem hangisidir?",
+    "siklar": {
+      "A": "Daha fazla baraj inşa etmek",
+      "B": "Günlük hayatta su tasarrufuna dikkat etmek",
+      "C": "Deniz suyunu içmek",
+      "D": "Suyu sadece tarımda kullanmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bireysel su tasarrufu su kıtlığına karşı herkesin yapabileceği en etkili önlemdir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir ailede enerji tasarruflu ampuller kullanılmaya başlanmış ve elektrik faturası %40 azalmıştır.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Elektriğin gereksiz olduğunu",
+      "B": "Teknolojinin tasarrufa katkı sağladığını",
+      "C": "Ampül değiştirmenin pahalı olduğunu",
+      "D": "Enerji tasarrufunun sadece fabrikalarda yapılacağını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Enerji tasarruflu teknolojiler hem bütçeye hem çevreye olumlu katkı sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde;\n- Güneş enerjisi panelleri kurulmuş\n- Yağmur suyu toplama sistemleri yapılmış\n- Toplu taşıma teşvik edilmiş\n\nBu uygulamaların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Şehrin nüfusunu artırmak",
+      "B": "Doğal kaynakları sürdürülebilir şekilde kullanmak",
+      "C": "Turizmi geliştirmek",
+      "D": "Sanayiyi durdurmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu uygulamalar doğal kaynakların sürdürülebilir kullanımını hedefler."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Plastik poşet yerine bez çanta kullanmak çevre için önemli bir adımdır.\n\nBunun temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Bez çantaların daha ucuz olması",
+      "B": "Plastiğin doğada yüzlerce yıl çözünmemesi",
+      "C": "Bez çantaların daha şık olması",
+      "D": "Plastik poşetlerin üretilememesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Plastik doğada yüzlerce yıl çözünmez ve çevre kirliliğine neden olur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Ormanlar;\nI. Oksijen üretir\nII. Toprak erozyonunu önler\nIII. Canlılara yaşam alanı sağlar\nIV. Sel ve heyelan riskini azaltır\n\nOrmanların korunmasının önemi yukarıdakilerden hangileriyle açıklanabilir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Ormanlar oksijen üretimi, erozyon engelleme, yaşam alanı ve afet önleme gibi pek çok fayda sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bir evde kullanılmayan elektronik aletlerin fişi çekilmiştir.\n\nBu davranışın temel amacı hangisidir?",
+    "siklar": {
+      "A": "Aletlerin bozulmasını engellemek",
+      "B": "Bekleme modunda harcanan elektriği tasarruf etmek",
+      "C": "Aletleri daha hızlı çalıştırmak",
+      "D": "Evdeki voltajı dengelemek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Fişi takılı aletler bekleme modunda bile enerji harcar, çekmek tasarruf sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Karbon ayak izi, bir bireyin veya toplumun ürettiği sera gazı miktarıdır.\n\nKarbon ayak izini azaltmak için yapılabileceklerden hangisi yanlıştır?",
+    "siklar": {
+      "A": "Toplu taşıma kullanmak",
+      "B": "Enerji tasarruflu aletler tercih etmek",
+      "C": "Her yere özel araçla gitmek",
+      "D": "Yenilenebilir enerji kullanmak"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Özel araç kullanımı karbon ayak izini artırır, azaltmaz."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Ege, harçlığıyla hem oyun hem kırtasiye almak istiyor ama parası yetmiyor.\n\nEn doğru karar hangisidir?",
+    "siklar": {
+      "A": "Oyunu hemen alıp kırtasiyeyi ertelemek",
+      "B": "Önce ihtiyaç olan kırtasiyeyi alıp oyunu sonraya bırakmak",
+      "C": "İkisinden de vazgeçmek",
+      "D": "Borç alarak ikisini de almak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bütçe planlamasında ihtiyaçlar isteklerden önce gelir. Kırtasiye ihtiyaç, oyun istektir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir öğrencinin aylık harçlığı 500 TL'dir.\n\nHarcamaları:\n- Okul kantini: 200 TL\n- Kitap: 100 TL\n- Oyuncak: 150 TL\n- Biriktirme: 50 TL\n\nBu öğrencinin bütçe yönetimi hakkında hangisi söylenebilir?",
+    "siklar": {
+      "A": "Tamamen yanlış harcama yapmaktadır",
+      "B": "İhtiyaç ve isteklerini dengeleyerek bütçe yapmıştır",
+      "C": "Sadece istek harcaması yapmaktadır",
+      "D": "Biriktirmeye çok fazla ayırmaktadır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hem ihtiyaç hem istek harcaması var ve biriktirme de yapılmış, dengeli bir bütçedir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Yemek, giysi ve barınak ihtiyaç; son model telefon ve marka ayakkabı ise istektir.\n\nİhtiyaç ve istek arasındaki temel fark hangisidir?",
+    "siklar": {
+      "A": "İhtiyaçlar pahalı, istekler ucuzdur",
+      "B": "İhtiyaçlar yaşam için zorunlu, istekler tercihlerdir",
+      "C": "İstekler daha önemlidir",
+      "D": "İkisi arasında fark yoktur"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İhtiyaçlar yaşamsal zorunluluklar, istekler ise kişisel tercihlerdir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir aile bütçe planlaması yaparak;\n- %50 ihtiyaçlara\n- %30 isteklere\n- %20 birikime ayırmaktadır.\n\nBu plan aşağıdakilerden hangisini gösterir?",
+    "siklar": {
+      "A": "Ailenin çok zengin olduğunu",
+      "B": "Bilinçli ve planlı harcama alışkanlığını",
+      "C": "İsteklerin ihtiyaçlardan önemli olduğunu",
+      "D": "Biriktirmenin gereksiz olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bütçeyi ihtiyaç, istek ve birikim olarak planlamak bilinçli harcama göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci her gün kantin masrafı yapmak yerine evden yemek getirerek tasarruf etmiştir.\n\nBu davranış hangi kavramla ilişkilidir?",
+    "siklar": {
+      "A": "Cimrilik",
+      "B": "Bilinçli tüketim ve bütçe yönetimi",
+      "C": "Sosyal dışlanma",
+      "D": "İhtiyaçlardan vazgeçme"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Gereksiz harcamalardan kaçınmak bilinçli tüketim ve bütçe yönetimidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "I. Su faturası ödemek\nII. Son model bilgisayar almak\nIII. Kira ödemek\nIV. Konser bileti almak\n\nYukarıdakilerden hangileri ihtiyaçtır?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I ve III",
+      "C": "II ve IV",
+      "D": "I, III ve IV"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Su faturası ve kira yaşamsal ihtiyaçlardır. Bilgisayar ve konser bileti istektir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Kumbarasına düzenli para biriktiren Ali, dönem sonunda kitaplarını kendi almıştır.\n\nBu durum aşağıdaki değerlerden hangisini yansıtır?",
+    "siklar": {
+      "A": "Savurganlık",
+      "B": "Tasarruf bilinci ve sorumluluk",
+      "C": "Rekabet",
+      "D": "Tüketim çılgınlığı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Düzenli biriktirme ve kendi ihtiyacını karşılama tasarruf bilinci ve sorumluluktur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Rize'de çay, Gaziantep'te baklava, Bursa'da otomotiv üretimi ön plana çıkar.\n\nBu durum neyi gösterir?",
+    "siklar": {
+      "A": "Türkiye'de sadece tarım yapıldığını",
+      "B": "Her ilin coğrafi ve beşeri özelliklerine göre farklı ekonomik faaliyetlerinin olduğunu",
+      "C": "Sadece büyük şehirlerde ekonomik faaliyet olduğunu",
+      "D": "Tüm illerde aynı ürünlerin üretildiğini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Her ilin doğal ve beşeri özellikleri farklı ekonomik faaliyetlerin gelişmesini sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Antalya'da turizm, Trabzon'da fındık üretimi, Kayseri'de mobilya sanayisi gelişmiştir.\n\nBu illerin farklı ekonomik faaliyetlere yönelmesinin temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Hepsinin denize kıyısı olması",
+      "B": "Coğrafi konum, iklim ve beşeri kaynakların farklılığı",
+      "C": "Devlet politikalarının tek belirleyici olması",
+      "D": "Tüm illerin aynı nüfusa sahip olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Coğrafi konum, iklim ve beşeri kaynaklar illerin ekonomik faaliyetlerini belirler."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir ilin ekonomik faaliyetleri;\nI. Tarım\nII. Sanayi\nIII. Hizmet sektörü\nolarak sınıflandırılır.\n\nÖğretmenlik hangi sektöre dahildir?",
+    "siklar": {
+      "A": "Tarım",
+      "B": "Sanayi",
+      "C": "Hizmet",
+      "D": "Madencilik"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Öğretmenlik bir hizmet sektörü faaliyetidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir şehirde fabrika sayısı artmış, tarım alanları azalmış ve nüfus hızla çoğalmıştır.\n\nBu değişim hangi sürecin göstergesidir?",
+    "siklar": {
+      "A": "Kırsal kalkınma",
+      "B": "Sanayileşme ve kentleşme",
+      "C": "Tarımsal gelişme",
+      "D": "Göçün azalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Fabrika artışı, tarım alanı azalması ve nüfus artışı sanayileşme ve kentleşme göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Aydın'da incir, Giresun'da fındık, Çanakkale'de domates yetiştiriciliği yapılır.\n\nBu ürünlerin farklı illerde yetişmesinin temel nedeni hangisidir?",
+    "siklar": {
+      "A": "İllerin nüfus farkı",
+      "B": "İklim ve toprak özelliklerinin farklı olması",
+      "C": "Devlet desteği",
+      "D": "İllerin büyüklüğü"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarımsal ürün çeşitliliği iklim ve toprak özelliklerindeki farklılıklardan kaynaklanır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Türkiye'de;\n- Zonguldak: Taş kömürü madenciliği\n- Denizli: Tekstil\n- Muğla: Turizm\n\nBu illerin farklı alanlarda uzmanlaşması;\nI. Coğrafi konumlarının etkisi\nII. Doğal kaynaklarının farklılığı\nIII. İklim özelliklerinin rolü\nfaktörlerinden hangileriyle açıklanır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Coğrafi konum, doğal kaynaklar ve iklim birlikte illerin ekonomik uzmanlaşmasını belirler."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Eskişehir lületaşı işlemeciliğiyle ünlüdür. Bu taş sadece Eskişehir'de çıkmaktadır.\n\nBu bilgi hangisini gösterir?",
+    "siklar": {
+      "A": "Her ilde aynı madenlerin olduğunu",
+      "B": "Doğal kaynakların illerin ekonomik faaliyetlerini etkilediğini",
+      "C": "Madenciliğin her yerde yapılabildiğini",
+      "D": "Lületaşının değersiz olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Doğal kaynaklar bir ilin ekonomik faaliyetlerini doğrudan etkileyen önemli faktördür."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Akıllı telefonlarla anlık iletişim, video görüşmesi ve bilgiye hızlı ulaşım mümkündür.\n\nAncak;\nI. Yüz yüze iletişimin azalması\nII. Bilgiye hızlı erişim\nIII. Siber zorbalık riskinin artması\nBunlardan hangileri olumsuz etkilerdir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Yüz yüze iletişim azalması ve siber zorbalık olumsuzdur. Bilgiye erişim olumludur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Uzaktan eğitim sayesinde öğrenciler evlerinden derslere katılabilmiştir.\n\nUzaktan eğitimin;\nI. Mekândan bağımsız erişim sağlaması\nII. Sosyalleşmeyi azaltması\nIII. Fırsat eşitliğine katkı sağlaması\nözelliklerinden hangileri avantajdır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "Yalnız II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mekândan bağımsızlık ve fırsat eşitliği avantajdır. Sosyalleşme azalması dezavantajdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "E-Devlet sistemiyle vatandaşlar nüfus cüzdanı başvurusu, vergi ödeme, randevu alma gibi işlemleri internetten yapabilmektedir.\n\nE-Devletin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "İnsanların internette vakit geçirmesi",
+      "B": "Kamu hizmetlerine hızlı ve kolay erişim sağlaması",
+      "C": "Devlet kurumlarının kapanması",
+      "D": "Sadece gençlerin kullanabilmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "E-Devlet kamu hizmetlerine hızlı ve kolay erişim sağlayan dijital bir platformdur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İnternet bankacılığı sayesinde bankaya gitmeden havale, EFT ve fatura ödeme yapılabilmektedir.\n\nBu gelişme;\nI. Zaman tasarrufu sağlamıştır\nII. Güvenlik risklerini artırmıştır\nIII. Ulaşım ihtiyacını azaltmıştır\nsonuçlarından hangileri hem olumlu hem olumsuz etkileri içerir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Zaman tasarrufu ve ulaşım azalması olumlu, güvenlik riski olumsuz etkidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Sosyal medya platformları insanların fikirlerini paylaşmasını, haberlere ulaşmasını kolaylaştırmıştır.\n\nAncak en büyük riski hangisidir?",
+    "siklar": {
+      "A": "Bilgiye hızlı erişim",
+      "B": "Yanlış bilgi ve dezenformasyon yayılması",
+      "C": "İnsanların iletişim kurması",
+      "D": "Haberlerin çoğalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sosyal medyanın en büyük riski yanlış bilgi ve dezenformasyon yayılmasıdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Online alışveriş sayesinde insanlar evlerinden ürün sipariş edebilmektedir.\n\nBu gelişmenin olumsuz yönü hangisidir?",
+    "siklar": {
+      "A": "Ürün çeşitliliğinin artması",
+      "B": "Bilinçsiz tüketim ve aşırı harcama riskinin artması",
+      "C": "Ürünlerin hızlı teslim edilmesi",
+      "D": "Fiyat karşılaştırma kolaylığı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Online alışverişin kolaylığı bilinçsiz tüketim ve aşırı harcama riskini artırabilir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Robot teknolojisinin fabrikalarda kullanılması;\nI. Üretim hızını artırmıştır\nII. İnsan gücüne olan ihtiyacı azaltmıştır\nIII. İşsizlik sorununu artırmıştır\n\nBu sonuçlardan hangileri hem olumlu hem olumsuz etkileri yansıtır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Üretim hızı olumlu, insan gücü ve işsizlik artışı olumsuz boyuttur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Televizyon, bilgisayar ve internet gibi iletişim araçları toplumu bilgilendirmede önemli rol oynar.\n\nBu araçlara genel olarak ne denir?",
+    "siklar": {
+      "A": "Ulaşım araçları",
+      "B": "Kitle iletişim araçları",
+      "C": "Üretim araçları",
+      "D": "Tarım araçları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "TV, bilgisayar ve internet kitle iletişim araçlarıdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci tabletini günde 6 saat oyun oynayarak kullanmakta, ders çalışamamakta ve gözleri yorulmaktadır.\n\nÇözüm için en uygun yaklaşım hangisidir?",
+    "siklar": {
+      "A": "Tableti tamamen yasaklamak",
+      "B": "Kullanım süresini sınırlayarak bilinçli ve dengeli kullanmak",
+      "C": "Tüm derslerini tabletten takip etmek",
+      "D": "Oyun süresini artırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Teknoloji yasaklanmamalı, bilinçli ve dengeli kullanımı öğretilmelidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir çocuk internette tanımadığı kişilerle sohbet ederek kişisel bilgilerini paylaşmıştır.\n\nBu davranışın en önemli riski hangisidir?",
+    "siklar": {
+      "A": "İnternet kotasının bitmesi",
+      "B": "Kişisel güvenliğin tehlikeye girmesi",
+      "C": "Ödevlerin gecikmesi",
+      "D": "Bilgisayarın bozulması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tanımadığı kişilere bilgi paylaşmak kişisel güvenliği tehlikeye atar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "İnternet kullanımında;\nI. Güvenilir kaynaklardan bilgi almak\nII. Kişisel bilgileri paylaşmamak\nIII. Sanal ortamda küfür ve hakaret etmek\nIV. Bilgisayarı virüs programıyla korumak\n\nBunlardan hangileri dijital vatandaşlık kapsamında doğru davranışlardır?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "I, II ve IV",
+      "C": "III ve IV",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Güvenilir kaynak kullanma, bilgi gizliliği ve antivirüs doğru davranışlardır. Hakaret yanlıştır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Ekran başında çok vakit geçirmek;\nI. Göz yorgunluğu\nII. Uyku düzensizliği\nIII. Fiziksel aktivite azalması\ngibi sorunlara yol açar.\n\nBu sorunların önlenmesi için hangisi yapılmalıdır?",
+    "siklar": {
+      "A": "Teknolojiyi tamamen bırakmak",
+      "B": "Ekran süresini sınırlandırıp düzenli mola vermek",
+      "C": "Sadece gece kullanmak",
+      "D": "Daha büyük ekran kullanmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ekran süresini sınırlandırmak ve mola vermek sağlık sorunlarını önler."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Siber zorbalık, internet ortamında bir kişiye sürekli olarak hakaret, tehdit veya alay edilmesidir.\n\nSiber zorbalığa uğrayan bir kişi ne yapmalıdır?",
+    "siklar": {
+      "A": "Aynı şekilde karşılık vermeli",
+      "B": "Güvendiği bir yetişkine söylemeli ve gerekirse polise başvurmalı",
+      "C": "Sosyal medya hesaplarını kapatmalı ve susmalı",
+      "D": "Durumu görmezden gelmeli"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Siber zorbalıkta güvenilir birine bilgi vermek ve gerekirse yetkililere başvurmak en doğru adımdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "İnternetten araştırma yaparken birçok kaynaktan bilgi toplamak ve kaynağın güvenilirliğini sorgulamak önemlidir.\n\nBunun temel nedeni hangisidir?",
+    "siklar": {
+      "A": "İnternette her bilginin doğru olması",
+      "B": "İnternette yanlış ve yanıltıcı bilgilerin de bulunması",
+      "C": "Araştırmanın daha uzun sürmesi",
+      "D": "Öğretmenin bunu istemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İnternette yanlış bilgiler de olduğundan kaynak güvenilirliği sorgulanmalıdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci;\n- Güçlü şifre kullanmaktadır\n- Bilinmeyen bağlantılara tıklamamaktadır\n- Kişisel fotoğraflarını herkese açık paylaşmaktadır\n\nBu öğrencinin hangi davranışı güvenlik açısından risklidir?",
+    "siklar": {
+      "A": "Güçlü şifre kullanması",
+      "B": "Bilinmeyen bağlantılara tıklamaması",
+      "C": "Kişisel fotoğraflarını herkese açık paylaşması",
+      "D": "Hiçbiri riskli değildir"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Kişisel fotoğrafları herkese açık paylaşmak dijital güvenlik açısından risklidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Dijital ayak izi, internette yapılan her etkinliğin geride bıraktığı izdir.\n\nDijital ayak izi hakkında hangisi doğrudur?",
+    "siklar": {
+      "A": "İnternet geçmişi silindiğinde yok olur",
+      "B": "Paylaşılan her bilgi kalıcı olabilir ve kontrol edilmesi zordur",
+      "C": "Sadece büyükler bırakır",
+      "D": "Hiçbir önemi yoktur"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Dijital ortamda paylaşılan bilgiler kalıcı olabilir ve geri alınması zordur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Tarımda drone teknolojisi kullanılarak;\nI. Zararlı böcek tespiti yapılmış\nII. İlaçlama daha hassas hale gelmiş\nIII. Çiftçilerin tarlaya gitmesine gerek kalmamış\n\nBu gelişmelerden hangileri teknolojinin tarıma katkısını gösterir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Drone ile zararlı tespiti ve hassas ilaçlama teknolojinin tarıma katkısıdır. Çiftçinin tarlaya gitmemesi gerçekçi değildir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Navigasyon uygulamaları sayesinde insanlar bilmedikleri yerlere kolayca gidebilmektedir.\n\nBu teknoloji hangisini kolaylaştırmıştır?",
+    "siklar": {
+      "A": "Yemek sipariş etmeyi",
+      "B": "Ulaşım ve yön bulmayı",
+      "C": "Alışveriş yapmayı",
+      "D": "Ders çalışmayı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Navigasyon uygulamaları ulaşım ve yön bulmayı kolaylaştıran teknolojidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Yapay zekâ teknolojisi;\nI. Hastalık teşhisinde doktorlara yardımcı olmaktadır\nII. Kendi başına karar verebilmektedir\nIII. Trafik akışını optimize etmektedir\n\nBunlardan hangileri yapay zekânın günlük hayata katkılarına örnektir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "Yalnız II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yapay zekâ teşhis ve trafik optimizasyonunda katkı sağlar. Tamamen kendi başına karar vermez, insan gözetimi gerekir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Telif hakkı olan bir müziği izinsiz indirip paylaşmak yasalara aykırıdır.\n\nBu konuda doğru davranış hangisidir?",
+    "siklar": {
+      "A": "Herkes indiriyorsa sorun yoktur",
+      "B": "Telif haklı içerikleri yasal yollarla satın alarak veya lisanslı platformlardan kullanmak",
+      "C": "Sadece arkadaşlarla paylaşmak serbesttir",
+      "D": "İnternetteki her şey ücretsizdir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Telif haklı içerikler yasal yollarla edinilmelidir. İzinsiz indirme hak ihlalidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "3D yazıcı teknolojisi ile protez organ, makine parçaları ve hatta ev bile üretilebilmektedir.\n\nBu teknolojinin en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Sadece oyuncak üretimi",
+      "B": "Üretimde çeşitlilik ve hız sağlaması",
+      "C": "Geleneksel üretimi tamamen sona erdirmesi",
+      "D": "Sadece büyük fabrikaların kullanabilmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "3D yazıcılar üretimde çeşitlilik, hız ve özelleştirme imkânı sağlar."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Gruplar ve Roller",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir sınıfta düzenlenen proje etkinliğinde;\n- Araştırma grubu kaynak toplamış\n- Tasarım grubu poster hazırlamış\n- Sunum grubu sınıfa anlatmış\n\nBu etkinlik aşağıdakilerden hangisinin önemini gösterir?",
+    "siklar": {
+      "A": "Bireysel çalışmanın",
+      "B": "Görev paylaşımı ve iş birliğinin",
+      "C": "Rekabetin",
+      "D": "Ezberin"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı grupların farklı görevler üstlenmesi görev paylaşımı ve iş birliğinin örneğidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Kültürel Özelliklere Saygı",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Türk kahvesi, ebru sanatı ve meddahlık UNESCO Somut Olmayan Kültürel Miras Listesi'ndedir.\n\nBu değerlerin listeye alınmasının amacı hangisidir?",
+    "siklar": {
+      "A": "Ticari gelir elde etmek",
+      "B": "Kültürel değerleri tanıtmak ve gelecek nesillere aktarmak",
+      "C": "Diğer ülkelerin kültürünü engellemek",
+      "D": "Sadece turizm amaçlı korumak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "UNESCO listesi kültürel değerlerin korunmasını ve gelecek nesillere aktarılmasını amaçlar."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Doğal ve Beşeri Değişim",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Kapadokya'daki peribacaları rüzgâr ve yağmur erozyonuyla binlerce yılda oluşmuştur.\n\nBu oluşum aşağıdakilerden hangisine örnektir?",
+    "siklar": {
+      "A": "Beşeri değişim",
+      "B": "Doğal değişim",
+      "C": "Planlı kentleşme",
+      "D": "Tarımsal dönüşüm"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Peribacaları doğal erozyon süreçleriyle binlerce yılda oluşmuş doğal değişim örneğidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sümerler;\n- Çivi yazısını icat etmiş\n- İlk hukuk kurallarını oluşturmuş\n- 60'lık sayı sistemini geliştirmiş\n\nBu bilgilere göre Sümerler hakkında hangisi söylenebilir?",
+    "siklar": {
+      "A": "Sadece tarımla uğraştıkları",
+      "B": "Birçok alanda öncü medeniyetlerden biri oldukları",
+      "C": "Savaşçı bir toplum oldukları",
+      "D": "Denizcilikle geçindikleri"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yazı, hukuk ve matematik alanındaki icatlar Sümerlerin öncü bir medeniyet olduğunu gösterir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir vatandaş çevresinde gördüğü çevre kirliliğini fotoğraflayıp belediyenin şikâyet hattına bildirmiştir.\n\nBu davranış hangisine örnektir?",
+    "siklar": {
+      "A": "Hukuk ihlali",
+      "B": "Etkin vatandaşlık",
+      "C": "Kamu görevlisi olma",
+      "D": "Bireysel çıkar"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Toplumsal sorunları fark edip yetkililere bildirmek etkin vatandaşlık örneğidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Aylık geliri 10.000 TL olan bir aile şu harcamaları yapmaktadır:\n- Kira: 4.000 TL\n- Gıda: 2.500 TL\n- Faturalar: 1.000 TL\n- Ulaşım: 1.000 TL\n- Eğlence: 500 TL\n- Birikim: 1.000 TL\n\nBu ailenin bütçesiyle ilgili hangisi söylenebilir?",
+    "siklar": {
+      "A": "Çok fazla eğlenceye harcama yapıyor",
+      "B": "İhtiyaçları önceleyerek dengeli bir bütçe oluşturmuş",
+      "C": "Birikime çok az ayırıyor",
+      "D": "Lüks harcamalar ağırlıklı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Gelirin büyük kısmı zorunlu ihtiyaçlara ayrılmış ve birikim de yapılmış, dengeli bir bütçedir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci ödevini internetten kopyalayıp kendi yazmış gibi teslim etmiştir.\n\nBu davranış hangi etik kurala aykırıdır?",
+    "siklar": {
+      "A": "Çevre koruma",
+      "B": "Akademik dürüstlük ve telif hakkı",
+      "C": "Trafik kuralları",
+      "D": "Spor ahlakı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Başkasının çalışmasını kopyalamak akademik dürüstlük ve telif hakkı ihlalidir."
+  },
+  {
+    "unite": "Ünite 1 – Birlikte Yaşamak",
+    "konu": "Yardımlaşma ve Dayanışma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Engelli bireylerin günlük hayatı kolaylaştırmak amacıyla kaldırımlara rampa yapılması, otobüslere engelli erişimi eklenmesi toplumsal dayanışma örnekleridir.\n\nBu uygulamaların temel ilkesi hangisidir?",
+    "siklar": {
+      "A": "Ekonomik kazanç",
+      "B": "Herkesin eşit yaşam koşullarına erişim hakkı olması",
+      "C": "Engelli bireylerin ayrı yaşaması",
+      "D": "Sadece devletin sorumlu olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Engelli erişimi düzenlemeleri herkesin eşit yaşam koşullarına erişim hakkını temel alır."
+  },
+  {
+    "unite": "Ünite 2 – Evimiz Dünya",
+    "konu": "Yaşadığımız İlin Göreceli Konumu",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir şehrin konumu;\nI. 'Deniz kıyısında' → göreceli konum\nII. '39°K enlemi' → mutlak konum\nIII. 'Dağların güneyinde' → göreceli konum\n\nBu eşleştirmelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Deniz kıyısı ve dağ güneyi göreceli, enlem ise mutlak konumdur. Üç eşleştirme de doğrudur."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Nemrut Dağı, Truva Antik Kenti ve Hattuşa gibi yerler hem Türkiye'nin hem de insanlığın ortak mirasıdır.\n\nBu alanların korunmasının en önemli nedeni hangisidir?",
+    "siklar": {
+      "A": "Turist çekmek",
+      "B": "Geçmişi anlamak ve gelecek nesillere aktarmak",
+      "C": "Maddi değerinin yüksek olması",
+      "D": "Devlet bütçesine katkı sağlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kültürel miras alanları geçmişi anlamak ve gelecek nesillere aktarmak için korunur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede;\n- Kadınlar oy kullanamıyor\n- Bazı gruplar eğitim alamıyor\n- Basın sansürleniyor\n\nBu ülkede ihlal edilen haklar;\nI. Seçme ve seçilme hakkı\nII. Eğitim hakkı\nIII. Basın özgürlüğü\nyargılarından hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Oy kullanma engeli, eğitim engeli ve basın sansürü seçme hakkı, eğitim hakkı ve basın özgürlüğü ihlalidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızda Ekonomi",
+    "konu": "Kaynakları Verimli Kullanma",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Yenilenebilir enerji kaynakları; güneş, rüzgâr, jeotermal ve hidroelektrik enerjidir.\n\nBu kaynakların en önemli avantajı hangisidir?",
+    "siklar": {
+      "A": "Daha ucuz olması",
+      "B": "Tükenmez ve çevre dostu olması",
+      "C": "Daha kolay üretilmesi",
+      "D": "Her yerde bulunması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yenilenebilir enerji kaynakları tükenmez ve çevre dostu olmaları en büyük avantajıdır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Tıbbi teknolojilerdeki gelişmeler sayesinde;\nI. Hastalıklar daha erken teşhis ediliyor\nII. Ameliyatlar daha başarılı oluyor\nIII. Ortalama insan ömrü uzuyor\n\nBu sonuçların tümü hangi alandaki gelişmeye bağlıdır?",
+    "siklar": {
+      "A": "Ulaşım teknolojisi",
+      "B": "Sağlık ve tıp teknolojisi",
+      "C": "İletişim teknolojisi",
+      "D": "Tarım teknolojisi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Erken teşhis, başarılı ameliyat ve ömür uzaması sağlık ve tıp teknolojisindeki gelişmelere bağlıdır."
+  }
+]

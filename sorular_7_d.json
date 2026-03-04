@@ -1,0 +1,452 @@
+[
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "İletişimde;\n- Jestler ve mimikler → Sözsüz iletişim\n- Konuşma ve yazma → Sözlü iletişim\n\nBir konuşmada sözsüz iletişimin payı yaklaşık %55'tir.\n\nBu bilgiye göre hangisi doğrudur?",
+    "siklar": {
+      "A": "Sadece sözler önemlidir",
+      "B": "Beden dili ve sözsüz ipuçları iletişimde çok büyük rol oynar",
+      "C": "Sözsüz iletişim gereksizdir",
+      "D": "Yazılı iletişim her zaman daha etkilidir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İletişimde beden dili ve sözsüz ipuçları çok büyük (%55) rol oynar."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Medyanın Hayatımızdaki Yeri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Algoritmalar sosyal medyada;\n- Kullanıcının ilgi alanlarına göre içerik gösterir\n- Farklı görüşleri filtreler\n\nBu durumun olumsuz sonucu hangisidir?",
+    "siklar": {
+      "A": "Daha fazla bilgiye ulaşmak",
+      "B": "Filtre balonu (echo chamber) oluşararak tek yönlü bilgi edinmek",
+      "C": "İnternet hızının artması",
+      "D": "Daha az zaman harcamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Algoritmalar filtre balonları oluşturarak tek yönlü bilgi edinilmesine yol açabilir."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "Kitle İletişim Özgürlüğü",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir haberde;\n- Gerçekler objektif olarak sunulmalıdır\n- Haberin kaynağı belirtilmelidir\n- Kişisel yorumlar haberden ayrı tutulmalıdır\n\nBu ilkeler hangi kavramla ilişkilidir?",
+    "siklar": {
+      "A": "Eğlence medyası",
+      "B": "Gazetecilik etiği ve basın ilkeleri",
+      "C": "Sosyal medya pazarlaması",
+      "D": "Reklam sektörü"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Objektiflik, kaynak gösterme ve yorum ayırma gazetecilik etiğinin temel ilkeleridir."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Osmanlı'da millet sistemi;\n- Rum, Ermeni, Yahudi topluluklar kendi dini işlerini yönetmiş\n- Kendi okullarını açmış\n- Kendi dillerini kullanmış\n\nBu sistemin Osmanlı'ya sağladığı avantaj hangisidir?",
+    "siklar": {
+      "A": "Azınlıkların güçlenmesi",
+      "B": "Farklı toplulukların devlete bağlılığının ve toplumsal barışın korunması",
+      "C": "Tek tip kültür oluşması",
+      "D": "Askeri güçlenmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Millet sistemi farklı toplulukların bağlılığını ve toplumsal barışı sağlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Avrupa'da Uyanış",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Barutun ateşli silahlarda kullanılması;\nI. Şövalyelik sistemini zayıflatmış\nII. Kaleleri etkisiz kılmış\nIII. Savaş stratejilerini değiştirmiş\n\nBu gelişmelerin ortak sonucu hangisidir?",
+    "siklar": {
+      "A": "Barışın sağlanması",
+      "B": "Feodalite (derebeylik) sisteminin çökmesine katkıda bulunması",
+      "C": "Askeri gücün azalması",
+      "D": "Savaşların durması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ateşli silahlar şövalyelik ve kale sistemini zayıflatarak feodalitenin çökmesine katkıda bulunmuştur."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Değişen Dünya'da Değişen Osmanlı",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Osmanlı modernleşme çabaları;\nI. III. Selim → Nizam-ı Cedid\nII. II. Mahmud → Yeniçeri kaldırma\nIII. Tanzimat Fermanı → Hak güvencesi\nIV. Kanun-i Esasi → Anayasal düzen\n\nBu reformların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Geleneksel yapıyı korumak",
+      "B": "Osmanlı'yı çağdaşlaştırmak ve devleti kurtarmak",
+      "C": "Padişahlığı güçlendirmek",
+      "D": "Batı'yı taklit etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tüm bu reformlar Osmanlı'yı çağdaşlaştırmak ve devleti kurtarmak amacıyla yapılmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Osmanlı'dan Kalan Mirasımız",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı mutfak kültüründen günümüze;\n- Baklava, börek, dolma\n- Türk kahvesi\n- Şerbetler\n\nBu yemeklerin hâlâ yaygın olması hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece lezzet için korunduğunu",
+      "B": "Kültürel mirasın yaşayan ve sürdürülen bir değer olduğunu",
+      "C": "Yeni yemeklerin geliştirilmediğini",
+      "D": "Sadece turizm için korunduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Osmanlı mutfağının sürmesi kültürel mirasın yaşayan bir değer olduğunu gösterir."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de nüfus artış hızı son yıllarda düşmektedir.\n\nBu durumun uzun vadeli sonucu hangisidir?",
+    "siklar": {
+      "A": "Genç nüfusun artması",
+      "B": "Yaşlanan nüfus ve çalışan iş gücünün azalması sorunu",
+      "C": "Eğitim masraflarının artması",
+      "D": "Nüfusun sıfırlanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nüfus artış hızının düşmesi yaşlanan nüfus ve iş gücü azalması sorununa yol açabilir."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Çölleşme;\nI. İklim değişikliği\nII. Aşırı otlatma\nIII. Orman tahribi\nIV. Yanlış sulama\n\nÇölleşmenin nedenleri hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Çölleşme iklim değişikliği, aşırı otlatma, orman tahribi ve yanlış sulamanın birlikte etkisidir."
+  },
+  {
+    "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+    "konu": "Avrupa'daki Bilimsel ve Teknolojik Değişimler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sanayi Devrimi'nin toplumsal etkileri;\nI. İşçi sınıfı ortaya çıkmış\nII. Kadınlar ve çocuklar fabrikalarda çalışmış\nIII. Sendikalar kurulmuş\nIV. İşçi hakları mücadelesi başlamış\n\nBu süreç hangisinin temelini oluşturmuştur?",
+    "siklar": {
+      "A": "Monarşinin güçlenmesinin",
+      "B": "Sosyal haklar ve iş hukuku düzenlemelerinin",
+      "C": "Tarımın gelişmesinin",
+      "D": "Sömürgeciliğin sona ermesinin"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İşçi hareketi sosyal haklar ve iş hukuku düzenlemelerinin temelini oluşturmuştur."
+  },
+  {
+    "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+    "konu": "Osmanlı'da Bilim ve Teknoloji",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da I. Meşrutiyet (1876);\n- İlk anayasa (Kanun-i Esasi) ilan edilmiş\n- Meclis-i Mebusan açılmış\n\nBu gelişmelerin önemi hangisidir?",
+    "siklar": {
+      "A": "Padişahlığın güçlenmesi",
+      "B": "Osmanlı'da anayasal ve parlamenter düzene geçişin başlangıcı",
+      "C": "Askeri reformların tamamlanması",
+      "D": "Toprak kayıplarının durması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "I. Meşrutiyet Osmanlı'da anayasal ve parlamenter düzene geçişin başlangıcıdır."
+  },
+  {
+    "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+    "konu": "Toprak ve İklimin Üretime Etkisi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye balıkçılık sektöründe;\n- Karadeniz'de hamsi\n- Ege'de çipura ve levrek\n- Marmara'da istavrit\n\nAvlanan balık türlerinin farklı olmasının nedeni hangisidir?",
+    "siklar": {
+      "A": "Balıkçıların tercihi",
+      "B": "Deniz suyu sıcaklığı ve besin zincirinin farklılığı",
+      "C": "Devlet düzenlemesi",
+      "D": "Teknolojik fark"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı denizlerde farklı balıkların avlanması su sıcaklığı ve besin zinciri farklılığındandır."
+  },
+  {
+    "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+    "konu": "Vakıfların Toplumsal Rolü",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Osmanlı'da;\n- Vakıflar toplumun %30-40'ına hizmet vermiştir\n- Vergi gelirlerinin önemli bölümü vakıflara ayrılmıştır\n- Vakıf gelirleri ebedi olarak ayrılmıştır\n\nBu bilgiler Osmanlı vakıf sistemi hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Vakıfların önemsiz olduğunu",
+      "B": "Sosyal hizmetlerin devlet dışı bir mekanizmayla sistematik olarak sunulduğunu",
+      "C": "Vakıfların kâr amacı güttüğünü",
+      "D": "Devletin hizmet vermediğini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vakıflar sosyal hizmetleri devlet dışı sistematik bir mekanizmayla sunmuştur."
+  },
+  {
+    "unite": "Ünite 6 – Etkin Vatandaşlık",
+    "konu": "Haklar, Özgürlükler ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1924 Anayasası ile;\nI. Egemenlik kayıtsız şartsız milletin olmuştur\nII. Cumhuriyet ilan edilmiştir\nIII. Laik devlet ilkesi benimsenmiştir\n\nBu değişimler hangisinin sonucudur?",
+    "siklar": {
+      "A": "Osmanlı'nın güçlenmesinin",
+      "B": "Millî Mücadele ve Cumhuriyet'in ilanının",
+      "C": "Avrupa baskısının",
+      "D": "Ekonomik kalkınmanın"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "1924 Anayasası Millî Mücadele ve Cumhuriyet ilanının anayasal güvencesidir."
+  },
+  {
+    "unite": "Ünite 6 – Etkin Vatandaşlık",
+    "konu": "Toplumsal Katılım",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda vatandaş katılımının güçlü olması;\nI. Yönetimin daha şeffaf olmasını sağlar\nII. Kamu hizmetlerinin kalitesini artırır\nIII. Demokrasinin güçlenmesine katkıda bulunur\n\nBu sonuçlardan hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Vatandaş katılımı şeffaflık, hizmet kalitesi ve demokrasinin güçlenmesine katkı sağlar."
+  },
+  {
+    "unite": "Ünite 7 – Küresel Bağlantılar",
+    "konu": "Küresel Sorunlar ve Çözümleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Nükleer silahlar;\nI. Tüm dünya için tehlike oluşturur\nII. Nükleer silahsızlanma antlaşmaları yapılmıştır\nIII. Bazı ülkeler hâlâ nükleer silah geliştirmektedir\n\nNükleer silahların en büyük sorunu hangisidir?",
+    "siklar": {
+      "A": "Pahalı olması",
+      "B": "Kullanıldığında küresel felakete ve geri dönüşü olmayan çevre tahribatına yol açması",
+      "C": "Sadece bir ülkeyi etkilemesi",
+      "D": "Teknolojik olarak etkisiz olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nükleer silahlar kullanıldığında küresel felaket ve geri dönüşü olmayan çevre tahribatına yol açar."
+  },
+  {
+    "unite": "Ünite 7 – Küresel Bağlantılar",
+    "konu": "Uluslararası Örgütler ve Kuruluşlar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "FAO (BM Gıda ve Tarım Örgütü);\n- Dünya genelinde açlıkla mücadele eder\n- Tarımsal kalkınmayı destekler\n- Gıda güvenliğini sağlamayı amaçlar\n\nFAO'nun önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece gelişmiş ülkelere yardım etmesi",
+      "B": "Küresel açlık sorunuyla mücadele ederek gıda güvenliğini sağlaması",
+      "C": "Askeri konularla ilgilenmesi",
+      "D": "Ticaret düzenlemesi yapması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "FAO küresel açlıkla mücadele ve gıda güvenliği sağlayan BM kuruluşudur."
+  },
+  {
+    "unite": "Ünite 1 – Birey ve Toplum",
+    "konu": "İletişim ve Olumlu İletişim Unsurları",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Stres altındayken iletişim bozulabilir.\n\nStresli durumda sağlıklı iletişim için yapılması gereken hangisidir?",
+    "siklar": {
+      "A": "Hemen tepki vermek",
+      "B": "Sakinleşinceye kadar bekleyip düşünerek yanıt vermek",
+      "C": "Karşıdakini suçlamak",
+      "D": "İletişimi tamamen kesmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Stresli anlarda sakinleşip düşünerek yanıt vermek sağlıklı iletişimi korur."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da ahilik teşkilatı;\n- Meslek eğitimi veriyor\n- Kalıtım ve ahlak kuralları uyguluyor\n- Çırak-kalfa-usta sırasını takip ediyor\n\nAhiliğin modern karşılığı hangisidir?",
+    "siklar": {
+      "A": "Üniversiteler",
+      "B": "Meslek odaları ve mesleki eğitim kurumları",
+      "C": "Belediyeler",
+      "D": "Askeri okullar"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ahilik meslek eğitimi ve meslek ahlakı açısından modern meslek odalarının öncüsüdür."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "İklim ve İnsan",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Karbon nötr olmak;\n- Üretilen kadar karbonu dengelemek anlamına gelir\n- Ağaçlandırma ve yenilenebilir enerji ile sağlanabilir\n\nKarbon nötr hedefinin amacı hangisidir?",
+    "siklar": {
+      "A": "Karbon üretimini tamamen durdurmak",
+      "B": "İklim değişikliğini yavaşlatmak için sera gazı dengesini sağlamak",
+      "C": "Enerji kullanımını sıfırlamak",
+      "D": "Ormanları kesmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Karbon nötr hedefi sera gazı dengesini sağlayarak iklim değişikliğini yavaşlatmayı amaçlar."
+  },
+  {
+    "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+    "konu": "Avrupa'daki Bilimsel ve Teknolojik Değişimler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Matbaa, pusula, barut ve kâğıt;\n- Avrupa'ya İslam dünyası aracılığıyla geçmiştir\n\nBu icatların Avrupa'ya etkisi hangisidir?",
+    "siklar": {
+      "A": "Hiçbir etkisi olmamıştır",
+      "B": "Rönesans, Reform ve Coğrafi Keşiflere zemin hazırlamıştır",
+      "C": "Avrupa'yı zayıflatmıştır",
+      "D": "Sadece askeri alanda kullanılmıştır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu icatlar Avrupa'da Rönesans, Reform ve Coğrafi Keşiflerin zeminini hazırlamıştır."
+  },
+  {
+    "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+    "konu": "Toprak ve İklimin Üretime Etkisi",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Arazi kullanım planlaması;\nI. Tarım arazilerinin korunmasını sağlar\nII. Plansız kentleşmeyi önler\nIII. Doğal alanların tahribini engeller\n\nArazi kullanım planlamasının önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece inşaat sektörünü ilgilendirmesi",
+      "B": "Doğal kaynakların sürdürülebilir kullanımını ve planlı kalkınmayı sağlaması",
+      "C": "Tarımı tamamen yasaklaması",
+      "D": "Kentleşmeyi durdurması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Arazi planlaması sürdürülebilir kaynak kullanımı ve planlı kalkınmayı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Etkin Vatandaşlık",
+    "konu": "Toplumsal Katılım",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Atatürk;\n'Egemenlik kayıtsız şartsız milletindir.'\nsözünü söylemiştir.\n\nBu ilke hangi yönetim biçiminin temelini oluşturur?",
+    "siklar": {
+      "A": "Monarşi",
+      "B": "Cumhuriyet ve demokrasi",
+      "C": "Oligarşi",
+      "D": "Teokrasi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Milli egemenlik ilkesi cumhuriyet ve demokrasinin temelidir."
+  },
+  {
+    "unite": "Ünite 7 – Küresel Bağlantılar",
+    "konu": "Küresel Sorunlar ve Çözümleri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Dünyada eğitime erişemeyen milyonlarca çocuk bulunmaktadır.\n\nKüresel eğitim sorununa çözüm için en etkili yaklaşım hangisidir?",
+    "siklar": {
+      "A": "Eğitimi tamamen dijitalleştirmek",
+      "B": "Uluslararası iş birliğiyle kız çocukları ve dezavantajlı grupların eğitime erişimini sağlamak",
+      "C": "Sadece zengin ülkelere odaklanmak",
+      "D": "Eğitimi zorunlu olmaktan çıkarmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Küresel iş birliğiyle dezavantajlı grupların eğitime erişimi en etkili çözümdür."
+  },
+  {
+    "unite": "Ünite 2 – Kültür ve Miras",
+    "konu": "Beylikten Cihan Devletine",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da;\n- Rumeli'ye geçiş → askeri ve ticari avantaj\n- Balkanlarda fetiher → Avrupa'ya yayılma\n\nBu gelişmelerin Osmanlı için önemi hangisidir?",
+    "siklar": {
+      "A": "Anadolu'yu kaybetmesi",
+      "B": "Bir Anadolu beyliğinden Avrupa'ya yayılan bir devlete dönüşmesi",
+      "C": "Sadece askeri güç kazanması",
+      "D": "Denizcilik yapması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Rumeli'ye geçiş Osmanlı'yı beylikten Avrupa'ya yayılan bir imparatorluğa dönüştürmüştür."
+  },
+  {
+    "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+    "konu": "Nüfus ve Yerleşme",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Marmara Bölgesi'nde nüfusun yoğun olmasının nedenleri;\nI. Sanayi kuruluşlarının çokluğu\nII. Eğitim kurumlarının çeşitliliği\nIII. İş imkânlarının fazlalığı\n\nHangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Sanayi, eğitim ve iş imkânları Marmara'da nüfus yoğunluğunun nedenlerdir."
+  },
+  {
+    "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+    "konu": "Osmanlı'da Bilim ve Teknoloji",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Islahat hareketlerinde Osmanlı;\nI. Avrupa'dan uzman getirmiş\nII. Öğrencileri Avrupa'ya göndermiş\nIII. Batı tarzı okullar açmış\n\nBu uygulamaların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Kültürel değerleri korumak",
+      "B": "Batı'nın bilim ve tekniğini öğrenerek modernleşmek",
+      "C": "Avrupa'yla savaşa hazırlanmak",
+      "D": "Dini eğitimi güçlendirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Uzman getirme, öğrenci gönderme ve yeni okullar Batı bilim-tekniğini öğrenmeyi hedeflemiştir."
+  },
+  {
+    "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+    "konu": "Vakıfların Toplumsal Rolü",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da sebil (çeşme);\n- Halk için ücretsiz su sağlar\n- Vakıf geliriyle bakımı yapılır\n\nBu uygulama hangisine örnektir?",
+    "siklar": {
+      "A": "Ticari faaliyet",
+      "B": "Toplum yararına hayır işi ve sosyal hizmet",
+      "C": "Askeri tesis",
+      "D": "Eğitim kurumu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ücretsiz su sağlayan sebiller toplum yararına hayır işi ve sosyal hizmettir."
+  },
+  {
+    "unite": "Ünite 6 – Etkin Vatandaşlık",
+    "konu": "Haklar, Özgürlükler ve Sorumluluklar",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Sened-i İttifak (1808) Osmanlı'da padişahın yetkilerini sınırlayan ilk belgedir.\n\nBu belgenin Batı'daki karşılığı hangisidir?",
+    "siklar": {
+      "A": "Amerikan Anayasası",
+      "B": "Magna Carta (1215)",
+      "C": "Fransız İnsan Hakları Beyannamesi",
+      "D": "BM Şartı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İktidarın sınırlanması açısından Sened-i İttifak İngiltere'deki Magna Carta'ya benzetilir."
+  },
+  {
+    "unite": "Ünite 7 – Küresel Bağlantılar",
+    "konu": "Uluslararası Örgütler ve Kuruluşlar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Amnesty International (Uluslararası Af Örgütü);\n- İnsan hakları ihlallerini raporlar\n- Siyasi tutukluların serbest bırakılması için kampanya yapar\n\nBu kuruluşun önemi hangisidir?",
+    "siklar": {
+      "A": "Askeri güç oluşturması",
+      "B": "İnsan hakları ihlallerine küresel düzeyde dikkat çekerek baskı oluşturması",
+      "C": "Devletleri yönetmesi",
+      "D": "Ekonomik yardım yapması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Amnesty International insan hakları ihlallerine küresel dikkat çeken sivil kuruluştur."
+  }
+]

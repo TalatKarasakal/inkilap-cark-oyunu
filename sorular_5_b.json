@@ -1,0 +1,812 @@
+[
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Çatalhöyük kazılarında evler bitişik düzende, kapıları çatıdan, duvarlarında av sahneleri ve buğday kalıntıları bulunmuştur.\n\nBu bulgulara göre;\nI. Tarımla uğraştıkları\nII. Yerleşik hayata geçtikleri\nIII. Sanata önem verdikleri\nyargılarından hangilerine ulaşılabilir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Tahıl kalıntıları tarımı, bitişik evler yerleşik hayatı, duvar resimleri sanatı kanıtlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Göbeklitepe, 12.000 yıl öncesine aittir ve avcı-toplayıcı topluluklar tarafından inşa edilmiştir.\n\nBu bilgi hangi yaygın düşünceyi değiştirmektedir?",
+    "siklar": {
+      "A": "İlk insanların ateşi kullanamadığını",
+      "B": "Büyük yapıların ancak yerleşik toplumlar tarafından yapılabileceğini",
+      "C": "Anadolu'nun tarih öncesinde boş olduğunu",
+      "D": "Avcı-toplayıcıların hiç alete sahip olmadığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Göbeklitepe, yerleşik hayata geçmeden önce de büyük yapıların inşa edilebileceğini kanıtlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Arkeologlar bir yerleşimde taş aletler, pişmiş toprak kaplar, hayvan kemikleri ve buğday kalıntıları bulmuştur.\n\nBu halk;\nI. Avcılık\nII. Tarım\nIII. El sanatları\nfaaliyetlerinden hangilerini yapmıştır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Taş aletler avcılığı, buğday tarımı, pişmiş toprak kaplar el sanatlarını kanıtlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Neolitik dönemde insanlar hayvanları evcilleştirmiş ve bitkileri ekmeye başlamıştır.\n\nBu gelişmelerin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Göçebe yaşamın hızlanması",
+      "B": "Yerleşik hayata geçilmesi",
+      "C": "Avcılığın artması",
+      "D": "Savaşların başlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarım ve hayvancılık yerleşik hayata geçişin temel nedenidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Hacılar höyüğünde kadın heykelcikleri, renkli seramikler ve tahıl depolama çukurları bulunmuştur.\n\nBu bulgular;\nI. Sanatsal faaliyetler yapıldığını\nII. Tarımsal üretime geçildiğini\nIII. Ticaretin başladığını\nyargılarından hangilerini kesinlikle destekler?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Heykelcikler sanatı, depolama çukurları tarımı kanıtlar. Ticaret kesin kanıtlanamaz."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "İnsanların yerleşik hayata geçtikten sonra ilk köyleri kurması hangi gelişmeyle doğrudan ilişkilidir?",
+    "siklar": {
+      "A": "Yazının icadı",
+      "B": "Tarımın başlaması",
+      "C": "Demirin bulunması",
+      "D": "Tekerleğin icadı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarımın başlaması insanların belirli yerlere yerleşmesini ve ilk köyleri kurmasını sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir yerleşim yerinde;\n- Sulama kanalları\n- Tahıl ambarları\n- Çanak çömlek parçaları bulunmuştur.\n\nBu bulgulara göre topluluk hakkında;\nI. Tarımla geçimini sağladığı\nII. Suyu kontrol altına aldığı\nIII. Göçebe yaşam sürdüğü\nyargılarından hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sulama kanalları ve tahıl ambarları tarım ve su kontrolünü gösterir. Bunlar yerleşik hayat kanıtıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Ateşin kontrollü kullanılması insanlara aşağıdaki avantajlardan hangisini sağlamamıştır?",
+    "siklar": {
+      "A": "Yiyeceklerin pişirilmesi",
+      "B": "Yırtıcı hayvanlardan korunma",
+      "C": "Yazının icat edilmesi",
+      "D": "Aydınlanma ve ısınma"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Ateş pişirme, korunma ve ısınma sağlamış ancak yazının icadıyla doğrudan ilişkili değildir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Tarih öncesi dönemler Taş, Bakır, Tunç ve Demir devri olarak sınıflandırılır.\n\nBu sınıflandırmanın temel ölçütü hangisidir?",
+    "siklar": {
+      "A": "Nüfus sayısı",
+      "B": "Kullanılan araç-gereç malzemesi",
+      "C": "Dini inançlar",
+      "D": "Yönetim biçimi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarih öncesi dönemler insanların kullandığı araç-gereç malzemesine göre adlandırılmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Anadolu'da İlk Toplumlar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Alacahöyük'te bulunan altın takılar, güneş kursları ve tunç heykeller Hitit öncesi dönemden kalmadır.\n\nBu bulgular Anadolu hakkında neyi gösterir?",
+    "siklar": {
+      "A": "Savaşların çok olduğunu",
+      "B": "Madeni işleme ve sanatın geliştiğini",
+      "C": "Yazının kullanıldığını",
+      "D": "Deniz ticareti yapıldığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Altın takılar ve tunç heykeller maden işleme ve sanatın geliştiğini gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sümerler yazıyı, Lidyalılar parayı, Fenikeliler alfabeyi ilk kez kullanmışlardır.\n\nBu bilgilere göre eski uygarlıklar hakkında hangisi söylenebilir?",
+    "siklar": {
+      "A": "Her uygarlık diğerlerinden bağımsız gelişmiştir",
+      "B": "Uygarlıklar birbirlerinden etkilenmiş ve ortak mirasa katkıda bulunmuştur",
+      "C": "Tek bir uygarlık tüm icatları yapmıştır",
+      "D": "Bu icatlar günümüzde kullanılmamaktadır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı uygarlıkların icatlarının yayılması kültürel etkileşimi gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Hititler Kadeş Antlaşması'nı Mısır ile imzalamışlardır.\n\nKadeş Antlaşması'nın en önemli özelliği hangisidir?",
+    "siklar": {
+      "A": "En büyük savaşın sona ermesi",
+      "B": "Diplomasi ve yazılı hukukun başlangıcına örnek oluşturması",
+      "C": "Hititlerin Mısır'ı fethetmesi",
+      "D": "Anadolu haritasının çıkarılması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İlk yazılı antlaşma olarak Kadeş, diplomasi ve uluslararası hukukun başlangıcıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Sümerler Fırat-Dicle arasındaki verimli topraklarda tarımda sulama kanalları geliştirmiştir.\n\nMezopotamya medeniyetinin gelişmesinde en etkili faktör hangisidir?",
+    "siklar": {
+      "A": "Deniz ticareti",
+      "B": "Coğrafi koşulların tarıma elverişli olması",
+      "C": "Güçlü ordu",
+      "D": "Yazıyı erken kullanmaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Verimli topraklar ve nehirler tarımı kolaylaştırarak medeniyetin gelişmesini sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Lidyalılar parayı icat ederek takas usulünü sona erdirmiştir.\n\nParanın icadının en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Savaşların artması",
+      "B": "Ticaretin kolaylaşması ve yaygınlaşması",
+      "C": "Tarımın sona ermesi",
+      "D": "Deniz yollarının kapanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Para, takas sisteminin zorluklarını ortadan kaldırarak ticareti kolaylaştırmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Fenikeliler 22 harflik alfabeyi geliştirmiş, bu alfabe Yunan ve Latin alfabelerinin temelini oluşturmuştur.\n\nBu durum;\nI. Kültürel etkileşimin varlığını\nII. Uygarlıkların birbirini etkilediğini\nIII. Fenike alfabesinin bugün hâlâ kullanıldığını\nyargılarından hangilerini destekler?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Alfabenin yayılması kültürel etkileşimi kanıtlar. Fenike alfabesi değişerek evrimleşmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Friglerin tarımı korumak için tarım alanlarına zarar verenlere ağır cezalar verdiği bilinmektedir.\n\nBu bilgi Frigler hakkında neyi gösterir?",
+    "siklar": {
+      "A": "Sanayi ekonomisine sahip olduklarını",
+      "B": "Tarıma büyük önem verdiklerini",
+      "C": "Deniz ticareti yaptıklarını",
+      "D": "Demokratik yönetim uyguladıklarını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tarıma zarar verene ağır ceza verilmesi tarıma verdikleri önemi gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Urartular Van Gölü çevresinde sulama kanalları ve su bentleri yapmışlardır.\n\nBu bilgi;\nI. Mühendislik bilgilerinin geliştiğini\nII. Tarımı desteklediklerini\nIII. Ticaret yapamadıklarını\nyargılarından hangilerini destekler?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sulama kanalları mühendislik bilgisini ve tarıma verilen önemi gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "İyonlar, Anadolu'nun batı kıyısında felsefe ve bilimde öncü çalışmalar yapmışlardır. Tales, Anaksimandros gibi düşünürler bu uygarlıktan çıkmıştır.\n\nİyon uygarlığının en belirgin özelliği hangisidir?",
+    "siklar": {
+      "A": "Askeri güç",
+      "B": "Bilim ve felsefeye verdikleri önem",
+      "C": "Tarıma dayalı ekonomi",
+      "D": "Denizcilik"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İyonlar bilim ve felsefede öncü çalışmalar yapmasıyla bilinir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Yazının icadı ile birlikte insanlar bilgilerini kayıt altına almaya başlamıştır.\n\nYazının icadının en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Savaşların artması",
+      "B": "Bilginin nesilden nesile aktarılması",
+      "C": "Göçebe yaşamın başlaması",
+      "D": "Ticaretin sona ermesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yazı, bilginin kayıt altına alınarak nesilden nesile aktarılmasını sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Hititlerin Anadolu'da birçok farklı toplulukla anlaşma yapması ve farklı dillerde yazışması dikkat çekicidir.\n\nBu durum Hititler hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Tek dil politikası uyguladıklarını",
+      "B": "Diplomasiye önem veren çok kültürlü bir yapıya sahip olduklarını",
+      "C": "Yalnızca askeri güce dayandıklarını",
+      "D": "Yazıyı bilmediklerini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı dillerle yazışma diplomasiye ve çok kültürlülüğe önem verdiklerini gösterir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Efes, Pamukkale ve Göbeklitepe UNESCO Dünya Mirası Listesi'ndedir.\n\nBu yerlerin listede olmasının temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Sadece turizm geliri sağlamaları",
+      "B": "Tüm insanlığa ait evrensel değer taşımaları",
+      "C": "Sadece Türkiye'ye ait olmaları",
+      "D": "Yeni inşa edilmiş olmaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "UNESCO listesi evrensel değer taşıyan ve korunması gereken miras ögelerini kapsar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede eski tapınak kalıntıları turizm amaçlı yıkılarak yerine otel yapılmak istenmektedir.\n\nBu duruma karşı çıkılmasının temel gerekçesi hangisidir?",
+    "siklar": {
+      "A": "Otel yapımının pahalı olması",
+      "B": "Kültürel mirasın korunmasının evrensel bir sorumluluk olması",
+      "C": "Turistlerin otel istememesi",
+      "D": "Tapınağın hiç ziyaretçi çekmemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kültürel miras evrensel bir sorumlulukla korunmalıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Öğrenciler yaşadıkları ildeki cami, köprü ve kervansaray gibi yapıları araştırıp fotoğraflamışlardır.\n\nBu etkinliğin amacı hangisidir?",
+    "siklar": {
+      "A": "Fotoğrafçılık becerisi geliştirmek",
+      "B": "Yerel kültürel mirası tanımak ve koruma bilinci kazandırmak",
+      "C": "Yeni yapılar için yer belirlemek",
+      "D": "Tarihi yapıları yıkmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ortak miras ögelerini tanımak ve koruma bilinci kazandırmak eğitimin temel amaçlarındandır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir müzede sergilenen;\nI. Hitit güneş kursu\nII. Sümer çivi yazısı tableti\nIII. Fenike alfabesi kalıntısı\neserlerin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Aynı uygarlığa ait olmaları",
+      "B": "İnsanlığın ortak kültürel mirası olmaları",
+      "C": "Aynı dönemde yapılmaları",
+      "D": "Aynı malzemeden üretilmeleri"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı uygarlıklara ait bu eserler insanlığın ortak kültürel mirasıdır."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Tarihi eserlere sprey boyayla yazı yazılması, duvarlarına isim kazılması gibi davranışlar toplumsal bir sorundur.\n\nBu davranışların önlenmesi için en etkili yöntem hangisidir?",
+    "siklar": {
+      "A": "Eserleri halka kapatmak",
+      "B": "Kültürel miras koruma bilincini eğitimle yaygınlaştırmak",
+      "C": "Ceza miktarını artırmak",
+      "D": "Eserleri müzeye taşımak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Koruma bilincinin eğitimle yaygınlaştırılması en kalıcı ve etkili yöntemdir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Sümerlerin çivi yazısı, Mısırlıların hiyeroglif yazısı, Çinlilerin ipek üretimi gibi buluşlar tüm dünyaya yayılmıştır.\n\nBu yayılma aşağıdakilerden hangisini kanıtlar?",
+    "siklar": {
+      "A": "Uygarlıkların birbirinden habersiz olduğunu",
+      "B": "Kültürel etkileşimin ve bilgi paylaşımının evrenselliğini",
+      "C": "Tüm icatların tek bir yere ait olduğunu",
+      "D": "Buluşların yalnızca savaşla yayıldığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Buluşların yayılması kültürel etkileşimin evrenselliğini kanıtlar."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Kapadokya peribacaları hem doğal hem de kültürel miras olarak UNESCO tarafından koruma altındadır.\n\nBu yerin hem doğal hem kültürel miras sayılmasının nedeni hangisidir?",
+    "siklar": {
+      "A": "Sadece güzel görünmesi",
+      "B": "Doğal oluşumların yanı sıra içlerinde insanların yaşadığı yerleşimlerin bulunması",
+      "C": "Turistlerin çok gelmesi",
+      "D": "Modern yapılar içermesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Peribacaları doğal oluşum, içlerindeki yerleşimler ise kültürel miras ögesidir."
+  },
+  {
+    "unite": "Ünite 3 – Ortak Mirasımız",
+    "konu": "Ortak Miras Ögeleri",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Antik bir tiyatronun restorasyonu yapılırken;\nI. Orijinal malzemelere uygun taşlar kullanılmış\nII. Yapının özgün planı korunmuş\nIII. Yanına modern AVM inşa edilmiş\n\nBunlardan hangileri doğru restorasyon anlayışına uygundur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Doğru restorasyon orijinal malzeme ve plan korunarak yapılır. Modern yapı inşası uygun değildir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Demokrasilerde halk seçimlerle kendini yönetecek temsilcileri belirler.\n\nDemokrasinin en temel özelliği hangisidir?",
+    "siklar": {
+      "A": "Yönetimin tek kişinin elinde olması",
+      "B": "Yönetim yetkisinin halktan alınması (milli egemenlik)",
+      "C": "Kanunların sadece yöneticilerce belirlenmesi",
+      "D": "Halkın yönetime katılmaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Demokrasinin temeli yönetim yetkisinin halktan kaynaklanmasıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede vatandaşlar oy kullanarak milletvekillerini seçer, milletvekilleri ise halkın adına yasalar yapar.\n\nBu sistem;\nI. Temsili demokrasi\nII. Milli egemenlik\nIII. Mutlak monarşi\nkavramlarından hangileriyle ilişkilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Halkın temsilci seçmesi temsili demokrasi, yetkinin halktan gelmesi milli egemenlik ilkesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Cumhuriyet yönetiminde devlet başkanı seçimle belirlenir ve görev süresi bellidir.\n\nBu durum cumhuriyetin hangi özelliğini vurgular?",
+    "siklar": {
+      "A": "Yöneticinin soydan gelmesini",
+      "B": "Yöneticinin halk tarafından seçilmesini",
+      "C": "Yöneticinin ömür boyu görevde kalmasını",
+      "D": "Yönetimin babadan oğula geçmesini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Cumhuriyette yöneticiler halk tarafından belirli süre için seçilir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Atatürk: 'Egemenlik kayıtsız şartsız milletindir' demiştir.\n\nBu söz aşağıdaki ilkelerden hangisini ifade eder?",
+    "siklar": {
+      "A": "Laiklik",
+      "B": "Milli egemenlik",
+      "C": "İnkılapçılık",
+      "D": "Devletçilik"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Egemenliğin kayıtsız şartsız millete ait olması milli egemenlik ilkesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı'nın kutlanmasının temel nedeni hangisidir?",
+    "siklar": {
+      "A": "Okulların tatil olması",
+      "B": "TBMM'nin açılışı ve milli egemenliğin başlangıcı",
+      "C": "Çocukların eğlenmesi",
+      "D": "Bahar mevsiminin kutlanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "23 Nisan 1920'de TBMM açılmış ve milli egemenlik başlamıştır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede;\n- Düzenli seçimler yapılmaktadır\n- Basın özgürce haber yapmaktadır\n- Vatandaşlar düşüncelerini özgürce ifade edebilmektedir\n\nBu ülke hangi yönetim anlayışına sahiptir?",
+    "siklar": {
+      "A": "Diktatörlük",
+      "B": "Monarşi",
+      "C": "Demokratik cumhuriyet",
+      "D": "Oligarşi"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "Seçim, basın özgürlüğü ve ifade özgürlüğü demokratik cumhuriyetin göstergeleridir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Seçimlerde oy kullanmak vatandaşlık görevidir.\n\nOy kullanmanın önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece hükümeti desteklemek",
+      "B": "Millî iradeye katkıda bulunmak ve yönetime katılmak",
+      "C": "Resmi tatil yaratmak",
+      "D": "Partilere maddi destek sağlamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Oy kullanmak millî iradeye katkıda bulunmanın en temel yoludur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci parkın bakımsızlığını fark ederek belediyeye dilekçe yazmıştır. Belediye parkı yenilemiştir.\n\nBu davranış hangisine örnektir?",
+    "siklar": {
+      "A": "Pasif vatandaşlık",
+      "B": "Etkin vatandaşlık ve demokratik katılım",
+      "C": "Yasadışı eylem",
+      "D": "Bireysel çıkar arayışı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sorunları fark edip yasal yollarla çözüm aramak etkin vatandaşlıktır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir mahallede çöp sorunu yaşanmaktadır. Vatandaşlar toplanarak imza kampanyası başlatmış ve muhtar aracılığıyla belediyeye iletmişlerdir.\n\nBu durum hangisinin göstergesidir?",
+    "siklar": {
+      "A": "Toplumsal kaosun",
+      "B": "Demokratik katılım ve etkin vatandaşlık bilincinin",
+      "C": "Devlete güvensizliğin",
+      "D": "Bireysel çıkarların ön plana çıkmasının"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yasal yollarla sorun çözme demokratik katılım ve etkin vatandaşlık örneğidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci okulda su israfı olduğunu fark ederek okul müdürüne bilgi vermiş ve 'Su Tasarrufu' projesi başlatmıştır.\n\nBu öğrencinin davranışı;\nI. Sorumluluk bilinci\nII. Çevre duyarlılığı\nIII. Etkin vatandaşlık\nkavramlarından hangileriyle ilişkilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Sorunu fark edip çözüm üretmek sorumluluk, çevre ve etkin vatandaşlık bilincini gösterir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Trafik ışıklarına uyma, çöpü çöp kutusuna atma, toplu taşımada koltuğunu ihtiyaç sahibine bırakma gibi davranışlar toplumsal düzeni sağlar.\n\nBu davranışların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Zorunlu yasalarla dayatılmaları",
+      "B": "Sorumlu vatandaşlık bilincinin göstergeleri olması",
+      "C": "Sadece çocukların uygulaması gereken kurallar olması",
+      "D": "Ekonomik kazanç sağlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu davranışlar sorumlu vatandaşlık bilincinin günlük hayattaki göstergeleridir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Vatandaşlar mahallerindeki kaldırımların engelli bireyler için uygun olmadığını fark edip belediye meclisine başvurmuştur.\n\nBu durum hangisine örnektir?",
+    "siklar": {
+      "A": "Devlete karşı gelme",
+      "B": "Toplumsal sorunlara karşı demokratik hak kullanımı",
+      "C": "Bireysel şikâyet",
+      "D": "Protesto eylemi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Toplumsal sorunlar için yasal yollarla başvurma demokratik hak kullanımıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci okul kantininde sağlıksız yiyeceklerin satıldığını düşünerek okul yönetimine öneri mektubu yazmıştır.\n\nBu davranış hangisiyle ilişkilidir?",
+    "siklar": {
+      "A": "Kural ihlali",
+      "B": "Etkin vatandaşlık ve sorumluluk bilinci",
+      "C": "Otoriteye isyan",
+      "D": "Bireysel tercih"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yapıcı öneri sunmak etkin vatandaşlık ve sorumluluk bilincinin göstergesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Etkin Vatandaş Olmak",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Seçimlerde oy kullanmak, vergi ödemek ve askerlik yapmak vatandaşlık görevleridir.\n\nBu görevlerin ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Devletin bireyleri kontrol etmesi",
+      "B": "Devletin ve toplumun düzenli işleyişinin sağlanması",
+      "C": "Vatandaşların cezalandırılması",
+      "D": "Sadece yöneticilerin faydalanması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vatandaşlık görevleri devletin ve toplumun düzenli işleyişini sağlamaktır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Eğitim, sağlık ve yaşam hakkı her bireyin doğuştan sahip olduğu haklardandır.\n\nBu hakların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Sadece yetişkinlere tanınan haklardır",
+      "B": "Devredilmez ve vazgeçilmez niteliktedir",
+      "C": "Zenginliğe göre değişir",
+      "D": "Belirli ülkelerde geçerlidir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Temel haklar doğuştan kazanılır, devredilmez ve vazgeçilmezdir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir öğrencinin okula gitmesi hem hak hem de sorumluluktur.\n\nBu durum;\nI. Haklar ve sorumluluklar birbirini tamamlar\nII. Eğitim hem bireysel hem toplumsal yarar sağlar\nIII. Haklar sınırsızdır\nyargılarından hangilerini destekler?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Eğitim hem hak hem sorumluluktur. Haklar sınırsız değildir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Çocukların çalıştırılması, eğitimden uzak tutulması ve şiddete maruz kalması çocuk hakları ihlalidir.\n\nBu ihlallerin önlenmesi için en önemli adım hangisidir?",
+    "siklar": {
+      "A": "Çocuklara daha fazla iş vermek",
+      "B": "Çocuk hakları konusunda toplumsal farkındalık oluşturmak",
+      "C": "Ailelere daha fazla yetki vermek",
+      "D": "Çocukları toplumdan ayırmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çocuk hakları ihlallerinin önlenmesinde toplumsal farkındalık en önemli adımdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Anayasa'nın 42. maddesi 'Kimse eğitim ve öğretim hakkından yoksun bırakılamaz' demektedir.\n\nBu madde aşağıdakilerden hangisini güvence altına alır?",
+    "siklar": {
+      "A": "Eğitimin paralı olmasını",
+      "B": "Her bireyin eğitime erişim hakkını",
+      "C": "Sadece zenginlerin eğitim almasını",
+      "D": "Eğitimin isteğe bağlı olmasını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu madde eğitim hakkının herkes için güvence altında olduğunu belirtir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Düşünce ve ifade özgürlüğü temel haklardan biridir. Ancak bu hak başkalarının haklarını ihlal etmemek şartıyla kullanılabilir.\n\nBu bilgi aşağıdakilerden hangisini gösterir?",
+    "siklar": {
+      "A": "Hakların sınırsız olduğunu",
+      "B": "Hakların kullanımının sorumluluklarla sınırlı olduğunu",
+      "C": "Düşünce özgürlüğünün gereksiz olduğunu",
+      "D": "Hakların yalnızca yetişkinlere ait olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Haklar başkalarının haklarına zarar vermemek şartıyla kullanılır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "İhtiyaç Halinde Başvurulacak Kurumlar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Yangın: 110, Ambulans: 112, Polis: 155, Jandarma: 156\n\nBu numaraları bilmenin önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece yetişkinlerin bilmesi gereken bilgilerdir",
+      "B": "Olağanüstü durumlarda hızlı ve doğru müdahale için hayati önem taşır",
+      "C": "Bu numaraları aramak ücretlidir",
+      "D": "Bu kurumlar sadece hafta içi çalışır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Acil numara bilgisi kriz anlarında hızlı müdahale sağlayarak hayat kurtarabilir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "İhtiyaç Halinde Başvurulacak Kurumlar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir evde yangın çıkmıştır.\n\nAşağıdaki davranışlardan hangisi en doğrudur?",
+    "siklar": {
+      "A": "Asansörü kullanarak binadan çıkmak",
+      "B": "Hemen 110'u arayıp panik yapmadan binayı terk etmek",
+      "C": "Yangını söndürmeye çalışmak",
+      "D": "Komşuları beklemek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Yangında 110 aranmalı ve sakin bir şekilde merdivenden bina terk edilmelidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "İhtiyaç Halinde Başvurulacak Kurumlar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir vatandaş hırsızlığa tanık olmuştur.\n\nBu durumda ilk yapması gereken hangisidir?",
+    "siklar": {
+      "A": "Hırsızın peşinden koşmak",
+      "B": "155 Polis İmdat'ı aramak",
+      "C": "Durumu sosyal medyada paylaşmak",
+      "D": "Hiçbir şey yapmamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Suça tanıklık durumunda polis imdata haber vermek en doğru davranıştır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "İhtiyaç Halinde Başvurulacak Kurumlar",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "112 Acil Çağrı Merkezi tüm acil hizmetlere (ambulans, itfaiye, polis) tek numaradan ulaşım sağlamaktadır.\n\nBu uygulamanın faydası;\nI. Hızlı müdahale\nII. Tek numaradan koordinasyon\nIII. Vatandaşın farklı numaraları ezberlemesine gerek kalmaması\nsonuçlarından hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "112 hızlı müdahale, koordinasyon ve kolaylık sağlayan birleşik acil hizmet numarasıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Demokrasi ve Cumhuriyet",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "TBMM'de farklı partilerin milletvekilleri görev yapmaktadır.\n\nBu durum demokrasinin hangi özelliğini gösterir?",
+    "siklar": {
+      "A": "Tek parti yönetimini",
+      "B": "Çok seslilik ve farklı görüşlerin temsil edilmesini",
+      "C": "Yönetimin seçimle belirlenmediğini",
+      "D": "Kanunların tek kişi tarafından yapıldığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Farklı partilerin mecliste yer alması çok seslilik ve temsil çeşitliliğinin göstergesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Her çocuğun adı ve vatandaşlığı olma, eğitim alma, sağlık hizmeti görme ve korunma hakkı vardır.\n\nBu haklar aşağıdakilerden hangisiyle güvence altına alınmıştır?",
+    "siklar": {
+      "A": "Aile içi kararlarla",
+      "B": "Anayasa ve uluslararası sözleşmelerle",
+      "C": "Okul kurallarıyla",
+      "D": "Mahalle muhtarı tarafından"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çocuk hakları anayasa ve BM Çocuk Hakları Sözleşmesi gibi belgelerle güvence altındadır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci sınıfta fikirlerini söylerken arkadaşları tarafından susturulmaktadır.\n\nBu durum hangi hakkın ihlalidir?",
+    "siklar": {
+      "A": "Sağlık hakkı",
+      "B": "Düşünce ve ifade özgürlüğü",
+      "C": "Mülkiyet hakkı",
+      "D": "Seyahat özgürlüğü"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Birinin fikirlerini söylemesinin engellenmesi düşünce ve ifade özgürlüğü ihlalidir."
+  }
+]

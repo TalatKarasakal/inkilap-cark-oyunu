@@ -1,0 +1,797 @@
+[
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Atatürk'ün Çocukluk ve Öğrenim Hayatı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal;\nI. Şemsi Efendi İlkokulu\nII. Selanik Askeri Rüştiyesi\nIII. Manastır Askeri İdadisi\nIV. Harp Okulu\n\nBu eğitim süreci Mustafa Kemal hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece askeri eğitim aldığını",
+      "B": "Disiplinli, planlı ve askeri-siyasi alanda yetişen bir lider olduğunu",
+      "C": "Yalnızca İstanbul'da okuduğunu",
+      "D": "Eğitimini yarıda bıraktığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Askeri okullar silsilesinde yetişmesi disiplinli ve donanımlı bir lider olduğunu gösterir."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Atatürk'ün Çocukluk ve Öğrenim Hayatı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mustafa Kemal'in Selanik'te doğup büyümesi;\nI. Farklı kültür ve milletlerle iç içe yaşamış\nII. Batı dünyasını yakından tanımış\nIII. Milliyetçilik akımından etkilenmiş\n\nSelanik'in Mustafa Kemal'e etkisi hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Selanik çok kültürlü, Batı'ya açık ve milliyetçilik akımlarının yoğun olduğu bir şehirdi."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Osmanlı'nın Son Döneminde Yaşanan Gelişmeler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Osmanlı'nın son döneminde;\nI. Osmanlıcılık\nII. İslamcılık\nIII. Türkçülük\nIV. Batıcılık\nfikir akımları uygulanmıştır.\n\nBu fikir akımlarının amacı hangisidir?",
+    "siklar": {
+      "A": "Farklı siyasi partiler kurmak",
+      "B": "Osmanlı İmparatorluğu'nu çöküşten kurtarmak",
+      "C": "Yeni devlet kurmak",
+      "D": "Avrupa'yı taklit etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tüm fikir akımlarının ortak amacı Osmanlı'yı çöküşten kurtarmaktı."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Osmanlı'nın Son Döneminde Yaşanan Gelişmeler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "31 Mart Olayı (1909) sonucu;\nI. Hareket Ordusu İstanbul'a gelmiş\nII. II. Abdülhamid tahttan indirilmiş\nIII. Meşrutiyet korunmuş\n\nBu olay hangisini gösterir?",
+    "siklar": {
+      "A": "Ordunun siyasete karıştığını",
+      "B": "Meşrutiyet yönetiminin korunması için mücadele edildiğini",
+      "C": "Padişahın güçlendiğini",
+      "D": "İsyanın başarılı olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "31 Mart Olayı meşrutiyet yönetiminin korunması için bastırılmıştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Askerlik Hayatı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal Trablusgarp Savaşı'nda (1911) İtalyanlara karşı başarılı bir direniş göstermiştir.\n\nBu savaşın önemi hangisidir?",
+    "siklar": {
+      "A": "Osmanlı'nın toprak kazanması",
+      "B": "Mustafa Kemal'in askeri yeteneklerini ilk kez kanıtlaması",
+      "C": "İtalya'nın savaştan çekilmesi",
+      "D": "Osmanlı'nın güçlenmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Trablusgarp Mustafa Kemal'in askeri liderlik yeteneklerini ilk kez gösterdiği savaştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Askerlik Hayatı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mustafa Kemal Çanakkale Savaşı'nda;\n- Arıburnu ve Anafartalar cephesinde görev yapmış\n- 'Ben size taarruzu değil, ölmeyi emrediyorum!' demiştir\n\nBu söz hangisini yansıtır?",
+    "siklar": {
+      "A": "Savaştan kaçış",
+      "B": "Vatanı savunma kararlılığı ve liderlik",
+      "C": "Savaşın gereksizliği",
+      "D": "Teslim olmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bu söz vatanı savunma kararlılığını ve üstün liderlik iradesini yansıtır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "I. Dünya Savaşı'na Osmanlı'nın girmesinde;\nI. Kaybedilen toprakları geri almak\nII. Almanya'nın yanında güçlü durmak\nIII. İttihat ve Terakki'nin savaş yanlısı tutumu\netkili olmuştur.\n\nSavaşın Osmanlı için sonucu hangisidir?",
+    "siklar": {
+      "A": "Güçlenmesi",
+      "B": "Toprak kazanması",
+      "C": "Ağır yenilgi ve Mondros Ateşkes Antlaşması",
+      "D": "İttifak devletlerinin kazanması"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "I. Dünya Savaşı'nda Osmanlı ağır yenilgi almış ve Mondros'u imzalamak zorunda kalmıştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Çanakkale Savaşı'nın kazanılmasıyla;\nI. İtilaf devletlerinin planı bozulmuş\nII. Rusya'ya yardım gönderilememiş\nIII. Savaş uzamış\n\nBu sonuçların en önemlisi hangisidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Çanakkale'nin kazanılması düşman planını bozmuş, Rusya'ya yardım engellenmiş ve savaş uzamıştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Askerlik Hayatı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal Balkan Savaşları'nda Edirne'nin geri alınmasında görev yapmıştır.\n\nBalkan Savaşları'nın Osmanlı açısından en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Balkanlardaki toprakların büyük bölümünün kaybedilmesi",
+      "B": "Osmanlı'nın güçlenmesi",
+      "C": "Balkan devletlerinin yenilmesi",
+      "D": "İstanbul'un korunması"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Balkan Savaşları'nda Osmanlı Balkanlardaki toprakların büyük bölümünü kaybetmiştir."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Mondros Ateşkes Antlaşması (30 Ekim 1918);\nI. Osmanlı ordusu terhis edilmiş\nII. Stratejik noktalar İtilaf devletlerine bırakılmış\nIII. İşgallerin hukuki zemini oluşturulmuş\n\nMondros'un asıl amacı hangisidir?",
+    "siklar": {
+      "A": "Barış sağlamak",
+      "B": "Osmanlı'yı savunmasız bırakarak paylaşım planlarını hayata geçirmek",
+      "C": "Osmanlı'yı güçlendirmek",
+      "D": "Yeni savaş başlatmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mondros Osmanlı'yı savunmasız bırakarak İtilaf devletlerinin işgal planlarını kolaylaştırmıştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Atatürk'ün Çocukluk ve Öğrenim Hayatı",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal'in 'Kemal' adını alması;\nA. Matematik öğretmeni vermiştir\nB. Babası Ali Rıza Efendi vermiştir\n\nDoğru olan hangisidir?",
+    "siklar": {
+      "A": "A doğrudur",
+      "B": "B doğrudur",
+      "C": "İkisi de doğrudur",
+      "D": "İkisi de yanlıştır"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Mustafa Kemal'e 'Kemal' adını askeri rüştiyede matematik öğretmeni vermiştir."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Mustafa Kemal'in Askerlik Hayatı",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Mustafa Kemal Sofya'da ataşemiliter olarak görev yapmıştır.\n\nBu görevin kendisine katkısı hangisidir?",
+    "siklar": {
+      "A": "Askeri becerilerini geliştirmesi",
+      "B": "Diplomatik deneyim kazanması ve Avrupa siyasetini yakından tanıması",
+      "C": "Savaşa katılması",
+      "D": "Osmanlı ordusunu güçlendirmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sofya ataşemiliterliği diplomatik deneyim ve Avrupa siyasetini tanıma fırsatı vermiştir."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "Osmanlı'nın Son Döneminde Yaşanan Gelişmeler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "II. Meşrutiyet'in ilan edilmesinde (1908);\nI. İttihat ve Terakki Cemiyeti'nin baskısı\nII. Halkın padişaha isyanı\nIII. Askeri müdahale tehdidi\netkili olmuştur.\n\nBu gelişme hangisini amaçlamıştır?",
+    "siklar": {
+      "A": "Padişahı güçlendirmek",
+      "B": "Anayasal düzene dönmek ve meclisi yeniden açmak",
+      "C": "İmparatorluğu bölmek",
+      "D": "Savaş ilan etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "II. Meşrutiyet Kanun-i Esasi'yi yeniden yürürlüğe koyarak meclisi açmayı amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+    "konu": "I. Dünya Savaşı",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "I. Dünya Savaşı'nda Osmanlı'nın savaştığı cepheler;\n- Çanakkale, Kafkasya, Kanal, Irak, Suriye-Filistin\n\nBu kadar çok cephede savaşmasının sonucu hangisidir?",
+    "siklar": {
+      "A": "Güçlenmesi",
+      "B": "Askeri gücünün dağılarak zayıflaması",
+      "C": "Tüm cephelerin kazanılması",
+      "D": "Müttefiklerin güçlenmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çok cephede savaşmak Osmanlı'nın askeri gücünü dağıtarak zayıflamasına yol açmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "İşgaller ve Tepkiler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Paris Barış Konferansı'nda (1919) İzmir'in Yunanistan'a verilmesi kararlaştırılmıştır.\n\n15 Mayıs 1919'da İzmir'in işgalinin Millî Mücadele açısından önemi hangisidir?",
+    "siklar": {
+      "A": "İşgalin kabul edilmesi",
+      "B": "Halkın işgallere karşı direniş ruhunun güçlenmesi ve Kuvâ-yı Milliye hareketinin başlaması",
+      "C": "İtilaf devletleriyle anlaşma yapılması",
+      "D": "Osmanlı ordusunun güçlenmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İzmir'in işgali halkın direniş ruhunu güçlendirmiş ve Kuvâ-yı Milliye hareketini başlatmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Mustafa Kemal Samsun'da",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Mustafa Kemal'in 19 Mayıs 1919'da Samsun'a çıkması;\nI. Millî Mücadele'nin başlangıcı kabul edilir\nII. Bağımsızlık hareketinin ilk adımıdır\nIII. Padişah tarafından görevlendirilmiştir\n\nBu olayın önemi hangisidir?",
+    "siklar": {
+      "A": "Yalnız III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "C",
+    "aciklama": "19 Mayıs Millî Mücadele'nin başlangıcı ve bağımsızlık hareketinin ilk adımıdır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kongreler ve Amasya Genelgesi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Amasya Genelgesi'nde (22 Haziran 1919);\n- 'Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir'\n- 'Milletin istiklalini yine milletin azim ve kararı kurtaracaktır'\n\nBu ifadeler hangisinin ilk kez dile getirildiğini gösterir?",
+    "siklar": {
+      "A": "Padişaha bağlılığın",
+      "B": "Millî egemenlik ve millî irade kavramlarının",
+      "C": "İşgallere boyun eğmenin",
+      "D": "Barış görüşmelerinin"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Amasya Genelgesi millî egemenlik ve millî iradenin ilk kez açıkça ifade edildiği belgedir."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kongreler ve Amasya Genelgesi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Erzurum Kongresi (23 Temmuz 1919);\nI. Bölgesel kararlar alınmış\nII. Manda ve himaye reddedilmiş\nIII. Millî sınırlar içinde vatan bütünlüğü savunulmuş\n\nErzurum Kongresi'nin karakteri hangisidir?",
+    "siklar": {
+      "A": "Tamamen bölgesel",
+      "B": "Toplanış biçimi bölgesel, kararları ulusal",
+      "C": "Tamamen ulusal",
+      "D": "Uluslararası"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Erzurum Kongresi bölgesel olarak toplanmış ama ulusal kararlar almıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kongreler ve Amasya Genelgesi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sivas Kongresi (4 Eylül 1919);\n- Tüm cemiyetler 'Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti' altında birleşmiş\n- Temsil Heyeti yürütme yetkisi kazanmış\n\nBu kongrenin en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Bölgesel mücadele başlatması",
+      "B": "Millî Mücadele'nin tek merkezden yönetilmesini sağlaması",
+      "C": "İşgalleri durdurmak",
+      "D": "Padişahla uzlaşma sağlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sivas Kongresi millî mücadelenin tek merkezden ve birlik halinde yönetilmesini sağlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "İşgaller ve Tepkiler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Wilson İlkeleri'nde 'her milletin kendi kaderini belirleme hakkı' vardır.\n\nAncak bu ilke Osmanlı toprakları için uygulanmamıştır. Bu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Wilson İlkeleri'nin evrensel olduğunu",
+      "B": "Galip devletlerin çıkarlarına göre ilkelerin uygulandığını",
+      "C": "Osmanlı'nın bu ilkeleri reddettiğini",
+      "D": "Türklerin hak sahibi olmadığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Wilson İlkeleri galip devletlerin çıkarına göre seçici uygulanmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "TBMM'nin Açılması",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Son Osmanlı Mebusan Meclisi'nin Misak-ı Millî'yi kabul etmesi üzerine İstanbul işgal edilmiştir.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "İtilaf devletlerinin demokratik haklara saygı gösterdiğini",
+      "B": "İtilaf devletlerinin Türk milletinin bağımsızlık iradesini engellemek istediğini",
+      "C": "Misak-ı Millî'nin önemsiz olduğunu",
+      "D": "İstanbul'un güvenli olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İstanbul'un işgali İtilaf devletlerinin Türk milletinin bağımsızlık iradesini engelleme girişimidir."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "TBMM'nin Açılması",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "23 Nisan 1920'de TBMM'nin açılması;\nI. Millî egemenlik ilkesi hayata geçmiştir\nII. Yeni Türk devletinin temeli atılmıştır\nIII. Padişahın yetkileri devredilmiştir\n\nTBMM'nin açılmasının önemi hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "TBMM millî egemenliği, yeni devletin temelini ve yetki devrini sağlamıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "Kuvâ-yı Milliye",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Kuvâ-yı Milliye;\nI. Halkın silahlı direniş örgütleri\nII. Düzenli ordu değil\nIII. İşgallere karşı ilk direniş\nIV. Düzensiz ama kararlı mücadele\n\nKuvâ-yı Milliye'nin düzenli orduya geçilmesinin nedeni hangisidir?",
+    "siklar": {
+      "A": "Başarısız olmaları",
+      "B": "Disiplinsizlik ve koordinasyon eksikliğinin düzenli savaşta yeterli olmaması",
+      "C": "İşgallerin bitmesi",
+      "D": "Halkın desteğini kaybetmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kuvâ-yı Milliye'nin disiplin ve koordinasyon eksikliği düzenli orduya geçişi zorunlu kılmıştır."
+  },
+  {
+    "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+    "konu": "İşgaller ve Tepkiler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Sevr Antlaşması (10 Ağustos 1920);\n- Osmanlı toprakları taksim edilmiş\n- Boğazlar uluslararası konumune bırakılmış\n- Ordu sınırlandırılmış\n\nSevr'in uygulanmamasının nedeni hangisidir?",
+    "siklar": {
+      "A": "Padişahın reddetmesi",
+      "B": "TBMM'nin bu antlaşmayı tanımaması ve Millî Mücadele'nin kazanılması",
+      "C": "İtilaf devletlerinin vazgeçmesi",
+      "D": "Antlaşmanın imzalanmaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "TBMM Sevr'i tanımamış ve Millî Mücadele'nin kazanılmasıyla antlaşma geçersiz kalmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Batı Cephesi Savaşları",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "I. İnönü Zaferi (1921) sonucu;\nI. TBMM'nin otoritesi güçlenmiş\nII. Londra Konferansı'na TBMM davet edilmiş\nIII. Düzenli ordunun varlığı kanıtlanmış\n\nI. İnönü'nün siyasi sonucu hangisidir?",
+    "siklar": {
+      "A": "Yalnız III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "I. İnönü TBMM otoritesini güçlendirmiş, Londra'ya davet sağlamış ve düzenli ordunun varlığını kanıtlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Batı Cephesi Savaşları",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Sakarya Meydan Muharebesi (1921) 22 gün 22 gece sürmüştür.\n\nSakarya Zaferi'nin en önemli sonucu hangisidir?",
+    "siklar": {
+      "A": "Savaşın uzaması",
+      "B": "Türk ordusunun taarruza geçme imkânı kazanması ve Yunan ilerleyişinin tamamen durdurulması",
+      "C": "Barış görüşmelerinin başlaması",
+      "D": "İşgallerin sona ermesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sakarya Yunan ilerleyişini tamamen durdurmuş ve taarruz imkânı sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Batı Cephesi Savaşları",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Büyük Taarruz (26 Ağustos 1922);\n- Mustafa Kemal 'Ordular! İlk hedefiniz Akdeniz'dir. İleri!' emrini vermiştir\n- Başkomutanlık Meydan Muharebesi kazanılmıştır\n- 9 Eylül 1922'de İzmir kurtarılmıştır\n\nBüyük Taarruz'un savaşın geneli için sonucu hangisidir?",
+    "siklar": {
+      "A": "Savaşın devam etmesi",
+      "B": "Batı Anadolu'nun düşman işgalinden tamamen kurtarılarak Kurtuluş Savaşı'nın askeri zaferle sonuçlanması",
+      "C": "Doğu cephesinin açılması",
+      "D": "Barış görüşmelerinin reddedilmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Büyük Taarruz Batı Anadolu'yu kurtararak Kurtuluş Savaşı'nı askeri zaferle sonuçlandırmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Güney ve Doğu Cepheleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Güney Cephesi'nde Antep, Maraş ve Urfa halkı Fransız ve Ermeni işgaline karşı kahramanca direnmiştir.\n\nBu direnişin sonucu hangisidir?",
+    "siklar": {
+      "A": "Fransızların güçlenmesi",
+      "B": "Antep'e 'Gazi', Maraş'a 'Kahraman', Urfa'ya 'Şanlı' unvanlarının verilmesi",
+      "C": "Güney'in kaybedilmesi",
+      "D": "İşgalin sürmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Halkın kahramanca direnişi sonucu bu şehirlere onur unvanları verilmiştir."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Güney ve Doğu Cepheleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Doğu Cephesi'nde Kâzım Karabekir Paşa;\nI. Ermenistan ile savaşmış\nII. Gümrü Antlaşması imzalanmış (1920)\nIII. Doğu sınırı güvenceye alınmış\n\nGümrü Antlaşması'nın önemi hangisidir?",
+    "siklar": {
+      "A": "Savaşın uzaması",
+      "B": "TBMM'nin uluslararası alanda imzaladığı ilk antlaşma olması",
+      "C": "Batı cephesinin açılması",
+      "D": "Rusya ile savaş başlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Gümrü TBMM'nin uluslararası alanda imzaladığı ilk antlaşmadır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Mudanya Ateşkesi ve Lozan",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Mudanya Ateşkes Antlaşması (11 Ekim 1922);\nI. Doğu Trakya savaşsız kurtarılmış\nII. İstanbul ve Boğazlar TBMM'ye bırakılmış\nIII. Yunanistan Doğu Trakya'dan çekilmiş\n\nMudanya'nın en önemli özelliği hangisidir?",
+    "siklar": {
+      "A": "Savaşın devam etmesi",
+      "B": "Doğu Trakya'nın silah kullanılmadan diplomatik yolla kurtarılması",
+      "C": "İstanbul'un işgal edilmesi",
+      "D": "Barışın reddedilmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Mudanya'da Doğu Trakya diplomatik yolla savaşsız kurtarılmıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Mudanya Ateşkesi ve Lozan",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Lozan Barış Antlaşması (24 Temmuz 1923);\nI. Yeni Türk devletinin sınırları belirlenmiş\nII. Kapitülasyonlar kaldırılmış\nIII. Azınlık hakları düzenlenmiş\n\nLozan'ın en önemli özelliği hangisidir?",
+    "siklar": {
+      "A": "Osmanlı'nın devam etmesi",
+      "B": "Yeni Türk devletinin uluslararası alanda tam bağımsız ve egemen olarak tanınması",
+      "C": "Toprak kaybedilmesi",
+      "D": "Kapitülasyonların devam etmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Lozan yeni Türk devletinin uluslararası alanda tam bağımsız ve egemen tanınmasını sağlamıştır."
+  },
+  {
+    "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+    "konu": "Batı Cephesi Savaşları",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Tekalif-i Milliye Emirleri (1921);\n- Halktan silah, yiyecek, giyecek toplanmış\n- Ordunun ihtiyaçları karşılanmış\n\nBu emirlerin amacı hangisidir?",
+    "siklar": {
+      "A": "Halkı cezalandırmak",
+      "B": "Büyük Taarruz için orduyu donatmak ve güçlendirmek",
+      "C": "Ekonomiyi geliştirmek",
+      "D": "Vergi toplamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tekalif-i Milliye ordunun donatılmasını ve Büyük Taarruz'a hazır olmasını amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Cumhuriyetin İlanı",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "29 Ekim 1923'te Cumhuriyet ilan edildiğinde;\nI. Devlet başkanlığı sorunu çözülmüş\nII. Millî egemenlik ilkesi anayasal güvenceye kavuşmuş\nIII. Rejim tartışmaları sona ermiş\n\nCumhuriyet'in ilanının en temeldeki sonucu hangisidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Cumhuriyet devlet başkanlığı, millî egemenlik ve rejim sorunlarını birlikte çözmüştür."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Halifeliğin Kaldırılması",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "3 Mart 1924'te halifelik kaldırılmıştır.\n\nBu kararın temel amacı hangisidir?",
+    "siklar": {
+      "A": "Dini ortadan kaldırmak",
+      "B": "Laiklik ilkesini güçlendirmek ve çift başlılığa son vermek",
+      "C": "Osmanlı'yı güçlendirmek",
+      "D": "Dış politikayı değiştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Halifelik kaldırılarak laiklik güçlendirilmiş ve devlerdeki çift başlılığa son verilmiştir."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Atatürk İlkeleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Atatürk'ün 6 temel ilkesi;\nI. Cumhuriyetçilik → Halk yönetimi\nII. Milliyetçilik → Millî birlik\nIII. Halkçılık → Eşitlik\nIV. Devletçilik → Ekonomik kalkınma\nV. Laiklik → Din-devlet ayrılığı\nVI. İnkılâpçılık → Çağdaşlaşma\n\nBu ilkelerin ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Toplanmın bölünmesi",
+      "B": "Çağdaş, bağımsız ve demokratik bir Türkiye inşa etmek",
+      "C": "Osmanlı'yı geri getirmek",
+      "D": "Batı taklitçiliği"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Atatürk İlkeleri çağdaş, bağımsız ve demokratik Türkiye inşa etmeyi amaçlar."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "İnkılaplar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1 Kasım 1928'de Harf İnkılabı yapılmış, Arap harflerinden Latin harflerine geçilmiştir.\n\nBu inkılabın en önemli amacı hangisidir?",
+    "siklar": {
+      "A": "Arapçayı yasaklamak",
+      "B": "Okuma yazma oranını artırmak ve çağdaş dünyayla uyum sağlamak",
+      "C": "Edebiyatı geliştirmek",
+      "D": "Batı'yı taklit etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Harf İnkılabı okuryazarlığı artırmayı ve çağdaş dünyayla uyum sağlamayı hedeflemiştir."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "İnkılaplar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "17 Şubat 1926'da Türk Medeni Kanunu kabul edilmiştir.\n\nBu kanunun kadın hakları açısından getirdikleri;\nI. Resmi nikâh zorunluluğu\nII. Çok eşliliğin yasaklanması\nIII. Miras hakkında eşitlik\nIV. Boşanma hakkı\nhangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "I, II, III ve IV"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Medeni Kanun nikâh, çok eşlilik yasağı, miras eşitliği ve boşanma hakkı ile kadın haklerını güvce altına almıştır."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "İnkılaplar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "3 Mart 1924'te yapılan inkılâplar;\nI. Halifelik kaldırılmış\nII. Tevhid-i Tedrisat Kanunu çıkmış\nIII. Şer'iye ve Evkaf Vekâleti kaldırılmış\n\nBu üç inkılabın ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Eğitimi geliştirmek",
+      "B": "Laiklik ilkesini güçlendirmek",
+      "C": "Ekonomiyi düzenlemek",
+      "D": "Dış politikayı değiştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Halifelik, eğitim birliği ve dini bakanlık değişiklikleri laikliği güçlendirmek amacıyla yapılmıştır."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "Atatürk İlkeleri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Devletçilik ilkesi gereğince;\n- Sümerbank, Etibank gibi kuruluşlar kurulmuş\n- Demiryolu ağı genişletilmiş\n- I. ve II. Beş Yıllık Kalkınma Planları hazırlanmış\n\nBu uygulamaların amacı hangisidir?",
+    "siklar": {
+      "A": "Özel sektörü engellemek",
+      "B": "Özel sektörün yetersiz kaldığı alanlarda devletin ekonomiye müdahale ederek hızlı kalkınmayı sağlaması",
+      "C": "Komünizm uygulamak",
+      "D": "Tarımı durdurmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Devletçilik özel sektörün yetersiz kaldığı alanlarda devletin ekonomiye müdahalesini amaçlar."
+  },
+  {
+    "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+    "konu": "İnkılaplar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Soyadı Kanunu (1934) ile herkes soyadı almıştır. Mustafa Kemal'e TBMM tarafından 'Atatürk' soyadı verilmiştir.\n\nSoyadı Kanunu'nun amacı hangisidir?",
+    "siklar": {
+      "A": "Gelenekleri değiştirmek",
+      "B": "Toplumda karışıklığı önlemek ve modern devlet düzenine geçmek",
+      "C": "İnsanları sınıflandırmak",
+      "D": "Yabancı isimleri yasaklamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Soyadı Kanunu karışıklığı önleyerek modern devlet düzenine geçmeyi amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Çok Partili Hayata Geçiş Denemeleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Atatürk döneminde çok partili hayata geçiş denemeleri;\nI. Terakkiperver Cumhuriyet Fırkası (1924)\nII. Serbest Cumhuriyet Fırkası (1930)\n\nBu partilerin kapatılmasının nedeni hangisidir?",
+    "siklar": {
+      "A": "Başarılı olmaları",
+      "B": "İnkılap karşıtı ve rejim tehdit eden hareketlerin odağı haline gelmeleri",
+      "C": "Çok başarılı olmaları",
+      "D": "Halkın istemesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Partiler inkılap karşıtı hareketlerin odağı olunca kapatılmıştır."
+  },
+  {
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Çok Partili Hayata Geçiş Denemeleri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Atatürk çok partili hayatı denemesine rağmen dönemin koşulları izin vermemiştir.\n\nBu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Atatürk'ün demokrasiye karşı olduğunu",
+      "B": "Atatürk'ün demokratikleşmeyi istediğini ancak henüz koşulların olgunlaşmadığını",
+      "C": "Tek parti yönetimini kalıcı istediğini",
+      "D": "Halkın demokrasi istemediğini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Atatürk demokrasiyi istemiş ancak dönemin koşulları çok partili düzene henüz uygun değildi."
+  },
+  {
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "1946 ve Sonrası Demokratikleşme",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "1946'da Demokrat Parti kurulmuş, 1950'de seçimleri kazanarak iktidara gelmiştir.\n\nBu gelişme hangisini gösterir?",
+    "siklar": {
+      "A": "Tek parti döneminin devam ettiğini",
+      "B": "Çok partili demokratik sisteme barışçıl geçişin sağlandığını",
+      "C": "Demokrasinin başarısız olduğunu",
+      "D": "Askeri müdahale yapıldığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "1950 seçimleri çok partili demokratik sisteme barışçıl geçişin sembolüdür."
+  },
+  {
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "1946 ve Sonrası Demokratikleşme",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye'de kadınlara seçme ve seçilme hakkı;\n- 1930: Belediye seçimlerinde\n- 1934: Milletvekili seçimlerinde\n\nBu halklar birçok Avrupa ülkesinden önce verilmiştir. Bu durum hangisini gösterir?",
+    "siklar": {
+      "A": "Kadın haklarının önemsiz olduğunu",
+      "B": "Atatürk inkılâplarının kadın haklerında öncü olduğunu",
+      "C": "Avrupa'nın kadın hakelerına karşı olduğunu",
+      "D": "Sadece sembolik bir uygulama olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kadın haklerı birçok Avrupa ülkesinden önce verilmesi Atatürk inkılâplarının öncülüğünü gösterir."
+  },
+  {
+    "unite": "Ünite 5 – Demokratikleşme Çabaları",
+    "konu": "Askeri Müdahaleler ve Demokrasi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türkiye'de askeri müdahaleler (1960, 1971, 1980, 1997);\n\nBu müdahalelerin demokrasi açısından sonucu hangisidir?",
+    "siklar": {
+      "A": "Demokrasinin güçlenmesi",
+      "B": "Demokratik sürecin kesintiye uğraması ve sivil iradenin zayıflaması",
+      "C": "Ekonominin güçlenmesi",
+      "D": "Askeri güçlerin demokratikleşmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Askeri müdahaleler demokratik süreci kesintiye uğratarak sivil iradeyi zayıflatmıştır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Atatürk Dönemi Dış Politika İlkeleri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Atatürk'ün 'Yurtta sulh, cihanda sulh' ilkesi;\nI. Barışçıl dış politika\nII. Uluslararası iş birliği\nIII. Savaştan kaçınma\n\nBu ilkenin önemi hangisidir?",
+    "siklar": {
+      "A": "Pasif dış politika",
+      "B": "Bağımsızlığı koruyarak barışçıl ve onurlu bir dış politika izlemek",
+      "C": "Savaşa hazırlık",
+      "D": "İçe kapanma"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "'Yurtta sulh, cihanda sulh' bağımsızlığı koruyarak barışçıl ve onurlu dış politikayı ifade eder."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Nüfus Mübadelesi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "1923 nüfus mübadelesi ile Türkiye'deki Rumlar ve Yunanistan'daki Türkler karşılıklı değiştirilmiştir.\n\nMübadelenin amacı hangisidir?",
+    "siklar": {
+      "A": "Nüfusu artırmak",
+      "B": "İki ülke arasındaki azınlık sorunlarını kalıcı olarak çözmek",
+      "C": "İnsanları cezalandırmak",
+      "D": "Ticareti geliştirmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Nüfus mübadelesi Türk-Yunan azınlık sorunlarını kalıcı olarak çözmeyi amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Hatay Sorunu",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Hatay'ın Türkiye'ye katılması (1939);\nI. Atatürk'ün son büyük dış politika başarısıdır\nII. Diplomatik yollarla çözülmüştür\nIII. Halk oylamasıyla gerçekleşmiştir\n\nHatay'ın katılmasının önemi hangisidir?",
+    "siklar": {
+      "A": "Savaşla kazanılmış olması",
+      "B": "Barışçıl yollarla millî birliğin tamamlanması",
+      "C": "Fransa ile savaş yapılması",
+      "D": "BM kararıyla gerçekleşmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hatay diplomatik ve barışçıl yollarla millî birliğe katılmıştır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Montrö Boğazlar Sözleşmesi",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Montrö Boğazlar Sözleşmesi (1936);\nI. Boğazlardaki Türk egemenliği tam olarak sağlanmış\nII. Uluslararası komisyon kaldırılmış\nIII. Ticaret gemilerine serbest geçiş hakkı devam etmiş\n\nMontrö'nün önemi hangisidir?",
+    "siklar": {
+      "A": "Boğazların kapatılması",
+      "B": "Türkiye'nin Boğazlar üzerinde tam egemenlik kurması",
+      "C": "Savaş başlaması",
+      "D": "Boğazların satılması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Montrö Türkiye'nin Boğazlar üzerinde tam egemenlik kurmasını sağlamıştır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Türkiye'nin Milletler Cemiyetine Girişi",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye 1932'de Milletler Cemiyeti'ne katılmıştır.\n\nBu katılımın amacı hangisidir?",
+    "siklar": {
+      "A": "Savaşa hazırlanmak",
+      "B": "Uluslararası alanda saygınlığını artırmak ve barışa katkıda bulunmak",
+      "C": "Başka ülkelere savaş açmak",
+      "D": "İçe kapanmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Milletler Cemiyeti'ne katılım uluslararası saygınlık ve barışa katkı amacı taşır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Balkan ve Sadabat Paktları",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Balkan Antantı (1934) ve Sadabat Paktı (1937);\nI. Bölgesel güvenlik ittifaklarıdır\nII. Savaş tehditlerine karşı kurulmuştur\nIII. Atatürk'ün barışçıl dış politikasının ürünüdür\n\nBu paktların ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Savaş açmak",
+      "B": "Sınır komşularıyla barışı korumak ve güvenlik ittifakları kurmak",
+      "C": "Sömürge edinmek",
+      "D": "Dış ticareti durdurmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Balkan ve Sadabat paktları komşularla barışı koruyarak güvenlik ittifakları kurdmayı amaçlamıştır."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Musul Sorunu",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Musul sorunu Türkiye ile İngiltere arasındaki önemli bir sorundu. 1926'da Musul İngiltere mandası altındaki Irak'a bırakılmıştır.\n\nBu kararın nedeni hangisidir?",
+    "siklar": {
+      "A": "Türkiye'nin Musul'u istemesi",
+      "B": "İngiltere'nin Milletler Cemiyeti kararını lehine çevirmesi ve dönemin koşullarının zorlaması",
+      "C": "Halkın Irak'ı tercih etmesi",
+      "D": "BM'nin kararı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İngiltere Milletler Cemiyeti aracılığıyla kararı lehine çevirmiştir."
+  },
+  {
+    "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+    "konu": "Atatürk Dönemi Dış Politika İlkeleri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Atatürk dönemi dış politikasının özellikleri;\nI. Tam bağımsızlık\nII. Gerçekçilik\nIII. Barışçılık\nIV. Batı ile iyi ilişkiler\n\nBu politikanın temel ilkesi hangisidir?",
+    "siklar": {
+      "A": "Savaşçılık",
+      "B": "Tam bağımsızlık ve barışçılık",
+      "C": "İçe kapanmak",
+      "D": "Sömürgecilik"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Atatürk dönemi dış politikası tam bağımsızlık ve barışçılık temelinde yürütülmüştür."
+  }
+]

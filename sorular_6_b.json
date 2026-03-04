@@ -1,0 +1,752 @@
+[
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Piknik yeri belirlenirken öğretmen tüm öğrencilerin fikrini almış ve çoğunluğun tercihi seçilmiştir.\n\nBu uygulama hangi ilkeye örnektir?",
+    "siklar": {
+      "A": "Azınlığın çoğunluğa boyun eğmesi",
+      "B": "Çoğunluğun kararına saygı ve katılımcılık",
+      "C": "Öğretmenin tek karar vermesi",
+      "D": "Sadece başarılıların söz hakkı olması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Herkesin fikrini alarak çoğunluk kararına göre hareket etmek demokratik katılımcılıktır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Eğitim hakkı vardır ancak okula devam etme ve kurallara uyma sorumlulukları da bulunur.\n\nBu durum aşağıdakilerden hangisini açıklar?",
+    "siklar": {
+      "A": "Haklar ve sorumluluklar bağımsızdır",
+      "B": "Her hak beraberinde sorumluluk getirir; birbirini tamamlar",
+      "C": "Sorumluluklar sadece yetişkinlere aittir",
+      "D": "Haklar sınırsızdır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Her hak beraberinde sorumluluk getirir; ikisi birbirini tamamlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "E-devlet ile adres değişikliği, vergi ödeme, sağlık randevusu internet üzerinden yapılır.\n\nE-devletin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Devlet kurumlarını tamamen ortadan kaldırması",
+      "B": "Vatandaşların kamu hizmetlerine hızlı ve kolay erişimini sağlaması",
+      "C": "Sadece gençler için olması",
+      "D": "İnternet kullanımını zorunlu kılması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "E-devlet zamandan ve mekândan bağımsız kamu hizmeti erişimi sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Sınıf başkanlığı seçiminde;\nI. Adaylar kendini tanıtmıştır\nII. Herkes eşit oy kullanmıştır\nIII. Öğretmen kendi istediğini seçmiştir\n\nDemokratik seçim ilkelerine uygun olanlar hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Tanıtım ve eşit oy demokratik ilkelerdir. Öğretmenin tek seçimi demokratik değildir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "TBMM'de yasalar milletvekillerinin oylarıyla kabul veya reddedilir.\n\nBu süreç hangisini yansıtır?",
+    "siklar": {
+      "A": "Tek kişi yönetimini",
+      "B": "Temsili demokrasi ve çoğulcu karar alma sürecini",
+      "C": "Askeri yönetimi",
+      "D": "Bürokratik işlemleri"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Milletvekillerinin oy kullanması temsili demokrasi ve çoğulcu karar alma sürecidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Demokratik toplumda;\nI. Düşünce özgürlüğü\nII. Basın özgürlüğü\nIII. Seçme ve seçilme hakkı\n\nBunların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Sadece gelişmiş ülkelerde geçerli olmaları",
+      "B": "Demokratik yönetimin temel unsurları olmaları",
+      "C": "Kısıtlanabilir haklar olmaları",
+      "D": "Sadece yetişkinlere ait olmaları"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Düşünce, basın özgürlüğü ve seçme hakkı demokrasinin temel unsurlarıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "BM Çocuk Hakları Sözleşmesi'ne göre her çocuğun;\nI. Eğitim alma\nII. Oyun oynama\nIII. Korunma\nhakkı vardır.\n\nBu hakların ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Sadece zengin ülkelerde geçerli olması",
+      "B": "Evrensel ve devredilmez olması",
+      "C": "Ailenin iznine bağlı olması",
+      "D": "18 yaşından sonra başlaması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çocuk hakları evrensel ve devredilmezdir; tüm dünya çocukları için geçerlidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir öğrencinin okula gitmesi;\nI. Eğitim hakkını kullanmasıdır\nII. Devam zorunluluğu sorumluluğudur\nIII. Hem hak hem sorumluluktur\n\nHangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Okula gitmek hem bir hak hem de bir sorumluluktur; üçü de doğrudur."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Dijital vatandaşlık;\nI. İnternette etik kurallara uyma\nII. Kişisel verileri koruma\nIII. Siber zorbalık yapma\nkavramlarından hangileriyle ilişkilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Dijital vatandaşlık etik kurallara uyma ve verileri korumayı kapsar. Siber zorbalık ihlaldir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "CİMER aracılığıyla vatandaşlar şikâyet ve önerilerini devlete iletebilir.\n\nBu uygulama hangisine katkı sağlar?",
+    "siklar": {
+      "A": "Devletin otoritesini artırmaya",
+      "B": "Vatandaş-devlet iletişimini güçlendirmeye ve demokratik katılımı artırmaya",
+      "C": "Şikâyetlerin gizli kalmasına",
+      "D": "Sadece yazılı başvuru yapılmasına"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "CİMER vatandaş-devlet iletişimini güçlendirir ve demokratik katılımı artırır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Muhtar seçiminde mahalledeki tüm seçmenler oy kullanır.\n\nMuhtar seçiminin önemi hangisidir?",
+    "siklar": {
+      "A": "Sadece idari bir formalitedir",
+      "B": "Yerel demokrasinin ve halkın yönetime katılımının bir göstergesidir",
+      "C": "Muhtarın hiçbir yetkisi yoktur",
+      "D": "Sadece büyük şehirlerde yapılır"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Muhtar seçimi yerel demokrasi ve halkın yönetime katılımının göstergesidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir ülkede;\n- Gazeteciler tutuklanıyor\n- Muhalefet partileri kapatılıyor\n- İnternet sansürleniyor\n\nBu ülkede ihlal edilen haklar;\nI. Basın özgürlüğü\nII. Siyasi haklar\nIII. İfade özgürlüğü\nhangilerini kapsar?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I ve III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Gazeteci tutuklanması basın, parti kapatma siyasi, sansür ifade özgürlüğü ihlalidir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Belediye meclisi toplantılarına vatandaşlar da izleyici olarak katılabilmektedir.\n\nBu uygulamanın amacı hangisidir?",
+    "siklar": {
+      "A": "Vatandaşları cezalandırmak",
+      "B": "Yönetimde şeffaflık ve denetim sağlamak",
+      "C": "Meclis toplantılarını engellemek",
+      "D": "Sadece siyasi propaganda yapmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vatandaşların meclisi izlemesi şeffaflık ve demokratik denetim sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Online oy kullanma sistemleri dünyada bazı ülkelerde denenmektedir.\n\nBu sistemin avantajı hangisidir?",
+    "siklar": {
+      "A": "Oy kullanmayı kolaylaştırarak katılımı artırması",
+      "B": "Seçim sonuçlarını geciktirmesi",
+      "C": "Oy gizliliğini tamamen kaldırması",
+      "D": "Sadece gençlerin oy kullanabilmesi"
+    },
+    "dogru_cevap": "A",
+    "aciklama": "Online oy kullanma kolaylık sağlayarak seçime katılımı artırabilir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Vergi vermek, seçimlerde oy kullanmak vatandaşlık görevidir.\n\nBu görevlerin ortak amacı hangisidir?",
+    "siklar": {
+      "A": "Bireyleri cezalandırmak",
+      "B": "Devletin ve toplumun düzenli işleyişini sağlamak",
+      "C": "Sadece yöneticilere fayda sağlamak",
+      "D": "Vatandaşları kontrol etmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Vatandaşlık görevleri devletin ve toplumun düzenli işleyişini sağlar."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Demokrasilerde;\n- Hukuk devleti ilkesi geçerlidir\n- Yargı bağımsızdır\n- Basın özgürdür\n\nBu özelliklerin ortak işlevi hangisidir?",
+    "siklar": {
+      "A": "Devleti güçlü kılmak",
+      "B": "Bireylerin haklarını korumak ve iktidarı denetlemek",
+      "C": "Ekonomik kalkınmayı sağlamak",
+      "D": "Askeri güç oluşturmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hukuk devleti, yargı bağımsızlığı ve basın özgürlüğü hakları korur ve iktidarı denetler."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir belediye, vatandaşların şikâyet ve önerilerini alabileceği bir mobil uygulama geliştirmiştir.\n\nBu uygulamanın katkısı hangisidir?",
+    "siklar": {
+      "A": "Technoloji bağımlılığı artmıştır",
+      "B": "Demokratik katılım ve yönetim-vatandaş iletişimi güçlenmiştir",
+      "C": "Belediye işleri yavaşlamıştır",
+      "D": "Sadece gençler kullanabilmektedir"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Dijital platformlar demokratik katılımı ve yönetim-vatandaş iletişimini güçlendirir."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir toplumda;\nI. Kanun önünde eşitlik\nII. Yargıya başvuru hakkı\nIII. Adil yargılanma hakkı\n\nBu hakların güvence altına alınması hangi devlet ilkesidir?",
+    "siklar": {
+      "A": "Monarşi",
+      "B": "Hukuk devleti",
+      "C": "Teokrasi",
+      "D": "Oligarşi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kanun önünde eşitlik, yargıya başvuru ve adil yargılanma hukuk devleti ilkesinin unsurlarıdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Temel Hak ve Sorumluluklar",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Çocuk işçiliği ve erken yaşta evlilik çocuk hakları ihlalidir.\n\nBu ihlallerin önlenmesi için en önemli adım hangisidir?",
+    "siklar": {
+      "A": "Çocukları toplumdan ayırmak",
+      "B": "Eğitim ve farkındalık ile toplumsal bilinç oluşturmak",
+      "C": "Ailelere daha fazla özgürlük vermek",
+      "D": "Sorunları görmezden gelmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Çocuk hakları ihlallerinin önlenmesinde eğitim ve toplumsal farkındalık en önemli adımdır."
+  },
+  {
+    "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+    "konu": "Yönetim ve Karar Alma Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Türkiye Cumhuriyeti'nin yönetim biçimi 'demokratik, laik, sosyal bir hukuk devleti'dir.\n\nBu tanımdaki 'sosyal devlet' kavramı neyi ifade eder?",
+    "siklar": {
+      "A": "Devletin sadece zenginlere hizmet vermesi",
+      "B": "Devletin tüm vatandaşlara eşit fırsat ve temel ihtiyaçların karşılanmasını sağlamasını",
+      "C": "Sosyal medyanın devlet tarafından yönetilmesini",
+      "D": "Devletin hiçbir hizmet vermemesini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sosyal devlet, vatandaşlara eşit fırsat ve temel ihtiyaçların karşılanmasını garanti eder."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Sanayi ve hizmet sektörünün tarıma göre daha fazla gelişmiş olması neyi gösterir?",
+    "siklar": {
+      "A": "Ülkenin tarımdan tamamen vazgeçtiğini",
+      "B": "Ülkenin gelişmişlik düzeyinin yüksek olduğunu",
+      "C": "Tarımın önemsiz olduğunu",
+      "D": "İşsizliğin ortadan kalktığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Sanayi ve hizmet sektörünün ağırlığı genellikle ekonomik gelişmişlik göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Girişimci meyve reçeli üretmiş; önce hammadde almış, fabrika kiralamış, işçi çalıştırmış, internetten satmıştır.\n\nEkonomik aşamalar sırasıyla hangileridir?",
+    "siklar": {
+      "A": "Tüketim → Üretim → Dağıtım",
+      "B": "Üretim → Dağıtım → Tüketim",
+      "C": "Dağıtım → Üretim → Tüketim",
+      "D": "Tüketim → Dağıtım → Üretim"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Üretim (reçel yapma), dağıtım (internet satışı), tüketim (müşteri alımı) sırasıyla gerçekleşir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "I. Çiftçilik → Tarım sektörü\nII. Öğretmenlik → Hizmet sektörü\nIII. Tekstil üretimi → Sanayi sektörü\n\nBu eşleştirmelerden hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Çiftçilik tarım, öğretmenlik hizmet, tekstil sanayi sektörüne aittir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir firma;\nI. Pazar araştırması yapmış\nII. Hedef kitleyi belirlemiş\nIII. Ürünü fiyatlandırmış\nIV. Reklam stratejisi oluşturmuş\n\nBu firma hangi süreci uygulamaktadır?",
+    "siklar": {
+      "A": "Üretim süreci",
+      "B": "Pazarlama süreci",
+      "C": "Tüketim süreci",
+      "D": "Hammadde temini"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Pazar araştırması, hedef kitle, fiyatlandırma ve reklam pazarlama sürecinin aşamalarıdır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir ülkede çalışan nüfusun %60'ı hizmet, %30'u sanayi, %10'u tarım sektöründedir.\n\nBu dağılım ülke hakkında neyi gösterir?",
+    "siklar": {
+      "A": "Ülkenin az gelişmiş olduğunu",
+      "B": "Ülkenin gelişmiş ekonomiye sahip olduğunu",
+      "C": "Tarımın tamamen bittiğini",
+      "D": "İşsizliğin yüksek olduğunu"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hizmet sektörünün baskınlığı gelişmiş ekonominin göstergesidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci limonata satmak istemektedir.\n- Maliyeti hesaplamış\n- Fiyat belirlemiş\n- Okul bahçesinde stand kurmuş\n- Afişle reklamını yapmış\n\nBu süreçte;\nI. Girişimcilik\nII. Pazarlama\nIII. Kâr-zarar hesabı\nkavramlarından hangileri uygulanmıştır?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Limonata satışı girişimcilik, reklam pazarlama, maliyet hesabı kâr-zarar analizidir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "I. Hammadde üretimi\nII. Ürün işleme\nIII. Satış ve hizmet\n\nBu aşamalar sırasıyla hangi sektörlere karşılık gelir?",
+    "siklar": {
+      "A": "Hizmet, tarım, sanayi",
+      "B": "Tarım, sanayi, hizmet",
+      "C": "Sanayi, tarım, hizmet",
+      "D": "Tarım, hizmet, sanayi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hammadde tarım, işleme sanayi, satış-hizmet hizmet sektörüne karşılık gelir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Bir aile sabunları satın alırken;\n- Fiyat karşılaştırması yapmış\n- İndirimli ürünleri tercih etmiş\n- İhtiyacından fazla almamış\n\nBu davranışlar hangisine örnektir?",
+    "siklar": {
+      "A": "Savurganlık",
+      "B": "Bilinçli tüketicilik",
+      "C": "Stokçuluk",
+      "D": "Lüks harcama"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Fiyat karşılaştırma, indirim tercih ve ihtiyaç kadar alma bilinçli tüketiciliktir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "İhracat bir ülkenin dışarıya ürün satmasıdır. İthalat ise dışarıdan ürün almasıdır.\n\nBir ülkenin ihracatının ithalatından fazla olmasının avantajı hangisidir?",
+    "siklar": {
+      "A": "Ülkenin dışa bağımlı kalması",
+      "B": "Dış ticaret fazlası vererek ekonomik güç kazanması",
+      "C": "Yerli üretimin azalması",
+      "D": "İthalat vergilerinin artması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İhracat fazlası dış ticaret fazlası oluşturur ve ekonomik gücü artırır."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Reklam, tüketicileri ürün hakkında bilgilendirmek ve satışı artırmak amacıyla yapılır.\n\nReklamların tüketiciler üzerindeki olumsuz etkisi hangisidir?",
+    "siklar": {
+      "A": "Ürün çeşitliliğini artırması",
+      "B": "Gereksiz ihtiyaçlar oluşturarak aşırı tüketimi teşvik etmesi",
+      "C": "Fiyatları düşürmesi",
+      "D": "Kalite standartlarını yükseltmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Reklamlar gereksiz ihtiyaçlar yaratarak aşırı tüketime yol açabilir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Nitelikli iş gücü, bir ülkenin ekonomik kalkınmasında en önemli faktörlerdendir.\n\nNitelikli iş gücünü artırmanın en etkili yolu hangisidir?",
+    "siklar": {
+      "A": "Daha fazla fabrika kurmak",
+      "B": "Eğitim kalitesini yükseltmek ve mesleki eğitimi güçlendirmek",
+      "C": "İthalatı artırmak",
+      "D": "Vergileri düşürmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Eğitim ve mesleki eğitim nitelikli iş gücünü artırmanın en etkili yoludur."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Kooperatif birlikte üretim, pazarlama ve tüketim yapmak üzere kurulan örgütlerdir.\n\nKooperatiflerin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Sadece büyük şirketlere hizmet vermesi",
+      "B": "Küçük üreticilerin güçlerini birleştirerek rekabet edebilmesi",
+      "C": "Devlet kurumu olması",
+      "D": "Kâr amacı gütmeden sadece üretim yapması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kooperatifler küçük üreticilerin güçlerini birleştirerek piyasada rekabet etmelerini sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Bankalar mevduat toplama, kredi verme ve havale işlemleri yapar.\n\nBankaların ekonomideki temel rolü hangisidir?",
+    "siklar": {
+      "A": "Sadece para biriktirmek",
+      "B": "Tasarrufları yatırıma dönüştürerek ekonomik büyümeye katkı sağlamak",
+      "C": "Devlet vergisi toplamak",
+      "D": "Döviz kuru belirlemek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Bankalar tasarrufları kredi olarak yatırıma yönlendirerek ekonomik büyümeye katkı sağlar."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Yatırım ve Pazarlama Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "E-ticaret sayesinde üreticiler ürünlerini dünya genelinde satabilmektedir.\n\nE-ticaretin en önemli avantajı hangisidir?",
+    "siklar": {
+      "A": "Üretim maliyetlerini artırması",
+      "B": "Coğrafi sınırları ortadan kaldırarak pazarı genişletmesi",
+      "C": "Mağaza açma zorunluluğu",
+      "D": "Ürün kalitesini düşürmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "E-ticaret coğrafi sınırları kaldırarak üreticilerin pazarını genişletir."
+  },
+  {
+    "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+    "konu": "Ekonomik Faaliyetler ve Meslekler",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Türkiye'nin;\n- Hazelnut (fındık) üretiminde dünya birincisi\n- Otomotiv ihracatında Avrupa'da önemli pay\n- Turizm gelirlerinde sürekli artış\n\nBu bilgiler Türkiye hakkında hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece tarım ülkesi olduğunu",
+      "B": "Tarım, sanayi ve hizmet sektörlerinde çeşitlenmiş bir ekonomiye sahip olduğunu",
+      "C": "Sadece turizme dayalı olduğunu",
+      "D": "İhracat yapmadığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Fındık (tarım), otomotiv (sanayi), turizm (hizmet) üç sektördeki başarı çeşitlenmiş ekonomiyi gösterir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Osmanlı'da ulaklar atla günlerce mektup taşırken, günümüzde e-posta saniyeler içinde ulaşır.\n\nBu değişim hangisinin sonucudur?",
+    "siklar": {
+      "A": "İnsanların mektup yazmayı bırakmasının",
+      "B": "İletişim teknolojilerinin hızla gelişmesinin",
+      "C": "Atların artık kullanılmamasının",
+      "D": "Posta hizmetlerinin kaldırılmasının"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Ulaktan e-postaya geçiş iletişim teknolojisindeki devrimsel gelişmenin sonucudur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Bir mucit ürününün kopyalanmaması için patent başvurusu yapmıştır.\n\nPatent hakkının amacı hangisidir?",
+    "siklar": {
+      "A": "İcat yapılmasını engellemek",
+      "B": "Buluş sahiplerinin haklarını korumak ve yenilikçiliği teşvik etmek",
+      "C": "Sadece devletin buluş yapmasını sağlamak",
+      "D": "Tüm buluşların ücretsiz paylaşılmasını zorunlu kılmak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Patent buluş sahiplerinin haklarını koruyarak yenilikçiliği teşvik eder."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "Ulaşım teknolojisinin gelişimi;\nI. At arabası\nII. Buharlı tren\nIII. Elektrikli otomobil\n\nBu sıralama;\nI. İnsan gücünden makine gücüne geçişi\nII. Çevre duyarlılığının artışını\nIII. Hız ve konforun gelişimini\ngösterir. Hangileri doğrudur?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "At arabasından elektrikli arabaya geçiş insan→makine, çevre duyarlılığı ve hız-konfor gelişimini gösterir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Hızlı tren sistemi sayesinde İstanbul-Ankara arası 3.5 saate inmiştir.\n\nBu gelişmenin en önemli faydası hangisidir?",
+    "siklar": {
+      "A": "Hava yolu şirketlerinin kapanması",
+      "B": "Şehirler arası ulaşımın hızlanması ve ekonominin canlanması",
+      "C": "Otoyolların gereksiz hale gelmesi",
+      "D": "Nüfusun azalması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hızlı tren şehirler arası ulaşımı hızlandırarak ekonomik canlılığa katkı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir öğrenci ödevini internetten kopyalayıp kendi yazmış gibi teslim etmiştir.\n\nBu davranış hangi etik kurala aykırıdır?",
+    "siklar": {
+      "A": "Çevre koruma",
+      "B": "Akademik dürüstlük ve telif hakkı",
+      "C": "Trafik kuralları",
+      "D": "Spor ahlakı"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Başkasının çalışmasını kopyalamak akademik dürüstlük ve telif hakkı ihlalidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Zor",
+    "soru": "İletişim araçlarının gelişimi:\nDuman işaretleri → Telgraf → Telefon → İnternet\n\nBu süreçte en köklü değişim hangisidir?",
+    "siklar": {
+      "A": "Mesajların boyutunun küçülmesi",
+      "B": "İletişimin anında ve küresel ölçekte yapılabilir hale gelmesi",
+      "C": "İnsanların daha az iletişim kurması",
+      "D": "Teknolojinin pahalılaşması"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "İletişimin anlık ve küresel olması en köklü değişimdir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Telif hakkı; bir kişinin yazdığı kitap, bestelediği müzik veya çektiği fotoğrafı koruma altına alır.\n\nTelif hakkının amacı hangisidir?",
+    "siklar": {
+      "A": "Eserlerin ücretsiz dağıtılmasını sağlamak",
+      "B": "Fikri emek sahiplerinin haklarını korumak",
+      "C": "Sanat üretimini engellemek",
+      "D": "Devletin gelir elde etmesini sağlamak"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Telif hakkı fikri emek sahiplerinin haklarını koruyarak üretimi teşvik eder."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2023,
+    "zorluk": "Orta",
+    "soru": "Uydu teknolojisi ile;\nI. Hava durumu tahminleri yapılmaktadır\nII. GPS navigasyon hizmeti sunulmaktadır\nIII. Canlı yayın yapılmaktadır\n\nBunların tümü hangi alanın gelişimiyle mümkün olmuştur?",
+    "siklar": {
+      "A": "Tarım teknolojisi",
+      "B": "Uzay ve iletişim teknolojisi",
+      "C": "Tıp teknolojisi",
+      "D": "Enerji teknolojisi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Hava tahmini, GPS ve canlı yayın uzay ve iletişim teknolojisinin ürünleridir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Matbaa;\nI. Bilginin hızla yayılmasını sağlamış\nII. Eğitimde fırsat eşitliğini artırmış\nIII. Dini otoritenin zayıflamasına katkıda bulunmuş (Reform)\n\nMatbaanın etkileri hangileridir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "D",
+    "aciklama": "Matbaa bilgi yayılımı, eğitim eşitliği ve Reform hareketine katkıda bulunmuştur."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2022,
+    "zorluk": "Zor",
+    "soru": "Bir yazılımcı geliştirdiği uygulamayı;\nI. Patent almış\nII. Kaynak kodunu açık kaynak olarak paylaşmış\nIII. Kullanıcı lisansı oluşturmuş\n\nBunlardan hangileri fikri mülkiyetin korunmasıyla ilgilidir?",
+    "siklar": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "Yalnız II",
+      "D": "I, II ve III"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Patent ve kullanıcı lisansı fikri mülkiyetin korunmasıyla ilgilidir. Açık kaynak farklı bir modeldir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2022,
+    "zorluk": "Orta",
+    "soru": "Drone (insansız hava aracı) teknolojisi;\nI. Tarımda ilaçlama\nII. Kargo teslimatı\nIII. Afet bölgelerinde keşif\nalanlarında kullanılmaktadır.\n\nBu durum teknolojiyle ilgili hangisini gösterir?",
+    "siklar": {
+      "A": "Sadece askeri amaçla kullanıldığını",
+      "B": "Farklı sektörlerde geniş kullanım alanı bulduğunu",
+      "C": "Pahalı ve erişilemez olduğunu",
+      "D": "Sadece eğlence amaçlı kullanıldığını"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Drone teknolojisi tarım, lojistik ve afet yönetimi gibi farklı sektörlerde kullanılmaktadır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2021,
+    "zorluk": "Orta",
+    "soru": "Elektrikli araçlar fosil yakıtlı araçlara göre çevre dostudur.\n\nElektrikli araçların yaygınlaşmasının en önemli katkısı hangisidir?",
+    "siklar": {
+      "A": "Araç fiyatlarını artırması",
+      "B": "Hava kirliliğinin ve karbon salınımının azalması",
+      "C": "Benzin istasyonlarının kapanması",
+      "D": "Ulaşım hızının düşmesi"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Elektrikli araçlar hava kirliliği ve karbon salınımını azaltarak çevreye katkı sağlar."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2021,
+    "zorluk": "Zor",
+    "soru": "Bir öğrenci araştırma ödevinde kullandığı kaynaklara atıf yapmıştır.\n\nKaynak göstermenin önemi hangisidir?",
+    "siklar": {
+      "A": "Ödevi uzatmak",
+      "B": "Fikri mülkiyet haklarına saygı göstermek ve akademik dürüstlüğü sağlamak",
+      "C": "Öğretmeni etkilemek",
+      "D": "Not ortalamasını yükseltmek"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Kaynak göstermek fikri mülkiyete saygı ve akademik dürüstlüğün temelidir."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Ulaşım ve İletişim Teknolojileri",
+    "yil": 2024,
+    "zorluk": "Zor",
+    "soru": "5G teknolojisi;\nI. Çok hızlı internet bağlantısı sağlar\nII. Nesnelerin interneti (IoT) uygulamalarını kolaylaştırır\nIII. Sağlıkta uzaktan ameliyat imkânı sunar\n\nBu gelişmeler hangi alanda dönüşüm yaratır?",
+    "siklar": {
+      "A": "Sadece eğlence sektöründe",
+      "B": "İletişim, sağlık ve endüstri gibi birçok alanda",
+      "C": "Yalnızca tarımda",
+      "D": "Sadece ulaşımda"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "5G iletişim, sağlık ve endüstri gibi birçok alanda dönüşüm yaratır."
+  },
+  {
+    "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+    "konu": "Telif ve Patent Süreci",
+    "yil": 2024,
+    "zorluk": "Orta",
+    "soru": "Bir müzik yapımcısı eserlerini streaming platformlarında yayınlamakta ve dinleme başına telif ücreti almaktadır.\n\nBu sistem hangisine dayanır?",
+    "siklar": {
+      "A": "Ücretsiz paylaşım",
+      "B": "Fikri mülkiyet hakları ve telif sistemi",
+      "C": "Devlet sübvansiyonu",
+      "D": "Hayırseverlik"
+    },
+    "dogru_cevap": "B",
+    "aciklama": "Streaming telif sistemi fikri mülkiyet haklarının dijital ortamdaki uygulamasıdır."
+  }
+]

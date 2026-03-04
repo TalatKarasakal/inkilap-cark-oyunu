@@ -21,12 +21,9 @@ import tkinter as tk
 from tkinter import font as tkfont
 from typing import Optional, Dict, List
 
-# Pygame ses için
+# Pygame ses için (başlangıcı hızlandırmak için sadece tanım, import sonradan)
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-try:
-    import pygame
-except ImportError:
-    pygame = None
+pygame = None
 
 import ctypes
 try:
@@ -233,34 +230,10 @@ class CarkOyunu(tk.Tk):
 
         self.configure(bg="#1a0a00")
 
-        # --- SES (Audio) KURULUMU ---
+        # --- SES (Audio) KURULUMU (Lazy init - hızlı açılış) ---
         self.audio_enabled = False
+        self.audio_initialized = False
         self.sounds = {}
-        if pygame:
-            try:
-                pygame.mixer.init()
-                self.audio_enabled = True
-                sp = resource_path("sounds")
-                s_dict = {
-                    "spin":  "spin.wav",
-                    "tick":  "tick.wav",
-                    "win":   "win.wav",
-                    "wrong": "wrong.wav",
-                    "fail":  "fail.wav"
-                }
-                for k, v in s_dict.items():
-                    fp = os.path.join(sp, v)
-                    if os.path.exists(fp):
-                        self.sounds[k] = pygame.mixer.Sound(fp)
-                
-                # Çark sesi daha kısık olsun
-                if "spin" in self.sounds:
-                    self.sounds["spin"].set_volume(0.3)
-                if "tick" in self.sounds:
-                    self.sounds["tick"].set_volume(0.5)
-
-            except Exception as e:
-                print("Ses sistemi başlatılamadı:", e)
 
         # Tema
         self.current_theme = "energy"
@@ -315,6 +288,45 @@ class CarkOyunu(tk.Tk):
         self._apply_theme()
         self._draw_wheel()
         self._show_grade_selection()
+        
+
+
+    # ─────────────────────────────────────────
+    # SES - LAZY INIT (ilk sesle birlikte başlatılır)
+    # ─────────────────────────────────────────
+
+    def _init_audio(self):
+        """Sesi ilk ihtiyaçta yükler – açılışı hızlandırır."""
+        if self.audio_initialized:
+            return
+        self.audio_initialized = True
+        try:
+            global pygame
+            import pygame
+            pygame.mixer.init()
+            self.audio_enabled = True
+            sp = resource_path("sounds")
+            s_dict = {
+                "spin": "spin.wav", "tick": "tick.wav",
+                "win": "win.wav", "wrong": "wrong.wav", "fail": "fail.wav"
+            }
+            for k, v in s_dict.items():
+                fp = os.path.join(sp, v)
+                if os.path.exists(fp):
+                    self.sounds[k] = pygame.mixer.Sound(fp)
+            if "spin" in self.sounds:
+                self.sounds["spin"].set_volume(0.3)
+            if "tick" in self.sounds:
+                self.sounds["tick"].set_volume(0.5)
+        except Exception as e:
+            print("Ses sistemi başlatılamadı:", e)
+
+    def _play_sound(self, name: str):
+        """Sesi çalar, gerekiyorsa önce audio başlatır."""
+        if not self.audio_initialized:
+            self._init_audio()
+        if self.audio_enabled and name in self.sounds:
+            self.sounds[name].play()
 
     # ─────────────────────────────────────────
     # SORU HAVUZU
@@ -325,9 +337,24 @@ class CarkOyunu(tk.Tk):
         random.shuffle(self.remaining)
 
     def _pick_question(self) -> dict:
+        """Soru seçer – ardışık aynı doğru cevap şıkkı gelmesini engeller."""
         if not self.remaining:
             self._refill_pool()
-        return self.remaining.pop()
+
+        last_key = getattr(self, '_last_correct_key', None)
+
+        # Farklı cevap şıkkı olan soru bulmaya çalış (maks 10 deneme)
+        if last_key and len(self.remaining) > 1:
+            for i in range(min(10, len(self.remaining))):
+                candidate = self.remaining[-(i+1)]
+                if candidate.get('dogru_cevap') != last_key:
+                    self.remaining.pop(-(i+1))
+                    self._last_correct_key = candidate['dogru_cevap']
+                    return candidate
+
+        q = self.remaining.pop()
+        self._last_correct_key = q.get('dogru_cevap')
+        return q
 
     # ─────────────────────────────────────────
     # UI OLUŞTURMA
@@ -525,6 +552,9 @@ class CarkOyunu(tk.Tk):
 
         extra_turns    = random.randint(5, 9) * 360
         target_slice   = random.randint(0, SLICE_COUNT - 1)
+        # İflas gelme olasılığını azalt (%75 ihtimalle tekrar kura çek)
+        if WHEEL_SLICES[target_slice] == "İFLAS" and random.random() < 0.75:
+            target_slice = random.choice([i for i, s in enumerate(WHEEL_SLICES) if s != "İFLAS"])
         slice_mid      = target_slice * SLICE_ANGLE + SLICE_ANGLE / 2
         final_angle    = 90 - slice_mid
         self.anim_start_angle = self.wheel_angle
@@ -548,11 +578,10 @@ class CarkOyunu(tk.Tk):
         self.wheel_angle = current_angle
         self._draw_wheel()
 
-        if self.audio_enabled and "spin" in self.sounds:
-            pieces_crossed = int((current_angle - self.last_played_angle) / SLICE_ANGLE)
-            if pieces_crossed >= 1:
-                self.last_played_angle += pieces_crossed * SLICE_ANGLE
-                self.sounds["spin"].play()
+        pieces_crossed = int((current_angle - self.last_played_angle) / SLICE_ANGLE)
+        if pieces_crossed >= 1:
+            self.last_played_angle += pieces_crossed * SLICE_ANGLE
+            self._play_sound("spin")
 
         if progress < 1.0:
             self.anim_id = self.after(int(dt), self._animate_step)
@@ -623,8 +652,7 @@ class CarkOyunu(tk.Tk):
         self._update_timer_display()
 
         if self.timer_remaining > 0:
-            if self.audio_enabled and "tick" in self.sounds:
-                self.sounds["tick"].play()
+            self._play_sound("tick")
 
         if self.timer_remaining <= 0:
             self._time_expired()
@@ -988,11 +1016,9 @@ class CarkOyunu(tk.Tk):
         if timeout:
             msg       = f"⏰  Süre Doldu!  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
-            if self.audio_enabled and "fail" in self.sounds:
-                self.sounds["fail"].play()
+            self._play_sound("fail")
         elif is_correct:
-            if self.audio_enabled and "win" in self.sounds:
-                self.sounds["win"].play()
+            self._play_sound("win")
             if self.x2_mode:
                 msg = f"🎉  Doğru!  Toplam puanın 2 katına çıktı → {self.total_score}"
             else:
@@ -1002,8 +1028,7 @@ class CarkOyunu(tk.Tk):
         else:
             msg   = f"❌  Yanlış!  Doğru cevap: {correct_key}  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
-            if self.audio_enabled and "wrong" in self.sounds:
-                self.sounds["wrong"].play()
+            self._play_sound("wrong")
 
         tk.Label(rf, text=msg, font=self.f_big,
                  bg=t["bg_card"], fg=msg_color).pack(pady=4)
