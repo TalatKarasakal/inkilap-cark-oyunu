@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-LGS İnkılap Tarihi Çark Oyunu  –  v2.0
+LGS Sosyal Bilgiler Çark Oyunu  –  v3.0
 ========================================
 Yenilikler:
-  • 100+ Soru (6 ünite)
+  • 5. 6. 7. ve 8. Sınıf desteği (sınıf seçim ekranı)
+  • 130+ Soru (her sınıf için ayrı soru bankası)
   • 45 saniyelik geri sayım zamanlayıcısı
   • Puanlama: Doğru +çark+10 bonus / Yanlış veya süre dolunca -5
   • Ünite bazlı istatistik / özet ekranı
@@ -174,9 +175,22 @@ PENALTY_WRONG   = 5
 # YARDIMCI
 # ──────────────────────────────────────────────
 
-def load_questions(path: str) -> list:
+def load_questions(path: str) -> dict:
+    """Sınıf bazlı soru sözlüğü döndürür: {'5': [...], '6': [...], ...}"""
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    # Eski format (düz liste) ise 8. sınıf olarak sar
+    if isinstance(data, list):
+        return {"8": data}
+    return data
+
+# Sınıf bilgileri
+GRADE_INFO = {
+    "5": {"label": "5. Sınıf", "desc": "Sosyal Bilgiler", "emoji": "📗", "color": "#22c55e", "hover": "#16a34a"},
+    "6": {"label": "6. Sınıf", "desc": "Sosyal Bilgiler", "emoji": "📘", "color": "#3b82f6", "hover": "#2563eb"},
+    "7": {"label": "7. Sınıf", "desc": "Sosyal Bilgiler", "emoji": "📙", "color": "#f59e0b", "hover": "#d97706"},
+    "8": {"label": "8. Sınıf", "desc": "İnkılap Tarihi", "emoji": "📕", "color": "#ef4444", "hover": "#dc2626"},
+}
 
 def ease_out_cubic(t: float) -> float:
     return 1 - (1 - t) ** 3
@@ -186,6 +200,7 @@ def ease_out_cubic(t: float) -> float:
 # ──────────────────────────────────────────────
 
 class CarkOyunu(tk.Tk):
+    STATE_GRADE_SELECT = "grade_select"
     STATE_IDLE      = "idle"
     STATE_SPINNING  = "spinning"
     STATE_QUESTION  = "question"
@@ -200,12 +215,12 @@ class CarkOyunu(tk.Tk):
         # Ensure icon appears in taskbar on Windows
         try:
             import ctypes
-            myappid = 'com.talatkarasakal.carkoyunu.v2'
+            myappid = 'com.talatkarasakal.carkoyunu.v3'
             ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
         except Exception:
             pass
 
-        self.title("LGS İnkılap Tarihi – Çark Oyunu  v2")
+        self.title("LGS Sosyal Bilgiler – Çark Oyunu  v3")
         self.minsize(1100, 850)
         self.geometry("1240x950")
         
@@ -263,10 +278,11 @@ class CarkOyunu(tk.Tk):
         self.f_icon   = tkfont.Font(family=fam, size=18)
         self.f_timer  = tkfont.Font(family=fam, size=20, weight="bold")
 
-        # Soru havuzu
-        self.all_questions = load_questions(resource_path("sorular.json"))
+        # Soru havuzu (sınıf bazlı)
+        self.questions_db = load_questions(resource_path("sorular.json"))
+        self.selected_grade: Optional[str] = None
+        self.all_questions: List[dict] = []
         self.remaining: List[dict] = []
-        self._refill_pool()
 
         # Oyun durumu
         self.state          = self.STATE_IDLE
@@ -298,7 +314,7 @@ class CarkOyunu(tk.Tk):
         self._build_ui()
         self._apply_theme()
         self._draw_wheel()
-        self._show_idle_panel()
+        self._show_grade_selection()
 
     # ─────────────────────────────────────────
     # SORU HAVUZU
@@ -324,7 +340,7 @@ class CarkOyunu(tk.Tk):
         self.top_bar.pack_propagate(False)
 
         self.lbl_title = tk.Label(
-            self.top_bar, text="🏛  LGS İnkılap Tarihi – Çark Oyunu",
+            self.top_bar, text="🏛  LGS Sosyal Bilgiler – Çark Oyunu",
             font=self.f_title, anchor="w", padx=18
         )
         self.lbl_title.pack(side="left", fill="y")
@@ -336,6 +352,14 @@ class CarkOyunu(tk.Tk):
         )
         self.btn_theme.pack(side="right", fill="y")
         self.btn_theme.bind("<Button-1>", lambda _: self._cycle_theme())
+
+        # Ana Menü (Sınıf Seçimi)
+        self.btn_main_menu = tk.Label(
+            self.top_bar, text="🏠 Sınıf Seçimi", font=self.f_normal,
+            cursor="hand2", padx=14, pady=6
+        )
+        self.btn_main_menu.pack(side="right", fill="y")
+        self.btn_main_menu.bind("<Button-1>", lambda _: self._return_to_main_menu())
 
         # Sıfırla
         self.btn_reset = tk.Label(
@@ -493,7 +517,7 @@ class CarkOyunu(tk.Tk):
     # ─────────────────────────────────────────
 
     def _spin_wheel(self):
-        if self.state != self.STATE_IDLE:
+        if self.state != self.STATE_IDLE or self.selected_grade is None:
             return
         self.state = self.STATE_SPINNING
         for w in (self.btn_spin, self.btn_spin_icon, self.btn_spin_text):
@@ -667,6 +691,96 @@ class CarkOyunu(tk.Tk):
             w.destroy()
         self.q_canvas.yview_moveto(0)
 
+    def _show_grade_selection(self):
+        """Sınıf seçim ekranını gösterir."""
+        self.state = self.STATE_GRADE_SELECT
+        self.selected_grade = None
+        self._clear_right_panel()
+        f = self.question_panel
+        t = self.t
+
+        # Başlık
+        tk.Frame(f, height=30, bg=t["bg_card"]).pack()
+        tk.Label(f, text="📚", font=tkfont.Font(size=42),
+                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(10, 4))
+        tk.Label(f, text="Sınıf Düzeyini Seçiniz",
+                 font=self.f_title, bg=t["bg_card"], fg=t["fg"]).pack(pady=(4, 6))
+        tk.Label(f, text="Oynamak istediğiniz sınıf düzeyine tıklayın",
+                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(0, 12))
+
+        # Sınıf butonları 2x2 grid
+        grid_frame = tk.Frame(f, bg=t["bg_card"])
+        grid_frame.pack(padx=20, pady=4)
+
+        for i, (grade, info) in enumerate(GRADE_INFO.items()):
+            if grade not in self.questions_db:
+                continue
+            q_count = len(self.questions_db[grade])
+            unites = set(q["unite"] for q in self.questions_db[grade])
+
+            row, col = divmod(i, 2)
+            btn_frame = tk.Frame(grid_frame, bg=info["color"], cursor="hand2",
+                                 padx=16, pady=14,
+                                 highlightbackground=t["border"], highlightthickness=1)
+            btn_frame.grid(row=row, column=col, padx=8, pady=8, sticky="nsew")
+
+            emoji_lbl = tk.Label(btn_frame, text=info["emoji"],
+                                 font=tkfont.Font(size=28), bg=info["color"], fg="#ffffff")
+            emoji_lbl.pack(pady=(2, 4))
+
+            name_lbl = tk.Label(btn_frame, text=info["label"],
+                                font=self.f_big, bg=info["color"], fg="#ffffff")
+            name_lbl.pack()
+
+            desc_lbl = tk.Label(btn_frame, text=info["desc"],
+                                font=self.f_small, bg=info["color"], fg="#f3f4f6")
+            desc_lbl.pack()
+
+            count_lbl = tk.Label(btn_frame, text=f"{q_count} soru | {len(unites)} unite",
+                                 font=self.f_small, bg=info["color"], fg="#e5e7eb")
+            count_lbl.pack(pady=(2, 0))
+
+            # Bind click
+            for w in (btn_frame, emoji_lbl, name_lbl, desc_lbl, count_lbl):
+                w.bind("<Button-1>", lambda e, g=grade: self._select_grade(g))
+                # Hover effect
+                w.bind("<Enter>", lambda e, bf=btn_frame, c=info["hover"]: bf.config(bg=c) or [ch.config(bg=c) for ch in bf.winfo_children()])
+                w.bind("<Leave>", lambda e, bf=btn_frame, c=info["color"]: bf.config(bg=c) or [ch.config(bg=c) for ch in bf.winfo_children()])
+
+        grid_frame.columnconfigure(0, weight=1)
+        grid_frame.columnconfigure(1, weight=1)
+
+        # Alt bilgi
+        total = sum(len(v) for v in self.questions_db.values())
+        tk.Label(f, text=f"Toplam {total} soru | 4 sinif duzeyi",
+                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(14, 4))
+
+    def _select_grade(self, grade: str):
+        """Kullanıcı sınıf seçti → soruları yükle ve oyuna başla."""
+        self.selected_grade = grade
+        self.all_questions = list(self.questions_db[grade])
+        self._refill_pool()
+
+        # Başlığı güncelle
+        info = GRADE_INFO[grade]
+        self.title(f"LGS {info['label']} {info['desc']} – Çark Oyunu  v3")
+        self.lbl_title.config(text=f"🏛  {info['label']} {info['desc']} – Çark Oyunu")
+
+        # Oyun durumunu sıfırla
+        self.state          = self.STATE_IDLE
+        self.total_score    = 0
+        self.correct_count  = 0
+        self.wrong_count    = 0
+        self.solved_count   = 0
+        self.current_q      = None
+        self.current_points = 0
+        self.selected_opt   = None
+        self.wheel_angle    = 0.0
+        self.unite_stats    = {}
+        self._update_stats()
+        self._draw_wheel()
+        self._show_idle_panel()
+
     def _show_idle_panel(self):
         self._clear_right_panel()
         f = self.question_panel
@@ -677,7 +791,16 @@ class CarkOyunu(tk.Tk):
                  bg=t["bg_card"], fg=t["accent"]).pack(pady=(10, 4))
         tk.Label(f, text="Çarkı çevirerek\nbir puan belirleyin!",
                  font=self.f_big, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=10)
-        tk.Label(f, text=f"Soru havuzu: {len(self.all_questions)} soru  |  6 ünite",
+
+        grade_info_text = ""
+        if self.selected_grade and self.selected_grade in GRADE_INFO:
+            info = GRADE_INFO[self.selected_grade]
+            unites = set(q["unite"] for q in self.all_questions)
+            grade_info_text = f"{info['emoji']} {info['label']} {info['desc']}  |  {len(self.all_questions)} soru  |  {len(unites)} unite"
+        else:
+            grade_info_text = f"Soru havuzu: {len(self.all_questions)} soru"
+
+        tk.Label(f, text=grade_info_text,
                  font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack()
         tk.Label(f, text="Doğru: +çark puanı +10  |  Yanlış/Süre: −5",
                  font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(4, 0))
@@ -1020,7 +1143,39 @@ class CarkOyunu(tk.Tk):
         self.lbl_wrong.config(text=f"✗ {self.wrong_count}", fg=t["error"])
         self.lbl_solved.config(text=f"📝 {self.solved_count}")
 
+    def _return_to_main_menu(self):
+        """Ana sınıfların seçildiği ekrana dön."""
+        self._stop_timer()
+        if self.anim_id:
+            self.after_cancel(self.anim_id)
+            self.anim_id = None
+
+        self.state         = self.STATE_GRADE_SELECT
+        self.total_score   = 0
+        self.correct_count = 0
+        self.wrong_count   = 0
+        self.solved_count  = 0
+        self.current_q     = None
+        self.current_points = 0
+        self.selected_opt  = None
+        self.wheel_angle   = 0.0
+        self.unite_stats   = {}
+        self.selected_grade = None
+        self.all_questions  = []
+        self.remaining      = []
+
+        self.title("LGS Sosyal Bilgiler – Çark Oyunu  v3")
+        self.lbl_title.config(text="🏛  LGS Sosyal Bilgiler – Çark Oyunu")
+
+        self._update_stats()
+        self._draw_wheel()
+        self._show_grade_selection()
+
     def _reset_game(self):
+        """Mevcut oyunu en baştan (şu anki sınıf düzeyiyle) başlatır."""
+        if self.state == self.STATE_GRADE_SELECT:
+            return
+            
         self._stop_timer()
         if self.anim_id:
             self.after_cancel(self.anim_id)
@@ -1054,7 +1209,9 @@ class CarkOyunu(tk.Tk):
         self.t = THEMES[self.current_theme]
         self._apply_theme()
         self._draw_wheel()
-        if   self.state == self.STATE_IDLE:
+        if   self.state == self.STATE_GRADE_SELECT:
+            self._show_grade_selection()
+        elif self.state == self.STATE_IDLE:
             self._show_idle_panel()
         elif self.state == self.STATE_QUESTION:
             self._clear_right_panel()
@@ -1070,6 +1227,7 @@ class CarkOyunu(tk.Tk):
         self.top_bar.config(bg=t["bg_secondary"])
         self.lbl_title.config(bg=t["bg_secondary"], fg=t["fg"])
         self.btn_theme.config(bg=t["bg_secondary"], fg=t["accent"])
+        self.btn_main_menu.config(bg=t["bg_secondary"], fg=t["fg_dim"])
         self.btn_reset.config(bg=t["bg_secondary"], fg=t["fg_dim"])
         self.btn_stats.config(bg=t["bg_secondary"], fg=t["fg_dim"])
         self.main_frame.config(bg=t["bg"])

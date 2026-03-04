@@ -1,452 +1,2005 @@
-[
-    {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
-        "konu": "Avrupa'daki Gelişmeler ve Osmanlı",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Fransız İhtilali ile yayılan milliyetçilik akımı, çok uluslu bir yapıya sahip olan Osmanlı Devleti'ni derinden etkilemiştir. Sırplar, Yunanlar ve Bulgarlar gibi Balkan milletleri teker teker isyan ederek kendi bağımsız devletlerini kurmak istemişlerdir. Osmanlı aydınları ve devlet adamları ise bu parçalanmayı önlemek için Tanzimat ve Islahat fermanlarını yayımlamış, ayrıca meşrutiyeti ilan ederek halka yönetime katılma hakkı vermişlerdir.\n\nVerilen bu bilgilere göre Osmanlı Devleti'nin aldığı önlemlerin temel amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Avrupa devletlerinin ekonomik desteğini almak",
-            "B": "Sınırlarını genişleterek yeni topraklar fethetmek",
-            "C": "Azınlıkların devlete bağlılığını artırarak dağılmayı önlemek",
-            "D": "Milliyetçilik akımının Avrupa'daki etkisini kırmak"
+{
+    "5": [
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Gruplar ve Roller",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Ali, okulda sınıf başkanıdır ve arkadaşlarının sorunlarını öğretmenine iletir. Evde ise ailesine yardım eder ve ablasıyla birlikte ev işlerini paylaşır.\n\nBuna göre Ali'nin farklı gruplarda farklı roller üstlenmesi aşağıdakilerden hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "İnsanlar her ortamda aynı davranışı sergiler",
+                "B": "Bireyler bulundukları gruba göre farklı roller üstlenebilir",
+                "C": "Roller sadece okul ortamında geçerlidir",
+                "D": "Aile içinde herkesin görevi aynıdır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Her birey bulunduğu gruba (aile, okul, arkadaş çevresi) göre farklı roller üstlenir."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Parçada azınlık isyanlarına karşı Osmanlı'nın fermanlar ve meşrutiyet ile halka haklar vererek parçalanmayı (dağılmayı) engellemek istediği açıkça vurgulanmıştır. Yeni nesil sorularda okuduğunu anlama ve yorumlama ön plandadır."
-    },
-    {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
-        "konu": "Mustafa Kemal'in Fikir Hayatı",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Manastır Askerî İdadisinde öğrenim gördüğü yıllarda Mustafa Kemal'i en çok etkileyen olaylardan biri 1897 Türk-Yunan Savaşı'dır. Bu savaşta Türk ordusu cephede büyük bir zafer kazanmasına rağmen, masada yapılan antlaşma ile beklenen avantajı elde edememiştir. Mustafa Kemal, bu durum üzerine 'Savaş cephede kazanılır ama diplomasiyle sonuçlandırılır' gerçeğini yaşayarak öğrenmiştir.\n\nBu metinden yola çıkılarak Mustafa Kemal ile ilgili aşağıdaki yargılardan hangisine ulaşılabilir?",
-        "siklar": {
-            "A": "Sadece askerî deha ile devletin yönetilebileceğine inanmıştır.",
-            "B": "Dış politikanın ve diplomatik başarıların askerî başarılar kadar önemli olduğunu kavramıştır.",
-            "C": "Osmanlı Devleti'nin Avrupa tarzı okullar açmasını savunmuştur.",
-            "D": "Gençlik yıllarında askerlikten çok siyasete ilgi duymuştur."
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Gruplar ve Roller",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir futbol takımında kaleci topu tutar, forvet gol atmaya çalışır, kaptan takımı yönetir. Herkes kendi görevini en iyi şekilde yapar ve birlikte çalışırlar.\n\nBu bilgiye göre başarılı bir grup çalışması için en önemli unsur aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Herkesin aynı görevi yapması",
+                "B": "Görev paylaşımı ve iş birliği",
+                "C": "Sadece kaptanın karar vermesi",
+                "D": "Grup üyelerinin birbirleriyle yarışması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Başarılı gruplar görev paylaşımı yapan ve işbirliği içinde çalışan gruplardır."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Cephede kazanılan zaferin masa başında kaybedilmesi, diplomasi ve dış politikanın gücünü gösterir. Mustafa Kemal'in bu olaydan çıkardığı ders budur."
-    },
-    {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
-        "konu": "Trablusgarp Savaşı",
-        "yil": 2022,
-        "zorluk": "Zor",
-        "soru": "İtalya'nın Trablusgarp’a saldırması üzerine Osmanlı Devleti bölgeye donanma ve ordu gönderememiştir. Bunun üzerine Mustafa Kemal ve bir grup genç subay gönüllü olarak Trablusgarp’a gitmiş, yerel halkı İtalyanlara karşı örgütleyerek Derne ve Tobruk'ta önemli başarılar elde etmişlerdir.\n\nBu durum Mustafa Kemal'in;\nI. Vatansever\nII. Teşkilatçı (Örgütleyici)\nIII. İnkılapçı\nkişilik özelliklerinden hangilerini yansıtmaktadır?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "II ve III",
-            "D": "I, II ve III"
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Kültürel Özelliklere Saygı",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir sınıfta farklı şehirlerden gelen öğrenciler bulunmaktadır. Her öğrenci kendi memleketinin yöresel yemeğini tanıtmış ve arkadaşlarına tattırmıştır. Öğrenciler birbirlerinin kültürel farklılıklarına saygı göstererek hoşgörülü davranmışlardır.\n\nBu etkinlik aşağıdakilerden hangisine katkı sağlamıştır?",
+            "siklar": {
+                "A": "Kültürel farklılıkların ortadan kalkmasına",
+                "B": "Birlikte yaşama kültürünün ve toplumsal hoşgörünün güçlenmesine",
+                "C": "Öğrencilerin kendi kültürlerinden vazgeçmesine",
+                "D": "Tek bir kültürün üstünlüğünün kabul edilmesine"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Farklı kültürleri tanımak ve saygı göstermek birlikte yaşama kültürünü güçlendirir."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Gönüllü olarak gitmesi 'Vatansever', yerel halkı bir araya getirip direnişe geçirmesi 'Teşkilatçı' (örgütleyici) olduğunu gösterir. İnkılapçılık ise yenilik yapmakla ilgilidir ve bu metinde vurgulanmamıştır."
-    },
-    {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
-        "konu": "Eğitim Hayatı ve Fikir Gelişimi",
-        "yil": 2021,
-        "zorluk": "Orta",
-        "soru": "Ömer Naci, Manastır Askerî İdadisinde Mustafa Kemal'e edebiyat ve hitabet sevgisi aşılamış; Yüzbaşı Nakiyüddin Bey ise Fransızca öğrenmesine ve Avrupa’daki gelişmeleri takip etmesine öncülük etmiştir. Aynı dönemde Mustafa Kemal, Ziya Gökalp ve Namık Kemal gibi aydınların eserleriyle tanışmıştır.\n\nBuna göre Manastır Askerî İdadisi yıllarının Mustafa Kemal'e katkısı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Sırf askerî taktikler konusunda uzmanlaşmasını sağlamıştır.",
-            "B": "Yabancı devlet adamlarının desteğini almasına zemin hazırlamıştır.",
-            "C": "Çok yönlü ve yeniliklere açık bir fikir adamı olarak yetişmesinde etkili olmuştur.",
-            "D": "İlk askerî görevine atanmasını doğrudan kolaylaştırmıştır."
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Kültürel Özelliklere Saygı",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Türkiye'nin doğusunda yaygın olan 'halay', Karadeniz bölgesinde 'horon', Ege'de 'zeybek' oynanmaktadır. Bu oyunlar o bölgelerin kültürel kimliğinin bir parçasıdır.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
+            "siklar": {
+                "A": "Türkiye'de tek bir kültürel yapı vardır",
+                "B": "Ülkemiz zengin ve çeşitli bir kültürel yapıya sahiptir",
+                "C": "Halk oyunları sadece eğlence amaçlıdır",
+                "D": "Bölgeler arası kültürel etkileşim yoktur"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Farklı bölgelerde farklı halk oyunlarının yaşaması ülkemizin zengin kültürel çeşitliliğinin kanıtıdır."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Edebiyat, hitabet, Fransızca, Avrupa'yı takip ve millîçi aydınları okuması onun sadece asker değil çok yönlü ve yeniliklere açık bir vizyon kazanmasını sağlamıştır."
-    },
-    {
-        "unite": "Ünite 1 – Bir Kahraman Doğuyor",
-        "konu": "I. Dünya Savaşı ve Osmanlı Dönüşü",
-        "yil": 2020,
-        "zorluk": "Orta",
-        "soru": "Mustafa Kemal, Sofya'da askerî ataşe olarak görev yaparken Bulgar Parlamentosu'nun toplantılarını yakından izlemiş, Avrupa devletlerinin temsilcileriyle diplomasi alanında fikir alışverişinde bulunmuştur.\n\nMustafa Kemal'in Sofya'daki bu deneyiminin ona sağladığı en önemli kazanım aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Parlamenter sistemin ve demokrasinin işleyişini yakından tanıması",
-            "B": "Bulgar ordusunun askerî sırlarını Osmanlı'ya taşıması",
-            "C": "Sofya ataşeliği sayesinde padişahın en yakın danışmanı olması",
-            "D": "I. Dünya Savaşı'nın çıkış tarihini önceden tespit etmesi"
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Yardımlaşma ve Dayanışma",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Deprem sonrasında tüm Türkiye'den yardım tırları gönderilmiş, gönüllüler enkaz altında kalan insanları kurtarmak için çalışmıştır. Kan bağışı kampanyalarına binlerce kişi katılmıştır.\n\nBu durum aşağıdakilerden hangisinin en güçlü göstergesidir?",
+            "siklar": {
+                "A": "Devletin tüm sorumlulukları tek başına üstlendiğinin",
+                "B": "Toplumsal dayanışma ve yardımlaşma duygusunun güçlü olduğunun",
+                "C": "Sadece resmi kurumların afet yönetiminde etkili olduğunun",
+                "D": "Yardımlaşmanın sadece afet dönemlerinde yapıldığının"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Gönüllü yardımlar ve kan bağışı kampanyaları toplumsal dayanışmanın en güçlü göstergesidir."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Parlamento toplantılarını izleyerek ve yabancı elçilerle görüşerek parlamenter sistem (meclis sistemi) ve diplomasi hakkında eşsiz deneyimler kazanmıştır."
-    },
-    {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
-        "konu": "Mondros Ateşkes Antlaşması",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Mondros Mütarekesi’nin 7. maddesi: 'İtilaf Devletleri güvenliklerini tehdit edecek bir durum ortaya çıktığında, herhangi bir stratejik noktayı işgal etme hakkına sahip olacaktır.' şeklindedir.\n\nBu maddenin antlaşmaya konulmasındaki asıl amaç aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Osmanlı sınırlarını güvence altına alıp padişahı korumak",
-            "B": "Anadolu'da yapacakları işgallere hukuki bir kılıf (zemin) hazırlamak",
-            "C": "Osmanlı ordusunun ihtiyaçlarını İtilaf Devletleri'nin karşılamasını sağlamak",
-            "D": "Sovyet Rusya'nın güneye (Sıcak denizlere) inmesini engellemek"
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Yardımlaşma ve Dayanışma",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir mahallede yaşlı ve yalnız yaşayan komşuların alışverişlerini gençler yapmakta, bayramlarda herkes birbirini ziyaret etmektedir.\n\nBu uygulamalar;\nI. Toplumsal birliğin güçlenmesi\nII. Kuşaklar arası bağın korunması\nIII. Bireyciliğin artması\nsonuçlarından hangilerine yol açar?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Komşuluk ilişkileri toplumsal birliği ve kuşaklar arası bağı güçlendirir. Bireycilikle ilgisi yoktur."
         },
-        "dogru_cevap": "B",
-        "aciklama": "İtilaf Devletleri bu çok muğlak ve geniş maddeyle, canları nereyi isterse orayı 'güvenliğimiz tehdit altında' bahanesiyle işgal etmeyi yasallaştırmışlardır."
-    },
-    {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
-        "konu": "Amasya Genelgesi",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Amasya Genelgesi'nde şu madde yer alır: 'Milletin bağımsızlığını, yine milletin azim ve kararı kurtaracaktır.'\n\nAşağıdakilerden hangisi bu karardan çıkarılabilecek bir sonuç değildir?",
-        "siklar": {
-            "A": "Milli Mücadele'nin yöntemi (nasıl yapılacağı) belirtilmiştir.",
-            "B": "Üstü kapalı da olsa üstünlüğün ve egemenliğin millette olduğu vurgulanmıştır.",
-            "C": "Osmanlı yönetiminin artık ülkeyi kurtaramayacağı ifade edilmiştir.",
-            "D": "Manda ve himayenin kabul edilebileceği sinyali verilmiştir."
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Gruplar ve Roller",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Ayşe, arkadaş grubunda en iyi resim çizen kişidir ve proje ödevlerinde poster tasarımını üstlenir. Ailede ise en küçük çocuk olduğu için sofra hazırlama görevini yapar.\n\nAyşe'nin bu durumu aşağıdakilerden hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "Bireyin yeteneği sadece bir alanda geçerlidir",
+                "B": "Roller grubun ihtiyaçlarına ve bireyin özelliklerine göre belirlenir",
+                "C": "Aile içi roller okul rolleriyle aynıdır",
+                "D": "Roller hiçbir zaman değişmez"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Roller hem grubun ihtiyaçlarına hem de bireyin yeteneklerine ve özelliklerine göre şekillenir."
         },
-        "dogru_cevap": "D",
-        "aciklama": "'Milletin azmi ve kararı kurtaracaktır' ifadesi tam bağımsızlık ve ulusal egemenliğin temelidir. Manda ve himaye ile taban tabana zıttır."
-    },
-    {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
-        "konu": "Erzurum Kongresi",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Doğu Anadolu illerini Ermenilere verilmesini engellemek amacıyla toplanan Erzurum Kongresi’nde, “Milli sınırlar içinde vatan bir bütündür parçalanamaz” ve “Kuvay-ı Milliye'yi tek kuvvet olarak tanımak, milli iradeyi hakim kılmak esastır” kararları alınmıştır.\n\nBuna göre Erzurum Kongresi hakkında aşağıdaki yorumlardan hangisi yapılabilir?",
-        "siklar": {
-            "A": "Toplanma amacı bölgesel, aldığı kararlar ise tüm yurdu ilgilendirdiği için ulusaldır.",
-            "B": "İstanbul Hükümeti'nin onayı ve desteğiyle toplanmıştır.",
-            "C": "Alınan kararlarla padişahın yetkileri daha da artırılmıştır.",
-            "D": "Sadece Doğu sınırlarındaki askeri durumu düzenlemekle yetinmiştir."
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Kültürel Özelliklere Saygı",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir ülkede farklı dillerde yayın yapan televizyon kanalları bulunmakta, çeşitli etnik grupların festivalleri devlet tarafından desteklenmektedir.\n\nBu uygulamaların temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Toplumsal ayrışmayı teşvik etmek",
+                "B": "Kültürel çoğulculuğu ve toplumsal barışı sağlamak",
+                "C": "Tek bir dilin hakim olmasını engellemek",
+                "D": "Yabancı ülkelerin kültürel etkisini artırmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Farklı kültürlerin desteklenmesi kültürel çoğulculuğu güçlendirir ve toplumsal barışa katkı sağlar."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Kongre Doğu illeri için toplanmış (bölgesel), ancak vatanın bütünlüğü ve milli irade gibi kararlarla bağımsızlık hareketini tüm ülkeye (ulusal) yaymıştır."
-    },
-    {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
-        "konu": "Misak-ı Millî",
-        "yil": 2021,
-        "zorluk": "Zor",
-        "soru": "Son Osmanlı Mebusan Meclisi tarafından kabul edilen Misak-ı Millî kararlarında; Arap çoğunluğun yaşadığı yerlerin, Kars-Ardahan-Batum'un ve Batı Trakya'nın gerekirse halk oylamasına (referandum) başvurularak kendi geleceklerini belirlemeleri istenmiştir.\n\nBu durum Misak-ı Millî'nin;\nI. Milli İrade (Halkın Kararı),\nII. Tam Bağımsızlık,\nIII. Sömürgecilik\nanlayışlarından hangilerine önem verdiğini gösterir?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "II ve III",
-            "D": "I, II ve III"
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Yardımlaşma ve Dayanışma",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "İmece usulü, Anadolu'da köylerin birlikte hasat toplama, ev yapma gibi işleri el birliğiyle yapması geleneğidir.\n\nİmece usulünün toplumsal faydası aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Bireysel rekabeti artırması",
+                "B": "İşlerin daha hızlı ve dayanışma içinde tamamlanması",
+                "C": "Herkesin kendi başına çalışmasını teşvik etmesi",
+                "D": "Sadece tarım alanında uygulanması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "İmece, toplumsal dayanışmanın en güzel örneğidir ve işlerin birlikte daha hızlı tamamlanmasını sağlar."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Halk oylaması yapılması Milli İradeye (ve Wilson İlkeleri'ne) saygıyı, sömürgeciliğe karşı bağımsız duruşu temsil eder. Sömürgeciliğe ise karşıdır."
-    },
-    {
-        "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
-        "konu": "Kuvâ-yı Millîye",
-        "yil": 2020,
-        "zorluk": "Orta",
-        "soru": "İzmir'in işgali sonrasında halkın kendiliğinden silahlanarak oluşturduğu yöresel ve düzensiz direniş örgütlerine Kuvâ-yı Millîye adı verilir. Kuvâ-yı Millîye birlikleri düşman ilerleyişini yer yer yavaşlatmış ve halkta direniş ruhunu uyandırmıştır, fakat tam anlamıyla düşmanı yurttan atmaya yeterli olmamıştır.\n\nVerilen bilgiye göre aşağıdakilerden hangisi Kuvâ-yı Millîye'nin millî mücadeleye katkılarından biri değildir?",
-        "siklar": {
-            "A": "Halkın özgüvenini artırmış ve bağımsızlık ruhunu aşılamıştır.",
-            "B": "Düzenli ordunun kurulması için zaman kazanılmasını sağlamıştır.",
-            "C": "Düşmanı oyalayarak Anadolu içlerine hızla girmelerini geciktirmiştir.",
-            "D": "Düşman ordularını kesin bir hezimete uğratarak Anadolu'dan atmıştır."
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Yardımlaşma ve Dayanışma",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Kızılay, AFAD, AKUT gibi kuruluşlar afet dönemlerinde yardım faaliyetleri yürütmektedir.\n\nBu kuruluşların ortak amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Devletin gelir elde etmesi",
+                "B": "İnsanlara yardım ulaştırarak toplumsal dayanışmayı sağlamak",
+                "C": "Sadece uluslararası alanda çalışmak",
+                "D": "Ticari faaliyetlerde bulunmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bu kuruluşlar ihtiyaç sahiplerine yardım ulaştırarak toplumsal dayanışmayı somutlaştıran sivil girişimlerdir."
         },
-        "dogru_cevap": "D",
-        "aciklama": "Kuvâ-yı Millîye düşmanı yavaşlatmış ve zaman kazandırmıştır, ancak düşmanı kesin olarak yurttan atan Düzenli Ordu komutasındaki Büyük Taarruz'dur."
-    },
-    {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
-        "konu": "Birinci İnönü Savaşı ve Teşkilat-ı Esasiye",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Birinci İnönü Zaferi'nden kısa süre sonra, 20 Ocak 1921'de Teşkilat-ı Esasiye Kanunu (1921 Anayasası) kabul edilmiştir. Bu anayasanın birinci maddesi: 'Egemenlik kayıtsız şartsız milletindir. Yönetim şekli, milletin mukadderatını bizzat ve eylemli olarak yönetmesi ilkesine dayanır.' şeklindedir.\n\nBu anayasa maddesinin Türk Kurtuluş Savaşı ve devrim tarihi açısından en büyük önemi nedir?",
-        "siklar": {
-            "A": "Eski Osmanlı anayasasının tüm maddelerini kaldırması",
-            "B": "Tek kişi egemenliğine dayalı padişahlık sisteminin hukuki zeminini yıkıp gücü halka vermesi",
-            "C": "Azınlıklara kendi meclislerini kurma hakkı tanıması",
-            "D": "Yalnızca yargı sisteminin işleyişini düzenlemesi"
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Yaşadığımız İlin Göreceli Konumu",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Öğretmen, öğrencilere 'Yaşadığımız il hangi illere komşudur ve bu illere göre nerede bulunmaktadır?' sorusunu sormuştur.\n\nBu soru aşağıdaki kavramlardan hangisiyle ilgilidir?",
+            "siklar": {
+                "A": "Mutlak konum",
+                "B": "Göreceli (nispi) konum",
+                "C": "Matematik konum",
+                "D": "Deniz seviyesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bir yerin çevresindeki yer ve nesnelere göre tanımlanması göreceli (nispi) konumdur."
         },
-        "dogru_cevap": "B",
-        "aciklama": "'Egemenlik kayıtsız şartsız milletindir' ilkesi tam anlamıyla Cumhuriyetin ayak sesleridir ve devleti kişi egemenliğinden millet egemenliğine taşıyan hukuki devrimdir."
-    },
-    {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
-        "konu": "Sakarya Meydan Muharebesi ve Sonuçları",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Sakarya Meydan Muharebesi öncesi meclis tarafından Mustafa Kemal’e üç aylığına başkomutanlık yetkisi ve meclisin yetkilerini tek başına kullanma hakkı verilmiştir. Mustafa Kemal bu yetkiyi alır almaz ilk iş olarak Tekalif-i Milliye Emirleri'ni (Milli Yükümlülükler) yayımlamıştır.\n\nBuna göre meclisin tüm yetkilerini Mustafa Kemal'e devretmesinin temel gerekçesi aşağıdakilerden hangisi olabilir?",
-        "siklar": {
-            "A": "Meclisteki sivil vekillerin askerlik hakkında fikir sahibi olmaması",
-            "B": "Uluslararası antlaşmaları hızlıca imzalamak istemeleri",
-            "C": "Savaş öncesi ortaya çıkan çok acil durumlarda hızlı ve etkili kararlar alınmasını sağlamak",
-            "D": "Mustafa Kemal'in padişahın yerine geçmesinin hedeflenmesi"
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Yaşadığımız İlin Göreceli Konumu",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Mert arkadaşına evini tarif ederken 'Bankadan sonraki ikinci sokakta, parkın karşısındaki mavi binanın 3. katı' demiştir.\n\nMert'in bu tarifi aşağıdaki konum türlerinden hangisine örnektir?",
+            "siklar": {
+                "A": "Mutlak konum",
+                "B": "Matematik konum",
+                "C": "Göreceli konum",
+                "D": "Coğrafi koordinat"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Çevredeki referans noktalarına (banka, park) göre yer tarif etmek göreceli konum kullanımıdır."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Düşmanın Ankara'ya dayandığı bir esnada, mecliste uzun uzun tartışılacak zaman kalmamıştı. Başkomutanlık yetkisi, hızlı karar alma ve uygulama zorunluluğundan doğmuştur."
-    },
-    {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
-        "konu": "Maarif Kongresi",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "Eskişehir-Kütahya Savaşları tüm şiddetiyle devam ederken ve Yunan ordusu Ankara'ya yaklaşırken; Mustafa Kemal Ankara'da Maarif Kongresini (Eğitim Kongresi) toplamış ve kongreye cepheden gelip katılarak çok önemli bir konuşma yapmıştır.\n\nBu durum Mustafa Kemal'in en çok hangi konuya önem verdiğinin kanıtıdır?",
-        "siklar": {
-            "A": "Eğitime ve milli bir eğitim sistemine verilecek değere",
-            "B": "Dış politikanın eğitimli diplomatlar tarafından yürütülmesine",
-            "C": "Ordunun teknolojik okullarda eğitim görmesi gerektiğine",
-            "D": "Eğitim masraflarının halktan kesilen vergilerle karşılanmasına"
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Doğal ve Beşeri Değişim",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir ilin 50 yıl önceki ve günümüzdeki fotoğrafları karşılaştırıldığında; tarım alanlarının yerini alışveriş merkezlerinin aldığı, derelerin üzerinin kapatıldığı ve yeni yolların yapıldığı görülmüştür.\n\nBu değişimlerin temel sebebi aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Doğal afetlerin artması",
+                "B": "Nüfus artışı ve kentleşmenin hızlanması",
+                "C": "İklim değişikliğinin tek başına etkisi",
+                "D": "Tarımsal üretimin artması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Tarım alanlarının yapılaşmaya dönüşmesi ve yeni yollar, nüfus artışı ve kentleşmenin doğrudan sonucudur."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Cephede silahlı mücadele varken eğitim mücadelesinin de ihmal edilmemesi, Mustafa Kemal'in cehalete karşı savaşı düşmana karşı savaştan farksız gördüğünün kanıtıdır."
-    },
-    {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
-        "konu": "Mudanya Ateşkes Antlaşması",
-        "yil": 2021,
-        "zorluk": "Zor",
-        "soru": "Mudanya Ateşkes Antlaşması'nın bazı maddeleri şunlardır:\n- Doğu Trakya, Meriç nehrine kadar boşaltılarak TBMM hükümetine teslim edilecektir.\n- İstanbul ve Boğazların yönetimi TBMM hükümetine bırakılacaktır.\n\nBu maddelere bakılarak aşağıdaki çıkarımlardan hangisi kesin olarak yapılabilir?",
-        "siklar": {
-            "A": "Osmanlı Devleti hukuken tamamen sona ermiş ve yok sayılmıştır.",
-            "B": "Yunanistan'ın Anadolu üzerindeki tüm planlarına İtilaf Devletleri son vermiştir.",
-            "C": "Yeni Türk devleti kapitülasyonları kaldırarak ekonomik bağımsızlığını kazanmıştır.",
-            "D": "Balkan ülkeleri Türkiye ile sınırlarını kapatmışlardır."
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Doğal ve Beşeri Değişim",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Bir köyde 20 yıl önce 500 kişi yaşarken şimdi 120 kişi yaşamaktadır. Okulun öğrenci sayısı da oldukça azalmıştır.\n\nBu durumun en olası nedeni aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Köyde doğum oranlarının çok yüksek olması",
+                "B": "Köyden kente göçün yaşanması",
+                "C": "Köye yeni aileler yerleşmesi",
+                "D": "Köydeki tarım alanlarının genişlemesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Nüfusun ve öğrenci sayısının azalması köyden kente göçün en belirgin göstergesidir."
         },
-        "dogru_cevap": "A",
-        "aciklama": "İtilaf Devletleri'nin İstanbul ve Boğazların yönetimini padişahın bulunduğu Osmanlı Hükümetine değil TBMM'ye vermesi, Osmanlı'yı hukuken yok saydıklarının en net göstergesidir."
-    },
-    {
-        "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
-        "konu": "Güney Cephesi ve Maraş Direnişi",
-        "yil": 2020,
-        "zorluk": "Orta",
-        "soru": "Sütçü İmam, Maraş'ta Türk kadınına saldırmaya yeltenen Fransız askerine ve Ermeni lejyonerlere karşı ilk kurşunu sıkarak Maraş savunmasını başlatmıştır. Şehirdeki direniş, bölge halkı tarafından hiçbir düzenli ordu desteği olmadan yürütülmüş ve işgalciler püskürtülmüştür.\n\nBu bilgiye dayanarak, Güney Cephesi'ndeki mücadelenin doğası için aşağıdakilerden hangisi söylenebilir?",
-        "siklar": {
-            "A": "Rusya'nın doğrudan silah yardımına dayanmıştır.",
-            "B": "Tamamen Kuvay-ı Milliye (milli direniş ve milis gücü) ruhuyla kazanılmıştır.",
-            "C": "Osmanlı ordusunun bölgedeki son birliklerinin eseri olmuştur.",
-            "D": "Ankara'daki TBMM meclisinin doğrudan yönettiği planlı askeri taarruzdur."
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Doğal ve Beşeri Değişim",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "I. Fabrika yapılması\nII. Deprem sonucu yer şekillerinin değişmesi\nIII. Orman alanlarının tarla haline getirilmesi\n\nYukarıdakilerden hangileri beşeri (insan kaynaklı) değişimlere örnek oluşturur?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Fabrika yapımı ve ormanları tarlaya çevirme insan kaynaklı değişimlerdir. Deprem doğal bir değişimdir."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Güney Cephesi'nin en büyük özelliği; ordunun olmadığı bölgede, halkın kendi inisiyatifi ve vatan sevgisiyle (Kuvay-ı Milliye ruhuyla) düşmanı atmasıdır."
-    },
-    {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
-        "konu": "Siyasi Alanda İnkılaplar",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "I. Saltanatın kaldırılması (1 Kasım 1922)\nII. Cumhuriyetin İlanı (29 Ekim 1923)\nIII. Halifeliğin kaldırılması (3 Mart 1924)\n\nAtatürk döneminde siyasi alanda gerçekleşen bu üç büyük inkılabın ortak ve en önemli amacı aşağıdakilerden hangisidir?",
-        "siklar": {
-            "A": "Devletin sadece ekonomik yatırımlarını güçlendirmek",
-            "B": "Sosyal hayatta kadın-erkek eşitliğini tam sağlamak",
-            "C": "Laik devlet yapısını güçlendirmek ve Millî Egemenliği (Halk yönetimini) tam hakim kılmak",
-            "D": "Dış siyasette Batılı devletlerle daha fazla ittifak oluşturmak"
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Yaşadığımız İlin Göreceli Konumu",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Ankara ili, İstanbul'un doğusunda, Konya'nın kuzeyinde ve Kırıkkale'nin batısında yer almaktadır.\n\nBu bilgide Ankara'nın konumu hangi yöntemle ifade edilmiştir?",
+            "siklar": {
+                "A": "Koordinat sistemi kullanılarak",
+                "B": "Matematiksel konum olarak",
+                "C": "Diğer illere göre göreceli konum olarak",
+                "D": "Yükselti ve deniz seviyesine göre"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Çevresindeki illere göre konumun belirlenmesi göreceli konum ifadesidir."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Saltanat, Hilafet gibi kurumlar bir kişinin veya ailenin güç odaklarıdır. Kaldırılmaları ve Cumhuriyetin ilanı, egemenliği kayıtsız şartsız millete verip yönetimi laikleştirmeyi hedefler."
-    },
-    {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
-        "konu": "Eğitim - Tevhid-i Tedrisat",
-        "yil": 2023,
-        "zorluk": "Zor",
-        "soru": "Tevhid-i Tedrisat Kanunu (3 Mart 1924) ile ülkedeki tüm eğitim kurumları ve yabancı okullar Millî Eğitim Bakanlığı’na bağlanmıştır. Din dersleri ve dini eğitim de devlet kontrolüne alınmış, farklı programlar uygulayan medreselerin yerine daha çağdaş eğitim kurumlarının temelleri atılmıştır.\n\nBuna göre Tevhid-i Tedrisat Kanunu'nun sağladığı faydalardan hangisi söylenemez?",
-        "siklar": {
-            "A": "Kültürel ikilik (çatışma) oluşturan çok başlı eğitim sistemini sona erdirmiştir.",
-            "B": "Ülkedeki eğitim sisteminde birlik ve beraberlik sağlanmıştır.",
-            "C": "Eğitimin akılcı, milli, çağdaş ve laik bir yapıya bürünmesi yolunu açmıştır.",
-            "D": "Yabancı okulların ayrıcalıklı statüsü korunarak Avrupa desteği kazanılmıştır."
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Anadolu'da İlk Toplumlar",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Çatalhöyük kazılarında evlerin bitişik düzende inşa edildiği, kapılarının çatıdan olduğu ve duvarlarına av sahneleri çizildiği belirlenmiştir. Ayrıca buğday ve arpa kalıntılarına da rastlanmıştır.\n\nBu bulgulara göre Çatalhöyük halkı hakkında;\nI. Tarımla uğraştıkları\nII. Yerleşik hayata geçtikleri\nIII. Sanata önem verdikleri\nyargılarından hangilerine ulaşılabilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Tahıl kalıntıları tarımı, bitişik evler yerleşik hayatı, duvar resimleri sanatsal faaliyetleri kanıtlar."
         },
-        "dogru_cevap": "D",
-        "aciklama": "Kanun yabancı okulları da devlet denetimine bağladığı için onların ayrıcalıklı, bağımsız statülerine son vermiş, böylece yasa önünde eşitlik (halkçılık) ve millilik sağlanmıştır."
-    },
-    {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
-        "konu": "Hukuk - Medeni Kanun",
-        "yil": 2022,
-        "zorluk": "Orta",
-        "soru": "1926 yılında kabul edilen Türk Medeni Kanunu ile kadınlara istedikleri mesleğe girme, mirasta erkeklerle eşit pay alma, mahkemelerde tanıklıkta erkekle eşit tutulma ve resmi nikâh zorunluluğu gibi haklar tanınmıştır.\n\nBuna göre Türk Medeni Kanunu’nun,\nI. Halkçılık\nII. Laiklik\nIII. Cumhuriyetçilik\nilkelerinden hangileri ile doğrudan ilgili olduğu söylenebilir?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "II ve III",
-            "D": "I, II ve III"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Anadolu'da İlk Toplumlar",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Göbeklitepe, bilinen en eski tapınak kalıntısıdır ve yaklaşık 12.000 yıl öncesine tarihlendirilmektedir. Bu yapı, henüz tarıma geçilmemiş dönemde avcı-toplayıcı topluluklar tarafından inşa edilmiştir.\n\nBu bilgi aşağıdaki yaygın düşüncelerden hangisini değiştirmektedir?",
+            "siklar": {
+                "A": "İlk insanların ateşi kullanamadığını",
+                "B": "Büyük yapıların ancak yerleşik toplumlar tarafından yapılabileceğini",
+                "C": "Anadolu'nun tarih öncesinde boş olduğunu",
+                "D": "Avcı-toplayıcıların hiçbir alete sahip olmadığını"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Göbeklitepe, yerleşik hayata geçmeden önce de büyük yapılar inşa edilebileceğini kanıtlamıştır."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Miras ve resmi nikâh eşitliği getirmesi halka (kadın-erkek eşitliği) yönelik olduğundan Halkçılık, hukukun dini kurallardan bağımsız, İsviçre tabanlı çağdaş hale gelmesi Laikliktir. Ancak Medeni Kanun 'Siyasi (seçme-seçilme)' hak içermediği için Cumhuriyetçilik ile doğrudan ilgili değildir."
-    },
-    {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
-        "konu": "Atatürk İlkeleri - Devletçilik",
-        "yil": 2021,
-        "zorluk": "Zor",
-        "soru": "'Devletçilik' ilkesi Türkiye’de, serbest piyasa ekonomisinin kendi başına yetemediği sert koşullarda zorunluluktan doğmuştur. Halkın sermayesinin yetersiz olması ve 1929 Dünya Ekonomik Bunalımı’nın etkisiyle yeni Türkiye devleti doğrudan yatırımlar yapmış, şeker fabrikaları, Sümerbank ve dokuma tesisleri devlet eliyle açılmıştır.\n\nBu metne göre 'Devletçilik' ilkesi hakkında aşağıdakilerden hangisine ulaşılabilir?",
-        "siklar": {
-            "A": "Temel amacı özel sektörün yurt içinde hiçbir iş yapmasına izin vermemektir.",
-            "B": "Halkın ihtiyaçlarını en kısa sürede üretip dışa bağımlılığı (özellikle sanayide) kırma hedefine dayanır.",
-            "C": "Tarımsal üretim ve çiftçinin kalkınması, sanayileşmeden daha çok desteklenmiştir.",
-            "D": "Teknolojiyi dışardan satın alarak Osmanlı dönemi ekonomisini aynen devam ettirmeyi hedefler."
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Sümerler yazıyı, Lidyalılar parayı, Fenikeliler alfabeyi ilk kez kullanmışlardır. Bu icatlar daha sonra tüm dünyaya yayılmıştır.\n\nBu bilgilere göre eski uygarlıklar hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Her uygarlık diğerlerinden bağımsız gelişmiştir",
+                "B": "Uygarlıklar birbirlerinin buluşlarından etkilenmiş ve ortak mirasa katkıda bulunmuştur",
+                "C": "Sadece tek bir uygarlık tüm icatları yapmıştır",
+                "D": "Bu icatlar günümüzde artık kullanılmamaktadır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Farklı uygarlıkların icatlarının yayılması, ortak insanlık mirasına katkıyı ve kültürel etkileşimi gösterir."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Devletçilik ilkesinin temel vizyonu, özel sektörün sermaye bulamadığı alanlara bizzat devletin girerek üretimi tesis etmesi ve ekonomik bağımsızlığı perçinlemesidir."
-    },
-    {
-        "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
-        "konu": "Ekonomi - Kabotaj Kanunu",
-        "yil": 2020,
-        "zorluk": "Orta",
-        "soru": "1 Temmuz 1926’da çıkarılan Kabotaj Kanunu ile Türkiye limanları arasında yük ve yolcu taşıma hakkı, kılavuzluk hizmetleri gibi tüm denizcilik faaliyetleri yalnızca Türk vatandaşlarına ve Türk bayrağı taşıyan gemilere verilmiştir.\n\nBu kanun en başta Atatürk İlkeleri'nden hangisiyle doğrudan örtüşür?",
-        "siklar": {
-            "A": "Milliyetçilik",
-            "B": "Cumhuriyetçilik",
-            "C": "İnkılapçılık",
-            "D": "Laiklik"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Hititler, tarihte bilinen ilk yazılı antlaşma olan Kadeş Antlaşması'nı Mısır ile imzalamışlardır.\n\nKadeş Antlaşması'nın tarih açısından en önemli özelliği aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "En büyük savaşın sona ermesi",
+                "B": "Diplomasi ve yazılı hukukun başlangıcına örnek oluşturması",
+                "C": "Hititlerin Mısır'ı fethetmesi",
+                "D": "Anadolu'nun ilk kez haritasının çıkarılması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "İlk yazılı antlaşma olarak Kadeş, diplomasi ve uluslararası hukukun başlangıç noktasıdır."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Kapitülasyonların izlerini silen, Türk vatandaşlarına ayrıcalık verip kendi kaynaklarına (denizlerine) Türk insanını egemen kılan tüm uygulamalar Milliyetçilik doğasındadır."
-    },
-    {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
-        "konu": "Çok Partili Hayata Geçiş Denemeleri",
-        "yil": 2024,
-        "zorluk": "Zor",
-        "soru": "Cumhuriyetin ilk yıllarında Mustafa Kemal demokrasiyi tam anlamıyla işletmek için çok partili hayata geçmek istemiş, bu doğrultuda Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası kurulmuştur. Ancak her iki parti de rejime (Cumhuriyete ve yeniliklere) karşı olan kişilerin odak noktası haline geldiği ve isyanlar/olaylar (Şeyh Sait İsyanı, Menemen Olayı) çıkmasına zemin hazırladığı için kapatılmak zorunda kalmıştır.\n\nBu durum Türkiye Cumhuriyeti tarihi için aşağıdakilerden hangisinin göstergesidir?",
-        "siklar": {
-            "A": "Türk milletinin tek parti yönetim sistemini sonsuza kadar benimsediğinin",
-            "B": "Devrimlerin henüz tam kökleşmediği bir dönemde çok partili yaşam denemelerinin başarısız olduğunun",
-            "C": "Dış politikanın şekillenmesinde iç siyasetin hiçbir etkisinin kalmadığının",
-            "D": "Mustafa Kemal'in tüm muhalefet partilerini planlı bir şekilde bilerek kapattığının"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Ortak Miras Ögeleri",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Efes Antik Kenti, Pamukkale travertenleri ve Göbeklitepe UNESCO Dünya Mirası Listesi'ndedir.\n\nBu yerlerin UNESCO listesinde yer almasının temel nedeni aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece turizm geliri sağlamaları",
+                "B": "Tüm insanlığa ait evrensel değer taşımaları ve korunmaları gerektiği",
+                "C": "Sadece Türkiye'ye ait olmaları",
+                "D": "Yeni inşa edilmiş yapılar olmaları"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "UNESCO listesi, evrensel değer taşıyan ve gelecek nesiller için korunması gereken miras ögelerini kapsar."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Partilerin kapatılma gerekçesi, inkılapların halk nezdinde tam yerleşmemesi ve demokrasi kültürünün henüz oturmaması sebebiyle Cumhuriyet karşıtlarının sığınabilecekleri bir siyasi platform bulmalarıdır."
-    },
-    {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
-        "konu": "Şeyh Sait İsyanı",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Şeyh Sait İsyanı (1925), Cumhuriyetin ilk yıllarında rejimi, laik sistemi ortadan kaldırmayı ve halifeliği geri getirmeyi amaçlayan geniş çaplı bir isyandı. Devlet bu isyanı bastırmak için Takrir-i Sükun Kanunu'nu çıkardı, İstiklal Mahkemelerini yeniden kurdu ve Terakkiperver Cumhuriyet Fırkası'nı kapattı.\n\nVerilen bilgilere göre Şeyh Sait İsyanı ile ilgili olarak;\nI. Sadece bölgesel eşitsizliklere tepki olarak çıkmıştır.\nII. Genç Cumhuriyetin varlığına yönelik ciddi bir tehdittir.\nIII. Demokratikleşme (çok partili hayat) sürecini olumsuz etkileyip sekteye uğratmıştır.\nyargılarından hangilerine ulaşılabilir?",
-        "siklar": {
-            "A": "Yalnız I",
-            "B": "I ve II",
-            "C": "II ve III",
-            "D": "I, II ve III"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Anadolu'da İlk Toplumlar",
+            "yil": 2022,
+            "zorluk": "Zor",
+            "soru": "Arkeologlar bir yerleşim yerinde taş aletler, pişmiş topraktan kaplar, hayvan kemikleri ve buğday kalıntıları bulmuşlardır.\n\nBu bulgulara göre bu yerleşim yeri halkının;\nI. Avcılık ve toplayıcılık\nII. Tarım\nIII. El sanatları\nfaaliyetlerinden hangilerini yaptığı söylenebilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Taş aletler ve kemikler avcılığı, buğday tarımı, pişmiş toprak kaplar el sanatlarını kanıtlar."
         },
-        "dogru_cevap": "C",
-        "aciklama": "İsyan sadece eşitsizlik için değil, halifeliği ve eski düzeni getirmek (rejimi devirmek) için çıkmıştır. Bu durum demokrasiye geçişi engellemiş ve partilerin kapanmasına yol açmıştır."
-    },
-    {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
-        "konu": "Mustafa Kemal'e Suikast Girişimi",
-        "yil": 2022,
-        "zorluk": "Kolay",
-        "soru": "1926 yılında gerçekleştirilmek istenen İzmir Suikastı planı, Giritli Şevki adlı kişinin durumu valiye bildirmesiyle son anda önlendi. Bu gelişme üzerine Mustafa Kemal Paşa Anadolu Ajansına şu meşhur tarihi demecini vermiştir: “Benim naçiz (değersiz) vücudum elbet bir gün toprak olacaktır; ancak Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”\n\nMustafa Kemal'in bu sözüyle asıl vurgulamak istediği nedir?",
-        "siklar": {
-            "A": "Kendisine yönelik saldırıların daha da artmasını beklediği",
-            "B": "Kurulan genç cumhuriyet sisteminin baki olduğu, kişilerin hayatlarından bağımsız olarak yaşamaya devam edeceği",
-            "C": "Cumhuriyet rejimini bizzat sadece kendisinin yönetebileceği",
-            "D": "Suikast planlayıcılarının hiçbir ceza almadan bırakılması gerektiği"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Mezopotamya ve Anadolu Medeniyetleri",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Sümerler, Fırat ve Dicle nehirleri arasındaki verimli topraklarda kurulmuş ve tarımda sulama kanalları geliştirmişlerdir. Böylece üretim artmış ve nüfus çoğalmıştır.\n\nBu bilgiye göre Mezopotamya medeniyetinin gelişmesinde en etkili faktör aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Deniz ticareti yapmaları",
+                "B": "Coğrafi koşulların tarıma elverişli olması",
+                "C": "Güçlü bir orduya sahip olmaları",
+                "D": "Yazıyı çok erken kullanmaları"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Verimli topraklar ve nehirler tarımı kolaylaştırmış, bu da medeniyetin gelişmesini sağlamıştır."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Kendisinin ölümlü bir varlık olduğunu, ancak kurulan Cumhuriyetin kurumsallaştığını ve sonsuza dek korunacağını tarihi ve asil bir dille anlatmıştır."
-    },
-    {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
-        "konu": "Kubilay (Menemen) Olayı",
-        "yil": 2021,
-        "zorluk": "Orta",
-        "soru": "1930 yılında Menemen'de yaşanan olayda, kendini mehdî ilan eden Derviş Mehmet ve adamları halkı isyana teşvik etmiş; onlara engel olmaya çalışan ve asteğmen olarak askerliğini yapan öğretmen Kubilay bu yobaz isyancılar tarafından şehit edilmiştir. Toplanan askeri birlikler isyanı bastırmış, isyancılar yargılanarak cezalandırılmıştır.\n\nMenemen Olayına bakılarak aşağıda verilen çıkarımlardan hangisine varılabilir?",
-        "siklar": {
-            "A": "Ülkede dış baskıların giderek arttığına",
-            "B": "Halkın tüm kesiminin laik sisteme tamamen alışmış ve uyum sağlamış olduğuna",
-            "C": "Yeniliklere ve devrimlere (rejime) karşı gerici bir grubun varlığını sürdürdüğüne",
-            "D": "Cumhuriyetin çok partili hayata başarılı bir adım attığına"
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Ortak Miras Ögeleri",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Öğrenciler, yaşadıkları ildeki eski cami, köprü ve kervansaray gibi yapıları araştırıp fotoğraflamışlardır.\n\nBu etkinliğin amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Öğrencilerin fotoğrafçılık becerilerini geliştirmek",
+                "B": "Yerel kültürel mirası tanımak ve koruma bilinci kazandırmak",
+                "C": "Yeni yapılar inşa etmek için yer belirlemek",
+                "D": "Tarihi yapıları yıkarak yerine modern binalar yapmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Ortak miras ögelerini tanımak ve koruma bilinci kazandırmak sosyal bilgiler eğitiminin temel amaçlarındandır."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Dini kullanarak isyan başlatmak ve öğretmeni katletmek, toplumda henüz laik inkılapları benimsememiş, irticai (gerici) karanlık odakların varlığını kanıtlar niteliktedir."
-    },
-    {
-        "unite": "Ünite 5 – Demokratikleşme Çabaları",
-        "konu": "Demokrasi ve Sorumluluk",
-        "yil": 2020,
-        "zorluk": "Zor",
-        "soru": "Mustafa Kemal, Fethi Okyar'dan Serbest Cumhuriyet Fırkası'nı kurmasını isterken şu sözleri söylemiştir: “Bugünkü durumda Meclis’te bir fırka var. Biz de meclisi tek fikre mahkûm etmiş oluyoruz. Halbuki cumhuriyet esasına dayanan bir memlekette, memleket meselelerinin mecliste açıkça münakaşa edilmesi (tartışılması) lâzımdır.\"\n\nAtatürk'ün bu sözleriyle aşağıdakilerden hangisine vurgu yaptığı söylenemez?",
-        "siklar": {
-            "A": "Hükümetin farklı politikalar üzerinden eleştirilip denetlenmesi gerektiğine",
-            "B": "Farklı görüş ve düşüncelerin meclis çatısı altında sesi olması gerektiğine",
-            "C": "Tek parti yönetiminin dış politikada savaş kararı alma ihtimalinin yüksekliğine",
-            "D": "Milli iradenin Meclis’te çok daha demokratik şartlarda tecelli etmesinin önemine"
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Demokrasi ve Cumhuriyet",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Demokrasilerde halk seçimler yoluyla kendini yönetecek temsilcileri belirler. Bu temsilciler halkın adına yasalar yapar ve ülkeyi yönetir.\n\nBuna göre demokrasinin en temel özelliği aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Yönetimin tek bir kişinin elinde olması",
+                "B": "Yönetim yetkisinin halktan alınması (milli egemenlik)",
+                "C": "Kanunların sadece yöneticiler tarafından belirlenmesi",
+                "D": "Halkın yönetime katılmaması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Demokrasinin temeli, yönetim yetkisinin halktan (milli egemenlikten) kaynaklanmasıdır."
         },
-        "dogru_cevap": "C",
-        "aciklama": "Mustafa Kemal'in sitemi mecliste serbestçe fikir tartışması yapılabilmesi içindir (denetlenme, fikir özgürlüğü vb.); dış politika ya da savaş kararı vermekle ilgisi yoktur."
-    },
-    {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
-        "konu": "Atatürk Dönemi Türk Dış Politikası (Genel Vizyon)",
-        "yil": 2024,
-        "zorluk": "Orta",
-        "soru": "Atatürk dönemi Türk dış politikasının dayandığı en önemli vizyon, 'Yurtta Sulh, Cihanda Sulh' sözüyle formüle edilmiştir. Aynı dönemde Türkiye, eski düşmanlarıyla diplomatik ve ticari bağlar kurmuş; Milletler Cemiyetine girmiş, Sadabat ve Balkan paktlarını onaylamıştır.\n\nYukarıdaki paragraftan yola çıkarak Atatürk dönemi dış politikası hakkında aşağıdakilerden hangisi söylenebilir?",
-        "siklar": {
-            "A": "Tarihi düşmanlıklara dayalı, rövanşist ve kapalı bir politika izlenmiştir.",
-            "B": "Diğer devletlerin iç işlerine müdahale eden bir blok politikası benimsenmiştir.",
-            "C": "Revizyonist (sürekli sınır değiştirmeyi arzulayan) yayılmacı bir nitelik taşımaktadır.",
-            "D": "Bölgesel ve küresel güvenliği önceleyen barışçıl ve işbirliği odaklı bir çizgi yürütmüştür."
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Etkin Vatandaş Olmak",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir öğrenci, mahallesindeki parkın bakımsız olduğunu fark ederek belediyeye dilekçe yazmış ve parkın onarılmasını talep etmiştir. Belediye bu talebi değerlendirerek parkı yenilenmiştir.\n\nBu öğrencinin davranışı aşağıdakilerden hangisine örnek oluşturur?",
+            "siklar": {
+                "A": "Pasif vatandaşlık",
+                "B": "Etkin vatandaşlık ve demokratik katılım",
+                "C": "Yasadışı eylem",
+                "D": "Bireysel çıkar arayışı"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Sorunları fark edip yasal yollarla çözüm aramak etkin vatandaşlığın ve demokratik katılımın örneğidir."
         },
-        "dogru_cevap": "D",
-        "aciklama": "Balkan Antantı, Sadabat Paktı ve Milletler Cemiyetine üyelik, saldırgan (revizyonist) politikalara karşı barışı ve güvenliği sağlamak amacını (Yurtta sulh, cihanda sulh) taşır."
-    },
-    {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
-        "konu": "Nüfus Mübadelesi",
-        "yil": 2023,
-        "zorluk": "Orta",
-        "soru": "Lozan Barış Antlaşması’na göre, Türkiye'deki Rumlarla Yunanistan'daki Türklerin değişimi (mübadele) kararlaştırılmıştı. Ancak İstanbul'daki Rumların ve Batı Trakya'daki Türklerin yerlerinde (etabli/yerleşik) kalması hükme bağlanmıştı. Yunanistan diplomatik oyunlarla İstanbul'da olabildiğince çok sayıda Rum tutmak isteyince iki ülke arasında 'Etabli (Yerleşik)' krizi yaşanmıştır. Konu önce Milletler Cemiyeti’ne taşınmış, sonuç çıkmayınca 1930'da Ankara antlaşması ile uzlaşma sağlanmıştır.\n\nBu krizin Türkiye tarafından barış ve hukuk yoluyla (savaşmadan) çözümlenmesi Türk dış politikasının hangi yönünü gösterir?",
-        "siklar": {
-            "A": "Dışarıdan gelen her talebi kolayca kabul eden teslimiyetçi bir diplomasiyi",
-            "B": "Milli çıkarları Milletler Cemiyeti ilkeleri ve müzakerelerle (diplomasiyle) arayan bir tutumu",
-            "C": "Lozan Anlaşması metnini baştan aşağı değiştirme arzusunu",
-            "D": "Azınlıkların sorunlarıyla ilgilenmeyen, umursamaz bir yaklaşımı"
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Temel Hak ve Sorumluluklar",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Eğitim hakkı, sağlık hakkı ve yaşam hakkı her bireyin doğuştan sahip olduğu temel haklardandır.\n\nBu hakların ortak özelliği aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece yetişkinlere tanınan haklardır",
+                "B": "Devredilmez ve vazgeçilmez niteliktedir",
+                "C": "Zenginlik durumuna göre değişir",
+                "D": "Sadece belirli ülkelerde geçerlidir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Temel haklar doğuştan kazanılır, devredilmez ve vazgeçilmez niteliktedir."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Yunanistan'ın oyunlarına karşı derhal silahlı mücadeleye ya da tavize yönelmemiş; konuyu hukuki ve diplomatik bir çerçevede (müzakerelerle) uluslararası hukuka uygun şekilde çözmüştür."
-    },
-    {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
-        "konu": "Montrö Boğazlar Sözleşmesi",
-        "yil": 2022,
-        "zorluk": "Zor",
-        "soru": "Montrö Boğazlar Sözleşmesi (1936) ile; Lozan Anlaşması'nda belirlenen uluslararası boğazlar komisyonu tamamen kaldırılmış, boğazlar her iki yakasından da Türk askeri birimleri tarafından savunulacak statüye geçmiş ve silahsızlandırma iptal edilmiştir.\n\nBuna göre Montrö Sözleşmesi için aşağıdaki yargılardan hangisine ulaşılabilir?",
-        "siklar": {
-            "A": "Türkiye egemenlik haklarını kısıtlayan en büyük engellerden birini aşmış ve toprak bütünlüğünü güvenceye almıştır.",
-            "B": "Türkiye, Montrö sonrası boğazları tüm dünya ticaret gemilerine süresiz olarak kapatmıştır.",
-            "C": "Montrö Sözleşmesi sadece İngiltere ile Türkiye arasında yapılan ikili bir yardımlaşma antlaşmasıdır.",
-            "D": "Sovyet Rusya'nın Karadeniz’deki güvenliği risk altına girmiştir."
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "İhtiyaç Halinde Başvurulacak Kurumlar",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Yangın durumunda 110 İtfaiye, acil sağlık durumunda 112 Ambulans, güvenlik sorunu için 155 Polis aranır.\n\nBu acil durum numaralarını bilmenin önemi aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece yetişkinlerin bilmesi gereken bilgilerdir",
+                "B": "Olağanüstü durumlarda hızlı ve doğru müdahale için hayati öneme sahiptir",
+                "C": "Bu numaraları aramak ücretlidir",
+                "D": "Bu kurumlar sadece hafta içi çalışır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Acil durum numaralarını bilmek, kriz anlarında hızlı müdahale sağlayarak hayat kurtarabilir."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Komisyonun kaldırılması ve Türk askerinin boğazlara yerleşmesi, Lozan'da zedelenen (kısıtlanan) egemenliğimizin yeniden kazanıldığını net şekilde kanıtlar."
-    },
-    {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
-        "konu": "Hatay Meselesi",
-        "yil": 2021,
-        "zorluk": "Zor",
-        "soru": "Atatürk, hastalığının oldukça ilerlediği dönemde bile Hatay davasından vazgeçmemiş, 'Kırk asırlık Türk yurdu düşman elinde esir kalamaz' ve 'Hatay benim şahsi meselemdir' diyerek Mersin ve Adana seyahatlerine katılıp uzun askeri geçit törenlerini ayakta izlemiştir. Atatürk bu zorlu tavrıyla Fransa'ya karşı hem devletinin hem de ordusunun kararlı duruşunu sergilemiştir.\n\nMetne göre Atatürk'ün bu davranışını değerlendirirseniz, onda en çok hangi özelliğin belirgin olduğunu söyleyebilirsiniz?",
-        "siklar": {
-            "A": "Merhametli oluşu ve bağışlayıcılığı",
-            "B": "Ümitsizliğe yer vermeyen kararlı (idealist) bir devlet adamı olması ve vatan sevgisi",
-            "C": "Eğitime ve gençlerin bilgi birikimine değer vermesi",
-            "D": "Ordunun teknolojik gücünü Avrupalı ülkelere kanıtlama hırsı"
+        {
+            "unite": "Ünite 5 – Hayatımızda Ekonomi",
+            "konu": "Kaynakları Verimli Kullanma",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Bir ailede su faturalarının çok yüksek olduğu fark edilmiş ve aile üyeleri tasarruf tedbirleri almıştır: Diş fırçalarken musluğu kapatmış, kısa süreli duş alıp, çamaşır makinesini tam dolduğunda çalıştırmıştır.\n\nBu uygulamaların en önemli katkısı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece aile bütçesine katkı sağlaması",
+                "B": "Hem doğal kaynakların korunması hem de ekonomik tasarruf sağlaması",
+                "C": "Su kullanımının tamamen bırakılması",
+                "D": "Sadece çevrecileri ilgilendirmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bilinçli kaynak kullanımı hem doğayı korur hem de bireylerin ekonomik tasarruf yapmasını sağlar."
         },
-        "dogru_cevap": "B",
-        "aciklama": "Metindeki 'hastalığına rağmen', 'benim şahsi meselemdir' ifadeleri onun hedefine kilitlenmiş tavizsiz idealizmini, vatanı için hayatını hiçe saymasını gösteren vatanseverliğidir."
-    },
-    {
-        "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
-        "konu": "Balkan ve Sadabat Paktları",
-        "yil": 2020,
-        "zorluk": "Orta",
-        "soru": "1930'lu yılların sonuna doğru İtalya'nın ve Almanya'nın yayılmacı, saldırgan ve aşırı ırkçı tutumları Ortadoğu, Akdeniz ve balkanlarda güvenliği tehdit etmeye başlamıştır. Bu duruma karşı Türkiye, batı sınırını güvence altına almak için Balkan Antantı (1934); doğu sınırı içinse (İtalya'nın ortadoğu iştahına karşı) Sadabat Paktı'nı (1937) imzalamıştır.\n\nVerilen bu dış politika hamleleri bir bütün olarak incelendiğinde aşağıdaki kavramlardan hangisiyle açıklanabilir?",
-        "siklar": {
-            "A": "Kolektif Güvenlik Arayışı ve Bölgesel İttifak",
-            "B": "Yayılmacılık (Emperyalizm) ve Askeri Taarruz",
-            "C": "Tam Tarafsızlık ve İçine Kapanık Siyaset (İzolasyon)",
-            "D": "Manda ve Himaye Politikası"
+        {
+            "unite": "Ünite 5 – Hayatımızda Ekonomi",
+            "konu": "İstek ve İhtiyaçlara Göre Bütçe",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Ege, harçlığıyla hem yeni bir oyun almak hem de okul kırtasiyesini tamamlamak istemektedir. Ancak harçlığı ikisine de yetmemektedir.\n\nEge'nin en doğru kararı aşağıdakilerden hangisi olmalıdır?",
+            "siklar": {
+                "A": "Oyunu hemen alıp kırtasiyeyi ertelemek",
+                "B": "Önce ihtiyaç olan kırtasiyeyi alıp oyunu daha sonraya bırakmak",
+                "C": "İkisinden de vazgeçmek",
+                "D": "Borç alarak ikisini de almak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bütçe planlamasında ihtiyaçlar isteklerden önce gelmelidir. Kırtasiye ihtiyaç, oyun istektir."
         },
-        "dogru_cevap": "A",
-        "aciklama": "Saldırgan devletlerin tehdidine karşı çevresindeki devletlerle ittifak yapıp karşılıklı güvenliği sağlamak (güç birliği) 'Kolektif Güvenlik (Ortak Güvenlik)' kavramı ile izah edilir. Yeni nesil LGS bu tür kavram eşleşmelerini çok sever."
-    }
-]
+        {
+            "unite": "Ünite 5 – Hayatımızda Ekonomi",
+            "konu": "Yaşadığımız İldeki Ekonomik Faaliyetler",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Rize'de çay üretimi, Gaziantep'te baklava yapımı, Bursa'da otomotiv sanayisi ön plana çıkmaktadır.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
+            "siklar": {
+                "A": "Türkiye'de sadece tarım yapılmaktadır",
+                "B": "Her ilin coğrafi ve beşeri özelliklerine göre farklı ekonomik faaliyetleri öne çıkmaktadır",
+                "C": "Sadece büyük şehirlerde ekonomik faaliyet vardır",
+                "D": "Tüm illerde aynı ürünler üretilmektedir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Her ilin doğal koşulları ve beşeri özellikleri farklı ekonomik faaliyetlerin gelişmesini sağlar."
+        },
+        {
+            "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+            "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Akıllı telefonların yaygınlaşmasıyla insanlar dünyanın her yerinden anlık iletişim kurabilmekte, video görüşmesi yapabilmekte ve bilgiye hızla ulaşabilmektedir.\n\nAncak bu teknolojinin;\nI. Yüz yüze iletişimin azalması\nII. Bilgiye hızlı erişim\nIII. Siber zorbalık riskinin artması\ngibi etkileri de bulunmaktadır. Bunlardan hangileri olumsuz etkilerdir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Yüz yüze iletişimin azalması ve siber zorbalık olumsuz etkilerdir. Bilgiye hızlı erişim olumlu bir etkidir."
+        },
+        {
+            "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+            "konu": "Teknolojik Aletlerin Bilinçli Kullanımı",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir öğrenci, tablet bilgisayarını günde 6 saat oyun oynayarak kullanmakta ve bu nedenle ders çalışamamakta, gözlerinde yorgunluk yaşamaktadır.\n\nBu durumun çözümü için en uygun yaklaşım aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Tableti tamamen yasaklamak",
+                "B": "Kullanım süresini sınırlayarak teknolojiyi bilinçli ve dengeli kullanmak",
+                "C": "Öğrencinin tüm derslerini tabletten takip etmesini sağlamak",
+                "D": "Oyun oynama süresini daha da artırmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Teknoloji yasaklanmamalı, bilinçli ve dengeli kullanımı öğretilmelidir."
+        },
+        {
+            "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+            "konu": "Teknolojik Gelişmelerin Sosyal Hayata Etkisi",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Uzaktan eğitim sayesinde öğrenciler evlerinden derslere katılabilmiş, öğretmenler dijital materyaller kullanarak ders anlatmıştır.\n\nUzaktan eğitimin en önemli avantajı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Öğrencilerin sosyalleşmesini tamamen sağlaması",
+                "B": "Eğitime mekândan bağımsız erişim olanağı sunması",
+                "C": "Yüz yüze eğitimin yerini tamamen alması",
+                "D": "Sadece üniversite seviyesinde uygulanabilmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Uzaktan eğitimin en büyük avantajı, mekân sınırlaması olmadan eğitime erişim sağlamasıdır."
+        }
+    ],
+    "6": [
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Gruplar ve Roller",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Bir öğrenci okulda öğrenci, evde çocuk, spor kulübünde takım kaptanı rollerini üstlenmektedir. Bu rollerin her birinde farklı davranışlar sergilemesi beklenir.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
+            "siklar": {
+                "A": "Bireylerin her ortamda aynı davrandığını",
+                "B": "Bireylerin bulundukları gruba göre farklı roller üstlendiğini",
+                "C": "Rollerin değiştirilemez olduğunu",
+                "D": "Sadece okuldaki rollerin önemli olduğunu"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bireyler aile, okul, spor kulübü gibi farklı gruplarda farklı roller üstlenir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Birliktelik",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir toplumda insanlar farklı dilleri konuşmakta, farklı dinlere inanmakta ve farklı geleneklere sahiptir. Ancak tüm bu farklılıklara rağmen ortak değerler etrafında bir arada yaşayabilmektedirler.\n\nBu durumun sürdürülebilmesi için en temel gereklilik aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Herkesin aynı dili konuşması",
+                "B": "Karşılıklı saygı, hoşgörü ve ortak değerler bilinci",
+                "C": "Farklılıkların tamamen ortadan kaldırılması",
+                "D": "Toplumun tek bir lider tarafından yönetilmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Farklılıklar zenginliktir; birlikte yaşamın temeli karşılıklı saygı, hoşgörü ve ortak değerlerdir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Sorunlar ve Çözümler",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir şehirde trafik kazaları artmış, çevre kirliliği ciddi boyutlara ulaşmış ve işsizlik oranı yükselmiştir. Belediye bu sorunları çözmek için halkla toplantılar düzenlemiştir.\n\nBu toplantıların düzenlenmesinin temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Belediyenin sorumluluğunu halka yüklemek",
+                "B": "Toplumsal sorunların çözümünde vatandaş katılımını sağlamak",
+                "C": "Halkı sorunlar hakkında korkutmak",
+                "D": "Seçim kampanyası yapmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Toplumsal sorunların çözümünde vatandaşların katılımı ve görüşleri demokratik yönetimin gereğidir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Birliktelik",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Bayramlarda komşuları ziyaret etmek, yaşlılara saygı göstermek ve ihtiyaç sahiplerine yardım etmek toplumsal birlikteliği güçlendiren değerlerdendir.\n\nBu değerlerin ortak amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Bireylerin yalnız kalmasını sağlamak",
+                "B": "Toplumsal bağları güçlendirmek ve dayanışmayı artırmak",
+                "C": "Sadece ekonomik fayda sağlamak",
+                "D": "Geleneklerin değişmesini engellemek"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bayram ziyaretleri, saygı ve yardımlaşma toplumsal bağları güçlendiren ortak değerlerdir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Gruplar ve Roller",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Sınıfta yapılan proje çalışmasında; Ayşe araştırma yapmış, Mehmet sunum hazırlamış, Zeynep poster çizmiştir.\n\nBu çalışma biçimi aşağıdakilerden hangisini örneklendirmektedir?",
+            "siklar": {
+                "A": "Bireysel çalışma",
+                "B": "Görev dağılımı ve iş birliği",
+                "C": "Rekabet",
+                "D": "Tek kişilik proje"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Herkesin farklı görev üstlenerek birlikte çalışması görev dağılımı ve iş birliğinin örneğidir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Sorunlar ve Çözümler",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir mahallede sokak hayvanlarının bakımsız kalması sorun olmuştur. Mahalle sakinleri bir araya gelerek bir hayvan barınağı kurmuş, veteriner hizmeti organize etmiş ve sahiplendirme kampanyası başlatmıştır.\n\nBu örnek aşağıdakilerden hangisini en iyi göstermektedir?",
+            "siklar": {
+                "A": "Toplumsal sorunların çözümünde bireysel ve toplumsal sorumluluğun önemini",
+                "B": "Devletin her konuda tek yetkili olması gerektiğini",
+                "C": "Hayvan hakları konusunun önemsiz olduğunu",
+                "D": "Mahalle sakinlerinin devlete karşı hareket ettiğini"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Toplumsal sorunlar karşısında inisiyatif alarak çözüm üretmek bireysel ve toplumsal sorumluluğun göstergesidir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Birliktelik",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "I. Milli bayramları birlikte kutlamak\nII. Doğal afetlerde yardım kampanyaları düzenlemek\nIII. Farklı düşüncelere sahip insanları dışlamak\n\nYukarıdakilerden hangileri toplumsal birlikteliği güçlendirir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Milli bayramlar ve yardım kampanyaları birlikteliği güçlendirir. İnsanları dışlamak ise birlikteliğe zarar verir."
+        },
+        {
+            "unite": "Ünite 1 – Birlikte Yaşamak",
+            "konu": "Toplumsal Sorunlar ve Çözümler",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Okul kantininde sağlıksız gıdaların satıldığını fark eden öğrenciler, dilekçe yazarak okul yönetimine başvurmuş ve sağlıklı beslenme seçenekleri talep etmiştir.\n\nÖğrencilerin bu davranışı aşağıdaki kavramlardan hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "Pasif vatandaşlık",
+                "B": "Hak arama ve sorumluluk bilinci",
+                "C": "İtaatsizlik",
+                "D": "Bireyselcilik"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Yasal yollarla sorunlara çözüm aramak hak arama ve sorumluluk bilincinin göstergesidir."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Katman ve Oluşumları Koruma",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Fabrika atıklarının arıtılmadan nehirlere bırakılması, tarım ilaçlarının aşırı kullanımı ve egzoz gazları çevreyi kirletmektedir.\n\nBu sorunların çözümü için;\nI. Atık arıtma tesislerinin kurulması\nII. Organik tarımın teşvik edilmesi\nIII. Toplu taşıma kullanımının özendirilmesi\nönlemlerinden hangileri alınmalıdır?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Çevre kirliliğinin farklı boyutlarına karşı çok yönlü önlemler alınmalıdır."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Doğal ve Beşeri Özellikler",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "İklim, yer şekilleri ve su kaynakları gibi doğal özellikler; nüfus, yerleşme ve ulaşım gibi özellikler ise beşeri özelliklerdir.\n\nBuna göre aşağıdakilerden hangisi beşeri bir özellik değildir?",
+            "siklar": {
+                "A": "Otoyolların yapılması",
+                "B": "Fabrikaların kurulması",
+                "C": "Dağların yüksekliği",
+                "D": "Nüfusun artması"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Dağların yüksekliği doğal bir özelliktir. Diğerleri insan faaliyetleriyle oluşan beşeri özelliklerdir."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Katman ve Oluşumları Koruma",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Ozon tabakasının incelmesi, sera etkisinin artması ve buzulların erimesi küresel ısınmanın sonuçlarıdır.\n\nKüresel ısınmayı yavaşlatmak için bireylerin yapabileceği en etkili katkı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Fosil yakıt tüketimini artırmak",
+                "B": "Enerji tasarrufu yapmak ve yenilenebilir enerji kaynaklarını desteklemek",
+                "C": "Daha fazla orman alanı açarak tarım yapmak",
+                "D": "Sanayi üretimini tamamen durdurmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Enerji tasarrufu ve yenilenebilir enerji kullanımı küresel ısınmayı yavaşlatmada bireysel katkının en etkili yoludur."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Türk Dünyasıyla Kültürel İşbirlikleri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Türkiye, Azerbaycan, Kazakistan, Kırgızistan ve Özbekistan gibi ülkeler Türk Devletleri Teşkilatı çatısı altında kültürel işbirliği yapmaktadır. Ortak dil festivalleri, müzik etkinlikleri ve spor turnuvaları düzenlenmektedir.\n\nBu işbirliklerin temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Tek bir devlet altında birleşmek",
+                "B": "Ortak kültürel mirası yaşatmak ve kardeşlik bağlarını güçlendirmek",
+                "C": "Diğer ülkelere karşı askeri ittifak kurmak",
+                "D": "Sadece ekonomik çıkar sağlamak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Türk devletleri arasındaki kültürel işbirlikleri ortak mirası yaşatmayı ve kardeşlik bağlarını güçlendirmeyi amaçlar."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Doğal ve Beşeri Özellikler",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Karadeniz Bölgesi'nde bol yağış nedeniyle çay ve fındık yetiştirilirken, Güneydoğu Anadolu'da kurak iklim nedeniyle buğday ve pamuk üretimi yaygındır.\n\nBu durum aşağıdakilerden hangisini göstermektedir?",
+            "siklar": {
+                "A": "İklimin tarımsal faaliyetler üzerinde belirleyici olduğunu",
+                "B": "Her bölgede aynı ürünlerin yetiştiğini",
+                "C": "Tarımın sadece teknolojiye bağlı olduğunu",
+                "D": "İklimin tarımla hiçbir ilgisinin olmadığını"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Farklı bölgelerde farklı ürünlerin yetişmesi iklimin tarım üzerindeki belirleyici etkisini gösterir."
+        },
+        {
+            "unite": "Ünite 2 – Evimiz Dünya",
+            "konu": "Katman ve Oluşumları Koruma",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Ormanların tarla açmak için yakılması, sel ve heyelan riskini artırmaktadır.\n\nBu bilgiye göre aşağıdakilerden hangisi ormanların korunmasının önemini göstermektedir?",
+            "siklar": {
+                "A": "Ormanlar sadece ticari değer taşır",
+                "B": "Ormanlar doğal dengenin korunmasında ve afetlerin önlenmesinde hayati rol oynar",
+                "C": "Orman alanları yerleşim için daha uygun hale getirilmelidir",
+                "D": "Ormanların yok olması çevreyi etkilemez"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Ormanlar hem doğal dengeyi korur hem de sel ve heyelan gibi doğal afetlerin önlenmesinde kritik öneme sahiptir."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Türkistan'da Kurulan Türk Devletleri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Göktürkler, Türk tarihinin bilinen ilk yazılı belgelerini (Orhun Yazıtları) bırakmışlardır. Bu yazıtlarda devletin halka karşı sorumlulukları ve milletin birlik olmasının önemi vurgulanmıştır.\n\nOrhun Yazıtları'nın tarih açısından en büyük önemi aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece edebi değer taşıması",
+                "B": "Türklerin devlet yönetimi anlayışını ve millet bilincini yazılı olarak ortaya koyması",
+                "C": "Göktürklerin savaş taktiklerini anlatması",
+                "D": "Çin kültürünün Türklere etkisini göstermesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Orhun Yazıtları, Türklerin devlet-millet ilişkisini ve birlik bilincini yazılı olarak belgeleyen ilk kaynaklardır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Türkistan'da Kurulan Türk Devletleri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Uygurlar, göçebe yaşamdan yerleşik hayata geçen ilk Türk topluluğudur. Şehirler kurmuş, tarım yapmış ve kendi alfabelerini geliştirmişlerdir.\n\nUygurların yerleşik hayata geçmesinin en önemli sonucu aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Askeri güçlerinin artması",
+                "B": "Ticaret, sanat ve bilim alanlarında gelişme göstermeleri",
+                "C": "Diğer Türk boylarıyla savaşmaları",
+                "D": "Göçebe yaşamın avantajlarını kaybetmeleri"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Yerleşik hayat; ticaret, sanat, mimari ve bilim gibi alanlarda kalıcı gelişmelerin önünü açmıştır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "İslam Medeniyetinin Ortak Mirası",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "İslam dünyasında Bağdat'taki Beytü'l-Hikme (Bilgelik Evi) pek çok dilden eserin Arapçaya çevrildiği, bilim insanlarının bir arada çalıştığı önemli bir kurumdu. Burada matematik, tıp, astronomi ve felsefe alanlarında çığır açan çalışmalar yapılmıştır.\n\nBeytü'l-Hikme'nin bilim tarihindeki önemi aşağıdakilerden hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "Sadece dini eğitim veren bir kurum olması",
+                "B": "Farklı medeniyetlerin bilgi birikimini bir araya getirerek bilimin gelişmesine katkıda bulunması",
+                "C": "Yalnızca Arap bilginlerin çalıştığı bir kurum olması",
+                "D": "Askeri eğitim veren bir okul olması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Beytü'l-Hikme, farklı medeniyetlerin birikimini sentezleyerek evrensel bilime büyük katkı sağlamıştır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "İslam Medeniyetinin Ortak Mirası",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Harezmi, cebir (algebra) biliminin kurucusu olarak kabul edilir. İbn-i Sina'nın tıp ansiklopedisi El-Kanun fi't-Tıb Avrupa üniversitelerinde yüzyıllarca okutulmuştur.\n\nBu bilgilere göre aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "İslam bilginleri sadece dini bilimlerle ilgilenmiştir",
+                "B": "İslam medeniyeti evrensel bilime önemli katkılarda bulunmuştur",
+                "C": "Avrupa, İslam medeniyetinden hiç etkilenmemiştir",
+                "D": "Bu bilginlerin çalışmaları günümüzde geçersizdir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Harezmi ve İbn-i Sina gibi bilginler İslam medeniyetinin evrensel bilime katkısının somut örnekleridir."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "İslamiyet ile Türklerde Değişim",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Türklerin İslamiyet'i kabul etmesiyle birlikte;\n- Medreseler kurularak eğitim sistemi değişmiştir\n- Camiler, türbeler ve külliyeler inşa edilmiştir\n- Arap ve Fars edebiyatından etkilenen yeni bir edebiyat oluşmuştur\n\nBu bilgilere göre İslamiyet'in Türklerde en çok hangi alanları değiştirdiği söylenebilir?",
+            "siklar": {
+                "A": "Sadece askeri yapıyı",
+                "B": "Eğitim, mimari ve kültürel hayatı",
+                "C": "Sadece siyasi yapıyı",
+                "D": "Göçebe yaşam tarzını"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Medreseler eğitimi, camiler mimariyi, yeni edebiyat kültürel hayatı değiştirmiştir."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "İslamiyet ile Türklerde Değişim",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Karahanlılar İslamiyet'i kabul eden ilk Türk devletidir. Bu süreçte Türkçe, İslam kültürüyle harmanlanarak zenginleşmiştir. Yusuf Has Hacib'in Kutadgu Bilig adlı eseri bu dönemin önemli yapıtlarındandır.\n\nKutadgu Bilig'in önemi aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "İlk Türkçe sözlük olması",
+                "B": "İslami dönemde Türkçe yazılmış ilk siyasetname (devlet yönetimi kitabı) olması",
+                "C": "Bir savaş destanı olması",
+                "D": "Arapça yazılmış bir dini eser olması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Kutadgu Bilig, Türk-İslam kültüründe Türkçe yazılmış ilk siyasetname olarak büyük değer taşır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "1071 Malazgirt Meydan Muharebesi'nde Selçuklu Sultanı Alparslan, Bizans İmparatoru Romen Diyojen'i yenerek Anadolu'nun kapılarını Türklere açmıştır. Bu zaferden sonra Anadolu'ya yoğun Türk göçü başlamıştır.\n\nMalazgirt Zaferi'nin en önemli sonucu aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Bizans İmparatorluğu'nun tamamen yıkılması",
+                "B": "Anadolu'nun Türk yurdu haline gelme sürecinin başlaması",
+                "C": "Haçlı Seferlerinin sona ermesi",
+                "D": "İslam dünyasında birliğin sağlanması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Malazgirt Zaferi, Anadolu'nun Türk yurdu haline gelme sürecini başlatan dönüm noktasıdır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Haçlı Seferleri, Avrupalıların kutsal saydıkları toprakları (Kudüs) ele geçirmek amacıyla düzenledikleri seferlerdir. Ancak bu seferler sonucunda Doğu-Batı arasında kültürel ve ticari etkileşim de artmıştır.\n\nBu bilgiye göre Haçlı Seferleri hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Sadece dini amaçlarla düzenlenmiş ve başka etkisi olmamıştır",
+                "B": "Askeri amaçlı başlamış ancak kültürel ve ekonomik sonuçlar da doğurmuştur",
+                "C": "Doğu-Batı arası etkileşimi tamamen durdurmuştur",
+                "D": "İslam dünyasının Avrupa'yı fethetmesiyle sonuçlanmıştır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Haçlı Seferleri askeri amaçla başlamış, ancak kültürel ve ticari etkileşimi artıran dolaylı sonuçlar da doğurmuştur."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Türkistan'da Kurulan Türk Devletleri",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Büyük Hun Devleti'nin kurucusu Mete Han, onlu askeri sistemi geliştirmiştir. Bu sistemde ordunun on, yüz, bin ve on bin kişilik bölüklere ayrılması sağlanmıştır.\n\nMete Han'ın bu uygulamasının en önemli faydası aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Askerlerin sayısının azaltılması",
+                "B": "Ordunun disiplinli, düzenli ve etkili yönetilmesi",
+                "C": "Barış politikasının benimsenmesi",
+                "D": "Çin ile ticaretin artması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Onlu sistem, ordunun hiyerarşik ve disiplinli yönetimini sağlayarak askeri başarıları artırmıştır."
+        },
+        {
+            "unite": "Ünite 3 – Ortak Mirasımız",
+            "konu": "Askeri Mücadelelerin Anadolu'ya Etkileri",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Anadolu Selçuklu Devleti döneminde kervansaraylar inşa edilerek ticaret yollarının güvenliği sağlanmıştır. Tüccarlar ücretsiz olarak konaklayabilmiş ve malları devlet güvencesine alınmıştır.\n\nKervansaray uygulamasının temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sadece askeri amaçla kullanılmak üzere sığınak yapmak",
+                "B": "Ticari hayatı geliştirmek ve ekonomik canlılık sağlamak",
+                "C": "Yabancıların ülkeye girişini engellemek",
+                "D": "Sadece hükümdar ailesine hizmet vermek"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Kervansaraylar ticaret yollarını güvenli hale getirerek ekonomik canlılığı artırmayı amaçlamıştır."
+        },
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Yönetim ve Karar Alma Süreci",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Bir sınıfta piknik yeri belirlenirken öğretmen tüm öğrencilerin fikrini almış ve çoğunluğun tercih ettiği yer seçilmiştir.\n\nBu uygulama demokratik yönetimin hangi ilkesine örnektir?",
+            "siklar": {
+                "A": "Azınlığın çoğunluğa boyun eğmesi",
+                "B": "Çoğunluğun kararına saygı ve katılımcılık",
+                "C": "Öğretmenin tek başına karar vermesi",
+                "D": "Sadece başarılı öğrencilerin söz hakkı olması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Herkesin fikrini alarak çoğunluk kararına göre hareket etmek demokratik katılımcılığın örneğidir."
+        },
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Temel Hak ve Sorumluluklar",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Her bireyin eğitim hakkı vardır. Ancak bu hakla birlikte okula devam etme, kurallara uyma gibi sorumluluklar da bulunmaktadır.\n\nBu durum haklar ve sorumluluklar arasındaki ilişkiyi aşağıdakilerden hangisiyle açıklar?",
+            "siklar": {
+                "A": "Haklar ve sorumluluklar birbirinden bağımsızdır",
+                "B": "Her hak beraberinde sorumluluk getirir; haklar ve sorumluluklar birbirini tamamlar",
+                "C": "Sorumluluklar sadece yetişkinlere aittir",
+                "D": "Haklar sınırsız, sorumluluklar ise yoktur"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Her hak beraberinde sorumluluk getirir; ikisi birbirini tamamlayan kavramlardır."
+        },
+        {
+            "unite": "Ünite 4 – Yaşayan Demokrasimiz",
+            "konu": "Dijitalleşme ve Vatandaşlık Bilinci",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "E-devlet uygulamaları sayesinde vatandaşlar adres değişikliği, vergi ödemesi, sağlık randevusu gibi işlemlerini internet üzerinden yapabilmektedir.\n\nE-devlet uygulamalarının en önemli faydası aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Devlet kurumlarını tamamen ortadan kaldırması",
+                "B": "Vatandaşların kamu hizmetlerine hızlı ve kolay erişimini sağlaması",
+                "C": "Sadece gençlerin kullanabileceği bir sistem olması",
+                "D": "İnternet kullanımını zorunlu hale getirmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "E-devlet, vatandaşların kamu hizmetlerine zamandan ve mekândan bağımsız olarak erişimini sağlar."
+        },
+        {
+            "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+            "konu": "Ekonomik Faaliyetler ve Meslekler",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Tarım, hayvancılık, sanayi, ticaret ve hizmet sektörü bir ülkedeki temel ekonomik faaliyetlerdir.\n\nBir ülkede sanayi ve hizmet sektörünün tarıma göre daha fazla gelişmiş olması aşağıdakilerden hangisini gösterir?",
+            "siklar": {
+                "A": "Ülkenin tarımdan tamamen vazgeçtiğini",
+                "B": "Ülkenin gelişmişlik düzeyinin yüksek olduğunu",
+                "C": "Tarımın önemsiz bir sektör olduğunu",
+                "D": "İşsizliğin tamamen ortadan kalktığını"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Sanayi ve hizmet sektörünün ağırlıklı olması genellikle ekonomik gelişmişliğin göstergesidir."
+        },
+        {
+            "unite": "Ünite 5 – Hayatımızdaki Ekonomi",
+            "konu": "Yatırım ve Pazarlama Süreci",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir girişimci yerel meyveleri kullanarak reçel üretmeye karar vermiştir. Ancak ürünü üretmek için önce hammadde almış, fabrika kiralamış ve işçi çalıştırmıştır. Ürettiği reçelleri internet üzerinden satışa sunmuştur.\n\nBu süreçte sırasıyla hangi ekonomik aşamalar gerçekleşmiştir?",
+            "siklar": {
+                "A": "Tüketim → Üretim → Dağıtım",
+                "B": "Üretim → Dağıtım → Tüketim",
+                "C": "Dağıtım → Üretim → Tüketim",
+                "D": "Tüketim → Dağıtım → Üretim"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Ekonomik süreç; üretim (reçel yapma), dağıtım (internet satışları) ve tüketim (müşteri alımı) aşamalarından oluşur."
+        },
+        {
+            "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+            "konu": "Ulaşım ve İletişim Teknolojileri",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Osmanlı döneminde ulaklar (postacılar) atla günlerce yolculuk ederek mektup taşırken, günümüzde e-posta saniyeler içinde dünyanın öbür ucuna ulaşmaktadır.\n\nBu değişim aşağıdakilerden hangisinin sonucudur?",
+            "siklar": {
+                "A": "İnsanların mektup yazmayi bırakmasının",
+                "B": "İletişim teknolojilerinin hızla gelişmesinin",
+                "C": "Atların artık kullanılmamasının",
+                "D": "Posta hizmetlerinin tamamen kaldırılmasının"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Ulaktan e-postaya geçiş, iletişim teknolojisindeki devrimsel gelişmenin sonucudur."
+        },
+        {
+            "unite": "Ünite 6 – Teknoloji ve Sosyal Bilimler",
+            "konu": "Telif ve Patent Süreci",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir mucit, geliştirdiği yeni bir ürünün başkaları tarafından izinsiz olarak kopyalanmaması için patent başvurusunda bulunmuştur.\n\nPatent hakkının temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "İcat yapılmasını engellemek",
+                "B": "Buluş sahiplerinin haklarını korumak ve yenilikçiliği teşvik etmek",
+                "C": "Sadece devlet kurumlarının buluş yapmasını sağlamak",
+                "D": "Tüm buluşların ücretsiz paylaşılmasını zorunlu kılmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Patent, buluş sahiplerinin haklarını koruyarak yeni icatlar yapılmasını teşvik eden hukuki bir güvencedir."
+        }
+    ],
+    "7": [
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "İletişim ve Olumlu İletişim Unsurları",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Ahmet, arkadaşıyla tartışırken karşısındakinin sözünü kesmeden dinlemiş, 'Seni anlıyorum ama benim düşüncem farklı' diyerek fikrini ifade etmiştir.\n\nAhmet'in bu davranışı aşağıdaki iletişim unsurlarından hangisiyle en iyi açıklanabilir?",
+            "siklar": {
+                "A": "Empati kurma ve ben dili kullanma",
+                "B": "Otorite kurarak iletişimi yönlendirme",
+                "C": "Pasif iletişim tarzı benimseme",
+                "D": "İletişimi tamamen karşı tarafa bırakma"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Karşısındakini dinleyip anladığını belirtmesi empatiyi, 'benim düşüncem' demesi ben dilini gösterir. Bu olumlu iletişimin temelidir."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "İletişim ve Olumlu İletişim Unsurları",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir sınıfta öğretmen, öğrencilerin fikirlerini paylaşmaları için güvenli bir ortam oluşturmuş ve her öğrenciye eşit söz hakkı vermiştir. Ancak bazı öğrenciler arkadaşlarının fikirlerini küçümseyerek alay etmiştir.\n\nBu durumda sağlıklı iletişimi engelleyen temel faktör aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Öğretmenin yeterince otoriter olmaması",
+                "B": "Karşılıklı saygı ve hoşgörü eksikliği",
+                "C": "Sınıf mevcudunun fazla olması",
+                "D": "Konuların öğrenci seviyesine uygun olmaması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Ortam uygun olsa bile karşılıklı saygı ve hoşgörü yoksa iletişim sağlıklı işlemez."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "Medyanın Hayatımızdaki Yeri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Sosyal medyada yayılan bir haberde, bir doğal afetin boyutları abartılarak verilmiş ve halk arasında panik oluşmuştur. Daha sonra resmi kurumlar haberin gerçeği yansıtmadığını açıklamıştır.\n\nBu olay medya okuryazarlığının hangi yönünün önemini ortaya koymaktadır?",
+            "siklar": {
+                "A": "Haberlerin hızlı yayılmasının her zaman faydalı olduğunu",
+                "B": "Bilgi kaynaklarının güvenilirliğini sorgulamanın gerekliliğini",
+                "C": "Sosyal medyanın geleneksel medyadan daha güvenilir olduğunu",
+                "D": "Resmi kurumların haberleri sansürlemek istediğini"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Medya okuryazarlığının en önemli yönü bilgi kaynağını sorgulamak ve doğrulamaktır."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "Medyanın Hayatımızdaki Yeri",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Elif, internette gördüğü bir sağlık bilgisini hemen sosyal medyada paylaşmıştır. Ancak bu bilgi tıbbi olarak yanlış çıkmış ve birçok kişi yanlış yönlendirilmiştir.\n\nElif'in bu davranışından çıkarılacak en önemli ders aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sağlık bilgileri asla internette paylaşılmamalıdır",
+                "B": "Bilgiyi paylaşmadan önce güvenilir kaynaklardan doğrulamalıyız",
+                "C": "Sosyal medya hesapları kapatılmalıdır",
+                "D": "Sadece gazeteciler bilgi paylaşmalıdır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bilgiyi paylaşmadan önce güvenilir ve uzman kaynaklardan doğrulamak sorumlu medya kullanımının temelidir."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "Kitle İletişim Özgürlüğü",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Bir ülkede basın kuruluşları hükümet politikalarını eleştiren haberleri yayımlayabilmekte, gazeteciler özgürce haber yapabilmektedir. Ancak bu haberler kişisel hakları ihlal etmemekte ve toplum düzenini bozmamaktadır.\n\nBu durum aşağıdaki kavramlardan hangisini en iyi yansıtmaktadır?",
+            "siklar": {
+                "A": "Sansür uygulaması",
+                "B": "Sorumlu basın özgürlüğü",
+                "C": "Kontrolsüz medya düzeni",
+                "D": "Tek sesli yayıncılık"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Basının özgürce ama sorumluluk sınırları içinde haber yapması, sorumlu basın özgürlüğünün tanımıdır."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "Kitle İletişim Özgürlüğü",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "I. Farklı görüşlerin kamuoyuyla paylaşılması\nII. Yöneticilerin denetlenmesi\nIII. Bireylerin özel hayatının ifşa edilmesi\n\nYukarıdakilerden hangileri basın özgürlüğünün amaçları arasında sayılabilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Basın özgürlüğü farklı görüşlerin paylaşılmasını ve yöneticilerin denetlenmesini amaçlar. Özel hayatın ifşası hak ihlalidir."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "İletişim ve Olumlu İletişim Unsurları",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Zeynep sınıf başkanlığı seçiminde rakibini tebrik etmiş ve 'Seni destekleyeceğim, birlikte güzel işler yapabiliriz' demiştir.\n\nZeynep'in bu tutumu;\nI. Hoşgörü\nII. Rekabetçilik\nIII. İşbirliği\nözelliklerinden hangilerini yansıtmaktadır?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Rakibini tebrik etmesi hoşgörüyü, birlikte çalışma teklifi işbirliğini gösterir. Rekabetçilik bu davranışta yoktur."
+        },
+        {
+            "unite": "Ünite 1 – Birey ve Toplum",
+            "konu": "Medyanın Hayatımızdaki Yeri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir araştırmaya göre gençlerin %70'i haberleri sosyal medyadan takip etmekte ve bu haberlerin doğruluğunu kontrol etmemektedir.\n\nBu durumun ortaya çıkarabileceği en büyük toplumsal sorun aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Gazete satışlarının düşmesi",
+                "B": "Yanlış bilgi ve dezenformasyonun yaygınlaşması",
+                "C": "Televizyon izleme oranlarının artması",
+                "D": "İnternet kullanımının azalması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Doğrulanmamış haberlerin yaygın tüketimi dezenformasyon (yanlış bilgi) sorununu büyütür."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Beylikten Cihan Devletine",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Osmanlı Devleti kuruluş döneminde, fethettiği bölgelerdeki Hristiyan halka din ve ibadet özgürlüğü tanımış, onların kendi mahkemelerinde yargılanmalarına izin vermiştir.\n\nOsmanlı'nın bu politikasının temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Avrupa devletlerinin desteğini kazanmak",
+                "B": "Fethedilen bölgelerde kalıcı hâkimiyet sağlamak ve toplumsal huzuru korumak",
+                "C": "Hristiyan halkı askerî güç olarak kullanmak",
+                "D": "İslam dininin yayılmasını hızlandırmak"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Hoşgörü politikası, farklı toplulukların devlete bağlılığını sağlayarak kalıcı hâkimiyetin temelini oluşturmuştur."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Beylikten Cihan Devletine",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Osmanlı Devleti'nin kuruluşunda;\nI. Bizans sınırında uç beyliği konumunda olması\nII. Diğer beyliklerin Moğol baskısından kaçan Türkmenleri kabul etmemesi\nIII. Osman Bey'in adaletli yönetimi sayesinde çevresine insanların toplanması\n\nfaktörlerinden hangileri etkili olmuştur?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Uç beyliği konumu gazâ ruhu kazandırmış, Türkmen göçü nüfusu artırmış, adaletli yönetim ise insanları çekmiştir."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Osmanlı Devleti'nde tımar sistemi uygulanmış; toprağı işleyen köylü, ürettiği ürünün bir kısmını tımar sahibine vermiş, tımar sahibi ise karşılığında asker yetiştirmiştir. Böylece devlet hem üretimi hem de ordunun ihtiyaçlarını karşılamıştır.\n\nBu sisteme bakılarak tımar uygulamasının;\nI. Tarımsal üretimin sürekliliğini sağlama\nII. Hazineden para harcamadan asker yetiştirme\nIII. Köylünün toprak sahibi olmasını engelleme\namaçlarından hangilerini taşıdığı söylenebilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Tımar sistemi hem üretim sürekliliğini hem de hazineye yük olmadan asker yetiştirilmesini sağlamıştır."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "İnsanı Yaşat ki Devlet Yaşasın",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Osmanlı'da vakıflar; hastane, medrese, han, hamam, çeşme, köprü gibi pek çok yapı inşa ettirmiştir. Bu yapılar halkın ücretsiz olarak yararlanmasına sunulmuştur.\n\nVakıf kurumunun Osmanlı toplumuna en önemli katkısı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Devletin vergi gelirlerini artırması",
+                "B": "Toplumsal dayanışmayı ve sosyal refahı güçlendirmesi",
+                "C": "Askeri gücün artırılması",
+                "D": "Ticaret yollarının denetim altına alınması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Vakıflar toplumsal dayanışmanın ve sosyal devlet anlayışının Osmanlı'daki en güçlü yansımasıdır."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Avrupa'da Uyanış",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Avrupa'da Rönesans hareketinin başlamasında;\nI. Coğrafi Keşifler sonucu yeni kültürlerle tanışılması\nII. İstanbul'un fethinden sonra Bizanslı bilginlerin İtalya'ya göçü\nIII. Matbaanın yaygınlaşmasıyla bilgiye erişimin kolaylaşması\n\ngelişmelerinden hangileri etkili olmuştur?",
+            "siklar": {
+                "A": "Yalnız II",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Rönesans'ın doğuşunda yeni kültürlerle temas, bilgin göçü ve matbaanın yaygınlaşması hep birlikte etkili olmuştur."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Avrupa'da Uyanış",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Martin Luther, Katolik Kilisesi'nin endüljans (günah çıkarma kâğıdı) satışına karşı çıkarak 95 maddelik bir bildiri yayımlamıştır. Bu hareket Avrupa'da Reform hareketlerinin başlangıcı olmuştur.\n\nReform hareketinin en önemli sonucu aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Avrupa'da mezhep birliğinin sağlanması",
+                "B": "Kilisenin siyasi gücünün zayıflaması ve laik düşüncenin güçlenmesi",
+                "C": "Osmanlı Devleti'nin Avrupa'daki topraklarının genişlemesi",
+                "D": "Feodalite sisteminin güçlenmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Reform hareketi kilisenin siyasi otoritesini zayıflatmış ve laik düşüncenin temellerini atmıştır."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Değişen Dünya'da Değişen Osmanlı",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "XVII. yüzyıldan itibaren Osmanlı Devleti'nde tımar sisteminin bozulması, vergilerin artırılması ve Celâli İsyanlarının çıkması gibi olaylar yaşanmıştır. Aynı dönemde Avrupa'da bilimsel ve teknolojik gelişmeler hız kazanmıştır.\n\nBu iki gelişme birlikte değerlendirildiğinde aşağıdaki sonuçlardan hangisine ulaşılabilir?",
+            "siklar": {
+                "A": "Osmanlı Devleti Avrupa'dan daha güçlüdür",
+                "B": "Osmanlı'nın Avrupa karşısında geri kalma sürecine girdiği",
+                "C": "Avrupa devletlerinin Osmanlı'yı taklit ettiği",
+                "D": "Celâli İsyanlarının Avrupa'yı da etkilediği"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "İç sorunlar ve Avrupa'nın yükselişi Osmanlı'nın gerileme/geri kalma sürecini başlatmıştır."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Değişen Dünya'da Değişen Osmanlı",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Lale Devri'nde (1718-1730) İstanbul'da ilk matbaa açılmış, çeşitli Avrupa başkentlerine elçiler gönderilmiş ve İstanbul'da pek çok bahçe ve çeşme yapılmıştır.\n\nBu bilgilere göre Lale Devri hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Sadece askeri alanda ıslahat yapılmıştır",
+                "B": "Batı'nın kültürel ve teknolojik gelişmelerinden yararlanılmaya çalışılmıştır",
+                "C": "Osmanlı toprakları genişlemiştir",
+                "D": "Halk arasında eşitlik tam sağlanmıştır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Matbaa, elçi gönderimi gibi adımlar Batı'nın kültürel ve teknolojik birikiminden faydalanma çabasıdır."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Osmanlı'dan Kalan Mirasımız",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Osmanlı Devleti döneminde inşa edilen camiler, hanlar, hamamlar, medreseler ve köprüler günümüzde hâlâ ayaktadır ve turizm açısından büyük değer taşımaktadır.\n\nBu yapılar Osmanlı'nın hangi alanlardan günümüze miras bıraktığının kanıtıdır?",
+            "siklar": {
+                "A": "Askeri ve siyasi",
+                "B": "Mimari ve kültürel",
+                "C": "Ekonomik ve ticari",
+                "D": "Bilimsel ve teknolojik"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Osmanlı'nın cami, han, hamam gibi eserleri mimari ve kültürel mirası temsil eder."
+        },
+        {
+            "unite": "Ünite 2 – Kültür ve Miras",
+            "konu": "Beylikten Cihan Devletine",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Fatih Sultan Mehmet, İstanbul'u fethettikten sonra farklı din ve milletlere mensup insanların İstanbul'a yerleşmesini teşvik etmiştir. Rum Patrikhanesi'nin varlığını sürdürmesine izin vermiş, Yahudi ve Ermeni cemaatlerine kendi dini liderlerini seçme hakkı tanımıştır.\n\nFatih'in bu uygulamalarının temel gerekçesi aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "İstanbul'u bir dünya başkenti haline getirme isteği",
+                "B": "Avrupa devletlerinin baskısına boyun eğmesi",
+                "C": "Gayrimüslim halkı asimilasyona (zorla Müslümanlaştırma) tabi tutması",
+                "D": "Halkın vergi ödememesi için yapılan düzenleme"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Farklı din ve milletlerin bir arada yaşadığı kozmopolit bir başkent oluşturmak Fatih'in vizyonuydu."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Yerleşme ve Seyahat Özgürlüğü",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Anayasamıza göre her vatandaş, yurt içinde serbestçe dolaşabilir ve istediği yerde yerleşebilir. Ancak bu hak, salgın hastalık durumlarında veya suç soruşturması gibi durumlarda sınırlandırılabilir.\n\nBu bilgiye göre yerleşme ve seyahat özgürlüğü hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Bu hak hiçbir koşulda sınırlandırılamaz",
+                "B": "Kamu düzeni ve güvenliği gereği belirli durumlarda sınırlandırılabilir",
+                "C": "Sadece devlet memurları bu haktan yararlanabilir",
+                "D": "Bu hak sadece yurt dışı seyahatleri kapsar"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Temel haklar istisnai durumlarda (kamu düzeni, salgın vb.) yasayla sınırlandırılabilir."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Türkiye'nin Nüfus Özellikleri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Türkiye'nin batı bölgeleri doğu bölgelerine göre çok daha yoğun nüfuslanmıştır. İstanbul, Ankara, İzmir gibi şehirler milyonlarca insana ev sahipliği yaparken, Hakkari, Tunceli gibi iller oldukça seyrek nüfusludur.\n\nBu durumun oluşmasında;\nI. Sanayileşme ve iş imkânları\nII. İklim ve yer şekilleri\nIII. Ulaşım imkânlarının gelişmişliği\nfaktörlerinden hangileri etkilidir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "I ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Nüfus dağılışını sanayi/iş imkânları, doğal koşullar ve ulaşım birlikte etkiler."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Türkiye'nin Nüfus Özellikleri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Türkiye'de son yıllarda doğum oranlarının düşmesi ve yaşam süresinin uzaması sonucunda yaşlı nüfus oranı artmaya başlamıştır.\n\nBu değişimin aşağıdakilerden hangisine yol açması beklenir?",
+            "siklar": {
+                "A": "Çalışabilir nüfus oranının ve üretimin azalması",
+                "B": "Okul öncesi eğitim kurumlarına talebin artması",
+                "C": "Doğum oranlarının yeniden hızla yükselmesi",
+                "D": "Kırsal bölgelere göçün artması"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Yaşlı nüfus oranının artması çalışabilir nüfusun ve üretimin azalmasına yol açabilir."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Göç ve Sonuçları",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Mehmet'in ailesi daha iyi iş imkânları ve çocuklarına kaliteli eğitim sağlamak için köyden büyükşehre taşınmıştır. Ancak şehirde yüksek kira, trafik yoğunluğu ve kalabalık gibi sorunlarla karşılaşmışlardır.\n\nBu durum göçün hangi yönünü ortaya koymaktadır?",
+            "siklar": {
+                "A": "Göçün sadece olumlu sonuçları vardır",
+                "B": "Göçün hem itici hem çekici faktörleri ve olumsuz sonuçları bulunmaktadır",
+                "C": "Köyden kente göç tamamen engellenmelidir",
+                "D": "Göç sadece ekonomik nedenlerle gerçekleşir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "İş ve eğitim çekici faktörler, yüksek kira ve kalabalık olumsuz sonuçlardır. Göç çok boyutlu bir olgudur."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Göç ve Sonuçları",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Türkiye'de 1950'lerden itibaren köyden kente büyük bir göç dalgası yaşanmıştır. Bu göçün sonucunda büyükşehirlerde gecekondulaşma, çarpık kentleşme ve altyapı yetersizlikleri ortaya çıkmıştır.\n\nBu bilgiye göre aşağıdakilerden hangisi köyden kente göçün sonuçlarından biri değildir?",
+            "siklar": {
+                "A": "Kentlerde konut sorunun ortaya çıkması",
+                "B": "Şehirlerde nüfus yoğunluğunun artması",
+                "C": "Kırsal alanda tarımsal üretimin artması",
+                "D": "Kentlerde altyapı sorunlarının büyümesi"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Köyden kente göç, kırsal alanda işgücü kaybına ve tarımsal üretimin düşmesine yol açar, artmasına değil."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Geçmişten Günümüze Yerleşme",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "İlk insanlar su kenarlarına, verimli topraklara ve iklimi ılıman bölgelere yerleşmeyi tercih etmişlerdir. Günümüzde ise yerleşim yeri seçiminde sanayi tesislerinin, ulaşım ağlarının ve sosyal imkânların bulunması daha belirleyici hale gelmiştir.\n\nBu değişim aşağıdakilerden hangisinin sonucudur?",
+            "siklar": {
+                "A": "Doğal çevrenin insanlar için artık hiç önemli olmaması",
+                "B": "Teknoloji ve sanayileşme ile beşeri faktörlerin önem kazanması",
+                "C": "İnsanların tarımdan tamamen vazgeçmesi",
+                "D": "İklim değişikliğinin yerleşimi belirleyen tek faktör olması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Teknoloji ve sanayileşme, yerleşim tercihlerinde beşeri faktörlerin öne çıkmasını sağlamıştır."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Yerleşme ve Seyahat Özgürlüğü",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Bir kişi, belediye tarafından afet riski nedeniyle yasaklanan bir bölgeye yerleşmek istemiş ancak izin verilmemiştir.\n\nBu kısıtlama aşağıdakilerden hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "Kişinin yerleşme hakkının ihlal edilmesi",
+                "B": "Kamu güvenliği açısından hakların sınırlandırılabilmesi",
+                "C": "Belediyenin yetkisini kötüye kullanması",
+                "D": "Yerleşme özgürlüğünün sadece kağıt üzerinde olması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Afet riski gibi durumlarda can güvenliği için yerleşme hakkı kamu yararı gereği sınırlandırılabilir."
+        },
+        {
+            "unite": "Ünite 3 – İnsanlar, Yerler ve Çevreler",
+            "konu": "Göç ve Sonuçları",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Suriye'deki iç savaş nedeniyle milyonlarca insan, başta Türkiye olmak üzere komşu ülkelere sığınmak zorunda kalmıştır.\n\nBu göç hareketi aşağıdaki göç türlerinden hangisine örnek oluşturur?",
+            "siklar": {
+                "A": "İç göç – Gönüllü",
+                "B": "Dış göç – Zorunlu",
+                "C": "Mevsimlik göç",
+                "D": "Beyin göçü"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Savaş nedeniyle ülke dışına çıkmak zorunda kalmak zorunlu dış göçün en belirgin örneğidir."
+        },
+        {
+            "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+            "konu": "Kil Tabletlerden Akıllı Tabletlere",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "İnsanlık tarihi boyunca bilgiyi kaydetme yöntemleri sürekli değişmiştir. Sümerler kil tabletlere, Mısırlılar papirüse, Çinliler kâğıda yazmışlardır. Günümüzde ise bilgi dijital ortamda depolanmaktadır.\n\nBu gelişme süreci aşağıdakilerden hangisini en iyi kanıtlamaktadır?",
+            "siklar": {
+                "A": "Eski dönemlerin bilgi birikiminin tamamen kaybolduğunu",
+                "B": "İnsanın bilgiyi koruma ve aktarma ihtiyacının her dönemde var olduğunu",
+                "C": "Dijital teknolojinin diğer tüm yöntemleri gereksiz kıldığını",
+                "D": "Sadece gelişmiş toplumların bilgi kaydettiğini"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Araçlar değişse de bilgiyi koruma ve aktarma ihtiyacı insanlık tarihi boyunca süreklidir."
+        },
+        {
+            "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+            "konu": "Bilimin Öncüleri",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Ali Kuşçu astronomi, İbn-i Sina tıp, Piri Reis haritacılık alanlarında dünyaca ünlü eserler vermiş Türk-İslam bilginleridir. Bu bilginlerin eserleri Avrupa üniversitelerinde de yüzyıllarca okunmuştur.\n\nBu durum aşağıdakilerden hangisini kanıtlamaktadır?",
+            "siklar": {
+                "A": "Bilim tek bir uygarlığın tekelindedir",
+                "B": "Türk-İslam bilginleri evrensel bilime önemli katkılarda bulunmuştur",
+                "C": "Avrupa'da bilimsel çalışma yapılmamıştır",
+                "D": "Bu bilginlerin eserleri günümüzde geçerliliğini yitirmiştir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Eserlerinin Avrupa'da da okutulması, Türk-İslam bilginlerinin evrensel bilime katkısının kanıtıdır."
+        },
+        {
+            "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+            "konu": "Her Yenilik Geleceğimize Katkıdır",
+            "yil": 2022,
+            "zorluk": "Zor",
+            "soru": "Buhar makinesinin icadı, fabrikaların kurulmasına, üretimin artmasına ve şehirlerin büyümesine yol açmıştır. Ancak aynı zamanda çevre kirliliği ve işçi hakları sorunları gibi olumsuzlukları da beraberinde getirmiştir.\n\nBu duruma göre teknolojik yenilikler hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Teknolojik yenilikler her zaman sadece olumlu sonuçlar doğurur",
+                "B": "Yenilikler hem olumlu hem olumsuz toplumsal sonuçlar doğurabilir",
+                "C": "Buhar makinesi toplum yaşamını hiç etkilememiştir",
+                "D": "Teknolojik gelişmeler sadece bilim insanlarını ilgilendirir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Her teknolojik yeniliğin toplumsal, çevresel ve ekonomik boyutlarıyla hem olumlu hem olumsuz etkileri olabilir."
+        },
+        {
+            "unite": "Ünite 4 – Bilim, Teknoloji ve Toplum",
+            "konu": "Özgür Düşüncenin Bilime Katkısı",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Galileo Galilei, Dünya'nın Güneş etrafında döndüğünü savunduğu için kilise tarafından yargılanmış ve ev hapsine mahkûm edilmiştir. Ancak yıllar sonra bilim dünyası onun haklı olduğunu kanıtlamıştır.\n\nBu olay bilim tarihi açısından aşağıdakilerden hangisini göstermektedir?",
+            "siklar": {
+                "A": "Bilimsel ilerlemeler için düşünce özgürlüğünün zorunlu olduğunu",
+                "B": "Kilisenin bilim konusunda daima haklı olduğunu",
+                "C": "Bilimin sadece güçlü devletlerde geliştiğini",
+                "D": "Bilim insanlarının toplumdan soyutlanması gerektiğini"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Galileo örneği, düşünce özgürlüğü olmadan bilimsel ilerlemenin engellenebileceğini gösterir."
+        },
+        {
+            "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+            "konu": "Dijital Dünya",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "E-ticaret sayesinde bir çiftçi, yetiştirdiği organik ürünleri aracısız olarak doğrudan tüketiciye ulaştırabilmektedir.\n\nBu durumun en önemli ekonomik faydası aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Üreticinin gelirinin artması ve tüketicinin daha uygun fiyata ürüne ulaşması",
+                "B": "Aracıların zenginleşmesi",
+                "C": "Tarımsal üretimin tamamen sona ermesi",
+                "D": "İnternetin ekonomiye hiçbir etkisinin olmaması"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "E-ticaret aracıları devre dışı bırakarak hem üretici hem tüketici lehine fiyat avantajı sağlar."
+        },
+        {
+            "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+            "konu": "Vakıf Demek Medeniyet Demek",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Osmanlı döneminde kurulan vakıflar; yolcuların barınması için kervansaraylar, öğrencilerin eğitimi için medreseler, hastaların tedavisi için darüşşifalar inşa ettirmiştir.\n\nBu bilgilere göre vakıf kültürü hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Vakıflar yalnızca dini hizmetler vermiştir",
+                "B": "Vakıflar toplumsal ihtiyaçların karşılanmasında öncü bir rol üstlenmiştir",
+                "C": "Vakıflar devletin kontrolünde ticari kurumlardır",
+                "D": "Vakıflar sadece zenginlere hizmet vermiştir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Eğitim, sağlık ve barınma gibi alanlarda hizmet veren vakıflar toplumsal ihtiyaçları karşılayan öncü kurumlardır."
+        },
+        {
+            "unite": "Ünite 5 – Üretim, Dağıtım ve Tüketim",
+            "konu": "Toprak Ana",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Verimli tarım topraklarının hızlı kentleşme sonucu betonla kaplanması, uzun vadede gıda üretimini olumsuz etkilemektedir.\n\nBu sorunun çözümü için aşağıdakilerden hangisi en uygun yaklaşımdır?",
+            "siklar": {
+                "A": "Tarım arazilerinin imara açılmasının teşvik edilmesi",
+                "B": "Kentleşmenin planlanarak tarım arazilerinin korunması",
+                "C": "Tüm gıdaların ithal edilmesi",
+                "D": "Tarımsal faaliyetlerin tamamen durdurulması"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Planlı kentleşme ve tarım arazilerinin korunması, sürdürülebilir gıda üretiminin temelidir."
+        },
+        {
+            "unite": "Ünite 6 – Etkin Vatandaşlık",
+            "konu": "Demokrasinin Temel İlkeleri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Bir ülkede seçimler düzenli olarak yapılmakta, ancak muhalefet partileri kapatılmakta ve basın özgürlüğü kısıtlanmaktadır.\n\nBu ülkenin yönetim anlayışı hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Tam demokratik bir ülkedir",
+                "B": "Seçim yapılması tek başına demokrasi için yeterli değildir",
+                "C": "Basın özgürlüğü demokrasiyle ilgisizdir",
+                "D": "Muhalefet partileri demokraside gereksizdir"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Demokrasi sadece seçimden ibaret değildir; basın özgürlüğü, muhalefet ve hukukun üstünlüğü de gereklidir."
+        },
+        {
+            "unite": "Ünite 6 – Etkin Vatandaşlık",
+            "konu": "Atatürk ve Demokrasi",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Atatürk 'Egemenlik kayıtsız şartsız milletindir' ilkesini Cumhuriyetin temeli olarak belirlemiştir. Bu ilke doğrultusunda TBMM kurulmuş ve milletin yönetime katılması sağlanmıştır.\n\nBu ilke aşağıdaki yönetim anlayışlarından hangisiyle doğrudan ilişkilidir?",
+            "siklar": {
+                "A": "Monarşi",
+                "B": "Teokrasi",
+                "C": "Milli egemenlik ve demokrasi",
+                "D": "Oligarşi"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Egemenliğin millete ait olması, milli egemenlik ve demokratik yönetimin temelidir."
+        },
+        {
+            "unite": "Ünite 6 – Etkin Vatandaşlık",
+            "konu": "Hakimiyet Milletindir",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Seçme ve seçilme hakkı, düşünce özgürlüğü, basın özgürlüğü gibi haklar demokratik toplumların vazgeçilmez unsurlarıdır.\n\nBu hakların ortak özelliği aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Yalnızca belirli meslek gruplarına tanınmış olması",
+                "B": "Vatandaşların yönetime katılımını ve denetimini sağlaması",
+                "C": "Sadece seçim dönemlerinde geçerli olması",
+                "D": "Devlet tarafından her zaman sınırlandırılabilmesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Bu haklar vatandaşların yönetime katılmasını, yönetimi denetlemesini ve hesap sorabilmesini sağlar."
+        },
+        {
+            "unite": "Ünite 7 – Küresel Bağlantılar",
+            "konu": "Yurtta Barış Dünya'da Barış",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Atatürk'ün 'Yurtta sulh, cihanda sulh' ilkesi Türkiye'nin dış politikasının temelini oluşturmuştur. Bu ilke doğrultusunda Türkiye, BM ve NATO gibi uluslararası kuruluşlara üye olmuştur.\n\nBu bilgiye göre Türkiye'nin dış politikası hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Saldırgan ve yayılmacı bir politika izlenmektedir",
+                "B": "Uluslararası işbirliğine ve barışa dayalı bir politika benimsenmektedir",
+                "C": "Türkiye hiçbir uluslararası kuruluşa üye değildir",
+                "D": "Dış politikada yalnızca askeri güç kullanılmaktadır"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Uluslararası kuruluşlara üyelik, işbirliği ve barışçıl dış politikanın göstergesidir."
+        },
+        {
+            "unite": "Ünite 7 – Küresel Bağlantılar",
+            "konu": "Küresel Sorunlara Çözüm",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Küresel ısınma, açlık, salgın hastalıklar ve göç gibi sorunlar tek bir ülkenin çözebileceği boyutun ötesine geçmiştir.\n\nBu durum aşağıdakilerden hangisinin gerekliliğini ortaya koymaktadır?",
+            "siklar": {
+                "A": "Her ülkenin kendi sorunlarını tek başına çözmesi",
+                "B": "Uluslararası işbirliği ve ortak çözüm arayışının zorunlu olduğu",
+                "C": "Küresel sorunların çözümünün imkânsız olduğu",
+                "D": "Sadece büyük devletlerin sorunlarla ilgilenmesi gerektiği"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Küresel sorunlar sınır tanımaz; çözümleri de ancak uluslararası işbirliğiyle mümkündür."
+        }
+    ],
+    "8": [
+        {
+            "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+            "konu": "Avrupa'daki Gelişmeler ve Osmanlı",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Fransız İhtilali ile yayılan milliyetçilik akımı, çok uluslu bir yapıya sahip olan Osmanlı Devleti'ni derinden etkilemiştir. Sırplar, Yunanlar ve Bulgarlar gibi Balkan milletleri teker teker isyan ederek kendi bağımsız devletlerini kurmak istemişlerdir. Osmanlı aydınları ve devlet adamları ise bu parçalanmayı önlemek için Tanzimat ve Islahat fermanlarını yayımlamış, ayrıca meşrutiyeti ilan ederek halka yönetime katılma hakkı vermişlerdir.\n\nVerilen bu bilgilere göre Osmanlı Devleti'nin aldığı önlemlerin temel amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Avrupa devletlerinin ekonomik desteğini almak",
+                "B": "Sınırlarını genişleterek yeni topraklar fethetmek",
+                "C": "Azınlıkların devlete bağlılığını artırarak dağılmayı önlemek",
+                "D": "Milliyetçilik akımının Avrupa'daki etkisini kırmak"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Parçada azınlık isyanlarına karşı Osmanlı'nın fermanlar ve meşrutiyet ile halka haklar vererek parçalanmayı (dağılmayı) engellemek istediği açıkça vurgulanmıştır. Yeni nesil sorularda okuduğunu anlama ve yorumlama ön plandadır."
+        },
+        {
+            "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+            "konu": "Mustafa Kemal'in Fikir Hayatı",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Manastır Askerî İdadisinde öğrenim gördüğü yıllarda Mustafa Kemal'i en çok etkileyen olaylardan biri 1897 Türk-Yunan Savaşı'dır. Bu savaşta Türk ordusu cephede büyük bir zafer kazanmasına rağmen, masada yapılan antlaşma ile beklenen avantajı elde edememiştir. Mustafa Kemal, bu durum üzerine 'Savaş cephede kazanılır ama diplomasiyle sonuçlandırılır' gerçeğini yaşayarak öğrenmiştir.\n\nBu metinden yola çıkılarak Mustafa Kemal ile ilgili aşağıdaki yargılardan hangisine ulaşılabilir?",
+            "siklar": {
+                "A": "Sadece askerî deha ile devletin yönetilebileceğine inanmıştır.",
+                "B": "Dış politikanın ve diplomatik başarıların askerî başarılar kadar önemli olduğunu kavramıştır.",
+                "C": "Osmanlı Devleti'nin Avrupa tarzı okullar açmasını savunmuştur.",
+                "D": "Gençlik yıllarında askerlikten çok siyasete ilgi duymuştur."
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Cephede kazanılan zaferin masa başında kaybedilmesi, diplomasi ve dış politikanın gücünü gösterir. Mustafa Kemal'in bu olaydan çıkardığı ders budur."
+        },
+        {
+            "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+            "konu": "Trablusgarp Savaşı",
+            "yil": 2022,
+            "zorluk": "Zor",
+            "soru": "İtalya'nın Trablusgarp’a saldırması üzerine Osmanlı Devleti bölgeye donanma ve ordu gönderememiştir. Bunun üzerine Mustafa Kemal ve bir grup genç subay gönüllü olarak Trablusgarp’a gitmiş, yerel halkı İtalyanlara karşı örgütleyerek Derne ve Tobruk'ta önemli başarılar elde etmişlerdir.\n\nBu durum Mustafa Kemal'in;\nI. Vatansever\nII. Teşkilatçı (Örgütleyici)\nIII. İnkılapçı\nkişilik özelliklerinden hangilerini yansıtmaktadır?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Gönüllü olarak gitmesi 'Vatansever', yerel halkı bir araya getirip direnişe geçirmesi 'Teşkilatçı' (örgütleyici) olduğunu gösterir. İnkılapçılık ise yenilik yapmakla ilgilidir ve bu metinde vurgulanmamıştır."
+        },
+        {
+            "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+            "konu": "Eğitim Hayatı ve Fikir Gelişimi",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "Ömer Naci, Manastır Askerî İdadisinde Mustafa Kemal'e edebiyat ve hitabet sevgisi aşılamış; Yüzbaşı Nakiyüddin Bey ise Fransızca öğrenmesine ve Avrupa’daki gelişmeleri takip etmesine öncülük etmiştir. Aynı dönemde Mustafa Kemal, Ziya Gökalp ve Namık Kemal gibi aydınların eserleriyle tanışmıştır.\n\nBuna göre Manastır Askerî İdadisi yıllarının Mustafa Kemal'e katkısı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Sırf askerî taktikler konusunda uzmanlaşmasını sağlamıştır.",
+                "B": "Yabancı devlet adamlarının desteğini almasına zemin hazırlamıştır.",
+                "C": "Çok yönlü ve yeniliklere açık bir fikir adamı olarak yetişmesinde etkili olmuştur.",
+                "D": "İlk askerî görevine atanmasını doğrudan kolaylaştırmıştır."
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Edebiyat, hitabet, Fransızca, Avrupa'yı takip ve millîçi aydınları okuması onun sadece asker değil çok yönlü ve yeniliklere açık bir vizyon kazanmasını sağlamıştır."
+        },
+        {
+            "unite": "Ünite 1 – Bir Kahraman Doğuyor",
+            "konu": "I. Dünya Savaşı ve Osmanlı Dönüşü",
+            "yil": 2020,
+            "zorluk": "Orta",
+            "soru": "Mustafa Kemal, Sofya'da askerî ataşe olarak görev yaparken Bulgar Parlamentosu'nun toplantılarını yakından izlemiş, Avrupa devletlerinin temsilcileriyle diplomasi alanında fikir alışverişinde bulunmuştur.\n\nMustafa Kemal'in Sofya'daki bu deneyiminin ona sağladığı en önemli kazanım aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Parlamenter sistemin ve demokrasinin işleyişini yakından tanıması",
+                "B": "Bulgar ordusunun askerî sırlarını Osmanlı'ya taşıması",
+                "C": "Sofya ataşeliği sayesinde padişahın en yakın danışmanı olması",
+                "D": "I. Dünya Savaşı'nın çıkış tarihini önceden tespit etmesi"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Parlamento toplantılarını izleyerek ve yabancı elçilerle görüşerek parlamenter sistem (meclis sistemi) ve diplomasi hakkında eşsiz deneyimler kazanmıştır."
+        },
+        {
+            "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+            "konu": "Mondros Ateşkes Antlaşması",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Mondros Mütarekesi’nin 7. maddesi: 'İtilaf Devletleri güvenliklerini tehdit edecek bir durum ortaya çıktığında, herhangi bir stratejik noktayı işgal etme hakkına sahip olacaktır.' şeklindedir.\n\nBu maddenin antlaşmaya konulmasındaki asıl amaç aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Osmanlı sınırlarını güvence altına alıp padişahı korumak",
+                "B": "Anadolu'da yapacakları işgallere hukuki bir kılıf (zemin) hazırlamak",
+                "C": "Osmanlı ordusunun ihtiyaçlarını İtilaf Devletleri'nin karşılamasını sağlamak",
+                "D": "Sovyet Rusya'nın güneye (Sıcak denizlere) inmesini engellemek"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "İtilaf Devletleri bu çok muğlak ve geniş maddeyle, canları nereyi isterse orayı 'güvenliğimiz tehdit altında' bahanesiyle işgal etmeyi yasallaştırmışlardır."
+        },
+        {
+            "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+            "konu": "Amasya Genelgesi",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Amasya Genelgesi'nde şu madde yer alır: 'Milletin bağımsızlığını, yine milletin azim ve kararı kurtaracaktır.'\n\nAşağıdakilerden hangisi bu karardan çıkarılabilecek bir sonuç değildir?",
+            "siklar": {
+                "A": "Milli Mücadele'nin yöntemi (nasıl yapılacağı) belirtilmiştir.",
+                "B": "Üstü kapalı da olsa üstünlüğün ve egemenliğin millette olduğu vurgulanmıştır.",
+                "C": "Osmanlı yönetiminin artık ülkeyi kurtaramayacağı ifade edilmiştir.",
+                "D": "Manda ve himayenin kabul edilebileceği sinyali verilmiştir."
+            },
+            "dogru_cevap": "D",
+            "aciklama": "'Milletin azmi ve kararı kurtaracaktır' ifadesi tam bağımsızlık ve ulusal egemenliğin temelidir. Manda ve himaye ile taban tabana zıttır."
+        },
+        {
+            "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+            "konu": "Erzurum Kongresi",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Doğu Anadolu illerini Ermenilere verilmesini engellemek amacıyla toplanan Erzurum Kongresi’nde, “Milli sınırlar içinde vatan bir bütündür parçalanamaz” ve “Kuvay-ı Milliye'yi tek kuvvet olarak tanımak, milli iradeyi hakim kılmak esastır” kararları alınmıştır.\n\nBuna göre Erzurum Kongresi hakkında aşağıdaki yorumlardan hangisi yapılabilir?",
+            "siklar": {
+                "A": "Toplanma amacı bölgesel, aldığı kararlar ise tüm yurdu ilgilendirdiği için ulusaldır.",
+                "B": "İstanbul Hükümeti'nin onayı ve desteğiyle toplanmıştır.",
+                "C": "Alınan kararlarla padişahın yetkileri daha da artırılmıştır.",
+                "D": "Sadece Doğu sınırlarındaki askeri durumu düzenlemekle yetinmiştir."
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Kongre Doğu illeri için toplanmış (bölgesel), ancak vatanın bütünlüğü ve milli irade gibi kararlarla bağımsızlık hareketini tüm ülkeye (ulusal) yaymıştır."
+        },
+        {
+            "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+            "konu": "Misak-ı Millî",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Son Osmanlı Mebusan Meclisi tarafından kabul edilen Misak-ı Millî kararlarında; Arap çoğunluğun yaşadığı yerlerin, Kars-Ardahan-Batum'un ve Batı Trakya'nın gerekirse halk oylamasına (referandum) başvurularak kendi geleceklerini belirlemeleri istenmiştir.\n\nBu durum Misak-ı Millî'nin;\nI. Milli İrade (Halkın Kararı),\nII. Tam Bağımsızlık,\nIII. Sömürgecilik\nanlayışlarından hangilerine önem verdiğini gösterir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Halk oylaması yapılması Milli İradeye (ve Wilson İlkeleri'ne) saygıyı, sömürgeciliğe karşı bağımsız duruşu temsil eder. Sömürgeciliğe ise karşıdır."
+        },
+        {
+            "unite": "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar",
+            "konu": "Kuvâ-yı Millîye",
+            "yil": 2020,
+            "zorluk": "Orta",
+            "soru": "İzmir'in işgali sonrasında halkın kendiliğinden silahlanarak oluşturduğu yöresel ve düzensiz direniş örgütlerine Kuvâ-yı Millîye adı verilir. Kuvâ-yı Millîye birlikleri düşman ilerleyişini yer yer yavaşlatmış ve halkta direniş ruhunu uyandırmıştır, fakat tam anlamıyla düşmanı yurttan atmaya yeterli olmamıştır.\n\nVerilen bilgiye göre aşağıdakilerden hangisi Kuvâ-yı Millîye'nin millî mücadeleye katkılarından biri değildir?",
+            "siklar": {
+                "A": "Halkın özgüvenini artırmış ve bağımsızlık ruhunu aşılamıştır.",
+                "B": "Düzenli ordunun kurulması için zaman kazanılmasını sağlamıştır.",
+                "C": "Düşmanı oyalayarak Anadolu içlerine hızla girmelerini geciktirmiştir.",
+                "D": "Düşman ordularını kesin bir hezimete uğratarak Anadolu'dan atmıştır."
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Kuvâ-yı Millîye düşmanı yavaşlatmış ve zaman kazandırmıştır, ancak düşmanı kesin olarak yurttan atan Düzenli Ordu komutasındaki Büyük Taarruz'dur."
+        },
+        {
+            "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+            "konu": "Birinci İnönü Savaşı ve Teşkilat-ı Esasiye",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Birinci İnönü Zaferi'nden kısa süre sonra, 20 Ocak 1921'de Teşkilat-ı Esasiye Kanunu (1921 Anayasası) kabul edilmiştir. Bu anayasanın birinci maddesi: 'Egemenlik kayıtsız şartsız milletindir. Yönetim şekli, milletin mukadderatını bizzat ve eylemli olarak yönetmesi ilkesine dayanır.' şeklindedir.\n\nBu anayasa maddesinin Türk Kurtuluş Savaşı ve devrim tarihi açısından en büyük önemi nedir?",
+            "siklar": {
+                "A": "Eski Osmanlı anayasasının tüm maddelerini kaldırması",
+                "B": "Tek kişi egemenliğine dayalı padişahlık sisteminin hukuki zeminini yıkıp gücü halka vermesi",
+                "C": "Azınlıklara kendi meclislerini kurma hakkı tanıması",
+                "D": "Yalnızca yargı sisteminin işleyişini düzenlemesi"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "'Egemenlik kayıtsız şartsız milletindir' ilkesi tam anlamıyla Cumhuriyetin ayak sesleridir ve devleti kişi egemenliğinden millet egemenliğine taşıyan hukuki devrimdir."
+        },
+        {
+            "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+            "konu": "Sakarya Meydan Muharebesi ve Sonuçları",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Sakarya Meydan Muharebesi öncesi meclis tarafından Mustafa Kemal’e üç aylığına başkomutanlık yetkisi ve meclisin yetkilerini tek başına kullanma hakkı verilmiştir. Mustafa Kemal bu yetkiyi alır almaz ilk iş olarak Tekalif-i Milliye Emirleri'ni (Milli Yükümlülükler) yayımlamıştır.\n\nBuna göre meclisin tüm yetkilerini Mustafa Kemal'e devretmesinin temel gerekçesi aşağıdakilerden hangisi olabilir?",
+            "siklar": {
+                "A": "Meclisteki sivil vekillerin askerlik hakkında fikir sahibi olmaması",
+                "B": "Uluslararası antlaşmaları hızlıca imzalamak istemeleri",
+                "C": "Savaş öncesi ortaya çıkan çok acil durumlarda hızlı ve etkili kararlar alınmasını sağlamak",
+                "D": "Mustafa Kemal'in padişahın yerine geçmesinin hedeflenmesi"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Düşmanın Ankara'ya dayandığı bir esnada, mecliste uzun uzun tartışılacak zaman kalmamıştı. Başkomutanlık yetkisi, hızlı karar alma ve uygulama zorunluluğundan doğmuştur."
+        },
+        {
+            "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+            "konu": "Maarif Kongresi",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "Eskişehir-Kütahya Savaşları tüm şiddetiyle devam ederken ve Yunan ordusu Ankara'ya yaklaşırken; Mustafa Kemal Ankara'da Maarif Kongresini (Eğitim Kongresi) toplamış ve kongreye cepheden gelip katılarak çok önemli bir konuşma yapmıştır.\n\nBu durum Mustafa Kemal'in en çok hangi konuya önem verdiğinin kanıtıdır?",
+            "siklar": {
+                "A": "Eğitime ve milli bir eğitim sistemine verilecek değere",
+                "B": "Dış politikanın eğitimli diplomatlar tarafından yürütülmesine",
+                "C": "Ordunun teknolojik okullarda eğitim görmesi gerektiğine",
+                "D": "Eğitim masraflarının halktan kesilen vergilerle karşılanmasına"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Cephede silahlı mücadele varken eğitim mücadelesinin de ihmal edilmemesi, Mustafa Kemal'in cehalete karşı savaşı düşmana karşı savaştan farksız gördüğünün kanıtıdır."
+        },
+        {
+            "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+            "konu": "Mudanya Ateşkes Antlaşması",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Mudanya Ateşkes Antlaşması'nın bazı maddeleri şunlardır:\n- Doğu Trakya, Meriç nehrine kadar boşaltılarak TBMM hükümetine teslim edilecektir.\n- İstanbul ve Boğazların yönetimi TBMM hükümetine bırakılacaktır.\n\nBu maddelere bakılarak aşağıdaki çıkarımlardan hangisi kesin olarak yapılabilir?",
+            "siklar": {
+                "A": "Osmanlı Devleti hukuken tamamen sona ermiş ve yok sayılmıştır.",
+                "B": "Yunanistan'ın Anadolu üzerindeki tüm planlarına İtilaf Devletleri son vermiştir.",
+                "C": "Yeni Türk devleti kapitülasyonları kaldırarak ekonomik bağımsızlığını kazanmıştır.",
+                "D": "Balkan ülkeleri Türkiye ile sınırlarını kapatmışlardır."
+            },
+            "dogru_cevap": "A",
+            "aciklama": "İtilaf Devletleri'nin İstanbul ve Boğazların yönetimini padişahın bulunduğu Osmanlı Hükümetine değil TBMM'ye vermesi, Osmanlı'yı hukuken yok saydıklarının en net göstergesidir."
+        },
+        {
+            "unite": "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!",
+            "konu": "Güney Cephesi ve Maraş Direnişi",
+            "yil": 2020,
+            "zorluk": "Orta",
+            "soru": "Sütçü İmam, Maraş'ta Türk kadınına saldırmaya yeltenen Fransız askerine ve Ermeni lejyonerlere karşı ilk kurşunu sıkarak Maraş savunmasını başlatmıştır. Şehirdeki direniş, bölge halkı tarafından hiçbir düzenli ordu desteği olmadan yürütülmüş ve işgalciler püskürtülmüştür.\n\nBu bilgiye dayanarak, Güney Cephesi'ndeki mücadelenin doğası için aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Rusya'nın doğrudan silah yardımına dayanmıştır.",
+                "B": "Tamamen Kuvay-ı Milliye (milli direniş ve milis gücü) ruhuyla kazanılmıştır.",
+                "C": "Osmanlı ordusunun bölgedeki son birliklerinin eseri olmuştur.",
+                "D": "Ankara'daki TBMM meclisinin doğrudan yönettiği planlı askeri taarruzdur."
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Güney Cephesi'nin en büyük özelliği; ordunun olmadığı bölgede, halkın kendi inisiyatifi ve vatan sevgisiyle (Kuvay-ı Milliye ruhuyla) düşmanı atmasıdır."
+        },
+        {
+            "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+            "konu": "Siyasi Alanda İnkılaplar",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "I. Saltanatın kaldırılması (1 Kasım 1922)\nII. Cumhuriyetin İlanı (29 Ekim 1923)\nIII. Halifeliğin kaldırılması (3 Mart 1924)\n\nAtatürk döneminde siyasi alanda gerçekleşen bu üç büyük inkılabın ortak ve en önemli amacı aşağıdakilerden hangisidir?",
+            "siklar": {
+                "A": "Devletin sadece ekonomik yatırımlarını güçlendirmek",
+                "B": "Sosyal hayatta kadın-erkek eşitliğini tam sağlamak",
+                "C": "Laik devlet yapısını güçlendirmek ve Millî Egemenliği (Halk yönetimini) tam hakim kılmak",
+                "D": "Dış siyasette Batılı devletlerle daha fazla ittifak oluşturmak"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Saltanat, Hilafet gibi kurumlar bir kişinin veya ailenin güç odaklarıdır. Kaldırılmaları ve Cumhuriyetin ilanı, egemenliği kayıtsız şartsız millete verip yönetimi laikleştirmeyi hedefler."
+        },
+        {
+            "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+            "konu": "Eğitim - Tevhid-i Tedrisat",
+            "yil": 2023,
+            "zorluk": "Zor",
+            "soru": "Tevhid-i Tedrisat Kanunu (3 Mart 1924) ile ülkedeki tüm eğitim kurumları ve yabancı okullar Millî Eğitim Bakanlığı’na bağlanmıştır. Din dersleri ve dini eğitim de devlet kontrolüne alınmış, farklı programlar uygulayan medreselerin yerine daha çağdaş eğitim kurumlarının temelleri atılmıştır.\n\nBuna göre Tevhid-i Tedrisat Kanunu'nun sağladığı faydalardan hangisi söylenemez?",
+            "siklar": {
+                "A": "Kültürel ikilik (çatışma) oluşturan çok başlı eğitim sistemini sona erdirmiştir.",
+                "B": "Ülkedeki eğitim sisteminde birlik ve beraberlik sağlanmıştır.",
+                "C": "Eğitimin akılcı, milli, çağdaş ve laik bir yapıya bürünmesi yolunu açmıştır.",
+                "D": "Yabancı okulların ayrıcalıklı statüsü korunarak Avrupa desteği kazanılmıştır."
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Kanun yabancı okulları da devlet denetimine bağladığı için onların ayrıcalıklı, bağımsız statülerine son vermiş, böylece yasa önünde eşitlik (halkçılık) ve millilik sağlanmıştır."
+        },
+        {
+            "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+            "konu": "Hukuk - Medeni Kanun",
+            "yil": 2022,
+            "zorluk": "Orta",
+            "soru": "1926 yılında kabul edilen Türk Medeni Kanunu ile kadınlara istedikleri mesleğe girme, mirasta erkeklerle eşit pay alma, mahkemelerde tanıklıkta erkekle eşit tutulma ve resmi nikâh zorunluluğu gibi haklar tanınmıştır.\n\nBuna göre Türk Medeni Kanunu’nun,\nI. Halkçılık\nII. Laiklik\nIII. Cumhuriyetçilik\nilkelerinden hangileri ile doğrudan ilgili olduğu söylenebilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Miras ve resmi nikâh eşitliği getirmesi halka (kadın-erkek eşitliği) yönelik olduğundan Halkçılık, hukukun dini kurallardan bağımsız, İsviçre tabanlı çağdaş hale gelmesi Laikliktir. Ancak Medeni Kanun 'Siyasi (seçme-seçilme)' hak içermediği için Cumhuriyetçilik ile doğrudan ilgili değildir."
+        },
+        {
+            "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+            "konu": "Atatürk İlkeleri - Devletçilik",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "'Devletçilik' ilkesi Türkiye’de, serbest piyasa ekonomisinin kendi başına yetemediği sert koşullarda zorunluluktan doğmuştur. Halkın sermayesinin yetersiz olması ve 1929 Dünya Ekonomik Bunalımı’nın etkisiyle yeni Türkiye devleti doğrudan yatırımlar yapmış, şeker fabrikaları, Sümerbank ve dokuma tesisleri devlet eliyle açılmıştır.\n\nBu metne göre 'Devletçilik' ilkesi hakkında aşağıdakilerden hangisine ulaşılabilir?",
+            "siklar": {
+                "A": "Temel amacı özel sektörün yurt içinde hiçbir iş yapmasına izin vermemektir.",
+                "B": "Halkın ihtiyaçlarını en kısa sürede üretip dışa bağımlılığı (özellikle sanayide) kırma hedefine dayanır.",
+                "C": "Tarımsal üretim ve çiftçinin kalkınması, sanayileşmeden daha çok desteklenmiştir.",
+                "D": "Teknolojiyi dışardan satın alarak Osmanlı dönemi ekonomisini aynen devam ettirmeyi hedefler."
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Devletçilik ilkesinin temel vizyonu, özel sektörün sermaye bulamadığı alanlara bizzat devletin girerek üretimi tesis etmesi ve ekonomik bağımsızlığı perçinlemesidir."
+        },
+        {
+            "unite": "Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye",
+            "konu": "Ekonomi - Kabotaj Kanunu",
+            "yil": 2020,
+            "zorluk": "Orta",
+            "soru": "1 Temmuz 1926’da çıkarılan Kabotaj Kanunu ile Türkiye limanları arasında yük ve yolcu taşıma hakkı, kılavuzluk hizmetleri gibi tüm denizcilik faaliyetleri yalnızca Türk vatandaşlarına ve Türk bayrağı taşıyan gemilere verilmiştir.\n\nBu kanun en başta Atatürk İlkeleri'nden hangisiyle doğrudan örtüşür?",
+            "siklar": {
+                "A": "Milliyetçilik",
+                "B": "Cumhuriyetçilik",
+                "C": "İnkılapçılık",
+                "D": "Laiklik"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Kapitülasyonların izlerini silen, Türk vatandaşlarına ayrıcalık verip kendi kaynaklarına (denizlerine) Türk insanını egemen kılan tüm uygulamalar Milliyetçilik doğasındadır."
+        },
+        {
+            "unite": "Ünite 5 – Demokratikleşme Çabaları",
+            "konu": "Çok Partili Hayata Geçiş Denemeleri",
+            "yil": 2024,
+            "zorluk": "Zor",
+            "soru": "Cumhuriyetin ilk yıllarında Mustafa Kemal demokrasiyi tam anlamıyla işletmek için çok partili hayata geçmek istemiş, bu doğrultuda Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası kurulmuştur. Ancak her iki parti de rejime (Cumhuriyete ve yeniliklere) karşı olan kişilerin odak noktası haline geldiği ve isyanlar/olaylar (Şeyh Sait İsyanı, Menemen Olayı) çıkmasına zemin hazırladığı için kapatılmak zorunda kalmıştır.\n\nBu durum Türkiye Cumhuriyeti tarihi için aşağıdakilerden hangisinin göstergesidir?",
+            "siklar": {
+                "A": "Türk milletinin tek parti yönetim sistemini sonsuza kadar benimsediğinin",
+                "B": "Devrimlerin henüz tam kökleşmediği bir dönemde çok partili yaşam denemelerinin başarısız olduğunun",
+                "C": "Dış politikanın şekillenmesinde iç siyasetin hiçbir etkisinin kalmadığının",
+                "D": "Mustafa Kemal'in tüm muhalefet partilerini planlı bir şekilde bilerek kapattığının"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Partilerin kapatılma gerekçesi, inkılapların halk nezdinde tam yerleşmemesi ve demokrasi kültürünün henüz oturmaması sebebiyle Cumhuriyet karşıtlarının sığınabilecekleri bir siyasi platform bulmalarıdır."
+        },
+        {
+            "unite": "Ünite 5 – Demokratikleşme Çabaları",
+            "konu": "Şeyh Sait İsyanı",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Şeyh Sait İsyanı (1925), Cumhuriyetin ilk yıllarında rejimi, laik sistemi ortadan kaldırmayı ve halifeliği geri getirmeyi amaçlayan geniş çaplı bir isyandı. Devlet bu isyanı bastırmak için Takrir-i Sükun Kanunu'nu çıkardı, İstiklal Mahkemelerini yeniden kurdu ve Terakkiperver Cumhuriyet Fırkası'nı kapattı.\n\nVerilen bilgilere göre Şeyh Sait İsyanı ile ilgili olarak;\nI. Sadece bölgesel eşitsizliklere tepki olarak çıkmıştır.\nII. Genç Cumhuriyetin varlığına yönelik ciddi bir tehdittir.\nIII. Demokratikleşme (çok partili hayat) sürecini olumsuz etkileyip sekteye uğratmıştır.\nyargılarından hangilerine ulaşılabilir?",
+            "siklar": {
+                "A": "Yalnız I",
+                "B": "I ve II",
+                "C": "II ve III",
+                "D": "I, II ve III"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "İsyan sadece eşitsizlik için değil, halifeliği ve eski düzeni getirmek (rejimi devirmek) için çıkmıştır. Bu durum demokrasiye geçişi engellemiş ve partilerin kapanmasına yol açmıştır."
+        },
+        {
+            "unite": "Ünite 5 – Demokratikleşme Çabaları",
+            "konu": "Mustafa Kemal'e Suikast Girişimi",
+            "yil": 2022,
+            "zorluk": "Kolay",
+            "soru": "1926 yılında gerçekleştirilmek istenen İzmir Suikastı planı, Giritli Şevki adlı kişinin durumu valiye bildirmesiyle son anda önlendi. Bu gelişme üzerine Mustafa Kemal Paşa Anadolu Ajansına şu meşhur tarihi demecini vermiştir: “Benim naçiz (değersiz) vücudum elbet bir gün toprak olacaktır; ancak Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”\n\nMustafa Kemal'in bu sözüyle asıl vurgulamak istediği nedir?",
+            "siklar": {
+                "A": "Kendisine yönelik saldırıların daha da artmasını beklediği",
+                "B": "Kurulan genç cumhuriyet sisteminin baki olduğu, kişilerin hayatlarından bağımsız olarak yaşamaya devam edeceği",
+                "C": "Cumhuriyet rejimini bizzat sadece kendisinin yönetebileceği",
+                "D": "Suikast planlayıcılarının hiçbir ceza almadan bırakılması gerektiği"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Kendisinin ölümlü bir varlık olduğunu, ancak kurulan Cumhuriyetin kurumsallaştığını ve sonsuza dek korunacağını tarihi ve asil bir dille anlatmıştır."
+        },
+        {
+            "unite": "Ünite 5 – Demokratikleşme Çabaları",
+            "konu": "Kubilay (Menemen) Olayı",
+            "yil": 2021,
+            "zorluk": "Orta",
+            "soru": "1930 yılında Menemen'de yaşanan olayda, kendini mehdî ilan eden Derviş Mehmet ve adamları halkı isyana teşvik etmiş; onlara engel olmaya çalışan ve asteğmen olarak askerliğini yapan öğretmen Kubilay bu yobaz isyancılar tarafından şehit edilmiştir. Toplanan askeri birlikler isyanı bastırmış, isyancılar yargılanarak cezalandırılmıştır.\n\nMenemen Olayına bakılarak aşağıda verilen çıkarımlardan hangisine varılabilir?",
+            "siklar": {
+                "A": "Ülkede dış baskıların giderek arttığına",
+                "B": "Halkın tüm kesiminin laik sisteme tamamen alışmış ve uyum sağlamış olduğuna",
+                "C": "Yeniliklere ve devrimlere (rejime) karşı gerici bir grubun varlığını sürdürdüğüne",
+                "D": "Cumhuriyetin çok partili hayata başarılı bir adım attığına"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Dini kullanarak isyan başlatmak ve öğretmeni katletmek, toplumda henüz laik inkılapları benimsememiş, irticai (gerici) karanlık odakların varlığını kanıtlar niteliktedir."
+        },
+        {
+            "unite": "Ünite 5 – Demokratikleşme Çabaları",
+            "konu": "Demokrasi ve Sorumluluk",
+            "yil": 2020,
+            "zorluk": "Zor",
+            "soru": "Mustafa Kemal, Fethi Okyar'dan Serbest Cumhuriyet Fırkası'nı kurmasını isterken şu sözleri söylemiştir: “Bugünkü durumda Meclis’te bir fırka var. Biz de meclisi tek fikre mahkûm etmiş oluyoruz. Halbuki cumhuriyet esasına dayanan bir memlekette, memleket meselelerinin mecliste açıkça münakaşa edilmesi (tartışılması) lâzımdır.\"\n\nAtatürk'ün bu sözleriyle aşağıdakilerden hangisine vurgu yaptığı söylenemez?",
+            "siklar": {
+                "A": "Hükümetin farklı politikalar üzerinden eleştirilip denetlenmesi gerektiğine",
+                "B": "Farklı görüş ve düşüncelerin meclis çatısı altında sesi olması gerektiğine",
+                "C": "Tek parti yönetiminin dış politikada savaş kararı alma ihtimalinin yüksekliğine",
+                "D": "Milli iradenin Meclis’te çok daha demokratik şartlarda tecelli etmesinin önemine"
+            },
+            "dogru_cevap": "C",
+            "aciklama": "Mustafa Kemal'in sitemi mecliste serbestçe fikir tartışması yapılabilmesi içindir (denetlenme, fikir özgürlüğü vb.); dış politika ya da savaş kararı vermekle ilgisi yoktur."
+        },
+        {
+            "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+            "konu": "Atatürk Dönemi Türk Dış Politikası (Genel Vizyon)",
+            "yil": 2024,
+            "zorluk": "Orta",
+            "soru": "Atatürk dönemi Türk dış politikasının dayandığı en önemli vizyon, 'Yurtta Sulh, Cihanda Sulh' sözüyle formüle edilmiştir. Aynı dönemde Türkiye, eski düşmanlarıyla diplomatik ve ticari bağlar kurmuş; Milletler Cemiyetine girmiş, Sadabat ve Balkan paktlarını onaylamıştır.\n\nYukarıdaki paragraftan yola çıkarak Atatürk dönemi dış politikası hakkında aşağıdakilerden hangisi söylenebilir?",
+            "siklar": {
+                "A": "Tarihi düşmanlıklara dayalı, rövanşist ve kapalı bir politika izlenmiştir.",
+                "B": "Diğer devletlerin iç işlerine müdahale eden bir blok politikası benimsenmiştir.",
+                "C": "Revizyonist (sürekli sınır değiştirmeyi arzulayan) yayılmacı bir nitelik taşımaktadır.",
+                "D": "Bölgesel ve küresel güvenliği önceleyen barışçıl ve işbirliği odaklı bir çizgi yürütmüştür."
+            },
+            "dogru_cevap": "D",
+            "aciklama": "Balkan Antantı, Sadabat Paktı ve Milletler Cemiyetine üyelik, saldırgan (revizyonist) politikalara karşı barışı ve güvenliği sağlamak amacını (Yurtta sulh, cihanda sulh) taşır."
+        },
+        {
+            "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+            "konu": "Nüfus Mübadelesi",
+            "yil": 2023,
+            "zorluk": "Orta",
+            "soru": "Lozan Barış Antlaşması’na göre, Türkiye'deki Rumlarla Yunanistan'daki Türklerin değişimi (mübadele) kararlaştırılmıştı. Ancak İstanbul'daki Rumların ve Batı Trakya'daki Türklerin yerlerinde (etabli/yerleşik) kalması hükme bağlanmıştı. Yunanistan diplomatik oyunlarla İstanbul'da olabildiğince çok sayıda Rum tutmak isteyince iki ülke arasında 'Etabli (Yerleşik)' krizi yaşanmıştır. Konu önce Milletler Cemiyeti’ne taşınmış, sonuç çıkmayınca 1930'da Ankara antlaşması ile uzlaşma sağlanmıştır.\n\nBu krizin Türkiye tarafından barış ve hukuk yoluyla (savaşmadan) çözümlenmesi Türk dış politikasının hangi yönünü gösterir?",
+            "siklar": {
+                "A": "Dışarıdan gelen her talebi kolayca kabul eden teslimiyetçi bir diplomasiyi",
+                "B": "Milli çıkarları Milletler Cemiyeti ilkeleri ve müzakerelerle (diplomasiyle) arayan bir tutumu",
+                "C": "Lozan Anlaşması metnini baştan aşağı değiştirme arzusunu",
+                "D": "Azınlıkların sorunlarıyla ilgilenmeyen, umursamaz bir yaklaşımı"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Yunanistan'ın oyunlarına karşı derhal silahlı mücadeleye ya da tavize yönelmemiş; konuyu hukuki ve diplomatik bir çerçevede (müzakerelerle) uluslararası hukuka uygun şekilde çözmüştür."
+        },
+        {
+            "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+            "konu": "Montrö Boğazlar Sözleşmesi",
+            "yil": 2022,
+            "zorluk": "Zor",
+            "soru": "Montrö Boğazlar Sözleşmesi (1936) ile; Lozan Anlaşması'nda belirlenen uluslararası boğazlar komisyonu tamamen kaldırılmış, boğazlar her iki yakasından da Türk askeri birimleri tarafından savunulacak statüye geçmiş ve silahsızlandırma iptal edilmiştir.\n\nBuna göre Montrö Sözleşmesi için aşağıdaki yargılardan hangisine ulaşılabilir?",
+            "siklar": {
+                "A": "Türkiye egemenlik haklarını kısıtlayan en büyük engellerden birini aşmış ve toprak bütünlüğünü güvenceye almıştır.",
+                "B": "Türkiye, Montrö sonrası boğazları tüm dünya ticaret gemilerine süresiz olarak kapatmıştır.",
+                "C": "Montrö Sözleşmesi sadece İngiltere ile Türkiye arasında yapılan ikili bir yardımlaşma antlaşmasıdır.",
+                "D": "Sovyet Rusya'nın Karadeniz’deki güvenliği risk altına girmiştir."
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Komisyonun kaldırılması ve Türk askerinin boğazlara yerleşmesi, Lozan'da zedelenen (kısıtlanan) egemenliğimizin yeniden kazanıldığını net şekilde kanıtlar."
+        },
+        {
+            "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+            "konu": "Hatay Meselesi",
+            "yil": 2021,
+            "zorluk": "Zor",
+            "soru": "Atatürk, hastalığının oldukça ilerlediği dönemde bile Hatay davasından vazgeçmemiş, 'Kırk asırlık Türk yurdu düşman elinde esir kalamaz' ve 'Hatay benim şahsi meselemdir' diyerek Mersin ve Adana seyahatlerine katılıp uzun askeri geçit törenlerini ayakta izlemiştir. Atatürk bu zorlu tavrıyla Fransa'ya karşı hem devletinin hem de ordusunun kararlı duruşunu sergilemiştir.\n\nMetne göre Atatürk'ün bu davranışını değerlendirirseniz, onda en çok hangi özelliğin belirgin olduğunu söyleyebilirsiniz?",
+            "siklar": {
+                "A": "Merhametli oluşu ve bağışlayıcılığı",
+                "B": "Ümitsizliğe yer vermeyen kararlı (idealist) bir devlet adamı olması ve vatan sevgisi",
+                "C": "Eğitime ve gençlerin bilgi birikimine değer vermesi",
+                "D": "Ordunun teknolojik gücünü Avrupalı ülkelere kanıtlama hırsı"
+            },
+            "dogru_cevap": "B",
+            "aciklama": "Metindeki 'hastalığına rağmen', 'benim şahsi meselemdir' ifadeleri onun hedefine kilitlenmiş tavizsiz idealizmini, vatanı için hayatını hiçe saymasını gösteren vatanseverliğidir."
+        },
+        {
+            "unite": "Ünite 6 – Atatürk Dönemi Türk Dış Politikası",
+            "konu": "Balkan ve Sadabat Paktları",
+            "yil": 2020,
+            "zorluk": "Orta",
+            "soru": "1930'lu yılların sonuna doğru İtalya'nın ve Almanya'nın yayılmacı, saldırgan ve aşırı ırkçı tutumları Ortadoğu, Akdeniz ve balkanlarda güvenliği tehdit etmeye başlamıştır. Bu duruma karşı Türkiye, batı sınırını güvence altına almak için Balkan Antantı (1934); doğu sınırı içinse (İtalya'nın ortadoğu iştahına karşı) Sadabat Paktı'nı (1937) imzalamıştır.\n\nVerilen bu dış politika hamleleri bir bütün olarak incelendiğinde aşağıdaki kavramlardan hangisiyle açıklanabilir?",
+            "siklar": {
+                "A": "Kolektif Güvenlik Arayışı ve Bölgesel İttifak",
+                "B": "Yayılmacılık (Emperyalizm) ve Askeri Taarruz",
+                "C": "Tam Tarafsızlık ve İçine Kapanık Siyaset (İzolasyon)",
+                "D": "Manda ve Himaye Politikası"
+            },
+            "dogru_cevap": "A",
+            "aciklama": "Saldırgan devletlerin tehdidine karşı çevresindeki devletlerle ittifak yapıp karşılıklı güvenliği sağlamak (güç birliği) 'Kolektif Güvenlik (Ortak Güvenlik)' kavramı ile izah edilir. Yeni nesil LGS bu tür kavram eşleşmelerini çok sever."
+        }
+    ]
+}
