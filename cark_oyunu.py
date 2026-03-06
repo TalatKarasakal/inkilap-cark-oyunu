@@ -289,6 +289,48 @@ class CarkOyunu(tk.Tk):
         self._draw_wheel()
         self._show_grade_selection()
         
+        self.bind("<Configure>", self._on_main_configure)
+        self._resize_timer = None
+
+    def _on_main_configure(self, event):
+        if event.widget == self:
+            width = event.width
+            height = event.height
+            
+            if self._resize_timer is not None:
+                self.after_cancel(self._resize_timer)
+            self._resize_timer = self.after(100, self._apply_scale, width, height)
+
+    def _apply_scale(self, width, height):
+        scale = min(width / 1240, height / 950)
+        if scale < 0.6: scale = 0.6
+        if scale > 3.0: scale = 3.0
+        
+        font_scale = 1.0 + (scale - 1.0) * 1.3  # Further increase font scaling intensity
+        
+        self.f_title.config(size=max(10, int(17 * font_scale)))
+        self.f_normal.config(size=max(10, int(15 * font_scale)))
+        self.f_small.config(size=max(9, int(13 * font_scale)))
+        self.f_big.config(size=max(11, int(16 * font_scale)))
+        self.f_option.config(size=max(10, int(14 * font_scale)))
+        self.f_score.config(size=max(16, int(24 * font_scale)))
+        self.f_wheel.config(size=max(10, int(16 * font_scale)))
+        self.f_icon.config(size=max(12, int(20 * font_scale)))
+        self.f_timer.config(size=max(14, int(22 * font_scale)))
+        
+        self._force_reflow(self)
+
+    def _force_reflow(self, parent):
+        for child in parent.winfo_children():
+            if isinstance(child, tk.Label):
+                try:
+                    f = child.cget("font")
+                    if f:
+                        child.configure(font=f)
+                except Exception:
+                    pass
+            self._force_reflow(child)
+        
 
 
     # ─────────────────────────────────────────
@@ -362,9 +404,8 @@ class CarkOyunu(tk.Tk):
 
     def _build_ui(self):
         # Üst bar
-        self.top_bar = tk.Frame(self, height=54)
+        self.top_bar = tk.Frame(self, pady=4)
         self.top_bar.pack(fill="x", side="top")
-        self.top_bar.pack_propagate(False)
 
         self.lbl_title = tk.Label(
             self.top_bar, text="🏛  LGS Sosyal Bilgiler – Çark Oyunu",
@@ -407,32 +448,31 @@ class CarkOyunu(tk.Tk):
         # Ana içerik
         self.main_frame = tk.Frame(self)
         self.main_frame.pack(fill="both", expand=True, padx=12, pady=(0, 12))
+        self.main_frame.columnconfigure(0, weight=4)
+        self.main_frame.columnconfigure(1, weight=6)
+        self.main_frame.rowconfigure(0, weight=1)
 
         # SOL – Çark alanı
-        self.left_frame = tk.Frame(self.main_frame, width=540)
-        self.left_frame.pack(side="left", fill="both", padx=(0, 8))
-        self.left_frame.pack_propagate(False)
+        self.left_frame = tk.Frame(self.main_frame)
+        self.left_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
 
         self.canvas_size = 480
         self.wheel_canvas = tk.Canvas(
-            self.left_frame, width=self.canvas_size, height=self.canvas_size,
-            highlightthickness=0
+            self.left_frame, highlightthickness=0
         )
-        self.wheel_canvas.pack(pady=(10, 6), padx=10)
+        self.wheel_canvas.pack(pady=(10, 6), padx=10, fill="both", expand=True)
+        self.wheel_canvas.bind("<Configure>", self._on_wheel_resize)
 
         self.pointer_canvas = tk.Canvas(
             self.left_frame, width=40, height=28, highlightthickness=0
         )
-        self.pointer_canvas.place(
-            in_=self.wheel_canvas,
-            relx=0.5, rely=0.0, anchor="s", y=6
-        )
+        # placement handled dynamically in _on_wheel_resize
 
-        self.btn_spin = tk.Frame(self.left_frame, cursor="hand2", padx=28, pady=10)
-        self.btn_spin.pack(pady=(4, 6))
+        self.btn_spin = tk.Frame(self.left_frame, cursor="hand2", padx=24, pady=16)
+        self.btn_spin.pack(pady=(16, 12))
         
         self.btn_spin_icon = tk.Label(self.btn_spin, text="🎯", font=self.f_big, cursor="hand2")
-        self.btn_spin_icon.pack(side="left", padx=(0, 6))
+        self.btn_spin_icon.pack(side="left", padx=(0, 12))
         
         self.btn_spin_text = tk.Label(self.btn_spin, text="Çarkı Çevir", font=self.f_big, cursor="hand2")
         self.btn_spin_text.pack(side="left")
@@ -442,20 +482,20 @@ class CarkOyunu(tk.Tk):
 
         # Puan göstergesi
         self.score_frame = tk.Frame(self.left_frame)
-        self.score_frame.pack(fill="x", padx=16, pady=(2, 4))
+        self.score_frame.pack(fill="x", padx=24, pady=(10, 14))
 
         self.lbl_score_title = tk.Label(
             self.score_frame, text="TOPLAM PUAN", font=self.f_small
         )
-        self.lbl_score_title.pack()
+        self.lbl_score_title.pack(pady=(8, 4))
         self.lbl_score = tk.Label(
             self.score_frame, text="0", font=self.f_score
         )
-        self.lbl_score.pack()
+        self.lbl_score.pack(pady=(0, 8))
 
         # İstatistik satırı
         self.stat_frame = tk.Frame(self.left_frame)
-        self.stat_frame.pack(fill="x", padx=16, pady=(0, 4))
+        self.stat_frame.pack(fill="x", padx=20, pady=(0, 10))
 
         self.lbl_correct = tk.Label(self.stat_frame, text="✓ 0", font=self.f_normal)
         self.lbl_correct.pack(side="left", expand=True)
@@ -466,14 +506,14 @@ class CarkOyunu(tk.Tk):
 
         # SAĞ – Soru paneli (kaydırılabilir)
         self.right_frame = tk.Frame(self.main_frame)
-        self.right_frame.pack(side="left", fill="both", expand=True, padx=(8, 0))
+        self.right_frame.grid(row=0, column=1, sticky="nsew", padx=(8, 0))
 
         self.q_canvas = tk.Canvas(self.right_frame, highlightthickness=0)
         self.q_canvas.pack(side="left", fill="both", expand=True)
 
-        self.question_panel = tk.Frame(self.q_canvas)
+        self.question_panel = tk.Frame(self.q_canvas, highlightthickness=1)
         self._qp_window = self.q_canvas.create_window(
-            (0, 0), window=self.question_panel, anchor="nw"
+            (250, 20), window=self.question_panel, anchor="n"
         )
         self.question_panel.bind("<Configure>", self._on_qpanel_configure)
         self.q_canvas.bind("<Configure>", self._on_qcanvas_configure)
@@ -482,9 +522,36 @@ class CarkOyunu(tk.Tk):
 
     def _on_qpanel_configure(self, _):
         self.q_canvas.configure(scrollregion=self.q_canvas.bbox("all"))
+        self._center_qpanel()
 
     def _on_qcanvas_configure(self, event):
-        self.q_canvas.itemconfig(self._qp_window, width=event.width)
+        panel_w = event.width - 60
+        if panel_w < 300: panel_w = 300
+        
+        self.q_canvas.itemconfig(self._qp_window, width=panel_w)
+        
+        if hasattr(self, 'lbl_question_text') and self.lbl_question_text.winfo_exists():
+            self.lbl_question_text.config(wraplength=panel_w - 60)
+        if hasattr(self, 'option_labels'):
+            for lbl in self.option_labels.values():
+                if lbl.winfo_exists():
+                    lbl.config(wraplength=panel_w - 100)
+        if hasattr(self, 'lbl_explanation') and self.lbl_explanation.winfo_exists():
+            self.lbl_explanation.config(wraplength=panel_w - 60)
+        
+        self.q_canvas.configure(scrollregion=self.q_canvas.bbox("all"))
+        self._center_qpanel()
+
+    def _center_qpanel(self):
+        c_h = self.q_canvas.winfo_height()
+        c_w = self.q_canvas.winfo_width()
+        p_h = self.question_panel.winfo_reqheight()
+        
+        y_pos = 20
+        if c_h > p_h:
+            y_pos = max(20, (c_h - p_h) // 2)
+            
+        self.q_canvas.coords(self._qp_window, c_w // 2, y_pos)
 
     def _on_mousewheel(self, event):
         self.q_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
@@ -493,10 +560,24 @@ class CarkOyunu(tk.Tk):
     # ÇARK ÇİZİMİ
     # ─────────────────────────────────────────
 
+    def _on_wheel_resize(self, event):
+        size = min(event.width, event.height) - 40
+        if size < 150: size = 150
+        self.canvas_size = size
+        self.wheel_cx = event.width / 2
+        self.wheel_cy = event.height / 2
+        
+        self.pointer_canvas.place(
+            in_=self.wheel_canvas,
+            x=self.wheel_cx, y=self.wheel_cy - self.canvas_size / 2 + 10, anchor="s"
+        )
+        self._draw_wheel()
+
     def _draw_wheel(self):
         c = self.wheel_canvas
         c.delete("all")
-        cx = cy = self.canvas_size / 2
+        cx = getattr(self, "wheel_cx", self.canvas_size / 2)
+        cy = getattr(self, "wheel_cy", self.canvas_size / 2)
         r = self.canvas_size / 2 - 14
 
         num_color_idx = 0  # sadece puan dilimleri için renk döngüsü
@@ -728,17 +809,17 @@ class CarkOyunu(tk.Tk):
         t = self.t
 
         # Başlık
-        tk.Frame(f, height=30, bg=t["bg_card"]).pack()
-        tk.Label(f, text="📚", font=tkfont.Font(size=42),
-                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(10, 4))
+        tk.Frame(f, height=60, bg=t["bg_card"]).pack()
+        tk.Label(f, text="📚", font=tkfont.Font(size=54),
+                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(16, 8))
         tk.Label(f, text="Sınıf Düzeyini Seçiniz",
-                 font=self.f_title, bg=t["bg_card"], fg=t["fg"]).pack(pady=(4, 6))
+                 font=self.f_title, bg=t["bg_card"], fg=t["fg"]).pack(pady=(8, 12))
         tk.Label(f, text="Oynamak istediğiniz sınıf düzeyine tıklayın",
-                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(0, 12))
+                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(0, 24))
 
         # Sınıf butonları 2x2 grid
         grid_frame = tk.Frame(f, bg=t["bg_card"])
-        grid_frame.pack(padx=20, pady=4)
+        grid_frame.pack(padx=30, pady=10)
 
         for i, (grade, info) in enumerate(GRADE_INFO.items()):
             if grade not in self.questions_db:
@@ -778,10 +859,10 @@ class CarkOyunu(tk.Tk):
         grid_frame.columnconfigure(0, weight=1)
         grid_frame.columnconfigure(1, weight=1)
 
-        # Alt bilgi
+        # Eğlence paneli
         total = sum(len(v) for v in self.questions_db.values())
-        tk.Label(f, text=f"Toplam {total} soru | 4 sinif duzeyi",
-                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(14, 4))
+        tk.Label(f, text=f"Toplam {total} soru | 4 sınıf düzeyi",
+                 font=self.f_option, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(24, 8))
 
     def _select_grade(self, grade: str):
         """Kullanıcı sınıf seçti → soruları yükle ve oyuna başla."""
@@ -814,11 +895,11 @@ class CarkOyunu(tk.Tk):
         f = self.question_panel
         t = self.t
 
-        tk.Frame(f, height=80, bg=t["bg_card"]).pack()
-        tk.Label(f, text="🎡", font=tkfont.Font(size=52),
-                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(10, 4))
+        tk.Frame(f, height=100, bg=t["bg_card"]).pack()
+        tk.Label(f, text="🎡", font=tkfont.Font(size=64),
+                 bg=t["bg_card"], fg=t["accent"]).pack(pady=(16, 8))
         tk.Label(f, text="Çarkı çevirerek\nbir puan belirleyin!",
-                 font=self.f_big, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=10)
+                 font=self.f_big, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=16)
 
         grade_info_text = ""
         if self.selected_grade and self.selected_grade in GRADE_INFO:
@@ -854,43 +935,44 @@ class CarkOyunu(tk.Tk):
             banner_bg  = t["btn_bg"]
             banner_txt = f"🎯  Bu soru  {self.current_points}  puan değerinde!"
 
-        banner = tk.Frame(f, bg=banner_bg, height=46)
+        banner = tk.Frame(f, bg=banner_bg, height=60)
         banner.pack(fill="x")
         banner.pack_propagate(False)
 
         tk.Label(banner,
                  text=banner_txt,
-                 font=self.f_big, bg=banner_bg, fg="#ffffff").pack(side="left", padx=14, expand=True)
+                 font=self.f_big, bg=banner_bg, fg="#ffffff").pack(side="left", padx=20, expand=True)
 
         self.lbl_timer = tk.Label(banner, text=f"🕐 {TIMER_SECONDS:02d}",
                                   font=self.f_timer, bg=t["btn_bg"], fg=t["timer_normal"])
-        self.lbl_timer.pack(side="right", padx=14)
+        self.lbl_timer.pack(side="right", padx=20)
 
         # Timer progress bar
-        self.timer_bar_bg = tk.Frame(f, bg=t["border"], height=5)
+        self.timer_bar_bg = tk.Frame(f, bg=t["border"], height=8)
         self.timer_bar_bg.pack(fill="x")
-        self.timer_bar_fill = tk.Frame(self.timer_bar_bg, bg=t["timer_normal"], height=5)
+        self.timer_bar_fill = tk.Frame(self.timer_bar_bg, bg=t["timer_normal"], height=8)
         self.timer_bar_fill.place(relx=0, rely=0, relwidth=1, relheight=1)
 
         # ── Meta ──
         meta_frame = tk.Frame(f, bg=t["bg_card"])
-        meta_frame.pack(fill="x", padx=6, pady=(6, 4))
+        meta_frame.pack(fill="x", padx=16, pady=(12, 10))
         for icon_c, val in [("📚", q["unite"]), ("📌", q["konu"]),
                              ("⚡", q["zorluk"])]:
             row = tk.Frame(meta_frame, bg=t["bg_card"])
-            row.pack(fill="x", pady=1, padx=6)
+            row.pack(fill="x", pady=4, padx=10)
             tk.Label(row, text=icon_c, font=self.f_normal,
                      bg=t["bg_card"], fg=t["fg_dim"], width=3).pack(side="left")
             tk.Label(row, text=val, font=self.f_small,
                      bg=t["bg_card"], fg=t["fg_dim"], anchor="w").pack(side="left")
 
         # ── Ayırıcı ──
-        tk.Frame(f, height=1, bg=t["border"]).pack(fill="x", padx=10, pady=4)
+        tk.Frame(f, height=2, bg=t["border"]).pack(fill="x", padx=20, pady=8)
 
         # ── Soru metni ──
-        tk.Label(f, text=q["soru"], font=self.f_normal,
+        self.lbl_question_text = tk.Label(f, text=q["soru"], font=self.f_normal,
                  bg=t["bg_card"], fg=t["fg"], wraplength=520,
-                 justify="left", anchor="nw", padx=12, pady=8).pack(fill="x")
+                 justify="left", anchor="nw", padx=20, pady=24)
+        self.lbl_question_text.pack(fill="x")
 
         # ── Şıklar ──
         self.option_widgets: Dict[str, tk.Frame] = {}
@@ -899,13 +981,13 @@ class CarkOyunu(tk.Tk):
         for key in ["A", "B", "C", "D"]:
             frm = tk.Frame(f, bg=t["option_bg"], cursor="hand2",
                            highlightbackground=t["border"], highlightthickness=1,
-                           padx=14, pady=10)
-            frm.pack(fill="x", padx=10, pady=3)
+                           padx=20, pady=16)
+            frm.pack(fill="x", padx=20, pady=8)
             lbl = tk.Label(frm,
                            text=f"{key})  {q['siklar'][key]}",
                            font=self.f_option, bg=t["option_bg"], fg=t["option_fg"],
                            anchor="w", wraplength=480, justify="left")
-            lbl.pack(fill="x", pady=1)
+            lbl.pack(fill="x", pady=4)
             for w in (frm, lbl):
                 w.bind("<Button-1>", lambda e, k=key: self._select_option(k))
             self.option_widgets[key] = frm
@@ -913,22 +995,22 @@ class CarkOyunu(tk.Tk):
 
         # ── Alt butonlar ──
         btn_row = tk.Frame(f, bg=t["bg_card"])
-        btn_row.pack(fill="x", padx=10, pady=(10, 6))
+        btn_row.pack(fill="x", padx=20, pady=(16, 12))
 
         self.btn_answer = tk.Label(
             btn_row, text="✓  Cevapla", font=self.f_big,
             bg=t["btn_bg"], fg=t["btn_fg"],
-            padx=28, pady=10, cursor="hand2"
+            padx=32, pady=14, cursor="hand2"
         )
-        self.btn_answer.pack(side="left", expand=True, fill="x", padx=(0, 6))
+        self.btn_answer.pack(side="left", expand=True, fill="x", padx=(0, 10))
         self.btn_answer.bind("<Button-1>", lambda _: self._submit_answer())
 
         self.btn_skip = tk.Label(
             btn_row, text="⏩  Geç", font=self.f_normal,
             bg=t["skip_bg"], fg=t["skip_fg"],
-            padx=22, pady=10, cursor="hand2"
+            padx=28, pady=14, cursor="hand2"
         )
-        self.btn_skip.pack(side="left", padx=(4, 0))
+        self.btn_skip.pack(side="left", padx=(8, 0))
         self.btn_skip.bind("<Button-1>", lambda _: self._skip_question())
 
     def _select_option(self, key: str):
@@ -1035,11 +1117,12 @@ class CarkOyunu(tk.Tk):
 
         # Açıklama
         if q.get("aciklama"):
-            tk.Label(rf,
+            self.lbl_explanation = tk.Label(rf,
                      text=f"💡  {q['aciklama']}",
                      font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"],
                      wraplength=520, justify="left", anchor="nw"
-                     ).pack(fill="x", padx=4, pady=(2, 6))
+                     )
+            self.lbl_explanation.pack(fill="x", padx=4, pady=(2, 6))
 
         self.btn_skip.config(text="▶  Devam Et")
 
@@ -1269,9 +1352,9 @@ class CarkOyunu(tk.Tk):
         self.lbl_correct.config(bg=t["bg"], fg=t["success"])
         self.lbl_wrong.config(bg=t["bg"], fg=t["error"])
         self.lbl_solved.config(bg=t["bg"], fg=t["fg_dim"])
-        self.right_frame.config(bg=t["bg_card"])
-        self.q_canvas.config(bg=t["bg_card"])
-        self.question_panel.config(bg=t["bg_card"])
+        self.right_frame.config(bg=t["bg"])
+        self.q_canvas.config(bg=t["bg"])
+        self.question_panel.config(bg=t["bg_card"], highlightbackground=t["border"])
 
 
 # ──────────────────────────────────────────────
