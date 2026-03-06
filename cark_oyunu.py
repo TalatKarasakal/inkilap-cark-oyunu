@@ -250,6 +250,21 @@ class CarkOyunu(tk.Tk):
         self.f_wheel  = tkfont.Font(family=fam, size=14, weight="bold")
         self.f_icon   = tkfont.Font(family=fam, size=18)
         self.f_timer  = tkfont.Font(family=fam, size=20, weight="bold")
+        self.f_class_icon = tkfont.Font(family=fam, size=32)
+        
+        # Idle/Menü Dev Fontlar
+        self.f_huge_icon = tkfont.Font(family=fam, size=54)
+        self.f_giant_icon = tkfont.Font(family=fam, size=64)
+        
+        # Özel Büyütülenler (Kullanıcı İsteği)
+        self.f_idle_text = tkfont.Font(family=fam, size=24, weight="bold")
+        self.f_feedback_msg = tkfont.Font(family=fam, size=18, weight="bold")
+        self.f_explanation = tkfont.Font(family=fam, size=14)
+        self.f_class_icon = tkfont.Font(family=fam, size=32)
+        
+        # Idle/Menü Dev Fontlar
+        self.f_huge_icon = tkfont.Font(family=fam, size=54)
+        self.f_giant_icon = tkfont.Font(family=fam, size=64)
 
         # Soru havuzu (sınıf bazlı)
         self.questions_db = load_questions(resource_path("sorular.json"))
@@ -306,7 +321,7 @@ class CarkOyunu(tk.Tk):
         if scale < 0.6: scale = 0.6
         if scale > 3.0: scale = 3.0
         
-        font_scale = 1.0 + (scale - 1.0) * 1.3  # Further increase font scaling intensity
+        font_scale = 1.0 + (scale - 1.0) * 1.3  # Revert to 1.3
         
         self.f_title.config(size=max(10, int(17 * font_scale)))
         self.f_normal.config(size=max(10, int(15 * font_scale)))
@@ -317,6 +332,20 @@ class CarkOyunu(tk.Tk):
         self.f_wheel.config(size=max(10, int(16 * font_scale)))
         self.f_icon.config(size=max(12, int(20 * font_scale)))
         self.f_timer.config(size=max(14, int(22 * font_scale)))
+        
+        if hasattr(self, 'f_class_icon'):
+            self.f_class_icon.config(size=max(20, int(32 * font_scale)))
+        if hasattr(self, 'f_huge_icon'):
+            self.f_huge_icon.config(size=max(32, int(54 * font_scale)))
+        if hasattr(self, 'f_giant_icon'):
+            self.f_giant_icon.config(size=max(42, int(64 * font_scale)))
+            
+        if hasattr(self, 'f_idle_text'):
+            self.f_idle_text.config(size=max(16, int(28 * font_scale)))
+        if hasattr(self, 'f_feedback_msg'):
+            self.f_feedback_msg.config(size=max(14, int(22 * font_scale)))
+        if hasattr(self, 'f_explanation'):
+            self.f_explanation.config(size=max(12, int(16 * font_scale)))
         
         self._force_reflow(self)
 
@@ -810,7 +839,7 @@ class CarkOyunu(tk.Tk):
 
         # Başlık
         tk.Frame(f, height=60, bg=t["bg_card"]).pack()
-        tk.Label(f, text="📚", font=tkfont.Font(size=54),
+        tk.Label(f, text="📚", font=self.f_huge_icon,
                  bg=t["bg_card"], fg=t["accent"]).pack(pady=(16, 8))
         tk.Label(f, text="Sınıf Düzeyini Seçiniz",
                  font=self.f_title, bg=t["bg_card"], fg=t["fg"]).pack(pady=(8, 12))
@@ -834,7 +863,7 @@ class CarkOyunu(tk.Tk):
             btn_frame.grid(row=row, column=col, padx=8, pady=8, sticky="nsew")
 
             emoji_lbl = tk.Label(btn_frame, text=info["emoji"],
-                                 font=tkfont.Font(size=28), bg=info["color"], fg="#ffffff")
+                                 font=self.f_class_icon, bg=info["color"], fg="#ffffff")
             emoji_lbl.pack(pady=(2, 4))
 
             name_lbl = tk.Label(btn_frame, text=info["label"],
@@ -896,10 +925,10 @@ class CarkOyunu(tk.Tk):
         t = self.t
 
         tk.Frame(f, height=100, bg=t["bg_card"]).pack()
-        tk.Label(f, text="🎡", font=tkfont.Font(size=64),
+        tk.Label(f, text="🎡", font=self.f_giant_icon,
                  bg=t["bg_card"], fg=t["accent"]).pack(pady=(16, 8))
         tk.Label(f, text="Çarkı çevirerek\nbir puan belirleyin!",
-                 font=self.f_big, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=16)
+                 font=self.f_idle_text, bg=t["bg_card"], fg=t["fg"], justify="center").pack(pady=16)
 
         grade_info_text = ""
         if self.selected_grade and self.selected_grade in GRADE_INFO:
@@ -910,9 +939,9 @@ class CarkOyunu(tk.Tk):
             grade_info_text = f"Soru havuzu: {len(self.all_questions)} soru"
 
         tk.Label(f, text=grade_info_text,
-                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack()
+                 font=self.f_big, bg=t["bg_card"], fg=t["fg_dim"]).pack()
         tk.Label(f, text="Doğru: +çark puanı +10  |  Yanlış/Süre: −5",
-                 font=self.f_small, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(4, 0))
+                 font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"]).pack(pady=(4, 0))
 
     def _show_spinning_panel(self):
         self._clear_right_panel()
@@ -1112,17 +1141,17 @@ class CarkOyunu(tk.Tk):
             msg_color = t["error"]
             self._play_sound("wrong")
 
-        tk.Label(rf, text=msg, font=self.f_big,
-                 bg=t["bg_card"], fg=msg_color).pack(pady=4)
+        tk.Label(rf, text=msg, font=self.f_feedback_msg,  # Özelleştirilmiş dev font
+                 bg=t["bg_card"], fg=msg_color).pack(pady=10)
 
         # Açıklama
         if q.get("aciklama"):
             self.lbl_explanation = tk.Label(rf,
                      text=f"💡  {q['aciklama']}",
-                     font=self.f_normal, bg=t["bg_card"], fg=t["fg_dim"],
+                     font=self.f_explanation, bg=t["bg_card"], fg=t["fg_dim"],  # Özelleştirilmiş açıklama fontu
                      wraplength=520, justify="left", anchor="nw"
                      )
-            self.lbl_explanation.pack(fill="x", padx=4, pady=(2, 6))
+            self.lbl_explanation.pack(fill="x", padx=4, pady=(6, 12))
 
         self.btn_skip.config(text="▶  Devam Et")
 
