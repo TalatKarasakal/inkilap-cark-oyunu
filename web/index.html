@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGS Sosyal Bilgiler Çark Oyunu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="energy">
+    <!-- Navbar -->
+    <nav class="top-bar">
+        <div class="logo">🏛 LGS Sosyal Bilgiler – Çark Oyunu</div>
+        <div class="nav-controls">
+            <button id="btn-stats" class="nav-btn" aria-label="İstatistikler">📊 İstatistik</button>
+            <button id="btn-reset" class="nav-btn" aria-label="Sıfırla">↻ Sıfırla</button>
+            <button id="btn-menu" class="nav-btn" aria-label="Sınıf Seçimi">🏠 Sınıf Seçimi</button>
+            <button id="btn-theme" class="icon-btn" aria-label="Tema Değiştir">🎨</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+
+        <!-- Left Column: Wheel & Stats -->
+        <section class="left-panel">
+            <div class="wheel-container">
+                <canvas id="wheelCanvas" width="500" height="500"></canvas>
+                <div class="wheel-pointer"></div>
+                <div class="wheel-center-text">LGS</div>
+            </div>
+
+            <button id="btn-spin" class="action-btn spin-btn" disabled>
+                <span class="btn-icon">🎯</span> Çarkı Çevir
+            </button>
+
+            <div class="score-card">
+                <div class="score-title">TOPLAM PUAN</div>
+                <div id="total-score" class="score-val">0</div>
+            </div>
+
+            <div class="mini-stats">
+                <span class="stat-badge success">✓ <span id="stat-correct">0</span></span>
+                <span class="stat-badge error">✗ <span id="stat-wrong">0</span></span>
+                <span class="stat-badge neutral">📝 <span id="stat-solved">0</span></span>
+            </div>
+        </section>
+
+        <!-- Right Column: Game Views (Menu, Question, Result) -->
+        <section class="right-panel scrollable">
+
+            <!-- VIEW: Grade Selection -->
+            <div id="view-grade" class="view active">
+                <h1 class="view-title">Sınıfını Seç</h1>
+                <p class="view-desc">Soruları çözmek istediğin sınıf seviyesini seçerek oyuna başla.</p>
+                <div class="grade-grid">
+                    <button class="grade-card grade-5" data-grade="5">
+                        <div class="grade-icon">📗</div>
+                        <h2 class="grade-name">5. Sınıf</h2>
+                        <div class="grade-subj">Sosyal Bilgiler</div>
+                    </button>
+                    <button class="grade-card grade-6" data-grade="6">
+                        <div class="grade-icon">📘</div>
+                        <h2 class="grade-name">6. Sınıf</h2>
+                        <div class="grade-subj">Sosyal Bilgiler</div>
+                    </button>
+                    <button class="grade-card grade-7" data-grade="7">
+                        <div class="grade-icon">📙</div>
+                        <h2 class="grade-name">7. Sınıf</h2>
+                        <div class="grade-subj">Sosyal Bilgiler</div>
+                    </button>
+                    <button class="grade-card grade-8" data-grade="8">
+                        <div class="grade-icon">📕</div>
+                        <h2 class="grade-name">8. Sınıf</h2>
+                        <div class="grade-subj">İnkılap Tarihi</div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- VIEW: Idle (After Selecting Grade) -->
+            <div id="view-idle" class="view hidden">
+                <div class="center-content">
+                    <div class="giant-icon">🎡</div>
+                    <h2 class="idle-text">Çarkı çevirerek sıradaki soruyu belirle!</h2>
+                    <p class="view-desc">Sınıf: <strong id="current-grade-label">-</strong> | Çarkı çevir butonuna bas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- VIEW: Question -->
+            <div id="view-question" class="view hidden">
+                <div class="question-header">
+                    <div class="q-meta">
+                        <span id="q-unite" class="badge">Ünite</span>
+                        <span id="q-konu" class="badge outline">Konu</span>
+                    </div>
+                    <div class="timer-container">
+                        <div id="timer-val" class="timer-text">🕐 45</div>
+                        <div class="timer-bar">
+                            <div id="timer-fill" class="timer-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="q-text" class="question-text">Soru metni burada yer alacak...</div>
+
+                <div class="options-list" id="options-container">
+                    <!-- Options injected here -->
+                </div>
+
+                <div class="question-actions">
+                    <button id="btn-submit" class="action-btn submit-btn" disabled>Cevabı Onayla</button>
+                    <button id="btn-skip" class="action-btn outline">Soruyu Geç</button>
+                </div>
+            </div>
+
+            <!-- VIEW: Feedback/Result -->
+            <div id="view-feedback" class="view hidden">
+                <div id="feedback-content" class="feedback-card">
+                    <div id="feedback-icon" class="giant-icon">✓</div>
+                    <h2 id="feedback-title" class="feedback-title">Tebrikler!</h2>
+                    <p id="feedback-msg" class="feedback-msg">Doğru cevap verdiniz.</p>
+                    <div id="feedback-explanation" class="feedback-explanation">Açıklama: ...</div>
+                    <button id="btn-next" class="action-btn next-btn">Devam Et (Çarkı Çevir)</button>
+                </div>
+            </div>
+
+            <!-- VIEW: Stats -->
+            <div id="view-stats" class="view hidden">
+                <h1 class="view-title">📊 İstatistikler</h1>
+                <div class="stats-summary">
+                    <div class="stat-box">
+                        <h3>Toplam Puan</h3>
+                        <div id="st-score">0</div>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Doğru</h3>
+                        <div id="st-correct">0</div>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Yanlış</h3>
+                        <div id="st-wrong">0</div>
+                    </div>
+                </div>
+                <!-- Unit stats list here -->
+                <div id="unit-stats-container" class="unit-stats">
+                </div>
+                <button id="btn-close-stats" class="action-btn outline" style="margin-top: 2rem;">Kapat</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Audio Elements -->
+    <audio id="snd-spin" src="sounds/spin.wav"></audio>
+    <audio id="snd-tick" src="sounds/tick.wav"></audio>
+    <audio id="snd-win" src="sounds/win.wav"></audio>
+    <audio id="snd-wrong" src="sounds/wrong.wav"></audio>
+    <audio id="snd-fail" src="sounds/fail.wav"></audio>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

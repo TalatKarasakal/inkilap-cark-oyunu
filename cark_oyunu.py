@@ -1137,7 +1137,8 @@ class CarkOyunu(tk.Tk):
                 msg   = f"🎉  Doğru!  +{bonus} puan kazandınız!"
             msg_color = t["success"]
         else:
-            msg   = f"❌  Yanlış!  Doğru cevap: {correct_key}  −{PENALTY_WRONG} puan"
+            correct_text = q['siklar'].get(correct_key, "")
+            msg = f"❌  Yanlış!  Doğru cevap: {correct_key}) {correct_text}  −{PENALTY_WRONG} puan"
             msg_color = t["error"]
             self._play_sound("wrong")
 
