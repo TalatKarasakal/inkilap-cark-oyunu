@@ -164,7 +164,7 @@ SLICE_SPECIAL_LABEL = {
     "X2":    "⚡\nX2",
 }
 
-TIMER_SECONDS   = 45
+TIMER_SECONDS   = 60
 BONUS_CORRECT   = 10
 PENALTY_WRONG   = 5
 
@@ -858,13 +858,13 @@ class CarkOyunu(tk.Tk):
         banner.pack(fill="x")
         banner.pack_propagate(False)
 
+        self.lbl_timer = tk.Label(banner, text=f"🕐 {TIMER_SECONDS:02d}",
+                                  font=self.f_timer, bg=banner_bg, fg=t["timer_normal"])
+        self.lbl_timer.pack(side="right", padx=14)
+
         tk.Label(banner,
                  text=banner_txt,
                  font=self.f_big, bg=banner_bg, fg="#ffffff").pack(side="left", padx=14, expand=True)
-
-        self.lbl_timer = tk.Label(banner, text=f"🕐 {TIMER_SECONDS:02d}",
-                                  font=self.f_timer, bg=t["btn_bg"], fg=t["timer_normal"])
-        self.lbl_timer.pack(side="right", padx=14)
 
         # Timer progress bar
         self.timer_bar_bg = tk.Frame(f, bg=t["border"], height=5)
