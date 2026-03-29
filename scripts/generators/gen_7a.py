@@ -184,7 +184,7 @@ questions = [
      "dogru_cevap": "D", "aciklama": "Soğuk iklim kısa tarım mevsimi, yüksek ısınma maliyeti ve seyrek nüfusa neden olur."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_7_a.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_7_a.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"7. Sınıf Batch A (Ünite 1-3): {len(questions)} soru yazıldı")

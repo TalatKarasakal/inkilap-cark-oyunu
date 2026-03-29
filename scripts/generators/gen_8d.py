@@ -93,7 +93,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Musul sorunu iç sorunların ve uluslararası güç dengelerinin dış politikayı etkilediğini gösterir."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_8_d.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_8_d.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"8. Sınıf Batch D (LGS): {len(questions)} soru yazıldı")

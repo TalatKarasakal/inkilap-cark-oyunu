@@ -1,7 +1,8 @@
 """8. sınıfa son 14 LGS sorusu ekler, dengeler, birleştirir, exe yapar."""
 import json, os, random
 random.seed(777)
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 U1="Ünite 1 – Bir Kahraman Doğuyor"
 U2="Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar"
 U3="Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!"
@@ -68,7 +69,7 @@ ek=[
   "dogru_cevap":"B","aciklama":"Hasta yatağında bile Hatay'la ilgilenmesi vatanseverlik ve kararlılığı yansıtır."},
 ]
 
-fn=os.path.join(BASE,"sorular_8.json")
+fn=os.path.join(DATA_DIR,"sorular_8.json")
 with open(fn,"r",encoding="utf-8") as f: qs=json.load(f)
 qs.extend(ek)
 # Balance

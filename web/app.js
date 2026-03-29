@@ -23,6 +23,8 @@ const SLICE_ANGLE = (Math.PI * 2) / SLICE_COUNT;
 const themes = ["energy", "dark", "light"];
 let currentThemeIdx = 0;
 
+let wheelLogicalSize = 500;
+
 let state = {
     grade: null,
     score: 0,
@@ -40,7 +42,7 @@ let state = {
     wheelAngle: 0
 };
 
-// Colors based on theme (approximate values for drawing wheel)
+// Colors based on theme
 const wheelColors = {
     energy: ["#e8a020", "#cc2200", "#f5d040", "#aa1800", "#ffbe45", "#8b0000", "#ffd060", "#b83000", "#e89000", "#c01500"],
     dark: ["#6c8cff", "#ff6b7a", "#4cdf8b", "#ffb347", "#c77dff", "#ff8fab", "#64dfdf", "#ffd166", "#a5b4fc", "#f472b6"],
@@ -61,7 +63,7 @@ function playSound(type) {
         sounds[type].currentTime = 0;
         if (type === 'spin') sounds[type].volume = 0.3;
         if (type === 'tick') sounds[type].volume = 0.5;
-        sounds[type].play().catch(e => console.log('Autoplay prevented'));
+        sounds[type].play().catch(() => {});
     }
 }
 
@@ -74,9 +76,33 @@ function showView(viewName) {
     views[viewName].classList.add('active');
 }
 
+// Canvas Resize for High-DPI and Responsive
+function handleResize() {
+    const container = document.querySelector('.wheel-container');
+    if (!container) return;
+    const size = Math.min(container.clientWidth, container.clientHeight);
+    if (size <= 0) return;
+    const dpr = window.devicePixelRatio || 1;
+
+    wheelCanvas.width = size * dpr;
+    wheelCanvas.height = size * dpr;
+    wheelCanvas.style.width = size + 'px';
+    wheelCanvas.style.height = size + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    wheelLogicalSize = size;
+    drawWheel();
+}
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleResize, 200);
+});
+
 // Initialize
 function init() {
-    drawWheel();
+    handleResize();
     setupEventListeners();
     updateStatsUI();
 }
@@ -86,7 +112,7 @@ function setupEventListeners() {
     btnTheme.addEventListener('click', () => {
         currentThemeIdx = (currentThemeIdx + 1) % themes.length;
         document.body.setAttribute('data-theme', themes[currentThemeIdx]);
-        drawWheel(); // redraw colors
+        handleResize();
     });
 
     // Menus
@@ -152,8 +178,8 @@ function resetGame() {
 
 // Wheel Logic
 function drawWheel(angleOffset = state.wheelAngle) {
-    const w = wheelCanvas.width;
-    const h = wheelCanvas.height;
+    const w = wheelLogicalSize;
+    const h = wheelLogicalSize;
     const cx = w / 2;
     const cy = h / 2;
     const r = cx - 10;
@@ -183,11 +209,15 @@ function drawWheel(angleOffset = state.wheelAngle) {
         ctx.rotate(i * SLICE_ANGLE + SLICE_ANGLE / 2);
         ctx.textAlign = "center";
         ctx.fillStyle = "#ffffff";
-        ctx.font = isSpecial ? "bold 16px 'Segoe UI'" : "bold 20px 'Segoe UI'";
+
+        // Scale font based on wheel size
+        const baseFontSize = Math.max(10, Math.round(w / 25));
+        const specialFontSize = Math.max(8, Math.round(w / 30));
+        ctx.font = isSpecial ? `bold ${specialFontSize}px 'Segoe UI'` : `bold ${baseFontSize}px 'Segoe UI'`;
         ctx.translate(r * 0.7, 0);
 
         if (isSpecial) {
-            let t = val === 'İFLAS' ? '💀 İFLAS' : val === 'PAS' ? '⏸ PAS' : '⚡ X2';
+            let t = val === 'İFLAS' ? 'İFLAS' : val === 'PAS' ? 'PAS' : 'X2';
             ctx.fillText(t, 0, 6);
         } else {
             ctx.fillText(val, 0, 6);
@@ -207,7 +237,6 @@ function spinWheel() {
     const targetSlice = Math.floor(Math.random() * SLICE_COUNT);
     const extraTurns = Math.floor(Math.random() * 5 + 5) * Math.PI * 2;
 
-    // Calculate angle to land exactly in the middle of targetSlice at the top (-90 deg or 270 deg)
     const sliceMidPoint = (targetSlice * SLICE_ANGLE) + (SLICE_ANGLE / 2);
     const finalAngle = (Math.PI * 1.5) - sliceMidPoint;
 
@@ -242,11 +271,11 @@ function onSpinComplete(targetSlice) {
         state.score = 0;
         updateStatsUI();
         playSound('fail');
-        showFeedbackUI("💀 İFLAS!", "Tüm puanlarınız sıfırlandı!", "var(--error)", false, null);
+        showFeedbackUI("İFLAS!", "Tüm puanlarınız sıfırlandı!", "var(--error)", false, null);
         return;
     }
     if (val === "PAS") {
-        showFeedbackUI("⏸ PAS!", "Bu turu geçtiniz. Puan değişmedi.", "var(--fg-dim)", false, null);
+        showFeedbackUI("PAS!", "Bu turu geçtiniz. Puan değişmedi.", "var(--fg-dim)", false, null);
         return;
     }
 
@@ -275,7 +304,6 @@ function loadQuestion() {
     const optContainer = document.getElementById('options-container');
     optContainer.innerHTML = '';
 
-    // siklar is an object {A: "...", B: "..."}
     for (let key in state.currentQ.siklar) {
         let btn = document.createElement('button');
         btn.className = 'option-btn';
@@ -290,9 +318,7 @@ function loadQuestion() {
 }
 
 function selectOption(btnElem, key) {
-    // deselect all
     document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
-    // select clicked
     btnElem.classList.add('selected');
     state.selectedOpt = key;
     document.getElementById('btn-submit').disabled = false;
@@ -315,14 +341,27 @@ function startTimer() {
 function stopTimer() {
     clearInterval(state.timerInterval);
 }
+
 function updateTimerUI() {
-    document.getElementById('timer-val').textContent = `🕐 ${state.timer}`;
-    const fill = document.getElementById('timer-fill');
-    fill.style.width = `${(state.timer / 45) * 100}%`;
-    if (state.timer <= 10) fill.style.backgroundColor = 'var(--error)';
-    else if (state.timer <= 20) fill.style.backgroundColor = 'var(--warning)';
-    else fill.style.backgroundColor = 'var(--accent)';
+    const progress = document.getElementById('timer-progress');
+    const text = document.getElementById('timer-text');
+    const container = document.querySelector('.timer-container');
+    if (!progress || !text) return;
+
+    const circumference = 2 * Math.PI * 42; // ~264
+    const offset = circumference * (1 - state.timer / 45);
+
+    progress.style.strokeDashoffset = offset;
+    text.textContent = state.timer;
+
+    container.classList.remove('timer-danger', 'timer-warn');
+    if (state.timer <= 10) {
+        container.classList.add('timer-danger');
+    } else if (state.timer <= 20) {
+        container.classList.add('timer-warn');
+    }
 }
+
 function handleTimeout() {
     stopTimer();
     playSound('fail');
@@ -342,7 +381,7 @@ function submitAnswer() {
     if (isCorrect) {
         state.correct++;
         if (state.x2Mode) state.score *= 2;
-        else state.score += state.currentPoints + 10; // Bonus
+        else state.score += state.currentPoints + 10;
         playSound('win');
     } else {
         state.wrong++;
@@ -394,10 +433,36 @@ function recordUnit(unitName, isCorrect) {
 }
 
 function updateStatsUI() {
-    document.getElementById('total-score').textContent = state.score;
+    animateScore(state.score);
     document.getElementById('stat-correct').textContent = state.correct;
     document.getElementById('stat-wrong').textContent = state.wrong;
     document.getElementById('stat-solved').textContent = state.solved;
+}
+
+function animateScore(target) {
+    const el = document.getElementById('total-score');
+    const start = parseInt(el.textContent) || 0;
+    if (start === target) return;
+
+    const diff = target - start;
+    const duration = 400;
+    const startTime = performance.now();
+
+    el.classList.remove('score-pop', 'score-flash-success', 'score-flash-error');
+    void el.offsetWidth;
+    el.classList.add('score-pop');
+    el.classList.add(diff > 0 ? 'score-flash-success' : 'score-flash-error');
+    setTimeout(() => {
+        el.classList.remove('score-flash-success', 'score-flash-error');
+    }, 500);
+
+    function step(now) {
+        const p = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + diff * eased);
+        if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
 }
 
 function renderStats() {
@@ -420,7 +485,7 @@ function renderStats() {
         row.innerHTML = `
             <div style="flex:1;"><strong>${u}</strong></div>
             <div style="flex:0 0 100px; text-align:right;">
-                <span style="color:var(--success);">✓ ${st.d}</span> | 
+                <span style="color:var(--success);">✓ ${st.d}</span> |
                 <span style="color:var(--error);">✗ ${st.y}</span>
             </div>
         `;

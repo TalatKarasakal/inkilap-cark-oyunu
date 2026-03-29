@@ -215,7 +215,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Streaming telif sistemi fikri mülkiyet haklarının dijital ortamdaki uygulamasıdır."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_6_b.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_6_b.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"6. Sınıf Batch B (Ünite 4-6): {len(questions)} soru yazıldı")

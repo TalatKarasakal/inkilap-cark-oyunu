@@ -225,7 +225,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Birinin fikirlerini söylemesinin engellenmesi düşünce ve ifade özgürlüğü ihlalidir."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_5_b.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_5_b.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"5. Sınıf Batch B (Ünite 3-4): {len(questions)} soru yazıldı")

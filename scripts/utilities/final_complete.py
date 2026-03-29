@@ -1,7 +1,8 @@
 """7. sınıfa 1, 8. sınıfa 46 LGS formatında soru ekler, dağılımı dengeler, birleştirir."""
 import json, os, copy, random
 random.seed(999)
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
 def balance(qs):
     keys=["A","B","C","D"]
@@ -181,7 +182,7 @@ ek8=[
 ]
 
 # 7. sınıf güncelle
-fn7=os.path.join(BASE,"sorular_7.json")
+fn7=os.path.join(DATA_DIR,"sorular_7.json")
 with open(fn7,"r",encoding="utf-8") as f: q7=json.load(f)
 q7.extend(ek7)
 q7=balance(q7)
@@ -190,7 +191,7 @@ d7={k:sum(1 for q in q7 if q["dogru_cevap"]==k) for k in "ABCD"}
 print(f"7. Sinif: {len(q7)} soru | A={d7['A']} B={d7['B']} C={d7['C']} D={d7['D']}")
 
 # 8. sınıf güncelle
-fn8=os.path.join(BASE,"sorular_8.json")
+fn8=os.path.join(DATA_DIR,"sorular_8.json")
 with open(fn8,"r",encoding="utf-8") as f: q8=json.load(f)
 q8.extend(ek8)
 q8=balance(q8)

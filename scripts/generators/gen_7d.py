@@ -131,7 +131,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Amnesty International insan hakları ihlallerine küresel dikkat çeken sivil kuruluştur."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_7_d.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_7_d.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"7. Sınıf Batch D (Ek sorular-2): {len(questions)} soru yazıldı")

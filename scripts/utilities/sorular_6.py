@@ -236,7 +236,7 @@ questions = [
     }
 ]
 
-file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_6.json")
+file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "sorular_6.json")
 with open(file_path, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=4)
     print(f"6. Sınıf: {len(questions)} soru başarıyla sorular_6.json dosyasına yazıldı.")

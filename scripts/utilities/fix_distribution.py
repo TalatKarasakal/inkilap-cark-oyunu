@@ -8,7 +8,8 @@ import random
 import copy
 
 random.seed(42)  # Tekrarlanabilir sonuçlar için
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
 def analyze_distribution(questions, label=""):
     dist = {"A": 0, "B": 0, "C": 0, "D": 0}
@@ -95,7 +96,7 @@ def balance_answers(questions, target_dist=None):
 
 # Her sınıf için işle
 for grade in [5, 6, 7, 8]:
-    fn = os.path.join(BASE, f"sorular_{grade}.json")
+    fn = os.path.join(DATA_DIR, f"sorular_{grade}.json")
     with open(fn, "r", encoding="utf-8") as f:
         questions = json.load(f)
     

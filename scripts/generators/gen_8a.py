@@ -233,7 +233,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Atatürk dönemi dış politikası tam bağımsızlık ve barışçılık temelinde yürütülmüştür."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_8_a.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_8_a.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"8. Sınıf Batch A (LGS): {len(questions)} soru yazıldı")

@@ -1,11 +1,13 @@
 """7. sınıf batch JSON dosyalarını birleştirip sorular_7.json oluşturur."""
 import json, os
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+PARTS_DIR = os.path.join(PROJECT_ROOT, "data", "parts")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 all_q = []
 
 for part in ["sorular_7_a.json", "sorular_7_b.json", "sorular_7_c.json", "sorular_7_d.json"]:
-    path = os.path.join(BASE, part)
+    path = os.path.join(PARTS_DIR, part)
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -112,7 +114,7 @@ ek = [
 ]
 all_q.extend(ek)
 
-out = os.path.join(BASE, "sorular_7.json")
+out = os.path.join(DATA_DIR, "sorular_7.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(all_q, f, ensure_ascii=False, indent=2)
 print(f"\n7. Sınıf TOPLAM: {len(all_q)} soru -> sorular_7.json")

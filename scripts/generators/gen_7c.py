@@ -174,7 +174,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Siber güvenlik ulusal güvenlik ve bireysel gizlilik için kritik bir konudur."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_7_c.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_7_c.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"7. Sınıf Batch C (Ek sorular): {len(questions)} soru yazıldı")

@@ -7,7 +7,7 @@ import random
 sample_rate = 44100
 
 def generate_wav(filename, samples, volume=0.5):
-    filepath = os.path.join('sounds', filename)
+    filepath = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'sounds', filename)
     with wave.open(filepath, 'w') as wav_file:
         wav_file.setnchannels(1)
         wav_file.setsampwidth(2)
@@ -46,7 +46,7 @@ def make_tick_sound():
     generate_wav('tick.wav', samples, volume=0.4)
 
 if __name__ == '__main__':
-    os.makedirs('sounds', exist_ok=True)
+    os.makedirs(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'sounds'), exist_ok=True)
     make_spin_sound()
     make_tick_sound()
     print('Sounds generated.')

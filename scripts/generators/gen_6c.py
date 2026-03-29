@@ -146,7 +146,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Patent ve ticari sır fikri mülkiyetin korunması yöntemleridir."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_6_c.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_6_c.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"6. Sınıf Batch C (Ek sorular): {len(questions)} soru yazıldı")

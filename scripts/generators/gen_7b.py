@@ -179,7 +179,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "COVID-19 küresel sorunların uluslararası iş birliği gerektirdiğini somut olarak göstermiştir."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_7_b.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_7_b.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"7. Sınıf Batch B (Ünite 4-7): {len(questions)} soru yazıldı")

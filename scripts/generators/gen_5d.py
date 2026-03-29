@@ -94,7 +94,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Her büyük teknolojik buluş toplumu ve üretim biçimini köklü şekilde dönüştürmüştür."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_5_d.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_5_d.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"5. Sınıf Batch D (Ek sorular): {len(questions)} soru yazıldı")

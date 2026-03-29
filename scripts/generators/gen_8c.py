@@ -97,7 +97,7 @@ questions = [
      "dogru_cevap": "B", "aciklama": "Montrö II. Dünya Savaşı öncesi Boğazlar kontrolü ile güvenliği güçlendirmiştir."},
 ]
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sorular_8_c.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "parts", "sorular_8_c.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(questions, f, ensure_ascii=False, indent=2)
 print(f"8. Sınıf Batch C (LGS): {len(questions)} soru yazıldı")

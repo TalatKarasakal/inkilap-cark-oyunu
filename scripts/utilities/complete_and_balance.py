@@ -1,10 +1,11 @@
 """Eksik soruları ekleyip, dağılımı dengeleyip, birleştirip exe yapar."""
 import json, os, copy, random
 random.seed(123)
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
 def add_and_balance(grade, new_qs):
-    fn = os.path.join(BASE, f"sorular_{grade}.json")
+    fn = os.path.join(DATA_DIR, f"sorular_{grade}.json")
     with open(fn,"r",encoding="utf-8") as f: qs = json.load(f)
     qs.extend(new_qs)
     # Shuffle options for balanced distribution

@@ -14,9 +14,9 @@
     <nav class="top-bar">
         <div class="logo">🏛 LGS Sosyal Bilgiler – Çark Oyunu</div>
         <div class="nav-controls">
-            <button id="btn-stats" class="nav-btn" aria-label="İstatistikler">📊 İstatistik</button>
-            <button id="btn-reset" class="nav-btn" aria-label="Sıfırla">↻ Sıfırla</button>
-            <button id="btn-menu" class="nav-btn" aria-label="Sınıf Seçimi">🏠 Sınıf Seçimi</button>
+            <button id="btn-stats" class="nav-btn" aria-label="İstatistikler"><span class="nav-icon">📊</span><span class="nav-text"> İstatistik</span></button>
+            <button id="btn-reset" class="nav-btn" aria-label="Sıfırla"><span class="nav-icon">↻</span><span class="nav-text"> Sıfırla</span></button>
+            <button id="btn-menu" class="nav-btn" aria-label="Sınıf Seçimi"><span class="nav-icon">🏠</span><span class="nav-text"> Sınıf Seçimi</span></button>
             <button id="btn-theme" class="icon-btn" aria-label="Tema Değiştir">🎨</button>
         </div>
     </nav>
@@ -97,10 +97,11 @@
                         <span id="q-konu" class="badge outline">Konu</span>
                     </div>
                     <div class="timer-container">
-                        <div id="timer-val" class="timer-text">🕐 45</div>
-                        <div class="timer-bar">
-                            <div id="timer-fill" class="timer-fill"></div>
-                        </div>
+                        <svg class="timer-ring" viewBox="0 0 100 100" width="70" height="70">
+                            <circle class="timer-track" cx="50" cy="50" r="42" />
+                            <circle id="timer-progress" class="timer-progress" cx="50" cy="50" r="42" />
+                            <text id="timer-text" x="50" y="55" text-anchor="middle" class="timer-number"></text>
+                        </svg>
                     </div>
                 </div>
 

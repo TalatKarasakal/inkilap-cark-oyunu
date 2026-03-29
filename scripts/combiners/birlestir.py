@@ -4,7 +4,8 @@ Yapi:  { "5": [...], "6": [...], "7": [...], "8": [...] }
 """
 import json, os
 
-BASE = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 
 combined = {}
 files = {
@@ -15,7 +16,7 @@ files = {
 }
 
 for grade, fname in files.items():
-    path = os.path.join(BASE, fname)
+    path = os.path.join(DATA_DIR, fname)
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
             combined[grade] = json.load(f)
@@ -23,7 +24,7 @@ for grade, fname in files.items():
     else:
         print(f"  [EKSIK] {fname} bulunamadi, atlaniyor.")
 
-out = os.path.join(BASE, "sorular.json")
+out = os.path.join(PROJECT_ROOT, "sorular.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(combined, f, ensure_ascii=False, indent=4)
 
