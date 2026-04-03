@@ -374,6 +374,7 @@ function handleTimeout() {
 }
 
 function submitAnswer() {
+    if (!state.selectedOpt || !state.currentQ) return;
     stopTimer();
     let isCorrect = (state.selectedOpt === state.currentQ.dogru_cevap);
     state.solved++;
