@@ -1055,9 +1055,10 @@ class CarkOyunu(tk.Tk):
         is_correct  = self.selected_opt == correct
 
         self.solved_count += 1
+        was_x2 = self.x2_mode
         if is_correct:
             self.correct_count += 1
-            if self.x2_mode:
+            if was_x2:
                 self.total_score = self.total_score * 2
             else:
                 self.total_score += self.current_points + BONUS_CORRECT
@@ -1068,7 +1069,7 @@ class CarkOyunu(tk.Tk):
 
         self._record_unite(q["unite"], is_correct)
         self._update_stats()
-        self._show_feedback(is_correct, correct)
+        self._show_feedback(is_correct, correct, was_x2=was_x2)
 
     def _skip_question(self):
         if self.state not in (self.STATE_QUESTION, self.STATE_ANSWERED):
@@ -1078,7 +1079,7 @@ class CarkOyunu(tk.Tk):
         self._clear_right_panel()
         self._show_idle_panel()
 
-    def _show_feedback(self, is_correct: bool, correct_key: str, timeout: bool = False):
+    def _show_feedback(self, is_correct: bool, correct_key: str, timeout: bool = False, was_x2: bool = False):
         self._stop_timer()
         t = self.t
         q = self.current_q
@@ -1116,7 +1117,7 @@ class CarkOyunu(tk.Tk):
             self._play_sound("fail")
         elif is_correct:
             self._play_sound("win")
-            if self.x2_mode:
+            if was_x2:
                 msg = f"🎉  Doğru!  Toplam puanın 2 katına çıktı → {self.total_score}"
             else:
                 bonus = self.current_points + BONUS_CORRECT
@@ -1222,12 +1223,6 @@ class CarkOyunu(tk.Tk):
         # Butonlar
         btn_row = tk.Frame(f, bg=t["bg_card"])
         btn_row.pack(fill="x", padx=10, pady=(0, 8))
-
-        tk.Label(btn_row, text="▶  Oyuna Devam Et",
-                 font=self.f_big, bg=t["btn_bg"], fg=t["btn_fg"],
-                 padx=22, pady=10, cursor="hand2"
-                 ).pack(side="left", expand=True, fill="x", padx=(0, 6)
-                        ).bind if False else None
 
         cont = tk.Label(btn_row, text="▶  Oyuna Devam Et",
                         font=self.f_big, bg=t["btn_bg"], fg=t["btn_fg"],
