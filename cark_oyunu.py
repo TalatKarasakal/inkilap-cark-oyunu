@@ -355,23 +355,61 @@ class CarkOyunu(tk.Tk):
         random.shuffle(self.remaining)
 
     def _pick_question(self) -> dict:
-        """Soru seçer – ardışık aynı doğru cevap şıkkı gelmesini engeller."""
+        """Soru seçer, uzun şık bug'ını önler ve harf dağılımını homojen yapar."""
         if not self.remaining:
             self._refill_pool()
 
-        last_key = getattr(self, '_last_correct_key', None)
+        q_orijinal = self.remaining.pop()
+        q = q_orijinal.copy()
+        
+        # 1. EN UZUN ŞIK BUG'INI ÖNLEME (Anti-Exploit Çeldirici)
+        # Orijinal veriyi bozmamak için dict() ile kopyalıyoruz
+        orijinal_siklar = dict(q_orijinal["siklar"])
+        dogru_metin = orijinal_siklar[q_orijinal["dogru_cevap"]]
+        
+        # Şıkların uzunluklarını kontrol et
+        max_len = max(len(str(v)) for v in orijinal_siklar.values())
+        
+        # Eğer doğru cevap en uzun şıksa (ve makul bir uzunluktaysa), bir yanlış şıkkı devasa yaparak öğrencileri yanılt
+        if len(str(dogru_metin)) == max_len and max_len > 30:
+            yanlis_harfler = [k for k in orijinal_siklar.keys() if k != q_orijinal["dogru_cevap"]]
+            hedef_yanlis = random.choice(yanlis_harfler)
+            
+            uzatici_ifadeler = [
+                " ve bu durumun tarihteki bütün olaylarda kesin, değişmez bir kural olarak her zaman aynı şekilde yaşanması",
+                " ile birlikte toplumdaki tüm bireylerin istisnasız olarak tamamen aynı ve tek tip tepkiyi göstermesi",
+                " gerçeğinin her dönemde tek ve en önemli etken olarak kabul edilmesinin kesinlikle zorunlu olması",
+                " gibi gelişmelerin hiçbir şekilde değiştirilemez ve dış güçlerce engellenemez sonuçları beraberinde getirmesi",
+                " durumunun yalnızca o döneme ait olması ve dünya tarihinde başka hiçbir zaman diliminde kesinlikle görülmemesi",
+                " ve bu sürecin tamamen dış güçlerin kontrolünde, yerel halkın hiçbir iradesi olmadan zorla gerçekleştirilmesi",
+                " olgusunun ekonomik, siyasi ve sosyal tüm alanlarda diğer tüm etkenleri yok sayarak tek başına belirleyici olması",
+                " sonucunda devletin tüm askeri ve sivil kurumlarının tamamen ve bir daha geri dönülemez şekilde yok olması"
+            ]
+            
+            ek_ifade = random.choice(uzatici_ifadeler)
+            orijinal_siklar[hedef_yanlis] = str(orijinal_siklar[hedef_yanlis]) + ek_ifade
 
-        # Farklı cevap şıkkı olan soru bulmaya çalış (maks 10 deneme)
-        if last_key and len(self.remaining) > 1:
-            for i in range(min(10, len(self.remaining))):
-                candidate = self.remaining[-(i+1)]
-                if candidate.get('dogru_cevap') != last_key:
-                    self.remaining.pop(-(i+1))
-                    self._last_correct_key = candidate['dogru_cevap']
-                    return candidate
-
-        q = self.remaining.pop()
-        self._last_correct_key = q.get('dogru_cevap')
+        # 2. ŞIK DAĞILIMINI HOMOJEN YAPMA (Aynı harf üst üste gelmesin)
+        secenekler = list(orijinal_siklar.values())
+        last_correct = getattr(self, '_last_correct_key', None)
+        yeni_dogru_harf = "A"
+        
+        for _ in range(10):
+            random.shuffle(secenekler)
+            dogru_index = secenekler.index(dogru_metin)
+            yeni_dogru_harf = ["A", "B", "C", "D"][dogru_index]
+            if yeni_dogru_harf != last_correct:
+                break
+                
+        yeni_siklar = {}
+        harfler = ["A", "B", "C", "D"]
+        for i, harf in enumerate(harfler):
+            yeni_siklar[harf] = secenekler[i]
+            
+        q["siklar"] = yeni_siklar
+        q["dogru_cevap"] = yeni_dogru_harf
+        self._last_correct_key = yeni_dogru_harf
+        
         return q
 
     # ─────────────────────────────────────────
@@ -753,8 +791,8 @@ class CarkOyunu(tk.Tk):
                 tc.create_arc(cx - r, cy - r, cx + r, cy + r,
                               start=90, extent=extent,
                               outline=color, width=5, style="arc")
-            # Ortadaki sayı
-            tc.create_text(cx, cy, text=f"{secs}", font=self.f_timer, fill=color)
+            # Ortadaki sayı (Beyaz renk ile okunabilirliği artırıldı)
+            tc.create_text(cx, cy, text=f"{secs}", font=self.f_timer, fill="#ffffff")
 
             # ≤10 saniyede titreşim efekti
             if secs <= 10 and secs > 0 and secs % 2 == 0:
@@ -938,7 +976,10 @@ class CarkOyunu(tk.Tk):
             banner_bg  = t["btn_bg"]
             banner_txt = f"🎯  Bu soru  {self.current_points}  puan değerinde!"
 
-        banner = tk.Frame(f, bg=banner_bg, height=46)
+        # Dairesel timer (Canvas tabanlı)
+        timer_size = max(56, int(76 * self.scale))
+        
+        banner = tk.Frame(f, bg=banner_bg, height=timer_size + 8)
         banner.pack(fill="x")
         banner.pack_propagate(False)
 
@@ -946,8 +987,6 @@ class CarkOyunu(tk.Tk):
                  text=banner_txt,
                  font=self.f_big, bg=banner_bg, fg="#ffffff").pack(side="left", padx=int(14 * self.scale), expand=True)
 
-        # Dairesel timer (Canvas tabanlı)
-        timer_size = max(56, int(76 * self.scale))
         self.timer_canvas = tk.Canvas(banner, width=timer_size, height=timer_size,
                                        highlightthickness=0, bg=banner_bg)
         self.timer_canvas.pack(side="right", padx=int(10 * self.scale))
@@ -990,6 +1029,7 @@ class CarkOyunu(tk.Tk):
                            highlightbackground=t["border"], highlightthickness=1,
                            padx=14, pady=10)
             frm.pack(fill="x", padx=10, pady=3)
+            
             lbl = tk.Label(frm,
                            text=f"{key})  {q['siklar'][key]}",
                            font=self.f_option, bg=t["option_bg"], fg=t["option_fg"],
