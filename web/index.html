@@ -27,6 +27,7 @@
         <!-- Left Column: Wheel & Stats -->
         <section class="left-panel">
             <div class="wheel-container">
+                <img src="assets/wheel_stand.png" class="wheel-stand" alt="Wheel Stand">
                 <canvas id="wheelCanvas" width="500" height="500"></canvas>
                 <div class="wheel-pointer"></div>
                 <div class="wheel-center-text">LGS</div>
@@ -46,6 +47,12 @@
                 <span class="stat-badge error">✗ <span id="stat-wrong">0</span></span>
                 <span class="stat-badge neutral">📝 <span id="stat-solved">0</span></span>
             </div>
+
+            <!-- Streak & Quest UI -->
+            <div class="streak-quest-container">
+                <div id="user-streak" class="streak-badge">🔥 Günlük Seri: 0 Gün</div>
+                <div id="user-quest" class="quest-badge">🎯 Görev: Bugün 5 soru çöz! (0/5)</div>
+            </div>
         </section>
 
         <!-- Right Column: Game Views (Menu, Question, Result) -->
@@ -57,22 +64,22 @@
                 <p class="view-desc">Soruları çözmek istediğin sınıf seviyesini seçerek oyuna başla.</p>
                 <div class="grade-grid">
                     <button class="grade-card grade-5" data-grade="5">
-                        <div class="grade-icon">📗</div>
+                        <img src="assets/grade_5.png" class="grade-card-img" alt="5. Sınıf">
                         <h2 class="grade-name">5. Sınıf</h2>
                         <div class="grade-subj">Sosyal Bilgiler</div>
                     </button>
                     <button class="grade-card grade-6" data-grade="6">
-                        <div class="grade-icon">📘</div>
+                        <img src="assets/grade_6.png" class="grade-card-img" alt="6. Sınıf">
                         <h2 class="grade-name">6. Sınıf</h2>
                         <div class="grade-subj">Sosyal Bilgiler</div>
                     </button>
                     <button class="grade-card grade-7" data-grade="7">
-                        <div class="grade-icon">📙</div>
+                        <img src="assets/grade_7.png" class="grade-card-img" alt="7. Sınıf">
                         <h2 class="grade-name">7. Sınıf</h2>
                         <div class="grade-subj">Sosyal Bilgiler</div>
                     </button>
                     <button class="grade-card grade-8" data-grade="8">
-                        <div class="grade-icon">📕</div>
+                        <img src="assets/grade_8.png" class="grade-card-img" alt="8. Sınıf">
                         <h2 class="grade-name">8. Sınıf</h2>
                         <div class="grade-subj">İnkılap Tarihi</div>
                     </button>
@@ -105,6 +112,7 @@
                     </div>
                 </div>
 
+                <img id="q-img" class="question-img hidden" alt="Soru Görseli">
                 <div id="q-text" class="question-text">Soru metni burada yer alacak...</div>
 
                 <div class="options-list" id="options-container">
@@ -124,6 +132,7 @@
                     <h2 id="feedback-title" class="feedback-title">Tebrikler!</h2>
                     <p id="feedback-msg" class="feedback-msg">Doğru cevap verdiniz.</p>
                     <div id="feedback-explanation" class="feedback-explanation">Açıklama: ...</div>
+                    <button id="btn-share" class="action-btn share-btn">✨ Skorunu Kopyala ve Paylaş</button>
                     <button id="btn-next" class="action-btn next-btn">Devam Et (Çarkı Çevir)</button>
                 </div>
             </div>
@@ -153,6 +162,17 @@
 
         </section>
     </main>
+
+    <!-- Badge Popup Container -->
+    <div id="badge-popup-container" class="badge-popup-container hidden">
+        <div class="badge-popup-card">
+            <div id="badge-emoji" class="badge-emoji">🏆</div>
+            <h3 class="badge-popup-title">🏆 ROZET KAZANDIN! 🏆</h3>
+            <div id="badge-name" class="badge-name">Tarih Dehası</div>
+            <div id="badge-desc" class="badge-desc">8. Sınıfta 100 puanlık soruyu doğru bildin!</div>
+            <button id="btn-close-badge" class="action-btn close-badge-btn">Harika! 🚀</button>
+        </div>
+    </div>
 
     <!-- Audio Elements -->
     <audio id="snd-spin" src="sounds/spin.wav"></audio>

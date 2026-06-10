@@ -1,25 +1,27 @@
 :root {
-    /* Energy Theme Defaults */
-    --bg: #1a0a00;
-    --bg-sec: #2b1200;
-    --bg-card: #1f1008;
-    --fg: #fff8ee;
-    --fg-dim: #c8a97a;
-    --accent: #e8a020;
-    --accent-hover: #ffbe45;
-    --success: #39d068;
-    --error: #ff3b3b;
-    --warning: #ff8800;
-    --border: #4a2800;
-    --btn-bg: #cc2200;
+    /* Energy Theme Defaults (Redesigned as Dark Antique Wood & Dark Parchment Theme) */
+    --bg: #1e120b;
+    --bg-sec: #1c0e07; /* Darker charred wood */
+    --bg-card: rgba(28, 17, 10, 0.82); /* Semi-transparent dark academic card */
+    --fg: #f5ebd7; /* Cream/light parchment text */
+    --fg-dim: #c5b59b; /* Muted gold-beige text */
+    --accent: #d4af37; /* Antique gold */
+    --accent-hover: #ebd076;
+    --success: #4caf50;
+    --error: #f44336;
+    --warning: #ff9800;
+    --border: #5a3c25; /* Dark bronze/wood border */
+    --btn-bg: #8b2313; /* Deep crimson/burgundy button */
     --btn-fg: #ffffff;
-    --btn-hover: #ff3a1a;
-    --opt-bg: #251205;
-    --opt-fg: #fff8ee;
-    --opt-hover: #3a1e08;
-    --opt-sel: #4a2200;
-    --opt-border: #e8a020;
-    --score-bg: #130800;
+    --btn-hover: #b8432b;
+    --opt-bg: rgba(45, 28, 18, 0.85); /* Dark options */
+    --opt-fg: #f5ebd7;
+    --opt-hover: rgba(70, 44, 28, 0.9);
+    --opt-sel: rgba(90, 58, 38, 0.95);
+    --opt-border: #d4af37;
+    --score-bg: rgba(45, 28, 18, 0.85);
+    --exp-bg: #150904; /* Charcoal dark brown background */
+    --exp-fg: #f5ebd7;
 
     font-family: "Segoe UI", system-ui, sans-serif;
     color: var(--fg);
@@ -135,31 +137,70 @@ body {
 
 .wheel-container {
     position: relative;
-    width: 360px;
-    height: 360px;
+    width: 410px; /* Enlarge wheel on desktop */
+    height: 410px;
     margin-bottom: 1.5rem;
 }
 
+.wheel-stand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 108%;
+    height: 108%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+body[data-theme="energy"] .wheel-stand {
+    opacity: 1;
+}
+
 canvas {
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+body[data-theme="energy"] canvas {
+    box-shadow: none;
+}
+
 .wheel-pointer {
     position: absolute;
-    top: -15px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 30px solid var(--error);
+    width: 32px;
+    height: 44px;
+    background: linear-gradient(to bottom, #d62246, #8b1528);
+    border: 2px solid #5a121d;
+    border-radius: 6px 6px 16px 16px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
     z-index: 10;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.wheel-pointer::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #ffcbd5 0%, #d62246 80%, #8b1528 100%);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin-top: -6px;
+}
+
 
 .wheel-center-text {
     position: absolute;
@@ -479,3 +520,256 @@ canvas {
 
     .timer-ring { width: 56px; height: 56px; }
 }
+
+/* ==========================================================================
+   VISUAL REDESIGN: Premium Wood & Parchment Theme Styles
+   ========================================================================== */
+
+/* Background Textures */
+body[data-theme="energy"] {
+    background-image: url('assets/dark_parchment_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body[data-theme="energy"] .top-bar {
+    background-image: url('assets/header_wood.png');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #5a381c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+body[data-theme="energy"] .logo {
+    color: #fff8ee;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+}
+
+/* Wood Header Buttons */
+body[data-theme="energy"] .nav-btn {
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff8ee;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0,0,0,0.25);
+    font-weight: 600;
+}
+body[data-theme="energy"] .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+body[data-theme="energy"] .icon-btn {
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff8ee;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(0,0,0,0.25);
+}
+body[data-theme="energy"] .icon-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Left & Right Panels - Neumorphic Transparent Parchment Card */
+body[data-theme="energy"] .left-panel,
+body[data-theme="energy"] .right-panel {
+    background: rgba(28, 17, 10, 0.82);
+    border: 2px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+
+/* Score Card */
+body[data-theme="energy"] .score-card {
+    background: rgba(45, 28, 18, 0.85);
+    border: 1px solid var(--border);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Grade Cards Visual Upgrades */
+body[data-theme="energy"] .grade-card {
+    background: linear-gradient(135deg, rgba(45, 28, 18, 0.9), rgba(28, 17, 10, 0.9));
+    border: 2px solid #5a3c25;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+body[data-theme="energy"] .grade-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
+    border-color: #d4af37;
+}
+
+body[data-theme="energy"] .grade-card.grade-5 { border-color: #2e7d32; }
+body[data-theme="energy"] .grade-card.grade-5:hover { border-color: #4caf50; box-shadow: 0 8px 25px rgba(76, 175, 80, 0.25); }
+body[data-theme="energy"] .grade-card.grade-6 { border-color: #1565c0; }
+body[data-theme="energy"] .grade-card.grade-6:hover { border-color: #2196f3; box-shadow: 0 8px 25px rgba(33, 150, 243, 0.25); }
+body[data-theme="energy"] .grade-card.grade-7 { border-color: #ef6c00; }
+body[data-theme="energy"] .grade-card.grade-7:hover { border-color: #ff9800; box-shadow: 0 8px 25px rgba(255, 152, 0, 0.25); }
+body[data-theme="energy"] .grade-card.grade-8 { border-color: #c62828; }
+body[data-theme="energy"] .grade-card.grade-8:hover { border-color: #f44336; box-shadow: 0 8px 25px rgba(244, 67, 54, 0.25); }
+
+/* Make 3D Grade Card Images look nice */
+.grade-card-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+    transition: transform 0.3s ease;
+}
+.grade-card:hover .grade-card-img {
+    transform: scale(1.08) rotate(2deg);
+}
+
+body[data-theme="energy"] .grade-name {
+    color: #f5ebd7;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+body[data-theme="energy"] .grade-subj {
+    color: #c5b59b;
+}
+
+/* Feedback explanation styles */
+body[data-theme="energy"] .feedback-explanation {
+    background: #150904;
+    color: #f5ebd7;
+    border: 1px solid var(--border);
+}
+
+/* New elements styles */
+.hidden {
+    display: none !important;
+}
+
+.question-img {
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.streak-quest-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.streak-badge, .quest-badge {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: var(--bg-sec);
+    border: 1px solid var(--border);
+    text-align: center;
+    width: 100%;
+}
+
+body[data-theme="energy"] .streak-badge {
+    color: #d4af37;
+    background: rgba(45, 28, 18, 0.85);
+}
+
+body[data-theme="energy"] .quest-badge {
+    color: #f5ebd7;
+    background: rgba(45, 28, 18, 0.85);
+}
+
+.share-btn {
+    background: #aa382c;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+}
+
+.share-btn:hover:not(:disabled) {
+    background: #c62828;
+}
+
+.badge-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-popup-container.hidden {
+    display: none;
+}
+
+.badge-popup-card {
+    background: #3d2314;
+    border: 3px solid #aa382c;
+    border-radius: 12px;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    animation: badgePopUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes badgePopUp {
+    from { opacity: 0; transform: scale(0.7); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.badge-emoji {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge-popup-title {
+    color: #ffe5a3;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.badge-name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.badge-desc {
+    color: #e2d4ba;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.close-badge-btn {
+    background: #aa382c;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    width: auto;
+}
+
+.close-badge-btn:hover {
+    background: #c62828;
+}
+

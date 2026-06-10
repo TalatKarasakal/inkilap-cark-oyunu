@@ -39,12 +39,16 @@ let state = {
     selectedOpt: null,
     timer: 45,
     timerInterval: null,
-    wheelAngle: 0
+    wheelAngle: 0,
+    userStreak: 0,
+    lastLoginDate: "",
+    todaySolvedCount: 0,
+    lastSpinWasIflas: false
 };
 
 // Colors based on theme
 const wheelColors = {
-    energy: ["#e8a020", "#cc2200", "#f5d040", "#aa1800", "#ffbe45", "#8b0000", "#ffd060", "#b83000", "#e89000", "#c01500"],
+    energy: ["#8b2313", "#5a3c25", "#d4af37", "#1c0e07", "#b8432b", "#70482b", "#ebd076", "#2d1c12", "#8b2313", "#5a3c25"],
     dark: ["#6c8cff", "#ff6b7a", "#4cdf8b", "#ffb347", "#c77dff", "#ff8fab", "#64dfdf", "#ffd166", "#a5b4fc", "#f472b6"],
     light: ["#4f6ef7", "#ef4444", "#22c55e", "#f59e0b", "#a855f7", "#ec4899", "#06b6d4", "#eab308", "#818cf8", "#f472b6"]
 };
@@ -102,6 +106,8 @@ window.addEventListener('resize', () => {
 
 // Initialize
 function init() {
+    loadUserData();
+    checkDailyStreak();
     handleResize();
     setupEventListeners();
     updateStatsUI();
@@ -150,6 +156,29 @@ function setupEventListeners() {
     document.getElementById('btn-submit').addEventListener('click', submitAnswer);
     document.getElementById('btn-skip').addEventListener('click', skipQuestion);
     document.getElementById('btn-next').addEventListener('click', () => showView('idle'));
+
+    // Close badge popup
+    document.getElementById('btn-close-badge').addEventListener('click', () => {
+        document.getElementById('badge-popup-container').classList.add('hidden');
+        if (badgeTimeout) clearTimeout(badgeTimeout);
+    });
+
+    // Share score
+    document.getElementById('btn-share').addEventListener('click', () => {
+        const template = `🎮 LGS Çark Oyunu'nda tarih yazdım! 🚀\n\n🔥 Günlük Seri: ${state.userStreak} Gün\n🏆 Toplam Puan: ${state.score} Puan\n✅ Doğru Cevap: ${state.correct}\n❌ Yanlış Cevap: ${state.wrong}\n\nHadi sen de gel, çarkı çevir ve bilgini kanıtla! 🏛️✨`;
+        navigator.clipboard.writeText(template).then(() => {
+            const btn = document.getElementById('btn-share');
+            const oldText = btn.textContent;
+            btn.textContent = "✓ Kopyalandı! Arkadaşlarına Gönder! 🚀";
+            btn.style.backgroundColor = "#2e7d32";
+            setTimeout(() => {
+                btn.textContent = oldText;
+                btn.style.backgroundColor = "";
+            }, 2000);
+        }).catch(err => {
+            console.error("Panoya kopyalama başarısız:", err);
+        });
+    });
 }
 
 function startGame(grade) {
@@ -188,6 +217,30 @@ function drawWheel(angleOffset = state.wheelAngle) {
     ctx.clearRect(0, 0, w, h);
     ctx.save();
     ctx.translate(cx, cy);
+
+    const outerRim = cx - 4;
+    const slicesR = themeName === 'energy' ? cx - 22 : cx - 10;
+
+    if (themeName === 'energy') {
+        // Outer rim
+        ctx.beginPath();
+        ctx.arc(0, 0, outerRim, 0, Math.PI * 2);
+        ctx.fillStyle = "#3d2314";
+        ctx.fill();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "#5a381c";
+        ctx.stroke();
+
+        // Inner rim
+        ctx.beginPath();
+        ctx.arc(0, 0, slicesR + 2, 0, Math.PI * 2);
+        ctx.fillStyle = "#8c5623";
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "#3d2314";
+        ctx.stroke();
+    }
+
     ctx.rotate(angleOffset);
 
     let colorIdx = 0;
@@ -198,11 +251,11 @@ function drawWheel(angleOffset = state.wheelAngle) {
 
         ctx.beginPath();
         ctx.moveTo(0, 0);
-        ctx.arc(0, 0, r, i * SLICE_ANGLE, (i + 1) * SLICE_ANGLE);
+        ctx.arc(0, 0, slicesR, i * SLICE_ANGLE, (i + 1) * SLICE_ANGLE);
         ctx.fillStyle = color;
         ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--bg').trim();
+        ctx.lineWidth = themeName === 'energy' ? 1 : 2;
+        ctx.strokeStyle = themeName === 'energy' ? '#3d2314' : getComputedStyle(document.body).getPropertyValue('--bg').trim();
         ctx.stroke();
 
         ctx.save();
@@ -214,7 +267,7 @@ function drawWheel(angleOffset = state.wheelAngle) {
         const baseFontSize = Math.max(10, Math.round(w / 25));
         const specialFontSize = Math.max(8, Math.round(w / 30));
         ctx.font = isSpecial ? `bold ${specialFontSize}px 'Segoe UI'` : `bold ${baseFontSize}px 'Segoe UI'`;
-        ctx.translate(r * 0.7, 0);
+        ctx.translate(slicesR * 0.7, 0);
 
         if (isSpecial) {
             let t = val === 'İFLAS' ? 'İFLAS' : val === 'PAS' ? 'PAS' : 'X2';
@@ -268,6 +321,7 @@ function onSpinComplete(targetSlice) {
     let val = WHEEL_SLICES[targetSlice];
 
     if (val === "İFLAS") {
+        state.lastSpinWasIflas = true;
         state.score = 0;
         updateStatsUI();
         playSound('fail');
@@ -275,6 +329,7 @@ function onSpinComplete(targetSlice) {
         return;
     }
     if (val === "PAS") {
+        state.lastSpinWasIflas = false;
         showFeedbackUI("PAS!", "Bu turu geçtiniz. Puan değişmedi.", "var(--fg-dim)", false, null);
         return;
     }
@@ -296,6 +351,19 @@ function loadQuestion() {
     }
     state.currentQ = state.remainingQuestions.pop();
     state.selectedOpt = null;
+
+    const qImg = document.getElementById('q-img');
+    if (state.currentQ.gorsel) {
+        let src = state.currentQ.gorsel;
+        if (src.startsWith('web/')) {
+            src = src.substring(4);
+        }
+        qImg.src = src;
+        qImg.classList.remove('hidden');
+    } else {
+        qImg.src = "";
+        qImg.classList.add('hidden');
+    }
 
     document.getElementById('q-unite').textContent = state.currentQ.unite;
     document.getElementById('q-konu').textContent = state.currentQ.konu;
@@ -369,6 +437,7 @@ function handleTimeout() {
     state.score -= 5;
     state.solved++;
     state.x2Mode = false;
+    state.lastSpinWasIflas = false;
     updateStatsUI();
     showFeedbackUI("Süre Doldu!", `Doğru Cevap: ${state.currentQ.dogru_cevap}`, "var(--error)", false, state.currentQ.aciklama);
 }
@@ -384,6 +453,29 @@ function submitAnswer() {
         if (state.x2Mode) state.score *= 2;
         else state.score += state.currentPoints + 10;
         playSound('win');
+
+        // Award badges
+        let badgesEarned = [];
+        if (state.grade === "8" && state.currentPoints === 100) {
+            badgesEarned.push({
+                name: "Tarih Dehası",
+                desc: "8. Sınıfta 100 puanlık soruyu doğru bildin! Tarihin gerçek lideri sensin! 👑",
+                emoji: "🏆"
+            });
+        }
+        if (state.lastSpinWasIflas) {
+            badgesEarned.push({
+                name: "Yıkılmadım",
+                desc: "İflas ettikten sonra ilk soruyu doğru bildin! Küllerinden doğdun! 🔥",
+                emoji: "💪"
+            });
+        }
+
+        badgesEarned.forEach((badge, idx) => {
+            setTimeout(() => {
+                showBadgePopup(badge.name, badge.desc, badge.emoji);
+            }, idx * 4200);
+        });
     } else {
         state.wrong++;
         state.score -= 5;
@@ -393,7 +485,9 @@ function submitAnswer() {
     recordUnit(state.currentQ.unite, isCorrect);
 
     state.x2Mode = false;
+    state.lastSpinWasIflas = false;
     updateStatsUI();
+    onQuestionSolved();
 
     let title = isCorrect ? "Tebrikler!" : "Yanlış Cevap!";
     let msg = isCorrect ? "Doğru cevap verdiniz." : `Doğru cevap: ${state.currentQ.dogru_cevap}) ${state.currentQ.siklar[state.currentQ.dogru_cevap]}`;
@@ -491,6 +585,118 @@ function renderStats() {
             </div>
         `;
         container.appendChild(row);
+    }
+}
+
+// Streak & Quest helper functions
+function loadUserData() {
+    const raw = localStorage.getItem('lgs_cark_userdata');
+    if (raw) {
+        try {
+            const data = JSON.parse(raw);
+            state.userStreak = data.userStreak || 0;
+            state.lastLoginDate = data.lastLoginDate || "";
+            state.todaySolvedCount = data.todaySolvedCount || 0;
+            const todayStr = getTodayString();
+            if (data.todaySolvedDate !== todayStr) {
+                state.todaySolvedCount = 0;
+            }
+        } catch (e) {
+            console.error("Kullanıcı verileri yüklenirken hata:", e);
+        }
+    }
+}
+
+function saveUserData() {
+    try {
+        const data = {
+            userStreak: state.userStreak,
+            lastLoginDate: state.lastLoginDate,
+            todaySolvedCount: state.todaySolvedCount,
+            todaySolvedDate: getTodayString()
+        };
+        localStorage.setItem('lgs_cark_userdata', JSON.stringify(data));
+    } catch (e) {
+        console.error("Kullanıcı verileri kaydedilirken hata:", e);
+    }
+}
+
+function getTodayString() {
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function getYesterdayString() {
+    const d = new Date();
+    d.setDate(d.getDate() - 1);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function checkDailyStreak() {
+    const todayStr = getTodayString();
+    const yesterdayStr = getYesterdayString();
+    
+    if (!state.lastLoginDate) {
+        state.userStreak = 1;
+        state.lastLoginDate = todayStr;
+    } else if (state.lastLoginDate === todayStr) {
+        // Do nothing
+    } else if (state.lastLoginDate === yesterdayStr) {
+        state.userStreak += 1;
+        state.lastLoginDate = todayStr;
+    } else {
+        state.userStreak = 1;
+        state.lastLoginDate = todayStr;
+    }
+    saveUserData();
+    updateStreakAndQuestUI();
+}
+
+function onQuestionSolved() {
+    state.todaySolvedCount += 1;
+    updateStreakAndQuestUI();
+    saveUserData();
+}
+
+function updateStreakAndQuestUI() {
+    const streakEl = document.getElementById('user-streak');
+    const questEl = document.getElementById('user-quest');
+    if (streakEl) {
+        streakEl.textContent = `🔥 Günlük Seri: ${state.userStreak} Gün`;
+    }
+    if (questEl) {
+        if (state.todaySolvedCount >= 5) {
+            questEl.textContent = "🎯 Görev: Bugünün görevi tamamlandı! Harikasın! 🚀";
+        } else {
+            questEl.textContent = `🎯 Görev: Bugün 5 soru çöz! (${state.todaySolvedCount}/5)`;
+        }
+    }
+}
+
+// Badge Popup helper functions
+let badgeTimeout = null;
+function showBadgePopup(name, desc, emoji) {
+    const container = document.getElementById('badge-popup-container');
+    const emEl = document.getElementById('badge-emoji');
+    const nameEl = document.getElementById('badge-name');
+    const descEl = document.getElementById('badge-desc');
+    
+    if (container && emEl && nameEl && descEl) {
+        emEl.textContent = emoji;
+        nameEl.textContent = name;
+        descEl.textContent = desc;
+        container.classList.remove('hidden');
+        
+        if (badgeTimeout) clearTimeout(badgeTimeout);
+        badgeTimeout = setTimeout(() => {
+            container.classList.add('hidden');
+        }, 4000);
     }
 }
 

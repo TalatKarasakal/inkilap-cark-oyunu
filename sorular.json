@@ -9041,6 +9041,7 @@
             "konu": "Atatürk'ün Çocukluk ve Öğrenim Hayatı",
             "yil": 2024,
             "zorluk": "Orta",
+            "gorsel": "web/assets/grade_8.png",
             "soru": "Mustafa Kemal;\nI. Şemsi Efendi İlkokulu\nII. Selanik Askeri Rüştiyesi\nIII. Manastır Askeri İdadisi\nIV. Harp Okulu\n\nBu eğitim süreci Mustafa Kemal hakkında hangisini gösterir?",
             "siklar": {
                 "A": "Sadece askeri eğitim aldığını",
