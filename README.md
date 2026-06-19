@@ -1,5 +1,7 @@
 # inkilap-cark-oyunu 🏛️
 
+Bu proje Talat Karasakal ve Mehmet Ata Erçetin tarafından ortak geliştirilmiştir. / Co-developed by Talat Karasakal and Mehmet Ata Erçetin.
+
 ## 🇹🇷 Türkçe Bölüm
 
 ### Proje Hakkında
@@ -20,10 +22,9 @@
 *   **JSON:** Soru bankasının ve kullanıcı istatistiklerinin esnek bir şekilde saklanması için tercih edildi.
 *   **Ctypes:** Yüksek çözünürlüklü (DPI-aware) ekran desteği sağlamak için kullanıldı.
 
-### Geliştirme Süreci 🤖🤝🏻👨‍💻
-Bu proje, modern yazılım geliştirme metodolojileri çerçevesinde, bir **Yapay Zeka Ajanı** desteğiyle "insan-makine iş birliği" (Human-AI Collaboration) prensibiyle geliştirilmiştir. Mimari kararlar, kod optimizasyonu ve karmaşık matematiksel hesaplamalar (fizik tabanlı çark animasyonları gibi) yapay zeka desteğiyle titizlikle yapılandırılmış; kullanıcı deneyimi ve pedagojik uygunluk ise insan denetimiyle finalize edilmiştir. Bu hibrit yaklaşım, projenin hem teknik olarak sağlam hem de kullanıcı dostu bir yapıya sahip olmasını sağlamıştır.
-
 ### Kurulum ve Çalıştırma Talimatları 🖥️
+Proje iki istemci içerir: `cark_oyunu.py` dosyasıyla çalışan Python/pygame masaüstü istemcisi ve `web/` klasöründeki web istemcisi. Her iki istemci de ortak soru bankası olarak `sorular.json` dosyasını kullanır.
+
 1.  **Depoyu Klonlayın:**
     ```bash
     git clone https://github.com/TalatKarasakal/inkilap-cark-oyunu.git
@@ -61,10 +62,9 @@ Bu proje, modern yazılım geliştirme metodolojileri çerçevesinde, bir **Yapa
 *   **JSON:** Preferred for flexible storage of question banks and statistics.
 *   **Ctypes:** Utilized to provide high-resolution (DPI-aware) display support.
 
-### Development Process 🤖🤝🏻👨‍💻
-This project was developed under the principle of **Human-AI Collaboration**, utilizing an **AI Agent** within the framework of modern software development methodologies. Architectural decisions, code optimizations, and complex calculations (such as physics-based wheel animations) were meticulously structured with AI assistance, while the user experience and pedagogical suitability were finalized through human oversight. This hybrid approach ensures the project is both technically robust and user-centric.
-
 ### Installation and Running Instructions 🖥️
+The project includes two clients: the Python/pygame desktop client run from `cark_oyunu.py` and the web client in the `web/` directory. Both clients use `sorular.json` as the shared question bank.
+
 1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/TalatKarasakal/inkilap-cark-oyunu.git
