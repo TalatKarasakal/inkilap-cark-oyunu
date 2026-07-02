@@ -12,92 +12,113 @@
 <body data-theme="energy">
     <!-- Navbar -->
     <nav class="top-bar">
-        <div class="logo">🏛 LGS Sosyal Bilgiler – Çark Oyunu</div>
+        <div class="logo">🏛 LGS Çark Oyunu</div>
+        <!-- HUD Bar inside navbar for score, streak, correct/wrong stats -->
+        <div class="hud-bar" id="hud-bar">
+            <!-- Bireysel HUD -->
+            <div id="hud-individual" style="display: flex; gap: 0.8rem; align-items: center;">
+                <span class="hud-item" title="Toplam Puan">🏆 <span id="hud-score">0</span></span>
+                <span class="hud-item" title="Günlük Seri">🔥 <span id="hud-streak">0 Gün</span></span>
+                <span class="hud-item success" title="Doğru">✓ <span id="hud-correct">0</span></span>
+                <span class="hud-item error" title="Yanlış">✗ <span id="hud-wrong">0</span></span>
+                <span class="hud-item neutral" title="Çözülen Soru">📝 <span id="hud-solved">0</span></span>
+                <span class="hud-item quest" id="hud-quest" title="Günlük Görev">🎯 Görev: 0/5</span>
+            </div>
+            <!-- Takım HUD -->
+            <div id="hud-team" style="display: none; gap: 0.8rem; align-items: center;">
+                <span class="hud-item team-turn-indicator" id="hud-team-turn" style="background: var(--accent); color: #000; font-weight: bold; border-radius: 4px; padding: 2px 8px; box-shadow: 0 0 10px rgba(255, 213, 79, 0.5);">📢 Sıra: A Grubu</span>
+                <span class="hud-item" style="border-left: 2px solid rgba(255,255,255,0.15); padding-left: 10px;">🏆 A Grubu: <span id="hud-team-a-score" style="font-weight: bold; color: #00e5ff;">0</span></span>
+                <span class="hud-item">🏆 B Grubu: <span id="hud-team-b-score" style="font-weight: bold; color: #ff1744;">0</span></span>
+                <span class="hud-item success">✓ Doğru: <span id="hud-team-correct">0</span></span>
+                <span class="hud-item error">✗ Yanlış: <span id="hud-team-wrong">0</span></span>
+            </div>
+        </div>
         <div class="nav-controls">
             <button id="btn-stats" class="nav-btn" aria-label="İstatistikler"><span class="nav-icon">📊</span><span class="nav-text"> İstatistik</span></button>
             <button id="btn-reset" class="nav-btn" aria-label="Sıfırla"><span class="nav-icon">↻</span><span class="nav-text"> Sıfırla</span></button>
             <button id="btn-menu" class="nav-btn" aria-label="Sınıf Seçimi"><span class="nav-icon">🏠</span><span class="nav-text"> Sınıf Seçimi</span></button>
-            <button id="btn-theme" class="icon-btn" aria-label="Tema Değiştir">🎨</button>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main class="main-container">
 
-        <!-- Left Column: Wheel & Stats -->
-        <section class="left-panel">
-            <div class="wheel-container">
-                <img src="assets/wheel_stand.png" class="wheel-stand" alt="Wheel Stand">
-                <canvas id="wheelCanvas" width="500" height="500"></canvas>
-                <div class="wheel-pointer"></div>
-                <div class="wheel-center-text">LGS</div>
+        <!-- VIEW 1: Grade Selection -->
+        <div id="view-grade" class="view active">
+            <h1 class="view-title">Sınıfını Seç</h1>
+            <p class="view-desc">Soruları çözmek istediğin sınıf seviyesini seçerek oyuna başla.</p>
+            <div class="grade-grid">
+                <button class="grade-card grade-5" data-grade="5">
+                    <img src="assets/grade_5.png" class="grade-card-img" alt="5. Sınıf">
+                    <h2 class="grade-name">5. Sınıf</h2>
+                    <div class="grade-subj">Sosyal Bilgiler</div>
+                </button>
+                <button class="grade-card grade-6" data-grade="6">
+                    <img src="assets/grade_6.png" class="grade-card-img" alt="6. Sınıf">
+                    <h2 class="grade-name">6. Sınıf</h2>
+                    <div class="grade-subj">Sosyal Bilgiler</div>
+                </button>
+                <button class="grade-card grade-7" data-grade="7">
+                    <img src="assets/grade_7.png" class="grade-card-img" alt="7. Sınıf">
+                    <h2 class="grade-name">7. Sınıf</h2>
+                    <div class="grade-subj">Sosyal Bilgiler</div>
+                </button>
+                <button class="grade-card grade-8" data-grade="8">
+                    <img src="assets/grade_8.png" class="grade-card-img" alt="8. Sınıf">
+                    <h2 class="grade-name">8. Sınıf</h2>
+                    <div class="grade-subj">İnkılap Tarihi</div>
+                </button>
             </div>
+        </div>
 
-            <button id="btn-spin" class="action-btn spin-btn" disabled>
-                <span class="btn-icon">🎯</span> Çarkı Çevir
-            </button>
-
-            <div class="score-card">
-                <div class="score-title">TOPLAM PUAN</div>
-                <div id="total-score" class="score-val">0</div>
+        <!-- VIEW 2: Unit Selection (New) -->
+        <div id="view-unit" class="view hidden">
+            <h1 class="view-title">Ünite Seçimi</h1>
+            <p class="view-desc">Sınıf: <strong id="unit-grade-label">-</strong> | Çalışmak istediğin üniteyi seçerek oyuna başla.</p>
+            <div class="unit-grid" id="unit-list-container">
+                <!-- Unit options injected here -->
             </div>
+            <button id="btn-unit-back" class="action-btn outline" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Sınıf Seçimine Dön</button>
+        </div>
 
-            <div class="mini-stats">
-                <span class="stat-badge success">✓ <span id="stat-correct">0</span></span>
-                <span class="stat-badge error">✗ <span id="stat-wrong">0</span></span>
-                <span class="stat-badge neutral">📝 <span id="stat-solved">0</span></span>
+        <!-- VIEW 2.5: Game Mode Selection (Bireysel vs Takım) -->
+        <div id="view-mode" class="view hidden">
+            <h1 class="view-title">Oyun Modunu Seçiniz</h1>
+            <p class="view-desc">Oyunu tek kişi mi, yoksa sınıfta iki grup halinde mi oynamak istersiniz?</p>
+            <div class="grade-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); max-width: 650px; margin: 3rem auto 0 auto;">
+                <button id="btn-mode-single" class="grade-card" style="border-color: #ffd54f;">
+                    <span class="grade-emoji" style="font-size: 3.5rem;">👤</span>
+                    <span class="grade-name" style="margin-top: 1rem;">Bireysel Mod</span>
+                    <span class="grade-subj" style="margin-top: 0.5rem; text-align: center;">Tek oyunculu klasik LGS hazırlık modu</span>
+                </button>
+                <button id="btn-mode-team" class="grade-card" style="border-color: #00e5ff;">
+                    <span class="grade-emoji" style="font-size: 3.5rem;">👥</span>
+                    <span class="grade-name" style="margin-top: 1rem;">Grup Modu (Sınıf)</span>
+                    <span class="grade-subj" style="margin-top: 0.5rem; text-align: center;">Sınıfı 2 takıma (A vs B) bölerek yarışma modu</span>
+                </button>
             </div>
+            <button id="btn-mode-back" class="action-btn outline" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Ünite Seçimine Dön</button>
+        </div>
 
-            <!-- Streak & Quest UI -->
-            <div class="streak-quest-container">
-                <div id="user-streak" class="streak-badge">🔥 Günlük Seri: 0 Gün</div>
-                <div id="user-quest" class="quest-badge">🎯 Görev: Bugün 5 soru çöz! (0/5)</div>
-            </div>
-        </section>
-
-        <!-- Right Column: Game Views (Menu, Question, Result) -->
-        <section class="right-panel scrollable">
-
-            <!-- VIEW: Grade Selection -->
-            <div id="view-grade" class="view active">
-                <h1 class="view-title">Sınıfını Seç</h1>
-                <p class="view-desc">Soruları çözmek istediğin sınıf seviyesini seçerek oyuna başla.</p>
-                <div class="grade-grid">
-                    <button class="grade-card grade-5" data-grade="5">
-                        <img src="assets/grade_5.png" class="grade-card-img" alt="5. Sınıf">
-                        <h2 class="grade-name">5. Sınıf</h2>
-                        <div class="grade-subj">Sosyal Bilgiler</div>
-                    </button>
-                    <button class="grade-card grade-6" data-grade="6">
-                        <img src="assets/grade_6.png" class="grade-card-img" alt="6. Sınıf">
-                        <h2 class="grade-name">6. Sınıf</h2>
-                        <div class="grade-subj">Sosyal Bilgiler</div>
-                    </button>
-                    <button class="grade-card grade-7" data-grade="7">
-                        <img src="assets/grade_7.png" class="grade-card-img" alt="7. Sınıf">
-                        <h2 class="grade-name">7. Sınıf</h2>
-                        <div class="grade-subj">Sosyal Bilgiler</div>
-                    </button>
-                    <button class="grade-card grade-8" data-grade="8">
-                        <img src="assets/grade_8.png" class="grade-card-img" alt="8. Sınıf">
-                        <h2 class="grade-name">8. Sınıf</h2>
-                        <div class="grade-subj">İnkılap Tarihi</div>
-                    </button>
+        <!-- VIEW 3: Wheel Stage (Centered & Focused) -->
+        <div id="view-wheel" class="view hidden">
+            <div class="wheel-stage-container">
+                <h2 class="stage-instructions">Çarkı çevirerek sıradaki sorunun puan değerini belirleyin!</h2>
+                <div class="wheel-container">
+                    <img src="assets/wheel_stand.png" class="wheel-stand" alt="Wheel Stand">
+                    <canvas id="wheelCanvas" width="500" height="500"></canvas>
+                    <div class="wheel-pointer"></div>
+                    <div class="wheel-center-text">LGS</div>
                 </div>
+                <button id="btn-spin" class="action-btn spin-btn" disabled>
+                    <span class="btn-icon">🎯</span> Çarkı Çevir
+                </button>
             </div>
+        </div>
 
-            <!-- VIEW: Idle (After Selecting Grade) -->
-            <div id="view-idle" class="view hidden">
-                <div class="center-content">
-                    <div class="giant-icon">🎡</div>
-                    <h2 class="idle-text">Çarkı çevirerek sıradaki soruyu belirle!</h2>
-                    <p class="view-desc">Sınıf: <strong id="current-grade-label">-</strong> | Çarkı çevir butonuna bas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- VIEW: Question -->
-            <div id="view-question" class="view hidden">
+        <!-- VIEW 4: Question View (Full-Width Focused) -->
+        <div id="view-question" class="view hidden">
+            <div class="question-container-card">
                 <div class="question-header">
                     <div class="q-meta">
                         <span id="q-unite" class="badge">Ünite</span>
@@ -112,8 +133,10 @@
                     </div>
                 </div>
 
-                <img id="q-img" class="question-img hidden" alt="Soru Görseli">
-                <div id="q-text" class="question-text">Soru metni burada yer alacak...</div>
+                <div class="question-content-box">
+                    <img id="q-img" class="question-img hidden" alt="Soru Görseli">
+                    <div id="q-text" class="question-text">Soru metni burada yer alacak...</div>
+                </div>
 
                 <div class="options-list" id="options-container">
                     <!-- Options injected here -->
@@ -124,44 +147,71 @@
                     <button id="btn-skip" class="action-btn outline">Soruyu Geç</button>
                 </div>
             </div>
+        </div>
 
-            <!-- VIEW: Feedback/Result -->
-            <div id="view-feedback" class="view hidden">
-                <div id="feedback-content" class="feedback-card">
-                    <div id="feedback-icon" class="giant-icon">✓</div>
-                    <h2 id="feedback-title" class="feedback-title">Tebrikler!</h2>
-                    <p id="feedback-msg" class="feedback-msg">Doğru cevap verdiniz.</p>
-                    <div id="feedback-explanation" class="feedback-explanation">Açıklama: ...</div>
+        <!-- VIEW 5: Feedback/Result View -->
+        <div id="view-feedback" class="view hidden">
+            <div id="feedback-content" class="feedback-card">
+                <div id="feedback-icon" class="giant-icon">✓</div>
+                <h2 id="feedback-title" class="feedback-title">Tebrikler!</h2>
+                <p id="feedback-msg" class="feedback-msg">Doğru cevap verdiniz.</p>
+                <div id="feedback-explanation" class="feedback-explanation">Açıklama: ...</div>
+                <div class="feedback-actions">
                     <button id="btn-share" class="action-btn share-btn">✨ Skorunu Kopyala ve Paylaş</button>
                     <button id="btn-next" class="action-btn next-btn">Devam Et (Çarkı Çevir)</button>
                 </div>
             </div>
+        </div>
 
-            <!-- VIEW: Stats -->
-            <div id="view-stats" class="view hidden">
-                <h1 class="view-title">📊 İstatistikler</h1>
-                <div class="stats-summary">
-                    <div class="stat-box">
-                        <h3>Toplam Puan</h3>
-                        <div id="st-score">0</div>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Doğru</h3>
-                        <div id="st-correct">0</div>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Yanlış</h3>
-                        <div id="st-wrong">0</div>
-                    </div>
+        <!-- VIEW 6: Stats View -->
+        <div id="view-stats" class="view hidden">
+            <h1 class="view-title">📊 İstatistikler</h1>
+            <div class="stats-summary">
+                <div class="stat-box">
+                    <h3>Toplam Puan</h3>
+                    <div id="st-score">0</div>
                 </div>
-                <!-- Unit stats list here -->
-                <div id="unit-stats-container" class="unit-stats">
+                <div class="stat-box">
+                    <h3>Doğru</h3>
+                    <div id="st-correct">0</div>
                 </div>
-                <button id="btn-close-stats" class="action-btn outline" style="margin-top: 2rem;">Kapat</button>
+                <div class="stat-box">
+                    <h3>Yanlış</h3>
+                    <div id="st-wrong">0</div>
+                </div>
+            </div>
+            <!-- Unit stats list here -->
+            <div id="unit-stats-container" class="unit-stats">
             </div>
 
-        </section>
+            <!-- AI Guidance Box -->
+            <div id="ai-guidance-box" class="ai-guidance-box" style="display: none;">
+                <h3>🧠 Rehber Öğretmen Tavsiyeleri</h3>
+                <div id="ai-guidance-content" class="ai-guidance-content"></div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 2rem; width: 100%;">
+                <button id="btn-print-report" class="action-btn share-btn" style="margin-bottom: 0;">📄 Karne Al (PDF)</button>
+                <button id="btn-close-stats" class="action-btn outline" style="margin-top: 0;">Kapat</button>
+            </div>
+        </div>
+
     </main>
+
+    <!-- 3D Special Event Overlay (İflas, Pas, X2) -->
+    <div id="special-3d-modal" class="special-3d-modal-overlay hidden">
+        <div class="special-3d-scene">
+            <div id="special-3d-card" class="special-3d-card">
+                <div class="special-3d-card-face special-3d-card-front">
+                    <div id="special-3d-icon" class="special-3d-icon">⚡</div>
+                    <h2 id="special-3d-title" class="special-3d-title">X2 AKTİF!</h2>
+                    <p id="special-3d-message" class="special-3d-message">Sıradaki sorunun puanı 2 katına çıktı!</p>
+                    <button id="btn-special-3d-close" class="action-btn spin-btn" style="width: auto; padding: 10px 30px; margin-top: 1.5rem;">Devam Et ▶</button>
+                </div>
+            </div>
+        </div>
+        <div id="special-3d-particles" class="special-3d-particles-container"></div>
+    </div>
 
     <!-- Badge Popup Container -->
     <div id="badge-popup-container" class="badge-popup-container hidden">
@@ -180,6 +230,68 @@
     <audio id="snd-win" src="sounds/win.wav"></audio>
     <audio id="snd-wrong" src="sounds/wrong.wav"></audio>
     <audio id="snd-fail" src="sounds/fail.wav"></audio>
+
+    <!-- Print-Only Report Card (Karne) -->
+    <div id="print-report-card" class="print-only-report">
+        <div class="print-header">
+            <div class="print-logo">🏛 LGS ÇARK OYUNU</div>
+            <h1>🏆 LGS BAŞARI KARNESİ 🏆</h1>
+            <div class="print-date" id="print-date">Tarih: --.--.----</div>
+        </div>
+        <div class="print-student-info">
+            <p><strong>Sınıf Seviyesi:</strong> <span id="print-grade">-</span></p>
+            <p><strong>Çalışılan Ünite:</strong> <span id="print-unit">Tüm Üniteler</span></p>
+        </div>
+        <div class="print-stats-summary">
+            <div class="print-stat-item">
+                <span class="label">Toplam Puan</span>
+                <span class="value" id="print-score">0</span>
+            </div>
+            <div class="print-stat-item">
+                <span class="label">Çözülen Soru</span>
+                <span class="value" id="print-solved">0</span>
+            </div>
+            <div class="print-stat-item">
+                <span class="label">Doğru Cevap</span>
+                <span class="value success" id="print-correct">0</span>
+            </div>
+            <div class="print-stat-item">
+                <span class="label">Yanlış Cevap</span>
+                <span class="value error" id="print-wrong">0</span>
+            </div>
+        </div>
+        <div class="print-section">
+            <h2>📊 Ünite Bazlı Başarı Durumu</h2>
+            <table class="print-table">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Ünite Adı</th>
+                        <th style="width: 80px; text-align: center;">Doğru</th>
+                        <th style="width: 80px; text-align: center;">Yanlış</th>
+                        <th style="width: 100px; text-align: center;">Başarı Oranı</th>
+                    </tr>
+                </thead>
+                <tbody id="print-table-body">
+                    <!-- Dynamic rows -->
+                </tbody>
+            </table>
+        </div>
+        <div class="print-section">
+            <h2>🧠 Rehber Öğretmen Yapay Zeka Tavsiyeleri</h2>
+            <div class="print-guidance-content" id="print-guidance-content">
+                -
+            </div>
+        </div>
+        <div class="print-section" id="print-badges-section">
+            <h2>🏆 Kazanılan Rozetler</h2>
+            <div class="print-badges-list" id="print-badges-list">
+                <!-- Dynamic badges -->
+            </div>
+        </div>
+        <div class="print-footer">
+            <p>LGS Çark Oyunu – Başarıya Giden Eğlenceli Yol!</p>
+        </div>
+    </div>
 
     <script src="data.js"></script>
     <script src="app.js"></script>
