@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LGS Sosyal Bilgiler Çark Oyunu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,26 +13,6 @@
     <!-- Navbar -->
     <nav class="top-bar">
         <div class="logo">🏛 LGS Çark Oyunu</div>
-        <!-- HUD Bar inside navbar for score, streak, correct/wrong stats -->
-        <div class="hud-bar" id="hud-bar">
-            <!-- Bireysel HUD -->
-            <div id="hud-individual" style="display: flex; gap: 0.8rem; align-items: center;">
-                <span class="hud-item" title="Toplam Puan">🏆 <span id="hud-score">0</span></span>
-                <span class="hud-item" title="Günlük Seri">🔥 <span id="hud-streak">0 Gün</span></span>
-                <span class="hud-item success" title="Doğru">✓ <span id="hud-correct">0</span></span>
-                <span class="hud-item error" title="Yanlış">✗ <span id="hud-wrong">0</span></span>
-                <span class="hud-item neutral" title="Çözülen Soru">📝 <span id="hud-solved">0</span></span>
-                <span class="hud-item quest" id="hud-quest" title="Günlük Görev">🎯 Görev: 0/5</span>
-            </div>
-            <!-- Takım HUD -->
-            <div id="hud-team" style="display: none; gap: 0.8rem; align-items: center;">
-                <span class="hud-item team-turn-indicator" id="hud-team-turn" style="background: var(--accent); color: #000; font-weight: bold; border-radius: 4px; padding: 2px 8px; box-shadow: 0 0 10px rgba(255, 213, 79, 0.5);">📢 Sıra: A Grubu</span>
-                <span class="hud-item" style="border-left: 2px solid rgba(255,255,255,0.15); padding-left: 10px;">🏆 A Grubu: <span id="hud-team-a-score" style="font-weight: bold; color: #00e5ff;">0</span></span>
-                <span class="hud-item">🏆 B Grubu: <span id="hud-team-b-score" style="font-weight: bold; color: #ff1744;">0</span></span>
-                <span class="hud-item success">✓ Doğru: <span id="hud-team-correct">0</span></span>
-                <span class="hud-item error">✗ Yanlış: <span id="hud-team-wrong">0</span></span>
-            </div>
-        </div>
         <div class="nav-controls">
             <button id="btn-stats" class="nav-btn" aria-label="İstatistikler"><span class="nav-icon">📊</span><span class="nav-text"> İstatistik</span></button>
             <button id="btn-reset" class="nav-btn" aria-label="Sıfırla"><span class="nav-icon">↻</span><span class="nav-text"> Sıfırla</span></button>
@@ -42,6 +22,86 @@
 
     <!-- Main Content Area -->
     <main class="main-container">
+        <!-- HUD Bar (Dashboard) -->
+        <div class="hud-bar" id="hud-bar" style="display: none;">
+            <!-- Bireysel HUD -->
+            <div id="hud-individual" style="display: flex; gap: 0.8rem; align-items: center;">
+                <div class="hud-card" title="Toplam Puan">
+                    <span class="hud-icon">🏆</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Skor</span>
+                        <span class="hud-value" id="hud-score">0</span>
+                    </div>
+                </div>
+                <div class="hud-card" title="Günlük Seri">
+                    <span class="hud-icon">🔥</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Seri</span>
+                        <span class="hud-value" id="hud-streak">0 Gün</span>
+                    </div>
+                </div>
+                <div class="hud-card success" title="Doğru">
+                    <span class="hud-icon">✓</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Doğru</span>
+                        <span class="hud-value" id="hud-correct">0</span>
+                    </div>
+                </div>
+                <div class="hud-card error" title="Yanlış">
+                    <span class="hud-icon">✗</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Yanlış</span>
+                        <span class="hud-value" id="hud-wrong">0</span>
+                    </div>
+                </div>
+                <div class="hud-card neutral" title="Çözülen Soru">
+                    <span class="hud-icon">📝</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Soru</span>
+                        <span class="hud-value" id="hud-solved">0</span>
+                    </div>
+                </div>
+                <div class="hud-card quest" title="Günlük Görev">
+                    <span class="hud-icon">🎯</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Görev</span>
+                        <span class="hud-value" id="hud-quest">0/5</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Takım HUD -->
+            <div id="hud-team" style="display: none; gap: 0.8rem; align-items: center;">
+                <span class="hud-item team-turn-indicator" id="hud-team-turn">📢 Sıra: A Grubu</span>
+                <div class="hud-card" title="A Grubu Toplam Puanı">
+                    <span class="hud-icon">🏆</span>
+                    <div class="hud-info">
+                        <span class="hud-label">A Grubu</span>
+                        <span class="hud-value" id="hud-team-a-score">0</span>
+                    </div>
+                </div>
+                <div class="hud-card" title="B Grubu Toplam Puanı">
+                    <span class="hud-icon">🏆</span>
+                    <div class="hud-info">
+                        <span class="hud-label">B Grubu</span>
+                        <span class="hud-value" id="hud-team-b-score">0</span>
+                    </div>
+                </div>
+                <div class="hud-card success" title="Doğru">
+                    <span class="hud-icon">✓</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Doğru</span>
+                        <span class="hud-value" id="hud-team-correct">0</span>
+                    </div>
+                </div>
+                <div class="hud-card error" title="Yanlış">
+                    <span class="hud-icon">✗</span>
+                    <div class="hud-info">
+                        <span class="hud-label">Yanlış</span>
+                        <span class="hud-value" id="hud-team-wrong">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- VIEW 1: Grade Selection -->
         <div id="view-grade" class="view active">
@@ -78,7 +138,7 @@
             <div class="unit-grid" id="unit-list-container">
                 <!-- Unit options injected here -->
             </div>
-            <button id="btn-unit-back" class="action-btn outline" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Sınıf Seçimine Dön</button>
+            <button id="btn-unit-back" class="action-btn" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Sınıf Seçimine Dön</button>
         </div>
 
         <!-- VIEW 2.5: Game Mode Selection (Bireysel vs Takım) -->
@@ -97,7 +157,7 @@
                     <span class="grade-subj" style="margin-top: 0.5rem; text-align: center;">Sınıfı 2 takıma (A vs B) bölerek yarışma modu</span>
                 </button>
             </div>
-            <button id="btn-mode-back" class="action-btn outline" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Ünite Seçimine Dön</button>
+            <button id="btn-mode-back" class="action-btn" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Ünite Seçimine Dön</button>
         </div>
 
         <!-- VIEW 3: Wheel Stage (Centered & Focused) -->

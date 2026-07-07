@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LGS Cark Oyunu</string>
+    <string name="title_activity_main">LGS Cark Oyunu</string>
+    <string name="package_name">com.talatkarasakal.lgs_cark</string>
+    <string name="custom_url_scheme">com.talatkarasakal.lgs_cark</string>
+</resources>

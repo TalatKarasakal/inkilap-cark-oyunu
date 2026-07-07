@@ -64,13 +64,24 @@ let state = {
     teamWrong: 0
 };
 
-// Colors based on theme
+// Colors based on theme (Energy theme utilizes vibrant premium neon colors)
 const wheelColors = {
-    energy: ["#3b82f6", "#1d1e3a", "#8b5cf6", "#0b0c16", "#2563eb", "#2a2b54", "#6366f1", "#121324", "#3b82f6", "#1d1e3a"],
+    energy: [
+        "#8b5cf6", // Vibrant Purple
+        "#00d2ff", // Neon Blue
+        "#ffb703", // Warm Yellow
+        "#ff006e", // Bright Pink-Red
+        "#8b5cf6",
+        "#00d2ff",
+        "#ffb703",
+        "#ff006e",
+        "#8b5cf6",
+        "#00d2ff"
+    ],
     dark: ["#6c8cff", "#ff6b7a", "#4cdf8b", "#ffb347", "#c77dff", "#ff8fab", "#64dfdf", "#ffd166", "#a5b4fc", "#f472b6"],
     light: ["#4f6ef7", "#ef4444", "#22c55e", "#f59e0b", "#a855f7", "#ec4899", "#06b6d4", "#eab308", "#818cf8", "#f472b6"]
 };
-const specialColors = { "İFLAS": "#ff1744", "PAS": "#1f2041", "X2": "#ffd54f" };
+const specialColors = { "İFLAS": "#ff0055", "PAS": "#1e293b", "X2": "#ffcc00" };
 
 
 // Sounds
@@ -104,12 +115,12 @@ function showView(viewName) {
         views[viewName].classList.add('active');
     }
 
-    // Toggle HUD visibility
+    // Toggle HUD visibility (using display block/none to avoid vertical layout shift)
     if (hudBar) {
         if (viewName === 'grade' || viewName === 'unit' || !state.grade) {
-            hudBar.style.visibility = 'hidden';
+            hudBar.style.display = 'none';
         } else {
-            hudBar.style.visibility = 'visible';
+            hudBar.style.display = 'flex';
         }
     }
 
@@ -154,6 +165,7 @@ function init() {
     handleResize();
     setupEventListeners();
     updateStatsUI();
+    updateGradeCardsInfo();
 }
 
 function setupEventListeners() {
@@ -181,10 +193,10 @@ function setupEventListeners() {
     });
 
     // Grade Selection
-    document.querySelectorAll('.grade-card').forEach(btn => {
+    document.querySelectorAll('.grade-card[data-grade]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             let g = e.currentTarget.getAttribute('data-grade');
-            startGame(g);
+            if (g) startGame(g);
         });
     });
 
@@ -200,6 +212,55 @@ function setupEventListeners() {
 
     // Spin
     btnSpin.addEventListener('click', spinWheel);
+
+    // Touch/Drag to Spin Support
+    let isDragging = false;
+    let dragStartAngle = 0;
+    let dragStartWheelAngle = 0;
+    let hasDragged = false;
+
+    function getTouchAngle(e) {
+        const rect = wheelCanvas.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return Math.atan2(clientY - centerY, clientX - centerX);
+    }
+
+    function handleDragStart(e) {
+        if (btnSpin.disabled) return;
+        isDragging = true;
+        hasDragged = false;
+        dragStartAngle = getTouchAngle(e);
+        dragStartWheelAngle = state.wheelAngle;
+    }
+
+    function handleDragMove(e) {
+        if (!isDragging) return;
+        hasDragged = true;
+        const currentAngle = getTouchAngle(e);
+        const delta = currentAngle - dragStartAngle;
+        state.wheelAngle = dragStartWheelAngle + delta;
+        drawWheel();
+        e.preventDefault(); // Stop mobile viewport scrolling while dragging the wheel
+    }
+
+    function handleDragEnd(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        if (hasDragged && !btnSpin.disabled) {
+            spinWheel();
+        }
+    }
+
+    wheelCanvas.addEventListener('mousedown', handleDragStart);
+    window.addEventListener('mousemove', handleDragMove);
+    window.addEventListener('mouseup', handleDragEnd);
+
+    wheelCanvas.addEventListener('touchstart', handleDragStart, { passive: false });
+    window.addEventListener('touchmove', handleDragMove, { passive: false });
+    window.addEventListener('touchend', handleDragEnd);
 
     // Question actions
     document.getElementById('btn-submit').addEventListener('click', submitAnswer);
@@ -247,10 +308,14 @@ function startGame(grade) {
     const container = document.getElementById('unit-list-container');
     container.innerHTML = '';
 
-    // Add "All Units" card
+    // Add "All Units" card (Prestigious Gold Card)
     const allBtn = document.createElement('button');
     allBtn.className = 'unit-card mix-card';
-    allBtn.innerHTML = `<span>📚 Tüm Ünitelerden Karışık</span> <span class="unit-qcount">${SORULAR[grade].length} Soru</span>`;
+    allBtn.innerHTML = `
+        <span class="unit-icon-badge mix-badge">🏆</span> 
+        <span class="unit-title-text">Tüm Ünitelerden Karışık</span> 
+        <span class="unit-qcount">${SORULAR[grade].length} Soru</span>
+    `;
     allBtn.onclick = () => selectUnit('ALL');
     container.appendChild(allBtn);
 
@@ -259,12 +324,61 @@ function startGame(grade) {
         const uCount = SORULAR[grade].filter(q => q.unite === u).length;
         const btn = document.createElement('button');
         btn.className = 'unit-card';
-        btn.innerHTML = `<span>📖 ${u}</span> <span class="unit-qcount">${uCount} Soru</span>`;
+        const icon = getUnitIcon(u, grade);
+        btn.innerHTML = `
+            <span class="unit-icon-badge">${icon}</span> 
+            <span class="unit-title-text">${u}</span> 
+            <span class="unit-qcount">${uCount} Soru</span>
+        `;
         btn.onclick = () => selectUnit(u);
         container.appendChild(btn);
     });
 
     showView('unit');
+}
+
+function getUnitIcon(unitName, grade) {
+    const nameLower = unitName.toLowerCase();
+    if (nameLower.includes("kahraman") || nameLower.includes("doğuyor")) return "🎯";
+    if (nameLower.includes("millî uyanış") || nameLower.includes("milli uyanış")) return "💡";
+    if (nameLower.includes("destan") || nameLower.includes("ya istiklal")) return "⚔️";
+    if (nameLower.includes("atatürkçülük") || nameLower.includes("çağdaşlaşan")) return "🏛️";
+    if (nameLower.includes("demokratikleşme")) return "🗳️";
+    if (nameLower.includes("dış politika")) return "🌐";
+    if (nameLower.includes("atatürk'ün ölümü") || nameLower.includes("ölüm") || nameLower.includes("hüzün")) return "🕊️";
+    
+    // 5-6-7. Sınıf Üniteleri için
+    if (nameLower.includes("birlikte yaşamak") || nameLower.includes("birey")) return "👤";
+    if (nameLower.includes("kültür") || nameLower.includes("miras")) return "📜";
+    if (nameLower.includes("yeryüzünde yaşam") || nameLower.includes("yaşam")) return "🌍";
+    if (nameLower.includes("teknoloji") || nameLower.includes("bilim")) return "🔭";
+    if (nameLower.includes("üretim") || nameLower.includes("tüketim") || nameLower.includes("ekonomi")) return "🌾";
+    if (nameLower.includes("yönetim") || nameLower.includes("etkin vatandaşlık") || nameLower.includes("egemenlik")) return "⚖️";
+    if (nameLower.includes("küresel") || nameLower.includes("ülkeler")) return "🌐";
+    
+    return "📖";
+}
+
+function updateGradeCardsInfo() {
+    for (let grade of ['5', '6', '7', '8']) {
+        if (SORULAR[grade]) {
+            const totalQuestions = SORULAR[grade].length;
+            const uniqueUnits = [...new Set(SORULAR[grade].map(q => q.unite))].length;
+            const card = document.querySelector(`.grade-card.grade-${grade}`);
+            if (card) {
+                let infoDiv = card.querySelector('.grade-info-meta');
+                if (!infoDiv) {
+                    infoDiv = document.createElement('div');
+                    infoDiv.className = 'grade-info-meta';
+                    card.appendChild(infoDiv);
+                }
+                infoDiv.innerHTML = `
+                    <span class="meta-item">📁 ${uniqueUnits} Ünite</span>
+                    <span class="meta-item">📝 ${totalQuestions} Soru</span>
+                `;
+            }
+        }
+    }
 }
 
 function selectUnit(unit) {
@@ -385,14 +499,14 @@ function drawWheel(angleOffset = state.wheelAngle) {
         ctx.textAlign = "center";
         ctx.fillStyle = "#ffffff";
 
-        // Scale font based on wheel size
-        const baseFontSize = Math.max(10, Math.round(w / 25));
-        const specialFontSize = Math.max(8, Math.round(w / 30));
-        ctx.font = isSpecial ? `bold ${specialFontSize}px 'Outfit'` : `bold ${baseFontSize}px 'Outfit'`;
+        // Scale font based on wheel size (larger fonts for better readability)
+        const baseFontSize = Math.max(12, Math.round(w / 18));
+        const specialFontSize = Math.max(10, Math.round(w / 22));
+        ctx.font = isSpecial ? `bold ${specialFontSize}px 'Poppins'` : `bold ${baseFontSize}px 'Poppins'`;
         ctx.translate(slicesR * 0.7, 0);
 
         if (isSpecial) {
-            let t = val === 'İFLAS' ? 'İFLAS' : val === 'PAS' ? 'PAS' : 'X2';
+            let t = val === 'İFLAS' ? '💀 İFLAS' : val === 'PAS' ? '⏸ PAS' : '⚡ X2';
             ctx.fillText(t, 0, 6);
         } else {
             ctx.fillText(val, 0, 6);
@@ -400,25 +514,25 @@ function drawWheel(angleOffset = state.wheelAngle) {
         ctx.restore();
     }
     
-    // Central cap (holographic blue orb)
+    // Central cap (holographic blue/purple orb)
     ctx.beginPath();
     ctx.arc(0, 0, slicesR * 0.22, 0, Math.PI * 2);
     let centerGrad = ctx.createRadialGradient(0, 0, 2, 0, 0, slicesR * 0.22);
     centerGrad.addColorStop(0, "#ffffff");
     centerGrad.addColorStop(0.3, "#00e5ff");
-    centerGrad.addColorStop(1, "#121324");
+    centerGrad.addColorStop(1, "#7c3aed");
     ctx.fillStyle = centerGrad;
     ctx.fill();
     ctx.lineWidth = 3;
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.4)";
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.5)";
     ctx.stroke();
 
-    // Center icon
+    // Center icon (premium trophy emblem instead of plain house)
     ctx.fillStyle = "#ffffff";
-    ctx.font = `bold ${Math.max(16, Math.round(slicesR * 0.15))}px 'Outfit'`;
+    ctx.font = `bold ${Math.max(18, Math.round(slicesR * 0.15))}px 'Poppins'`;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.fillText("🏛", 0, 0);
+    ctx.fillText("🏆", 0, 2);
 
     ctx.restore();
 }
@@ -1158,9 +1272,9 @@ function updateStreakAndQuestUI() {
     }
     if (questEl) {
         if (state.todaySolvedCount >= 5) {
-            questEl.textContent = "🎯 Görev Tamam! 🚀";
+            questEl.textContent = "Tamam! 🚀";
         } else {
-            questEl.textContent = `🎯 Görev: ${state.todaySolvedCount}/5`;
+            questEl.textContent = `${state.todaySolvedCount}/5`;
         }
     }
 }
