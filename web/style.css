@@ -1150,7 +1150,9 @@ body[data-theme="energy"] .quest-badge {
     margin: 0 auto;
     max-height: 400px;
     overflow-y: auto;
-    padding-right: 0.5rem;
+    /* Kartlar hover'da yukarı kalkıp gölge veriyor; üst/yan iç boşluk
+       olmadan en üstteki kart kaydırma alanının kenarında kırpılıyordu. */
+    padding: 0.6rem 0.6rem 0.6rem 0.4rem;
 }
 
 .unit-card {
