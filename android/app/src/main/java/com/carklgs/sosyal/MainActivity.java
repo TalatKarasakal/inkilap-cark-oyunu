@@ -1,4 +1,4 @@
-package com.talatkarasakal.lgs_cark;
+package com.carklgs.sosyal;
 
 import com.getcapacitor.BridgeActivity;
 

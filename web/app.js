@@ -542,6 +542,7 @@ function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
 function spinWheel() {
     btnSpin.disabled = true;
     playSound('spin');
+    triggerHaptic('heavy');
 
     const duration = 4000;
     const targetSlice = Math.floor(Math.random() * SLICE_COUNT);
@@ -836,6 +837,8 @@ function submitAnswer() {
             if (state.x2Mode) state.score *= 2;
             else state.score += state.currentPoints + 10;
             playSound('win');
+            triggerHaptic('success');
+            triggerConfetti();
 
             // Award badges
             let badgesEarned = [];
@@ -867,6 +870,7 @@ function submitAnswer() {
             state.wrong++;
             state.score -= 5;
             playSound('wrong');
+            triggerHaptic('error');
         }
     }
 
@@ -954,6 +958,7 @@ function updateStatsUI() {
         if (hudCorrect) hudCorrect.textContent = state.correct;
         if (hudWrong) hudWrong.textContent = state.wrong;
         if (hudSolved) hudSolved.textContent = state.solved;
+        updateRankUI();
     }
 }
 
@@ -1300,5 +1305,94 @@ function showBadgePopup(name, desc, emoji) {
     }
 }
 
+// Haptic & Vibration Feedback Helper
+function triggerHaptic(type = 'light') {
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+        try {
+            if (type === 'light') navigator.vibrate(15);
+            else if (type === 'medium') navigator.vibrate(35);
+            else if (type === 'heavy') navigator.vibrate([50, 30, 50]);
+            else if (type === 'error') navigator.vibrate([100, 50, 100]);
+            else if (type === 'success') navigator.vibrate([30, 40, 80]);
+        } catch (e) { }
+    }
+}
+
+// Confetti Animation Helper
+function triggerConfetti() {
+    const canvas = document.getElementById('confettiCanvas');
+    if (!canvas) return;
+    const ctxConf = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    const colors = ['#ffd54f', '#00e5ff', '#ff0055', '#00e676', '#a855f7', '#ffffff'];
+
+    for (let i = 0; i < 75; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height * 0.4,
+            r: Math.random() * 6 + 4,
+            d: Math.random() * 25 + 10,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            tilt: Math.floor(Math.random() * 10) - 10,
+            tiltAngleIncremental: Math.random() * 0.07 + 0.05,
+            tiltAngle: 0
+        });
+    }
+
+    let animationFrame;
+    let opacity = 1;
+    let startTime = Date.now();
+
+    function draw() {
+        ctxConf.clearRect(0, 0, canvas.width, canvas.height);
+        const elapsed = Date.now() - startTime;
+        if (elapsed > 2200) {
+            opacity -= 0.05;
+        }
+
+        if (opacity <= 0) {
+            ctxConf.clearRect(0, 0, canvas.width, canvas.height);
+            cancelAnimationFrame(animationFrame);
+            return;
+        }
+
+        ctxConf.globalAlpha = opacity;
+        particles.forEach((p) => {
+            p.tiltAngle += p.tiltAngleIncremental;
+            p.y += (Math.cos(p.d) + 3 + p.r / 2) / 2;
+            p.x += Math.sin(p.d);
+            p.tilt = Math.sin(p.tiltAngle) * 15;
+
+            ctxConf.beginPath();
+            ctxConf.lineWidth = p.r;
+            ctxConf.strokeStyle = p.color;
+            ctxConf.moveTo(p.x + p.tilt + p.r / 2, p.y);
+            ctxConf.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
+            ctxConf.stroke();
+        });
+
+        animationFrame = requestAnimationFrame(draw);
+    }
+    draw();
+}
+
+// Rank / Level Helper
+function updateRankUI() {
+    const rankEl = document.getElementById('hud-rank');
+    if (!rankEl) return;
+    const s = state.solved || 0;
+    let rank = "Çaylak";
+    if (s >= 120) rank = "👑 Profesör";
+    else if (s >= 70) rank = "⚔️ Şampiyon";
+    else if (s >= 35) rank = "🏛️ Usta";
+    else if (s >= 15) rank = "📜 Çırak";
+    else if (s >= 5) rank = "🔍 Avcı";
+    rankEl.textContent = rank;
+}
+
 // Start
 init();
+

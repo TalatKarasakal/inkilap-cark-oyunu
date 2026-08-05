@@ -1138,6 +1138,17 @@ body[data-theme="energy"] .quest-badge {
 .hud-card.quest .hud-value {
     color: #00e5ff !important;
     text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+.hud-card.rank-card {
+    border-color: rgba(168, 85, 247, 0.3) !important;
+}
+.hud-card.rank-card:hover {
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.25);
+    border-color: #a855f7 !important;
+}
+.hud-card.rank-card .hud-value {
+    color: #c084fc !important;
+    font-size: 0.95rem !important;
+    text-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
 }
 
 /* Unit Grid & Card styling */
