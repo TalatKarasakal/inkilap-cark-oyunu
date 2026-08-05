@@ -3,307 +3,349 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LGS Sosyal Bilgiler Çark Oyunu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ÇarkLGS: Sosyal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-theme="energy">
-    <!-- Navbar -->
-    <nav class="top-bar">
-        <div class="logo">🏛 LGS Çark Oyunu</div>
-        <div class="nav-controls">
-            <a href="privacy.html" class="nav-btn" aria-label="Gizlilik Politikası" style="text-decoration: none;"><span class="nav-icon">🔒</span><span class="nav-text"> Gizlilik</span></a>
-            <button id="btn-stats" class="nav-btn" aria-label="İstatistikler"><span class="nav-icon">📊</span><span class="nav-text"> İstatistik</span></button>
-            <button id="btn-reset" class="nav-btn" aria-label="Sıfırla"><span class="nav-icon">↻</span><span class="nav-text"> Sıfırla</span></button>
-            <button id="btn-menu" class="nav-btn" aria-label="Sınıf Seçimi"><span class="nav-icon">🏠</span><span class="nav-text"> Sınıf Seçimi</span></button>
-        </div>
-    </nav>
+<body>
+    <div class="app">
+        <!-- Dekoratif arka plan lekeleri -->
+        <div class="blob blob-a"></div>
+        <div class="blob blob-b"></div>
 
-    <!-- Main Content Area -->
-    <main class="main-container">
-        <!-- HUD Bar (Dashboard) -->
-        <div class="hud-bar" id="hud-bar" style="display: none;">
-            <!-- Bireysel HUD -->
-            <div id="hud-individual" style="display: flex; gap: 0.8rem; align-items: center;">
-                <div class="hud-card rank-card" title="Rütbe & Seviye">
-                    <span class="hud-icon">⭐</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Rütbe</span>
-                        <span class="hud-value" id="hud-rank">Çaylak</span>
-                    </div>
-                </div>
-                <div class="hud-card" title="Toplam Puan">
-                    <span class="hud-icon">🏆</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Skor</span>
-                        <span class="hud-value" id="hud-score">0</span>
-                    </div>
-                </div>
-                <div class="hud-card" title="Günlük Seri">
-                    <span class="hud-icon">🔥</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Seri</span>
-                        <span class="hud-value" id="hud-streak">0 Gün</span>
-                    </div>
-                </div>
-                <div class="hud-card success" title="Doğru">
-                    <span class="hud-icon">✓</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Doğru</span>
-                        <span class="hud-value" id="hud-correct">0</span>
-                    </div>
-                </div>
-                <div class="hud-card error" title="Yanlış">
-                    <span class="hud-icon">✗</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Yanlış</span>
-                        <span class="hud-value" id="hud-wrong">0</span>
-                    </div>
-                </div>
-                <div class="hud-card neutral" title="Çözülen Soru">
-                    <span class="hud-icon">📝</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Soru</span>
-                        <span class="hud-value" id="hud-solved">0</span>
-                    </div>
-                </div>
-                <div class="hud-card quest" title="Günlük Görev">
-                    <span class="hud-icon">🎯</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Görev</span>
-                        <span class="hud-value" id="hud-quest">0/5</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Takım HUD -->
-            <div id="hud-team" style="display: none; gap: 0.8rem; align-items: center;">
-                <span class="hud-item team-turn-indicator" id="hud-team-turn">📢 Sıra: A Grubu</span>
-                <div class="hud-card" title="A Grubu Toplam Puanı">
-                    <span class="hud-icon">🏆</span>
-                    <div class="hud-info">
-                        <span class="hud-label">A Grubu</span>
-                        <span class="hud-value" id="hud-team-a-score">0</span>
-                    </div>
-                </div>
-                <div class="hud-card" title="B Grubu Toplam Puanı">
-                    <span class="hud-icon">🏆</span>
-                    <div class="hud-info">
-                        <span class="hud-label">B Grubu</span>
-                        <span class="hud-value" id="hud-team-b-score">0</span>
-                    </div>
-                </div>
-                <div class="hud-card success" title="Doğru">
-                    <span class="hud-icon">✓</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Doğru</span>
-                        <span class="hud-value" id="hud-team-correct">0</span>
-                    </div>
-                </div>
-                <div class="hud-card error" title="Yanlış">
-                    <span class="hud-icon">✗</span>
-                    <div class="hud-info">
-                        <span class="hud-label">Yanlış</span>
-                        <span class="hud-value" id="hud-team-wrong">0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="app-inner">
 
-        <!-- VIEW 1: Grade Selection -->
-        <div id="view-grade" class="view active">
-            <h1 class="view-title">Sınıfını Seç</h1>
-            <p class="view-desc">Soruları çözmek istediğin sınıf seviyesini seçerek oyuna başla.</p>
-            <div class="grade-grid">
-                <button class="grade-card grade-5" data-grade="5">
-                    <img src="assets/grade_5.png" class="grade-card-img" alt="5. Sınıf">
-                    <h2 class="grade-name">5. Sınıf</h2>
-                    <div class="grade-subj">Sosyal Bilgiler</div>
-                </button>
-                <button class="grade-card grade-6" data-grade="6">
-                    <img src="assets/grade_6.png" class="grade-card-img" alt="6. Sınıf">
-                    <h2 class="grade-name">6. Sınıf</h2>
-                    <div class="grade-subj">Sosyal Bilgiler</div>
-                </button>
-                <button class="grade-card grade-7" data-grade="7">
-                    <img src="assets/grade_7.png" class="grade-card-img" alt="7. Sınıf">
-                    <h2 class="grade-name">7. Sınıf</h2>
-                    <div class="grade-subj">Sosyal Bilgiler</div>
-                </button>
-                <button class="grade-card grade-8" data-grade="8">
-                    <img src="assets/grade_8.png" class="grade-card-img" alt="8. Sınıf">
-                    <h2 class="grade-name">8. Sınıf</h2>
-                    <div class="grade-subj">İnkılap Tarihi</div>
-                </button>
-            </div>
-        </div>
-
-        <!-- VIEW 2: Unit Selection (New) -->
-        <div id="view-unit" class="view hidden">
-            <h1 class="view-title">Ünite Seçimi</h1>
-            <p class="view-desc">Sınıf: <strong id="unit-grade-label">-</strong> | Çalışmak istediğin üniteyi seçerek oyuna başla.</p>
-            <div class="unit-grid" id="unit-list-container">
-                <!-- Unit options injected here -->
-            </div>
-            <button id="btn-unit-back" class="action-btn" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Sınıf Seçimine Dön</button>
-        </div>
-
-        <!-- VIEW 2.5: Game Mode Selection (Bireysel vs Takım) -->
-        <div id="view-mode" class="view hidden">
-            <h1 class="view-title">Oyun Modunu Seçiniz</h1>
-            <p class="view-desc">Oyunu tek kişi mi, yoksa sınıfta iki grup halinde mi oynamak istersiniz?</p>
-            <div class="grade-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); max-width: 650px; margin: 3rem auto 0 auto;">
-                <button id="btn-mode-single" class="grade-card" style="border-color: #ffd54f;">
-                    <span class="grade-emoji" style="font-size: 3.5rem;">👤</span>
-                    <span class="grade-name" style="margin-top: 1rem;">Bireysel Mod</span>
-                    <span class="grade-subj" style="margin-top: 0.5rem; text-align: center;">Tek oyunculu klasik LGS hazırlık modu</span>
-                </button>
-                <button id="btn-mode-team" class="grade-card" style="border-color: #00e5ff;">
-                    <span class="grade-emoji" style="font-size: 3.5rem;">👥</span>
-                    <span class="grade-name" style="margin-top: 1rem;">Grup Modu (Sınıf)</span>
-                    <span class="grade-subj" style="margin-top: 0.5rem; text-align: center;">Sınıfı 2 takıma (A vs B) bölerek yarışma modu</span>
-                </button>
-            </div>
-            <button id="btn-mode-back" class="action-btn" style="margin-top: 2rem; width: auto; max-width: 250px; margin-left: auto; margin-right: auto;">← Ünite Seçimine Dön</button>
-        </div>
-
-        <!-- VIEW 3: Wheel Stage (Centered & Focused) -->
-        <div id="view-wheel" class="view hidden">
-            <div class="wheel-stage-container">
-                <h2 class="stage-instructions">Çarkı çevirerek sıradaki sorunun puan değerini belirleyin!</h2>
-                <div class="wheel-container">
-                    <img src="assets/wheel_stand.png" class="wheel-stand" alt="Wheel Stand">
-                    <canvas id="wheelCanvas" width="500" height="500"></canvas>
-                    <div class="wheel-pointer"></div>
-                    <div class="wheel-center-text">LGS</div>
+            <!-- ÜST BAŞLIK (ana ekranlarda görünür) -->
+            <header class="app-header" id="app-header">
+                <div class="brand-mark">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5ead8" stroke-width="2.75"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="12" r="3.2"></circle>
+                    </svg>
                 </div>
-                <button id="btn-spin" class="action-btn spin-btn" disabled>
-                    <span class="btn-icon">🎯</span> Çarkı Çevir
-                </button>
-            </div>
-        </div>
+                <div class="brand-text">
+                    <div class="brand-title">Çark Oyunu</div>
+                    <div class="brand-sub">LGS Sosyal Bilgiler</div>
+                </div>
+                <div class="streak-pill" id="streak-pill" title="En uzun doğru serisi">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3c1.5 3.5 5 4.5 5 8.5A5 5 0 0 1 7 11.5C7 8 9.5 7 12 3Z"></path>
+                    </svg>
+                    <span id="streak-label">0 seri</span>
+                </div>
+            </header>
 
-        <!-- VIEW 4: Question View (Full-Width Focused) -->
-        <div id="view-question" class="view hidden">
-            <div class="question-container-card">
-                <div class="question-header">
-                    <div class="q-meta">
-                        <span id="q-unite" class="badge">Ünite</span>
-                        <span id="q-konu" class="badge outline">Konu</span>
-                    </div>
-                    <div class="timer-container">
-                        <svg class="timer-ring" viewBox="0 0 100 100" width="70" height="70">
-                            <circle class="timer-track" cx="50" cy="50" r="42" />
-                            <circle id="timer-progress" class="timer-progress" cx="50" cy="50" r="42" />
-                            <text id="timer-text" x="50" y="55" text-anchor="middle" class="timer-number"></text>
+            <!-- EKRAN 1: SINIF SEÇİMİ -->
+            <section id="view-grade" class="screen screen-scroll">
+                <h1 class="screen-title">Sınıfını seç</h1>
+                <p class="screen-lead">Çarkı çevir, puanı kap, soruyu çöz. Kaldığın yerden devam edebilirsin.</p>
+
+                <div class="grade-grid" id="grade-grid">
+                    <!-- Sınıf kartları app.js tarafından basılır -->
+                </div>
+
+                <div class="quest-card">
+                    <div class="quest-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0fae1" stroke-width="2.75"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19V5"></path>
+                            <path d="M4 6h9l-1.5 3L13 12H4"></path>
                         </svg>
                     </div>
+                    <div class="quest-text">
+                        <div class="quest-title">Günlük görev</div>
+                        <div class="quest-sub"><span id="quest-label">0/5</span> soru doğru çöz, seriyi koru</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EKRAN 2: ÜNİTE SEÇİMİ -->
+            <section id="view-unit" class="screen screen-scroll hidden">
+                <button class="back-link" id="btn-unit-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>Sınıf seçimi
+                </button>
+                <h1 class="screen-title sm">Ünite seç</h1>
+                <p class="screen-lead sm"><span id="unit-grade-label">-</span> · <span id="unit-subject-label">-</span></p>
+                <div class="unit-list" id="unit-list-container">
+                    <!-- Üniteler app.js tarafından basılır -->
+                </div>
+            </section>
+
+            <!-- EKRAN 3: OYUN MODU -->
+            <section id="view-mode" class="screen screen-scroll hidden">
+                <button class="back-link" id="btn-mode-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>Ünite seçimi
+                </button>
+                <h1 class="screen-title sm">Nasıl oynayalım?</h1>
+                <p class="screen-lead sm" id="mode-unit-label">-</p>
+                <div class="mode-list">
+                    <button class="mode-card mode-single" id="btn-mode-single">
+                        <div class="mode-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-800)"
+                                stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M5 21c0-3.6 3.1-6 7-6s7 2.4 7 6"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="mode-title">Bireysel</div>
+                            <div class="mode-sub">Kendi hızında çalış, karneni topla</div>
+                        </div>
+                    </button>
+                    <button class="mode-card mode-team" id="btn-mode-team">
+                        <div class="mode-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-2-800)"
+                                stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="8" r="3.5"></circle>
+                                <path d="M3 20c0-3.2 2.7-5.5 6-5.5s6 2.3 6 5.5"></path>
+                                <path d="M16.5 5.5a3.5 3.5 0 0 1 0 6.6"></path>
+                                <path d="M18 20c0-2.6-.9-4.3-2.3-5.2"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="mode-title">Grup · A vs B</div>
+                            <div class="mode-sub">Sınıfı ikiye böl, sıra sırayla dönsün</div>
+                        </div>
+                    </button>
+                </div>
+            </section>
+
+            <!-- EKRAN 4: ÇARK -->
+            <section id="view-wheel" class="screen screen-game hidden">
+                <div class="game-topbar">
+                    <button class="icon-btn" id="btn-quit-game" aria-label="Geri">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--color-text)"
+                            stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6"></path>
+                        </svg>
+                    </button>
+                    <div class="game-topbar-text">
+                        <div class="game-topbar-kicker" id="wheel-grade-label">-</div>
+                        <div class="game-topbar-title" id="wheel-unit-label">-</div>
+                    </div>
+                    <div class="score-pill" id="wheel-score-pill">0 P</div>
                 </div>
 
-                <div class="question-content-box">
-                    <img id="q-img" class="question-img hidden" alt="Soru Görseli">
-                    <div id="q-text" class="question-text">Soru metni burada yer alacak...</div>
+                <div class="team-row hidden" id="team-row">
+                    <div class="team-chip" id="team-chip-a"><span>A grubu</span><span id="team-a-score">0</span></div>
+                    <div class="team-chip" id="team-chip-b"><span>B grubu</span><span id="team-b-score">0</span></div>
                 </div>
 
-                <div class="options-list" id="options-container">
-                    <!-- Options injected here -->
+                <div class="wheel-stage">
+                    <div class="wheel-headline-box">
+                        <div class="wheel-headline" id="wheel-headline">Çarkı çevir</div>
+                        <div class="wheel-sub" id="wheel-sub">Gelen puan, sıradaki sorunun değeri olur</div>
+                    </div>
+
+                    <div class="wheel-wrap" id="wheel-wrap">
+                        <div class="wheel-plate"></div>
+                        <div class="wheel-rotor" id="wheel-rotor">
+                            <svg width="300" height="300" viewBox="0 0 300 300">
+                                <path d="M150,150 L150,20 A130,130 0 0 1 241.92,58.08 Z" fill="#d67f48"></path>
+                                <path d="M150,150 L241.92,58.08 A130,130 0 0 1 280,150 Z" fill="#402310"></path>
+                                <path d="M150,150 L280,150 A130,130 0 0 1 241.92,241.92 Z" fill="#8fa073"></path>
+                                <path d="M150,150 L241.92,241.92 A130,130 0 0 1 150,280 Z" fill="#dcd3c4"></path>
+                                <path d="M150,150 L150,280 A130,130 0 0 1 58.08,241.92 Z" fill="#c67139"></path>
+                                <path d="M150,150 L58.08,241.92 A130,130 0 0 1 20,150 Z" fill="#2e2b25"></path>
+                                <path d="M150,150 L20,150 A130,130 0 0 1 58.08,58.08 Z" fill="#728157"></path>
+                                <path d="M150,150 L58.08,58.08 A130,130 0 0 1 150,20 Z" fill="#f6a06b"></path>
+                                <g font-family="Caprasimo, serif" font-size="21" text-anchor="middle"
+                                    dominant-baseline="middle">
+                                    <text x="185.2" y="65" fill="#fff2eb">200</text>
+                                    <text x="235" y="114.8" fill="#ffc6a5" font-size="24">X2</text>
+                                    <text x="235" y="185.2" fill="#272e1b">300</text>
+                                    <text x="185.2" y="235" fill="#474238" font-size="19">PAS</text>
+                                    <text x="114.8" y="235" fill="#fff2eb">400</text>
+                                    <text x="65" y="185.2" fill="#ffc6a5" font-size="15">İFLAS</text>
+                                    <text x="65" y="114.8" fill="#f0fae1">500</text>
+                                    <text x="114.8" y="65" fill="#402310">100</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="wheel-ring"></div>
+                        <div class="wheel-needle"></div>
+                        <div class="wheel-hub"><span>LGS</span></div>
+                    </div>
+
+                    <button class="primary-btn wheel-btn" id="btn-spin">Çarkı çevir</button>
+                </div>
+            </section>
+
+            <!-- EKRAN 5: SORU -->
+            <section id="view-question" class="screen screen-game hidden">
+                <div class="q-topbar">
+                    <div class="q-chips">
+                        <span class="chip chip-solid" id="q-unite">Ünite</span>
+                        <span class="chip chip-outline" id="q-konu">Konu</span>
+                        <span class="chip chip-dark" id="q-points">0 puan</span>
+                    </div>
+                    <div class="timer" id="timer">
+                        <svg width="58" height="58" viewBox="0 0 58 58">
+                            <circle cx="29" cy="29" r="25" fill="none" stroke="var(--color-neutral-300)"
+                                stroke-width="5"></circle>
+                            <circle id="timer-progress" cx="29" cy="29" r="25" fill="none"
+                                stroke="var(--color-accent-2-500)" stroke-width="5" stroke-linecap="round"
+                                stroke-dasharray="157.1" stroke-dashoffset="0" transform="rotate(-90 29 29)"></circle>
+                        </svg>
+                        <span class="timer-num" id="timer-text">45</span>
+                    </div>
                 </div>
 
-                <div class="question-actions">
-                    <button id="btn-submit" class="action-btn submit-btn" disabled>Cevabı Onayla</button>
-                    <button id="btn-skip" class="action-btn outline">Soruyu Geç</button>
+                <div class="q-card" id="q-card">
+                    <img id="q-img" class="q-img hidden" alt="Soru görseli">
+                    <div id="q-text">Soru metni burada yer alacak…</div>
                 </div>
+
+                <div class="options" id="options-container">
+                    <!-- Şıklar app.js tarafından basılır -->
+                </div>
+
+                <div class="q-actions">
+                    <button class="primary-btn" id="btn-submit" disabled>Cevabı onayla</button>
+                    <button class="ghost-btn" id="btn-skip">Geç</button>
+                </div>
+            </section>
+
+            <!-- EKRAN 6: GERİ BİLDİRİM -->
+            <section id="view-feedback" class="screen screen-feedback hidden">
+                <div class="fb-glyph" id="fb-glyph">✓</div>
+                <h1 class="screen-title" id="fb-title">Doğru!</h1>
+                <p class="screen-lead" id="fb-msg">+100 puan kazandın.</p>
+
+                <div class="fb-explain">
+                    <div class="fb-explain-kicker">Doğru cevap · <span id="fb-correct-key">A</span></div>
+                    <div id="fb-explain-text">-</div>
+                </div>
+
+                <div class="fb-spacer"></div>
+
+                <div class="fb-stats">
+                    <div class="fb-stat fb-stat-correct">
+                        <div class="fb-stat-label">Doğru</div>
+                        <div class="fb-stat-value" id="fb-correct">0</div>
+                    </div>
+                    <div class="fb-stat fb-stat-wrong">
+                        <div class="fb-stat-label">Yanlış</div>
+                        <div class="fb-stat-value" id="fb-wrong">0</div>
+                    </div>
+                    <div class="fb-stat fb-stat-score">
+                        <div class="fb-stat-label">Puan</div>
+                        <div class="fb-stat-value" id="fb-score">0</div>
+                    </div>
+                </div>
+
+                <button class="primary-btn" id="btn-next">Çarka dön</button>
+            </section>
+
+            <!-- EKRAN 7: KARNE -->
+            <section id="view-karne" class="screen screen-scroll hidden">
+                <h1 class="screen-title">Karnen</h1>
+                <p class="screen-lead sm">Bu haftanın özeti</p>
+
+                <div class="karne-tiles">
+                    <div class="karne-tile tile-score">
+                        <div class="karne-tile-label">Puan</div>
+                        <div class="karne-tile-value" id="st-score">0</div>
+                    </div>
+                    <div class="karne-tile tile-correct">
+                        <div class="karne-tile-label">Doğru</div>
+                        <div class="karne-tile-value" id="st-correct">0</div>
+                    </div>
+                    <div class="karne-tile tile-wrong">
+                        <div class="karne-tile-label">Yanlış</div>
+                        <div class="karne-tile-value" id="st-wrong">0</div>
+                    </div>
+                </div>
+
+                <h4 class="karne-heading">Ünite başarısı</h4>
+                <div class="unit-bars" id="unit-stats-container"></div>
+
+                <h4 class="karne-heading">Rozetler</h4>
+                <div class="badge-grid" id="badge-grid"></div>
+
+                <div class="karne-advice" id="ai-guidance-box">
+                    <div class="karne-advice-kicker">Rehber öğretmen tavsiyeleri</div>
+                    <div id="ai-guidance-content"></div>
+                </div>
+
+                <div class="karne-actions">
+                    <button class="primary-btn" id="btn-print-report">Karne al (PDF)</button>
+                    <button class="ghost-btn block" id="btn-share">Skorunu kopyala ve paylaş</button>
+                    <button class="ghost-btn block" id="btn-reset">İstatistikleri sıfırla</button>
+                    <a class="privacy-link" href="privacy.html">Gizlilik politikası</a>
+                </div>
+            </section>
+
+            <!-- ALT SEKMELER -->
+            <nav class="tab-bar" id="tab-bar">
+                <button class="tab" id="tab-play" data-tab="play">
+                    <span class="tab-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path>
+                        </svg>
+                    </span>
+                    <span>Oyna</span>
+                </button>
+                <button class="tab" id="tab-karne" data-tab="karne">
+                    <span class="tab-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 20V10M12 20V4M19 20v-7"></path>
+                        </svg>
+                    </span>
+                    <span>Karne</span>
+                </button>
+            </nav>
+
+        </div>
+
+        <!-- ÖZEL DİLİM KATMANI (X2 / PAS / İFLAS) -->
+        <div class="special-overlay hidden" id="special-overlay">
+            <div class="special-card" id="special-card">
+                <div class="special-dot" id="special-dot"><span id="special-glyph">×2</span></div>
+                <div class="special-title" id="special-title">X2 aktif!</div>
+                <p class="special-msg" id="special-msg">-</p>
+                <button class="special-btn" id="btn-special-close">Devam et</button>
             </div>
         </div>
 
-        <!-- VIEW 5: Feedback/Result View -->
-        <div id="view-feedback" class="view hidden">
-            <div id="feedback-content" class="feedback-card">
-                <div id="feedback-icon" class="giant-icon">✓</div>
-                <h2 id="feedback-title" class="feedback-title">Tebrikler!</h2>
-                <p id="feedback-msg" class="feedback-msg">Doğru cevap verdiniz.</p>
-                <div id="feedback-explanation" class="feedback-explanation">Açıklama: ...</div>
-                <div class="feedback-actions">
-                    <button id="btn-share" class="action-btn share-btn">✨ Skorunu Kopyala ve Paylaş</button>
-                    <button id="btn-next" class="action-btn next-btn">Devam Et (Çarkı Çevir)</button>
-                </div>
+        <!-- ROZET BİLDİRİMİ -->
+        <div class="badge-toast hidden" id="badge-popup-container">
+            <div class="badge-toast-card">
+                <div class="badge-toast-emoji" id="badge-emoji">🏆</div>
+                <div class="badge-toast-kicker">Rozet kazandın</div>
+                <div class="badge-toast-name" id="badge-name">-</div>
+                <div class="badge-toast-desc" id="badge-desc">-</div>
+                <button class="special-btn" id="btn-close-badge">Harika!</button>
             </div>
         </div>
-
-        <!-- VIEW 6: Stats View -->
-        <div id="view-stats" class="view hidden">
-            <h1 class="view-title">📊 İstatistikler</h1>
-            <div class="stats-summary">
-                <div class="stat-box">
-                    <h3>Toplam Puan</h3>
-                    <div id="st-score">0</div>
-                </div>
-                <div class="stat-box">
-                    <h3>Doğru</h3>
-                    <div id="st-correct">0</div>
-                </div>
-                <div class="stat-box">
-                    <h3>Yanlış</h3>
-                    <div id="st-wrong">0</div>
-                </div>
-            </div>
-            <!-- Unit stats list here -->
-            <div id="unit-stats-container" class="unit-stats">
-            </div>
-
-            <!-- AI Guidance Box -->
-            <div id="ai-guidance-box" class="ai-guidance-box" style="display: none;">
-                <h3>🧠 Rehber Öğretmen Tavsiyeleri</h3>
-                <div id="ai-guidance-content" class="ai-guidance-content"></div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; width: 100%;">
-                <button id="btn-print-report" class="action-btn share-btn" style="margin-bottom: 0;">📄 Karne Al (PDF)</button>
-                <button id="btn-close-stats" class="action-btn outline" style="margin-top: 0;">Kapat</button>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- 3D Special Event Overlay (İflas, Pas, X2) -->
-    <div id="special-3d-modal" class="special-3d-modal-overlay hidden">
-        <div class="special-3d-scene">
-            <div id="special-3d-card" class="special-3d-card">
-                <div class="special-3d-card-face special-3d-card-front">
-                    <div id="special-3d-icon" class="special-3d-icon">⚡</div>
-                    <h2 id="special-3d-title" class="special-3d-title">X2 AKTİF!</h2>
-                    <p id="special-3d-message" class="special-3d-message">Sıradaki sorunun puanı 2 katına çıktı!</p>
-                    <button id="btn-special-3d-close" class="action-btn spin-btn" style="width: auto; padding: 10px 30px; margin-top: 1.5rem;">Devam Et ▶</button>
-                </div>
-            </div>
-        </div>
-        <div id="special-3d-particles" class="special-3d-particles-container"></div>
     </div>
 
-    <!-- Badge Popup Container -->
-    <div id="badge-popup-container" class="badge-popup-container hidden">
-        <div class="badge-popup-card">
-            <div id="badge-emoji" class="badge-emoji">🏆</div>
-            <h3 class="badge-popup-title">🏆 ROZET KAZANDIN! 🏆</h3>
-            <div id="badge-name" class="badge-name">Tarih Dehası</div>
-            <div id="badge-desc" class="badge-desc">8. Sınıfta 100 puanlık soruyu doğru bildin!</div>
-            <button id="btn-close-badge" class="action-btn close-badge-btn">Harika! 🚀</button>
-        </div>
-    </div>
-
-    <!-- Audio Elements -->
+    <!-- Ses efektleri -->
     <audio id="snd-spin" src="sounds/spin.wav"></audio>
     <audio id="snd-tick" src="sounds/tick.wav"></audio>
     <audio id="snd-win" src="sounds/win.wav"></audio>
     <audio id="snd-wrong" src="sounds/wrong.wav"></audio>
     <audio id="snd-fail" src="sounds/fail.wav"></audio>
 
-    <!-- Print-Only Report Card (Karne) -->
+    <!-- Yalnızca yazdırma için karne -->
     <div id="print-report-card" class="print-only-report">
         <div class="print-header">
-            <div class="print-logo">🏛 LGS ÇARK OYUNU</div>
-            <h1>🏆 LGS BAŞARI KARNESİ 🏆</h1>
+            <div class="print-logo">ÇARK OYUNU · LGS SOSYAL BİLGİLER</div>
+            <h1>LGS Başarı Karnesi</h1>
             <div class="print-date" id="print-date">Tarih: --.--.----</div>
         </div>
         <div class="print-student-info">
@@ -329,7 +371,7 @@
             </div>
         </div>
         <div class="print-section">
-            <h2>📊 Ünite Bazlı Başarı Durumu</h2>
+            <h2>Ünite Bazlı Başarı Durumu</h2>
             <table class="print-table">
                 <thead>
                     <tr>
@@ -339,29 +381,24 @@
                         <th style="width: 100px; text-align: center;">Başarı Oranı</th>
                     </tr>
                 </thead>
-                <tbody id="print-table-body">
-                    <!-- Dynamic rows -->
-                </tbody>
+                <tbody id="print-table-body"></tbody>
             </table>
         </div>
         <div class="print-section">
-            <h2>🧠 Rehber Öğretmen Yapay Zeka Tavsiyeleri</h2>
-            <div class="print-guidance-content" id="print-guidance-content">
-                -
-            </div>
+            <h2>Rehber Öğretmen Tavsiyeleri</h2>
+            <div class="print-guidance-content" id="print-guidance-content">-</div>
         </div>
         <div class="print-section" id="print-badges-section">
-            <h2>🏆 Kazanılan Rozetler</h2>
-            <div class="print-badges-list" id="print-badges-list">
-                <!-- Dynamic badges -->
-            </div>
+            <h2>Kazanılan Rozetler</h2>
+            <div class="print-badges-list" id="print-badges-list"></div>
         </div>
         <div class="print-footer">
             <p>LGS Çark Oyunu – Başarıya Giden Eğlenceli Yol!</p>
         </div>
     </div>
 
-    <canvas id="confettiCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999;"></canvas>
+    <canvas id="confettiCanvas"></canvas>
+
     <script src="data.js"></script>
     <script src="app.js"></script>
 </body>

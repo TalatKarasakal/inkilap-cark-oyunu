@@ -1,1334 +1,887 @@
-// Elements
-const wheelCanvas = document.getElementById('wheelCanvas');
-const ctx = wheelCanvas.getContext('2d');
-const btnSpin = document.getElementById('btn-spin');
-const btnTheme = document.getElementById('btn-theme');
-const btnMenu = document.getElementById('btn-menu');
-const btnReset = document.getElementById('btn-reset');
-const btnStats = document.getElementById('btn-stats');
+/* ==========================================================================
+   ÇARK OYUNU — LGS Sosyal Bilgiler
+   Tasarım: "Organic" sistemi (Caprasimo + Figtree, toprak/kağıt paleti)
+   ========================================================================== */
 
-const views = {
-    grade: document.getElementById('view-grade'),
-    unit: document.getElementById('view-unit'),
-    mode: document.getElementById('view-mode'),
-    wheel: document.getElementById('view-wheel'),
-    question: document.getElementById('view-question'),
-    feedback: document.getElementById('view-feedback'),
-    stats: document.getElementById('view-stats')
+// ————— Sabitler —————
+
+// Çark dilimleri, saat yönünde tepeden başlayarak (SVG çizimiyle birebir aynı sıra)
+const SEGMENTS = [
+    { kind: 'points', value: 200 },
+    { kind: 'x2' },
+    { kind: 'points', value: 300 },
+    { kind: 'pas' },
+    { kind: 'points', value: 400 },
+    { kind: 'iflas' },
+    { kind: 'points', value: 500 },
+    { kind: 'points', value: 100 }
+];
+const SEG_ANGLE = 360 / SEGMENTS.length;
+const SPIN_MS = 4200;
+const QUESTION_SECONDS = 45;
+const TIMER_CIRC = 157.1; // 2πr, r = 25
+
+const GRADE_META = {
+    '5': { subject: 'Sosyal Bilgiler', tint: 'var(--color-accent-2-300)', ink: 'var(--color-accent-2-900)' },
+    '6': { subject: 'Sosyal Bilgiler', tint: 'var(--color-accent-300)', ink: 'var(--color-accent-900)' },
+    '7': { subject: 'Sosyal Bilgiler', tint: 'var(--color-neutral-300)', ink: 'var(--color-neutral-900)' },
+    '8': { subject: 'İnkılap Tarihi', tint: 'var(--color-accent)', ink: 'var(--color-bg)' }
 };
 
-// HUD Elements
-const hudScore = document.getElementById('hud-score');
-const hudStreak = document.getElementById('hud-streak');
-const hudCorrect = document.getElementById('hud-correct');
-const hudWrong = document.getElementById('hud-wrong');
-const hudSolved = document.getElementById('hud-solved');
-const hudQuest = document.getElementById('hud-quest');
-const hudBar = document.getElementById('hud-bar');
+const BADGES = [
+    { name: 'İlk Adım', hint: 'İlk soruyu çöz', emoji: '👣', need: s => s.solved >= 1 },
+    { name: 'Seri Başı', hint: '3 doğru üst üste', emoji: '🔥', need: s => s.best >= 3 },
+    { name: 'Puan Avcısı', hint: '1000 puan topla', emoji: '🎯', need: s => s.score >= 1000 },
+    { name: 'Tarih Dehası', hint: '500’lük soruyu bil', emoji: '🏆', need: s => s.big }
+];
 
-// Game Rules & State
-const WHEEL_SLICES = [10, 20, "PAS", 30, 40, "X2", 50, 60, 70, 80, "İFLAS", 90, 100];
-const SLICE_COUNT = WHEEL_SLICES.length;
-const SLICE_ANGLE = (Math.PI * 2) / SLICE_COUNT;
+const SPECIALS = {
+    x2: {
+        title: 'X2 aktif!',
+        msg: 'Sıradaki sorunun puanı iki katına çıktı. Çarkı yeniden çevir.',
+        glyph: '×2',
+        tint: 'var(--color-accent-900)',
+        dot: 'var(--color-accent-300)',
+        ink: 'var(--color-accent-900)',
+        titleInk: 'var(--color-accent-200)',
+        bodyInk: 'var(--color-accent-300)',
+        btn: 'var(--color-accent-300)',
+        btnInk: 'var(--color-accent-900)'
+    },
+    pas: {
+        title: 'Pas',
+        msg: 'Bu tur boş geçti. Kaybın yok, çarkı yeniden çevir.',
+        glyph: '›',
+        tint: 'var(--color-surface)',
+        dot: 'var(--color-neutral-300)',
+        ink: 'var(--color-neutral-800)',
+        titleInk: 'var(--color-text)',
+        bodyInk: 'var(--color-neutral-700)',
+        btn: 'var(--color-accent)',
+        btnInk: 'var(--color-bg)'
+    },
+    iflas: {
+        title: 'İflas',
+        msg: 'Puanların sıfırlandı. Yeniden toplamaya başla.',
+        glyph: '!',
+        tint: 'var(--color-neutral-900)',
+        dot: 'var(--color-accent-600)',
+        ink: 'var(--color-neutral-100)',
+        titleInk: 'var(--color-neutral-100)',
+        bodyInk: 'var(--color-neutral-300)',
+        btn: 'var(--color-accent)',
+        btnInk: 'var(--color-bg)'
+    }
+};
 
-const themes = ["energy", "dark", "light"];
-let currentThemeIdx = 0;
+const FEEDBACK = {
+    ok: { title: 'Doğru!', glyph: '✓', tint: 'var(--color-accent-2-300)', ink: 'var(--color-accent-2-900)' },
+    no: { title: 'Yanlış', glyph: '✕', tint: 'var(--color-accent-300)', ink: 'var(--color-accent-900)' },
+    time: { title: 'Süre bitti', glyph: '⏱', tint: 'var(--color-neutral-300)', ink: 'var(--color-neutral-900)' }
+};
 
-let wheelLogicalSize = 700;
+// ————— Durum —————
 
-let state = {
+const state = {
+    screen: 'grade',
     grade: null,
     selectedUnit: null,
+    isTeamMode: false,
     score: 0,
     correct: 0,
     wrong: 0,
     solved: 0,
-    unitStats: {},
-    remainingQuestions: [],
-    x2Mode: false,
+    run: 0,
+    streakBest: 0,
+    bigWin: false,
+    multiplier: 1,
     currentPoints: 0,
     currentQ: null,
     selectedOpt: null,
-    timer: 45,
+    remainingQuestions: [],
+    unitStats: {},
+    deg: 0,
+    spinning: false,
+    special: null,
+    timer: QUESTION_SECONDS,
     timerInterval: null,
-    wheelAngle: 0,
-    userStreak: 0,
-    lastLoginDate: "",
-    todaySolvedCount: 0,
-    lastSpinWasIflas: false,
-    earnedBadges: [],
-    isTeamMode: false,
     teamScores: { A: 0, B: 0 },
     activeTeam: 'A',
-    teamCorrect: 0,
-    teamWrong: 0
+    userStreak: 0,
+    lastLoginDate: '',
+    todaySolvedCount: 0,
+    earnedBadges: []
 };
 
-// Colors based on theme (Energy theme utilizes vibrant premium neon colors)
-const wheelColors = {
-    energy: [
-        "#8b5cf6", // Vibrant Purple
-        "#00d2ff", // Neon Blue
-        "#ffb703", // Warm Yellow
-        "#ff006e", // Bright Pink-Red
-        "#8b5cf6",
-        "#00d2ff",
-        "#ffb703",
-        "#ff006e",
-        "#8b5cf6",
-        "#00d2ff"
-    ],
-    dark: ["#6c8cff", "#ff6b7a", "#4cdf8b", "#ffb347", "#c77dff", "#ff8fab", "#64dfdf", "#ffd166", "#a5b4fc", "#f472b6"],
-    light: ["#4f6ef7", "#ef4444", "#22c55e", "#f59e0b", "#a855f7", "#ec4899", "#06b6d4", "#eab308", "#818cf8", "#f472b6"]
+// ————— Kısa yollar —————
+
+const $ = id => document.getElementById(id);
+
+const views = {
+    grade: $('view-grade'),
+    unit: $('view-unit'),
+    mode: $('view-mode'),
+    wheel: $('view-wheel'),
+    question: $('view-question'),
+    feedback: $('view-feedback'),
+    karne: $('view-karne')
 };
-const specialColors = { "İFLAS": "#ff0055", "PAS": "#1e293b", "X2": "#ffcc00" };
 
+const CHROME_SCREENS = ['grade', 'unit', 'mode', 'karne'];
 
-// Sounds
 const sounds = {
-    spin: document.getElementById('snd-spin'),
-    tick: document.getElementById('snd-tick'),
-    win: document.getElementById('snd-win'),
-    wrong: document.getElementById('snd-wrong'),
-    fail: document.getElementById('snd-fail')
+    spin: $('snd-spin'),
+    tick: $('snd-tick'),
+    win: $('snd-win'),
+    wrong: $('snd-wrong'),
+    fail: $('snd-fail')
 };
+
 function playSound(type) {
-    if (sounds[type]) {
-        sounds[type].currentTime = 0;
-        if (type === 'spin') sounds[type].volume = 0.3;
-        if (type === 'tick') sounds[type].volume = 0.5;
-        sounds[type].play().catch(() => {});
-    }
+    const el = sounds[type];
+    if (!el) return;
+    el.currentTime = 0;
+    if (type === 'spin') el.volume = 0.3;
+    if (type === 'tick') el.volume = 0.5;
+    el.play().catch(() => { });
 }
 
-// Navigation
-function showView(viewName) {
-    Object.values(views).forEach(v => {
-        if (v) {
-            v.classList.remove('active');
-            v.classList.add('hidden');
-        }
-    });
-
-    if (views[viewName]) {
-        views[viewName].classList.remove('hidden');
-        views[viewName].classList.add('active');
-    }
-
-    // Toggle HUD visibility (using display block/none to avoid vertical layout shift)
-    if (hudBar) {
-        if (viewName === 'grade' || viewName === 'unit' || !state.grade) {
-            hudBar.style.display = 'none';
-        } else {
-            hudBar.style.display = 'flex';
-        }
-    }
-
-    // Re-trigger handleResize when switching to wheel stage
-    if (viewName === 'wheel') {
-        setTimeout(handleResize, 50);
-    }
+function triggerHaptic(type = 'light') {
+    if (typeof navigator === 'undefined' || !navigator.vibrate) return;
+    try {
+        if (type === 'light') navigator.vibrate(15);
+        else if (type === 'medium') navigator.vibrate(35);
+        else if (type === 'heavy') navigator.vibrate([50, 30, 50]);
+        else if (type === 'error') navigator.vibrate([100, 50, 100]);
+        else if (type === 'success') navigator.vibrate([30, 40, 80]);
+    } catch (e) { /* yok sayılır */ }
 }
 
-// Canvas Resize for High-DPI and Responsive
-function handleResize() {
-    const container = document.querySelector('.wheel-container');
-    if (!container) return;
-    let size = Math.min(container.clientWidth, container.clientHeight);
-    if (size <= 0) {
-        // Fallback calculation if hidden
-        size = Math.min(window.innerWidth - 60, window.innerHeight - 250, 450);
-    }
-    if (size <= 0) return;
-    const dpr = window.devicePixelRatio || 1;
+// ————— Gezinme —————
 
-    wheelCanvas.width = size * dpr;
-    wheelCanvas.height = size * dpr;
-    wheelCanvas.style.width = size + 'px';
-    wheelCanvas.style.height = size + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+function showView(name) {
+    state.screen = name;
+    Object.keys(views).forEach(k => {
+        if (views[k]) views[k].classList.toggle('hidden', k !== name);
+    });
 
-    wheelLogicalSize = size;
-    drawWheel();
+    const chrome = CHROME_SCREENS.includes(name);
+    $('app-header').classList.toggle('hidden', !chrome);
+    $('tab-bar').classList.toggle('hidden', !chrome);
+
+    $('tab-play').classList.toggle('active', name !== 'karne');
+    $('tab-karne').classList.toggle('active', name === 'karne');
+
+    if (name === 'karne') renderKarne();
+    if (name === 'wheel') renderWheelScreen();
 }
 
-let resizeTimer;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(handleResize, 200);
-});
+// ————— Ekran 1: Sınıf seçimi —————
 
-// Initialize
-function init() {
-    loadUserData();
-    checkDailyStreak();
-    handleResize();
-    setupEventListeners();
-    updateStatsUI();
-    updateGradeCardsInfo();
-}
+function renderGrades() {
+    const grid = $('grade-grid');
+    grid.innerHTML = '';
 
-function setupEventListeners() {
-    // Menus
-    btnMenu.addEventListener('click', () => {
-        if (confirm("Sınıf seçimine dönmek istediğinize emin misiniz? Mevcut puanınız sıfırlanacaktır.")) {
-            resetGame();
-            showView('grade');
-        }
-    });
+    ['5', '6', '7', '8'].forEach(g => {
+        const meta = GRADE_META[g];
+        const list = (typeof SORULAR !== 'undefined' && SORULAR[g]) ? SORULAR[g] : [];
+        const unitCount = new Set(list.map(q => q.unite)).size;
 
-    btnReset.addEventListener('click', () => {
-        if (confirm("Oyunu sıfırlamak istediğinize emin misiniz?")) resetGame();
-    });
-
-    btnStats.addEventListener('click', () => {
-        renderStats();
-        showView('stats');
-    });
-    
-    document.getElementById('btn-print-report').addEventListener('click', printReportCard);
-    
-    document.getElementById('btn-close-stats').addEventListener('click', () => {
-        showView(state.grade ? 'wheel' : 'grade');
-    });
-
-    // Grade Selection
-    document.querySelectorAll('.grade-card[data-grade]').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            let g = e.currentTarget.getAttribute('data-grade');
-            if (g) startGame(g);
-        });
-    });
-
-    // Unit selection back button
-    document.getElementById('btn-unit-back').addEventListener('click', () => {
-        showView('grade');
-    });
-
-    // Mode Selection
-    document.getElementById('btn-mode-single').addEventListener('click', () => selectMode(false));
-    document.getElementById('btn-mode-team').addEventListener('click', () => selectMode(true));
-    document.getElementById('btn-mode-back').addEventListener('click', () => showView('unit'));
-
-    // Spin
-    btnSpin.addEventListener('click', spinWheel);
-
-    // Touch/Drag to Spin Support
-    let isDragging = false;
-    let dragStartAngle = 0;
-    let dragStartWheelAngle = 0;
-    let hasDragged = false;
-
-    function getTouchAngle(e) {
-        const rect = wheelCanvas.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-        return Math.atan2(clientY - centerY, clientX - centerX);
-    }
-
-    function handleDragStart(e) {
-        if (btnSpin.disabled) return;
-        isDragging = true;
-        hasDragged = false;
-        dragStartAngle = getTouchAngle(e);
-        dragStartWheelAngle = state.wheelAngle;
-    }
-
-    function handleDragMove(e) {
-        if (!isDragging) return;
-        hasDragged = true;
-        const currentAngle = getTouchAngle(e);
-        const delta = currentAngle - dragStartAngle;
-        state.wheelAngle = dragStartWheelAngle + delta;
-        drawWheel();
-        e.preventDefault(); // Stop mobile viewport scrolling while dragging the wheel
-    }
-
-    function handleDragEnd(e) {
-        if (!isDragging) return;
-        isDragging = false;
-        if (hasDragged && !btnSpin.disabled) {
-            spinWheel();
-        }
-    }
-
-    wheelCanvas.addEventListener('mousedown', handleDragStart);
-    window.addEventListener('mousemove', handleDragMove);
-    window.addEventListener('mouseup', handleDragEnd);
-
-    wheelCanvas.addEventListener('touchstart', handleDragStart, { passive: false });
-    window.addEventListener('touchmove', handleDragMove, { passive: false });
-    window.addEventListener('touchend', handleDragEnd);
-
-    // Question actions
-    document.getElementById('btn-submit').addEventListener('click', submitAnswer);
-    document.getElementById('btn-skip').addEventListener('click', skipQuestion);
-    document.getElementById('btn-next').addEventListener('click', () => {
-        if (state.isTeamMode) {
-            state.activeTeam = state.activeTeam === 'A' ? 'B' : 'A';
-            updateStatsUI();
-        }
-        showView('wheel');
-    });
-
-    // Close badge popup
-    document.getElementById('btn-close-badge').addEventListener('click', () => {
-        document.getElementById('badge-popup-container').classList.add('hidden');
-        if (badgeTimeout) clearTimeout(badgeTimeout);
-    });
-
-    // Share score
-    document.getElementById('btn-share').addEventListener('click', () => {
-        const template = `🎮 LGS Çark Oyunu'nda tarih yazdım! 🚀\n\n🔥 Günlük Seri: ${state.userStreak} Gün\n🏆 Toplam Puan: ${state.score} Puan\n✅ Doğru Cevap: ${state.correct}\n❌ Yanlış Cevap: ${state.wrong}\n\nHadi sen de gel, çarkı çevir ve bilgini kanıtla! 🏛️✨`;
-        navigator.clipboard.writeText(template).then(() => {
-            const btn = document.getElementById('btn-share');
-            const oldText = btn.textContent;
-            btn.textContent = "✓ Kopyalandı! Arkadaşlarına Gönder! 🚀";
-            btn.style.backgroundColor = "#2e7d32";
-            setTimeout(() => {
-                btn.textContent = oldText;
-                btn.style.backgroundColor = "";
-            }, 2000);
-        }).catch(err => {
-            console.error("Panoya kopyalama başarısız:", err);
-        });
+        const btn = document.createElement('button');
+        btn.className = 'grade-card';
+        btn.innerHTML = `
+            <div class="grade-card-dot" style="background:${meta.tint}">
+                <span style="color:${meta.ink}">${g}</span>
+            </div>
+            <div class="grade-card-name">${g}. Sınıf</div>
+            <div class="grade-card-subject">${meta.subject}</div>
+            <div class="grade-card-meta">
+                <span>${unitCount} ünite</span><span>·</span><span>${list.length} soru</span>
+            </div>`;
+        btn.onclick = () => pickGrade(g);
+        grid.appendChild(btn);
     });
 }
 
-function startGame(grade) {
+function pickGrade(grade) {
     state.grade = grade;
     state.selectedUnit = null;
-    document.getElementById('unit-grade-label').textContent = `${grade}. Sınıf`;
-
-    // Extract unique units for this grade
-    const units = [...new Set(SORULAR[grade].map(q => q.unite))].sort();
-
-    const container = document.getElementById('unit-list-container');
-    container.innerHTML = '';
-
-    // Add "All Units" card (Prestigious Gold Card)
-    const allBtn = document.createElement('button');
-    allBtn.className = 'unit-card mix-card';
-    allBtn.innerHTML = `
-        <span class="unit-icon-badge mix-badge">🏆</span> 
-        <span class="unit-title-text">Tüm Ünitelerden Karışık</span> 
-        <span class="unit-qcount">${SORULAR[grade].length} Soru</span>
-    `;
-    allBtn.onclick = () => selectUnit('ALL');
-    container.appendChild(allBtn);
-
-    // Add specific unit cards
-    units.forEach(u => {
-        const uCount = SORULAR[grade].filter(q => q.unite === u).length;
-        const btn = document.createElement('button');
-        btn.className = 'unit-card';
-        const icon = getUnitIcon(u, grade);
-        btn.innerHTML = `
-            <span class="unit-icon-badge">${icon}</span> 
-            <span class="unit-title-text">${u}</span> 
-            <span class="unit-qcount">${uCount} Soru</span>
-        `;
-        btn.onclick = () => selectUnit(u);
-        container.appendChild(btn);
-    });
-
+    renderUnits();
     showView('unit');
 }
 
-function getUnitIcon(unitName, grade) {
-    const nameLower = unitName.toLowerCase();
-    if (nameLower.includes("kahraman") || nameLower.includes("doğuyor")) return "🎯";
-    if (nameLower.includes("millî uyanış") || nameLower.includes("milli uyanış")) return "💡";
-    if (nameLower.includes("destan") || nameLower.includes("ya istiklal")) return "⚔️";
-    if (nameLower.includes("atatürkçülük") || nameLower.includes("çağdaşlaşan")) return "🏛️";
-    if (nameLower.includes("demokratikleşme")) return "🗳️";
-    if (nameLower.includes("dış politika")) return "🌐";
-    if (nameLower.includes("atatürk'ün ölümü") || nameLower.includes("ölüm") || nameLower.includes("hüzün")) return "🕊️";
-    
-    // 5-6-7. Sınıf Üniteleri için
-    if (nameLower.includes("birlikte yaşamak") || nameLower.includes("birey")) return "👤";
-    if (nameLower.includes("kültür") || nameLower.includes("miras")) return "📜";
-    if (nameLower.includes("yeryüzünde yaşam") || nameLower.includes("yaşam")) return "🌍";
-    if (nameLower.includes("teknoloji") || nameLower.includes("bilim")) return "🔭";
-    if (nameLower.includes("üretim") || nameLower.includes("tüketim") || nameLower.includes("ekonomi")) return "🌾";
-    if (nameLower.includes("yönetim") || nameLower.includes("etkin vatandaşlık") || nameLower.includes("egemenlik")) return "⚖️";
-    if (nameLower.includes("küresel") || nameLower.includes("ülkeler")) return "🌐";
-    
-    return "📖";
+// ————— Ekran 2: Ünite seçimi —————
+
+function renderUnits() {
+    const g = state.grade;
+    const meta = GRADE_META[g] || {};
+    $('unit-grade-label').textContent = `${g}. Sınıf`;
+    $('unit-subject-label').textContent = meta.subject || '';
+
+    const all = (typeof SORULAR !== 'undefined' && SORULAR[g]) ? SORULAR[g] : [];
+    const units = [...new Set(all.map(q => q.unite))].sort();
+
+    const container = $('unit-list-container');
+    container.innerHTML = '';
+
+    container.appendChild(buildUnitCard({
+        name: 'Tüm ünitelerden karışık',
+        meta: `${all.length} soru · her üniteden`,
+        stats: null,
+        mix: true,
+        onPick: () => pickUnit('ALL')
+    }));
+
+    units.forEach(u => {
+        const count = all.filter(q => q.unite === u).length;
+        const st = state.unitStats[u];
+        const total = st ? st.d + st.y : 0;
+        container.appendChild(buildUnitCard({
+            name: u,
+            meta: total ? `${st.d} doğru · ${st.y} yanlış` : `${count} soru · henüz çalışılmadı`,
+            stats: st,
+            mix: false,
+            onPick: () => pickUnit(u)
+        }));
+    });
 }
 
-function updateGradeCardsInfo() {
-    for (let grade of ['5', '6', '7', '8']) {
-        if (SORULAR[grade]) {
-            const totalQuestions = SORULAR[grade].length;
-            const uniqueUnits = [...new Set(SORULAR[grade].map(q => q.unite))].length;
-            const card = document.querySelector(`.grade-card.grade-${grade}`);
-            if (card) {
-                let infoDiv = card.querySelector('.grade-info-meta');
-                if (!infoDiv) {
-                    infoDiv = document.createElement('div');
-                    infoDiv.className = 'grade-info-meta';
-                    card.appendChild(infoDiv);
-                }
-                infoDiv.innerHTML = `
-                    <span class="meta-item">📁 ${uniqueUnits} Ünite</span>
-                    <span class="meta-item">📝 ${totalQuestions} Soru</span>
-                `;
-            }
-        }
-    }
+function buildUnitCard({ name, meta, stats, mix, onPick }) {
+    const total = stats ? stats.d + stats.y : 0;
+    const pct = total ? Math.round((stats.d / total) * 100) : 0;
+    const dash = 100.5 - (100.5 * pct) / 100;
+
+    const btn = document.createElement('button');
+    btn.className = 'unit-card' + (mix ? ' mix-card' : '');
+    btn.innerHTML = `
+        <div class="unit-ring">
+            <svg width="38" height="38" viewBox="0 0 38 38">
+                <circle cx="19" cy="19" r="16" fill="none" stroke="var(--color-neutral-300)" stroke-width="4"></circle>
+                <circle cx="19" cy="19" r="16" fill="none" stroke="var(--color-accent)" stroke-width="4"
+                    stroke-linecap="round" stroke-dasharray="100.5" stroke-dashoffset="${dash}"
+                    transform="rotate(-90 19 19)"></circle>
+            </svg>
+            <span class="unit-ring-pct">${pct}%</span>
+        </div>
+        <div class="unit-card-body">
+            <div class="unit-card-name">${name}</div>
+            <div class="unit-card-meta">${meta}</div>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.75"
+            stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>`;
+    btn.onclick = onPick;
+    return btn;
 }
 
-function selectUnit(unit) {
+function pickUnit(unit) {
     state.selectedUnit = unit;
-    if (unit === 'ALL') {
-        state.remainingQuestions = [...SORULAR[state.grade]].sort(() => Math.random() - 0.5);
-    } else {
-        state.remainingQuestions = SORULAR[state.grade].filter(q => q.unite === unit).sort(() => Math.random() - 0.5);
-    }
+    refillQuestionPool();
+    $('mode-unit-label').textContent = unitLabel();
     showView('mode');
 }
 
-function selectMode(isTeam) {
+function unitLabel() {
+    if (!state.selectedUnit || state.selectedUnit === 'ALL') return 'Tüm ünitelerden karışık';
+    return state.selectedUnit;
+}
+
+function refillQuestionPool() {
+    const all = (typeof SORULAR !== 'undefined' && SORULAR[state.grade]) ? SORULAR[state.grade] : [];
+    const pool = state.selectedUnit === 'ALL' ? [...all] : all.filter(q => q.unite === state.selectedUnit);
+    state.remainingQuestions = pool.sort(() => Math.random() - 0.5);
+}
+
+// ————— Ekran 3: Oyun modu —————
+
+function beginGame(isTeam) {
     state.isTeamMode = isTeam;
     state.teamScores = { A: 0, B: 0 };
     state.activeTeam = 'A';
-    state.teamCorrect = 0;
-    state.teamWrong = 0;
     state.score = 0;
     state.correct = 0;
     state.wrong = 0;
     state.solved = 0;
-
-    // Toggle HUD display
-    const indHud = document.getElementById('hud-individual');
-    const teamHud = document.getElementById('hud-team');
-    if (indHud && teamHud) {
-        if (state.isTeamMode) {
-            indHud.style.display = 'none';
-            teamHud.style.display = 'flex';
-        } else {
-            indHud.style.display = 'flex';
-            teamHud.style.display = 'none';
-        }
-    }
-
-    updateStatsUI();
-    btnSpin.disabled = false;
+    state.run = 0;
+    state.multiplier = 1;
+    state.deg = 0;
+    $('wheel-rotor').style.transition = 'none';
+    $('wheel-rotor').style.transform = 'rotate(0deg)';
+    void $('wheel-rotor').offsetWidth;
+    $('wheel-rotor').style.transition = '';
     showView('wheel');
 }
 
-function resetGame() {
-    state.score = 0;
-    state.correct = 0;
-    state.wrong = 0;
-    state.solved = 0;
-    state.unitStats = {};
-    if (state.grade) {
-        selectUnit(state.selectedUnit || 'ALL');
-    } else {
-        showView('grade');
+// ————— Ekran 4: Çark —————
+
+function renderWheelScreen() {
+    $('wheel-grade-label').textContent = state.grade ? `${state.grade}. Sınıf` : '';
+    $('wheel-unit-label').textContent = unitLabel();
+    $('wheel-score-pill').textContent = `${state.score} P`;
+
+    const teamRow = $('team-row');
+    teamRow.classList.toggle('hidden', !state.isTeamMode);
+    if (state.isTeamMode) {
+        $('team-a-score').textContent = state.teamScores.A;
+        $('team-b-score').textContent = state.teamScores.B;
+        $('team-chip-a').className = 'team-chip' + (state.activeTeam === 'A' ? ' active-a' : '');
+        $('team-chip-b').className = 'team-chip' + (state.activeTeam === 'B' ? ' active-b' : '');
     }
-    updateStatsUI();
-    stopTimer();
+
+    updateWheelCopy();
 }
 
-// Wheel Logic
-function drawWheel(angleOffset = state.wheelAngle) {
-    const w = wheelLogicalSize;
-    const h = wheelLogicalSize;
-    const cx = w / 2;
-    const cy = h / 2;
-    const r = cx - 10;
-    const themeName = 'energy';
+function updateWheelCopy() {
+    const headline = state.spinning
+        ? 'Çark dönüyor…'
+        : (state.isTeamMode ? `${state.activeTeam} grubunun sırası` : 'Çarkı çevir');
+    const sub = state.spinning
+        ? 'Bakalım hangi puana denk gelecek'
+        : 'Gelen puan, sıradaki sorunun değeri olur';
 
-    ctx.clearRect(0, 0, w, h);
-    ctx.save();
-    ctx.translate(cx, cy);
-
-    const outerRim = cx - 4;
-    const slicesR = cx - 22;
-
-    // Outer rim (glowing cyan/purple gradient)
-    ctx.beginPath();
-    ctx.arc(0, 0, outerRim, 0, Math.PI * 2);
-    let rimGrad = ctx.createLinearGradient(-outerRim, -outerRim, outerRim, outerRim);
-    rimGrad.addColorStop(0, "#00e5ff");
-    rimGrad.addColorStop(0.5, "#651fff");
-    rimGrad.addColorStop(1, "#00e5ff");
-    ctx.strokeStyle = rimGrad;
-    ctx.lineWidth = 5;
-    ctx.stroke();
-
-    // Inner rim
-    ctx.beginPath();
-    ctx.arc(0, 0, slicesR + 2, 0, Math.PI * 2);
-    ctx.fillStyle = "#0b0c16";
-    ctx.fill();
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = "#121324";
-    ctx.stroke();
-
-    ctx.rotate(angleOffset);
-
-    let colorIdx = 0;
-    for (let i = 0; i < SLICE_COUNT; i++) {
-        let val = WHEEL_SLICES[i];
-        let isSpecial = typeof val === 'string';
-        let color = isSpecial ? specialColors[val] : wheelColors[themeName][colorIdx++ % wheelColors[themeName].length];
-
-        ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.arc(0, 0, slicesR, i * SLICE_ANGLE, (i + 1) * SLICE_ANGLE);
-        
-        let sliceGrad = ctx.createRadialGradient(0, 0, slicesR * 0.2, 0, 0, slicesR);
-        sliceGrad.addColorStop(0, "#121324");
-        sliceGrad.addColorStop(0.85, color);
-        sliceGrad.addColorStop(1, "rgba(255, 255, 255, 0.15)");
-        
-        ctx.fillStyle = sliceGrad;
-        ctx.fill();
-        ctx.lineWidth = 1.5;
-        ctx.strokeStyle = '#121324';
-        ctx.stroke();
-
-        ctx.save();
-        ctx.rotate(i * SLICE_ANGLE + SLICE_ANGLE / 2);
-        ctx.textAlign = "center";
-        ctx.fillStyle = "#ffffff";
-
-        // Scale font based on wheel size (larger fonts for better readability)
-        const baseFontSize = Math.max(12, Math.round(w / 18));
-        const specialFontSize = Math.max(10, Math.round(w / 22));
-        ctx.font = isSpecial ? `bold ${specialFontSize}px 'Poppins'` : `bold ${baseFontSize}px 'Poppins'`;
-        ctx.translate(slicesR * 0.7, 0);
-
-        if (isSpecial) {
-            let t = val === 'İFLAS' ? '💀 İFLAS' : val === 'PAS' ? '⏸ PAS' : '⚡ X2';
-            ctx.fillText(t, 0, 6);
-        } else {
-            ctx.fillText(val, 0, 6);
-        }
-        ctx.restore();
-    }
-    
-    // Central cap (holographic blue/purple orb)
-    ctx.beginPath();
-    ctx.arc(0, 0, slicesR * 0.22, 0, Math.PI * 2);
-    let centerGrad = ctx.createRadialGradient(0, 0, 2, 0, 0, slicesR * 0.22);
-    centerGrad.addColorStop(0, "#ffffff");
-    centerGrad.addColorStop(0.3, "#00e5ff");
-    centerGrad.addColorStop(1, "#7c3aed");
-    ctx.fillStyle = centerGrad;
-    ctx.fill();
-    ctx.lineWidth = 3;
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.5)";
-    ctx.stroke();
-
-    // Center icon (premium trophy emblem instead of plain house)
-    ctx.fillStyle = "#ffffff";
-    ctx.font = `bold ${Math.max(18, Math.round(slicesR * 0.15))}px 'Poppins'`;
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText("🏆", 0, 2);
-
-    ctx.restore();
+    $('wheel-headline').textContent = headline;
+    $('wheel-sub').textContent = sub;
+    $('btn-spin').textContent = state.spinning ? 'Dönüyor…' : 'Çarkı çevir';
+    $('btn-spin').disabled = state.spinning;
 }
 
-function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
-
-function spinWheel() {
-    btnSpin.disabled = true;
+function spin() {
+    if (state.spinning) return;
+    state.spinning = true;
+    updateWheelCopy();
     playSound('spin');
     triggerHaptic('heavy');
 
-    const duration = 4000;
-    const targetSlice = Math.floor(Math.random() * SLICE_COUNT);
-    const extraTurns = Math.floor(Math.random() * 5 + 5) * Math.PI * 2;
+    const idx = Math.floor(Math.random() * SEGMENTS.length);
+    // Dilim ortası göstergenin (tepe) altına gelecek şekilde döndür.
+    // Hedef mutlak açı üzerinden hesaplanır; aksi hâlde her çevirişte kayma birikir.
+    const target = (360 - (idx * SEG_ANGLE + SEG_ANGLE / 2)) % 360;
+    const current = ((state.deg % 360) + 360) % 360;
+    state.deg += 360 * 5 + ((target - current + 360) % 360);
+    $('wheel-rotor').style.transform = `rotate(${state.deg}deg)`;
 
-    const sliceMidPoint = (targetSlice * SLICE_ANGLE) + (SLICE_ANGLE / 2);
-    const finalAngle = (Math.PI * 1.5) - sliceMidPoint;
-
-    const startAngle = state.wheelAngle;
-    const totalRotation = extraTurns + ((finalAngle - (startAngle % (Math.PI * 2)) + (Math.PI * 2)) % (Math.PI * 2));
-
-    let startTime = null;
-
-    function animate(timestamp) {
-        if (!startTime) startTime = timestamp;
-        let p = (timestamp - startTime) / duration;
-        if (p > 1) p = 1;
-
-        let eased = easeOut(p);
-        state.wheelAngle = startAngle + totalRotation * eased;
-        drawWheel();
-
-        if (p < 1) {
-            requestAnimationFrame(animate);
-        } else {
-            onSpinComplete(targetSlice);
-        }
-    }
-    requestAnimationFrame(animate);
+    setTimeout(() => {
+        state.spinning = false;
+        updateWheelCopy();
+        onSpinComplete(SEGMENTS[idx]);
+    }, SPIN_MS);
 }
 
-let specialParticlesInterval = null;
-
-function showSpecial3DModal(type, title, message, onCloseCallback) {
-    const modal = document.getElementById('special-3d-modal');
-    const card = document.getElementById('special-3d-card');
-    const icon = document.getElementById('special-3d-icon');
-    const titleEl = document.getElementById('special-3d-title');
-    const msgEl = document.getElementById('special-3d-message');
-    const closeBtn = document.getElementById('btn-special-3d-close');
-    const particlesContainer = document.getElementById('special-3d-particles');
-
-    if (!modal || !card || !icon || !titleEl || !msgEl || !closeBtn || !particlesContainer) return;
-
-    // Reset card classes
-    card.className = "special-3d-card";
-    card.classList.add(`glow-${type}`);
-
-    // Set content
-    let iconEmoji = "⚡";
-    let particleColor = "#ffd54f"; // Gold
-    if (type === 'iflas') {
-        iconEmoji = "💀";
-        particleColor = "#ff1744"; // Red
-    } else if (type === 'pas') {
-        iconEmoji = "🛡️";
-        particleColor = "#90a4ae"; // Silver/Blue
-    }
-    icon.textContent = iconEmoji;
-    icon.style.color = particleColor;
-    titleEl.textContent = title;
-    msgEl.textContent = message;
-
-    // Clear previous particles
-    particlesContainer.innerHTML = '';
-    if (specialParticlesInterval) clearInterval(specialParticlesInterval);
-
-    // Spawn particles
-    specialParticlesInterval = setInterval(() => {
-        const p = document.createElement('div');
-        p.className = 'special-particle';
-        p.style.backgroundColor = particleColor;
-        p.style.boxShadow = `0 0 8px ${particleColor}`;
-        p.style.left = `${Math.random() * 100}vw`;
-        p.style.width = `${Math.random() * 8 + 4}px`;
-        p.style.height = p.style.width;
-        p.style.animationDuration = `${Math.random() * 2 + 2}s`;
-        particlesContainer.appendChild(p);
-
-        // Remove particle after animation
-        setTimeout(() => p.remove(), 4000);
-    }, 120);
-
-    // Close handler
-    const closeHandler = () => {
-        modal.classList.add('hidden');
-        clearInterval(specialParticlesInterval);
-        particlesContainer.innerHTML = '';
-        closeBtn.removeEventListener('click', closeHandler);
-        if (onCloseCallback) onCloseCallback();
-    };
-    closeBtn.addEventListener('click', closeHandler);
-
-    // Show modal
-    modal.classList.remove('hidden');
-}
-
-function onSpinComplete(targetSlice) {
-    btnSpin.disabled = false;
-    let val = WHEEL_SLICES[targetSlice];
-
-    const currentTeamName = state.activeTeam === 'A' ? 'A Grubu' : 'B Grubu';
-
-    if (val === "İFLAS") {
-        state.lastSpinWasIflas = true;
-        playSound('fail');
-        if (state.isTeamMode) {
-            state.teamScores[state.activeTeam] = 0;
-            updateStatsUI();
-            showSpecial3DModal('iflas', 'İFLAS!', `${currentTeamName} puanı sıfırlandı!`, () => {
-                state.activeTeam = state.activeTeam === 'A' ? 'B' : 'A';
-                updateStatsUI();
-                showView('wheel');
-            });
-        } else {
-            state.score = 0;
-            updateStatsUI();
-            showSpecial3DModal('iflas', 'İFLAS!', 'Tüm puanlarınız sıfırlandı!', () => {
-                showView('wheel');
-            });
-        }
-        return;
-    }
-    if (val === "PAS") {
-        state.lastSpinWasIflas = false;
-        if (state.isTeamMode) {
-            showSpecial3DModal('pas', 'PAS!', `${currentTeamName} bu turu pas geçti!`, () => {
-                state.activeTeam = state.activeTeam === 'A' ? 'B' : 'A';
-                updateStatsUI();
-                showView('wheel');
-            });
-        } else {
-            showSpecial3DModal('pas', 'PAS!', 'Bu turu geçtiniz. Puan değişmedi.', () => {
-                showView('wheel');
-            });
-        }
-        return;
-    }
-
-    if (val === "X2") {
-        state.x2Mode = true;
-        state.currentPoints = 0;
-        if (state.isTeamMode) {
-            showSpecial3DModal('x2', 'X2 KATLAYICI!', `${currentTeamName} için X2 aktif! Doğru cevaplarsa puanı ikiye katlanacak!`, () => {
-                loadQuestion();
-            });
-        } else {
-            showSpecial3DModal('x2', 'X2 KATLAYICI!', 'X2 aktif! Doğru cevaplarsanız toplam puanınız 2 katına çıkacak!', () => {
-                loadQuestion();
-            });
-        }
-    } else {
-        state.x2Mode = false;
-        state.currentPoints = parseInt(val);
+function onSpinComplete(seg) {
+    if (seg.kind === 'points') {
+        state.currentPoints = seg.value * state.multiplier;
         loadQuestion();
+        return;
     }
+
+    if (seg.kind === 'iflas') {
+        playSound('fail');
+        if (state.isTeamMode) state.teamScores[state.activeTeam] = 0;
+        else state.score = 0;
+        state.multiplier = 1;
+        renderWheelScreen();
+    }
+
+    openSpecial(seg.kind);
 }
+
+function openSpecial(kind) {
+    state.special = kind;
+    const sp = SPECIALS[kind];
+
+    $('special-card').style.background = sp.tint;
+    $('special-dot').style.background = sp.dot;
+    $('special-glyph').textContent = sp.glyph;
+    $('special-glyph').style.color = sp.ink;
+    $('special-title').textContent = sp.title;
+    $('special-title').style.color = sp.titleInk;
+
+    let msg = sp.msg;
+    if (state.isTeamMode) {
+        const team = `${state.activeTeam} grubu`;
+        if (kind === 'iflas') msg = `${team} iflas etti, puanı sıfırlandı. Sıra diğer gruba geçiyor.`;
+        else if (kind === 'pas') msg = `${team} bu turu pas geçti. Sıra diğer gruba geçiyor.`;
+        else msg = `${team} için X2 aktif! Sıradaki sorunun puanı iki katına çıktı.`;
+    }
+    $('special-msg').textContent = msg;
+    $('special-msg').style.color = sp.bodyInk;
+
+    $('btn-special-close').style.background = sp.btn;
+    $('btn-special-close').style.color = sp.btnInk;
+
+    $('special-overlay').classList.remove('hidden');
+}
+
+function closeSpecial() {
+    const kind = state.special;
+    state.special = null;
+    $('special-overlay').classList.add('hidden');
+
+    if (kind === 'x2') {
+        state.multiplier = 2;
+    } else {
+        state.multiplier = 1;
+        if (state.isTeamMode) switchTeam();
+    }
+    renderWheelScreen();
+}
+
+function switchTeam() {
+    state.activeTeam = state.activeTeam === 'A' ? 'B' : 'A';
+}
+
+// ————— Ekran 5: Soru —————
 
 function loadQuestion() {
-    if (state.remainingQuestions.length === 0) {
-        state.remainingQuestions = [...SORULAR[state.grade]].sort(() => Math.random() - 0.5);
-    }
+    if (!state.remainingQuestions.length) refillQuestionPool();
     state.currentQ = state.remainingQuestions.pop();
+    if (!state.currentQ) return;
+
     state.selectedOpt = null;
 
-    const qImg = document.getElementById('q-img');
-    if (state.currentQ.gorsel) {
-        let src = state.currentQ.gorsel;
-        if (src.startsWith('web/')) {
-            src = src.substring(4);
-        }
-        qImg.src = src;
-        qImg.classList.remove('hidden');
+    const q = state.currentQ;
+    $('q-unite').textContent = q.unite.split('–')[0].trim();
+    $('q-konu').textContent = q.konu || '';
+    $('q-points').textContent = `${state.currentPoints} puan`;
+
+    const img = $('q-img');
+    if (q.gorsel) {
+        img.src = q.gorsel.startsWith('web/') ? q.gorsel.substring(4) : q.gorsel;
+        img.classList.remove('hidden');
     } else {
-        qImg.src = "";
-        qImg.classList.add('hidden');
+        img.removeAttribute('src');
+        img.classList.add('hidden');
     }
+    $('q-card').classList.toggle('has-img', !!q.gorsel);
+    $('q-text').textContent = q.soru;
 
-    document.getElementById('q-unite').textContent = state.currentQ.unite;
-    document.getElementById('q-konu').textContent = state.currentQ.konu;
-    document.getElementById('q-text').textContent = state.currentQ.soru;
-
-    const optContainer = document.getElementById('options-container');
-    optContainer.innerHTML = '';
-
-    for (let key in state.currentQ.siklar) {
-        let btn = document.createElement('button');
+    const opts = $('options-container');
+    opts.innerHTML = '';
+    Object.keys(q.siklar).forEach(key => {
+        const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerHTML = `<span class="opt-letter">${key})</span> <span class="opt-text">${state.currentQ.siklar[key]}</span>`;
+        btn.innerHTML = `<span class="opt-letter">${key}</span><span class="opt-text">${q.siklar[key]}</span>`;
         btn.onclick = () => selectOption(btn, key);
-        optContainer.appendChild(btn);
-    }
+        opts.appendChild(btn);
+    });
+    opts.scrollTop = 0;
+    $('q-card').scrollTop = 0;
 
-    document.getElementById('btn-submit').disabled = true;
+    $('btn-submit').disabled = true;
     showView('question');
     startTimer();
 }
 
-function selectOption(btnElem, key) {
+function selectOption(btn, key) {
     document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
-    btnElem.classList.add('selected');
+    btn.classList.add('selected');
     state.selectedOpt = key;
-    document.getElementById('btn-submit').disabled = false;
+    $('btn-submit').disabled = false;
+    triggerHaptic('light');
 }
 
 function startTimer() {
     stopTimer();
-    state.timer = 45;
+    state.timer = QUESTION_SECONDS;
     updateTimerUI();
     state.timerInterval = setInterval(() => {
         state.timer--;
         updateTimerUI();
-        if (state.timer > 0) {
-            playSound('tick');
-        } else {
-            handleTimeout();
-        }
+        if (state.timer > 0) playSound('tick');
+        else resolve(false, true);
     }, 1000);
 }
+
 function stopTimer() {
     clearInterval(state.timerInterval);
+    state.timerInterval = null;
 }
 
 function updateTimerUI() {
-    const progress = document.getElementById('timer-progress');
-    const text = document.getElementById('timer-text');
-    const container = document.querySelector('.timer-container');
-    if (!progress || !text) return;
-
-    const circumference = 2 * Math.PI * 42; // ~264
-    const offset = circumference * (1 - state.timer / 45);
-
-    progress.style.strokeDashoffset = offset;
-    text.textContent = state.timer;
-
-    container.classList.remove('timer-danger', 'timer-warn');
-    if (state.timer <= 10) {
-        container.classList.add('timer-danger');
-    } else if (state.timer <= 20) {
-        container.classList.add('timer-warn');
-    }
-}
-
-function handleTimeout() {
-    stopTimer();
-    playSound('fail');
-    state.solved++;
-    
-    if (state.isTeamMode) {
-        state.teamWrong++;
-        state.teamScores[state.activeTeam] -= 5;
-    } else {
-        state.wrong++;
-        state.score -= 5;
-    }
-    
-    state.x2Mode = false;
-    state.lastSpinWasIflas = false;
-    updateStatsUI();
-    onQuestionSolved();
-    
-    const currentTeamName = state.activeTeam === 'A' ? 'A Grubu' : 'B Grubu';
-    let msg = "";
-    if (state.isTeamMode) {
-        msg = `${currentTeamName} süre sınırını aştı ve puan kaybetti. Devam et'e basınca sıra diğer takıma geçecek. Doğru Cevap: ${state.currentQ.dogru_cevap}`;
-    } else {
-        msg = `Doğru Cevap: ${state.currentQ.dogru_cevap}`;
-    }
-    showFeedbackUI("Süre Doldu!", msg, "var(--error)", false, state.currentQ.aciklama);
+    const ring = $('timer-progress');
+    ring.style.strokeDashoffset = TIMER_CIRC - (TIMER_CIRC * state.timer) / QUESTION_SECONDS;
+    ring.setAttribute('stroke', state.timer <= 10 ? 'var(--color-accent-600)' : 'var(--color-accent-2-500)');
+    $('timer-text').textContent = state.timer;
 }
 
 function submitAnswer() {
     if (!state.selectedOpt || !state.currentQ) return;
-    stopTimer();
-    let isCorrect = (state.selectedOpt === state.currentQ.dogru_cevap);
-    state.solved++;
-
-    if (state.isTeamMode) {
-        if (isCorrect) {
-            state.teamCorrect++;
-            let earned = state.x2Mode ? state.teamScores[state.activeTeam] : (state.currentPoints + 10);
-            state.teamScores[state.activeTeam] += earned;
-            playSound('win');
-        } else {
-            state.teamWrong++;
-            state.teamScores[state.activeTeam] -= 5;
-            playSound('wrong');
-        }
-    } else {
-        if (isCorrect) {
-            state.correct++;
-            if (state.x2Mode) state.score *= 2;
-            else state.score += state.currentPoints + 10;
-            playSound('win');
-            triggerHaptic('success');
-            triggerConfetti();
-
-            // Award badges
-            let badgesEarned = [];
-            if (state.grade === "8" && state.currentPoints === 100) {
-                badgesEarned.push({
-                    name: "Tarih Dehası",
-                    desc: "8. Sınıfta 100 puanlık soruyu doğru bildin! Tarihin gerçek lideri sensin! 👑",
-                    emoji: "🏆"
-                });
-            }
-            if (state.lastSpinWasIflas) {
-                badgesEarned.push({
-                    name: "Yıkılmadım",
-                    desc: "İflas ettikten sonra ilk soruyu doğru bildin! Küllerinden doğdun! 🔥",
-                    emoji: "💪"
-                });
-            }
-
-            badgesEarned.forEach((badge, idx) => {
-                if (!state.earnedBadges.some(b => b.name === badge.name)) {
-                    state.earnedBadges.push(badge);
-                    saveUserData();
-                }
-                setTimeout(() => {
-                    showBadgePopup(badge.name, badge.desc, badge.emoji);
-                }, idx * 4200);
-            });
-        } else {
-            state.wrong++;
-            state.score -= 5;
-            playSound('wrong');
-            triggerHaptic('error');
-        }
-    }
-
-    recordUnit(state.currentQ.unite, isCorrect);
-
-    state.x2Mode = false;
-    state.lastSpinWasIflas = false;
-    updateStatsUI();
-    onQuestionSolved();
-
-    const currentTeamName = state.activeTeam === 'A' ? 'A Grubu' : 'B Grubu';
-    let title = isCorrect ? "Tebrikler!" : "Yanlış Cevap!";
-    let msg = "";
-    if (state.isTeamMode) {
-        msg = isCorrect 
-            ? `${currentTeamName} doğru cevap verdi ve puan kazandı! Devam et'e basınca sıra diğer takıma geçecek.` 
-            : `Yanlış cevap! Doğru cevap: ${state.currentQ.dogru_cevap}) ${state.currentQ.siklar[state.currentQ.dogru_cevap]}. Devam et'e basınca sıra diğer takıma geçecek.`;
-    } else {
-        msg = isCorrect ? "Doğru cevap verdiniz." : `Doğru cevap: ${state.currentQ.dogru_cevap}) ${state.currentQ.siklar[state.currentQ.dogru_cevap]}`;
-    }
-    let col = isCorrect ? "var(--success)" : "var(--error)";
-
-    showFeedbackUI(title, msg, col, isCorrect, state.currentQ.aciklama);
+    resolve(state.selectedOpt === state.currentQ.dogru_cevap, false);
 }
 
 function skipQuestion() {
     stopTimer();
-    if (state.isTeamMode) {
-        state.activeTeam = state.activeTeam === 'A' ? 'B' : 'A';
-        updateStatsUI();
-    }
+    state.multiplier = 1;
+    if (state.isTeamMode) switchTeam();
     showView('wheel');
 }
 
-function showFeedbackUI(title, msg, color, isCorrect, explanation) {
-    document.getElementById('feedback-title').textContent = title;
-    document.getElementById('feedback-title').style.color = color;
-    document.getElementById('feedback-msg').textContent = msg;
+// ————— Sonuç ve geri bildirim —————
 
-    let ic = document.getElementById('feedback-icon');
-    ic.textContent = isCorrect ? '✓' : '✗';
-    ic.style.color = color;
+function resolve(isCorrect, timedOut) {
+    stopTimer();
 
-    let expEl = document.getElementById('feedback-explanation');
-    if (explanation) {
-        expEl.style.display = 'block';
-        expEl.innerText = "Açıklama: " + explanation;
+    const q = state.currentQ;
+    const unit = (q && q.unite) || state.selectedUnit || '—';
+    if (!state.unitStats[unit]) state.unitStats[unit] = { d: 0, y: 0 };
+    if (isCorrect) state.unitStats[unit].d++;
+    else state.unitStats[unit].y++;
+
+    state.solved++;
+    state.run = isCorrect ? state.run + 1 : 0;
+    state.streakBest = Math.max(state.streakBest, state.run);
+
+    if (isCorrect) {
+        state.correct++;
+        state.score += state.currentPoints;
+        if (state.isTeamMode) state.teamScores[state.activeTeam] += state.currentPoints;
+        if (state.currentPoints >= 500) state.bigWin = true;
+        playSound('win');
+        triggerHaptic('success');
+        triggerConfetti();
     } else {
-        expEl.style.display = 'none';
+        state.wrong++;
+        playSound(timedOut ? 'fail' : 'wrong');
+        triggerHaptic('error');
     }
+
+    state.multiplier = 1;
+    if (state.isTeamMode) switchTeam();
+
+    onQuestionSolved();
+    checkBadges();
+    showFeedback(isCorrect ? 'ok' : (timedOut ? 'time' : 'no'));
+}
+
+function showFeedback(kind) {
+    const fb = FEEDBACK[kind];
+    const q = state.currentQ;
+
+    const glyph = $('fb-glyph');
+    glyph.textContent = fb.glyph;
+    glyph.style.background = fb.tint;
+    glyph.style.color = fb.ink;
+
+    $('fb-title').textContent = fb.title;
+
+    let msg;
+    if (kind === 'ok') msg = `+${state.currentPoints} puan kazandın.`;
+    else if (kind === 'time') msg = 'Bu soruda süre yetmedi.';
+    else msg = 'Açıklamayı oku, bir dahakine bileceksin.';
+    if (state.isTeamMode) msg += ` Sıra ${state.activeTeam} grubunda.`;
+    $('fb-msg').textContent = msg;
+
+    $('fb-correct-key').textContent = q ? q.dogru_cevap : '';
+    $('fb-explain-text').textContent = q ? (q.aciklama || q.siklar[q.dogru_cevap]) : '';
+
+    $('fb-correct').textContent = state.correct;
+    $('fb-wrong').textContent = state.wrong;
+    $('fb-score').textContent = state.score;
 
     showView('feedback');
 }
 
-function recordUnit(unitName, isCorrect) {
-    if (!state.unitStats[unitName]) state.unitStats[unitName] = { d: 0, y: 0 };
-    if (isCorrect) state.unitStats[unitName].d++;
-    else state.unitStats[unitName].y++;
-}
+// ————— Ekran 7: Karne —————
 
-function updateStatsUI() {
-    if (state.isTeamMode) {
-        const teamAScoreEl = document.getElementById('hud-team-a-score');
-        const teamBScoreEl = document.getElementById('hud-team-b-score');
-        const teamCorrectEl = document.getElementById('hud-team-correct');
-        const teamWrongEl = document.getElementById('hud-team-wrong');
-        const teamTurnEl = document.getElementById('hud-team-turn');
+function renderKarne() {
+    $('st-score').textContent = state.score;
+    $('st-correct').textContent = state.correct;
+    $('st-wrong').textContent = state.wrong;
 
-        if (teamAScoreEl) teamAScoreEl.textContent = state.teamScores.A;
-        if (teamBScoreEl) teamBScoreEl.textContent = state.teamScores.B;
-        if (teamCorrectEl) teamCorrectEl.textContent = state.teamCorrect;
-        if (teamWrongEl) teamWrongEl.textContent = state.teamWrong;
-
-        if (teamTurnEl) {
-            teamTurnEl.textContent = `📢 Sıra: ${state.activeTeam} Grubunda`;
-            teamTurnEl.className = "hud-item team-turn-indicator";
-            if (state.activeTeam === 'A') {
-                teamTurnEl.classList.add('team-turn-active-a');
-            } else {
-                teamTurnEl.classList.add('team-turn-active-b');
-            }
-        }
-    } else {
-        animateScore(state.score);
-        if (hudCorrect) hudCorrect.textContent = state.correct;
-        if (hudWrong) hudWrong.textContent = state.wrong;
-        if (hudSolved) hudSolved.textContent = state.solved;
-        updateRankUI();
-    }
-}
-
-function animateScore(target) {
-    const el = hudScore;
-    if (!el) return;
-    const start = parseInt(el.textContent) || 0;
-    if (start === target) return;
-
-    const diff = target - start;
-    const duration = 400;
-    const startTime = performance.now();
-
-    el.classList.remove('score-pop', 'score-flash-success', 'score-flash-error');
-    void el.offsetWidth;
-    el.classList.add('score-pop');
-    el.classList.add(diff > 0 ? 'score-flash-success' : 'score-flash-error');
-    setTimeout(() => {
-        el.classList.remove('score-flash-success', 'score-flash-error');
-    }, 500);
-
-    function step(now) {
-        const p = Math.min((now - startTime) / duration, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(start + diff * eased);
-        if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-}
-
-function renderStats() {
-    document.getElementById('st-score').textContent = state.score;
-    document.getElementById('st-correct').textContent = state.correct;
-    document.getElementById('st-wrong').textContent = state.wrong;
-
-    const container = document.getElementById('unit-stats-container');
+    const container = $('unit-stats-container');
     container.innerHTML = '';
 
-    if (Object.keys(state.unitStats).length === 0) {
-        container.innerHTML = '<p style="text-align:center; color: var(--fg-dim);">Henüz istatistik bulunmuyor.</p>';
-        document.getElementById('ai-guidance-box').style.display = 'none';
-        return;
+    const names = Object.keys(state.unitStats);
+    if (!names.length) {
+        container.innerHTML = `
+            <div>
+                <div class="unit-bar-head"><span class="unit-bar-name">Henüz veri yok</span><span class="unit-bar-ratio">0/0</span></div>
+                <div class="unit-bar-track"><div class="unit-bar-fill" style="width:0%"></div></div>
+            </div>`;
+    } else {
+        names.forEach(name => {
+            const st = state.unitStats[name];
+            const total = st.d + st.y;
+            const pct = total ? Math.round((st.d / total) * 100) : 0;
+            const row = document.createElement('div');
+            row.innerHTML = `
+                <div class="unit-bar-head">
+                    <span class="unit-bar-name">${name}</span>
+                    <span class="unit-bar-ratio">${st.d}/${total}</span>
+                </div>
+                <div class="unit-bar-track"><div class="unit-bar-fill" style="width:${pct}%"></div></div>`;
+            container.appendChild(row);
+        });
     }
 
-    for (let u in state.unitStats) {
-        let st = state.unitStats[u];
-        let total = st.d + st.y;
-        let pct = total > 0 ? Math.round((st.d / total) * 100) : 0;
-        let row = document.createElement('div');
-        row.className = 'unit-stat-row';
-        row.innerHTML = `
-            <div style="flex:1;"><strong>${u}</strong></div>
-            <div style="flex:0 0 160px; text-align:right; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-                <span style="color:var(--success);">✓ ${st.d}</span> |
-                <span style="color:var(--error);">✗ ${st.y}</span> |
-                <span style="color:${pct >= 70 ? 'var(--success)' : 'var(--warning)'}; font-weight: bold;">%${pct}</span>
-            </div>
-        `;
-        container.appendChild(row);
-    }
-    
+    renderBadgeGrid();
     generateAIRecommendations();
 }
 
-const STUDY_RECS = {
-    // 5. Sınıf
-    "Ünite 1 – Birlikte Yaşamak": "Sosyal roller, hak ve sorumluluklarımız ile çocuk hakları konularına tekrar çalışmalısınız.",
-    "Ünite 2 – Evimiz Dünya": "Türkiye'nin fiziki yeryüzü şekilleri, iklim tipleri, bitki örtüsü ve beşerî coğrafya özelliklerini gözden geçirmelisiniz.",
-    "Ünite 3 – Ortak Mirasımız": "Anadolu and Mezopotamya'nın kadim uygarlıkları ile ülkemizin somut/somut olmayan kültürel miras varlıklarını tekrar etmelisiniz.",
-    "Ünite 4 – Yaşayan Demokrasimiz": "Demokrasinin temel ilkeleri, devletin yönetim organları ve katılım hakkının önemi konularını çalışmalısınız.",
-    "Ünite 5 – Hayatımızda Ekonomi": "Ekonomik faaliyetler, meslek grupları, bütçe hazırlama ve bilinçli bir tüketicinin yapması gerekenler konularına bakmalısınız.",
-    "Ünite 6 – Teknoloji ve Sosyal Bilimler": "Teknolojinin sosyal hayatımız üzerindeki etkileri, sosyal bilimlerin dalları ve bilimsel çalışma etiği konularını tekrar etmelisiniz.",
-    
-    // 6. Sınıf
-    "Ünite 1 – Birlikte Yaşamak": "Sosyal roller, toplumsal yardımlaşma ve dayanışma ile ön yargıları kırma konularını incelemelisiniz.",
-    "Ünite 2 – Evimiz Dünya": "Dünya'nın paralel/meridyen yapısı, kıtalar ve okyanuslar ile ülkemizin coğrafi konumunu tekrar etmelisiniz.",
-    "Ünite 3 – Ortak Mirasımız": "İlk Türk devletlerinin kültürel özellikleri, İslamiyetin doğuşu ve Türklerin İslamiyete geçişini çalışmalısınız.",
-    "Ünite 4 – Yaşayan Demokrasimiz": "Demokratik yönetim şekilleri, kadın hakları ve Türk tarihindeki yönetim yapılarını gözden geçirmelisiniz.",
-    "Ünite 5 – Hayatımızdaki Ekonomi": "Üretim kaynaklarımız, yatırım ve girişimcilik fikirleri ile vergilerimizin önemi konularını çalışmalısınız.",
-    "Ünite 6 – Teknoloji ve Sosyal Bilimler": "Bilim ve teknolojideki gelişmeler ile telif/patent haklarının önemi konularını çalışmalısınız.",
-    
-    // 7. Sınıf
-    "Ünite 1 – Birey ve Toplum": "Olumlu ve etkili iletişim becerileri, medya okuryazarlığı, RTÜK ve iletişim özgürlüğü (sansür, basın özgürlüğü vb.) konularını tekrar etmelisiniz.",
-    "Ünite 2 – Kültür ve Miras": "Osmanlı Devleti'nin kuruluş süreci, uyguladığı iskân ve istimâlet politikaları, denizlerdeki fetihler ve Avrupa'daki uyanışın (Rönesans, Reform vb.) Osmanlı'ye etkilerini incelemelisiniz.",
-    "Ünite 3 – İnsanlar, Yerler ve Çevreler": "Nüfusun dağılışını etkileyen faktörler, Türkiye'deki göç dalgaları ve göçün nedenleri/sonuçları konularını gözden geçirmelisiniz.",
-    "Ünite 4 – Bilim, Teknoloji ve Toplum": "Tarih boyunca bilginin korunması/yayılması (kil tabletler, matbaa) ve ünlü Türk-İslam bilginleri (İbn-i Sina, Farabi vb.) konularını çalışmalısınız.",
-    "Ünite 5 – Üretim, Dağıtım ve Tüketim": "Toprağın yönetimde ve üretimdeki önemi, Ahilik/Lonca teşkilatı, mesleki yönlendirme ve dijital çağın getirdiği yeni meslekleri incelemelisiniz.",
-    "Ünite 6 – Etkin Vatandaşlık": "Demokratik yönetimlerin tarihi gelişimi, Türkiye Cumhuriyeti anayasasının temel nitelikleri ve sivil toplum örgütlerinin (STK) faaliyetlerine odaklanmalısınız.",
-    "Ünite 7 – Küresel Bağlantılar": "Ülkemizin üye olduğu uluslararası siyasi/ekonomik kuruluşlar (BM, NATO vb.) ve küresel çevre/iklim sorunlarına karşı alınabilecek tedbirleri tekrar etmelisiniz.",
-    
-    // 8. Sınıf
-    "Ünite 1 – Bir Kahraman Doğuyor": "Mustafa Kemal'in çocukluk dönemi, okuduğu okullar, Selanik şehrinin sosyal/kültürel yapısı ve askerlik hayatı (Trablusgarp Savaşı, Balkan Savaşları, Çanakkale Cephesi) konularını tekrar etmelisiniz.",
-    "Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar": "I. Dünya Savaşı'nın nedenleri ve cepheleri, Mondros Ateşkes Antlaşması, Havza ve Amasya Genelgeleri, Erzurum ve Sivas Kongreleri ile Misak-ı Milli kararlarına tekrar çalışmalısınız.",
-    "Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!": "Doğu ve Güney cepheleri, Batı cephesindeki düzenli ordu savaşları (I. ve II. İnönü, Kütahya-Eskişehir, Sakarya Meydan Muharebesi, Büyük Taarruz) ve ülkemizin bağımsızlık belgesi olan Lozan Antlaşması konularını çalışmalısınız.",
-    "Ünite 4 – Atatürkçülük ve Çağdaşlaşan Türkiye": "Siyasi alandaki inkılaplar (Saltanatın kaldırılması, Ankara'nın başkent oluşu, Cumhuriyetin ilanı, Halifeliğin kaldırılması), eğitim/kültür inkılapları ve Atatürk ilkeleri (Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik, İnkılapçılık) konularına odaklanın.",
-    "Ünite 5 – Demokratikleşme Çabaları": "Çok partili hayata geçiş denemeleri, Terakkiperver Cumhuriyet Fırkası, Serbest Cumhuriyet Fırkası ve Şeyh Said İsyanı gibi laik cumhuriyete karşı çıkan isyanları çalışmalısınız.",
-    "Ünite 6 – Atatürk Dönemi Türk Dış Politikası": "Atatürk dönemi dış politikanın temel ilkeleri, Lozan'dan kalan sorunlar (Nüfus mübadelesi, Yabancı okullar, Musul sorunu, Boğazlar konusu, Hatay meselesi) ve barış paktlarını (Balkan Antantı, Sadabat Paktı) tekrar edin."
-};
-
-function generateAIRecommendations() {
-    const box = document.getElementById('ai-guidance-box');
-    const content = document.getElementById('ai-guidance-content');
-    
-    if (!box || !content) return;
-    
-    let weakUnits = [];
-    let hasData = false;
-    
-    for (let u in state.unitStats) {
-        let st = state.unitStats[u];
-        let total = st.d + st.y;
-        if (total > 0) {
-            hasData = true;
-            let pct = st.d / total;
-            if (pct < 0.70) {
-                weakUnits.push({ name: u, pct: Math.round(pct * 100) });
-            }
-        }
-    }
-    
-    if (!hasData) {
-        content.innerHTML = "💡 Henüz analiz edilecek bir soru çözmediniz. Soruları çözdükçe size özel tavsiyeler burada görünecektir.";
-        box.style.display = 'block';
-        return;
-    }
-    
-    if (weakUnits.length === 0) {
-        content.innerHTML = "🎯 <strong>Tebrikler!</strong> Çalıştığınız tüm ünitelerde %70'in üzerinde yüksek bir başarı oranına sahipsiniz. LGS hazırlığınız harika gidiyor! Bu şekilde çalışmaya devam edin. 🚀";
-    } else {
-        let html = "<p>Konu başarı analizinize göre aşağıdaki ünitelerde eksikleriniz tespit edildi. Rehberlik servisi tavsiyelerini dikkatle inceleyin:</p><ul style='margin-left: 1.5rem; margin-top: 0.5rem;'>";
-        weakUnits.forEach(u => {
-            let rec = STUDY_RECS[u.name] || `${u.name} ünitesiyle ilgili konu özetlerini tekrar gözden geçirmelisiniz.`;
-            html += `<li style='margin-bottom: 0.75rem;'><strong>${u.name} (Başarı: %${u.pct}):</strong> ${rec}</li>`;
-        });
-        html += "</ul>";
-        content.innerHTML = html;
-    }
-    box.style.display = 'block';
+function badgeState() {
+    return { solved: state.solved, best: state.streakBest, score: state.score, big: state.bigWin };
 }
 
+function renderBadgeGrid() {
+    const grid = $('badge-grid');
+    grid.innerHTML = '';
+    const s = badgeState();
+
+    BADGES.forEach(b => {
+        const on = b.need(s);
+        const div = document.createElement('div');
+        div.className = 'badge-item' + (on ? ' on' : '');
+        div.innerHTML = `
+            <div class="badge-dot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="${on ? '#f0fae1' : 'var(--color-neutral-200)'}" stroke-width="2.75"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="9" r="5.5"></circle>
+                    <path d="M8.5 14L7 21l5-2.5L17 21l-1.5-7"></path>
+                </svg>
+            </div>
+            <div style="min-width:0">
+                <div class="badge-name">${b.name}</div>
+                <div class="badge-hint">${b.hint}</div>
+            </div>`;
+        grid.appendChild(div);
+    });
+}
+
+function checkBadges() {
+    const s = badgeState();
+    BADGES.forEach(b => {
+        if (!b.need(s)) return;
+        if (state.earnedBadges.some(e => e.name === b.name)) return;
+        state.earnedBadges.push({ name: b.name, desc: b.hint, emoji: b.emoji });
+        saveUserData();
+        showBadgePopup(b.name, b.hint, b.emoji);
+    });
+}
+
+let badgeTimeout = null;
+function showBadgePopup(name, desc, emoji) {
+    $('badge-emoji').textContent = emoji;
+    $('badge-name').textContent = name;
+    $('badge-desc').textContent = desc;
+    $('badge-popup-container').classList.remove('hidden');
+
+    if (badgeTimeout) clearTimeout(badgeTimeout);
+    badgeTimeout = setTimeout(() => $('badge-popup-container').classList.add('hidden'), 4500);
+}
+
+function resetStats() {
+    state.score = 0;
+    state.correct = 0;
+    state.wrong = 0;
+    state.solved = 0;
+    state.run = 0;
+    state.streakBest = 0;
+    state.bigWin = false;
+    state.unitStats = {};
+    state.teamScores = { A: 0, B: 0 };
+    state.multiplier = 1;
+    renderKarne();
+    updateChrome();
+}
+
+// ————— Rehberlik tavsiyeleri —————
+
+// Anahtarlar data.js'teki ünite adlarıyla birebir aynı olmalı.
+const STUDY_RECS = {
+    // 5. ve 6. Sınıf (ortak ünite adları)
+    'Ünite 1 – Birlikte Yaşamak': 'Sosyal roller, hak ve sorumluluklarımız, çocuk hakları ile toplumsal dayanışma konularına tekrar çalışmalısın.',
+    'Ünite 2 – Evimiz Dünya': "Dünya'nın konumu, kıtalar ve okyanuslar, Türkiye'nin yeryüzü şekilleri, iklim ve bitki örtüsü konularını gözden geçirmelisin.",
+    'Ünite 3 – Ortak Mirasımız': "Anadolu ve Mezopotamya uygarlıkları, ilk Türk devletleri ile somut/somut olmayan kültürel miras varlıklarını tekrar etmelisin.",
+    'Ünite 4 – Yaşayan Demokrasimiz': 'Demokrasinin temel ilkeleri, devletin yönetim organları ve katılım hakkının önemi konularını çalışmalısın.',
+    'Ünite 5 – Hayatımızda Ekonomi': 'Ekonomik faaliyetler, meslek grupları, bütçe hazırlama ve bilinçli tüketicilik konularına bakmalısın.',
+    'Ünite 5 – Hayatımızdaki Ekonomi': 'Üretim kaynaklarımız, yatırım ve girişimcilik fikirleri ile vergilerin önemi konularını çalışmalısın.',
+    'Ünite 6 – Teknoloji ve Sosyal Bilimler': 'Teknolojinin sosyal hayata etkileri, sosyal bilimlerin dalları, telif/patent hakları ve bilim etiği konularını tekrar etmelisin.',
+
+    // 7. Sınıf
+    'Ünite 1 – Birey ve Toplum': 'Olumlu ve etkili iletişim becerileri, medya okuryazarlığı, RTÜK ve iletişim özgürlüğü konularını tekrar etmelisin.',
+    'Ünite 2 – Kültür ve Miras': "Osmanlı'nın kuruluş süreci, iskân ve istimâlet politikaları, denizlerdeki fetihler ve Avrupa'daki uyanışın etkilerini incelemelisin.",
+    'Ünite 3 – İnsanlar, Yerler ve Çevreler': "Nüfusun dağılışını etkileyen faktörler, Türkiye'deki göç dalgaları ve göçün nedenleri/sonuçlarını gözden geçirmelisin.",
+    'Ünite 4 – Bilim, Teknoloji ve Toplum': 'Tarih boyunca bilginin korunması/yayılması ve ünlü Türk-İslam bilginleri konularını çalışmalısın.',
+    'Ünite 5 – Üretim, Dağıtım ve Tüketim': 'Toprağın üretimdeki yeri, Ahilik/Lonca teşkilatı, mesleki yönlendirme ve dijital çağın meslekleri konularını incelemelisin.',
+    'Ünite 6 – Etkin Vatandaşlık': 'Demokratik yönetimlerin tarihî gelişimi, anayasanın temel nitelikleri ve sivil toplum örgütlerine odaklanmalısın.',
+    'Ünite 7 – Küresel Bağlantılar': 'Ülkemizin üye olduğu uluslararası kuruluşlar ve küresel çevre/iklim sorunlarına karşı alınabilecek tedbirleri tekrar etmelisin.',
+
+    // 8. Sınıf
+    'Ünite 1 – Bir Kahraman Doğuyor': "Mustafa Kemal'in çocukluğu, okuduğu okullar, Selanik'in sosyal yapısı ve askerlik hayatı konularını tekrar etmelisin.",
+    'Ünite 2 – Millî Uyanış: Bağımsızlık Yolunda Atılan Adımlar': "I. Dünya Savaşı'nın nedenleri ve cepheleri, Mondros, Havza ve Amasya Genelgeleri, kongreler ile Misak-ı Millî kararlarına çalışmalısın.",
+    'Ünite 3 – Millî Bir Destan: Ya İstiklal Ya Ölüm!': 'Doğu ve Güney cepheleri, düzenli ordu savaşları (İnönü, Sakarya, Büyük Taarruz) ve Lozan Antlaşması konularını çalışmalısın.',
+    'Ünite 4 – Atatürk ve Çağdaşlaşan Türkiye': 'Siyasi, eğitim ve kültür inkılapları ile Atatürk ilkelerine odaklanmalısın.',
+    'Ünite 5 – Demokratikleşme Çabaları': 'Çok partili hayata geçiş denemeleri ve laik cumhuriyete karşı çıkan isyanları çalışmalısın.',
+    'Ünite 6 – Atatürk Dönemi Türk Dış Politikası': "Dış politikanın temel ilkeleri, Lozan'dan kalan sorunlar (Musul, Boğazlar, Hatay) ve barış paktlarını tekrar etmelisin."
+};
+
+function weakUnits() {
+    const weak = [];
+    Object.keys(state.unitStats).forEach(u => {
+        const st = state.unitStats[u];
+        const total = st.d + st.y;
+        if (total > 0 && st.d / total < 0.7) weak.push({ name: u, pct: Math.round((st.d / total) * 100) });
+    });
+    return weak;
+}
+
+function adviceHTML() {
+    if (!Object.keys(state.unitStats).length) {
+        return 'Henüz analiz edilecek bir soru çözmedin. Soruları çözdükçe sana özel tavsiyeler burada görünecek.';
+    }
+    const weak = weakUnits();
+    if (!weak.length) {
+        return 'Çalıştığın tüm ünitelerde %70’in üzerinde başarı oranın var. LGS hazırlığın harika gidiyor, aynen devam!';
+    }
+    let html = 'Başarı analizine göre şu ünitelerde eksiklerin var:<ul>';
+    weak.forEach(u => {
+        const rec = STUDY_RECS[u.name] || `${u.name} ünitesiyle ilgili konu özetlerini tekrar gözden geçirmelisin.`;
+        html += `<li><strong>${u.name} (%${u.pct}):</strong> ${rec}</li>`;
+    });
+    return html + '</ul>';
+}
+
+function generateAIRecommendations() {
+    $('ai-guidance-content').innerHTML = adviceHTML();
+}
+
+// ————— PDF karne —————
+
 function printReportCard() {
-    document.getElementById('print-date').textContent = `Tarih: ${new Date().toLocaleDateString('tr-TR')}`;
-    
     const gradeInfoMap = {
-        "5": "5. Sınıf Sosyal Bilgiler",
-        "6": "6. Sınıf Sosyal Bilgiler",
-        "7": "7. Sınıf Sosyal Bilgiler",
-        "8": "8. Sınıf T.C. İnkılap Tarihi ve Atatürkçülük"
+        '5': '5. Sınıf Sosyal Bilgiler',
+        '6': '6. Sınıf Sosyal Bilgiler',
+        '7': '7. Sınıf Sosyal Bilgiler',
+        '8': '8. Sınıf T.C. İnkılap Tarihi ve Atatürkçülük'
     };
-    
-    document.getElementById('print-grade').textContent = gradeInfoMap[state.grade] || `${state.grade}. Sınıf`;
-    document.getElementById('print-unit').textContent = state.selectedUnit === 'ALL' ? 'Tüm Üniteler' : state.selectedUnit;
-    
-    document.getElementById('print-score').textContent = state.score;
-    document.getElementById('print-solved').textContent = state.solved;
-    document.getElementById('print-correct').textContent = state.correct;
-    document.getElementById('print-wrong').textContent = state.wrong;
-    
-    const tableBody = document.getElementById('print-table-body');
-    tableBody.innerHTML = '';
-    
-    if (Object.keys(state.unitStats).length === 0) {
-        tableBody.innerHTML = `<tr><td colspan="4" style="text-align:center; color:#555;">Henüz çözülmüş soru bulunmuyor.</td></tr>`;
+
+    $('print-date').textContent = `Tarih: ${new Date().toLocaleDateString('tr-TR')}`;
+    $('print-grade').textContent = gradeInfoMap[state.grade] || (state.grade ? `${state.grade}. Sınıf` : '-');
+    $('print-unit').textContent = unitLabel();
+    $('print-score').textContent = state.score;
+    $('print-solved').textContent = state.solved;
+    $('print-correct').textContent = state.correct;
+    $('print-wrong').textContent = state.wrong;
+
+    const tbody = $('print-table-body');
+    tbody.innerHTML = '';
+    const names = Object.keys(state.unitStats);
+    if (!names.length) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; color:#555;">Henüz çözülmüş soru bulunmuyor.</td></tr>';
     } else {
-        for (let u in state.unitStats) {
-            let st = state.unitStats[u];
-            let total = st.d + st.y;
-            let pct = total > 0 ? Math.round((st.d / total) * 100) : 0;
-            let tr = document.createElement('tr');
+        names.forEach(u => {
+            const st = state.unitStats[u];
+            const total = st.d + st.y;
+            const pct = total ? Math.round((st.d / total) * 100) : 0;
+            const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td><strong>${u}</strong></td>
                 <td style="text-align:center; color:#2e7d32; font-weight:bold;">${st.d}</td>
                 <td style="text-align:center; color:#c62828; font-weight:bold;">${st.y}</td>
-                <td style="text-align:center; font-weight:bold; color:${pct >= 70 ? '#2e7d32' : '#d4af37'}">%${pct}</td>
-            `;
-            tableBody.appendChild(tr);
-        }
-    }
-    
-    const adviceContent = document.getElementById('print-guidance-content');
-    let weakUnits = [];
-    let hasData = false;
-    for (let u in state.unitStats) {
-        let st = state.unitStats[u];
-        let total = st.d + st.y;
-        if (total > 0) {
-            hasData = true;
-            if (st.d / total < 0.70) {
-                weakUnits.push({ name: u, pct: Math.round((st.d / total) * 100) });
-            }
-        }
-    }
-    
-    if (!hasData) {
-        adviceContent.innerHTML = "💡 Henüz analiz edilecek bir soru çözülmedi.";
-    } else if (weakUnits.length === 0) {
-        adviceContent.innerHTML = "🎯 Tebrikler! Tüm konularda %70'in üzerinde başarı sağladınız. LGS sınavına harika bir şekilde hazırlanıyorsunuz! 🚀";
-    } else {
-        let html = "<ul style='margin-left: 1.2rem; padding: 0;'>";
-        weakUnits.forEach(u => {
-            let rec = STUDY_RECS[u.name] || "Bu üniteyle ilgili konu özetlerini tekrar çalışmalısınız.";
-            html += `<li style='margin-bottom: 0.5rem;'><strong>${u.name} (Başarı: %${u.pct}):</strong> ${rec}</li>`;
+                <td style="text-align:center; font-weight:bold; color:${pct >= 70 ? '#2e7d32' : '#b2622d'}">%${pct}</td>`;
+            tbody.appendChild(tr);
         });
-        html += "</ul>";
-        adviceContent.innerHTML = html;
     }
-    
-    const badgesSection = document.getElementById('print-badges-section');
-    const badgesList = document.getElementById('print-badges-list');
-    badgesList.innerHTML = '';
-    
-    if (!state.earnedBadges || state.earnedBadges.length === 0) {
-        badgesSection.style.display = 'none';
+
+    $('print-guidance-content').innerHTML = adviceHTML();
+
+    const section = $('print-badges-section');
+    const list = $('print-badges-list');
+    list.innerHTML = '';
+    if (!state.earnedBadges.length) {
+        section.style.display = 'none';
     } else {
-        badgesSection.style.display = 'block';
+        section.style.display = 'block';
         state.earnedBadges.forEach(b => {
-            let div = document.createElement('div');
+            const div = document.createElement('div');
             div.className = 'print-badge-card';
             div.innerHTML = `
                 <span class="print-badge-emoji">${b.emoji}</span>
-                <div class="print-badge-info">
-                    <h4>${b.name}</h4>
-                    <p>${b.desc}</p>
-                </div>
-            `;
-            badgesList.appendChild(div);
+                <div class="print-badge-info"><h4>${b.name}</h4><p>${b.desc}</p></div>`;
+            list.appendChild(div);
         });
     }
-    
+
     window.print();
 }
 
-// Streak & Quest helper functions
+// ————— Kalıcı veri —————
+
 function loadUserData() {
     const raw = localStorage.getItem('lgs_cark_userdata');
-    if (raw) {
-        try {
-            const data = JSON.parse(raw);
-            state.userStreak = data.userStreak || 0;
-            state.lastLoginDate = data.lastLoginDate || "";
-            state.todaySolvedCount = data.todaySolvedCount || 0;
-            state.earnedBadges = data.earnedBadges || [];
-            const todayStr = getTodayString();
-            if (data.todaySolvedDate !== todayStr) {
-                state.todaySolvedCount = 0;
-            }
-        } catch (e) {
-            console.error("Kullanıcı verileri yüklenirken hata:", e);
-        }
+    if (!raw) return;
+    try {
+        const data = JSON.parse(raw);
+        state.userStreak = data.userStreak || 0;
+        state.lastLoginDate = data.lastLoginDate || '';
+        state.todaySolvedCount = data.todaySolvedDate === getTodayString() ? (data.todaySolvedCount || 0) : 0;
+        state.earnedBadges = data.earnedBadges || [];
+    } catch (e) {
+        console.error('Kullanıcı verileri yüklenirken hata:', e);
     }
 }
 
 function saveUserData() {
     try {
-        const data = {
+        localStorage.setItem('lgs_cark_userdata', JSON.stringify({
             userStreak: state.userStreak,
             lastLoginDate: state.lastLoginDate,
             todaySolvedCount: state.todaySolvedCount,
             todaySolvedDate: getTodayString(),
-            earnedBadges: state.earnedBadges || []
-        };
-        localStorage.setItem('lgs_cark_userdata', JSON.stringify(data));
+            earnedBadges: state.earnedBadges
+        }));
     } catch (e) {
-        console.error("Kullanıcı verileri kaydedilirken hata:", e);
+        console.error('Kullanıcı verileri kaydedilirken hata:', e);
     }
 }
 
-function getTodayString() {
+function dateString(offsetDays = 0) {
     const d = new Date();
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+    d.setDate(d.getDate() + offsetDays);
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-function getYesterdayString() {
-    const d = new Date();
-    d.setDate(d.getDate() - 1);
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
+function getTodayString() { return dateString(0); }
 
 function checkDailyStreak() {
-    const todayStr = getTodayString();
-    const yesterdayStr = getYesterdayString();
-    
+    const today = dateString(0);
+    const yesterday = dateString(-1);
+
     if (!state.lastLoginDate) {
         state.userStreak = 1;
-        state.lastLoginDate = todayStr;
-    } else if (state.lastLoginDate === todayStr) {
-        // Do nothing
-    } else if (state.lastLoginDate === yesterdayStr) {
+        state.lastLoginDate = today;
+    } else if (state.lastLoginDate === yesterday) {
         state.userStreak += 1;
-        state.lastLoginDate = todayStr;
-    } else {
+        state.lastLoginDate = today;
+    } else if (state.lastLoginDate !== today) {
         state.userStreak = 1;
-        state.lastLoginDate = todayStr;
+        state.lastLoginDate = today;
     }
     saveUserData();
-    updateStreakAndQuestUI();
 }
 
 function onQuestionSolved() {
     state.todaySolvedCount += 1;
-    updateStreakAndQuestUI();
     saveUserData();
+    updateChrome();
 }
 
-function updateStreakAndQuestUI() {
-    const streakEl = hudStreak;
-    const questEl = hudQuest;
-    if (streakEl) {
-        streakEl.textContent = `${state.userStreak} Gün`;
-    }
-    if (questEl) {
-        if (state.todaySolvedCount >= 5) {
-            questEl.textContent = "Tamam! 🚀";
-        } else {
-            questEl.textContent = `${state.todaySolvedCount}/5`;
-        }
-    }
+function updateChrome() {
+    $('streak-label').textContent = `${state.streakBest} seri`;
+    $('quest-label').textContent = state.todaySolvedCount >= 5 ? '5/5' : `${state.todaySolvedCount}/5`;
 }
 
-// Badge Popup helper functions
-let badgeTimeout = null;
-function showBadgePopup(name, desc, emoji) {
-    const container = document.getElementById('badge-popup-container');
-    const emEl = document.getElementById('badge-emoji');
-    const nameEl = document.getElementById('badge-name');
-    const descEl = document.getElementById('badge-desc');
-    
-    if (container && emEl && nameEl && descEl) {
-        emEl.textContent = emoji;
-        nameEl.textContent = name;
-        descEl.textContent = desc;
-        container.classList.remove('hidden');
-        
-        if (badgeTimeout) clearTimeout(badgeTimeout);
-        badgeTimeout = setTimeout(() => {
-            container.classList.add('hidden');
-        }, 4000);
-    }
-}
+// ————— Konfeti —————
 
-// Haptic & Vibration Feedback Helper
-function triggerHaptic(type = 'light') {
-    if (typeof navigator !== 'undefined' && navigator.vibrate) {
-        try {
-            if (type === 'light') navigator.vibrate(15);
-            else if (type === 'medium') navigator.vibrate(35);
-            else if (type === 'heavy') navigator.vibrate([50, 30, 50]);
-            else if (type === 'error') navigator.vibrate([100, 50, 100]);
-            else if (type === 'success') navigator.vibrate([30, 40, 80]);
-        } catch (e) { }
-    }
-}
-
-// Confetti Animation Helper
 function triggerConfetti() {
-    const canvas = document.getElementById('confettiCanvas');
+    const canvas = $('confettiCanvas');
     if (!canvas) return;
-    const ctxConf = canvas.getContext('2d');
+    const c = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    const colors = ['#c67139', '#7a8a5e', '#f6a06b', '#402310', '#ccdbb2', '#ffe1d0'];
     const particles = [];
-    const colors = ['#ffd54f', '#00e5ff', '#ff0055', '#00e676', '#a855f7', '#ffffff'];
-
     for (let i = 0; i < 75; i++) {
         particles.push({
             x: Math.random() * canvas.width,
@@ -1342,57 +895,94 @@ function triggerConfetti() {
         });
     }
 
-    let animationFrame;
+    let frame;
     let opacity = 1;
-    let startTime = Date.now();
+    const startTime = Date.now();
 
     function draw() {
-        ctxConf.clearRect(0, 0, canvas.width, canvas.height);
-        const elapsed = Date.now() - startTime;
-        if (elapsed > 2200) {
-            opacity -= 0.05;
-        }
-
+        c.clearRect(0, 0, canvas.width, canvas.height);
+        if (Date.now() - startTime > 2200) opacity -= 0.05;
         if (opacity <= 0) {
-            ctxConf.clearRect(0, 0, canvas.width, canvas.height);
-            cancelAnimationFrame(animationFrame);
+            c.clearRect(0, 0, canvas.width, canvas.height);
+            cancelAnimationFrame(frame);
             return;
         }
 
-        ctxConf.globalAlpha = opacity;
-        particles.forEach((p) => {
+        c.globalAlpha = opacity;
+        particles.forEach(p => {
             p.tiltAngle += p.tiltAngleIncremental;
             p.y += (Math.cos(p.d) + 3 + p.r / 2) / 2;
             p.x += Math.sin(p.d);
             p.tilt = Math.sin(p.tiltAngle) * 15;
 
-            ctxConf.beginPath();
-            ctxConf.lineWidth = p.r;
-            ctxConf.strokeStyle = p.color;
-            ctxConf.moveTo(p.x + p.tilt + p.r / 2, p.y);
-            ctxConf.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
-            ctxConf.stroke();
+            c.beginPath();
+            c.lineWidth = p.r;
+            c.strokeStyle = p.color;
+            c.moveTo(p.x + p.tilt + p.r / 2, p.y);
+            c.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
+            c.stroke();
         });
 
-        animationFrame = requestAnimationFrame(draw);
+        frame = requestAnimationFrame(draw);
     }
     draw();
 }
 
-// Rank / Level Helper
-function updateRankUI() {
-    const rankEl = document.getElementById('hud-rank');
-    if (!rankEl) return;
-    const s = state.solved || 0;
-    let rank = "Çaylak";
-    if (s >= 120) rank = "👑 Profesör";
-    else if (s >= 70) rank = "⚔️ Şampiyon";
-    else if (s >= 35) rank = "🏛️ Usta";
-    else if (s >= 15) rank = "📜 Çırak";
-    else if (s >= 5) rank = "🔍 Avcı";
-    rankEl.textContent = rank;
+// ————— Olay bağlantıları —————
+
+function setupEventListeners() {
+    $('btn-unit-back').onclick = () => showView('grade');
+    $('btn-mode-back').onclick = () => showView('unit');
+
+    $('btn-mode-single').onclick = () => beginGame(false);
+    $('btn-mode-team').onclick = () => beginGame(true);
+
+    $('btn-spin').onclick = spin;
+    $('wheel-wrap').onclick = spin;
+
+    $('btn-submit').onclick = submitAnswer;
+    $('btn-skip').onclick = skipQuestion;
+    $('btn-next').onclick = () => showView('wheel');
+
+    $('btn-quit-game').onclick = () => {
+        stopTimer();
+        showView('grade');
+    };
+
+    $('btn-special-close').onclick = closeSpecial;
+    $('btn-close-badge').onclick = () => {
+        $('badge-popup-container').classList.add('hidden');
+        if (badgeTimeout) clearTimeout(badgeTimeout);
+    };
+
+    $('tab-play').onclick = () => showView(state.grade && state.selectedUnit ? 'wheel' : 'grade');
+    $('tab-karne').onclick = () => showView('karne');
+
+    $('btn-print-report').onclick = printReportCard;
+    $('btn-reset').onclick = () => {
+        if (confirm('Tüm istatistikleri sıfırlamak istediğine emin misin?')) resetStats();
+    };
+
+    $('btn-share').onclick = () => {
+        const text = `Çark Oyunu’nda tarih yazdım!\n\nGünlük seri: ${state.userStreak} gün\nToplam puan: ${state.score}\nDoğru: ${state.correct} · Yanlış: ${state.wrong}\n\nHadi sen de gel, çarkı çevir!`;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = $('btn-share');
+            const old = btn.textContent;
+            btn.textContent = 'Kopyalandı!';
+            setTimeout(() => { btn.textContent = old; }, 2000);
+        }).catch(err => console.error('Panoya kopyalama başarısız:', err));
+    };
 }
 
-// Start
-init();
+// ————— Başlangıç —————
 
+function init() {
+    loadUserData();
+    checkDailyStreak();
+    renderGrades();
+    setupEventListeners();
+    updateChrome();
+    showView('grade');
+}
+
+init();
