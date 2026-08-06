@@ -1,0 +1,966 @@
+
+<x-dc>
+<helmet>
+
+<style>/* Organic — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
+/* latin-ext */
+@font-face {
+  font-family: 'Caprasimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("9b2a5b88-f61d-4308-8a40-743f5a87f85d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caprasimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("192c4d0d-cdaa-494d-afd0-b55dece3a51b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1bcc2734-8cbb-4595-bed3-146badf11c3e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1a01bba8-868f-4036-abdd-757b522fd52a") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("1bcc2734-8cbb-4595-bed3-146badf11c3e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("1a01bba8-868f-4036-abdd-757b522fd52a") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1bcc2734-8cbb-4595-bed3-146badf11c3e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1a01bba8-868f-4036-abdd-757b522fd52a") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+:root {
+  --color-bg: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-text: #201e1d;
+  --color-accent: #c67139;
+  --color-accent-2: #7a8a5e;
+  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  /* Tonal ramps — generated in OKLCH on one shared lightness scale, so the
+     same step of any role matches the others in visual value. */
+  --color-neutral-100: #f9f4ed;
+  --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4;
+  --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786;
+  --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50;
+  --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  --color-accent-100: #fff2eb;
+  --color-accent-200: #ffe1d0;
+  --color-accent-300: #ffc6a5;
+  --color-accent-400: #f6a06b;
+  --color-accent-500: #d67f48;
+  --color-accent-600: #b2622d;
+  --color-accent-700: #8c491a;
+  --color-accent-800: #643312;
+  --color-accent-900: #402310;
+
+  --color-accent-2-100: #f0fae1;
+  --color-accent-2-200: #e1eecc;
+  --color-accent-2-300: #ccdbb2;
+  --color-accent-2-400: #aebf92;
+  --color-accent-2-500: #8fa073;
+  --color-accent-2-600: #728157;
+  --color-accent-2-700: #56633f;
+  --color-accent-2-800: #3d472b;
+  --color-accent-2-900: #272e1b;
+
+  --font-heading: "Caprasimo", system-ui, sans-serif;
+  --font-heading-weight: 400;
+  --font-body: "Figtree", system-ui, sans-serif;
+
+  --space-1: 4.4px;
+  --space-2: 8.8px;
+  --space-3: 13.2px;
+  --space-4: 17.6px;
+  --space-6: 26.4px;
+  --space-8: 35.2px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  /* Elevation — derived from the ground: soft ink-tinted shadows on a
+     light theme, a hairline edge + ambient darkness on a dark one. */
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); }
+
+.washed{filter:saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94)}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Components — built with the tokens above. Plain CSS
+   on plain HTML: no JavaScript, no build step. Each class is documented in
+   readme.md and demonstrated in foundations/ and components/.
+   ══════════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
+}
+h1 { font-size: 42px; }
+h2 { font-size: 32px; }
+h3 { font-size: 25px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 13px; }
+h6 { letter-spacing: 0.08em; text-transform: uppercase; }
+p { margin: 0 0 var(--space-3); }
+a { color: var(--color-accent); text-underline-offset: 3px; }
+img { display: block; max-width: 100%; }
+figure { margin: 0; }
+figcaption {
+  font-size: 11px; margin-top: var(--space-1);
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+
+/* — rules — */
+.hr {
+  height: 1px; border: 0; margin: var(--space-4) 0;
+  background: var(--color-divider);
+}
+
+/* — buttons — */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  cursor: pointer; text-decoration: none;
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 14px; line-height: 1.2; color: var(--color-text); /* matches the .input's 14px —
+     the pair sits side by side in sign-up rows */
+  background: transparent; border: 1px solid transparent;
+  padding: var(--space-2) calc(var(--space-3) * 1.2);
+  border-radius: var(--radius-md);
+}
+.btn svg { display: block; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--color-accent); color: var(--color-bg); }
+.btn-primary:hover { background: var(--color-accent-600); }
+.btn-primary:active { background: var(--color-accent-700); }
+.btn-secondary { border-color: var(--color-divider); }
+.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+.btn-ghost { color: var(--color-accent); padding-inline: var(--space-1); }
+.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
+.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-block { width: 100%; margin-top: var(--space-2); }
+
+/* — forms — */
+.field > label {
+  display: block; font-size: 12px; margin-bottom: 5px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.input {
+  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
+  font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
+textarea.input { min-height: 90px; resize: vertical; }
+.radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
+.radio input, .seg-opt input {
+  position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
+}
+.radio .dot {
+  width: 16px; height: 16px; flex: none; border-radius: 50%;
+  border: 1.5px solid var(--color-divider);
+}
+.radio:hover .dot { border-color: var(--color-accent); }
+.radio input:checked + .dot {
+  border-color: var(--color-accent); background: var(--color-accent);
+  box-shadow: inset 0 0 0 4px var(--color-bg);
+}
+.radio input:focus-visible + .dot { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.seg {
+  display: inline-flex; overflow: hidden;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.seg-opt {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+.seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
+.seg-opt:has(input:checked) { background: var(--color-accent); color: var(--color-bg); }
+.seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+
+/* — cards — */
+.card {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface);
+}
+.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
+.card-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 17px; line-height: 1.2;
+}
+.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
+.card-meta {
+  display: flex; align-items: center; gap: 6px; font-size: 11px;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+}
+.elev-sm { box-shadow: var(--shadow-sm); }
+.elev-md { box-shadow: var(--shadow-md); }
+.elev-lg { box-shadow: var(--shadow-lg); }
+
+/* — tags — */
+.tag {
+  display: inline-flex; align-items: center; font-size: 11px;
+  letter-spacing: 0.02em; padding: 3px 10px;
+  border-radius: calc(var(--radius-md) * 0.75);
+}
+.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
+.tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
+.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
+.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
+
+/* — navigation — */
+.nav {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: none;
+}
+.nav-brand {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 18px; margin-right: auto;
+}
+.nav a { color: inherit; text-decoration: none; font-size: 14px; }
+.nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
+
+/* — tables — */
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th {
+  text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  padding: var(--space-2); border-bottom: 1px solid var(--color-divider);
+}
+.table td {
+  padding: var(--space-2);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
+}
+.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+
+/* — dialog — */
+.dialog-backdrop {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
+}
+.dialog {
+  width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
+  padding: var(--space-4); border-radius: var(--radius-lg);
+  background: var(--color-surface); box-shadow: var(--shadow-lg);
+}
+.dialog-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 20px;
+}
+.dialog-body { font-size: 14px; opacity: 0.85; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
+
+/* — rounded frame: everything softens, small controls go pill — */
+.card, .dialog { border-radius: calc(var(--radius-lg) * 1.15); }
+.btn, .tag, .seg, .input { border-radius: 999px; }
+.input { padding-inline: 14px; }
+
+</style>
+<script src="c2be8dec-1c41-4d8e-8c76-156f9cee8846"></script>
+<style>
+body{margin:0;background:#dcd3c4;font-family:var(--font-body)}
+a{color:var(--color-accent-700)}a:hover{color:var(--color-accent-800)}
+@keyframes popIn{from{transform:scale(.86);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes floatUp{from{transform:translateY(14px);opacity:0}to{transform:translateY(0);opacity:1}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 24px;gap:48px">
+<x-import component-from-global-scope="IOSDevice" from="578fc859-5e29-4f1c-b4aa-34fc7ab1b803#/ios-frame.jsx" width="{{ 402 }}" height="{{ 874 }}" hint-size="402px,874px">
+
+<div style="position:relative;height:100%;background:var(--color-bg);overflow:hidden;display:flex;flex-direction:column">
+
+<div style="position:absolute;top:-90px;right:-70px;width:240px;height:240px;border-radius:50%;background:var(--color-accent-2-200);pointer-events:none"></div>
+<div style="position:absolute;top:120px;left:-110px;width:200px;height:200px;border-radius:50%;background:var(--color-accent-200);opacity:.6;pointer-events:none"></div>
+
+<div style="position:relative;z-index:2;flex:1;display:flex;flex-direction:column;min-height:0">
+
+<sc-if value="{{ showChrome }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;align-items:center;gap:10px;padding:62px 22px 10px">
+<div style="width:38px;height:38px;border-radius:50%;background:var(--color-accent);display:flex;align-items:center;justify-content:center;flex:none">
+<svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f5ead8" stroke-width="2.75" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.2"></circle></svg>
+</div>
+<div style="flex:1;min-width:0">
+<div style="font-family:var(--font-heading);font-size:17px;line-height:1.1">Çark Oyunu</div>
+<div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-600)">LGS Sosyal Bilgiler</div>
+</div>
+<div style="display:flex;align-items:center;gap:5px;background:var(--color-accent-200);color:var(--color-accent-800);padding:6px 12px 6px 9px;border-radius:999px;font-size:13px;font-weight:700;flex:none">
+<svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.5 3.5 5 4.5 5 8.5A5 5 0 0 1 7 11.5C7 8 9.5 7 12 3Z"></path></svg>
+<span>{{ streakLabel }}</span>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showHome }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;overflow-y:auto;padding:16px 22px 24px">
+<h1 style="font-size:34px;margin:0 0 6px">Sınıfını seç</h1>
+<p style="font-size:14px;color:var(--color-neutral-700);margin:0 0 22px;max-width:250px;text-wrap:pretty">Çarkı çevir, puanı kap, soruyu çöz. Kaldığın yerden devam edebilirsin.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<sc-for list="{{ grades }}" as="g" hint-placeholder-count="4">
+<button sc-camel-on-click="{{ g.pick }}" style="appearance:none;text-align:left;cursor:pointer;border:1px solid var(--color-divider);border-radius:26px;background:var(--color-surface);padding:16px 14px 14px;display:flex;flex-direction:column;gap:2px;box-shadow:var(--shadow-sm);font-family:var(--font-body)" style-hover="box-shadow:var(--shadow-md);border-color:var(--color-accent-400)" style-active="transform:scale(.97)">
+<div style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:10px;background:{{ g.tint }}">
+<span style="font-family:var(--font-heading);font-size:20px;color:{{ g.ink }}">{{ g.no }}</span>
+</div>
+<div style="font-family:var(--font-heading);font-size:17px;line-height:1.15">{{ g.no }}. Sınıf</div>
+<div style="font-size:11.5px;color:var(--color-neutral-700);line-height:1.3">{{ g.subject }}</div>
+<div style="margin-top:10px;display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--color-neutral-600)">
+<span>{{ g.units }} ünite</span><span>·</span><span>{{ g.count }} soru</span>
+</div>
+</button>
+</sc-for>
+</div>
+
+<div style="margin-top:22px;border-radius:26px;background:var(--color-accent-2-200);padding:18px;display:flex;align-items:center;gap:14px">
+<div style="width:52px;height:52px;border-radius:50%;background:var(--color-accent-2-500);flex:none;display:flex;align-items:center;justify-content:center">
+<svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0fae1" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"></path><path d="M4 6h9l-1.5 3L13 12H4"></path></svg>
+</div>
+<div style="min-width:0">
+<div style="font-family:var(--font-heading);font-size:16px;line-height:1.2">Günlük görev</div>
+<div style="font-size:12px;color:var(--color-accent-2-800)">{{ questLabel }} soru doğru çöz, seriyi koru</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showUnits }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;overflow-y:auto;padding:12px 22px 24px">
+<button sc-camel-on-click="{{ goHome }}" style="appearance:none;background:transparent;border:0;cursor:pointer;padding:6px 0;display:flex;align-items:center;gap:6px;font-family:var(--font-body);font-size:13px;color:var(--color-accent-700)" style-hover="color:var(--color-accent-800)">
+<svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>Sınıf seçimi
+</button>
+<h1 style="font-size:32px;margin:10px 0 4px">Ünite seç</h1>
+<p style="font-size:13px;color:var(--color-neutral-700);margin:0 0 18px">{{ gradeLabel }} · {{ subjectLabel }}</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ units }}" as="u" hint-placeholder-count="6">
+<button sc-camel-on-click="{{ u.pick }}" style="appearance:none;cursor:pointer;text-align:left;border:1px solid var(--color-divider);border-radius:22px;background:var(--color-surface);padding:13px 15px;display:flex;align-items:center;gap:13px;font-family:var(--font-body)" style-hover="border-color:var(--color-accent-400);box-shadow:var(--shadow-sm)" style-active="transform:scale(.985)">
+<div style="position:relative;width:38px;height:38px;flex:none">
+<svg width="38" height="38" sc-camel-view-box="0 0 38 38"><circle cx="19" cy="19" r="16" fill="none" stroke="var(--color-neutral-300)" stroke-width="4"></circle><circle cx="19" cy="19" r="16" fill="none" stroke="var(--color-accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="100.5" stroke-dashoffset="{{ u.dash }}" transform="rotate(-90 19 19)"></circle></svg>
+<span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--color-neutral-700)">{{ u.pct }}</span>
+</div>
+<div style="flex:1;min-width:0">
+<div style="font-family:var(--font-heading);font-size:15px;line-height:1.2">{{ u.name }}</div>
+<div style="font-size:11px;color:var(--color-neutral-600);margin-top:2px">{{ u.meta }}</div>
+</div>
+<svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>
+</button>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showMode }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;overflow-y:auto;padding:12px 22px 24px">
+<button sc-camel-on-click="{{ goUnits }}" style="appearance:none;background:transparent;border:0;cursor:pointer;padding:6px 0;display:flex;align-items:center;gap:6px;font-family:var(--font-body);font-size:13px;color:var(--color-accent-700)" style-hover="color:var(--color-accent-800)">
+<svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>Ünite seçimi
+</button>
+<h1 style="font-size:32px;margin:10px 0 4px">Nasıl oynayalım?</h1>
+<p style="font-size:13px;color:var(--color-neutral-700);margin:0 0 20px">{{ unitLabel }}</p>
+<div style="display:flex;flex-direction:column;gap:14px">
+<button sc-camel-on-click="{{ startSingle }}" style="appearance:none;cursor:pointer;text-align:left;border:0;border-radius:28px;background:var(--color-accent);color:var(--color-bg);padding:20px;display:flex;align-items:center;gap:16px;font-family:var(--font-body);box-shadow:var(--shadow-md)" style-hover="background:var(--color-accent-600)" style-active="transform:scale(.985)">
+<div style="width:54px;height:54px;border-radius:50%;background:var(--color-accent-300);flex:none;display:flex;align-items:center;justify-content:center">
+<svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="var(--color-accent-800)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M5 21c0-3.6 3.1-6 7-6s7 2.4 7 6"></path></svg>
+</div>
+<div>
+<div style="font-family:var(--font-heading);font-size:19px;line-height:1.15">Bireysel</div>
+<div style="font-size:12px;opacity:.9;margin-top:3px">Kendi hızında çalış, karneni topla</div>
+</div>
+</button>
+<button sc-camel-on-click="{{ startTeam }}" style="appearance:none;cursor:pointer;text-align:left;border:1px solid var(--color-divider);border-radius:28px;background:var(--color-surface);padding:20px;display:flex;align-items:center;gap:16px;font-family:var(--font-body)" style-hover="border-color:var(--color-accent-2-500);box-shadow:var(--shadow-sm)" style-active="transform:scale(.985)">
+<div style="width:54px;height:54px;border-radius:50%;background:var(--color-accent-2-300);flex:none;display:flex;align-items:center;justify-content:center">
+<svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="var(--color-accent-2-800)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M3 20c0-3.2 2.7-5.5 6-5.5s6 2.3 6 5.5"></path><path d="M16.5 5.5a3.5 3.5 0 0 1 0 6.6"></path><path d="M18 20c0-2.6-.9-4.3-2.3-5.2"></path></svg>
+</div>
+<div>
+<div style="font-family:var(--font-heading);font-size:19px;line-height:1.15">Grup · A vs B</div>
+<div style="font-size:12px;color:var(--color-neutral-700);margin-top:3px">Sınıfı ikiye böl, sıra sırayla dönsün</div>
+</div>
+</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showWheel }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;display:flex;flex-direction:column;padding:56px 22px 30px">
+<div style="display:flex;align-items:center;gap:10px">
+<button sc-camel-on-click="{{ quitGame }}" style="appearance:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--color-divider);background:var(--color-surface);cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none" style-hover="border-color:var(--color-accent-400)">
+<svg width="17" height="17" sc-camel-view-box="0 0 24 24" fill="none" stroke="var(--color-text)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>
+</button>
+<div style="flex:1;min-width:0">
+<div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-600)">{{ gradeLabel }}</div>
+<div style="font-family:var(--font-heading);font-size:14px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ unitLabel }}</div>
+</div>
+<div style="display:flex;align-items:center;gap:5px;background:var(--color-neutral-900);color:var(--color-neutral-100);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700;flex:none">{{ scoreLabel }}</div>
+</div>
+
+<sc-if value="{{ isTeam }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+<div style="flex:1;border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:700;display:flex;justify-content:space-between;background:{{ teamATint }};color:{{ teamAInk }}"><span>A grubu</span><span>{{ teamAScore }}</span></div>
+<div style="flex:1;border-radius:999px;padding:8px 14px;font-size:12.5px;font-weight:700;display:flex;justify-content:space-between;background:{{ teamBTint }};color:{{ teamBInk }}"><span>B grubu</span><span>{{ teamBScore }}</span></div>
+</div>
+</sc-if>
+
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px">
+<div style="text-align:center;max-width:250px">
+<div style="font-family:var(--font-heading);font-size:22px;line-height:1.2">{{ wheelHeadline }}</div>
+<div style="font-size:12.5px;color:var(--color-neutral-700);margin-top:6px">{{ wheelSub }}</div>
+</div>
+
+<div style="position:relative;width:300px;height:300px;flex:none">
+<div style="position:absolute;inset:-9px;border-radius:50%;background:var(--color-surface);box-shadow:var(--shadow-lg)"></div>
+<div style="{{ wheelStyle }}">
+<svg width="300" height="300" sc-camel-view-box="0 0 300 300">
+<path d="M150,150 L150,20 A130,130 0 0 1 241.92,58.08 Z" fill="#d67f48"></path>
+<path d="M150,150 L241.92,58.08 A130,130 0 0 1 280,150 Z" fill="#402310"></path>
+<path d="M150,150 L280,150 A130,130 0 0 1 241.92,241.92 Z" fill="#8fa073"></path>
+<path d="M150,150 L241.92,241.92 A130,130 0 0 1 150,280 Z" fill="#dcd3c4"></path>
+<path d="M150,150 L150,280 A130,130 0 0 1 58.08,241.92 Z" fill="#c67139"></path>
+<path d="M150,150 L58.08,241.92 A130,130 0 0 1 20,150 Z" fill="#2e2b25"></path>
+<path d="M150,150 L20,150 A130,130 0 0 1 58.08,58.08 Z" fill="#728157"></path>
+<path d="M150,150 L58.08,58.08 A130,130 0 0 1 150,20 Z" fill="#f6a06b"></path>
+<g font-family="Caprasimo, serif" font-size="21" text-anchor="middle" dominant-baseline="middle">
+<text x="185.2" y="65" fill="#fff2eb">200</text>
+<text x="235" y="114.8" fill="#ffc6a5" font-size="24">X2</text>
+<text x="235" y="185.2" fill="#272e1b">300</text>
+<text x="185.2" y="235" fill="#474238" font-size="19">PAS</text>
+<text x="114.8" y="235" fill="#fff2eb">400</text>
+<text x="65" y="185.2" fill="#ffc6a5" font-size="15">İFLAS</text>
+<text x="65" y="114.8" fill="#f0fae1">500</text>
+<text x="114.8" y="65" fill="#402310">100</text>
+</g>
+</svg>
+</div>
+<div style="position:absolute;inset:-9px;border-radius:50%;border:9px solid var(--color-surface);pointer-events:none"></div>
+<div style="position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:11px solid transparent;border-right:11px solid transparent;border-top:20px solid var(--color-neutral-900);z-index:3;filter:drop-shadow(0 2px 2px rgba(46,43,37,.25))"></div>
+<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:var(--color-bg);box-shadow:var(--shadow-md);display:flex;align-items:center;justify-content:center;z-index:2">
+<span style="font-family:var(--font-heading);font-size:19px;color:var(--color-accent-700)">LGS</span>
+</div>
+</div>
+
+<button sc-camel-on-click="{{ spin }}" disabled="{{ spinDisabled }}" style="appearance:none;width:100%;max-width:260px;border:0;border-radius:999px;background:var(--color-accent);color:var(--color-bg);font-family:var(--font-heading);font-size:18px;padding:17px;cursor:pointer;box-shadow:var(--shadow-md)" style-hover="background:var(--color-accent-600)" style-active="transform:scale(.97)">{{ spinLabel }}</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showQuestion }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;display:flex;flex-direction:column;min-height:0;padding:56px 20px 22px">
+<div style="display:flex;align-items:flex-start;gap:12px">
+<div style="flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:6px">
+<span style="background:var(--color-accent-200);color:var(--color-accent-800);font-size:10.5px;padding:4px 11px;border-radius:999px;font-weight:700">{{ qUnit }}</span>
+<span style="border:1px solid var(--color-accent-400);color:var(--color-accent-700);font-size:10.5px;padding:3px 11px;border-radius:999px">{{ qTopic }}</span>
+<span style="background:var(--color-neutral-900);color:var(--color-neutral-100);font-size:10.5px;padding:4px 11px;border-radius:999px;font-weight:700">{{ pointsLabel }}</span>
+</div>
+<div style="position:relative;width:58px;height:58px;flex:none">
+<svg width="58" height="58" sc-camel-view-box="0 0 58 58"><circle cx="29" cy="29" r="25" fill="none" stroke="var(--color-neutral-300)" stroke-width="5"></circle><circle cx="29" cy="29" r="25" fill="none" stroke="{{ timerColor }}" stroke-width="5" stroke-linecap="round" stroke-dasharray="157.1" stroke-dashoffset="{{ timerDash }}" transform="rotate(-90 29 29)"></circle></svg>
+<span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:16px">{{ timeLeft }}</span>
+</div>
+</div>
+
+<div style="margin-top:16px;background:var(--color-surface);border-radius:26px;padding:17px 18px;font-size:14.5px;line-height:1.5;white-space:pre-line;text-wrap:pretty;box-shadow:var(--shadow-sm);max-height:230px;overflow-y:auto">{{ qText }}</div>
+
+<div style="margin-top:14px;flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:9px">
+<sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
+<button sc-camel-on-click="{{ o.pick }}" style="{{ o.style }}">
+<span style="{{ o.keyStyle }}">{{ o.key }}</span>
+<span style="flex:1;text-align:left">{{ o.text }}</span>
+</button>
+</sc-for>
+</div>
+
+<div style="display:flex;gap:9px;margin-top:14px">
+<button sc-camel-on-click="{{ submit }}" disabled="{{ submitDisabled }}" style="appearance:none;flex:1;border:0;border-radius:999px;background:var(--color-accent);color:var(--color-bg);font-family:var(--font-heading);font-size:16px;padding:15px;cursor:pointer" style-hover="background:var(--color-accent-600)" style-active="transform:scale(.98)">Cevabı onayla</button>
+<button sc-camel-on-click="{{ skip }}" style="appearance:none;border:1px solid var(--color-divider);border-radius:999px;background:transparent;font-family:var(--font-heading);font-size:16px;padding:15px 20px;cursor:pointer;color:var(--color-text)" style-hover="background:var(--color-neutral-200)">Geç</button>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showFeedback }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;display:flex;flex-direction:column;padding:76px 24px 26px;animation:floatUp .3s ease both">
+<div style="width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:{{ fbTint }}">
+<span style="font-family:var(--font-heading);font-size:44px;color:{{ fbInk }}">{{ fbGlyph }}</span>
+</div>
+<h1 style="font-size:34px;margin:20px 0 6px">{{ fbTitle }}</h1>
+<p style="font-size:14.5px;color:var(--color-neutral-700);margin:0 0 18px">{{ fbMsg }}</p>
+<div style="background:var(--color-surface);border-radius:26px;padding:17px 18px;box-shadow:var(--shadow-sm)">
+<div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:6px">Doğru cevap · {{ fbCorrectKey }}</div>
+<div style="font-size:14px;line-height:1.5;text-wrap:pretty">{{ fbExplain }}</div>
+</div>
+<div style="flex:1"></div>
+<div style="display:flex;gap:10px;margin-bottom:12px">
+<div style="flex:1;border-radius:22px;background:var(--color-accent-2-200);padding:12px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-2-800)">Doğru</div>
+<div style="font-family:var(--font-heading);font-size:22px">{{ correct }}</div>
+</div>
+<div style="flex:1;border-radius:22px;background:var(--color-neutral-200);padding:12px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700)">Yanlış</div>
+<div style="font-family:var(--font-heading);font-size:22px">{{ wrong }}</div>
+</div>
+<div style="flex:1;border-radius:22px;background:var(--color-accent-200);padding:12px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-800)">Puan</div>
+<div style="font-family:var(--font-heading);font-size:22px">{{ score }}</div>
+</div>
+</div>
+<button sc-camel-on-click="{{ nextSpin }}" style="appearance:none;width:100%;border:0;border-radius:999px;background:var(--color-accent);color:var(--color-bg);font-family:var(--font-heading);font-size:18px;padding:17px;cursor:pointer;box-shadow:var(--shadow-md)" style-hover="background:var(--color-accent-600)" style-active="transform:scale(.98)">Çarka dön</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ showKarne }}" hint-placeholder-val="{{ true }}">
+<div style="flex:1;overflow-y:auto;padding:16px 22px 24px">
+<h1 style="font-size:34px;margin:0 0 4px">Karnen</h1>
+<p style="font-size:13px;color:var(--color-neutral-700);margin:0 0 20px">Bu haftanın özeti</p>
+<div style="display:flex;gap:10px;margin-bottom:18px">
+<div style="flex:1;border-radius:24px;background:var(--color-accent);color:var(--color-bg);padding:16px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.85">Puan</div>
+<div style="font-family:var(--font-heading);font-size:27px;line-height:1.1">{{ score }}</div>
+</div>
+<div style="flex:1;border-radius:24px;background:var(--color-accent-2-200);padding:16px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-2-800)">Doğru</div>
+<div style="font-family:var(--font-heading);font-size:27px;line-height:1.1">{{ correct }}</div>
+</div>
+<div style="flex:1;border-radius:24px;background:var(--color-surface);padding:16px 14px">
+<div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-700)">Yanlış</div>
+<div style="font-family:var(--font-heading);font-size:27px;line-height:1.1">{{ wrong }}</div>
+</div>
+</div>
+
+<h4 style="font-size:17px;margin:0 0 10px">Ünite başarısı</h4>
+<div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px">
+<sc-for list="{{ unitStats }}" as="s" hint-placeholder-count="4">
+<div>
+<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:5px">
+<span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:10px">{{ s.name }}</span>
+<span style="color:var(--color-neutral-600);flex:none">{{ s.ratio }}</span>
+</div>
+<div style="height:9px;border-radius:999px;background:var(--color-neutral-300);overflow:hidden">
+<div style="height:100%;border-radius:999px;background:var(--color-accent-2-500);width:{{ s.width }}"></div>
+</div>
+</div>
+</sc-for>
+</div>
+
+<h4 style="font-size:17px;margin:0 0 10px">Rozetler</h4>
+<div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px">
+<sc-for list="{{ badges }}" as="b" hint-placeholder-count="4">
+<div style="border-radius:20px;padding:11px 13px;display:flex;align-items:center;gap:9px;min-width:calc(50% - 5px);background:{{ b.tint }};opacity:{{ b.op }}">
+<div style="width:30px;height:30px;border-radius:50%;background:{{ b.dot }};flex:none;display:flex;align-items:center;justify-content:center">
+<svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="{{ b.ink }}" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 14L7 21l5-2.5L17 21l-1.5-7"></path></svg>
+</div>
+<div style="min-width:0">
+<div style="font-size:12px;font-weight:700;line-height:1.2">{{ b.name }}</div>
+<div style="font-size:10px;color:var(--color-neutral-700)">{{ b.hint }}</div>
+</div>
+</div>
+</sc-for>
+</div>
+
+<button sc-camel-on-click="{{ resetAll }}" style="appearance:none;width:100%;border:1px solid var(--color-divider);border-radius:999px;background:transparent;font-family:var(--font-heading);font-size:15px;padding:14px;cursor:pointer;color:var(--color-text)" style-hover="background:var(--color-neutral-200)">İstatistikleri sıfırla</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ showChrome }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;gap:6px;padding:8px 22px 34px;background:var(--color-bg);border-top:1px solid var(--color-divider)">
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="2">
+<button sc-camel-on-click="{{ t.go }}" style="appearance:none;flex:1;border:0;background:transparent;cursor:pointer;padding:8px 4px 4px;display:flex;flex-direction:column;align-items:center;gap:4px;font-family:var(--font-body);font-size:10.5px;color:{{ t.ink }}" style-hover="opacity:.75">
+<span style="width:36px;height:26px;border-radius:999px;display:flex;align-items:center;justify-content:center;background:{{ t.tint }}">
+<svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="{{ t.path }}"></path></svg>
+</span>
+<span>{{ t.label }}</span>
+</button>
+</sc-for>
+</div>
+</sc-if>
+
+</div>
+
+<sc-if value="{{ showSpecial }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;padding:26px;background:color-mix(in srgb, var(--color-neutral-900) 55%, transparent)">
+<div style="width:100%;border-radius:34px;padding:30px 24px 24px;text-align:center;box-shadow:var(--shadow-lg);animation:popIn .28s cubic-bezier(.34,1.56,.64,1) both;background:{{ spTint }}">
+<div style="width:88px;height:88px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;background:{{ spDot }}">
+<span style="font-family:var(--font-heading);font-size:30px;color:{{ spInk }}">{{ spGlyph }}</span>
+</div>
+<div style="font-family:var(--font-heading);font-size:28px;line-height:1.1;color:{{ spTitleInk }}">{{ spTitle }}</div>
+<p style="font-size:14px;margin:10px 0 22px;color:{{ spBodyInk }}">{{ spMsg }}</p>
+<button sc-camel-on-click="{{ closeSpecial }}" style="appearance:none;width:100%;border:0;border-radius:999px;padding:15px;font-family:var(--font-heading);font-size:16px;cursor:pointer;background:{{ spBtn }};color:{{ spBtnInk }}" style-active="transform:scale(.98)">Devam et</button>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;timerSeconds&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:45,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:15,&quot;max&quot;:90,&quot;unit&quot;:&quot;sn&quot;,&quot;section&quot;:&quot;Oyun&quot;},&quot;showStreak&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Oyun&quot;}}">
+const SEGMENTS = [
+  { kind: 'points', value: 200 },
+  { kind: 'x2' },
+  { kind: 'points', value: 300 },
+  { kind: 'pas' },
+  { kind: 'points', value: 400 },
+  { kind: 'iflas' },
+  { kind: 'points', value: 500 },
+  { kind: 'points', value: 100 },
+];
+
+const GRADES = [
+  { no: 5, subject: 'Sosyal Bilgiler', units: 6, count: 202, tint: 'var(--color-accent-2-300)', ink: 'var(--color-accent-2-900)' },
+  { no: 6, subject: 'Sosyal Bilgiler', units: 6, count: 200, tint: 'var(--color-accent-300)', ink: 'var(--color-accent-900)' },
+  { no: 7, subject: 'Sosyal Bilgiler', units: 7, count: 200, tint: 'var(--color-neutral-300)', ink: 'var(--color-neutral-900)' },
+  { no: 8, subject: 'İnkılap Tarihi', units: 6, count: 200, tint: 'var(--color-accent)', ink: 'var(--color-bg)' },
+];
+
+const UNITS = {
+  5: ['Ünite 1 – Birlikte Yaşamak', 'Ünite 2 – Evimiz Dünya', 'Ünite 3 – Ortak Mirasımız', 'Ünite 4 – Yaşayan Demokrasimiz', 'Ünite 5 – Hayatımızdaki Ekonomi', 'Ünite 6 – Teknoloji ve Sosyal Bilimler'],
+  6: ['Ünite 1 – Birlikte Yaşamak', 'Ünite 2 – Yeryüzünde Yaşam', 'Ünite 3 – İpek Yolunda Türkler', 'Ünite 4 – Bilim, Teknoloji ve Toplum', 'Ünite 5 – Üretim, Dağıtım ve Tüketim', 'Ünite 6 – Etkin Vatandaşlık'],
+  7: ['Ünite 1 – Birey ve Toplum', 'Ünite 2 – Kültür ve Miras', 'Ünite 3 – İnsanlar, Yerler ve Çevreler', 'Ünite 4 – Bilim, Teknoloji ve Toplum', 'Ünite 5 – Ekonomi ve Sosyal Hayat', 'Ünite 6 – Yaşayan Demokrasi', 'Ünite 7 – Küresel Bağlantılar'],
+  8: ['Ünite 1 – Bir Kahraman Doğuyor', 'Ünite 2 – Millî Bir Destan: Ya İstiklal Ya Ölüm', 'Ünite 3 – Atatürkçülük ve Çağdaşlaşan Türkiye', 'Ünite 4 – Demokratikleşme Çabaları', 'Ünite 5 – Atatürk Dönemi Dış Politika', 'Ünite 6 – Atatürk’ün Ölümü'],
+};
+
+const BANK = {
+  8: [
+    { unite: 'Ünite 1 – Bir Kahraman Doğuyor', konu: 'Atatürk’ün Öğrenim Hayatı', soru: 'Mustafa Kemal;\nI. Şemsi Efendi İlkokulu\nII. Selanik Askeri Rüştiyesi\nIII. Manastır Askeri İdadisi\nIV. Harp Okulu\n\nBu eğitim süreci Mustafa Kemal hakkında hangisini gösterir?', siklar: { A: 'Sadece askeri eğitim aldığını', B: 'Yalnızca İstanbul’da okuduğunu', C: 'Disiplinli, planlı ve askeri-siyasi alanda yetişen bir lider olduğunu', D: 'Eğitimini yarıda bıraktığını' }, dogru: 'C', aciklama: 'Askeri okullar silsilesinde yetişmesi disiplinli ve donanımlı bir lider olduğunu gösterir.' },
+    { unite: 'Ünite 1 – Bir Kahraman Doğuyor', konu: 'Selanik’in Etkisi', soru: 'Mustafa Kemal’in Selanik’te doğup büyümesi;\nI. Farklı kültür ve milletlerle iç içe yaşamış\nII. Batı dünyasını yakından tanımış\nIII. Milliyetçilik akımından etkilenmiş\n\nSelanik’in Mustafa Kemal’e etkisi hangileridir?', siklar: { A: 'I, II ve III', B: 'I ve II', C: 'Yalnız I', D: 'I ve III' }, dogru: 'A', aciklama: 'Selanik çok kültürlü, Batı’ya açık ve milliyetçilik akımlarının yoğun olduğu bir şehirdi.' },
+    { unite: 'Ünite 1 – Bir Kahraman Doğuyor', konu: 'Osmanlı’nın Son Dönemi', soru: 'Osmanlı’nın son döneminde;\nI. Osmanlıcılık\nII. İslamcılık\nIII. Türkçülük\nIV. Batıcılık\nfikir akımları uygulanmıştır.\n\nBu fikir akımlarının amacı hangisidir?', siklar: { A: 'Yeni devlet kurmak', B: 'Osmanlı İmparatorluğu’nu çöküşten kurtarmak', C: 'Avrupa’yı taklit etmek', D: 'Farklı siyasi partiler kurmak' }, dogru: 'B', aciklama: 'Tüm fikir akımlarının ortak amacı Osmanlı’yı çöküşten kurtarmaktı.' },
+    { unite: 'Ünite 1 – Bir Kahraman Doğuyor', konu: '31 Mart Olayı', soru: '31 Mart Olayı (1909) sonucu;\nI. Hareket Ordusu İstanbul’a gelmiş\nII. II. Abdülhamid tahttan indirilmiş\nIII. Meşrutiyet korunmuş\n\nBu olay hangisini gösterir?', siklar: { A: 'Ordunun siyasete karıştığını', B: 'Padişahın güçlendiğini', C: 'İsyanın başarılı olduğunu', D: 'Meşrutiyet yönetiminin korunması için mücadele edildiğini' }, dogru: 'D', aciklama: '31 Mart Olayı meşrutiyet yönetiminin korunması için bastırılmıştır.' },
+  ],
+  5: [
+    { unite: 'Ünite 1 – Birlikte Yaşamak', konu: 'Gruplar ve Roller', soru: 'Ali, okulda sınıf başkanıdır ve arkadaşlarının sorunlarını öğretmenine iletir. Evde ise ailesine yardım eder ve ablasıyla birlikte ev işlerini paylaşır.\n\nBuna göre Ali’nin farklı gruplarda farklı roller üstlenmesi aşağıdakilerden hangisiyle açıklanabilir?', siklar: { A: 'Roller sadece okul ortamında geçerlidir', B: 'Bireyler bulundukları gruba göre farklı roller üstlenebilir', C: 'Aile içinde herkesin görevi aynıdır', D: 'İnsanlar her ortamda aynı davranışı sergiler' }, dogru: 'B', aciklama: 'Her birey bulunduğu gruba göre farklı roller üstlenir.' },
+  ],
+  6: [
+    { unite: 'Ünite 1 – Birlikte Yaşamak', konu: 'Gruplar ve Roller', soru: 'Bir öğrenci okulda öğrenci, evde çocuk, spor kulübünde takım kaptanıdır.\n\nBu durum hangisini gösterir?', siklar: { A: 'Sadece okuldaki rollerin önemli olduğunu', B: 'Bireylerin bulundukları gruba göre farklı roller üstlendiğini', C: 'Bireylerin her ortamda aynı davrandığını', D: 'Rollerin değiştirilemez olduğunu' }, dogru: 'B', aciklama: 'Bireyler aile, okul, spor kulübü gibi farklı gruplarda farklı roller üstlenir.' },
+  ],
+  7: [
+    { unite: 'Ünite 1 – Birey ve Toplum', konu: 'Olumlu İletişim', soru: 'Karşısındakini dinleyip anladığını belirten ve “benim düşüncem” diyen bir kişi olumlu iletişim kurmaktadır.\n\nBu kişinin kullandığı iletişim unsurları hangileridir?', siklar: { A: 'Görmezden gelme', B: 'Empati ve ben dili', C: 'Otoriter tavır', D: 'Eleştiri ve suçlama' }, dogru: 'B', aciklama: 'Dinleyip anlamak empatiyi, “benim düşüncem” demek ben dilini gösterir.' },
+  ],
+};
+
+const BADGES = [
+  { name: 'İlk Adım', hint: 'İlk soruyu çöz', need: s => s.solved >= 1 },
+  { name: 'Seri Başı', hint: '3 doğru üst üste', need: s => s.best >= 3 },
+  { name: 'Puan Avcısı', hint: '1000 puan topla', need: s => s.score >= 1000 },
+  { name: 'Tarih Dehası', hint: '500’lük soruyu bil', need: s => s.big },
+];
+
+class Component extends DCLogic {
+  state = {
+    screen: 'home', grade: null, unit: null, mode: 'single',
+    score: 0, correct: 0, wrong: 0, solved: 0, streakBest: 0, run: 0,
+    bigWin: false, multiplier: 1, points: 0, deg: 0, spinning: false,
+    special: null, question: null, picked: null, revealed: false,
+    timeLeft: 45, fb: null, teamA: 0, teamB: 0, turn: 'A',
+    unitScores: {}, tab: 'play',
+  };
+
+  componentWillUnmount() { clearInterval(this._t); }
+
+  get secs() { return this.props.timerSeconds ?? 45; }
+
+  startTimer() {
+    clearInterval(this._t);
+    this.setState({ timeLeft: this.secs });
+    this._t = setInterval(() => {
+      const t = this.state.timeLeft - 1;
+      if (t <= 0) { clearInterval(this._t); this.setState({ timeLeft: 0 }); this.resolve(false, true); }
+      else this.setState({ timeLeft: t });
+    }, 1000);
+  }
+
+  pickGrade(no) { this.setState({ grade: no, screen: 'units' }); }
+  pickUnit(name) { this.setState({ unit: name, screen: 'mode' }); }
+
+  begin(mode) { this.setState({ mode, screen: 'wheel', deg: 0, multiplier: 1 }); }
+
+  spin() {
+    if (this.state.spinning) return;
+    const idx = Math.floor(Math.random() * SEGMENTS.length);
+    const target = 360 * 5 + (360 - (idx * 45 + 22.5));
+    const deg = this.state.deg + target;
+    this.setState({ spinning: true, deg });
+    setTimeout(() => {
+      const seg = SEGMENTS[idx];
+      this.setState({ spinning: false });
+      if (seg.kind === 'points') {
+        this.setState({ points: seg.value * this.state.multiplier });
+        this.openQuestion();
+      } else {
+        this.setState({ special: seg.kind });
+      }
+    }, 4200);
+  }
+
+  openQuestion() {
+    const g = this.state.grade || 8;
+    const pool = BANK[g] || BANK[8];
+    const q = pool[this.state.solved % pool.length];
+    this.setState({ question: q, picked: null, revealed: false, screen: 'question' });
+    this.startTimer();
+  }
+
+  closeSpecial() {
+    const k = this.state.special;
+    if (k === 'x2') this.setState({ special: null, multiplier: 2 });
+    else if (k === 'iflas') this.setState({ special: null, score: 0, multiplier: 1 });
+    else this.setState({ special: null, multiplier: 1 });
+  }
+
+  resolve(ok, timeout) {
+    clearInterval(this._t);
+    const s = this.state;
+    const unit = s.unit || (s.question && s.question.unite) || '—';
+    const us = Object.assign({}, s.unitScores);
+    const cur = us[unit] || { c: 0, w: 0 };
+    us[unit] = ok ? { c: cur.c + 1, w: cur.w } : { c: cur.c, w: cur.w + 1 };
+    const run = ok ? s.run + 1 : 0;
+    this.setState({
+      score: ok ? s.score + s.points : s.score,
+      correct: ok ? s.correct + 1 : s.correct,
+      wrong: ok ? s.wrong : s.wrong + 1,
+      solved: s.solved + 1,
+      run, streakBest: Math.max(s.streakBest, run),
+      bigWin: s.bigWin || (ok && s.points >= 500),
+      unitScores: us, multiplier: 1,
+      teamA: s.mode === 'team' && s.turn === 'A' && ok ? s.teamA + s.points : s.teamA,
+      teamB: s.mode === 'team' && s.turn === 'B' && ok ? s.teamB + s.points : s.teamB,
+      turn: s.mode === 'team' ? (s.turn === 'A' ? 'B' : 'A') : s.turn,
+      screen: 'feedback',
+      fb: ok ? 'ok' : (timeout ? 'time' : 'no'),
+    });
+  }
+
+  submit() { if (this.state.picked) this.resolve(this.state.picked === this.state.question.dogru, false); }
+
+  renderVals() {
+    const s = this.state;
+    const q = s.question;
+    const showStreak = this.props.showStreak ?? true;
+    const chrome = s.screen === 'home' || s.screen === 'units' || s.screen === 'mode' || s.screen === 'karne';
+
+    const tabs = [
+      { key: 'play', label: 'Oyna', path: 'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z' },
+      { key: 'karne', label: 'Karne', path: 'M5 20V10M12 20V4M19 20v-7' },
+    ].map(t => {
+      const active = (t.key === 'karne') === (s.screen === 'karne');
+      return {
+        key: t.key, label: t.label, path: t.path,
+        ink: active ? 'var(--color-accent-700)' : 'var(--color-neutral-600)',
+        tint: active ? 'var(--color-accent-200)' : 'transparent',
+        go: () => this.setState({ screen: t.key === 'karne' ? 'karne' : 'home' }),
+      };
+    });
+
+    const units = (UNITS[s.grade] || []).map((name, i) => {
+      const st = s.unitScores[name] || { c: 0, w: 0 };
+      const total = st.c + st.w;
+      const pct = total ? Math.round((st.c / total) * 100) : 0;
+      return {
+        name, pick: () => this.pickUnit(name), pct: pct + '%',
+        dash: 100.5 - (100.5 * pct) / 100,
+        meta: total ? st.c + ' doğru · ' + st.w + ' yanlış' : 'Henüz çalışılmadı',
+      };
+    });
+
+    const options = q ? Object.keys(q.siklar).map(k => {
+      const picked = s.picked === k;
+      let bg = 'var(--color-surface)', border = 'var(--color-divider)', keyBg = 'var(--color-neutral-300)', keyInk = 'var(--color-neutral-800)';
+      if (picked) { bg = 'var(--color-accent-200)'; border = 'var(--color-accent)'; keyBg = 'var(--color-accent)'; keyInk = 'var(--color-bg)'; }
+      return {
+        key: k, text: q.siklar[k], pick: () => this.setState({ picked: k }),
+        style: {
+          appearance: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 11,
+          background: bg, border: '1px solid ' + border, borderRadius: 20, padding: '12px 14px',
+          fontFamily: 'var(--font-body)', fontSize: 13.5, lineHeight: 1.4, color: 'var(--color-text)',
+          textAlign: 'left', width: '100%',
+        },
+        keyStyle: {
+          width: 26, height: 26, borderRadius: '50%', flex: 'none', display: 'flex',
+          alignItems: 'center', justifyContent: 'center', background: keyBg, color: keyInk,
+          fontFamily: 'var(--font-heading)', fontSize: 13,
+        },
+      };
+    }) : [];
+
+    const unitStats = Object.keys(s.unitScores).map(name => {
+      const st = s.unitScores[name];
+      const total = st.c + st.w;
+      const pct = total ? Math.round((st.c / total) * 100) : 0;
+      return { name, ratio: st.c + '/' + total, width: pct + '%' };
+    });
+    if (!unitStats.length) unitStats.push({ name: 'Henüz veri yok', ratio: '0/0', width: '0%' });
+
+    const badgeState = { solved: s.solved, best: s.streakBest, score: s.score, big: s.bigWin };
+    const badges = BADGES.map(b => {
+      const on = b.need(badgeState);
+      return {
+        name: b.name, hint: b.hint,
+        tint: on ? 'var(--color-accent-2-200)' : 'var(--color-neutral-200)',
+        dot: on ? 'var(--color-accent-2-500)' : 'var(--color-neutral-400)',
+        ink: on ? '#f0fae1' : 'var(--color-neutral-200)',
+        op: on ? 1 : 0.55,
+      };
+    });
+
+    const sp = {
+      x2: { title: 'X2 aktif!', msg: 'Sıradaki sorunun puanı iki katına çıktı. Çarkı yeniden çevir.', glyph: '×2', tint: 'var(--color-accent-900)', dot: 'var(--color-accent-300)', ink: 'var(--color-accent-900)', titleInk: 'var(--color-accent-200)', bodyInk: 'var(--color-accent-300)', btn: 'var(--color-accent-300)', btnInk: 'var(--color-accent-900)' },
+      pas: { title: 'Pas', msg: 'Bu tur boş geçti. Kaybın yok, çarkı yeniden çevir.', glyph: '›', tint: 'var(--color-surface)', dot: 'var(--color-neutral-300)', ink: 'var(--color-neutral-800)', titleInk: 'var(--color-text)', bodyInk: 'var(--color-neutral-700)', btn: 'var(--color-accent)', btnInk: 'var(--color-bg)' },
+      iflas: { title: 'İflas', msg: 'Puanların sıfırlandı. Yeniden toplamaya başla.', glyph: '!', tint: 'var(--color-neutral-900)', dot: 'var(--color-accent-600)', ink: 'var(--color-neutral-100)', titleInk: 'var(--color-neutral-100)', bodyInk: 'var(--color-neutral-300)', btn: 'var(--color-accent)', btnInk: 'var(--color-bg)' },
+    }[s.special] || {};
+
+    const fbMap = {
+      ok: { title: 'Doğru!', msg: '+' + s.points + ' puan kazandın.', glyph: '✓', tint: 'var(--color-accent-2-300)', ink: 'var(--color-accent-2-900)' },
+      no: { title: 'Yanlış', msg: 'Açıklamayı oku, bir dahakine bileceksin.', glyph: '✕', tint: 'var(--color-accent-300)', ink: 'var(--color-accent-900)' },
+      time: { title: 'Süre bitti', msg: 'Bu soruda süre yetmedi.', glyph: '⏱', tint: 'var(--color-neutral-300)', ink: 'var(--color-neutral-900)' },
+    }[s.fb] || {};
+
+    const gradeMeta = GRADES.find(g => g.no === s.grade) || {};
+    const secs = this.secs;
+
+    return {
+      showChrome: chrome,
+      showHome: s.screen === 'home',
+      showUnits: s.screen === 'units',
+      showMode: s.screen === 'mode',
+      showWheel: s.screen === 'wheel',
+      showQuestion: s.screen === 'question',
+      showFeedback: s.screen === 'feedback',
+      showKarne: s.screen === 'karne',
+      showSpecial: !!s.special,
+
+      grades: GRADES.map(g => Object.assign({}, g, { pick: () => this.pickGrade(g.no) })),
+      units, options, unitStats, badges, tabs,
+
+      streakLabel: showStreak ? (s.streakBest || 0) + ' seri' : String(s.score),
+      questLabel: Math.min(s.correct, 5) + '/5',
+      gradeLabel: s.grade ? s.grade + '. Sınıf' : '',
+      subjectLabel: gradeMeta.subject || '',
+      unitLabel: s.unit || '',
+      scoreLabel: s.score + ' P',
+      score: s.score, correct: s.correct, wrong: s.wrong,
+
+      isTeam: s.mode === 'team',
+      teamAScore: s.teamA, teamBScore: s.teamB,
+      teamATint: s.turn === 'A' ? 'var(--color-accent)' : 'var(--color-surface)',
+      teamAInk: s.turn === 'A' ? 'var(--color-bg)' : 'var(--color-neutral-700)',
+      teamBTint: s.turn === 'B' ? 'var(--color-accent-2-500)' : 'var(--color-surface)',
+      teamBInk: s.turn === 'B' ? '#f0fae1' : 'var(--color-neutral-700)',
+
+      wheelHeadline: s.spinning ? 'Çark dönüyor…' : (s.mode === 'team' ? s.turn + ' grubunun sırası' : 'Çarkı çevir'),
+      wheelSub: s.spinning ? 'Bakalım hangi puana denk gelecek' : 'Gelen puan, sıradaki sorunun değeri olur',
+      wheelStyle: {
+        position: 'absolute', inset: 0, borderRadius: '50%', overflow: 'hidden',
+        transformOrigin: '50% 50%',
+        transform: 'rotate(' + s.deg + 'deg)',
+        transition: 'transform 4.1s cubic-bezier(.16,.84,.14,1)',
+      },
+      spin: () => this.spin(),
+      spinDisabled: s.spinning,
+      spinLabel: s.spinning ? 'Dönüyor…' : 'Çarkı çevir',
+
+      qUnit: q ? q.unite.split('–')[0].trim() : '',
+      qTopic: q ? q.konu : '',
+      qText: q ? q.soru : '',
+      pointsLabel: s.points + ' puan',
+      timeLeft: s.timeLeft,
+      timerDash: 157.1 - (157.1 * s.timeLeft) / secs,
+      timerColor: s.timeLeft <= 10 ? 'var(--color-accent-600)' : 'var(--color-accent-2-500)',
+      submit: () => this.submit(),
+      submitDisabled: !s.picked,
+      skip: () => this.resolve(false, false),
+
+      fbTitle: fbMap.title, fbMsg: fbMap.msg, fbGlyph: fbMap.glyph,
+      fbTint: fbMap.tint, fbInk: fbMap.ink,
+      fbCorrectKey: q ? q.dogru : '',
+      fbExplain: q ? q.aciklama : '',
+      nextSpin: () => this.setState({ screen: 'wheel' }),
+
+      spTitle: sp.title, spMsg: sp.msg, spGlyph: sp.glyph, spTint: sp.tint,
+      spDot: sp.dot, spInk: sp.ink, spTitleInk: sp.titleInk, spBodyInk: sp.bodyInk,
+      spBtn: sp.btn, spBtnInk: sp.btnInk,
+      closeSpecial: () => this.closeSpecial(),
+
+      goHome: () => this.setState({ screen: 'home' }),
+      goUnits: () => this.setState({ screen: 'units' }),
+      quitGame: () => this.setState({ screen: 'home' }),
+      startSingle: () => this.begin('single'),
+      startTeam: () => this.begin('team'),
+      resetAll: () => this.setState({ score: 0, correct: 0, wrong: 0, solved: 0, run: 0, streakBest: 0, bigWin: false, unitScores: {}, teamA: 0, teamB: 0 }),
+    };
+  }
+}
+
+</script>
+
+
