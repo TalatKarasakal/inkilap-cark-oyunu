@@ -3,6 +3,8 @@
    Sıcak kağıt/toprak paleti, Caprasimo başlıklar + Figtree gövde.
    ========================================================================== */
 
+/* Fontlar assets/fonts/fonts.css içinde tanımlıdır; sayfalar onu ayrıca yükler. */
+
 :root {
     --color-bg: #f5ead8;
     --color-surface: #ebddc5;
