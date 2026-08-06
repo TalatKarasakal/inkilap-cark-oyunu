@@ -1,6 +1,6 @@
 /* ==========================================================================
    ÇARK OYUNU — "Organic" tasarım sistemi
-   Sıcak kağıt/toprak paleti, Caprasimo başlıklar + Figtree gövde.
+   Sıcak kağıt/toprak paleti, Alfa Slab One başlıklar + Figtree gövde.
    ========================================================================== */
 
 /* Fontlar assets/fonts/fonts.css içinde tanımlıdır; sayfalar onu ayrıca yükler. */
@@ -43,7 +43,7 @@
     --color-accent-2-800: #3d472b;
     --color-accent-2-900: #272e1b;
 
-    --font-heading: "Caprasimo", Georgia, serif;
+    --font-heading: "Alfa Slab One", Georgia, serif;
     --font-body: "Figtree", system-ui, -apple-system, sans-serif;
 
     --radius-sm: 8px;

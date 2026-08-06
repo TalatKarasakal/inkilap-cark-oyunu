@@ -1,6 +1,6 @@
 /* ==========================================================================
    ÇARK OYUNU — LGS Sosyal Bilgiler
-   Tasarım: "Organic" sistemi (Caprasimo + Figtree, toprak/kağıt paleti)
+   Tasarım: "Organic" sistemi (Alfa Slab One + Figtree, toprak/kağıt paleti)
    ========================================================================== */
 
 // ————— Sabitler —————
